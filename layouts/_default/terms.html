@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="container">
+  <h1>Todas las categorías</h1>
+  
+  <div class="categories-list">
+    {{ range .Data.Terms.Alphabetical }}
+      <div class="category-item">
+        <h2>
+          <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+        </h2>
+        <p>{{ .Count }} artículos</p>
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,72 @@
+<div class="container">
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <ul class="breadcrumb-list">
+    <!-- Blog (siempre visible, enlace a /posts/) -->
+    <li class="breadcrumb-item">
+      <a href="/posts/">Blog</a>
+    </li>
+    
+    <!-- Categorías (ej. Música) -->
+    {{ with .Params.categories }}
+      {{ range first 1 . }}
+        <li class="breadcrumb-item">
+          <a href="{{ "categories" | relURL }}/{{ . | urlize }}">{{ . }}</a>
+        </li>
+      {{ end }}
+    {{ end }}
+    
+    <!-- Post actual (sin enlace, solo texto) -->
+    <li class="breadcrumb-item active">
+      {{ .Title }}
+    </li>
+  </ul>
+</nav>
+
+<style>
+.breadcrumb-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem;
+  flex-wrap: nowrap;  /* Fuerza una sola línea */
+  overflow-x: auto;    /* Scroll horizontal si es necesario */
+  white-space: nowrap; /* Evita saltos de línea */
+}
+
+.breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+  content: "/";
+  margin-left: 0.5rem;
+  color: #999;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: #666;
+  font-weight: 500;
+}
+
+/* Para móviles - scroll suave */
+@media (max-width: 768px) {
+  .breadcrumb-list {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+}
+</style>
+</div>
+<hr>

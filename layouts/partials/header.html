@@ -1,0 +1,36 @@
+  <section data-bs-version="5.1" class="menu menu2 cid-viuj77zz6B" once="menu" id="menu2-3x">
+
+<script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>  
+<script src="/assets/smoothscroll/smooth-scroll.js"></script>  
+<script src="/assets/ytplayer/index.js"></script>  
+<script src="/assets/dropdown/js/navbar-dropdown.js"></script>  
+<script src="/assets/theme/js/script.js"></script>  
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-info text-primary display-7" href="/index.html#header9-1">INICIO</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item dropdown"><a class="nav-link link text-black text-primary dropdown-toggle display-4" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">PARROQUIA</a><div class="dropdown-menu" aria-labelledby="dropdown-386"><div class="dropdown"><a class="text-black text-primary dropdown-item dropdown-toggle display-4" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Santos Patronos</a><div class="dropdown-menu dropdown-submenu" aria-labelledby="dropdown-122"><a class="text-black show text-primary dropdown-item display-4" href="/sanfrancisco.html">San Francisco de Asís</a><a class="text-black show text-primary dropdown-item display-4" href="/santaclara.html">Santa Clara de Asís</a></div></div><a class="text-black show text-primary dropdown-item display-4" href="/ubicacion.html">Cómo llegar</a><a class="text-black show text-primary dropdown-item display-4" href="/contacto.html">Contacto</a><a class="text-black show text-primary dropdown-item display-4" href="/donativos.html">Donativos</a></div></li><li class="nav-item"><a class="nav-link link show text-black display-4" href="/horarios.html">HORARIOS</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">ACTIVIDADES</a><div class="dropdown-menu" aria-labelledby="dropdown-707"><a class="dropdown-item text-black display-4" href="/grupos.html">Grupos</a><a class="dropdown-item text-black display-4" href="/calendario.html">Calendario</a><a class="dropdown-item text-black display-4" href="/tablon.html">Tablón</a><a class="dropdown-item text-black display-4" href="/index.html#timeline3-4">Noticias</a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">SACRAMENTOS</a><div class="dropdown-menu" aria-labelledby="dropdown-633"><a class="dropdown-item text-black display-4" href="/bautismo.html">Bautismo</a><a class="dropdown-item text-black display-4" href="/comunion.html">Comunión</a><a class="dropdown-item text-black display-4" href="/confirmacion.html">Confirmación</a><a class="dropdown-item text-black display-4" href="/matrimonio.html">Matrimonio</a><a class="dropdown-item text-black display-4" href="/confesion.html">Confesión</a><a class="dropdown-item text-black display-4" href="/ordensacerdotal.html">Orden Sacerdotal</a><a class="dropdown-item text-black display-4" href="/uncionenfermos.html">Unción de enfermos</a></div>
+                    </li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+<br><br><br><br><hr>
+{{ range .Site.Menus.main }}
+  <a href="{{ .URL }}">{{ .Name }}</a>
+{{ end }}

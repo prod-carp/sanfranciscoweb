@@ -1,0 +1,12 @@
+baseURL = 'https://example.org/'
+languageCode = 'es-es'
+title = 'Parroquia San Francisco y Santa Clara'
+
+# Para URLs más limpias
+relativeURLs = true
+
+# Taxonomías (CLAVE para categorías y etiquetas)
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
