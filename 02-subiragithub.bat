@@ -49,7 +49,7 @@ git push origin master
 
 echo.
 echo ====================================
-echo     ¡SUBIDA EXITOSA! ^(ノ^°^)ノ^☆
+echo          ¡SUBIDA EXITOSA!
 echo ====================================
 echo.
 echo Presiona cualquier tecla para salir...
