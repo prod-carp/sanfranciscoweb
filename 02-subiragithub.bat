@@ -45,7 +45,7 @@ if errorlevel 1 (
 )
 
 echo [3/3] Subiendo a GitHub...
-git push origin master
+git push origin main
 
 echo.
 echo ====================================
