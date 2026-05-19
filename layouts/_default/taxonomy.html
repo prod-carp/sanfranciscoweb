@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ partial "breadcrumb.html" . }}
 <div class="container">
   <h1>Categoría: {{ .Title }}</h1>
   <p>Encontrados {{ len .Pages }} artículos</p>

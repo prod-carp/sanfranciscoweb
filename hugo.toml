@@ -7,6 +7,6 @@ relativeURLs = true
 
 # Taxonomías (CLAVE para categorías y etiquetas)
 [taxonomies]
-  category = "categories"
+  category = "categorias"
   tag = "tags"
 

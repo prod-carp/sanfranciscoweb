@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+
+{{ range where site.RegularPages.ByDate.Reverse "Section" "noticias" }}
+
+  <div>
+
+    <h2>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+
+    {{ with .Params.subtitle }}
+      <p>{{ . }}</p>
+    {{ end }}
+
+    <small>{{ .Date.Format "02/01/2006" }}</small>
+
+  </div>
+
+{{ end }}
+
+{{ end }}

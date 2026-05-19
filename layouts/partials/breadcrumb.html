@@ -1,16 +1,16 @@
 <div class="container">
 <nav class="breadcrumb" aria-label="breadcrumb">
   <ul class="breadcrumb-list">
-    <!-- Blog (siempre visible, enlace a /posts/) -->
+    <!-- Blog (siempre visible, enlace a /noticias/) -->
     <li class="breadcrumb-item">
-      <a href="/posts/">Blog</a>
+      <a href="/noticias/">Noticias</a>
     </li>
     
     <!-- Categorías (ej. Música) -->
-    {{ with .Params.categories }}
+    {{ with .Params.categorias }}
       {{ range first 1 . }}
         <li class="breadcrumb-item">
-          <a href="{{ "categories" | relURL }}/{{ . | urlize }}">{{ . }}</a>
+          <a href="{{ "categorias" | relURL }}/{{ . | urlize }}">{{ . }}</a>
         </li>
       {{ end }}
     {{ end }}
@@ -28,7 +28,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 0.5rem;
+  gap: 0.0rem;
   flex-wrap: nowrap;  /* Fuerza una sola línea */
   overflow-x: auto;    /* Scroll horizontal si es necesario */
   white-space: nowrap; /* Evita saltos de línea */
@@ -40,7 +40,7 @@
 }
 
 .breadcrumb-item:not(:last-child)::after {
-  content: "/";
+  content: "";
   margin-left: 0.5rem;
   color: #999;
 }

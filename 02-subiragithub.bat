@@ -39,7 +39,8 @@ git commit -m "%nombre%"
 
 REM Verificar si el commit falló
 if errorlevel 1 (
-    echo [ERROR] No hay cambios para subir
+    echo [ERROR] No hay cambios para subir.
+    echo Si has hecho cambios, comprueba que no tengas un Clon del proyecto dentro de la carpeta.
     pause
     exit /b 1
 )

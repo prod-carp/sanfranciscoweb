@@ -2,61 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/caritas/</loc>
+    <loc>http://localhost:1313/categorias/caritas/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/categorias/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/importante/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/parroquia/</loc>
+    <loc>http://localhost:1313/noticias/</loc>
+    <lastmod>2026-05-05T12:29:54+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categorias/parroquia/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-1/</loc>
+    <loc>http://localhost:1313/noticias/post-1/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-2/</loc>
+    <loc>http://localhost:1313/noticias/post-2/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-3/</loc>
-    <lastmod>2026-05-05T12:29:54+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/noticias/post-3/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/musica/</loc>
+    <loc>http://localhost:1313/categorias/musica/</loc>
     <lastmod>2026-05-03T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-4/</loc>
+    <loc>http://localhost:1313/noticias/post-4/</loc>
     <lastmod>2026-05-03T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-5/</loc>
+    <loc>http://localhost:1313/noticias/post-5/</loc>
     <lastmod>2026-05-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/grupos/</loc>
+    <loc>http://localhost:1313/categorias/grupos/</loc>
     <lastmod>2026-04-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-6/</loc>
+    <loc>http://localhost:1313/noticias/post-6/</loc>
     <lastmod>2026-04-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-7/</loc>
+    <loc>http://localhost:1313/noticias/post-7/</loc>
     <lastmod>2026-04-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-8/</loc>
+    <loc>http://localhost:1313/noticias/post-8/</loc>
     <lastmod>2026-04-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-9/</loc>
+    <loc>http://localhost:1313/noticias/post-9/</loc>
     <lastmod>2026-04-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/testimonios/</loc>
+    <loc>http://localhost:1313/categorias/testimonios/</loc>
     <lastmod>2026-04-02T12:29:54+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hemeroteca/</loc>
   </url>
 </urlset>
