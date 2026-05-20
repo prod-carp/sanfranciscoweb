@@ -1,4 +1,4 @@
 ---
-title: "Archivo de noticias"
+title: "Últimas Noticias"
 layout: "hemeroteca"
 ---

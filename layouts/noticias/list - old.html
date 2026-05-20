@@ -1,10 +1,153 @@
 {{ define "main" }}
 
+<!-- Hero Section -->
+<section class="hero-section" style="
+  position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 60px 20px;
+  margin-bottom: 50px;
+  border-radius: 0 0 30px 30px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+">
+  <!-- Efecto de ondas usando CSS puro -->
+  <div style="
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 20px, transparent 20px, transparent 40px);
+    pointer-events: none;
+  "></div>
+  
+  <div class="container" style="position: relative; z-index: 1;">
+    <h1 style="
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    ">
+      ⛪ Noticias y actualidad parroquial
+    </h1>
+    
+    <p style="
+      font-size: 1.2rem;
+      opacity: 0.95;
+      max-width: 600px;
+      margin: 0 auto;
+    ">
+      Últimas noticias, testimonios y vida de la comunidad.
+    </p>
+  </div>
+</section>
+
+
 {{ $main := first 1 (where .Pages "Params.tags" "intersect" (slice "importante")) }}
 {{ $mainPost := index $main 0 }}
 
 {{ $others := where .Pages "Permalink" "ne" $mainPost.Permalink }}
 {{ $sortedOthers := sort $others "Date" "desc" }}
+
+
+<div class="buttons-container">
+  <div class="buttons-wrapper">
+    <a href="/hemeroteca/" class="custom-button button-recientes">
+      <span class="button-icon">🕒</span>
+      Últimas Noticias
+    </a>
+    <a href="/categorias/" class="custom-button button-tematicas">
+      <span class="button-icon">📂</span>
+      Noticias por temas
+    </a>
+    <a href="/tags/importante/" class="custom-button button-importantes">
+      <span class="button-icon">⭐</span>
+      Noticias destacadas
+    </a>
+  </div>
+</div>
+
+<style>
+.buttons-container {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.button-icon {
+  font-size: 1.2rem;
+}
+
+/* Botón Más recientes */
+.button-recientes {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.button-recientes:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Botón Temáticas */
+.button-tematicas {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.button-tematicas:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(240, 147, 251, 0.4);
+}
+
+/* Botón Más importantes */
+.button-importantes {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  color: #333;
+}
+
+.button-importantes:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(250, 112, 154, 0.4);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .buttons-wrapper {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .custom-button {
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+  }
+}
+</style>
 
 <div class="container">
 

@@ -72,3 +72,7 @@ node_modules/
 desktop.ini
 Thumbs.db
 .DS_Store
+
+# Google Drive
+.tmp.drivedownload/
+.tmp.driveupload/

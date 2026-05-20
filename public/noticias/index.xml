@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Noticias on Parroquia San Francisco y Santa Clara</title>
-    <link>http://localhost:1313/noticias/</link>
+    <link>https://example.org/noticias/</link>
     <description>Recent content in Noticias on Parroquia San Francisco y Santa Clara</description>
     <generator>Hugo</generator>
     <language>es-es</language>
     <lastBuildDate>Tue, 05 May 2026 12:29:54 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/noticias/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/noticias/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Post 1 - parroquia. Sí, merece la pena usar uno cómodo (te ahorra mucho tiempo). Te dejo opciones simples y gratuitas</title>
-      <link>http://localhost:1313/noticias/post-1/</link>
+      <link>https://example.org/noticias/post-1/</link>
       <pubDate>Tue, 05 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-1/</guid>
+      <guid>https://example.org/noticias/post-1/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-1&#34;&gt;Contenido del post 1&lt;/h1&gt;&#xA;&lt;p&gt;¡Buen avance! 🙌 Ya lo tienes funcionando, que es lo importante.&lt;/p&gt;&#xA;&lt;p&gt;Vamos a tus dos dudas:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;-1-editor-sencillo-para-md-en-windows&#34;&gt;📝 1. Editor sencillo para &lt;code&gt;.md&lt;/code&gt; en Windows&lt;/h1&gt;&#xA;&lt;p&gt;Sí, merece la pena usar uno cómodo (te ahorra mucho tiempo). Te dejo opciones simples y gratuitas:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../assets/images/fe5b3b2186fce851d21bf1a3df7caac99eab73ce.webp&#34; alt=&#34;111.webp&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;-muy-recomendable-equilibrio-perfecto&#34;&gt;🟢 Muy recomendable (equilibrio perfecto)&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Typora&lt;br&gt;&#xA;👉 Escribir como si fuera Word, sin código visible&lt;br&gt;&#xA;👉 Ves directamente el resultado final&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-alternativa-muy-popular&#34;&gt;🟡 Alternativa muy popular&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Visual Studio Code&lt;br&gt;&#xA;👉 Gratis y muy potente&lt;br&gt;&#xA;👉 Tiene vista previa Markdown (Ctrl + Shift + V)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-súper-simple&#34;&gt;🔵 Súper simple&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Notepad++&lt;br&gt;&#xA;👉 Ligero, pero menos visual&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;👉 Si quieres algo tipo “Word”: usa &lt;strong&gt;Typora&lt;/strong&gt;&lt;br&gt;&#xA;👉 Si vas a seguir con Hugo a largo plazo: &lt;strong&gt;VS Code&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 2 - caritas</title>
-      <link>http://localhost:1313/noticias/post-2/</link>
+      <link>https://example.org/noticias/post-2/</link>
       <pubDate>Tue, 05 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-2/</guid>
+      <guid>https://example.org/noticias/post-2/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-2&#34;&gt;Contenido del post 2&lt;/h1&gt;</description>
     </item>
     <item>
       <title>Post 3 - caritas</title>
-      <link>http://localhost:1313/noticias/post-3/</link>
+      <link>https://example.org/noticias/post-3/</link>
       <pubDate>Tue, 05 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-3/</guid>
+      <guid>https://example.org/noticias/post-3/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-3&#34;&gt;Contenido del post 3&lt;/h1&gt;</description>
     </item>
     <item>
       <title>Post 4 - musica</title>
-      <link>http://localhost:1313/noticias/post-4/</link>
+      <link>https://example.org/noticias/post-4/</link>
       <pubDate>Sun, 03 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-4/</guid>
+      <guid>https://example.org/noticias/post-4/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-4&#34;&gt;Contenido del post 4&lt;/h1&gt;</description>
     </item>
     <item>
       <title>Post 5 - musica</title>
-      <link>http://localhost:1313/noticias/post-5/</link>
+      <link>https://example.org/noticias/post-5/</link>
       <pubDate>Sat, 02 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-5/</guid>
+      <guid>https://example.org/noticias/post-5/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-4&#34;&gt;Contenido del post 4&lt;/h1&gt;</description>
     </item>
     <item>
       <title>Post 6 - testimonios</title>
-      <link>http://localhost:1313/noticias/post-6/</link>
+      <link>https://example.org/noticias/post-6/</link>
       <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-6/</guid>
+      <guid>https://example.org/noticias/post-6/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-6&#34;&gt;Contenido del post 6&lt;/h1&gt;</description>
     </item>
     <item>
       <title>Post 7 - testimonios</title>
-      <link>http://localhost:1313/noticias/post-7/</link>
+      <link>https://example.org/noticias/post-7/</link>
       <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-7/</guid>
+      <guid>https://example.org/noticias/post-7/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-7&#34;&gt;Contenido del post 7&lt;/h1&gt;</description>
     </item>
     <item>
       <title>Post 8 - grupos</title>
-      <link>http://localhost:1313/noticias/post-8/</link>
+      <link>https://example.org/noticias/post-8/</link>
       <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-8/</guid>
+      <guid>https://example.org/noticias/post-8/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-8&#34;&gt;Contenido del post 8&lt;/h1&gt;</description>
     </item>
     <item>
       <title>Post 9 - testimonio</title>
-      <link>http://localhost:1313/noticias/post-9/</link>
+      <link>https://example.org/noticias/post-9/</link>
       <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-9/</guid>
+      <guid>https://example.org/noticias/post-9/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-9&#34;&gt;Contenido del post 9&lt;/h1&gt;</description>
     </item>
   </channel>

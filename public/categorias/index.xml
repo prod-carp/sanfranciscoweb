@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categorias on Parroquia San Francisco y Santa Clara</title>
-    <link>http://localhost:1313/categorias/</link>
+    <link>https://example.org/categorias/</link>
     <description>Recent content in Categorias on Parroquia San Francisco y Santa Clara</description>
     <generator>Hugo</generator>
     <language>es-es</language>
     <lastBuildDate>Tue, 05 May 2026 12:29:54 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/categorias/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/categorias/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Caritas</title>
-      <link>http://localhost:1313/categorias/caritas/</link>
+      <link>https://example.org/categorias/caritas/</link>
       <pubDate>Tue, 05 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/categorias/caritas/</guid>
+      <guid>https://example.org/categorias/caritas/</guid>
       <description></description>
     </item>
     <item>
       <title>Parroquia</title>
-      <link>http://localhost:1313/categorias/parroquia/</link>
+      <link>https://example.org/categorias/parroquia/</link>
       <pubDate>Tue, 05 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/categorias/parroquia/</guid>
+      <guid>https://example.org/categorias/parroquia/</guid>
       <description></description>
     </item>
     <item>
       <title>Musica</title>
-      <link>http://localhost:1313/categorias/musica/</link>
+      <link>https://example.org/categorias/musica/</link>
       <pubDate>Sun, 03 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/categorias/musica/</guid>
+      <guid>https://example.org/categorias/musica/</guid>
       <description></description>
     </item>
     <item>
       <title>Grupos</title>
-      <link>http://localhost:1313/categorias/grupos/</link>
+      <link>https://example.org/categorias/grupos/</link>
       <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/categorias/grupos/</guid>
+      <guid>https://example.org/categorias/grupos/</guid>
       <description></description>
     </item>
     <item>
       <title>Testimonios</title>
-      <link>http://localhost:1313/categorias/testimonios/</link>
+      <link>https://example.org/categorias/testimonios/</link>
       <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/categorias/testimonios/</guid>
+      <guid>https://example.org/categorias/testimonios/</guid>
       <description></description>
     </item>
   </channel>

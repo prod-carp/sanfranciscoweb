@@ -2,63 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categorias/caritas/</loc>
+    <loc>https://example.org/categorias/caritas/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categorias/</loc>
+    <loc>https://example.org/categorias/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/importante/</loc>
+    <loc>https://example.org/tags/importante/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticias/</loc>
+    <loc>https://example.org/noticias/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categorias/parroquia/</loc>
+    <loc>https://example.org/categorias/parroquia/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticias/post-1/</loc>
+    <loc>https://example.org/noticias/post-1/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticias/post-2/</loc>
+    <loc>https://example.org/noticias/post-2/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticias/post-3/</loc>
+    <loc>https://example.org/noticias/post-3/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/tags/</loc>
     <lastmod>2026-05-05T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categorias/musica/</loc>
+    <loc>https://example.org/categorias/musica/</loc>
     <lastmod>2026-05-03T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticias/post-4/</loc>
+    <loc>https://example.org/noticias/post-4/</loc>
     <lastmod>2026-05-03T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticias/post-5/</loc>
+    <loc>https://example.org/noticias/post-5/</loc>
     <lastmod>2026-05-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categorias/grupos/</loc>
+    <loc>https://example.org/categorias/grupos/</loc>
     <lastmod>2026-04-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticias/post-6/</loc>
+    <loc>https://example.org/noticias/post-6/</loc>
     <lastmod>2026-04-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticias/post-7/</loc>
+    <loc>https://example.org/noticias/post-7/</loc>
     <lastmod>2026-04-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticias/post-8/</loc>
+    <loc>https://example.org/noticias/post-8/</loc>
     <lastmod>2026-04-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/noticias/post-9/</loc>
+    <loc>https://example.org/noticias/post-9/</loc>
     <lastmod>2026-04-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categorias/testimonios/</loc>
+    <loc>https://example.org/categorias/testimonios/</loc>
     <lastmod>2026-04-02T12:29:54+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hemeroteca/</loc>
+    <loc>https://example.org/hemeroteca/</loc>
   </url>
 </urlset>
