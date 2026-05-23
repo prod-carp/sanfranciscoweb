@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Musica on Parroquia San Francisco y Santa Clara</title>
-    <link>https://example.org/categorias/musica/</link>
+    <link>http://localhost:1313/categorias/musica/</link>
     <description>Recent content in Musica on Parroquia San Francisco y Santa Clara</description>
     <generator>Hugo</generator>
     <language>es-es</language>
     <lastBuildDate>Sun, 03 May 2026 12:29:54 +0200</lastBuildDate>
-    <atom:link href="https://example.org/categorias/musica/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categorias/musica/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Post 4 - musica</title>
-      <link>https://example.org/noticias/post-4/</link>
+      <link>http://localhost:1313/noticias/post-4/</link>
       <pubDate>Sun, 03 May 2026 12:29:54 +0200</pubDate>
-      <guid>https://example.org/noticias/post-4/</guid>
+      <guid>http://localhost:1313/noticias/post-4/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-4&#34;&gt;Contenido del post 4&lt;/h1&gt;</description>
     </item>
     <item>
       <title>Post 5 - musica</title>
-      <link>https://example.org/noticias/post-5/</link>
+      <link>http://localhost:1313/noticias/post-5/</link>
       <pubDate>Sat, 02 May 2026 12:29:54 +0200</pubDate>
-      <guid>https://example.org/noticias/post-5/</guid>
+      <guid>http://localhost:1313/noticias/post-5/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-4&#34;&gt;Contenido del post 4&lt;/h1&gt;</description>
     </item>
   </channel>

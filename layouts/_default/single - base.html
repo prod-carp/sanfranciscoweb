@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ partial "breadcrumb.html" . }}
+<section class="container">
+  <h1>{{ .Title }}</h1>
+  <p><small>{{ .Date.Format "02/01/2006" }}</small></p>
+
+  <div>
+    {{ .Content }}
+  </div>
+</section>
+
+{{ end }}
+

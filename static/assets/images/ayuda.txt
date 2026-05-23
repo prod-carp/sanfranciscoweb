@@ -1,0 +1,13 @@
+<div class="map-container">
+
+  <!-- Alternativa sin cookies -->
+  <a href="https://www.google.com/maps?ll=40.29013,-3.807225&z=18&t=m&hl=es&gl=ES&mapclient=embed&cid=2786610670041187173" target="_blank" rel="noopener noreferrer" class="map-placeholder"><img src="/assets/images/mapa.webp" alt="Ubicación de la parroquia" width="800" height="600"><div class="map-overlay">Abrir ubicación en Google Maps</div></a>
+
+  <!-- Iframe solo tras aceptar cookies -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1521.6791911841603!2d-3.8063355!3d40.2900009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418b9fa6c0b7e5%3A0x26ac07a3eb1e4365!2sParroquia%20de%20San%20Francisco%20y%20Santa%20Clara%20de%20As%C3%ADs!5e0!3m2!1ses!2ses!4v1775985595189!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+
+
+\static\assets\images
