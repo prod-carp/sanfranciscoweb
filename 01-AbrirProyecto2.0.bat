@@ -1,6 +1,7 @@
 @echo off
 title Bajar desde GitHub
 color 0B
+chcp 65001 >nul
 
 echo ====================================
 echo     BAJAR CAMBIOS DE GITHUB
