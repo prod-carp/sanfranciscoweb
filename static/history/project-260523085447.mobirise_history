@@ -67,7 +67,7 @@
     "versionPublish": "6.1.12",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/iconosfyc-48x48.png",
-    "mbrsiteDomain": "ke36nkklmz",
+    "mbrsiteDomain": "otucyaynfy",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -85,11 +85,11 @@
       "underlineLink": true,
       "opacityOverlay": "0",
       "bgOpacity": "100",
-      "text": "Usamos cookies para ofrecerte la mejor experiencia como te contamos en nuestra <a href='cookies.html'>política de cookies</a>.",
-      "textButton": "ACEPTAR",
+      "text": "We use cookies to give you the best experience as specified in the <a href='privacy.html'>cookie policy</a>. Rejecting cookies may make some features unavailable.",
+      "textButton": "ACCEPT",
       "rejectText": "REJECT"
     },
-    "cookiesAlertType": "1",
+    "cookiesAlertType": "2",
     "publishType": "local",
     "publishPath": "@PROJECT_PATH@"
   },
