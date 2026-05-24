@@ -11437,9 +11437,14 @@ a {
   height: 2px;
   margin: 0 auto;
 }
+.cid-vkzCxnVkHk {
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+  background-color: #ffffff;
+}
 .cid-vkz8qewwas {
-  padding-top: 4rem;
-  padding-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
 }
 .cid-vkz8qewwas .mbr-fallback-image.disabled {
@@ -11516,6 +11521,48 @@ a {
   .cid-vkz8qewwas .icon-box::before {
     top: 114%;
   }
+}
+.cid-vkzDhN11HN {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-vkzDhN11HN .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-vkzDhN11HN .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-vkzDhN11HN .mbr-iconfont {
+  font-size: 1.4rem !important;
+  font-family: 'Moririse2' !important;
+  color: #000000;
+  margin-left: 1rem;
+}
+.cid-vkzDhN11HN .panel-group {
+  border: none;
+}
+.cid-vkzDhN11HN .panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cid-vkzDhN11HN .panel-body,
+.cid-vkzDhN11HN .card-header {
+  padding: 1rem 0;
+}
+.cid-vkzDhN11HN .panel-title-edit {
+  color: #000000;
+}
+.cid-vkzDhN11HN .card .card-header {
+  background-color: transparent;
+  margin-bottom: 0;
 }
 .cid-vio2oWcDy2 {
   padding-top: 5rem;
