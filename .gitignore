@@ -76,3 +76,6 @@ Thumbs.db
 # Google Drive
 .tmp.drivedownload/
 .tmp.driveupload/
+
+# Mobirise
+static/screenshot.png
