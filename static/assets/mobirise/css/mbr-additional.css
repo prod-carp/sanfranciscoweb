@@ -11439,50 +11439,8 @@ a {
 }
 .cid-vkzCxnVkHk {
   padding-top: 2rem;
-  padding-bottom: 0rem;
+  padding-bottom: 10rem;
   background-color: #ffffff;
-}
-.cid-vkzDhN11HN {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ffffff;
-}
-.cid-vkzDhN11HN .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-vkzDhN11HN .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-vkzDhN11HN .mbr-iconfont {
-  font-size: 1.4rem !important;
-  font-family: 'Moririse2' !important;
-  color: #000000;
-  margin-left: 1rem;
-}
-.cid-vkzDhN11HN .panel-group {
-  border: none;
-}
-.cid-vkzDhN11HN .panel-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.cid-vkzDhN11HN .panel-body,
-.cid-vkzDhN11HN .card-header {
-  padding: 1rem 0;
-}
-.cid-vkzDhN11HN .panel-title-edit {
-  color: #000000;
-}
-.cid-vkzDhN11HN .card .card-header {
-  background-color: transparent;
-  margin-bottom: 0;
 }
 .cid-vio2oWcDy2 {
   padding-top: 5rem;
@@ -11897,7 +11855,7 @@ a {
 .cid-vkP3n1dokA {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-image: url("../../../assets/images/grupooracion.webp");
+  background-image: url("../../../assets/images/madres.webp");
 }
 .cid-vkP3n1dokA .mbr-fallback-image.disabled {
   display: none;
@@ -11913,10 +11871,10 @@ a {
 }
 .cid-vkP3n1dokA .mbr-text,
 .cid-vkP3n1dokA .mbr-section-btn {
-  color: #fafafa;
+  color: #22a5e5;
 }
 .cid-vkP3n1dokA .mbr-section-title {
-  color: #fafafa;
+  color: #22a5e5;
 }
 .cid-vkP3n1o21S {
   padding-top: 1rem;
@@ -11943,6 +11901,9 @@ a {
   padding-top: 2rem;
   padding-bottom: 0rem;
   background-color: #ffffff;
+}
+.cid-vkP3n1KDmQ .mbr-text {
+  text-align: justify;
 }
 .cid-vkP3n1Thr8 {
   padding-top: 6rem;
@@ -12399,7 +12360,7 @@ a {
 .cid-vkP3oWzLQM {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-image: url("../../../assets/images/grupooracion.webp");
+  background-image: url("../../../assets/images/rosario.webp");
 }
 .cid-vkP3oWzLQM .mbr-fallback-image.disabled {
   display: none;
@@ -12425,11 +12386,6 @@ a {
   padding-bottom: 1rem;
   background-color: #ffffff;
 }
-.cid-vkP3oWQTZa {
-  padding-top: 0rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-}
 .cid-vkP3oWZUfh {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -12446,47 +12402,8 @@ a {
   padding-bottom: 0rem;
   background-color: #ffffff;
 }
-.cid-vkP3oXfdnM {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ffffff;
-}
-.cid-vkP3oXfdnM .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-vkP3oXfdnM .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-vkP3oXfdnM .mbr-iconfont {
-  font-size: 1.4rem !important;
-  font-family: 'Moririse2' !important;
-  color: #000000;
-  margin-left: 1rem;
-}
-.cid-vkP3oXfdnM .panel-group {
-  border: none;
-}
-.cid-vkP3oXfdnM .panel-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.cid-vkP3oXfdnM .panel-body,
-.cid-vkP3oXfdnM .card-header {
-  padding: 1rem 0;
-}
-.cid-vkP3oXfdnM .panel-title-edit {
-  color: #000000;
-}
-.cid-vkP3oXfdnM .card .card-header {
-  background-color: transparent;
-  margin-bottom: 0;
+.cid-vkP3oX6QX4 .mbr-text {
+  text-align: justify;
 }
 .cid-vkP3oXuVoX {
   padding-top: 5rem;
@@ -12901,7 +12818,7 @@ a {
 .cid-vkP3pY0uJj {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-image: url("../../../assets/images/grupooracion.webp");
+  background-image: url("../../../assets/images/mbr-3-591x788.webp");
 }
 .cid-vkP3pY0uJj .mbr-fallback-image.disabled {
   display: none;
@@ -12920,15 +12837,10 @@ a {
   color: #fafafa;
 }
 .cid-vkP3pY0uJj .mbr-section-title {
-  color: #fafafa;
+  color: #000000;
 }
 .cid-vkP3pY9r6F {
   padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-}
-.cid-vkP3pYfAlu {
-  padding-top: 0rem;
   padding-bottom: 1rem;
   background-color: #ffffff;
 }
@@ -12947,6 +12859,9 @@ a {
   padding-top: 2rem;
   padding-bottom: 0rem;
   background-color: #ffffff;
+}
+.cid-vkP3pYszpk .mbr-text {
+  text-align: justify;
 }
 .cid-vkP3pYzekK {
   padding-top: 6rem;
@@ -13403,7 +13318,7 @@ a {
 .cid-vkP3qtNMk9 {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-image: url("../../../assets/images/grupooracion.webp");
+  background-image: url("../../../assets/images/logorojo-494x355.png");
 }
 .cid-vkP3qtNMk9 .mbr-fallback-image.disabled {
   display: none;
@@ -13419,18 +13334,13 @@ a {
 }
 .cid-vkP3qtNMk9 .mbr-text,
 .cid-vkP3qtNMk9 .mbr-section-btn {
-  color: #fafafa;
+  color: #000000;
 }
 .cid-vkP3qtNMk9 .mbr-section-title {
-  color: #fafafa;
+  color: #000000;
 }
 .cid-vkP3qtWJ9P {
   padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-}
-.cid-vkP3qu2zjG {
-  padding-top: 0rem;
   padding-bottom: 1rem;
   background-color: #ffffff;
 }
@@ -13449,6 +13359,9 @@ a {
   padding-top: 2rem;
   padding-bottom: 0rem;
   background-color: #ffffff;
+}
+.cid-vkP3qugjYn .mbr-text {
+  text-align: justify;
 }
 .cid-vkP3qunpYZ {
   padding-top: 6rem;
@@ -13905,7 +13818,7 @@ a {
 .cid-vkP3r93bHe {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-image: url("../../../assets/images/grupooracion.webp");
+  background-image: url("../../../assets/images/mbr-1-591x428.jpg");
 }
 .cid-vkP3r93bHe .mbr-fallback-image.disabled {
   display: none;
@@ -13921,36 +13834,23 @@ a {
 }
 .cid-vkP3r93bHe .mbr-text,
 .cid-vkP3r93bHe .mbr-section-btn {
-  color: #fafafa;
+  color: #000000;
 }
 .cid-vkP3r93bHe .mbr-section-title {
-  color: #fafafa;
+  color: #000000;
 }
 .cid-vkP3r9cn0t {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #ffffff;
 }
-.cid-vkP3r9jql5 {
-  padding-top: 0rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-}
-.cid-vkP3r9qODP {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-}
-.cid-vkP3r9qODP .line {
-  background-color: #6592e6;
-  align: center;
-  height: 2px;
-  margin: 0 auto;
-}
 .cid-vkP3r9wgdh {
   padding-top: 2rem;
   padding-bottom: 0rem;
   background-color: #ffffff;
+}
+.cid-vkP3r9wgdh .mbr-text {
+  text-align: justify;
 }
 .cid-vkP3r9EuVM {
   padding-top: 6rem;
@@ -14407,7 +14307,7 @@ a {
 .cid-vkP3rC6esG {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-image: url("../../../assets/images/grupooracion.webp");
+  background-image: url("../../../assets/images/mbr-591x408.jpg");
 }
 .cid-vkP3rC6esG .mbr-fallback-image.disabled {
   display: none;
@@ -14423,18 +14323,13 @@ a {
 }
 .cid-vkP3rC6esG .mbr-text,
 .cid-vkP3rC6esG .mbr-section-btn {
-  color: #fafafa;
+  color: #000000;
 }
 .cid-vkP3rC6esG .mbr-section-title {
-  color: #fafafa;
+  color: #000000;
 }
 .cid-vkP3rCfnvy {
   padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-}
-.cid-vkP3rClmR9 {
-  padding-top: 0rem;
   padding-bottom: 1rem;
   background-color: #ffffff;
 }
@@ -14909,7 +14804,7 @@ a {
 .cid-vkP3tg6eHJ {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-image: url("../../../assets/images/grupooracion.webp");
+  background-image: url("../../../assets/images/mbr-4-591x394.jpg");
 }
 .cid-vkP3tg6eHJ .mbr-fallback-image.disabled {
   display: none;
@@ -14925,36 +14820,23 @@ a {
 }
 .cid-vkP3tg6eHJ .mbr-text,
 .cid-vkP3tg6eHJ .mbr-section-btn {
-  color: #fafafa;
+  color: #22a5e5;
 }
 .cid-vkP3tg6eHJ .mbr-section-title {
-  color: #fafafa;
+  color: #22a5e5;
 }
 .cid-vkP3tgfEIR {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #ffffff;
 }
-.cid-vkP3tglSth {
-  padding-top: 0rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-}
-.cid-vkP3tgs0TZ {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-}
-.cid-vkP3tgs0TZ .line {
-  background-color: #6592e6;
-  align: center;
-  height: 2px;
-  margin: 0 auto;
-}
 .cid-vkP3tgzaDQ {
   padding-top: 2rem;
   padding-bottom: 0rem;
   background-color: #ffffff;
+}
+.cid-vkP3tgzaDQ .mbr-text {
+  text-align: justify;
 }
 .cid-vkP3tgFscS {
   padding-top: 6rem;
@@ -15411,7 +15293,7 @@ a {
 .cid-vkP3utCV0E {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-image: url("../../../assets/images/grupooracion.webp");
+  background-image: url("../../../assets/images/mbr-1-591x370.jpg");
 }
 .cid-vkP3utCV0E .mbr-fallback-image.disabled {
   display: none;
@@ -15427,18 +15309,13 @@ a {
 }
 .cid-vkP3utCV0E .mbr-text,
 .cid-vkP3utCV0E .mbr-section-btn {
-  color: #fafafa;
+  color: #000000;
 }
 .cid-vkP3utCV0E .mbr-section-title {
-  color: #fafafa;
+  color: #000000;
 }
 .cid-vkP3utLCcU {
   padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-}
-.cid-vkP3utRH66 {
-  padding-top: 0rem;
   padding-bottom: 1rem;
   background-color: #ffffff;
 }
@@ -15455,50 +15332,11 @@ a {
 }
 .cid-vkP3uu4p1E {
   padding-top: 2rem;
-  padding-bottom: 0rem;
+  padding-bottom: 10rem;
   background-color: #ffffff;
 }
-.cid-vkP3uubUit {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ffffff;
-}
-.cid-vkP3uubUit .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-vkP3uubUit .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-vkP3uubUit .mbr-iconfont {
-  font-size: 1.4rem !important;
-  font-family: 'Moririse2' !important;
-  color: #000000;
-  margin-left: 1rem;
-}
-.cid-vkP3uubUit .panel-group {
-  border: none;
-}
-.cid-vkP3uubUit .panel-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.cid-vkP3uubUit .panel-body,
-.cid-vkP3uubUit .card-header {
-  padding: 1rem 0;
-}
-.cid-vkP3uubUit .panel-title-edit {
-  color: #000000;
-}
-.cid-vkP3uubUit .card .card-header {
-  background-color: transparent;
-  margin-bottom: 0;
+.cid-vkP3uu4p1E .mbr-text {
+  text-align: justify;
 }
 .cid-vkP3uuoCEH {
   padding-top: 5rem;
@@ -15912,8 +15750,8 @@ a {
 }
 .cid-vkP3vgPOga {
   padding-top: 10rem;
-  padding-bottom: 5rem;
-  background-image: url("../../../assets/images/grupooracion.webp");
+  padding-bottom: 10rem;
+  background-image: url("../../../assets/images/mbr-5-591x394.jpg");
 }
 .cid-vkP3vgPOga .mbr-fallback-image.disabled {
   display: none;
@@ -15939,11 +15777,6 @@ a {
   padding-bottom: 1rem;
   background-color: #ffffff;
 }
-.cid-vkP3vh9l9q {
-  padding-top: 0rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-}
 .cid-vkP3vhjWF9 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -15955,52 +15788,16 @@ a {
   height: 2px;
   margin: 0 auto;
 }
+.cid-vkP3vhjWF9 .mbr-text {
+  text-align: center;
+}
 .cid-vkP3vhpigK {
   padding-top: 2rem;
-  padding-bottom: 0rem;
+  padding-bottom: 10rem;
   background-color: #ffffff;
 }
-.cid-vkP3vhxnpM {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ffffff;
-}
-.cid-vkP3vhxnpM .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-vkP3vhxnpM .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-vkP3vhxnpM .mbr-iconfont {
-  font-size: 1.4rem !important;
-  font-family: 'Moririse2' !important;
-  color: #000000;
-  margin-left: 1rem;
-}
-.cid-vkP3vhxnpM .panel-group {
-  border: none;
-}
-.cid-vkP3vhxnpM .panel-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.cid-vkP3vhxnpM .panel-body,
-.cid-vkP3vhxnpM .card-header {
-  padding: 1rem 0;
-}
-.cid-vkP3vhxnpM .panel-title-edit {
-  color: #000000;
-}
-.cid-vkP3vhxnpM .card .card-header {
-  background-color: transparent;
-  margin-bottom: 0;
+.cid-vkP3vhpigK .mbr-text {
+  text-align: justify;
 }
 .cid-vkP3vhKUS0 {
   padding-top: 5rem;
@@ -16415,7 +16212,7 @@ a {
 .cid-vkP3tRQKPp {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-image: url("../../../assets/images/grupooracion.webp");
+  background-image: url("../../../assets/images/proyecto.webp");
 }
 .cid-vkP3tRQKPp .mbr-fallback-image.disabled {
   display: none;
@@ -16431,10 +16228,10 @@ a {
 }
 .cid-vkP3tRQKPp .mbr-text,
 .cid-vkP3tRQKPp .mbr-section-btn {
-  color: #fafafa;
+  color: #000000;
 }
 .cid-vkP3tRQKPp .mbr-section-title {
-  color: #fafafa;
+  color: #000000;
 }
 .cid-vkP3tS0BCP {
   padding-top: 1rem;
@@ -16461,6 +16258,9 @@ a {
   padding-top: 2rem;
   padding-bottom: 0rem;
   background-color: #ffffff;
+}
+.cid-vkP3tSjfMn .mbr-text {
+  text-align: justify;
 }
 .cid-vkP3tSp6xM {
   padding-top: 6rem;
