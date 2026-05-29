@@ -1,9 +1,4 @@
 @echo off
-echo Eliminando archivos desktop.ini...
-del /s /q /a:h "%~dp0desktop.ini"
-echo ¡Completado!
-cls
-
 title Subir a GitHub - Automatizado
 color 0A
 
@@ -11,6 +6,9 @@ echo ====================================
 echo     SUBIR CAMBIOS A GITHUB
 echo ====================================
 echo.
+
+REM Limpiar referencias corruptas antes de empezar
+del /s /q /a:h "%~dp0desktop.ini" >nul 2>&1
 
 REM Verificar que estamos en un repositorio git
 git rev-parse --git-dir >nul 2>&1

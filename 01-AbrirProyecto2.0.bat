@@ -9,10 +9,7 @@ echo ====================================
 echo.
 
 REM Limpiar referencias corruptas antes de empezar
-if exist .git\refs\heads\desktop.ini (
-    echo [LIMPIANDO] Eliminando referencia corrupta...
-    del .git\refs\heads\desktop.ini 2>nul
-)
+del /s /q /a:h "%~dp0desktop.ini" >nul 2>&1
 
 echo [1/4] Limpiando repositorio local...
 git gc --prune=now 2>nul

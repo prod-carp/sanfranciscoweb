@@ -1,6 +1,3 @@
 @echo off
-echo Eliminando archivos desktop.ini...
-del /s /q /a:h "%~dp0desktop.ini"
-echo ¡Completado!
-cls
+del /s /q /a:h "%~dp0desktop.ini" >nul 2>&1
 cmd
