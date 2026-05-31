@@ -8987,6 +8987,53 @@ a {
     left: -1rem;
   }
 }
+.cid-vleh9en85U {
+  display: flex;
+  padding-top: 13rem;
+  padding-bottom: 0rem;
+  background-image: url("../../../assets/images/confirmacion-2.webp");
+}
+.cid-vleh9en85U .mbr-overlay {
+  background-color: #000000;
+  opacity: 0.5;
+}
+@media (min-width: 768px) {
+  .cid-vleh9en85U {
+    align-items: flex-end;
+  }
+  .cid-vleh9en85U .row {
+    justify-content: center;
+  }
+  .cid-vleh9en85U .content-wrap {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-vleh9en85U .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-vleh9en85U {
+    -webkit-align-items: center;
+    align-items: flex-end;
+  }
+  .cid-vleh9en85U .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-vleh9en85U .content-wrap {
+    width: 100%;
+  }
+}
+.cid-vleh9en85U .mbr-section-title,
+.cid-vleh9en85U .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-vleh9en85U .mbr-text,
+.cid-vleh9en85U .mbr-section-btn {
+  text-align: center;
+}
 .cid-vitjKCBsVT {
   padding-top: 3rem;
   padding-bottom: 5rem;
