@@ -8493,7 +8493,7 @@ a {
   display: flex;
   padding-top: 13rem;
   padding-bottom: 0rem;
-  background-image: url("../../../assets/images/confesionarios.webp");
+  background-image: url("../../../assets/images/confesion.webp");
 }
 .cid-vl2eGPaztj .mbr-overlay {
   background-color: #000000;
@@ -9036,8 +9036,37 @@ a {
 }
 .cid-vitjKCBsVT {
   padding-top: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
+}
+.cid-vloOS3PrgK {
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-vloOS3PrgK .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-vloOS3PrgK .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-vloOS3PrgK .mbr-text,
+.cid-vloOS3PrgK .mbr-section-btn {
+  color: #232323;
+}
+.cid-vloOS3PrgK .card-title,
+.cid-vloOS3PrgK .card-box {
+  color: #000000;
+}
+.cid-vloOS3PrgK .mbr-text,
+.cid-vloOS3PrgK .link-wrap {
+  color: #ffffff;
 }
 .cid-vitjKCOdLR {
   padding-top: 5rem;
@@ -9456,10 +9485,86 @@ a {
     left: -1rem;
   }
 }
+.cid-vloue32EmT {
+  display: flex;
+  padding-top: 13rem;
+  padding-bottom: 0rem;
+  background-image: url("../../../assets/images/matrimonio.webp");
+}
+.cid-vloue32EmT .mbr-overlay {
+  background-color: #000000;
+  opacity: 0.5;
+}
+@media (min-width: 768px) {
+  .cid-vloue32EmT {
+    align-items: flex-end;
+  }
+  .cid-vloue32EmT .row {
+    justify-content: center;
+  }
+  .cid-vloue32EmT .content-wrap {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-vloue32EmT .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-vloue32EmT {
+    -webkit-align-items: center;
+    align-items: flex-end;
+  }
+  .cid-vloue32EmT .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-vloue32EmT .content-wrap {
+    width: 100%;
+  }
+}
+.cid-vloue32EmT .mbr-section-title,
+.cid-vloue32EmT .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-vloue32EmT .mbr-text,
+.cid-vloue32EmT .mbr-section-btn {
+  text-align: center;
+}
 .cid-viugWk9tfO {
   padding-top: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
+}
+.cid-vlounGYrt0 {
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-vlounGYrt0 .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-vlounGYrt0 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-vlounGYrt0 .mbr-text,
+.cid-vlounGYrt0 .mbr-section-btn {
+  color: #232323;
+}
+.cid-vlounGYrt0 .card-title,
+.cid-vlounGYrt0 .card-box {
+  color: #000000;
+}
+.cid-vlounGYrt0 .mbr-text,
+.cid-vlounGYrt0 .link-wrap {
+  color: #ffffff;
 }
 .cid-viugWkkV0o {
   padding-top: 5rem;
@@ -9878,10 +9983,86 @@ a {
     left: -1rem;
   }
 }
+.cid-vlou9Pbf4W {
+  display: flex;
+  padding-top: 13rem;
+  padding-bottom: 0rem;
+  background-image: url("../../../assets/images/ordensacerdotal.webp");
+}
+.cid-vlou9Pbf4W .mbr-overlay {
+  background-color: #000000;
+  opacity: 0.5;
+}
+@media (min-width: 768px) {
+  .cid-vlou9Pbf4W {
+    align-items: flex-end;
+  }
+  .cid-vlou9Pbf4W .row {
+    justify-content: center;
+  }
+  .cid-vlou9Pbf4W .content-wrap {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-vlou9Pbf4W .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-vlou9Pbf4W {
+    -webkit-align-items: center;
+    align-items: flex-end;
+  }
+  .cid-vlou9Pbf4W .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-vlou9Pbf4W .content-wrap {
+    width: 100%;
+  }
+}
+.cid-vlou9Pbf4W .mbr-section-title,
+.cid-vlou9Pbf4W .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-vlou9Pbf4W .mbr-text,
+.cid-vlou9Pbf4W .mbr-section-btn {
+  text-align: center;
+}
 .cid-viui2mgmJM {
   padding-top: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
+}
+.cid-vlotUYkXIa {
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-vlotUYkXIa .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-vlotUYkXIa .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-vlotUYkXIa .mbr-text,
+.cid-vlotUYkXIa .mbr-section-btn {
+  color: #232323;
+}
+.cid-vlotUYkXIa .card-title,
+.cid-vlotUYkXIa .card-box {
+  color: #000000;
+}
+.cid-vlotUYkXIa .mbr-text,
+.cid-vlotUYkXIa .link-wrap {
+  color: #ffffff;
 }
 .cid-viui2mqDXo {
   padding-top: 5rem;
@@ -10300,10 +10481,86 @@ a {
     left: -1rem;
   }
 }
+.cid-vlouciht3g {
+  display: flex;
+  padding-top: 13rem;
+  padding-bottom: 0rem;
+  background-image: url("../../../assets/images/unciondeenfermos.webp");
+}
+.cid-vlouciht3g .mbr-overlay {
+  background-color: #000000;
+  opacity: 0.5;
+}
+@media (min-width: 768px) {
+  .cid-vlouciht3g {
+    align-items: flex-end;
+  }
+  .cid-vlouciht3g .row {
+    justify-content: center;
+  }
+  .cid-vlouciht3g .content-wrap {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-vlouciht3g .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-vlouciht3g {
+    -webkit-align-items: center;
+    align-items: flex-end;
+  }
+  .cid-vlouciht3g .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-vlouciht3g .content-wrap {
+    width: 100%;
+  }
+}
+.cid-vlouciht3g .mbr-section-title,
+.cid-vlouciht3g .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-vlouciht3g .mbr-text,
+.cid-vlouciht3g .mbr-section-btn {
+  text-align: center;
+}
 .cid-viuj77QNjB {
   padding-top: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
+}
+.cid-vlos7gwkgi {
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-vlos7gwkgi .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-vlos7gwkgi .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-vlos7gwkgi .mbr-text,
+.cid-vlos7gwkgi .mbr-section-btn {
+  color: #232323;
+}
+.cid-vlos7gwkgi .card-title,
+.cid-vlos7gwkgi .card-box {
+  color: #000000;
+}
+.cid-vlos7gwkgi .mbr-text,
+.cid-vlos7gwkgi .link-wrap {
+  color: #ffffff;
 }
 .cid-viuj780aoj {
   padding-top: 5rem;
