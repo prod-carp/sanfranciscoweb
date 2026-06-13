@@ -2,6 +2,8 @@
 title Subir a GitHub - Automatizado
 color 0A
 
+IF EXIST limpieza.ps1 (powershell -File "limpieza.ps1")
+
 echo ====================================
 echo     SUBIR CAMBIOS A GITHUB
 echo ====================================
