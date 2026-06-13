@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://sanfranciscoysantaclara.es/'
 languageCode = 'es-es'
-title = 'Parroquia San Francisco y Santa Clara'
+title = 'Parroquia San Francisco y Santa Clara de Asís'
 
 # Para URLs más limpias
 relativeURLs = true
