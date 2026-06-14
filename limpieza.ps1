@@ -66,11 +66,11 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
     if ($content -match $pattern) {
             $content = $content -replace $pattern, '<meta property="og:type" content="website">'
             }
-    # 1.4 Edge -> og:Title
-    $pattern = '<meta http-equiv="X-UA-Compatible" content="IE=edge">'
+    # 1.5 html -> html-es
+    $pattern = '<html  '
 
     if ($content -match $pattern) {
-            $content = $content -replace $pattern, '<meta property="og:url" content="https://sanfranciscoysantaclara.es">'
+            $content = $content -replace $pattern, '<html lang="es"'
             }
 
 
@@ -84,13 +84,21 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
             $canonicalAdded++
             $changed = $true
             Write-Host "  [OK] Canonical agregado: $canonicalTag" -ForegroundColor Green
-            # Read-Host "Presiona Enter para continuar"
+            #Read-Host "Presiona Enter para continuar"
         } else {
             Write-Host "  [!] No se encontró <head>, no se agregó canonical" -ForegroundColor Yellow
         }
     } else {
         Write-Host "  [i] Canonical ya existe" -ForegroundColor Gray
     }
+
+    # 1.4 Edge -> og:URL
+    $canonicalTag = "$baseUrl/$relativePath"
+    $pattern = '<meta http-equiv="X-UA-Compatible" content="IE=edge">'
+
+    if ($content -match $pattern) {
+            $content = $content -replace $pattern, "<meta property=`"og:url`" content=`"$canonicalTag`">"
+            }
     
     # Guardar cambios si hubo modificaciones
     if ($changed) {
@@ -110,3 +118,4 @@ Write-Host "Código Mobirise eliminado: $mobiriseRemoved" -ForegroundColor Green
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 # Read-Host "Presiona Enter para salir"
+Clear-Host
