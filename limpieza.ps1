@@ -66,6 +66,15 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
     if ($content -match $pattern) {
             $content = $content -replace $pattern, '<meta property="og:type" content="website">'
             }
+
+    # 1.4 Edge -> og:URL
+    $canonicalTag = "$baseUrl/$relativePath"
+    $pattern = '<meta http-equiv="X-UA-Compatible" content="IE=edge">'
+
+    if ($content -match $pattern) {
+            $content = $content -replace $pattern, "<meta property=`"og:url`" content=`"$canonicalTag`">"
+            }
+
     # 1.5 html -> html-es
     $pattern = '<html  '
 
@@ -73,6 +82,63 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
             $content = $content -replace $pattern, '<html lang="es"'
             }
 
+    # 1.5.1 twitter:image:src
+    $pattern = '"twitter:image:src"'
+
+    if ($content -match $pattern) {
+            $content = $content -replace $pattern, '"twitter:image"'
+            }
+    # 1.5.2 URL ABSOLUTAS
+    $pattern = 'content="assets'
+
+    if ($content -match $pattern) {
+            $content = $content -replace $pattern, 'content="https://sanfranciscoysantaclara.es/assets'
+            }
+    # 1.5.3 URL ABSOLUTAS 2
+    $pattern = 'href="assets'
+
+    if ($content -match $pattern) {
+            $content = $content -replace $pattern, 'href="https://sanfranciscoysantaclara.es/assets'
+            }
+
+    # 1.6 Buscar la meta description y extraer su contenido
+$patternDesc = '<meta name="description" content="(.*?)">'
+
+if ($content -match $patternDesc) {
+    # Extraer el contenido capturado
+    $descriptionContent = $matches[1]
+    
+    # Crear la línea og:description
+    $ogTitleLine = '<meta property="og:description" content="' + $descriptionContent + '">'
+    $twittercontent = '<meta name="twitter:description" content="' + $descriptionContent + '">'
+    
+    # Buscar la línea específica y hacer el reemplazo
+    $patternDescLine = '<meta name="description" content=".*?">'
+    $oglocale = '<meta property="og:locale" content="es_ES">'
+    $sitename = '<meta property="og:site_name" content="Parroquia San Francisco y Santa Clara de Asís">'
+    $autor = '<meta name="author" content="Parroquia San Francisco y Santa Clara de Asís">'
+    $codigoesquema = '<script type="application/ld+json">{"@context":"https://schema.org","@type":"Church","name":"Parroquia San Francisco y Santa Clara de Asís","url":"https://sanfranciscoysantaclara.es","telephone":"+34 91 615 24 31","email":"sf.sc.de.asis@gmail.com","image":"https://sanfranciscoysantaclara.es/assets/images/index-meta-1200x630.webp","address":{"@type":"PostalAddress","streetAddress":"Calle de Suecia, 2","addressLocality":"Fuenlabrada","addressRegion":"Madrid","postalCode":"28942","addressCountry":"ES"},"sameAs":["https://www.instagram.com/san.franciscoyclara/"]}</script>'
+    
+    # Método alternativo usando -replace correctamente
+    $content = $content -replace "($patternDescLine)", "`$1`n  $ogTitleLine `n  $oglocale `n  $sitename `n  $autor `n  $twittercontent `n  $codigoesquema"
+}
+
+    # 1.7 OGTITLE
+    $patternDesc = '<title>(.*?)</title>'
+    
+    if ($content -match $patternDesc) {
+    # Extraer el contenido capturado
+    $descriptionContent = $matches[1]
+    
+    # Crear la línea og:title
+    $ogTitleLine = '<meta property="og:title" content="' + $descriptionContent + '">'
+         
+    # Buscar la línea específica y hacer el reemplazo
+    $patternDescLine = '<title>.*?</title>'
+        
+    # Método alternativo usando -replace correctamente
+    $content = $content -replace "($patternDescLine)", "`$1`n  $ogTitleLine"
+}
 
     # === 2. AGREGAR CANONICAL SI NO EXISTE ===
     $canonicalTag = '<link rel="canonical" href="' + $baseUrl + '/' + $relativePath + '" />'
@@ -84,7 +150,7 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
             $canonicalAdded++
             $changed = $true
             Write-Host "  [OK] Canonical agregado: $canonicalTag" -ForegroundColor Green
-            #Read-Host "Presiona Enter para continuar"
+            # Read-Host "Presiona Enter para continuar"
         } else {
             Write-Host "  [!] No se encontró <head>, no se agregó canonical" -ForegroundColor Yellow
         }
@@ -92,13 +158,7 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
         Write-Host "  [i] Canonical ya existe" -ForegroundColor Gray
     }
 
-    # 1.4 Edge -> og:URL
-    $canonicalTag = "$baseUrl/$relativePath"
-    $pattern = '<meta http-equiv="X-UA-Compatible" content="IE=edge">'
-
-    if ($content -match $pattern) {
-            $content = $content -replace $pattern, "<meta property=`"og:url`" content=`"$canonicalTag`">"
-            }
+    
     
     # Guardar cambios si hubo modificaciones
     if ($changed) {
