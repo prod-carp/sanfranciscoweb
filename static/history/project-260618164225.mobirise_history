@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "grupos.html",
+    "currentPage": "rosariomanto.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -66,7 +66,7 @@
     ],
     "imageResize": true,
     "uniqCompNum": 294,
-    "versionPublish": "6.1.12",
+    "versionPublish": "6.1.9",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/iconosfyc-48x48.png",
     "mbrsiteDomain": "9qbudehs6v",
