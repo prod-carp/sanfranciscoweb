@@ -101,11 +101,16 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
             $content = $content -replace $pattern, 'href="https://sanfranciscoysantaclara.es/assets'
             }
     # 1.5.4 COOKIES PARA QUE FUNCIONE EL MENU
-    $pattern = '<script type="text/plain" data-src="assets/bootstrap/js/bootstrap.bundle.min.js"></script><script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script><script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script><script type="text/plain" data-src="assets/smoothscroll/smooth-scroll.js"></script><script type="text/plain" data-src="assets/ytplayer/index.js"></script><script type="text/plain" data-src="assets/dropdown/js/navbar-dropdown.js"></script><script type="text/plain" data-src="assets/theme/js/script.js"></script>'
-
-    if ($content -match $pattern) {
-            $content = $content -replace $pattern, '<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script> <script src="assets/smoothscroll/smooth-scroll.js"></script> <script src="assets/dropdown/js/navbar-dropdown.js"></script> <script src="assets/theme/js/script.js"></script> <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script> <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script> <script type="text/plain" data-src="assets/ytplayer/index.js"></script>'
-            }
+    $pattern = '<script type="text/plain" data-src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>'
+    if ($content -match $pattern) { $content = $content -replace $pattern, '<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>' }
+    $pattern = '<script type="text/plain" data-src="assets/smoothscroll/smooth-scroll.js"></script>'
+    if ($content -match $pattern) { $content = $content -replace $pattern, '<script src="assets/smoothscroll/smooth-scroll.js"></script>' }
+    $pattern = '<script type="text/plain" data-src="assets/dropdown/js/navbar-dropdown.js"></script>'
+    if ($content -match $pattern) { $content = $content -replace $pattern, '<script src="assets/dropdown/js/navbar-dropdown.js"></script>' }
+    $pattern = '<script type="text/plain" data-src="assets/theme/js/script.js"></script>'
+    if ($content -match $pattern) { $content = $content -replace $pattern, '<script src="assets/theme/js/script.js"></script>' }
+    $pattern = '<script type="text/plain" data-src="assets/parallax/jarallax.js"></script>'
+    if ($content -match $pattern) { $content = $content -replace $pattern, '<script src="assets/parallax/jarallax.js"></script>' }
  
     # 1.6 Buscar la meta description y extraer su contenido
 $patternDesc = '<meta name="description" content="(.*?)">'
