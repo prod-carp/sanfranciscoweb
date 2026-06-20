@@ -127,6 +127,15 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
     if ($content -match $pattern) {
         $content = $content -replace $pattern, $replace;
     }
+
+    # 1.5.7 MAPS
+    $pattern = '<img src="assets/images/mapa.webp" alt="Mapa">';
+    $replace = '<div id=\"google-maps-placeholder\"><a href=\"https://www.google.com/maps?q=Parroquia+de+San+Francisco+y+Santa+Clara+de+As%C3%ADs\" target=\"_blank\" rel=\"noopener\"><img src=\"https://sanfranciscoysantaclara.es/assets/images/mapa.webp\" alt=\"Mapa de la parroquia\" style=\"width:100%;height:auto;border-radius:8px;\"></a><p style=\"text-align:center;margin-top:10px;\">Pulse sobre la imagen para abrir el mapa en Google Maps. Si acepta las cookies de terceros se mostrará integrado en esta página.</p></div><div class=\"google-map\" id=\"google-maps-embed\" style=\"display:none;\"><iframe frameborder=\"0\" style=\"border:0;width:100%;height:450px;\" data-src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1521.6791911841603!2d-3.8063355!3d40.2900009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418b9fa6c0b7e5%3A0x26ac07a3eb1e4365!2sParroquia%20de%20San%20Francisco%20y%20Santa%20Clara%20de%20As%C3%ADs!5e0!3m2!1ses!2ses!4v1775985595189!5m2!1ses!2ses\" allowfullscreen=\"\"></iframe></div><script>document.addEventListener(\"DOMContentLoaded\",function(){const accepted=document.cookie.includes(\"cookiesDirective=1\");if(accepted){const placeholder=document.getElementById(\"google-maps-placeholder\");const embed=document.getElementById(\"google-maps-embed\");if(placeholder)placeholder.style.display=\"none\";if(embed){embed.style.display=\"block\";const iframe=embed.querySelector(\"iframe\");if(iframe&&iframe.dataset.src){iframe.src=iframe.dataset.src;}}}});</script>';
+
+
+    if ($content -match $pattern) {
+        $content = $content -replace $pattern, $replace;
+    }
  
     # 1.6 Buscar la meta description y extraer su contenido
 $patternDesc = '<meta name="description" content="(.*?)">'
