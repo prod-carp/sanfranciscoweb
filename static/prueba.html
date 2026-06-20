@@ -1,167 +1,151 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="canonical" href="https://sanfranciscoysantaclara.es/prueba.html" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa con control de cookies</title>
-    <style>
-        /* Estilos opcionales para contener el mapa/imagen y darle aspecto consistente */
-        .map-container {
-            position: relative;
-            width: 100%;
-            max-width: 800px; /* Ajusta al ancho deseado */
-            height: 450px;    /* Ajusta la altura deseada */
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+  <link rel="canonical" href="https://sanfranciscoysantaclara.es/prueba.html" />
+  <meta name="robots" content="index, follow">
+  <meta charset="UTF-8">
+  <meta property="og:url" content="https://sanfranciscoysantaclara.es/prueba.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://sanfranciscoysantaclara.es/assets/images/prueba-meta.webp">
+  <meta property="og:image" content="https://sanfranciscoysantaclara.es/assets/images/prueba-meta.webp">
+  <meta name="twitter:title" content="prueba">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://sanfranciscoysantaclara.es/assets/images/iconosfyc-48x48.png" type="image/x-icon">
+  <meta name="description" content="Consulta la agenda parroquial digital con eventos, retiros y peregrinaciones. Sincronización automática, recordatorios, y gestión fácil.">
+  <meta property="og:description" content="Consulta la agenda parroquial digital con eventos, retiros y peregrinaciones. Sincronización automática, recordatorios, y gestión fácil."> 
+  <meta property="og:locale" content="es_ES"> 
+  <meta property="og:site_name" content="Parroquia San Francisco y Santa Clara de Asís"> 
+  <meta name="author" content="Parroquia San Francisco y Santa Clara de Asís"> 
+  <meta name="twitter:description" content="Consulta la agenda parroquial digital con eventos, retiros y peregrinaciones. Sincronización automática, recordatorios, y gestión fácil."> 
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Church","name":"Parroquia San Francisco y Santa Clara de Asís","url":"https://sanfranciscoysantaclara.es","telephone":"+34 91 615 24 31","image":"https://sanfranciscoysantaclara.es/assets/images/index-meta-1200x630.webp","address":{"@type":"PostalAddress","streetAddress":"Calle de Suecia, 2","addressLocality":"Fuenlabrada","addressRegion":"Madrid","postalCode":"28942","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":40.2896387,"longitude":-3.8060985},"sameAs":["https://www.instagram.com/san.franciscoyclara/"]}</script>
+  
+  
+  <title>prueba</title>
+  <meta property="og:title" content="prueba">
+  <link rel="stylesheet" href="https://sanfranciscoysantaclara.es/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://sanfranciscoysantaclara.es/assets/animatecss/animate.css">
+  <link rel="stylesheet" href="https://sanfranciscoysantaclara.es/assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="https://sanfranciscoysantaclara.es/assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="https://sanfranciscoysantaclara.es/assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Xanh+Mono:400,400i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Xanh+Mono:400,400i&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://sanfranciscoysantaclara.es/assets/mobirise/css/mbr-additional.css?v=PT8h9J"><link rel="stylesheet" href="https://sanfranciscoysantaclara.es/assets/mobirise/css/mbr-additional.css?v=PT8h9J" type="text/css">
 
-        .map-container iframe,
-        .map-container img {
-            width: 100%;
-            height: 100%;
-            border: 0;
-            object-fit: cover; /* Para que la imagen cubra el área sin deformarse */
-            cursor: pointer;    /* Indica que la imagen es clickeable */
-        }
-
-        /* Mensaje de estado opcional */
-        .cookie-status {
-            margin-top: 10px;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            color: #555;
-        }
-    </style>
+  
+  
+  
 </head>
 <body>
-
-    <!-- Contenedor donde se mostrará el mapa o la imagen -->
-    <div class="map-container" id="mapContainer">
-        <!-- El contenido se inyecta dinámicamente con JS -->
-    </div>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-vn61Us3LHh" once="menu" id="menu2-8f">
     
-    <!-- Opcional: texto de estado y botón para simular aceptación/rechazo de cookies -->
-    <div class="cookie-status">
-        Estado de cookies: <span id="cookieStatus">No aceptadas</span>
-        <br><br>
-        <button id="acceptCookiesBtn">Aceptar cookies (mostrar mapa real)</button>
-        <button id="rejectCookiesBtn">Rechazar cookies (mostrar imagen)</button>
-        <br><small>(Simula la decisión del usuario. En producción, esto se basaría en tu sistema real de gestión de cookies)</small>
-    </div>
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/images/iconosfyc-1-48x48.png" alt="Mobirise Website Builder" style="height: 3rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-info text-primary display-7" href="index.html">Parroquia SFSC</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item dropdown"><a class="nav-link link text-black text-primary dropdown-toggle show display-4" href="index.html#top" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">PARROQUIA</a><div class="dropdown-menu show" aria-labelledby="dropdown-386" data-bs-popper="none"><div class="dropdown"><a class="text-black text-primary dropdown-item dropdown-toggle display-4" href="index.html#top" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Santos Patronos</a><div class="dropdown-menu dropdown-submenu" aria-labelledby="dropdown-122"><a class="text-black show text-primary dropdown-item display-4" href="sanfrancisco.html">San Francisco de Asís</a><a class="text-black show text-primary dropdown-item display-4" href="santaclara.html">Santa Clara de Asís</a></div></div><a class="text-black show text-primary dropdown-item display-4" href="ubicacion.html">Cómo llegar</a><a class="text-black show text-primary dropdown-item display-4" href="contacto.html">Contacto</a><a class="text-black show text-primary dropdown-item display-4" href="donativos.html">Donativos</a></div></li><li class="nav-item"><a class="nav-link link show text-black display-4" href="horarios.html">HORARIOS</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="index.html#timeline3-4" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">ACTIVIDADES</a><div class="dropdown-menu" aria-labelledby="dropdown-707"><a class="dropdown-item text-black display-4" href="grupos.html">Grupos</a><a class="dropdown-item text-black display-4" href="calendario.html">Calendario</a><a class="dropdown-item text-black display-4" href="tablon.html">Tablón</a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-black display-4" href="index.html#features19-e" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">SACRAMENTOS</a><div class="dropdown-menu" aria-labelledby="dropdown-633"><a class="dropdown-item text-black display-4" href="bautismo.html">Bautismo</a><a class="dropdown-item text-black display-4" href="comunion.html">Comunión</a><a class="dropdown-item text-black display-4" href="confirmacion.html">Confirmación</a><a class="dropdown-item text-black display-4" href="matrimonio.html">Matrimonio</a><a class="dropdown-item text-black display-4" href="confesion.html">Confesión</a><a class="dropdown-item text-black display-4" href="ordensacerdotal.html">Orden Sacerdotal</a><a class="dropdown-item text-black display-4" href="uncionenfermos.html">Unción de enfermos</a></div>
+                    </li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
 
-    <script>
-        // --- CONFIGURACIÓN ---
-        // 1. URL del iframe incrustado de Google Maps (pon aquí tu URL real de Google Maps)
-        const GOOGLE_MAPS_IFRAME_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.204433565399!2d-3.703327284348625!3d40.41685797936385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287f1a6d2b9b%3A0xd6b91e5a2b5f8e1f!2sPuerta%20del%20Sol%2C%20Madrid!5e0!3m2!1ses!2ses!4v1612345678901!5m2!1ses!2ses"; 
-        
-        // 2. Ruta de la imagen alternativa (ajústala si es necesario)
-        const FALLBACK_IMAGE_URL = "/assets/images/mapa.webp";
-        
-        // 3. URL a la que llevará al hacer clic en la imagen (Google Maps en nueva ventana)
-        const GOOGLE_MAPS_LINK = "https://www.google.com/maps";  // Puedes poner una URL con coordenadas concretas
-        
-        // --- OBTENER REFERENCIA AL CONTENEDOR ---
-        const container = document.getElementById("mapContainer");
-        
-        // --- FUNCIÓN QUE DECIDE QUÉ MOSTRAR BASADO EN COOKIES ACEPTADAS ---
-        function mostrarMapaSegunCookies() {
-            // Leer si las cookies han sido aceptadas.
-            // Suponemos que tienes una cookie llamada 'cookiesAccepted' con valor 'true' cuando se aceptan.
-            // Si usas otro nombre o mecanismo (localStorage, etc.), cambia esta función.
-            const cookiesAceptadas = checkCookiesAccepted();
-            
-            // Actualizar texto de estado (solo para el ejemplo)
-            document.getElementById("cookieStatus").innerText = cookiesAceptadas ? "Aceptadas" : "No aceptadas";
-            
-            // Limpiar el contenedor
-            container.innerHTML = "";
-            
-            if (cookiesAceptadas) {
-                // Mostrar el iframe de Google Maps
-                const iframe = document.createElement("iframe");
-                iframe.src = GOOGLE_MAPS_IFRAME_URL;
-                iframe.title = "Mapa de Google";
-                iframe.allowFullscreen = true;
-                iframe.loading = "lazy";
-                // Atributos opcionales para mejor compatibilidad
-                iframe.referrerPolicy = "no-referrer-when-downgrade";
-                container.appendChild(iframe);
-            } else {
-                // Mostrar la imagen estática y hacerla clickeable (abre en nueva ventana)
-                const link = document.createElement("a");
-                link.href = GOOGLE_MAPS_LINK;
-                link.target = "_blank";    // Abre en nueva pestaña/ventana
-                link.rel = "noopener noreferrer";  // Seguridad
+<section data-bs-version="5.1" class="content4 cid-vn61UsjlCO" id="content4-8g">
+    
+
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                <h1 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
+                    <strong>Calendario de actividades</strong></h1>
                 
-                const img = document.createElement("img");
-                img.src = FALLBACK_IMAGE_URL;
-                img.alt = "Mapa - Haz clic para abrir Google Maps";
-                img.style.cursor = "pointer";
                 
-                link.appendChild(img);
-                container.appendChild(link);
-            }
-        }
-        
-        /**
-         * Función que comprueba si las cookies han sido aceptadas.
-         * CAMBIA ESTA LÓGICA SEGÚN CÓMO GESTIONES LAS COOKIES EN TU PROYECTO.
-         * 
-         * Ejemplos de implementación:
-         * - Si usas una cookie llamada "cookie_consent": leer document.cookie
-         * - Si usas localStorage: localStorage.getItem("cookiesAccepted") === "true"
-         * - Si usas un sistema de terceros (Cookiebot, OneTrust, etc.) adapta su API.
-         */
-        function checkCookiesAccepted() {
-            // ---- Método 1: leer cookie manualmente ----
-            // Devuelve true si existe la cookie 'cookiesAccepted' con valor 'true'
-            const cookies = document.cookie.split('; ');
-            for (let cookie of cookies) {
-                const [name, value] = cookie.split('=');
-                if (name === 'cookiesAccepted' && value === 'true') {
-                    return true;
-                }
-            }
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image3 cid-vn622QlMpX" id="image3-8j">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-9">
+                <div class="image-wrapper">
+                    <div id="calendar-placeholder"><a href="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;ctz=Europe%2FMadrid&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;title=Parroquia%20San%20Francisco%20y%20Santa%20Clara&amp;src=NDc0MGE2OTlkMTIxYzEzYzVmNDc4NDhhNmVmMDkxODIyZWY2NzhhNmRmOWU1NjJiOTc5NDJlNmYxNjhjODczNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23c0ca33" target="_blank" rel="noopener"><img src="https://sanfranciscoysantaclara.es/assets/images/calendario.webp" alt="Calendario parroquial" style="width:100%;height:auto;border-radius:8px;"></a><p style="text-align:center;margin-top:10px;">Pulse sobre la imagen para abrir el calendario. Si acepta las cookies de terceros se mostrará integrado en esta página.</p></div><iframe id="calendar-embed" class="calendarEmbed" width="100%" height="600" data-src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;ctz=Europe%2FMadrid&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;title=Parroquia%20San%20Francisco%20y%20Santa%20Clara&amp;src=NDc0MGE2OTlkMTIxYzEzYzVmNDc4NDhhNmVmMDkxODIyZWY2NzhhNmRmOWU1NjJiOTc5NDJlNmYxNjhjODczNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23c0ca33" style="display:none;border-width:1px;border-style:solid;border-color:rgb(119,119,119);" frameborder="0" scrolling="no"></iframe><script>document.addEventListener("DOMContentLoaded",function(){const accepted=document.cookie.includes("cookiesDirective=1");if(accepted){document.getElementById("calendar-placeholder").style.display="none";document.getElementById("calendar-embed").style.display="block";var iframe=document.getElementById("calendar-embed");iframe.src=iframe.dataset.src;}});</script>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer1 cid-vn61UsCoEN" once="footers" id="footer1-8i">
+
+    
+
+    
+    
+    <div class="container">
+        <div class="row mbr-white">
+            <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+                    <strong>Parroquia San Francisco y Santa Clara de Asís</strong></h5>
+                <ul class="list mbr-fonts-style display-4">&nbsp;</ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7"><strong>Dirección</strong></h5>
+                <ul class="list mbr-fonts-style display-4">
+
+                    <li class="mbr-text item-wrap">Calle de Suecia, 2, 28942 Fuenlabrada, Madrid</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7">
+                    <strong>Contacto</strong></h5>
+                <ul class="list mbr-fonts-style display-4">
+                    <li class="mbr-text item-wrap">Teléfono: 916152431</li><li class="mbr-text item-wrap">Email: sf.sc.de.asis@gmail.com</li><li class="mbr-text item-wrap"><br></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7"><strong>Información legal</strong></h5>
+                <p class="mbr-text mbr-fonts-style mb-4 display-4"><a href="legal.html" class="text-white">Aviso legal</a><br><a href="privacidad.html" class="text-white">Política de privacidad</a><br><a href="cookies.html" class="text-white">Política de cookies</a></p>
+                
+                
+            </div>
             
-            // ---- Método 2: si usas localStorage (descomenta si aplica)
-            // if (localStorage.getItem('cookiesAccepted') === 'true') return true;
-            
-            // Por defecto, si no se encuentra la aceptación, se asume que no se han aceptado.
-            return false;
-        }
-        
-        /**
-         * Función para establecer la aceptación de cookies.
-         * Llama a esta función cuando el usuario acepte cookies (desde tu banner).
-         * Ajusta la cookie/localStorage y luego refresca el mapa.
-         * @param {boolean} accepted - true si acepta, false si rechaza.
-         */
-        function setCookiesAccepted(accepted) {
-            // Guardar en cookie (expira en 365 días, path=/)
-            const expiryDate = new Date();
-            expiryDate.setFullYear(expiryDate.getFullYear() + 1);
-            document.cookie = `cookiesAccepted=${accepted}; expires=${expiryDate.toUTCString()}; path=/; SameSite=Lax`;
-            
-            // Opcional: guardar también en localStorage para consistencia
-            // localStorage.setItem('cookiesAccepted', accepted);
-            
-            // Refrescar la visualización del mapa/imagen
-            mostrarMapaSegunCookies();
-        }
-        
-        // --- EVENTOS PARA SIMULAR LA ACEPTACIÓN/RECHAZO (BORRAR EN PRODUCCIÓN O ADAPTAR A TU BANNER) ---
-        document.getElementById("acceptCookiesBtn").addEventListener("click", () => {
-            setCookiesAccepted(true);
-        });
-        
-        document.getElementById("rejectCookiesBtn").addEventListener("click", () => {
-            setCookiesAccepted(false);
-        });
-        
-        // --- INICIALIZAR AL CARGAR LA PÁGINA ---
-        mostrarMapaSegunCookies();
-    </script>
-</body>
+        </div>
+    </div>
+</section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script><script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script><script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script><script src="assets/smoothscroll/smooth-scroll.js"></script><script type="text/plain" data-src="assets/ytplayer/index.js"></script><script src="assets/dropdown/js/navbar-dropdown.js"></script><script src="assets/theme/js/script.js"></script>
+  
+  
+<input name="cookieData" type="hidden" data-cookie-cookiesAlertType='2' data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgb(255, 218, 185)' data-cookie-opacityOverlay='0' data-cookie-bgOpacity='100' data-cookie-textButton='ACEPTAR' data-cookie-rejectText='RECHAZAR' data-cookie-colorButton='#000000' data-cookie-rejectColor='#ffffff' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='true' data-cookie-text="Usamos cookies para ofrecerte la mejor experiencia como te contamos en nuestra <a href='https://sanfranciscoysantaclara.es/cookies.html'>política de cookies</a>. Al rechazar cookies puede hacer que algunas características no funcionen.">
+    <input name="animation" type="hidden">
+  </body>
 </html>

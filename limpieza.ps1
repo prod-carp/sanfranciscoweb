@@ -111,6 +111,22 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
     if ($content -match $pattern) { $content = $content -replace $pattern, '<script src="assets/theme/js/script.js"></script>' }
     $pattern = '<script type="text/plain" data-src="assets/parallax/jarallax.js"></script>'
     if ($content -match $pattern) { $content = $content -replace $pattern, '<script src="assets/parallax/jarallax.js"></script>' }
+
+    # 1.5.5 TABLÓN DE ANUNCIOS
+    $pattern = '<img src="assets/images/tablondeanuncios.webp" alt="Tablón de anuncios">';
+    $replace = '<div id="wakelet-placeholder"><a href="https://wakelet.com/wake/6JqeEx95rM9gslVW8vEAL" target="_blank" rel="noopener"><img src="https://sanfranciscoysantaclara.es/assets/images/tablondeanuncios.webp" alt="Tablón de anuncios parroquial" style="width:100%;height:auto;border-radius:8px;"></a><p style="text-align:center;margin-top:10px;">Pulse sobre la imagen para abrir el tablón de anuncios. Si acepta las cookies de terceros se mostrará integrado en esta página.</p></div><iframe id="wakelet-embed" class="wakeletEmbed" width="100%" height="760" data-src="https://embed.wakelet.com/wakes/6JqeEx95rM9gslVW8vEAL/list?hide-cover=1&hide-description=1&hide-title=1" style="display:none;border:none;" allow="autoplay"></iframe><script type="text/plain" data-src="https://embed-assets.wakelet.com/wakelet-embed.js" charset="UTF-8"></script><script>document.addEventListener("DOMContentLoaded",function(){const accepted=document.cookie.includes("cookiesDirective=1");if(accepted){document.getElementById("wakelet-placeholder").style.display="none";document.getElementById("wakelet-embed").style.display="block";}});</script>';
+
+    if ($content -match $pattern) {
+        $content = $content -replace $pattern, $replace;
+    }
+
+    # 1.5.6 CALENDAR
+    $pattern = '<img src="assets/images/calendario.webp" alt="Calendario">';
+    $replace = '<div id="calendar-placeholder"><a href="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;ctz=Europe%2FMadrid&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;title=Parroquia%20San%20Francisco%20y%20Santa%20Clara&amp;src=NDc0MGE2OTlkMTIxYzEzYzVmNDc4NDhhNmVmMDkxODIyZWY2NzhhNmRmOWU1NjJiOTc5NDJlNmYxNjhjODczNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23c0ca33" target="_blank" rel="noopener"><img src="https://sanfranciscoysantaclara.es/assets/images/calendario.webp" alt="Calendario parroquial" style="width:100%;height:auto;border-radius:8px;"></a><p style="text-align:center;margin-top:10px;">Pulse sobre la imagen para abrir el calendario. Si acepta las cookies de terceros se mostrará integrado en esta página.</p></div><iframe id="calendar-embed" class="calendarEmbed" width="100%" height="600" data-src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;ctz=Europe%2FMadrid&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;title=Parroquia%20San%20Francisco%20y%20Santa%20Clara&amp;src=NDc0MGE2OTlkMTIxYzEzYzVmNDc4NDhhNmVmMDkxODIyZWY2NzhhNmRmOWU1NjJiOTc5NDJlNmYxNjhjODczNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23c0ca33" style="display:none;border-width:1px;border-style:solid;border-color:rgb(119,119,119);" frameborder="0" scrolling="no"></iframe><script>document.addEventListener("DOMContentLoaded",function(){const accepted=document.cookie.includes("cookiesDirective=1");if(accepted){document.getElementById("calendar-placeholder").style.display="none";document.getElementById("calendar-embed").style.display="block";var iframe=document.getElementById("calendar-embed");iframe.src=iframe.dataset.src;}});</script>';
+
+    if ($content -match $pattern) {
+        $content = $content -replace $pattern, $replace;
+    }
  
     # 1.6 Buscar la meta description y extraer su contenido
 $patternDesc = '<meta name="description" content="(.*?)">'
