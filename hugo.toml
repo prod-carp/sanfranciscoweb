@@ -3,10 +3,12 @@ languageCode = 'es-es'
 title = 'Parroquia San Francisco y Santa Clara de Asís'
 
 # Para URLs más limpias
-relativeURLs = true
+relativeURLs = false
 
 # Taxonomías (CLAVE para categorías y etiquetas)
 [taxonomies]
   category = "categorias"
   tag = "tags"
+
+
 

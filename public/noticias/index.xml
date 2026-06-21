@@ -9,13 +9,6 @@
     <lastBuildDate>Tue, 05 May 2026 12:29:54 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/noticias/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post 1 - parroquia. Sí, merece la pena usar uno cómodo (te ahorra mucho tiempo). Te dejo opciones simples y gratuitas</title>
-      <link>http://localhost:1313/noticias/post-1/</link>
-      <pubDate>Tue, 05 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-1/</guid>
-      <description>&lt;h1 id=&#34;contenido-del-post-1&#34;&gt;Contenido del post 1&lt;/h1&gt;&#xA;&lt;p&gt;¡Buen avance! 🙌 Ya lo tienes funcionando, que es lo importante.&lt;/p&gt;&#xA;&lt;p&gt;Vamos a tus dos dudas:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;-1-editor-sencillo-para-md-en-windows&#34;&gt;📝 1. Editor sencillo para &lt;code&gt;.md&lt;/code&gt; en Windows&lt;/h1&gt;&#xA;&lt;p&gt;Sí, merece la pena usar uno cómodo (te ahorra mucho tiempo). Te dejo opciones simples y gratuitas:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../assets/images/fe5b3b2186fce851d21bf1a3df7caac99eab73ce.webp&#34; alt=&#34;111.webp&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;-muy-recomendable-equilibrio-perfecto&#34;&gt;🟢 Muy recomendable (equilibrio perfecto)&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Typora&lt;br&gt;&#xA;👉 Escribir como si fuera Word, sin código visible&lt;br&gt;&#xA;👉 Ves directamente el resultado final&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-alternativa-muy-popular&#34;&gt;🟡 Alternativa muy popular&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Visual Studio Code&lt;br&gt;&#xA;👉 Gratis y muy potente&lt;br&gt;&#xA;👉 Tiene vista previa Markdown (Ctrl + Shift + V)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-súper-simple&#34;&gt;🔵 Súper simple&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Notepad++&lt;br&gt;&#xA;👉 Ligero, pero menos visual&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;👉 Si quieres algo tipo “Word”: usa &lt;strong&gt;Typora&lt;/strong&gt;&lt;br&gt;&#xA;👉 Si vas a seguir con Hugo a largo plazo: &lt;strong&gt;VS Code&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Post 2 - caritas</title>
       <link>http://localhost:1313/noticias/post-2/</link>
       <pubDate>Tue, 05 May 2026 12:29:54 +0200</pubDate>
@@ -70,6 +63,13 @@
       <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
       <guid>http://localhost:1313/noticias/post-9/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-9&#34;&gt;Contenido del post 9&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Año Jubilar Franciscano 2026-2027: una invitación a renovar la fe</title>
+      <link>http://localhost:1313/noticias/post-1/</link>
+      <pubDate>Sat, 10 Jan 2026 12:29:54 +0200</pubDate>
+      <guid>http://localhost:1313/noticias/post-1/</guid>
+      <description>&lt;p&gt;Del &lt;strong&gt;10 de enero de 2026 al 10 de enero de 2027&lt;/strong&gt;, la familia franciscana celebra un acontecimiento especial: el &lt;strong&gt;800 aniversario de la muerte de San Francisco de Asís&lt;/strong&gt;, uno de los santos más queridos y admirados de la historia de la Iglesia.&lt;/p&gt;&#xA;&lt;p&gt;Con este motivo, la Iglesia ha concedido un &lt;strong&gt;Año Jubilar Franciscano&lt;/strong&gt;, un tiempo de gracia que invita a los fieles a acercarse más a Dios, profundizar en el Evangelio y redescubrir el ejemplo de vida de San Francisco.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

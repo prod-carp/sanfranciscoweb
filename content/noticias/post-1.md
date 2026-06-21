@@ -1,158 +1,72 @@
 +++
-title = 'Post 1 - parroquia. Sí, merece la pena usar uno cómodo (te ahorra mucho tiempo). Te dejo opciones simples y gratuitas'
-date = '2026-05-05T12:29:54+02:00'
+title = 'Año Jubilar Franciscano 2026-2027: una invitación a renovar la fe'
+subtitle = 'La Iglesia celebra el Año Jubilar Franciscano con motivo del 800 aniversario de la muerte de San Francisco de Asís. Conoce su significado y cómo participar.'
+date = '2026-01-10T12:29:54+02:00'
 draft = false
 categorias = ["parroquia"]
-tags = []
+tags = ["importante"]
 weight = 0
-image = "/assets/images/clara2-2-816x954.png"
+image = "https://sanfranciscoysantaclara.es/assets/images/sanfrancisco-parte1.webp"
 +++
 
-# Contenido del post 1
 
-¡Buen avance! 🙌 Ya lo tienes funcionando, que es lo importante.
+Del **10 de enero de 2026 al 10 de enero de 2027**, la familia franciscana celebra un acontecimiento especial: el **800 aniversario de la muerte de San Francisco de Asís**, uno de los santos más queridos y admirados de la historia de la Iglesia.
 
-Vamos a tus dos dudas:
+Con este motivo, la Iglesia ha concedido un **Año Jubilar Franciscano**, un tiempo de gracia que invita a los fieles a acercarse más a Dios, profundizar en el Evangelio y redescubrir el ejemplo de vida de San Francisco.
 
----
+## ¿Qué es un Año Jubilar?
 
-# 📝 1. Editor sencillo para `.md` en Windows
+Un jubileo es un tiempo especial en el que la Iglesia anima a los fieles a renovar su vida cristiana mediante la conversión, la oración, los sacramentos y las obras de caridad.
 
-Sí, merece la pena usar uno cómodo (te ahorra mucho tiempo). Te dejo opciones simples y gratuitas:
+Durante estos periodos, los cristianos son invitados a volver su mirada hacia la misericordia de Dios y a fortalecer su relación con Cristo.
 
-![111.webp](/assets/images/fe5b3b2186fce851d21bf1a3df7caac99eab73ce.webp)
+En este caso, el jubileo se celebra en torno a la figura de **San Francisco de Asís**, cuya vida sigue siendo una llamada a vivir el Evangelio con sencillez, alegría, humildad y amor a Dios y al prójimo.
 
-### 🟢 Muy recomendable (equilibrio perfecto)
+## Nuestra parroquia, templo jubilar franciscano
 
-- Typora  
-  👉 Escribir como si fuera Word, sin código visible  
-  👉 Ves directamente el resultado final
+La **Parroquia San Francisco y Santa Clara de Asís de Fuenlabrada** es uno de los lugares donde los fieles pueden participar de las gracias espirituales concedidas durante este Año Jubilar Franciscano, por tratarse de un lugar de culto franciscano.
 
----
+Durante este año, los peregrinos podrán acudir a nuestra parroquia para rezar, participar en la Eucaristía y vivir este tiempo de gracia en comunión con toda la Iglesia.
 
-### 🟡 Alternativa muy popular
+## ¿Qué es una indulgencia plenaria?
 
-- Visual Studio Code  
-  👉 Gratis y muy potente  
-  👉 Tiene vista previa Markdown (Ctrl + Shift + V)
+La indulgencia plenaria es un don espiritual que la Iglesia concede, por la misericordia de Dios y los méritos de Cristo, para la remisión de la pena temporal debida por los pecados ya perdonados en la confesión.
 
----
+Lejos de ser algo automático, supone una invitación a la conversión sincera, a la vida sacramental y a la unión más profunda con Dios.
 
-### 🔵 Súper simple
+## Cómo obtener la indulgencia durante este Año Jubilar Franciscano
 
-- Notepad++  
-  👉 Ligero, pero menos visual
+Los fieles pueden obtener la indulgencia plenaria:
 
----
+* Peregrinando a una iglesia franciscana o lugar de culto dedicado a San Francisco.
+* Participando en las celebraciones litúrgicas propias del jubileo.
+* Asistiendo a la Santa Misa o participando en los actos de oración establecidos para este Año Jubilar.
 
-👉 Si quieres algo tipo “Word”: usa **Typora**  
-👉 Si vas a seguir con Hugo a largo plazo: **VS Code**
+Asimismo, quienes por edad avanzada, enfermedad u otras causas graves no puedan desplazarse, podrán unirse espiritualmente a las celebraciones, ofreciendo a Dios sus oraciones, sufrimientos y obras buenas.
 
----
+## Condiciones habituales para recibir la indulgencia plenaria
 
-# 🖼️ 2. Cómo meter imágenes en tus posts
+Además del acto jubilar correspondiente, la Iglesia pide las siguientes condiciones:
 
-Aquí es donde Hugo tiene varias formas. Te explico la más sencilla primero:
+1. **Confesión sacramental**, realizada dentro de un tiempo cercano al acto jubilar.
+2. **Comunión eucarística**.
+3. **Oración por las intenciones del Papa**.
 
----
+Estas son las condiciones ordinarias establecidas por la Iglesia para recibir una indulgencia plenaria.
 
-## ✅ OPCIÓN 1 (la más fácil): usar `static/images`
+## Siguiendo las huellas de San Francisco
 
-### 📁 Guarda la imagen en:
+Este Año Jubilar Franciscano es una oportunidad para contemplar de nuevo la vida de San Francisco de Asís y dejarse inspirar por su amor a Cristo.
 
-```plaintext
-static/images/mi-foto.jpg
-```
+Su ejemplo nos recuerda que la verdadera alegría nace de la confianza en Dios, que la fraternidad es un camino de santidad y que el Evangelio puede vivirse plenamente en cualquier época.
 
----
+Que este tiempo de gracia nos ayude a renovar nuestra fe, nuestra esperanza y nuestra caridad, caminando cada día más cerca del Señor.
 
-### ✍️ En tu `.md`:
+## Horarios de la parroquia
 
-```markdown
-![Descripción de la imagen](/images/mi-foto.jpg)
-```
+Para participar en la Santa Misa o recibir el sacramento de la reconciliación, puedes consultar los horarios actualizados:
 
-👉 Y ya funciona. Sin tocar nada más.
+* **Misas:** https://sanfranciscoysantaclara.es/horarios.html
+* **Confesiones:** https://sanfranciscoysantaclara.es/horarios.html#features8-9
 
----
-
-## 🧠 Importante
-
-No necesitas modificar `single.html` para esto.
-
-👉 Hugo mete automáticamente:
-
-```html
-{{ .Content }}
-```
-
-Y dentro va todo:
-
-- texto
-
-- imágenes
-
-- HTML
-
----
-
-## ✅ OPCIÓN 2 (más avanzada): carpeta del post (Page Bundles)
-
-Esto es más ordenado si tienes muchas imágenes.
-
-### 📁 Estructura:
-
-```plaintext
-content/posts/post-1/
-  index.md
-  imagen.jpg
-```
-
----
-
-### ✍️ En el `.md`:
-
-```markdown
-![Descripción](imagen.jpg)
-```
-
-👉 Sin rutas largas, todo más limpio.
-
----
-
-## 🧱 ¿Cuándo usar cada una?
-
-- 🟢 Web simple → `static/images`
-
-- 🔵 Blog más cuidado → “page bundles”
-
----
-
-# 💡 Extra (muy útil con Mobirise)
-
-Si quieres controlar el tamaño o estilos:
-
-```markdown
-<img src="/images/mi-foto.jpg" style="max-width:100%;">
-```
-
-👉 Puedes usar HTML dentro del `.md` sin problema.
-
----
-
-# 🧠 Resumen claro
-
-- ✔ No necesitas tocar `single.html` para imágenes
-
-- ✔ Las metes directamente en el `.md`
-
-- ✔ Ruta típica: `/images/...`
-
-- ⭐ Mejor editor: Typora o VS Code
-
----
-
-Si quieres, el siguiente paso te puede venir muy bien:
-
-👉 hacer que los posts tengan **imagen destacada tipo “blog bonito” (como Mobirise)**  
-con tarjeta, preview, etc.
+Os esperamos durante este Año Jubilar Franciscano para compartir juntos este camino de fe y renovación espiritual.

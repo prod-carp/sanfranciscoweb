@@ -22,5 +22,12 @@
       <guid>http://localhost:1313/noticias/post-4/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-4&#34;&gt;Contenido del post 4&lt;/h1&gt;</description>
     </item>
+    <item>
+      <title>Año Jubilar Franciscano 2026-2027: una invitación a renovar la fe</title>
+      <link>http://localhost:1313/noticias/post-1/</link>
+      <pubDate>Sat, 10 Jan 2026 12:29:54 +0200</pubDate>
+      <guid>http://localhost:1313/noticias/post-1/</guid>
+      <description>&lt;p&gt;Del &lt;strong&gt;10 de enero de 2026 al 10 de enero de 2027&lt;/strong&gt;, la familia franciscana celebra un acontecimiento especial: el &lt;strong&gt;800 aniversario de la muerte de San Francisco de Asís&lt;/strong&gt;, uno de los santos más queridos y admirados de la historia de la Iglesia.&lt;/p&gt;&#xA;&lt;p&gt;Con este motivo, la Iglesia ha concedido un &lt;strong&gt;Año Jubilar Franciscano&lt;/strong&gt;, un tiempo de gracia que invita a los fieles a acercarse más a Dios, profundizar en el Evangelio y redescubrir el ejemplo de vida de San Francisco.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
