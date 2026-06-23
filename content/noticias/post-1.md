@@ -3,7 +3,7 @@ title = 'Año Jubilar Franciscano 2026-2027: una invitación a renovar la fe'
 subtitle = 'La Iglesia celebra el Año Jubilar Franciscano con motivo del 800 aniversario de la muerte de San Francisco de Asís. Conoce su significado y cómo participar.'
 date = '2026-01-10T12:29:54+02:00'
 draft = false
-categorias = ["parroquia"]
+categorias = ["Parroquia"]
 tags = ["importante"]
 weight = 0
 image = "https://sanfranciscoysantaclara.es/assets/images/sanfrancisco-parte1.webp"
@@ -66,7 +66,7 @@ Que este tiempo de gracia nos ayude a renovar nuestra fe, nuestra esperanza y nu
 
 Para participar en la Santa Misa o recibir el sacramento de la reconciliación, puedes consultar los horarios actualizados:
 
-* **Misas:** https://sanfranciscoysantaclara.es/horarios.html
-* **Confesiones:** https://sanfranciscoysantaclara.es/horarios.html#features8-9
+* **Misas:** https://sanfranciscoysantaclara.es/index.html#
+* **Confesiones:** https://sanfranciscoysantaclara.es/index.html#features8-9
 
 Os esperamos durante este Año Jubilar Franciscano para compartir juntos este camino de fe y renovación espiritual.

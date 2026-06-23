@@ -9,18 +9,11 @@
     <lastBuildDate>Tue, 05 May 2026 12:29:54 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/categorias/caritas/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post 2 - caritas</title>
-      <link>http://localhost:1313/noticias/post-2/</link>
-      <pubDate>Tue, 05 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-2/</guid>
-      <description>&lt;h1 id=&#34;contenido-del-post-2&#34;&gt;Contenido del post 2&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>Post 3 - caritas</title>
+      <title>Los 7 Dones del Espíritu Santo: una guía para vivir como hijos de Dios</title>
       <link>http://localhost:1313/noticias/post-3/</link>
       <pubDate>Tue, 05 May 2026 12:29:54 +0200</pubDate>
       <guid>http://localhost:1313/noticias/post-3/</guid>
-      <description>&lt;h1 id=&#34;contenido-del-post-3&#34;&gt;Contenido del post 3&lt;/h1&gt;</description>
+      <description>&lt;p&gt;El Espíritu Santo es la tercera Persona de la Santísima Trinidad y el gran regalo que Jesucristo prometió a sus discípulos. Desde el día de Pentecostés,&#xA;continúa actuando en la Iglesia y en el corazón de cada creyente, fortaleciendo nuestra fe y ayudándonos a seguir el camino del Evangelio.&lt;/p&gt;&#xA;&lt;p&gt;Entre los dones que recibimos de Dios destacan los llamados &lt;strong&gt;7 Dones del Espíritu Santo&lt;/strong&gt;, gracias especiales que nos permiten escuchar mejor&#xA;la voz de Dios, discernir su voluntad y vivir como auténticos discípulos de Cristo.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

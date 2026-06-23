@@ -9,17 +9,17 @@
     <lastBuildDate>Tue, 05 May 2026 12:29:54 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/categorias/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Caritas</title>
-      <link>http://localhost:1313/categorias/caritas/</link>
+      <title>Parroquia</title>
+      <link>http://localhost:1313/categorias/parroquia/</link>
       <pubDate>Tue, 05 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/categorias/caritas/</guid>
+      <guid>http://localhost:1313/categorias/parroquia/</guid>
       <description></description>
     </item>
     <item>
-      <title>Musica</title>
-      <link>http://localhost:1313/categorias/musica/</link>
+      <title>Peregrinaciones</title>
+      <link>http://localhost:1313/categorias/peregrinaciones/</link>
       <pubDate>Sun, 03 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/categorias/musica/</guid>
+      <guid>http://localhost:1313/categorias/peregrinaciones/</guid>
       <description></description>
     </item>
     <item>
@@ -34,13 +34,6 @@
       <link>http://localhost:1313/categorias/testimonios/</link>
       <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
       <guid>http://localhost:1313/categorias/testimonios/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Parroquia</title>
-      <link>http://localhost:1313/categorias/parroquia/</link>
-      <pubDate>Sat, 10 Jan 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/categorias/parroquia/</guid>
       <description></description>
     </item>
   </channel>
