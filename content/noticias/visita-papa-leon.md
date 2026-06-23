@@ -1,7 +1,7 @@
 +++
 title = 'Un día inolvidable junto al Papa León: crónica de una jornada de fe en Madrid'
 subtitle = 'Así vivimos la celebración de la Santa Misa presidida por el Papa León en Madrid, una jornada marcada por la fe, y la alegría ser parte de la Iglesia universal.'
-date = '2026-05-03T12:29:54+02:00'
+date = '2026-06-07T12:29:54+02:00'
 draft = false
 categorias = ["Peregrinaciones"]
 tags = []

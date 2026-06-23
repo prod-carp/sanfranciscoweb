@@ -4,7 +4,7 @@ subtitle ='El Espíritu Santo es la tercera Persona de la Santísima Trinidad y 
 date = '2026-05-05T12:29:54+02:00'
 draft = false
 categorias = ["Parroquia"]
-tags = ["importante"]
+tags = []
 weight = 0
 image = "/assets/images/donesespiritusanto.webp"
 +++

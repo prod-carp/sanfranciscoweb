@@ -9,25 +9,11 @@
     <lastBuildDate>Thu, 02 Apr 2026 12:29:54 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/categorias/testimonios/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post 6 - testimonios</title>
-      <link>http://localhost:1313/noticias/post-6/</link>
-      <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-6/</guid>
-      <description>&lt;h1 id=&#34;contenido-del-post-6&#34;&gt;Contenido del post 6&lt;/h1&gt;</description>
-    </item>
-    <item>
       <title>Post 7 - testimonios</title>
       <link>http://localhost:1313/noticias/post-7/</link>
       <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
       <guid>http://localhost:1313/noticias/post-7/</guid>
       <description>&lt;h1 id=&#34;contenido-del-post-7&#34;&gt;Contenido del post 7&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>Post 9 - testimonio</title>
-      <link>http://localhost:1313/noticias/post-9/</link>
-      <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/post-9/</guid>
-      <description>&lt;h1 id=&#34;contenido-del-post-9&#34;&gt;Contenido del post 9&lt;/h1&gt;</description>
     </item>
   </channel>
 </rss>
