@@ -66,7 +66,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 342,
+    "uniqCompNum": 337,
     "versionPublish": "6.1.9",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/iconosfyc-48x48.png",
@@ -4246,7 +4246,7 @@
           },
           "_name": "content5",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Política de Cookies</b></h1>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Enter your subtitle here\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><b>¿Qué son las cookies?\n<br></b>\n<br>Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario cuando visita una página web. Permiten recordar información sobre la visita, como preferencias de navegación o configuraciones del sitio, y pueden utilizarse para mejorar la experiencia del usuario.\n<br>\n<br><b>¿Qué tipos de cookies utiliza esta web?\n<br></b>\n<br>Esta página web utiliza únicamente las siguientes categorías de cookies:\n<br>\n<br><b>Cookies técnicas o necesarias\n<br></b>\n<br>Son aquellas imprescindibles para el funcionamiento básico de la web y para permitir la navegación y el uso de sus diferentes opciones o servicios.\n<br>\n<br>Estas cookies no recopilan información personal con fines publicitarios ni de análisis y no requieren el consentimiento del usuario, de conformidad con la normativa vigente.\n<br>\n<br><b>Cookies de terceros sujetas a consentimiento\n<br></b>\n<br>La web ofrece la posibilidad de visualizar contenidos proporcionados por terceros, tales como:\n<br>\n<br><b>Google Calendar</b> (calendario parroquial).\n<br><b>Wakelet </b>(contenidos y recursos integrados).\n<br>\n<br>Estos contenidos permanecen bloqueados por defecto y no se cargan automáticamente al acceder a la web.\n<br>\n<br>Únicamente cuando el usuario acepta las cookies correspondientes mediante el sistema de gestión de consentimiento, se establece la conexión con los servidores del proveedor externo y pueden instalarse cookies u otras tecnologías similares gestionadas directamente por dicho tercero.\n<br>\n<br>Mientras el usuario no otorgue su consentimiento, estos contenidos se sustituyen por una imagen o elemento informativo con un enlace externo que permite acceder al contenido directamente en una nueva pestaña o ventana del navegador, sin integrarlo dentro de esta web.\n<br>\n<br>Las cookies y tratamientos de datos realizados por estos proveedores están sujetos a sus respectivas políticas de privacidad y cookies.\n<br>\n<br><b>Gestión del consentimiento\n<br></b>\n<br>Al acceder por primera vez a esta página web, se muestra un panel de configuración de cookies que permite al usuario:\n<br>\n<br><b>Aceptar todas las cookies.\n<br>Rechazar todas las cookies no necesarias.\n<br>Configurar sus preferencias de forma granular.\n<br></b>\n<br>El consentimiento otorgado podrá retirarse o modificarse en cualquier momento a través del enlace o mecanismo habilitado en la web para la gestión de cookies.\n<br>\n<br>La retirada del consentimiento no afectará a la licitud de los tratamientos realizados con anterioridad.\n<br>\n<br><b>Cómo desactivar o eliminar cookies desde el navegador\n<br></b>\n<br>Además de la configuración disponible en esta web, el usuario puede permitir, bloquear o eliminar las cookies instaladas mediante la configuración de su navegador.\n<br>\n<br>La forma de hacerlo varía según el navegador utilizado, por lo que se recomienda consultar la documentación oficial del mismo.\n<br>\n<br><b>Transferencias internacionales de datos\n<br></b>\n<br>Cuando el usuario consiente la carga de contenidos de terceros, es posible que determinados proveedores traten datos personales fuera del Espacio Económico Europeo.\n<br>\n<br>En estos casos, las transferencias internacionales de datos se realizarán conforme a los mecanismos legalmente previstos por la normativa aplicable y bajo la responsabilidad de los respectivos proveedores.\n<br>\n<br><b>Información adicional sobre protección de datos\n<br></b>\n<br>Para obtener más información sobre el tratamiento de datos personales realizado a través de esta web, puede consultarse la <a href=\"privacidad.html\" class=\"text-primary\">Política de Privacidad</a>.\n<br>\n<br><b>Modificaciones de esta política\n<br></b>\n<br>La presente Política de Cookies podrá actualizarse en cualquier momento para adaptarse a cambios normativos, técnicos o funcionales de la página web.\n<br>\n<br>Se recomienda a los usuarios revisarla periódicamente.&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Política de Cookies</b></h1>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Enter your subtitle here\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">En esta página web utilizamos cookies propias y de terceros con el fin de mejorar la experiencia de navegación, permitir el acceso a determinados contenidos y conocer el uso que hacen los usuarios de la web.<br><br><b>¿Qué son las cookies?<br></b><br>Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario al visitar una página web. Sirven para recordar información sobre su visita, como el idioma preferido o la configuración del sitio, y pueden facilitar su próxima visita.<br><br><b>Tipos de cookies utilizadas<br></b><br>Esta web utiliza las siguientes categorías de cookies:<br><br><b>Cookies técnicas (necesarias)<br></b><br>Permiten la navegación por la página web y el uso de sus funciones básicas. Estas cookies no requieren el consentimiento del usuario.<br><br><b>Cookies de terceros<br></b><br>Esta web incorpora contenidos proporcionados por terceros que pueden instalar cookies en el dispositivo del usuario. En concreto:<br><br>Servicios de Google, como Google Calendar y Google Maps, para mostrar el calendario parroquial y la ubicación.<br>Contenidos integrados de Wakelet.<br><br>Estas cookies pueden recopilar información sobre la navegación del usuario y están gestionadas directamente por dichos terceros, conforme a sus propias políticas de privacidad.<br><br><b>Gestión de cookies<br></b><br>Al acceder a esta web, se muestra un aviso de cookies que permite al usuario:<br><br>Aceptar todas las cookies<br>Rechazar las cookies no necesarias<br>Configurar sus preferencias<br><br>El usuario puede modificar o retirar su consentimiento en cualquier momento a través de las opciones disponibles en el sitio web.<br><br><b>Cómo desactivar o eliminar cookies<br></b><br>El usuario puede permitir, bloquear o eliminar las cookies instaladas en su dispositivo mediante la configuración de su navegador. A continuación se indican enlaces a la gestión de cookies en los navegadores más habituales:<br><br>Google Chrome<br>Mozilla Firefox<br>Safari<br>Microsoft Edge<br><br><b>Información adicional<br></b><br>El uso de cookies de terceros puede implicar transferencias internacionales de datos fuera del Espacio Económico Europeo, conforme a las políticas de cada proveedor.<br><br>Para más información sobre cómo tratamos los datos personales, puede consultar nuestra Política de Privacidad.<br><br><b>Actualizaciones de la política de cookies<br></b><br>Esta Política de Cookies puede actualizarse en función de cambios en la web o en la normativa aplicable. Se recomienda revisarla periódicamente.</p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "viockJH25f",
           "_anchor": "content5-1c",
           "_protectedParams": [],
@@ -8188,7 +8188,7 @@
     "contacto.html": {
       "settings": {
         "title": "Contacto | Parroquia San Francisco y Santa Clara de Asís",
-        "order": "1",
+        "order": "21",
         "meta_descr": "¿Necesitas información? Contacta con la Parroquia San Francisco y Clara. Consulta horarios, dirección y teléfono o envíanos un email.",
         "meta_image": "@PROJECT_PATH@/assets/images/index-meta-1200x630.webp"
       },
@@ -8603,59 +8603,142 @@
         {
           "alias": false,
           "_styles": {
-            "display": "flex",
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = \"color\")": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
               }
             },
-            "@media (min-width: 768px)": {
-              "align-items": "~\"@{verticalAlign}\"",
-              ".row": {
-                "justify-content": "~\"@{horizontalAlign}\""
+            ".embla__slide": {
+              "display": "flex",
+              "justify-content": "center",
+              "position": "relative",
+              "min-width": "570px",
+              "max-width": "570px",
+              "@media (max-width: 768px)": {
+                "min-width": "70%",
+                "max-width": "initial",
+                "margin-left": "1rem !important",
+                "margin-right": "1rem !important"
+              }
+            },
+            ".embla__button--next, .embla__button--prev": {
+              "display": "flex"
+            },
+            ".embla__button": {
+              "top": "50%",
+              "width": "60px",
+              "height": "60px",
+              "margin-top": "-1.5rem",
+              "font-size": "22px",
+              "background-color": "rgba(0, 0, 0, 0.5)",
+              "color": "#fff",
+              "border": "2px solid #fff",
+              "border-radius": "50%",
+              "transition": "all 0.3s",
+              "position": "absolute",
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "& when not (@arrows)": {
+                "display": "none"
               },
-              ".content-wrap": {
-                "padding": "1rem 3rem"
-              }
-            },
-            "@media (max-width: 991px) and (min-width: 768px)": {
-              ".content-wrap": {
-                "min-width": "50%"
-              }
-            },
-            "@media (max-width: 767px)": {
-              "-webkit-align-items": "center",
-              "align-items": "~\"@{verticalAlign}\"",
-              ".mbr-row": {
-                "-webkit-justify-content": "center",
-                "justify-content": "center"
+              "& when not (@arrowsMobile)": {
+                "@media (max-width: 768px)": {
+                  "display": "none"
+                }
               },
-              ".content-wrap": {
-                "width": "100%"
+              "&:disabled": {
+                "cursor": "default",
+                "display": "none"
+              },
+              "&:hover": {
+                "background": "#000",
+                "color": "rgba(255, 255, 255, 0.5)"
+              },
+              "&.embla__button--prev": {
+                "left": "0",
+                "margin-left": "2.5rem"
+              },
+              "&.embla__button--next": {
+                "right": "0",
+                "margin-right": "2.5rem"
+              },
+              "@media (max-width: 768px)": {
+                "top": "auto"
               }
             },
-            ".mbr-section-title, .mbr-section-subtitle": {
-              "text-align": "center"
+            ".user_image": {
+              "width": "200px",
+              "height": "200px",
+              "margin-bottom": "1.6rem",
+              "overflow": "hidden",
+              "border-radius": "50%",
+              "margin": "0 auto 2rem auto",
+              ".item-wrapper": {
+                "width": "200px",
+                "height": "200px"
+              },
+              "img": {
+                "width": "100%",
+                "min-width": "100%",
+                "min-height": "100%",
+                "object-fit": "cover"
+              }
             },
-            ".mbr-text, .mbr-section-btn": {
-              "text-align": "center"
+            "@media (max-width: 230px)": {
+              ".user_image": {
+                "width": "100%",
+                "height": "auto"
+              }
+            },
+            ".embla": {
+              "position": "relative",
+              "width": "100%"
+            },
+            ".embla__viewport": {
+              "overflow": "hidden",
+              "width": "100%"
+            },
+            ".embla__viewport.is-draggable": {
+              "cursor": "grab"
+            },
+            ".embla__viewport.is-dragging": {
+              "cursor": "grabbing"
+            },
+            ".embla__container": {
+              "display": "flex",
+              "user-select": "none",
+              "-webkit-touch-callout": "none",
+              "-khtml-user-select": "none",
+              "-webkit-tap-highlight-color": "transparent"
+            },
+            ".user_name": {
+              "color": "#6592e6"
             }
           },
-          "_name": "header17",
-          "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header16\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"24\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"3\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show / Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n      <option value=\"flex-start\">Top</option>\n      <option value=\"center\">Center</option>\n      <option value=\"flex-end\" selected>Bottom</option>\n    </select>\n    <select title=\"Horizontal Align\" name=\"horizontalAlign\">\n      <option value=\"flex-start\">Left</option>\n      <option value=\"center\" selected>Center</option>\n      <option value=\"flex-end\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/despacho.webp\" parallax selected>\n      <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=2Gg6Seob5Mg\">\n      <input type=\"color\" title=\"Color\" value=\"#260a30\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n    <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n  </mbr-parameters>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row\">\n      <div class=\"content-wrap col-12 col-md-{{contentWidth}}\">\n        <h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n          <b><br>Contacta con la parroquia</b></h1>\n        <h2 class=\"mbr-section-subtitle mbr-fonts-style mbr-white mb-4\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\">Puedes ponerte en contacto con la parroquia San Francisco y Santa Clara de Asís a través de los siguientes medios. Estaremos encantados de atenderte, resolver dudas, proporcionarte información sobre sacramentos, certificados, participar en la vida parroquial o ayudarte en lo que necesites.</h2>\n        <p class=\"mbr-fonts-style mbr-text mbr-white mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Full-screen block with parallax image background and flexible\n          configuration, free vertical and horizontal\n          content alignment.&nbsp;</p>\n        <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-white-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Learn More</a></div>\n      </div>\n    </div>\n  </div>\n</section>",
-          "_anchor": "header17-9e",
-          "_isUserblock": true,
-          "_cid": "vnlNB2TrnM",
+          "_name": "people5",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people5 mbr-embla\" group=\"People\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"embla\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\" checked>\n        <input type=\"range\" title=\"Padding Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" inline>\n        <input type=\"range\" title=\"Padding Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" inline>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>Carousel</header>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\">\n        <input type=\"range\" title=\"Interval\" name=\"interval\" min=\"1\" max=\"10\" value=\"5\" step=\"1\" condition=\"autoplay\">\n        <input type=\"checkbox\" title=\"Loop\" name=\"loop\" checked>\n        <input type=\"checkbox\" title=\"Draggable\" name=\"draggable\" checked>\n        <input type=\"checkbox\" name=\"arrows\" title=\"Arrows\" checked>\n        <input type=\"checkbox\" name=\"arrowsMobile\" title=\"Mobile Arrows\" condition=\"arrows\">\n        <header>Slides</header>\n        <input type=\"range\" name=\"gap\" title=\"Gap\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Author Name\" name=\"showName\" checked>\n        <input type=\"checkbox\" title=\"Author Title\" name=\"showDesk\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"position-relative text-center\">\n        <h2 class=\"mb-4 mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            <b>¿En qué podemos ayudarte?</b></h2>\n\n        <div class=\"embla\" data-loop=\"{{loop}}\" data-auto-play=\"{{autoplay}}\" data-auto-play-interval=\"{{interval}}\" data-draggable=\"{{draggable}}\" data-skip-snaps=\"true\" data-align=\"center\">\n            <div class=\"embla__viewport\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n                <div class=\"embla__container\">\n                    <div class=\"embla__slide slider-image item active\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"user\">\n                            <div class=\"user_image\">\n                                <div class=\"item-wrapper position-relative\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/iconos-sacramentos2.webp\" alt=\"Sacramentos\" data-slide-to=\"0\" data-bs-slide-to=\"0\">\n                                </div>\n                            </div>\n                            <div class=\"user_text mb-4\">\n                                <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\">Consulta información sobre la preparación y celebración del Bautismo, la Primera Comunión, la Confirmación y el Matrimonio.<b><br></b></p>\n                            </div>\n                            <div mbr-text class=\"user_name mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                                <b>SACRAMENTOS</b></div>\n                            <div mbr-text class=\"user_desk mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                                DESIGNER\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"user\">\n                            <div class=\"user_image\">\n                                <div class=\"item-wrapper position-relative\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/iconos-certificados.webp\" alt=\"Certificados\" data-slide-to=\"1\" data-bs-slide-to=\"1\">\n                                </div>\n                            </div>\n                            <div class=\"user_text mb-4\">\n                                <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\">Solicita partidas de Bautismo y otros documentos relacionados con tu vida sacramental.<br></p>\n                            </div>\n                            <div mbr-text class=\"user_name mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                                <b>CERTIFICADOS</b></div>\n                            <div mbr-text class=\"user_desk mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                                DEVELOPER\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"user\">\n                            <div class=\"user_image\">\n                                <div class=\"item-wrapper position-relative\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/iconos-grupos.webp\" alt=\"Grupos\" data-slide-to=\"2\" data-bs-slide-to=\"2\">\n                                </div>\n                            </div>\n                            <div class=\"user_text mb-4\">\n                                <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\">Infórmate sobre grupos, actividades y formas de participar en la comunidad parroquial.<br></p>\n                            </div>\n                            <div mbr-text class=\"user_name mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                                <b>VIDA PARROQUIAL</b></div>\n                            <div mbr-text class=\"user_desk mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                                DEVELOPER\n                            </div>\n                        </div>\n                    </div><div class=\"embla__slide slider-image item\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                        <div class=\"user\">\n                            <div class=\"user_image\">\n                                <div class=\"item-wrapper position-relative\">\n                                    <img src=\"@PROJECT_PATH@/assets/images/iconos-cura.webp\" alt=\"Atención Pastoral\" data-slide-to=\"3\" data-bs-slide-to=\"3\">\n                                </div>\n                            </div>\n                            <div class=\"user_text mb-4\">\n                                <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".user_text\">Contacta con un sacerdote para recibir orientación, acompañamiento espiritual o resolver tus dudas.<br></p>\n                            </div>\n                            <div mbr-text class=\"user_name mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".user_name\">\n                                <b>ATENCIÓN PASTORAL</b></div>\n                            <div mbr-text class=\"user_desk mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDesk\" data-app-selector=\".user_desk\">\n                                DEVELOPER\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <button class=\"embla__button embla__button--prev\">\n                <span class=\"mobi-mbri mobi-mbri-arrow-prev mbr-iconfont\" aria-hidden=\"true\"></span>\n                <span class=\"sr-only visually-hidden visually-hidden\">Previous</span>\n            </button>\n            <button class=\"embla__button embla__button--next\">\n                <span class=\"mobi-mbri mobi-mbri-arrow-next mbr-iconfont\" aria-hidden=\"true\"></span>\n                <span class=\"sr-only visually-hidden visually-hidden\">Next</span>\n            </button>\n        </div>\n    </div>\n</section>",
+          "_cid": "vnhJJswbn0",
+          "_anchor": "people5-9b",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -8717,7 +8800,7 @@
           },
           "_name": "contacts1",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"contacts1\" group=\"Contacts\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Link\" name=\"showLink\" checked>\n        <input type=\"color\" title=\"BG\" name=\"cardColor\" value=\"#6592e6\" selected>\n        <input type=\"checkbox\" title=\"Icon\" name=\"showIcon\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h1 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>Contacta con la parroquia</b><b><br></b></h1>\n            <h2 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Puedes ponerte en contacto con la parroquia San Francisco y Santa Clara de Asís a través de los siguientes medios. Estaremos encantados de atenderte, resolver dudas, solicitar información sobre sacramentos, participar en la vida parroquial o ayudarte en lo que necesites.</h2>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div class=\"card col-12 col-lg-6\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-letter mobi-mbri\" mbr-if=\"showIcon\"></span>\n                        </div>\n                        <h3 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-2\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            <b>Email</b>\n                        </h3>\n                        <p class=\"mbr-text mbr-fonts-style mb-2\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Responderemos lo antes posible</p>\n                        <h5 class=\"link mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLink\" data-app-selector=\".link\"><a href=\"mailto:sf.sc.de.asis@gmail.com\" class=\"text-primary\">Escríbenos un email</a></h5>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-lg-6\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-tablet-vertical mobi-mbri\" mbr-if=\"showIcon\"></span>\n                        </div>\n                        <h3 class=\"card-title mbr-fonts-style align-center mb-2\" mbr-theme-style=\"display-2\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            <b>Teléfono</b></h3>\n                        <p class=\"mbr-text mbr-fonts-style mb-2\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Atención en horario parroquial</p>\n                        <h5 class=\"link mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLink\" data-app-selector=\".link\">\n                            <a href=\"tel:916152431\" class=\"text-primary\">916152431</a></h5>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"contacts1\" group=\"Contacts\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Link\" name=\"showLink\" checked>\n        <input type=\"color\" title=\"BG\" name=\"cardColor\" value=\"#6592e6\" selected>\n        <input type=\"checkbox\" title=\"Icon\" name=\"showIcon\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h1 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>Contacta con la parroquia</b><b><br></b></h1>\n            <h2 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Puedes ponerte en contacto con la parroquia San Francisco y Santa Clara de Asís a través de los siguientes medios. Estaremos encantados de atenderte, resolver dudas, solicitar información sobre sacramentos, participar en la vida parroquial o ayudarte en lo que necesites.</h2>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div class=\"card col-12 col-lg-6\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-letter mobi-mbri\" mbr-if=\"showIcon\"></span>\n                        </div>\n                        <h3 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-2\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            <b>Email</b>\n                        </h3>\n                        <p class=\"mbr-text mbr-fonts-style mb-2\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Responderemos lo antes posible</p>\n                        <h5 class=\"link mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLink\" data-app-selector=\".link\"><a href=\"mailto:sf.sc.de.asis@gmail.com\" class=\"text-primary\">Escríbenos un email</a></h5>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-lg-6\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-tablet-vertical mobi-mbri\" mbr-if=\"showIcon\"></span>\n                        </div>\n                        <h3 class=\"card-title mbr-fonts-style align-center mb-2\" mbr-theme-style=\"display-2\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            <b>Teléfono</b></h3>\n                        <p class=\"mbr-text mbr-fonts-style mb-2\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Atención en horario parroquial</p>\n                        <h5 class=\"link mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLink\" data-app-selector=\".link\">\n                            <a href=\"tel:916152431\" class=\"text-primary\">916152431</a></h5>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "vistWWbMfA",
           "_anchor": "contacts1-2q",
           "_protectedParams": [],
@@ -8790,7 +8873,7 @@
           },
           "_name": "features5",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showsubTitle\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#fafafa\" condition=\"showLink\" selected>\n\n        <select title=\"Columns\" name=\"columns\">\n            <option value=\"3\">4</option>\n            <option value=\"4\">3</option>\n            <option value=\"6\">2</option>\n            <option value=\"12\" selected>1</option>\n        </select>\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            \n            <div class=\"item features-without-image mb-4 col-12 col-md-{{columns}} active\">\n                <div class=\"item-wrapper\">\n                    <div class=\"row\">\n                        <div class=\"col-12 col-md-7\">\n                            <div class=\"text-wrapper\">\n                                <h3 class=\"card-subtitle mbr-fonts-style mb-2\" mbr-theme-style=\"display-4\" mbr-if=\"showsubTitle\" data-app-selector=\".card-subtitle\">¿Deseas acudir al despacho parroquial?</h3>\n                                <h2 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                                    <b>Horario de despacho parroquial</b></h2>\n                                <p class=\"mbr-text mbr-fonts-style mb-5\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">📅&nbsp;<b>Miércoles de 17:00 - 18:30</b></p>\n                                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"ubicacion.html\" class=\"btn btn-warning\" data-app-placeholder=\"Type Text\">¿Quieres saber cómo llegar?</a></div>\n                            </div>\n                        </div>\n                        <div class=\"col-12 col-md-5\">\n                            <div class=\"img-wrapper\">\n                                <img src=\"@PROJECT_PATH@/assets/images/despacho-432x283.webp\" alt=\"Horario del despacho parroquial\" data-slide-to=\"1\" data-bs-slide-to=\"1\">\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showsubTitle\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#fafafa\" condition=\"showLink\" selected>\n\n        <select title=\"Columns\" name=\"columns\">\n            <option value=\"3\">4</option>\n            <option value=\"4\">3</option>\n            <option value=\"6\">2</option>\n            <option value=\"12\" selected>1</option>\n        </select>\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            \n            <div class=\"item features-without-image mb-4 col-12 col-md-{{columns}} active\">\n                <div class=\"item-wrapper\">\n                    <div class=\"row\">\n                        <div class=\"col-12 col-md-7\">\n                            <div class=\"text-wrapper\">\n                                <h3 class=\"card-subtitle mbr-fonts-style mb-2\" mbr-theme-style=\"display-4\" mbr-if=\"showsubTitle\" data-app-selector=\".card-subtitle\">Puedes acudir al despacho parroquial para consultas, certificados, información sobre sacramentos y otros asuntos relacionados con la vida de la parroquia.</h3>\n                                <h2 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                                    <b>Horario de despacho parroquial</b></h2>\n                                <p class=\"mbr-text mbr-fonts-style mb-5\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">📅&nbsp;<b>Miércoles de 17:00 - 18:30</b></p>\n                                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"ubicacion.html\" class=\"btn btn-warning\" data-app-placeholder=\"Type Text\">¿Quieres saber cómo llegar?</a></div>\n                            </div>\n                        </div>\n                        <div class=\"col-12 col-md-5\">\n                            <div class=\"img-wrapper\">\n                                <img src=\"@PROJECT_PATH@/assets/images/despacho-432x283.webp\" alt=\"Horario del despacho parroquial\" data-slide-to=\"1\" data-bs-slide-to=\"1\">\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "viszhHxEFJ",
           "_anchor": "features5-2t",
           "_protectedParams": [],
@@ -8883,135 +8966,9 @@
           },
           "_name": "team2",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"team2\" group=\"Team\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" xmlns=\"http://www.w3.org/1999/html\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"2\" max=\"6\" step=\"1\" value=\"2\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparentCard\">\n        <input type=\"color\" title=\"Color\" name=\"cardBg\" value=\"#ffffff\" condition=\"!transparentCard\">\n        <select title=\"Amount\" name=\"cardsAmount\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n        </select>\n        <header condition=\"showSocial\">Social</header>\n        <input type=\"checkbox\" title=\"Social\" name=\"showSocial\">\n        <input type=\"range\" name=\"socialCount\" title=\"Count\" min=\"1\" max=\"5\" step=\"1\" value=\"3\" condition=\"showSocial\">\n        <input type=\"color\" title=\"Color\" name=\"socialIconColor\" value=\"#6592e6\" condition=\"showSocial\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ececec\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"item features-image\">\n            <div class=\"item-wrapper\">\n                <div class=\"row align-items-center\">\n                    <div class=\"col-12 col-md-{{imageWidth}}\">\n                        <div class=\"image-wrapper\">\n                            <img src=\"@PROJECT_PATH@/assets/images/gustavo-552x665.png\" alt=\"Caricatura del Padre Gustavo\">\n                        </div>\n                    </div>\n                    <div class=\"col-12 col-md\">\n                        <div class=\"card-box\">\n                            <h3 class=\"card-title mbr-fonts-style m-0 mb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                                <b>Padre Gustavo</b></h3>\n                            <h4 class=\"card-subtitle mbr-fonts-style mb-3\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".card-subtitle\"><b>Párroco</b></h4>\n                            <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text, .social-row\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">El padre Gustavo es el párroco de la comunidad, acompañando la vida pastoral y espiritual de la parroquia. Está disponible para atender a los fieles y colaborar en las distintas actividades y celebraciones.\n                            </p>\n                            <div class=\"social-row display-7\" mbr-if=\"showSocial\">\n                                <div class=\"soc-item\">\n                                    <a href=\"https://www.facebook.com/Mobirise/\" target=\"_blank\">\n                                        <span mbr-icon class=\"mbr-iconfont socicon socicon-facebook\"></span>\n                                    </a>\n                                </div>\n                                <div class=\"soc-item\" mbr-if=\"socialCount>1\">\n                                    <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                                        <span mbr-icon class=\"mbr-iconfont socicon socicon-twitter\"></span>\n                                    </a>\n                                </div>\n                                <div class=\"soc-item\" mbr-if=\"socialCount>2\">\n                                    <a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n                                        <span mbr-icon class=\"mbr-iconfont socicon socicon-instagram\"></span>\n                                    </a>\n                                </div>\n                                <div class=\"soc-item\" mbr-if=\"socialCount>3\">\n                                    <a href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n                                        <span mbr-icon class=\"mbr-iconfont socicon socicon-youtube\"></span>\n                                    </a>\n                                </div>\n                                <div class=\"soc-item\" mbr-if=\"socialCount>4\">\n                                    <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                                        <span mbr-icon class=\"mbr-iconfont socicon socicon-telegram\"></span>\n                                    </a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        \n        \n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"team2\" group=\"Team\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" xmlns=\"http://www.w3.org/1999/html\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"2\" max=\"6\" step=\"1\" value=\"2\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparentCard\">\n        <input type=\"color\" title=\"Color\" name=\"cardBg\" value=\"#ffffff\" condition=\"!transparentCard\">\n        <select title=\"Amount\" name=\"cardsAmount\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n        </select>\n        <header condition=\"showSocial\">Social</header>\n        <input type=\"checkbox\" title=\"Social\" name=\"showSocial\">\n        <input type=\"range\" name=\"socialCount\" title=\"Count\" min=\"1\" max=\"5\" step=\"1\" value=\"3\" condition=\"showSocial\">\n        <input type=\"color\" title=\"Color\" name=\"socialIconColor\" value=\"#6592e6\" condition=\"showSocial\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"item features-image\">\n            <div class=\"item-wrapper\">\n                <div class=\"row align-items-center\">\n                    <div class=\"col-12 col-md-{{imageWidth}}\">\n                        <div class=\"image-wrapper\">\n                            <img src=\"@PROJECT_PATH@/assets/images/gustavo-552x665.png\" alt=\"Mobirise Website Builder\">\n                        </div>\n                    </div>\n                    <div class=\"col-12 col-md\">\n                        <div class=\"card-box\">\n                            <h3 class=\"card-title mbr-fonts-style m-0 mb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                                <b>Padre Gustavo</b></h3>\n                            <h4 class=\"card-subtitle mbr-fonts-style mb-3\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".card-subtitle\"><b>Párroco</b></h4>\n                            <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text, .social-row\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">El padre Gustavo es el párroco de la comunidad, acompañando la vida pastoral y espiritual de la parroquia. Está disponible para atender a los fieles y colaborar en las distintas actividades y celebraciones.\n                            </p>\n                            <div class=\"social-row display-7\" mbr-if=\"showSocial\">\n                                <div class=\"soc-item\">\n                                    <a href=\"https://www.facebook.com/Mobirise/\" target=\"_blank\">\n                                        <span mbr-icon class=\"mbr-iconfont socicon socicon-facebook\"></span>\n                                    </a>\n                                </div>\n                                <div class=\"soc-item\" mbr-if=\"socialCount>1\">\n                                    <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                                        <span mbr-icon class=\"mbr-iconfont socicon socicon-twitter\"></span>\n                                    </a>\n                                </div>\n                                <div class=\"soc-item\" mbr-if=\"socialCount>2\">\n                                    <a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n                                        <span mbr-icon class=\"mbr-iconfont socicon socicon-instagram\"></span>\n                                    </a>\n                                </div>\n                                <div class=\"soc-item\" mbr-if=\"socialCount>3\">\n                                    <a href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n                                        <span mbr-icon class=\"mbr-iconfont socicon socicon-youtube\"></span>\n                                    </a>\n                                </div>\n                                <div class=\"soc-item\" mbr-if=\"socialCount>4\">\n                                    <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                                        <span mbr-icon class=\"mbr-iconfont socicon socicon-telegram\"></span>\n                                    </a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        \n        \n    </div>\n</section>",
           "_cid": "vistYCRwG2",
           "_anchor": "team2-2r",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              "& when (@overlay)": {
-                ".mbr-overlay": {
-                  "background": "@overlayColor",
-                  "opacity": "@overlayOpacity"
-                }
-              }
-            },
-            "img, .item-img": {
-              "width": "100%",
-              "& when (@autoSize)": {
-                "height": "100%",
-                "object-fit": "cover",
-                "& when (@showCardTitle)": {
-                  "height": "(@imageHeight * 100px)",
-                  "object-fit": "cover"
-                },
-                "& when (@showCardSubtitle)": {
-                  "height": "(@imageHeight * 100px)",
-                  "object-fit": "cover"
-                },
-                "& when (@showText)": {
-                  "height": "(@imageHeight * 100px)",
-                  "object-fit": "cover"
-                },
-                "& when (@showButtons)": {
-                  "height": "(@imageHeight * 100px)",
-                  "object-fit": "cover"
-                }
-              }
-            },
-            ".item:focus, span:focus": {
-              "outline": "none"
-            },
-            ".item": {
-              "cursor": "pointer",
-              "margin-bottom": "2rem"
-            },
-            "& when not (@spacing)": {
-              ".row": {
-                "margin-left": "0",
-                "margin-right": "0"
-              },
-              ".item": {
-                "padding": "0",
-                "margin": "0"
-              }
-            },
-            ".item-wrapper": {
-              "position": "relative",
-              "border-radius": "4px",
-              "background": "@cardsBg",
-              "height": "100%",
-              "display": "flex",
-              "flex-flow": "column nowrap",
-              "@media (min-width: 992px)": {
-                "& when (@showButtons)": {
-                  ".item-content": {
-                    "padding": "2rem 2rem 0"
-                  },
-                  ".item-footer": {
-                    "padding": "0 2rem 2rem"
-                  }
-                },
-                "& when not (@showButtons)": {
-                  ".item-content": {
-                    "padding": "2rem"
-                  }
-                }
-              },
-              "@media (max-width: 991px)": {
-                "& when (@showButtons)": {
-                  ".item-content": {
-                    "padding": "1rem 1rem 0"
-                  },
-                  ".item-footer": {
-                    "padding": "0 1rem 1rem"
-                  }
-                },
-                "& when not (@showButtons)": {
-                  ".item-content": {
-                    "padding": "1rem"
-                  }
-                }
-              }
-            },
-            "& when (@transparent)": {
-              ".item-wrapper": {
-                "background": "transparent"
-              }
-            },
-            ".mbr-section-btn": {
-              "margin-top": "auto !important"
-            },
-            ".mbr-section-title": {
-              "color": "#232323"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "text-align": "left"
-            },
-            ".item-title": {
-              "text-align": "left"
-            },
-            ".item-subtitle": {
-              "text-align": "center"
-            }
-          },
-          "_name": "gallery3",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"gallery3\" group=\"Sliders & Galleries\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <select title=\"Columns\" name=\"cardsWidth\">\n            <option value=\"12\">1</option>\n            <option value=\"6\">2</option>\n            <option value=\"4\">3</option>\n            <option value=\"3\" selected>4</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" name=\"showTitle\" title=\"Title\" checked>\n        <input type=\"checkbox\" name=\"showSubtitle\" title=\"Subtitle\" checked>\n        <header>Cards</header>\n        <input type=\"checkbox\" name=\"autoSize\" title=\"Auto Size\">\n        <input type=\"range\" name=\"imageHeight\" title=\"Height\" min=\"1\" max=\"5\" step=\"1\" value=\"3\" condition=\"autoSize && !(showButtons==false && showCardSubtitle==false && showCardTitle==false && showText==false)\">\n        <input type=\"checkbox\" title=\"Spacing\" name=\"spacing\">\n        <input type=\"checkbox\" name=\"showCardTitle\" title=\"Title\" checked>\n        <input type=\"checkbox\" name=\"showCardSubtitle\" title=\"Subtitle\">\n        <input type=\"checkbox\" name=\"showText\" title=\"Text\" checked>\n        <input type=\"checkbox\" name=\"showButtons\" title=\"Buttons\">\n        <input type=\"checkbox\" name=\"transparent\" title=\"Transparent BG\">\n        <input type=\"color\" name=\"cardsBg\" title=\"BG\" value=\"#fafafa\" condition=\"(transparent==false)\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fafafa\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.1\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h2 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>¿En qué podemos ayudarte?</b></h2>\n            <h3 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Estos son algunos temas por los que habitualmente puedes ponerte en contacto con la parroquia</h3>\n        </div>\n        <div class=\"row mt-4\">\n            <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"item-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/iconos-sacramentos2-2.webp\" alt=\"Sacramentos\">\n                    </div>\n                    <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n                        <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n                            <b>SACRAMENTOS</b>\n                        </h4>\n                        <h6 class=\"item-subtitle mbr-fonts-style mt-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">\n                            <i>Card Subtitle</i>\n                        </h6>\n                        <p class=\"mbr-text mbr-fonts-style mt-3\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">Consulta información sobre la preparación y celebración del Bautismo, la Primera Comunión, la Confirmación y el Matrimonio.<br></p>\n                    </div>\n                    <div class=\"mbr-section-btn item-footer mt-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\">\n                        <a href class=\"btn btn-primary item-btn\" target=\"_blank\" data-app-placeholder=\"Type Text\">Learn\n                            more</a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"item-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/iconos-certificados-1.webp\" alt=\"Certificados\">\n                    </div>\n                    <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n                        <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n                            <b>CERTIFICADOS</b>\n                        </h4>\n                        <h6 class=\"item-subtitle mbr-fonts-style mt-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">\n                            <i>Card Subtitle</i>\n                        </h6>\n                        <p class=\"mbr-text mbr-fonts-style mt-3\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">Solicita partidas de Bautismo y otros documentos relacionados con tu vida sacramental.<br></p>\n                    </div>\n                    <div class=\"mbr-section-btn item-footer mt-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\">\n                        <a href class=\"btn btn-primary item-btn\" target=\"_blank\" data-app-placeholder=\"Type Text\">Learn\n                            more</a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"item-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/iconos-grupos-1.webp\" alt=\"Grupos Parroquiales\">\n                    </div>\n                    <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n                        <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>VIDA PARROQUIAL</b></h4>\n                        <h6 class=\"item-subtitle mbr-fonts-style mt-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">\n                            <i>Card Subtitle</i>\n                        </h6>\n                        <p class=\"mbr-text mbr-fonts-style mt-3\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">Infórmate sobre grupos, actividades y formas de participar en la comunidad parroquial.<br></p>\n                    </div>\n                    <div class=\"mbr-section-btn item-footer mt-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\">\n                        <a href class=\"btn btn-primary item-btn\" data-app-placeholder=\"Type Text\" target=\"_blank\">Learn\n                            more</a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-image col-12 col-md-6 col-lg-{{cardsWidth}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"item-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/iconos-cura-1.webp\" alt=\"Atención Pastoral\" title>\n                    </div>\n                    <div class=\"item-content\" mbr-if=\"showCardTitle || showCardSubtitle || showText || showButtons\">\n                        <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>ATENCIÓN PASTORAL</b></h4>\n                        <h6 class=\"item-subtitle mbr-fonts-style mt-1\" mbr-theme-style=\"display-7\" data-app-selector=\".item-subtitle\" mbr-if=\"showCardSubtitle\">\n                            <i>Card Subtitle</i>\n                        </h6>\n                        <p class=\"mbr-text mbr-fonts-style mt-3\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">Contacta con un sacerdote para recibir orientación, acompañamiento espiritual o resolver tus dudas.<br></p>\n                    </div>\n                    <div class=\"mbr-section-btn item-footer mt-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-theme-style=\"display-7\">\n                        <a href class=\"btn btn-primary item-btn\" target=\"_blank\" data-app-placeholder=\"Type Text\">Learn\n                            more</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "vnlRPqntcL",
-          "_anchor": "gallery3-9g",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -9239,7 +9196,7 @@
     "donativos.html": {
       "settings": {
         "title": "Dona a tu Iglesia | Parroquia San Francisco y Santa Clara de Asís",
-        "order": "21",
+        "order": "20",
         "meta_descr": "Apoya a la parroquia San Francisco y Clara de Asís de  Fuenlabrada con donativos por Bizum. Método rápido, seguro y sin comisiones. Sigue las instrucciones y contribuye desde tu móvil en segundos.",
         "meta_image": "@PROJECT_PATH@/assets/images/index-meta-1200x630.webp"
       },
@@ -9893,7 +9850,7 @@
     "bautismo.html": {
       "settings": {
         "title": "Bautismo | Sacramento de Iniciación Cristiana",
-        "order": "14",
+        "order": "13",
         "meta_descr": "Conoce el sacramento del Bautismo, puerta de la vida cristiana. Información sobre su significado, preparación, requisitos y celebración en la parroquia San Francisco y Clara de Asís, en  Fuenlabrada (Madrid)",
         "meta_image": "@PROJECT_PATH@/assets/images/pilabautismal-1.webp"
       },
@@ -10517,7 +10474,7 @@
     "comunion.html": {
       "settings": {
         "title": "Primera Comunión | Sacramento y Catequesis",
-        "order": "15",
+        "order": "14",
         "meta_descr": "Información sobre la Primera Comunión: significado, catequesis y preparación. Todo lo necesario para recibir el sacramento en la parroquia San Francisco y Clara de Asís en  Fuenlabrada.",
         "meta_image": "@PROJECT_PATH@/assets/images/santisimo2-3.webp"
       },
@@ -11142,7 +11099,7 @@
     "confesion.html": {
       "settings": {
         "title": "Confesión | Sacramento de Reconciliación",
-        "order": "16",
+        "order": "15",
         "meta_descr": "Conoce el sacramento de la Confesión, también llamado Reconciliación. Un espacio de acogida, perdón y paz para quienes desean retomar su vida de fe.",
         "meta_image": "@PROJECT_PATH@/assets/images/confesion.webp"
       },
@@ -11669,7 +11626,7 @@
               "color": "#ffffff"
             }
           },
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"info3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#4479d9\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"card col-12 col-lg-10\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <h4 class=\"card-title mbr-fonts-style align-center mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n                            <b>Contacta con la parroquia</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-box .mbr-text, .mbr-section-btn\">\n                            2500+ beautiful website blocks, templates and themes help you start easily.</p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd, -mbrBtnMove, -mbrBtnRemove\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-warning\" href=\"index.html#features8-8v\" data-app-placeholder=\"Type Text\">Ver horarios de confesiones</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"info3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#4479d9\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"card col-12 col-lg-10\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <h4 class=\"card-title mbr-fonts-style align-center mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n                            <b>Contacta con la parroquia</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-box .mbr-text, .mbr-section-btn\">\n                            2500+ beautiful website blocks, templates and themes help you start easily.</p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd, -mbrBtnMove, -mbrBtnRemove\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-warning\" href=\"horarios.html#features8-9\" data-app-placeholder=\"Type Text\">Ver horarios de confesiones</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "info3-7m",
           "_isUserblock": true,
           "_cid": "vl2gaqiQ9s",
@@ -11767,7 +11724,7 @@
     "confirmacion.html": {
       "settings": {
         "title": "Confirmación | Sacramento y Preparación Cristiana",
-        "order": "17",
+        "order": "16",
         "meta_descr": "Conoce el sacramento de la Confirmación: significado, preparación y requisitos. Catequesis para jóvenes y adultos que desean fortalecer su fe.",
         "meta_image": "@PROJECT_PATH@/assets/images/confirmacion-2.webp"
       },
@@ -12392,7 +12349,7 @@
     "matrimonio.html": {
       "settings": {
         "title": "Matrimonio | Sacramento y Preparación",
-        "order": "18",
+        "order": "17",
         "meta_descr": "Conoce el sacramento del matrimonio: significado, preparación, requisitos y celebración. Acompañamiento para parejas que desean casarse en la Iglesia San Francisco y Santa Clara de Asís.",
         "meta_image": "@PROJECT_PATH@/assets/images/matrimonio.webp"
       },
@@ -13017,7 +12974,7 @@
     "ordensacerdotal.html": {
       "settings": {
         "title": "Orden Sacerdotal | Vocación y Sacramento",
-        "order": "20",
+        "order": "19",
         "meta_descr": "Conoce el sacramento del Orden Sacerdotal y el camino vocacional. Información sobre el ministerio, formación, discernimiento y vida sacerdotal en la Iglesia.",
         "meta_image": "@PROJECT_PATH@/assets/images/ordensacerdotal.webp"
       },
@@ -13642,7 +13599,7 @@
     "uncionenfermos.html": {
       "settings": {
         "title": "Unción de Enfermos | Consuelo y Sacramento",
-        "order": "19",
+        "order": "18",
         "meta_descr": "Descubre el sacramento de la Unción de Enfermos: significado, cuándo solicitarlo y acompañamiento espiritual. Atención a enfermos y mayores en la parroquia San Francisco y Santa Clara de Asís.",
         "meta_image": "@PROJECT_PATH@/assets/images/unciondeenfermos.webp"
       },
@@ -14267,7 +14224,7 @@
     "grupos.html": {
       "settings": {
         "title": "Grupos Parroquiales | Participa y Conecta",
-        "order": "2",
+        "order": "1",
         "meta_descr": "Conoce los grupos parroquiales disponibles en San Francisco y Clara de Asís y únete a la vida de la comunidad. Formación, oración, voluntariado y actividades para todas las edades.",
         "meta_image": "@PROJECT_PATH@/assets/images/index-meta-1200x630.webp"
       },
@@ -15328,7 +15285,7 @@
     "grupodeoracion.html": {
       "settings": {
         "title": "Grupo de Oración | Parroquia San Francisco y Santa Clara de Asís",
-        "order": "3",
+        "order": "2",
         "meta_descr": "Grupo de Oración de la Parroquia San Francisco y Santa Clara de Asís de Fuenlabrada. Encuentra encuentros de oración, formación espiritual, adoración y vida comunitaria cristiana.",
         "meta_image": "@PROJECT_PATH@/assets/images/grupo-oracion2.webp"
       },
@@ -15951,7 +15908,7 @@
     "grupooracionmadres.html": {
       "settings": {
         "title": "Grupo de oración de madres | Parroquia San Francisco y Santa Clara de Asís",
-        "order": "4",
+        "order": "3",
         "meta_descr": "Grupo de oración de madres en la Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada. Oración, apoyo espiritual y comunidad para madres.",
         "meta_image": "@PROJECT_PATH@/assets/images/oracion-madres2.webp"
       },
@@ -16575,7 +16532,7 @@
     "rezorosario.html": {
       "settings": {
         "title": "Rezo del Santo Rosario | Parroquia San Francisco y Santa Clara de Asís",
-        "order": "13",
+        "order": "12",
         "meta_descr": "Rezo del Santo Rosario en la Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada. Oración mariana en comunidad y meditación de los misterios.",
         "meta_image": "@PROJECT_PATH@/assets/images/rosario-1.webp"
       },
@@ -17182,7 +17139,7 @@
     "rosariomanto.html": {
       "settings": {
         "title": "Rosario con el manto de la Virgen de Guadalupe",
-        "order": "12",
+        "order": "11",
         "meta_descr": "Oración mariana especial en Fuenlabrada, pidiendo intercesión y consuelo espiritual  | Parroquia San Francisco y Santa Clara de Asís",
         "meta_image": "@PROJECT_PATH@/assets/images/mantoguadalupe.webp"
       },
@@ -17789,7 +17746,7 @@
     "caritas.html": {
       "settings": {
         "title": "Cáritas | Parroquia San Francisco y Santa Clara de Asís",
-        "order": "11",
+        "order": "10",
         "meta_descr": "Cáritas Parroquial en Fuenlabrada. Ayuda a los más necesitados, acompañamiento social y caridad cristiana al servicio de la comunidad.",
         "meta_image": "@PROJECT_PATH@/assets/images/caritas-meta-2.webp"
       },
@@ -18396,7 +18353,7 @@
     "grupolimpieza.html": {
       "settings": {
         "title": "Grupo de limpieza | Parroquia San Francisco y Santa Clara de Asís",
-        "order": "10",
+        "order": "9",
         "meta_descr": "Grupo de Limpieza de la Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada. Servicio sencillo y comunitario para cuidar el templo.",
         "meta_image": "@PROJECT_PATH@/assets/images/limpieza.webp"
       },
@@ -18983,7 +18940,7 @@
     "grupoconfirmacion.html": {
       "settings": {
         "title": "Grupo de Confirmación de Jóvenes | Parroquia San Francisco y Santa Clara de Asís",
-        "order": "9",
+        "order": "8",
         "meta_descr": "Grupo de Confirmación de Jóvenes en la Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada. Formación cristiana y preparación para el sacramento.",
         "meta_image": "@PROJECT_PATH@/assets/images/confirmacion-3.webp"
       },
@@ -19636,7 +19593,7 @@
     "manualidades.html": {
       "settings": {
         "title": "Grupo de Manualidades | Parroquia San Francisco y Santa Clara de Asís",
-        "order": "8",
+        "order": "7",
         "meta_descr": "Grupo de Manualidades de la Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada. Creatividad, convivencia y servicio a la comunidad.",
         "meta_image": "@PROJECT_PATH@/assets/images/manualidades2.webp"
       },
@@ -20223,7 +20180,7 @@
     "corodeadultos.html": {
       "settings": {
         "title": "Coro de Adultos | Parroquia San Francisco y Santa Clara de Asís",
-        "order": "6",
+        "order": "5",
         "meta_descr": "Coro de Adultos de la Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada. Canto litúrgico, oración y servicio en las celebraciones.",
         "meta_image": "@PROJECT_PATH@/assets/images/mantoguadalupe.webp"
       },
@@ -20830,7 +20787,7 @@
     "corojoven.html": {
       "settings": {
         "title": "Coro de Niños | Parroquia San Francisco y Santa Clara de Asís",
-        "order": "5",
+        "order": "4",
         "meta_descr": "Coro de Niños de la Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada. Formación musical, fe y participación en la liturgia parroquial.",
         "meta_image": "@PROJECT_PATH@/assets/images/coro-peque.webp"
       },
@@ -21458,7 +21415,7 @@
     "grupomatrimonios.html": {
       "settings": {
         "title": "Grupo de Matrimonios | Parroquia San Francisco y Santa Clara de Asís",
-        "order": "7",
+        "order": "6",
         "meta_descr": "Grupo de Proyecto Amor Conyugal en la Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada. Con las catequesis de la Teología del Cuerpo de San Juan Pablo II",
         "meta_image": "@PROJECT_PATH@/assets/images/proyecto.webp"
       },
