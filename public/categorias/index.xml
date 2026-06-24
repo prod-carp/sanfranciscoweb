@@ -6,13 +6,20 @@
     <description>Recent content in Categorias on Parroquia San Francisco y Santa Clara de Asís</description>
     <generator>Hugo</generator>
     <language>es-es</language>
-    <lastBuildDate>Sun, 10 May 2026 12:29:54 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 12:29:54 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/categorias/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Peregrinaciones</title>
       <link>http://localhost:1313/categorias/peregrinaciones/</link>
-      <pubDate>Sun, 10 May 2026 12:29:54 +0200</pubDate>
+      <pubDate>Sun, 07 Jun 2026 12:29:54 +0200</pubDate>
       <guid>http://localhost:1313/categorias/peregrinaciones/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Musica</title>
+      <link>http://localhost:1313/categorias/musica/</link>
+      <pubDate>Sun, 31 May 2026 12:29:54 +0200</pubDate>
+      <guid>http://localhost:1313/categorias/musica/</guid>
       <description></description>
     </item>
     <item>
@@ -20,13 +27,6 @@
       <link>http://localhost:1313/categorias/parroquia/</link>
       <pubDate>Tue, 05 May 2026 12:29:54 +0200</pubDate>
       <guid>http://localhost:1313/categorias/parroquia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Grupos</title>
-      <link>http://localhost:1313/categorias/grupos/</link>
-      <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/categorias/grupos/</guid>
       <description></description>
     </item>
     <item>

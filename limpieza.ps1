@@ -213,5 +213,9 @@ Write-Host "Canonical agregados: $canonicalAdded" -ForegroundColor Green
 Write-Host "Código Mobirise eliminado: $mobiriseRemoved" -ForegroundColor Green
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
+
+Write-Host "Ejecutando noticias..."
+& "$PSScriptRoot\noticias.ps1"
+
 # Read-Host "Presiona Enter para salir"
 Clear-Host
