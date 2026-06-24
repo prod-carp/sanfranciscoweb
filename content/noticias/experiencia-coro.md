@@ -21,9 +21,7 @@ Llegamos aquel primer domingo con una guitarra, una cabasa y muchas ganas de col
 
 Aquella acogida fue uno de los regalos más bonitos de esta experiencia.
 
-
 ## Una misa pensada para los más pequeños
-
 
 Desde el comienzo nos sorprendió gratamente la forma en que se celebra la misa de niños.
 
@@ -37,13 +35,11 @@ Y eso se nota.
 
 Se ve en cómo responden, cómo cantan y cómo siguen cada momento de la celebración.
 
-
 ## Una semana de ensayo y preparación
-
 
 Aquel primer domingo fue también una jornada de aprendizaje.
 
-Tomamos nota de las canciones, observamos cómo se desarrollaba la misa y recogimos varios cancioneros que Verónica nos prestó muy amablemente.
+Tomamos nota de las canciones, observamos cómo se desarrollaba la misa y nos enviaron muy amablemente varios cancioneros.
 
 Durante toda la semana siguiente estuvimos practicando.
 
@@ -59,9 +55,7 @@ Habíamos aportado nuestro pequeño granito de arena.
 
 Y eso bastaba.
 
-
 ## Llegan las comuniones
-
 
 Con la llegada de las celebraciones de Primera Comunión, el coro recibió también algunos refuerzos muy especiales.
 
@@ -75,9 +69,7 @@ Más de uno expresó su alegría al descubrir que estaba sentado cerca del coro.
 
 Aquello nos hizo sonreír, porque nos recordó que la música tiene una capacidad especial para ayudar a rezar y para hacer que determinados momentos permanezcan grabados en la memoria.
 
-
 ## Cuando el Espíritu Santo toma las riendas
-
 
 Hay ocasiones en las que uno prepara todo cuidadosamente y aun así siente que algo puede salir mal.
 
@@ -99,9 +91,7 @@ Y la música ayudó a crear un clima de oración muy especial.
 
 Todos tuvimos la sensación de que el Espíritu Santo estaba haciendo mucho más de lo que nosotros podíamos hacer por nuestras propias fuerzas.
 
-
 ## Una celebración preciosa para los niños
-
 
 Pero, por encima de todo, lo verdaderamente importante eran ellos.
 
@@ -115,9 +105,7 @@ Con cercanía, sencillez y cariño les ofreció sus últimos consejos antes de r
 
 Fue un momento lleno de ternura que seguramente permanecerá en el recuerdo de muchos de aquellos niños.
 
-
 ## Todo para la gloria de Dios
-
 
 Y así, casi sin darnos cuenta, llegó el final de la temporada de comuniones de 2026.
 
@@ -142,6 +130,3 @@ Gracias a quienes confiaron en nosotros.
 Y, sobre todo, gracias a Dios, que hace posible mucho más de lo que imaginamos.
 
 Porque al final, como tantas veces repetimos, todo ha sido y seguirá siendo para su gloria.
-
-
-

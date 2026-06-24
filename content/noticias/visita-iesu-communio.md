@@ -29,13 +29,15 @@ Al entrar en la nueva iglesia del monasterio nos impresionó profundamente la be
 
 ## Compartir con las hermanas
 
-Más tarde nos trasladamos a la sala de testimonios. Allí las hermanas nos recibieron con una hermosa canción que llenó el ambiente de alegría y emoción. Después tuvimos la oportunidad de conversar con ellas y plantearles preguntas sobre distintos aspectos de la vida cristiana y de nuestra realidad cotidiana.
+Tras la visita por el monasterio llegó uno de los momentos más esperados de la jornada: el encuentro personal con las hermanas de Iesu Communio.
 
-Compartimos inquietudes muy presentes en nuestro día a día: los agobios, las preocupaciones personales, la incertidumbre que a veces sentimos ante los acontecimientos de nuestro país y del mundo. Las hermanas respondieron con sencillez y profundidad, transmitiéndonos una paz que nacía claramente de su relación con Cristo. Sus palabras no pretendían ofrecer soluciones humanas a todos los problemas, sino recordarnos que Dios sigue sosteniendo nuestra vida y que nunca deja de caminar a nuestro lado.
+Durante ese tiempo pudimos escuchar sus testimonios, compartir inquietudes y dejarnos interpelar por la alegría sencilla con la que viven su vocación. Fue un espacio de diálogo, escucha y cercanía que nos ayudó a mirar nuestra propia vida desde la confianza en Dios.
 
-## El abrazo de María
+Sin desvelar demasiados detalles, podemos decir que fue una experiencia que difícilmente deja indiferente a quien la vive.
 
-Uno de los momentos más especiales de la jornada tuvo lugar después, de nuevo en la iglesia. Participamos en una hermosa oración mariana mientras las hermanas invocaban al Espíritu Santo con sus cantos. Poco a poco fuimos acercándonos a la imagen de la Virgen María y depositando en su regazo todas las inquietudes, preocupaciones, alegrías y esperanzas que llevábamos en el corazón. Fue un momento de profunda intimidad con Dios y de gran confianza filial en nuestra Madre.
+## Un momento para el corazón
+
+La jornada concluyó con uno de esos momentos que cuesta describir con palabras. En un ambiente de profunda oración y espiritualidad, tuvimos la oportunidad de poner ante Mamita María todo lo que llevábamos en el corazón: nuestras preocupaciones, nuestras alegrías, nuestros proyectos y también nuestras dificultades.
 
 Antes de finalizar la visita también tuvimos tiempo para conocer la tienda del monasterio. Allí encontramos una gran variedad de artículos elaborados con cariño: libros, cuadernos, pulseras, llaveros, adornos, belenes, regalos para toda la familia y una amplia selección de dulces, bombones, trufas y productos artesanales que hicieron las delicias de muchos de nosotros.
 
@@ -43,7 +45,7 @@ Antes de finalizar la visita también tuvimos tiempo para conocer la tienda del 
 
 La jornada culminó con la celebración de la Santa Misa, presidida por nuestro párroco el Padre Gustavo. Durante la homilía retomó muchas de las inquietudes que habían surgido durante el encuentro con las hermanas y nos recordó una verdad fundamental: el Espíritu Santo está mucho más cerca de nosotros de lo que imaginamos. Dios nunca nos abandona y desea acompañarnos en cada momento de nuestra vida. Por eso debemos invocar con frecuencia al Espíritu Santo, pidiéndole que venga a nosotros, ilumine nuestras decisiones y fortalezca nuestra fe.
 
-La Eucaristía estuvo especialmente marcada por los cantos de las hermanas, que llenaron el templo de una atmósfera de profunda oración y recogimiento. Al terminar nos despedimos de ellas, con cariño y algún que otro abrazo. Fue uno de esos momentos que permanecen grabados en la memoria mucho tiempo después de haber terminado.
+La Eucaristía estuvo especialmente marcada por los cantos de las hermanas, que llenaron el templo de una atmósfera de profunda espiritualidad. Al terminar nos despedimos de ellas, con cariño y algún que otro abrazo. Fue uno de esos momentos que permanecen grabados en la memoria mucho tiempo después de haber terminado.
 
 ## La gracia de un corazón renovado
 
