@@ -17969,8 +17969,55 @@ a {
     left: -1rem;
   }
 }
+.cid-vnttEDETLR {
+  display: flex;
+  padding-top: 13rem;
+  padding-bottom: 0rem;
+  background-image: url("../../../assets/images/santaclara-parte2.webp");
+}
+.cid-vnttEDETLR .mbr-overlay {
+  background-color: #000000;
+  opacity: 0.5;
+}
+@media (min-width: 768px) {
+  .cid-vnttEDETLR {
+    align-items: flex-end;
+  }
+  .cid-vnttEDETLR .row {
+    justify-content: center;
+  }
+  .cid-vnttEDETLR .content-wrap {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-vnttEDETLR .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-vnttEDETLR {
+    -webkit-align-items: center;
+    align-items: flex-end;
+  }
+  .cid-vnttEDETLR .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-vnttEDETLR .content-wrap {
+    width: 100%;
+  }
+}
+.cid-vnttEDETLR .mbr-section-title,
+.cid-vnttEDETLR .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-vnttEDETLR .mbr-text,
+.cid-vnttEDETLR .mbr-section-btn {
+  text-align: center;
+}
 .cid-vntcYpVFE2 {
-  padding-top: 6rem;
+  padding-top: 3rem;
   padding-bottom: 6rem;
   background: #fafafa;
 }
