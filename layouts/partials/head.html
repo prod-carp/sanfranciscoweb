@@ -3,8 +3,8 @@
   <meta charset="UTF-8">
   <link rel="canonical" href="{{ .Permalink | absURL }}">  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
-  <meta name="description" content="{{ .Title }}. {{ .Params.subtitle }}">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="description" content="{{ if .Params.subtitle }}{{ .Params.subtitle }}{{ else }}Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada{{ end }}">
   <meta name="theme-color" content="#ffffff">
   <meta name="author" content="Parroquia San Francisco y Santa Clara de Asís">
   
@@ -20,7 +20,7 @@ Parroquia San Francisco y Santa Clara de Asís | Fuenlabrada
   <!-- HOME -->
   <meta property="og:type" content="website">
 {{ else if eq .Kind "page" }}
-  <!-- ARTÍCULOS -->
+  <!-- CONTENIDO DE NOTICIA -->
   <meta property="og:type" content="article">
   <!-- Schema.org Church -->
 {{ $image := default "/assets/images/index-meta-1200x630.webp" .Params.image }}
@@ -29,7 +29,7 @@ Parroquia San Francisco y Santa Clara de Asís | Fuenlabrada
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "NewsArticle"
 
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -38,19 +38,21 @@ Parroquia San Francisco y Santa Clara de Asís | Fuenlabrada
 
   "headline": "{{ .Title }}",
   "description": "{{ $description }}",
-  "image": "{{ $image }}",
+  "image": "{{ $image | absURL }}",
 
   "author": {
     "@type": "Organization",
-    "name": "Parroquia San Francisco y Santa Clara de Asís"
+    "name": "Parroquia San Francisco y Santa Clara de Asís",
+    "url": "https://sanfranciscoysantaclara.es"
   },
 
   "publisher": {
     "@type": "Organization",
     "name": "Parroquia San Francisco y Santa Clara de Asís",
+    "url": "https://sanfranciscoysantaclara.es",
     "logo": {
       "@type": "ImageObject",
-      "url": "/assets/images/index-meta-1200x630.webp"
+      "url": "https://sanfranciscoysantaclara.es/assets/images/logo.png"
     }
   },
 
@@ -61,9 +63,40 @@ Parroquia San Francisco y Santa Clara de Asís | Fuenlabrada
   "url": "{{ .Permalink | absURL }}"
 }
 </script>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://sanfranciscoysantaclara.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Noticias",
+      "item": "https://sanfranciscoysantaclara.es/noticias/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ index .Params.categorias 0 }}",
+      "item": "https://sanfranciscoysantaclara.es/categorias/{{ index .Params.categorias 0 | urlize }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+  ]
+}
+</script>
 {{ else if eq .Kind "section" }}
-<!-- NOTICIAS -->
+<!-- LISTA DE NOTICIAS -->
 
   <meta property="og:type" content="website">
 
@@ -106,7 +139,7 @@ Parroquia San Francisco y Santa Clara de Asís | Fuenlabrada
 
 {{ else if eq .Kind "taxonomy" }}
 
-  <!-- TAXONOMÍAS -->
+  <!-- TAXONOMÍAS (NOTICIAS ORGANIZADAS POR TEMAS) -->
   <meta property="og:type" content="website">
 <script type="application/ld+json">
 {
@@ -163,7 +196,7 @@ Parroquia San Francisco y Santa Clara de Asís | Fuenlabrada
         "position": {{ add $i 1 }},
 
         "item": {
-          "@type": "Article",
+          "@type": "NewsArticle"
           "headline": "{{ $page.Title }}",
           "description": "{{ $page.Params.subtitle }}",
           "url": "{{ $page.Permalink | absURL }}",
@@ -182,21 +215,22 @@ Parroquia San Francisco y Santa Clara de Asís | Fuenlabrada
 
 <meta property="og:site_name" content="Parroquia San Francisco y Santa Clara de Asís">
 <meta property="og:title" content="{{ .Title }} | Parroquia San Francisco y Santa Clara de Asís">
-<meta property="og:description" content="{{ .Title }}. {{ default "Parroquia San Francisco y Santa Clara de Asís" .Params.subtitle }}">
+<meta property="og:description" content="{{ default "Parroquia San Francisco y Santa Clara de Asís" .Params.subtitle }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ default "/assets/images/index-meta-1200x630.webp" .Params.image }}">
+<meta property="og:image" content="{{ (default "/assets/images/index-meta-1200x630.webp" .Params.image) | absURL }}">
+<meta property="og:locale" content="es_ES">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ .Title }} | Parroquia San Francisco y Santa Clara de Asís">
-<meta name="twitter:description" content="{{ .Title }}. {{ default "Parroquia San Francisco y Santa Clara de Asís" .Params.subtitle }}">
-<meta name="twitter:image" content="{{ default "/assets/images/index-meta-1200x630.webp" .Params.image }}">
+<meta name="twitter:description" content="{{ default "Parroquia San Francisco y Santa Clara de Asís" .Params.subtitle }}">
+<meta name="twitter:image" content="{{ (default "/assets/images/index-meta-1200x630.webp" .Params.image) | absURL }}">
 
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
-<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
-
-
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/images/favicon-64x64.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
 
 
 <!-- CSS -->

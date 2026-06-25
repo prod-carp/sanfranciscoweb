@@ -16,10 +16,10 @@
       <description></description>
     </item>
     <item>
-      <title>Musica</title>
-      <link>http://localhost:1313/categorias/musica/</link>
+      <title>Testimonios</title>
+      <link>http://localhost:1313/categorias/testimonios/</link>
       <pubDate>Sun, 31 May 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/categorias/musica/</guid>
+      <guid>http://localhost:1313/categorias/testimonios/</guid>
       <description></description>
     </item>
     <item>
@@ -34,13 +34,6 @@
       <link>http://localhost:1313/categorias/oraciones/</link>
       <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
       <guid>http://localhost:1313/categorias/oraciones/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Testimonios</title>
-      <link>http://localhost:1313/categorias/testimonios/</link>
-      <pubDate>Thu, 02 Apr 2026 12:29:54 +0200</pubDate>
-      <guid>http://localhost:1313/categorias/testimonios/</guid>
       <description></description>
     </item>
   </channel>
