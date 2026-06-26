@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="canonical" href="http://localhost:1313/noticias/">
-  <head>
+  
+
+
+<head>
 
   <meta charset="UTF-8">
   <link rel="canonical" href="http://localhost:1313/noticias/">  
@@ -10,7 +13,9 @@
   <meta name="description" content="Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada">
   <meta name="theme-color" content="#ffffff">
   <meta name="author" content="Parroquia San Francisco y Santa Clara de Asís">
-  
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
 <title>
 
 Noticias | Parroquia San Francisco y Santa Clara de Asís
@@ -101,6 +106,29 @@ Noticias | Parroquia San Francisco y Santa Clara de Asís
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://sanfranciscoysantaclara.es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Noticias",
+      "item": "https://sanfranciscoysantaclara.es/noticias/"
+    }
+  ]
+}
+</script>
+
+
+
 
 
 
@@ -122,16 +150,22 @@ Noticias | Parroquia San Francisco y Santa Clara de Asís
 <link rel="icon" type="image/png" sizes="64x64" href="/assets/images/favicon-64x64.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 
 
 
-  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+
+  <link rel="preload" href="/assets/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css"></noscript>
   <link rel="stylesheet" href="/assets/animatecss/animate.css">
   <link rel="stylesheet" href="/assets/dropdown/css/style.css">
   <link rel="stylesheet" href="/assets/socicon/css/styles.css">
   <link rel="stylesheet" href="/assets/theme/css/style.css">
 
  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Xanh+Mono:400,400i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Xanh+Mono:400,400i&display=swap"></noscript>
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Tenor+Sans:400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
