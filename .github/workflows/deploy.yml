@@ -37,14 +37,14 @@ jobs:
           echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > $HOME/firebase-key.json
           echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/firebase-key.json" >> $GITHUB_ENV
 
-	- name: Deploy a Firebase Hosting
-  	run: |
-    	set +e
-    	firebase deploy --only hosting --non-interactive
-    	EXIT_CODE=$?
-    
-    	if [ $EXIT_CODE -ne 0 ]; then
-      	echo "Firebase devolvió warning/error final, pero el deploy puede haberse aplicado correctamente."
-      	echo "Se marca como éxito para evitar falsos negativos en GitHub."
-      	exit 0
-    	fi
+      - name: Deploy a Firebase Hosting
+        run: |
+          set +e
+          firebase deploy --only hosting --non-interactive
+          EXIT_CODE=$?
+          
+          if [ $EXIT_CODE -ne 0 ]; then
+            echo "Firebase devolvió warning/error final, pero el deploy puede haberse aplicado correctamente."
+            echo "Se marca como éxito para evitar falsos negativos en GitHub."
+            exit 0
+          fi
