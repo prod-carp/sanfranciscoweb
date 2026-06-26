@@ -32,16 +32,20 @@ jobs:
           echo "Firebase CLI version:"
           firebase --version
 
+      - name: Autenticación Firebase (Service Account)
+        run: |
+          echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > $HOME/firebase-key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/firebase-key.json" >> $GITHUB_ENV
+
       - name: Deploy a Firebase
         run: firebase deploy --only hosting --token "${{ secrets.FIREBASE_TOKEN }}"
 
-      # 🔁 Deploy con reintentos
-      - name: Deploy a Firebase Hosting
+      - name: Deploy a Firebase (con reintentos)
         run: |
           for i in 1 2 3; do
             echo "Intento $i de deploy..."
             firebase deploy --only hosting --non-interactive && exit 0
-            echo "Falló intento $i, reintentando en 10s..."
+            echo "Falló intento $i, reintentando..."
             sleep 10
           done
 
