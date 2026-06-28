@@ -34,6 +34,78 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
     # Variable para controlar cambios
     $changed = $false
     
+    # === 1. SUSTITUIR HEAD COMPLETO ===
+    $canonicalTag = "$baseUrl/$relativePath"
+    # Extraer DESCRIPTION
+    $patternDesc = '<meta name="description" content="(.*?)">'
+    if ($content -match $patternDesc) {
+       $descriptionContent = $matches[1]
+    }
+    # Extraer TITLE
+    $patternDesc = '<title>(.*?)</title>'
+    if ($content -match $patternDesc) {
+    $titleContent = $matches[1]
+    }
+    # Extraer IMAGEN
+    $patternDesc = '<meta property="og:image" content="(.*?)">'
+    if ($content -match $patternDesc) {
+    $imageContent = $matches[1]
+    }
+
+$newHead = @"
+<html lang="es">
+<link rel="canonical" href="$canonicalTag">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>$titleContent</title>
+
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="description" content="$descriptionContent">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="Parroquia San Francisco y Santa Clara de Asís">
+<meta name="color-scheme" content="light">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Parroquia San Francisco y Santa Clara de Asís">
+<meta property="og:title" content="$titleContent">
+<meta property="og:description" content="$descriptionContent">
+<meta property="og:url" content="$canonicalTag">
+<meta property="og:image" content="$baseUrl/$imageContent">
+<meta property="og:locale" content="es_ES">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="$titleContent">
+<meta name="twitter:description" content="$descriptionContent">
+<meta name="twitter:image" content="$baseUrl/$imageContent">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/images/favicon-64x64.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="stylesheet" href="/assets/web/assets/mobirise-icons2/mobirise2.css">
+<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/animatecss/animate.css">
+<link rel="stylesheet" href="/assets/dropdown/css/style.css">
+<link rel="stylesheet" href="/assets/socicon/css/styles.css">
+<link rel="stylesheet" href="/assets/theme/css/style.css">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css?v=G1za5k" type="text/css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Church","name":"Parroquia San Francisco y Santa Clara de Asís","url":"https://sanfranciscoysantaclara.es","telephone":"+34 91 615 24 31","image":"https://sanfranciscoysantaclara.es/assets/images/index-meta-1200x630.webp","address":{"@type":"PostalAddress","streetAddress":"Calle de Suecia, 2","addressLocality":"Fuenlabrada","addressRegion":"Madrid","postalCode":"28942","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":40.2896387,"longitude":-3.8060985},"sameAs":["https://www.instagram.com/san.franciscoyclara/"]}</script>
+
+</head>
+"@
+
+$content = $content -replace '(?s)<html.*?</head>', $newHead
+    
     # === 1. ELIMINAR CÓDIGO DE MOBIRISE ===
     $pattern = @'
 <section class="display-7"[^>]*>.*?<a href="https://mobiri\.se/[^"]+".*?</a>.*?<p[^>]*>.*?</p>.*?<a style="z-index:1" href="https://mobirise[^"]*">.*?</a></section>
@@ -44,62 +116,8 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
         $mobiriseRemoved++
         $changed = $true
         Write-Host "  [OK] Código Mobirise eliminado" -ForegroundColor Green
-    }
-    
-    # 1.2 Comentario de Mobirise -> Robots
-    $patterns = @(
-        '<!-- Site made with Mobirise Website Builder v[0-9]+\.[0-9]+\.[0-9]+, https://mobirise\.com -->'
-        '<!-- Site made with Mobirise v[0-9]+\.[0-9]+\.[0-9]+, https://mobirise\.com -->'
-        '<!-- Made with Mobirise Website Builder v[0-9]+\.[0-9]+\.[0-9]+, https://mobirise\.com -->'
-   )
-    
-    foreach ($pattern in $patterns) {
-        if ($content -match $pattern) {
-            $content = $content -replace $pattern, '<meta name="robots" content="index, follow">'
-            $changed = $true
-        }
-    }
-
-    # 1.3 Generador -> og:type
-    $pattern = '<meta name="generator" content="Mobirise.*?">'
-
-    if ($content -match $pattern) {
-            $content = $content -replace $pattern, '<meta property="og:type" content="website">'
-            }
-
-    # 1.4 Edge -> og:URL
-    $canonicalTag = "$baseUrl/$relativePath"
-    $pattern = '<meta http-equiv="X-UA-Compatible" content="IE=edge">'
-
-    if ($content -match $pattern) {
-            $content = $content -replace $pattern, "<meta property=`"og:url`" content=`"$canonicalTag`">"
-            }
-
-    # 1.5 html -> html-es
-    $pattern = '<html  '
-
-    if ($content -match $pattern) {
-            $content = $content -replace $pattern, '<html lang="es"'
-            }
-
-    # 1.5.1 twitter:image:src
-    $pattern = '"twitter:image:src"'
-
-    if ($content -match $pattern) {
-            $content = $content -replace $pattern, '"twitter:image"'
-            }
-    # 1.5.2 URL ABSOLUTAS
-    $pattern = 'content="assets'
-
-    if ($content -match $pattern) {
-            $content = $content -replace $pattern, 'content="https://sanfranciscoysantaclara.es/assets'
-            }
-    # 1.5.3 URL ABSOLUTAS 2
-    $pattern = 'href="assets'
-
-    if ($content -match $pattern) {
-            $content = $content -replace $pattern, 'href="https://sanfranciscoysantaclara.es/assets'
-            }
+    }    
+        
     # 1.5.4 COOKIES PARA QUE FUNCIONE EL MENU
     $pattern = '<script type="text/plain" data-src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>'
     if ($content -match $pattern) { $content = $content -replace $pattern, '<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>' }
@@ -136,72 +154,19 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
     if ($content -match $pattern) {
         $content = $content -replace $pattern, $replace;
     }
- 
-    # 1.6 Buscar la meta description y extraer su contenido
-$patternDesc = '<meta name="description" content="(.*?)">'
 
-if ($content -match $patternDesc) {
-    # Extraer el contenido capturado
-    $descriptionContent = $matches[1]
-    
-    # Crear la línea og:description
-    $ogTitleLine = '<meta property="og:description" content="' + $descriptionContent + '">'
-    $twittercontent = '<meta name="twitter:description" content="' + $descriptionContent + '">'
-    
-    # Buscar la línea específica y hacer el reemplazo
-    $patternDescLine = '<meta name="description" content=".*?">'
-    $oglocale = '<meta property="og:locale" content="es_ES">'
-    $sitename = '<meta property="og:site_name" content="Parroquia San Francisco y Santa Clara de Asís">'
-    $autor = '<meta name="author" content="Parroquia San Francisco y Santa Clara de Asís">'
-    $codigoesquema = '<script type="application/ld+json">{"@context":"https://schema.org","@type":"Church","name":"Parroquia San Francisco y Santa Clara de Asís","url":"https://sanfranciscoysantaclara.es","telephone":"+34 91 615 24 31","image":"https://sanfranciscoysantaclara.es/assets/images/index-meta-1200x630.webp","address":{"@type":"PostalAddress","streetAddress":"Calle de Suecia, 2","addressLocality":"Fuenlabrada","addressRegion":"Madrid","postalCode":"28942","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":40.2896387,"longitude":-3.8060985},"sameAs":["https://www.instagram.com/san.franciscoyclara/"]}</script>'
-    
-    # Método alternativo usando -replace correctamente
-    $content = $content -replace "($patternDescLine)", "`$1`n  $ogTitleLine `n  $oglocale `n  $sitename `n  $autor `n  $twittercontent `n  $codigoesquema"
-}
-
-    # 1.7 OGTITLE
-    $patternDesc = '<title>(.*?)</title>'
-    
-    if ($content -match $patternDesc) {
-    # Extraer el contenido capturado
-    $descriptionContent = $matches[1]
-    
-    # Crear la línea og:title
-    $ogTitleLine = '<meta property="og:title" content="' + $descriptionContent + '">'
-         
-    # Buscar la línea específica y hacer el reemplazo
-    $patternDescLine = '<title>.*?</title>'
-        
-    # Método alternativo usando -replace correctamente
-    $content = $content -replace "($patternDescLine)", "`$1`n  $ogTitleLine"
-}
-
-    # === 2. AGREGAR CANONICAL SI NO EXISTE ===
-    $canonicalTag = '<link rel="canonical" href="' + $baseUrl + '/' + $relativePath + '" />'
-    
-    if ($content -notmatch '<link rel="canonical"') {
-        # Buscar <head> y agregar canonical después
-        if ($content -match '(<\s*head[^>]*>)') {
-            $content = $content -replace "(<\s*head[^>]*>)", "`$1`n  $canonicalTag"
-            $canonicalAdded++
-            $changed = $true
-            Write-Host "  [OK] Canonical agregado: $canonicalTag" -ForegroundColor Green
-            # Read-Host "Presiona Enter para continuar"
-        } else {
-            Write-Host "  [!] No se encontró <head>, no se agregó canonical" -ForegroundColor Yellow
-        }
-    } else {
-        Write-Host "  [i] Canonical ya existe" -ForegroundColor Gray
-    }
-
-    
+    # 1.5.8 URL ABSOLUTAS
+    $pattern = '="assets'
+    if ($content -match $pattern) { $content = $content -replace $pattern, '="/assets' }
     
     # Guardar cambios si hubo modificaciones
+    $changed = $true
     if ($changed) {
         Set-Content $_.FullName -Value $content -Encoding UTF8 -NoNewline
     }
     
     Write-Host ""
+    # Read-Host "Hecho"
 }
 
 # Mostrar resumen
