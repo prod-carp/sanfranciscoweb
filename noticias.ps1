@@ -61,6 +61,8 @@ $ultimas = $posts |
 # ==========================================
 # Generar HTML
 # ==========================================
+# Ancho columna <div class="card-body p-0
+# Espacio con la imagen
 
 $htmlNoticias = @'
 <div class="row justify-content-center">
@@ -72,8 +74,8 @@ foreach ($post in $ultimas) {
 
     $resumen = $post.Subtitle
 
-    if ($resumen.Length -gt 120) {
-        $resumen = $resumen.Substring(0,120) + "..."
+    if ($resumen.Length -gt 130) {
+        $resumen = $resumen.Substring(0,130) + "..."
     }
 
     $htmlNoticias += @"
@@ -84,11 +86,11 @@ foreach ($post in $ultimas) {
     <a href="/noticias/$($post.Slug)/">
         <img
             src="$($post.Image)"
-            class="card-img-top noticias-img"
+            class="card-img-top mb-1 noticias-img"
             alt="$($post.Title)">
      </a>
 
-        <div class="card-body d-flex flex-column">
+        <div class="card-body p-0 d-flex flex-column">
 
             <small class="text-muted mb-2">
                 $fecha
