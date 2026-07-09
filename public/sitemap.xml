@@ -3,6 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   
+    <url>
+      <loc>http://localhost:1313/noticias/que-me-pide-enciclica/</loc>
+      <lastmod>2026-07-09T15:30:15+00:00</lastmod>
+    </url>
+  
+
+  
+
+  
+
+  
+    <url>
+      <loc>http://localhost:1313/noticias/</loc>
+      <lastmod>2026-07-09T15:30:15+00:00</lastmod>
+    </url>
+  
+
+  
+    <url>
+      <loc>http://localhost:1313/</loc>
+      <lastmod>2026-07-09T15:30:15+00:00</lastmod>
+    </url>
+  
+
+  
+    <url>
+      <loc>http://localhost:1313/noticias/tuvo-jesus-hermanos/</loc>
+      <lastmod>2026-07-09T12:29:54+02:00</lastmod>
+    </url>
+  
+
+  
+    <url>
+      <loc>http://localhost:1313/noticias/2026-07-09-por-que-dios-permite-el/</loc>
+      <lastmod>2026-07-07T17:39:31+02:00</lastmod>
+    </url>
+  
 
   
     <url>
@@ -11,20 +48,6 @@
     </url>
   
 
-  
-    <url>
-      <loc>http://localhost:1313/noticias/</loc>
-      <lastmod>2026-06-30T18:38:06+02:00</lastmod>
-    </url>
-  
-
-  
-
-  
-    <url>
-      <loc>http://localhost:1313/</loc>
-      <lastmod>2026-06-30T18:38:06+02:00</lastmod>
-    </url>
   
 
   
@@ -373,24 +396,6 @@
     
       <url>
         <loc>http://localhost:1313/tablon.html</loc>
-        <lastmod>2026-07-09T10:23:04&#43;02:00</lastmod>
-      </url>
-    
-  
-
-  
-    
-      <url>
-        <loc>http://localhost:1313/tarjetas.html</loc>
-        <lastmod>2026-07-09T10:23:04&#43;02:00</lastmod>
-      </url>
-    
-  
-
-  
-    
-      <url>
-        <loc>http://localhost:1313/tarjetas2.html</loc>
         <lastmod>2026-07-09T10:23:04&#43;02:00</lastmod>
       </url>
     

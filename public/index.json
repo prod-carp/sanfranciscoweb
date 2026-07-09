@@ -1,40 +1,38 @@
 
 
+
+
 [
-
-    {
-      "category": "Oraciones",
-      "title": "El Santo Rosario: una de las oraciones más queridas y poderosas",
-      "subtitle": "Guía completa y detallada para que puedas rezar el Santo Rosario con toda la devoción que merece",
-      "date": "2026-04-02",
-      "image": "https://sanfranciscoysantaclara.es/assets/images/rezorosario-meta.webp",
-      "url": "/noticias/rezar-el-rosario/"
-    },
-
-    {
-      "category": "Parroquia",
-      "title": "Colecta solidaria en la parroquia para Venezuela",
-      "subtitle": "La parroquia de San Francisco y Santa Clara organiza una colecta solidaria para apoyar a los afectados por el terremoto en Caracas a través de Cáritas Venezuela.",
-      "date": "2026-06-30",
-      "image": "https://sanfranciscoysantaclara.es/assets/images/blog/colecta-venezuela.webp",
-      "url": "/noticias/colecta-solidaria-venezuela/"
-    },
-
-    {
-      "category": "Peregrinaciones",
-      "title": "Un día inolvidable junto al Papa León: crónica de una jornada de fe en Madrid",
-      "subtitle": "Así vivimos la celebración de la Santa Misa presidida por el Papa León en Madrid, una jornada marcada por la fe, y la alegría ser parte de la Iglesia universal.",
-      "date": "2026-06-07",
-      "image": "https://sanfranciscoysantaclara.es/assets/images/blog/visitapapa.webp",
-      "url": "/noticias/visita-papa-leon/"
-    },
-
-    {
-      "category": "Testimonios",
-      "title": "Una guitarra, una cabasa y mucha ilusión: nuestra experiencia en el coro de niños",
-      "subtitle": "Así comenzó nuestra pequeña aventura en el coro de niños de la parroquia durante este final de temporada de comuniones de 2026",
-      "date": "2026-05-31",
-      "image": "https://sanfranciscoysantaclara.es/assets/images/coro-peque.webp",
-      "url": "/noticias/experiencia-coro/"
-    }
+  {
+    "category": "Formación",
+    "title": "¿Qué me pide esta encíclica a mí? Tres ejemplos para entenderla",
+    "subtitle": "Cuando se publica una encíclica, es fácil pensar que está dirigida únicamente a obispos, sacerdotes, políticos o expertos en doctrina social. Sin embargo, ocurre exactamente lo contrario.",
+    "date": "2026-07-09",
+    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/que-me-pide-enciclica.webp",
+    "url": "/noticias/que-me-pide-enciclica/"
+  },
+  {
+    "category": "Parroquia",
+    "title": "Colecta solidaria en la parroquia para Venezuela",
+    "subtitle": "La parroquia de San Francisco y Santa Clara organiza una colecta solidaria para apoyar a los afectados por el terremoto en Caracas a través de Cáritas Venezuela.",
+    "date": "2026-06-30",
+    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/colecta-venezuela.webp",
+    "url": "/noticias/colecta-solidaria-venezuela/"
+  },
+  {
+    "category": "Peregrinaciones",
+    "title": "Un día inolvidable junto al Papa León: crónica de una jornada de fe en Madrid",
+    "subtitle": "Así vivimos la celebración de la Santa Misa presidida por el Papa León en Madrid, una jornada marcada por la fe, y la alegría ser parte de la Iglesia universal.",
+    "date": "2026-06-07",
+    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/visitapapa.webp",
+    "url": "/noticias/visita-papa-leon/"
+  },
+  {
+    "category": "Testimonios",
+    "title": "Una guitarra, una cabasa y mucha ilusión: nuestra experiencia en el coro de niños",
+    "subtitle": "Así comenzó nuestra pequeña aventura en el coro de niños de la parroquia durante este final de temporada de comuniones de 2026",
+    "date": "2026-05-31",
+    "image": "https://sanfranciscoysantaclara.es/assets/images/coro-peque.webp",
+    "url": "/noticias/experiencia-coro/"
+  }
 ]

@@ -1,10 +1,10 @@
 ﻿+++
 title = '¿Qué me pide esta encíclica a mí? Tres ejemplos para entenderla'
 subtitle = 'Cuando se publica una encíclica, es fácil pensar que está dirigida únicamente a obispos, sacerdotes, políticos o expertos en doctrina social. Sin embargo, ocurre exactamente lo contrario.'
-date = '2026-07-09 15:30:15'
+date = '2026-07-06 15:30:15'
 draft = false
 categorias = ["Formación"]
-tags = [""]
+tags = []
 weight = 0
 image = "/assets/images/blog/que-me-pide-enciclica.webp"
 +++

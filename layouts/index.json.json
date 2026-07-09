@@ -1,7 +1,8 @@
 {{- $pages := where site.RegularPages "Section" "noticias" -}}
 {{- $categorias := dict -}}
+{{- $ultimas := slice -}}
 
-{{/* Descubrir todas las categorías existentes */}}
+{{/* Descubrir todas las categorías */}}
 {{- range $pages }}
   {{- range .Params.categorias }}
     {{- if not (isset $categorias .) }}
@@ -10,11 +11,8 @@
   {{- end }}
 {{- end }}
 
-[
-{{- $first := true -}}
-
+{{/* Obtener la noticia más reciente de cada categoría */}}
 {{- range $categoria, $_ := $categorias }}
-
   {{- $ultima := index (
       sort
       (where $pages "Params.categorias" "intersect" (slice $categoria))
@@ -23,20 +21,23 @@
     ) 0 }}
 
   {{- if $ultima }}
-
-    {{- if not $first }},{{ end }}
-    {{- $first = false }}
-
-    {
-      "category": {{ $categoria | jsonify }},
-      "title": {{ $ultima.Title | jsonify }},
-      "subtitle": {{ $ultima.Params.subtitle | jsonify }},
-      "date": {{ $ultima.Date.Format "2006-01-02" | jsonify }},
-      "image": {{ printf "https://sanfranciscoysantaclara.es%s" $ultima.Params.image | jsonify }},
-      "url": {{ $ultima.RelPermalink | jsonify }}
-    }
-
+    {{- $ultimas = $ultimas | append $ultima }}
   {{- end }}
+{{- end }}
 
+{{/* Ordenar esas noticias por fecha y quedarse solo con las 4 más recientes */}}
+{{- $ultimas = first 4 (sort $ultimas "Date" "desc") -}}
+
+[
+{{- range $i, $post := $ultimas }}
+  {{- if gt $i 0 }},{{ end }}
+  {
+    "category": {{ index $post.Params.categorias 0 | jsonify }},
+    "title": {{ $post.Title | jsonify }},
+    "subtitle": {{ $post.Params.subtitle | jsonify }},
+    "date": {{ $post.Date.Format "2006-01-02" | jsonify }},
+    "image": {{ printf "https://sanfranciscoysantaclara.es%s" $post.Params.image | jsonify }},
+    "url": {{ $post.RelPermalink | jsonify }}
+  }
 {{- end }}
 ]

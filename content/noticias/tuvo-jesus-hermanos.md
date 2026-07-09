@@ -1,10 +1,10 @@
 ﻿+++
 title = '¿Tuvo Jesús hermanos? Una mirada a la Biblia y a la figura de la Virgen María'
 subtitle = 'Si la Biblia habla de los "hermanos de Jesús", ¿cómo puede afirmar la Iglesia que la Virgen María permaneció siempre virgen?'
-date = '2026-07-09 16:40:19'
+date = '2026-07-09T12:29:54+02:00'
 draft = false
 categorias = ["Formación"]
-tags = [""]
+tags = []
 weight = 0
 image = "/assets/images/blog/_20260709_163757.webp"
 +++

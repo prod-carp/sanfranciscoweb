@@ -38,12 +38,20 @@ Categorias | Parroquia San Francisco y Santa Clara de Asís
   "mainEntity": {
     "@type": "ItemList",
     "name": "Categorías",
-    "numberOfItems":  4 ,
+    "numberOfItems":  5 ,
     "itemListElement": [
       
       {
         "@type": "ListItem",
         "position":  1 ,
+        "name": "Formación",
+	"description": "Noticias y publicaciones relacionadas con Formación.",
+        "url": "http:\/\/localhost:1313\/categorias\/formaci%C3%B3n\/"
+      },
+      
+      {
+        "@type": "ListItem",
+        "position":  2 ,
         "name": "Parroquia",
 	"description": "Noticias y publicaciones relacionadas con Parroquia.",
         "url": "http:\/\/localhost:1313\/categorias\/parroquia\/"
@@ -51,7 +59,7 @@ Categorias | Parroquia San Francisco y Santa Clara de Asís
       
       {
         "@type": "ListItem",
-        "position":  2 ,
+        "position":  3 ,
         "name": "Peregrinaciones",
 	"description": "Noticias y publicaciones relacionadas con Peregrinaciones.",
         "url": "http:\/\/localhost:1313\/categorias\/peregrinaciones\/"
@@ -59,7 +67,7 @@ Categorias | Parroquia San Francisco y Santa Clara de Asís
       
       {
         "@type": "ListItem",
-        "position":  3 ,
+        "position":  4 ,
         "name": "Testimonios",
 	"description": "Noticias y publicaciones relacionadas con Testimonios.",
         "url": "http:\/\/localhost:1313\/categorias\/testimonios\/"
@@ -67,7 +75,7 @@ Categorias | Parroquia San Francisco y Santa Clara de Asís
       
       {
         "@type": "ListItem",
-        "position":  4 ,
+        "position":  5 ,
         "name": "Oraciones",
 	"description": "Noticias y publicaciones relacionadas con Oraciones.",
         "url": "http:\/\/localhost:1313\/categorias\/oraciones\/"
@@ -302,6 +310,65 @@ Categorias | Parroquia San Francisco y Santa Clara de Asís
   
   
   <div class="row mt-4">
+    
+      <div class="category-card-col col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <a href="/categorias/formaci%C3%B3n/" class="category-card-link" style="text-decoration: none;">
+          <div class="category-card" style="
+            background: linear-gradient(135deg, ZgotmplZ 0%, ZgotmplZ 100%);
+            border-radius: 16px;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            transition: all 0.3s ease;
+            height: 100%;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+          ">
+            
+            <div style="position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%); opacity: 0; transition: opacity 0.3s ease;"></div>
+            
+            
+            <h3 class="category-name" style="
+              font-size: 1.8rem;
+              font-weight: bold;
+              margin-bottom: 15px;
+              position: relative;
+              z-index: 1;
+              word-break: break-word;
+            ">
+              Formación
+            </h3>
+            
+            
+            <p class="category-count" style="
+              font-size: 1rem;
+              margin: 0;
+              opacity: 0.9;
+              position: relative;
+              z-index: 1;
+            ">
+              📄 3 artículos
+            </p>
+            
+            
+            <div class="category-icon" style="
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 3rem;
+              opacity: 0.2;
+              z-index: 0;
+            ">
+              📁
+            </div>
+          </div>
+        </a>
+      </div>
     
       <div class="category-card-col col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <a href="/categorias/oraciones/" class="category-card-link" style="text-decoration: none;">

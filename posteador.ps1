@@ -68,28 +68,34 @@ function Convert-ImageToWebP {
     }
 }
 
-# Función para seleccionar fecha
 function Select-Date {
+
     Add-Type -AssemblyName System.Windows.Forms
+
     $datePicker = New-Object System.Windows.Forms.DateTimePicker
     $datePicker.Format = 'Custom'
     $datePicker.CustomFormat = 'yyyy-MM-dd HH:mm:ss'
     $datePicker.ShowUpDown = $true
-    
+    $datePicker.Width = 200
+
     $form = New-Object System.Windows.Forms.Form
     $form.Text = "Selecciona la fecha de publicación"
-    $form.Size = New-Object System.Drawing.Size(300,100)
+    $form.Size = New-Object System.Drawing.Size(300,120)
     $form.StartPosition = 'CenterScreen'
+
     $form.Controls.Add($datePicker)
-    
+
     $button = New-Object System.Windows.Forms.Button
     $button.Text = "Aceptar"
-    $button.Location = New-Object System.Drawing.Point(100,40)
+    $button.Width = 80
+    $button.Location = New-Object System.Drawing.Point(105,45)
     $button.Add_Click({ $form.Close() })
     $form.Controls.Add($button)
-    
+
     $form.ShowDialog() | Out-Null
-    return $datePicker.Value.ToString("yyyy-MM-dd HH:mm:ss")
+
+    $offset = [System.TimeZoneInfo]::Local.GetUtcOffset($datePicker.Value)
+    return ([DateTimeOffset]::new($datePicker.Value, $offset)).ToString("yyyy-MM-ddTHH:mm:sszzz")
 }
 
 # Función para obtener el título del post (slug)
