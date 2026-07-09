@@ -1,0 +1,42 @@
+{{- $pages := where site.RegularPages "Section" "noticias" -}}
+{{- $categorias := dict -}}
+
+{{/* Obtener todas las categorías existentes */}}
+{{- range $pages }}
+  {{- range .Params.categorias }}
+    {{- if not (isset $categorias .) }}
+      {{- $categorias = merge $categorias (dict . true) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{
+{{- $first := true -}}
+
+{{- range $categoria, $_ := $categorias }}
+
+  {{/* Buscar la noticia más reciente de esa categoría */}}
+  {{- $ultima := first 1 (
+      sort
+      (where $pages "Params.categorias" "intersect" (slice $categoria))
+      "Date"
+      "desc"
+  ) }}
+
+  {{- with index $ultima 0 }}
+
+    {{- if not $first }},{{ end }}
+    {{- $first = false }}
+
+    {{ $categoria | jsonify }}: {
+      "title": {{ .Title | jsonify }},
+      "subtitle": {{ .Params.subtitle | jsonify }},
+      "date": {{ .Date.Format "2006-01-02" | jsonify }},
+      "image": {{ printf "https://sanfranciscoysantaclara.es/assets/images/%s" .Params.image | jsonify }},
+      "url": {{ .RelPermalink | jsonify }}
+    }
+
+  {{- end }}
+
+{{- end }}
+}

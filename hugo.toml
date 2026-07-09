@@ -10,5 +10,8 @@ relativeURLs = false
   category = "categorias"
   tag = "tags"
 
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
 
 

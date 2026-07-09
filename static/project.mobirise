@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "tablon.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -67,7 +67,7 @@
     ],
     "imageResize": true,
     "uniqCompNum": 352,
-    "versionPublish": "6.1.12",
+    "versionPublish": "6.1.9",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/iconosfyc-48x48.png",
     "mbrsiteDomain": "g8sf8m10qx",

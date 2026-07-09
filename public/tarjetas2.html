@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<link rel="canonical" href="https://sanfranciscoysantaclara.es/tarjetas2.html">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Tarjetas de noticias</title>
+
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="description" content="Descubre los santos que inspiran la vida de nuestra parroquia y conoce su historia, espiritualidad y legado en la tradición franciscana.">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="Parroquia San Francisco y Santa Clara de Asís">
+<meta name="color-scheme" content="light">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Parroquia San Francisco y Santa Clara de Asís">
+<meta property="og:title" content="Tarjetas de noticias">
+<meta property="og:description" content="Descubre los santos que inspiran la vida de nuestra parroquia y conoce su historia, espiritualidad y legado en la tradición franciscana.">
+<meta property="og:url" content="https://sanfranciscoysantaclara.es/tarjetas2.html">
+<meta property="og:image" content="https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/">
+<meta property="og:locale" content="es_ES">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tarjetas de noticias">
+<meta name="twitter:description" content="Descubre los santos que inspiran la vida de nuestra parroquia y conoce su historia, espiritualidad y legado en la tradición franciscana.">
+<meta name="twitter:image" content="https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/images/favicon-64x64.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="stylesheet" href="/assets/web/assets/mobirise-icons2/mobirise2.css">
+<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/animatecss/animate.css">
+<link rel="stylesheet" href="/assets/dropdown/css/style.css">
+<link rel="stylesheet" href="/assets/socicon/css/styles.css">
+<link rel="stylesheet" href="/assets/theme/css/style.css">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css?v=G1za5k" type="text/css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Church","name":"Parroquia San Francisco y Santa Clara de Asís","url":"https://sanfranciscoysantaclara.es","telephone":"+34 91 615 24 31","image":"https://sanfranciscoysantaclara.es/assets/images/index-meta-1200x630.webp","address":{"@type":"PostalAddress","streetAddress":"Calle de Suecia, 2","addressLocality":"Fuenlabrada","addressRegion":"Madrid","postalCode":"28942","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":40.2896387,"longitude":-3.8060985},"sameAs":["https://www.instagram.com/san.franciscoyclara/"]}</script>
+
+</head>
+<body>
+
+  <div class="cards-grid" id="newsGrid">
+    <!-- Mensaje de carga inicial -->
+    <div class="loading">Cargando noticias...</div>
+  </div>
+
+  <script>
+    (function() {
+      const grid = document.getElementById('newsGrid');
+
+      // Función para formatear fecha
+      function formatDate(dateStr) {
+        try {
+          const date = new Date(dateStr);
+          return date.toLocaleDateString('es-ES', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+          });
+        } catch {
+          return dateStr; // si falla, mostrar la fecha original
+        }
+      }
+
+      // Función para crear una tarjeta
+      function createCard(item) {
+        const card = document.createElement('article');
+        card.className = 'news-card';
+
+        // Imagen
+        const img = document.createElement('img');
+        img.className = 'card-image';
+        img.src = item.image;
+        img.alt = item.title;
+        img.loading = 'lazy';
+        img.onerror = function() {
+          this.style.background = '#d1d5db';
+        };
+
+        // Contenido
+        const content = document.createElement('div');
+        content.className = 'card-content';
+
+        // Fecha
+        const dateEl = document.createElement('p');
+        dateEl.className = 'card-date';
+        dateEl.textContent = formatDate(item.date);
+
+        // Título
+        const titleEl = document.createElement('h3');
+        titleEl.className = 'card-title';
+        titleEl.textContent = item.title;
+
+        // Subtítulo (con límite de 150 caracteres)
+        const subtitleEl = document.createElement('p');
+        subtitleEl.className = 'card-subtitle';
+        let subtitleText = item.subtitle || '';
+        if (subtitleText.length > 150) {
+          subtitleText = subtitleText.slice(0, 150) + '…';
+        }
+        subtitleEl.textContent = subtitleText;
+
+        // Montar
+        content.appendChild(dateEl);
+        content.appendChild(titleEl);
+        content.appendChild(subtitleEl);
+        card.appendChild(img);
+        card.appendChild(content);
+
+        // Click para navegar
+        card.addEventListener('click', function() {
+          if (item.url) {
+            window.location.href = item.url;
+          }
+        });
+        card.style.cursor = 'pointer';
+
+        return card;
+      }
+
+      // Función principal: cargar datos desde /index.json
+      function loadNews() {
+        // Mostrar estado de carga
+        grid.innerHTML = '<div class="loading">Cargando noticias...</div>';
+
+        fetch('/index.json')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`Error HTTP: ${response.status}`);
+            }
+            return response.json();
+          })
+          .then(data => {
+            // Limpiar grid
+            grid.innerHTML = '';
+
+            // Verificar que data sea un array
+            if (!Array.isArray(data) || data.length === 0) {
+              grid.innerHTML = '<div class="error">No hay noticias disponibles</div>';
+              return;
+            }
+
+            // Crear y agregar cada tarjeta
+            data.forEach(item => {
+              const card = createCard(item);
+              grid.appendChild(card);
+            });
+          })
+          .catch(error => {
+            console.error('Error al cargar noticias:', error);
+            grid.innerHTML = `<div class="error">❌ Error al cargar las noticias: ${error.message}</div>`;
+          });
+      }
+
+      // Cargar noticias al iniciar
+      loadNews();
+
+      // (Opcional) Recargar automáticamente cada 60 segundos para reflejar cambios
+      // setInterval(loadNews, 60000);
+    })();
+  </script>
+
+</body>
+</html>
