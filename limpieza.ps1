@@ -107,9 +107,9 @@ $newHead = @"
 $content = $content -replace '(?s)<html.*?</head>', $newHead
     
     # === 1. ELIMINAR CÓDIGO DE MOBIRISE ===
-    $pattern = @'
-<section class="display-7"[^>]*>.*?<a href="https://mobiri\.se/[^"]+".*?</a>.*?<p[^>]*>.*?</p>.*?<a style="z-index:1" href="https://mobirise[^"]*">.*?</a></section>
-'@
+    # OLD: <section class="display-7"[^>]*>.*?<a href="https://mobiri\.se/[^"]+".*?</a>.*?<p[^>]*>.*?</p>.*?<a style="z-index:1" href="https://mobirise[^"]*">.*?</a></section>
+    $pattern = '(?s)<section class="display-7"[^>]*>.*?mobiri\.se.*?mobirise.*?</section>'
+
     
     if ($content -match $pattern) {
         $content = $content -replace $pattern, ""

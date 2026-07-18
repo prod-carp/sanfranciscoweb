@@ -11,32 +11,24 @@ echo.
 REM Limpiar referencias corruptas antes de empezar
 del /s /q /a:h "%~dp0desktop.ini" >nul 2>&1
 
-echo [1/4] Limpiando repositorio local...
+echo [1/3] Limpiando repositorio local...
 git gc --prune=now 2>nul
 
-echo [2/4] Descargando ultimos cambios...
+echo [2/3] Descargando ultimos cambios...
 git fetch origin --prune
 
 if errorlevel 1 (
-    echo [ERROR] Fallo al descargar. Intentando reparar...
-    git fetch origin --force
+    echo [ERROR] No se pudo conectar con GitHub.
+    pause
+    exit /b
 )
 
-echo [3/4] Descargando ultimos cambios...
-git fetch origin
-
-echo [4/4] Fusionando cambios locales...
-git pull origin main
-
+echo [3/3] Actualizando copia local...
+git reset --hard origin/main
 if errorlevel 1 (
-    echo.
-    echo [ERROR] Hay conflictos o problemas.
-    echo.
-    echo Soluciones posibles:
-    echo 1. Ejecuta: git reset --hard origin/main
-    echo 2. O clona el repositorio de nuevo
+    echo [ERROR] No se pudo aplicar la actualización.
     pause
-    exit /b 1
+    exit /b
 )
 
 echo.
