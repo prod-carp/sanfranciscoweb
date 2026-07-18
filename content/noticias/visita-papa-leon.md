@@ -55,4 +55,8 @@ Más allá de las fotografías o de los recuerdos que podamos conservar, nos lle
 
 Una semilla fue sembrada en muchos corazones aquel domingo en Madrid. Ahora nos corresponde cuidarla para que dé fruto.
 
+## Revive la visita del Santo Padre a España
 
+La visita del Santo Padre a España dejó numerosos encuentros, celebraciones litúrgicas y mensajes de gran importancia para la vida de la Iglesia. Para quienes deseen revivir estos momentos o seguirlos por primera vez, ponemos a disposición la lista oficial de reproducción de **Vatican News**, que reúne todos los vídeos publicados con motivo de este viaje apostólico. Una oportunidad para contemplar íntegramente las celebraciones, homilías, discursos y demás actos que marcaron esta histórica visita.
+
+👉 **[Ver la lista oficial de reproducción de la visita del Papa a España en YouTube (Vatican News)](https://www.youtube.com/watch?v=KscwnCVylrk&list=PLVJOWYATkylQMeJ1zrsTZcox49yzk1t7H)**
