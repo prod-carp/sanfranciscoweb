@@ -59,7 +59,7 @@ Se anuncia el primer misterio correspondiente al día de la semana. Por ejemplo:
 
 Es crucial hacer una pausa para meditar brevemente en este pasaje de la vida de Jesús o María. Este es el corazón de la oración del Rosario: unir nuestra mente al misterio que estamos contemplando .
 
-### 3. La Décena
+### 3. La Decena
 
 A continuación, se rezan las oraciones que componen la decena (un grupo de diez):
 
@@ -85,32 +85,36 @@ Tras haber rezado los cinco misterios, se concluye con oraciones finales que sue
 Para una correcta meditación, es fundamental conocer los misterios. Aquí te los presentamos con detalle:
 
 ### Misterios Gozosos (Lunes y Sábado)
-1.  **La Anunciación:** El arcángel Gabriel anuncia a María que será la Madre de Dios.
-2.  **La Visitación:** María visita a su prima Isabel.
-3.  **El Nacimiento de Jesús:** El parto de la Virgen en el portal de Belén.
-4.  **La Presentación de Jesús en el Templo:** María y José presentan al Niño Jesús en el Templo de Jerusalén.
-5.  **El Niño Jesús perdido y hallado en el Templo:** Jesús, a los doce años, se queda en Jerusalén sin que sus padres lo sepan.
+
+1. **La Anunciación:** El arcángel Gabriel anuncia a María que será la Madre de Dios.
+2. **La Visitación:** María visita a su prima Isabel.
+3. **El Nacimiento de Jesús:** El parto de la Virgen en el portal de Belén.
+4. **La Presentación de Jesús en el Templo:** María y José presentan al Niño Jesús en el Templo de Jerusalén.
+5. **El Niño Jesús perdido y hallado en el Templo:** Jesús, a los doce años, se queda en Jerusalén sin que sus padres lo sepan.
 
 ### Misterios Luminosos (Jueves)
-1.  **El Bautismo de Jesús en el Jordán:** El inicio de su vida pública.
-2.  **La autorrevelación en las Bodas de Caná:** El primer milagro de Jesús, por intercesión de María.
-3.  **El anuncio del Reino de Dios:** Jesús predica la conversión.
-4.  **La Transfiguración:** Jesús se muestra en su gloria divina a tres de sus apóstoles.
-5.  **La Institución de la Eucaristía:** Jesús instituye el sacramento de su Cuerpo y Sangre en la Última Cena.
+
+1. **El Bautismo de Jesús en el Jordán:** El inicio de su vida pública.
+2. **La autorrevelación en las Bodas de Caná:** El primer milagro de Jesús, por intercesión de María.
+3. **El anuncio del Reino de Dios:** Jesús predica la conversión.
+4. **La Transfiguración:** Jesús se muestra en su gloria divina a tres de sus apóstoles.
+5. **La Institución de la Eucaristía:** Jesús instituye el sacramento de su Cuerpo y Sangre en la Última Cena.
 
 ### Misterios Dolorosos (Martes y Viernes)
-1.  **La Oración de Jesús en el Huerto de Getsemaní:** La agonía de Jesús antes de ser arrestado.
-2.  **La Flagelación del Señor:** Jesús es azotado cruelmente.
-3.  **La Coronación de Espinas:** Los soldados colocan una corona de espinas en su cabeza.
-4.  **Jesús cargando la Cruz:** El camino de Jesús hacia el Calvario.
-5.  **La Crucifixión y Muerte de Jesús:** Jesús es clavado en la cruz y muere por nuestra salvación.
+
+1. **La Oración de Jesús en el Huerto de Getsemaní:** La agonía de Jesús antes de ser arrestado.
+2. **La Flagelación del Señor:** Jesús es azotado cruelmente.
+3. **La Coronación de Espinas:** Los soldados colocan una corona de espinas en su cabeza.
+4. **Jesús cargando la Cruz:** El camino de Jesús hacia el Calvario.
+5. **La Crucifixión y Muerte de Jesús:** Jesús es clavado en la cruz y muere por nuestra salvación.
 
 ### Misterios Gloriosos (Miércoles y Domingo)
-1.  **La Resurrección de Jesús:** Jesús vence a la muerte y resucita al tercer día.
-2.  **La Ascensión del Señor:** Jesús sube al Cielo.
-3.  **La Venida del Espíritu Santo:** El Espíritu Santo desciende sobre la Virgen y los Apóstoles en Pentecostés.
-4.  **La Asunción de María:** La Virgen María es llevada en cuerpo y alma al Cielo.
-5.  **La Coronación de María como Reina del Cielo y de la Tierra.**
+
+1. **La Resurrección de Jesús:** Jesús vence a la muerte y resucita al tercer día.
+2. **La Ascensión del Señor:** Jesús sube al Cielo.
+3. **La Venida del Espíritu Santo:** El Espíritu Santo desciende sobre la Virgen y los Apóstoles en Pentecostés.
+4. **La Asunción de María:** La Virgen María es llevada en cuerpo y alma al Cielo.
+5. **La Coronación de María como Reina del Cielo y de la Tierra.**
 
 ---
 
