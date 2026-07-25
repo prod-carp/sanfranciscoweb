@@ -13,7 +13,7 @@ Hay caminos que nos dejan sin aliento y hay pausas que nos devuelven el alma. La
 
 "Ya no vivo yo, sino que Cristo vive en mí" (Gál 2,20). Esta no es solo una frase; es una promesa posible. Imagina tu vida como un sendero: hay tramos firmes, otros pedregosos, y momentos en los que el horizonte se nubla. La Escuela Caleb aparece como un oasis en medio del desierto: allí la sed se calma, la esperanza se recompone y la marcha vuelve a encontrar ritmo.
 
-¿Quién fue Caleb y por qué nos inspira?
+## ¿Quién fue Caleb y por qué nos inspira?
 
 Caleb fue aquel que creyó cuando otros dudaron. No se rindió al miedo ni a las apariencias. Tomó a Dios por su palabra y avanzó, paso a paso, hasta la Tierra Prometida. Su nombre corona esta escuela porque nos enseña a confiar a contracorriente, a fiarnos incluso cuando no vemos claro, a caminar por fe y no por vista. Caleb nos recuerda que la fidelidad de Dios no falla y que la perseverancia abre puertas que el cálculo humano deja cerradas.
 
@@ -29,7 +29,7 @@ Cada domingo, de 10:30 a 12:30, en la parroquia San Francisco y Santa Clara (C/ 
 
 Y todo culmina en la Misa de las 12:30. La escuela prepara el corazón; la Eucaristía lo colma.
 
-¿Es para ti?
+## ¿Es para ti?
 
 Si has llegado hasta aquí, quizá no es casual. Tal vez intuyes que hay "más", una sed que nada del mundo termina de saciar. Caleb también escuchó esa llamada. No esperó a que desapareciera el miedo; confió y dio el paso.
 
@@ -58,7 +58,7 @@ Qué te llevarás al caminar
 • Hermanos de camino: apoyo real para los días claros y los días grises.
 • Corazón misionero: porque el Amor recibido pide ser compartido.
 
-Da el siguiente paso
+## Da el siguiente paso
 
 No necesitas tener todas las respuestas. Solo disponibilidad. Como Caleb, da un paso hoy: reserva el domingo, preséntate tal como estás, y permite que Dios haga lo que solo Él puede hacer. La vida abundante comienza con un "sí" pequeño y fiel.
 
