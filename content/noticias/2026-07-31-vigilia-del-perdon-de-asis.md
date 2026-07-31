@@ -1,6 +1,6 @@
 ﻿+++
 title = 'Vigilia del perdón de Asís'
-subtitle = 'VII centenario del tránsito de nuestro seráfico padre San Francisco'
+subtitle = 'Con motivo del VIII Centenario del Tránsito de Nuestro Seráfico Padre San Francisco'
 date = '2026-07-31T22:40:11+02:00'
 draft = false
 categorias = ["Parroquia"]
@@ -9,15 +9,15 @@ weight = 0
 image = "/assets/images/blog/vigilia-del-perdon-de-asis_20260731_223859.webp"
 +++
 
-## El Perdón de Asís
-
 Cada 2 de agosto, la Iglesia celebra el Perdón de Asís, una gracia extraordinaria vinculada a San Francisco de Asís y a la pequeña iglesia de la Porciúncula. En este día, los fieles pueden obtener la indulgencia plenaria cumpliendo las condiciones establecidas por la Iglesia, como un signo concreto de la infinita misericordia de Dios.
 
 Con motivo del VIII Centenario del Tránsito de Nuestro Seráfico Padre San Francisco, compartimos a continuación el esquema de la Vigilia del Perdón de Asís, una celebración de oración que invita a contemplar el amor misericordioso de Dios, escuchar su Palabra, renovar el deseo de conversión y acercarse al sacramento de la Reconciliación.
 
 Esperamos que este material ayude a preparar el corazón para vivir esta jornada con profundidad espiritual, redescubriendo que el perdón de Dios no es solo el comienzo de una vida nueva, sino también una llamada constante a volver a la casa del Padre con confianza y esperanza.
 
-Compartimos a continuación el subsidio litúrgico que servirá de guía durante la celebración, para que quienes asistan puedan prepararse y vivir con mayor profundidad este momento de encuentro con la misericordia de Dios.
+# Vigilia del Perdón de Asís
+
+VIII CENTENARIO DEL TRÁNSITO DE NUESTRO SERÁFICO PADRE SAN FRANCISCO
 
 ## Ambientación
 
