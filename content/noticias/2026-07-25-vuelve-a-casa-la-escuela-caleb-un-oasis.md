@@ -6,12 +6,10 @@ draft = false
 categorias = ["Parroquia"]
 tags = [""]
 weight = 0
-image = "/assets/images/blog/vuelve-a-casa-la-escuela-caleb-un-oasis_20260725_215745.webp"
+image = "/assets/images/blog/portadacaleb.webp"
 +++
 
-Hay caminos que nos dejan sin aliento y hay pausas que nos devuelven el alma. La Escuela Caleb pertenece a estas últimas: no es un curso, ni un taller, ni un grupo más en la agenda. Es una experiencia de vida. Es el lugar donde el corazón descansa, donde la fe se hace respirable y donde aprendemos a mirar la realidad desde el Amor que lo sostiene todo.
-
-"Ya no vivo yo, sino que Cristo vive en mí" (Gál 2,20). Esta no es solo una frase; es una promesa posible. Imagina tu vida como un sendero: hay tramos firmes, otros pedregosos, y momentos en los que el horizonte se nubla. La Escuela Caleb aparece como un oasis en medio del desierto: allí la sed se calma, la esperanza se recompone y la marcha vuelve a encontrar ritmo.
+Imagina tu vida como un sendero: hay tramos firmes, otros pedregosos, y momentos en los que el horizonte se nubla. La Escuela Caleb aparece como un oasis en medio del desierto: allí la sed se calma, la esperanza se recompone y la marcha vuelve a encontrar ritmo.
 
 ## ¿Quién fue Caleb y por qué nos inspira?
 
@@ -19,7 +17,7 @@ Caleb fue aquel que creyó cuando otros dudaron. No se rindió al miedo ni a las
 
 La meta que buscamos no es una vida perfecta, sino una vida abundante (Jn 10,10): con sentido, paz interior, vínculos sanos y la certeza de sabernos amados incondicionalmente. Vivir como hijos del Rey no elimina las pruebas, pero transforma la manera de atravesarlas.
 
-Domingos para encender el corazón
+## Domingos para encender el corazón
 
 Cada domingo, de 10:30 a 12:30, en la parroquia San Francisco y Santa Clara (C/ Suecia 2, Fuenlabrada), la Escuela Caleb crea comunidad. No es "ir, escuchar y marcharse". Es compartir la vida: la fe y las dudas, las alegrías y las luchas. El encuentro se teje con tres hilos:
 
@@ -42,15 +40,15 @@ La Escuela Caleb es para ti si:
 
 No importa si arrastras dudas, si tu fe es pequeña o si llevas tiempo lejos. Aquí no se juzga: se acoge. Todos estamos en proceso; todos aprendemos a vivir como hijos del Rey.
 
-Un compromiso que transforma
+## Un compromiso que transforma
 
 Formar parte de la Escuela Caleb implica un "sí" sostenido. No es una actividad suelta, sino un itinerario que pide constancia y apertura. Pedimos asistir al curso completo porque la transformación interior es un proceso: paso a paso, cita a cita, Dios va dejando huella. La vida es ajetreada, sí; pero lo esencial merece lugar en la agenda. Si el Señor llama a tu puerta, ¿no vale la pena abrir?
 
-Más allá del aula: para construir comunión
+## Más allá del aula: para construir comunión
 
 La Escuela Caleb no es un fin; es un medio para descubrir la vocación más profunda: la comunión con Dios que se desborda en comunión con los demás. Allí donde el mundo levanta nuevas Babeles y multiplica divisiones, el discípulo está llamado a reconstruir puentes, como Nehemías entre ruinas. Pero nadie puede construir comunión por fuera si no bebe primero de la comunión por dentro. Por eso existimos: para dejarnos transformar por el Amor y convertirnos, a su vez, en canales de ese Amor.
 
-Qué te llevarás al caminar
+## Qué te llevarás al caminar
 
 • Una fe más viva: de ideas a experiencia, de teoría a relación.
 • Mirada reconciliada: aprender a ver tu historia con los ojos del Padre.
@@ -65,3 +63,5 @@ No necesitas tener todas las respuestas. Solo disponibilidad. Como Caleb, da un 
 Te esperamos los domingos, 10:30-12:30, en la parroquia San Francisco y Santa Clara (C/ Suecia 2, Fuenlabrada). Después, celebramos juntos la Misa de las 12:30.
 
 Ven y mira. Quizá este oasis sea, en realidad, tu hogar.
+
+[Infórmate aquí sobre el grupo e inscripciones]([Grupo Escuela Caleb | Parroquia San Francisco y Santa Clara de Asís](https://sanfranciscoysantaclara.es/grupo-caleb.html))
