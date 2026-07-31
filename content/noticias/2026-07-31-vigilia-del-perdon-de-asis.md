@@ -1,6 +1,6 @@
 ﻿+++
-title = 'Vigilia del perdón de Asís'
-subtitle = 'Con motivo del VIII Centenario del Tránsito de Nuestro Seráfico Padre San Francisco'
+title = 'Vigilia del Perdón de Asís | VIII Centenario del Tránsito de San Francisco de Asís'
+subtitle = 'Con motivo del VIII Centenario del Tránsito de San Francisco de Asís, compartimos el subsidio litúrgico de la Vigilia del Perdón de Asís para ayudar a preparar y vivir esta celebración de la misericordia de Dios.'
 date = '2026-07-31T22:40:11+02:00'
 draft = false
 categorias = ["Parroquia"]
@@ -15,9 +15,9 @@ Con motivo del VIII Centenario del Tránsito de Nuestro Seráfico Padre San Fran
 
 Esperamos que este material ayude a preparar el corazón para vivir esta jornada con profundidad espiritual, redescubriendo que el perdón de Dios no es solo el comienzo de una vida nueva, sino también una llamada constante a volver a la casa del Padre con confianza y esperanza.
 
-# Vigilia del Perdón de Asís
+# **Vigilia del Perdón de Asís**
 
-VIII CENTENARIO DEL TRÁNSITO DE NUESTRO SERÁFICO PADRE SAN FRANCISCO
+*VIII CENTENARIO DEL TRÁNSITO DE NUESTRO SERÁFICO PADRE SAN FRANCISCO*
 
 ## Ambientación
 
