@@ -3,6 +3,7 @@
 {{ partial "breadcrumb.html" . }}
 
 <!-- Post principal -->
+<main>
 <article class="post-article">
   <div class="container">
     
@@ -121,7 +122,7 @@
         <!-- Botón de categoría (Artículos similares) -->
         {{ with .Params.categorias }}
           {{ range first 1 . }}
-            <a href="{{ "categorias" | relURL }}/{{ . | urlize }}" class="footer-btn category-btn">
+            <a href="{{ "categorias" | relURL }}/{{ . | urlize }}" class="footer-btn category-btn" aria-label="Ver artículos similares">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M20 7h-7a2 2 0 0 1-2-2V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
                 <line x1="16" y1="21" x2="16" y2="5"></line>
@@ -135,7 +136,7 @@
         {{ end }}
         
         <!-- Botón de hemeroteca (Artículos más recientes) -->
-        <a href="/hemeroteca/" class="footer-btn archive-btn">
+        <a href="/hemeroteca/" class="footer-btn archive-btn" aria-label="Ver artículos más recientes">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
             <line x1="16" y1="2" x2="16" y2="6"></line>
@@ -148,7 +149,7 @@
         <!-- Botón de siguiente artículo -->
         {{ with $nextPost := .NextInSection }}
           {{ with $nextPost }}
-            <a href="{{ .RelPermalink }}" class="footer-btn next-btn">
+            <a href="{{ .RelPermalink }}" class="footer-btn next-btn" aria-label="Leer el siguiente artículo">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -170,14 +171,15 @@
     
   </div>
 </article>
+</main>
 
 <style>
-/* Variables de diseño */
+/* Variables de diseño 718096 */
 :root {
   --primary-color: #667eea;
   --primary-dark: #5a67d8;
   --text-color: #2d3748;
-  --text-light: #718096;
+  --text-light: #5f6b7a;
   --bg-light: #f7fafc;
   --border-color: #e2e8f0;
 }
