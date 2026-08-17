@@ -1,43 +1,148 @@
 {{- $pages := where site.RegularPages "Section" "noticias" -}}
+
+{{/* ==========================================================
+   FECHA ACTUAL
+========================================================== */}}
+
+{{- $hoy := now -}}
+{{- $anioActual := $hoy.Year -}}
+
+
+{{/* ==========================================================
+   CREAR LISTA DE NOTICIAS ACTIVAS
+   Cada elemento contiene:
+   - page → página original
+   - date → fecha efectiva para ordenar
+========================================================== */}}
+
+{{- $activePosts := slice -}}
+
+{{- range $pages -}}
+
+  {{- $activa := true -}}
+  {{- $fechaOrden := .Date -}}
+
+  {{- if .Params.fechaBase -}}
+
+    {{/* Fecha base del año actual */}}
+
+    {{- $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") -}}
+    {{- $fechaBase := time.AsTime $fechaBaseTexto -}}
+
+    {{/* Inicio y fin del período */}}
+
+    {{- $fechaInicio := $fechaBase -}}
+    {{- $fechaFin := $fechaBase -}}
+
+    {{- range seq 1 (int .Params.fechaInicio) -}}
+      {{- $fechaInicio = $fechaInicio.AddDate 0 0 -1 -}}
+    {{- end -}}
+
+    {{- range seq 1 (int .Params.fechaFin) -}}
+      {{- $fechaFin = $fechaFin.AddDate 0 0 1 -}}
+    {{- end -}}
+
+    {{/* Comprobar si está activa */}}
+
+    {{- $activa = and
+        (ge $hoy $fechaInicio)
+        (le $hoy $fechaFin)
+    -}}
+
+    {{/* La fecha efectiva es la fecha base */}}
+
+    {{- $fechaOrden = $fechaBase -}}
+
+  {{- end -}}
+
+  {{/* Guardar solamente las activas */}}
+
+  {{- if $activa -}}
+
+    {{- $activePosts = $activePosts | append (dict
+        "page" .
+        "date" $fechaOrden
+    ) -}}
+
+  {{- end -}}
+
+{{- end -}}
+
+
+{{/* ==========================================================
+   DESCUBRIR CATEGORÍAS
+========================================================== */}}
+
 {{- $categorias := dict -}}
+
+{{- range $item := $activePosts -}}
+
+  {{- range $item.page.Params.categorias -}}
+
+    {{- if not (isset $categorias .) -}}
+      {{- $categorias = merge $categorias (dict . true) -}}
+    {{- end -}}
+
+  {{- end -}}
+
+{{- end -}}
+
+
+{{/* ==========================================================
+   PRIMERA NOTICIA DE CADA CATEGORÍA
+========================================================== */}}
+
 {{- $ultimas := slice -}}
 
-{{/* Descubrir todas las categorías */}}
-{{- range $pages }}
-  {{- range .Params.categorias }}
-    {{- if not (isset $categorias .) }}
-      {{- $categorias = merge $categorias (dict . true) }}
-    {{- end }}
-  {{- end }}
-{{- end }}
+{{- range $categoria, $_ := $categorias -}}
 
-{{/* Obtener la noticia más reciente de cada categoría */}}
-{{- range $categoria, $_ := $categorias }}
-  {{- $ultima := index (
-      sort
-      (where $pages "Params.categorias" "intersect" (slice $categoria))
-      "Date"
-      "desc"
-    ) 0 }}
+  {{- $postsCategoria := slice -}}
 
-  {{- if $ultima }}
-    {{- $ultimas = $ultimas | append $ultima }}
-  {{- end }}
-{{- end }}
+  {{- range $activePosts -}}
 
-{{/* Ordenar esas noticias por fecha y quedarse solo con las 4 más recientes */}}
-{{- $ultimas = first 4 (sort $ultimas "Date" "desc") -}}
+    {{- if in .page.Params.categorias $categoria -}}
+      {{- $postsCategoria = $postsCategoria | append . -}}
+    {{- end -}}
+
+  {{- end -}}
+
+  {{/* Ordenar la categoría por fecha efectiva */}}
+
+  {{- $postsCategoria = sort $postsCategoria "date" "desc" -}}
+
+  {{/* Quedarnos con la primera */}}
+
+  {{- if gt (len $postsCategoria) 0 -}}
+    {{- $ultimas = $ultimas | append (index $postsCategoria 0) -}}
+  {{- end -}}
+
+{{- end -}}
+
+
+{{/* ==========================================================
+   ORDENAR LAS PRIMERAS DE CADA CATEGORÍA
+   Y QUEDARSE CON LAS 4 MÁS RECIENTES
+========================================================== */}}
+
+{{- $ultimas = first 4 (sort $ultimas "date" "desc") -}}
+
 
 [
-{{- range $i, $post := $ultimas }}
-  {{- if gt $i 0 }},{{ end }}
+{{- range $i, $item := $ultimas -}}
+
+  {{- if gt $i 0 }},{{ end -}}
+
+  {{- $post := $item.page -}}
+  {{- $fechaEfectiva := $item.date -}}
+
   {
     "category": {{ index $post.Params.categorias 0 | jsonify }},
     "title": {{ $post.Title | jsonify }},
     "subtitle": {{ $post.Params.subtitle | jsonify }},
-    "date": {{ $post.Date.Format "2006-01-02" | jsonify }},
+    "date": {{ $fechaEfectiva.Format "2006-01-02" | jsonify }},
     "image": {{ printf "https://sanfranciscoysantaclara.es%s" $post.Params.image | jsonify }},
     "url": {{ $post.RelPermalink | jsonify }}
   }
-{{- end }}
+
+{{- end -}}
 ]

@@ -5,6 +5,9 @@ title = 'Parroquia San Francisco y Santa Clara de Asís'
 # Para URLs más limpias
 relativeURLs = false
 
+# No publicar automáticamente contenido con fecha futura
+buildFuture = false
+
 # Taxonomías (CLAVE para categorías y etiquetas)
 [taxonomies]
   category = "categorias"

@@ -9,7 +9,7 @@
   </p>
 
   <div class="row mt-4">
-    {{ $paginator := .Paginate (where site.RegularPages.ByDate.Reverse "Section" "noticias") 4 }}
+    {{ $paginator := .Paginate (where site.RegularPages.ByDate.Reverse "Section" "noticias") 8 }}
     
     {{ range $paginator.Pages }}
       <div class="item features-image col-12 col-md-6 col-lg-3">

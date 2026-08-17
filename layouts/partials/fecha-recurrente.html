@@ -1,0 +1,79 @@
+{{/*
+============================================================
+  FECHA RECURRENTE
+
+  Recibe:
+    .
+
+  Devuelve un dict con:
+
+    activa       → true / false
+    fecha        → fecha efectiva para ordenar/mostrar
+
+  Noticias normales:
+    activa = true
+    fecha  = .Date
+
+  Noticias recurrentes:
+    fechaBase = "MM/DD"
+    fechaInicio = días antes
+    fechaFin = días después
+
+  La fecha efectiva se calcula para el año actual.
+============================================================
+*/}}
+
+{{ $hoy := now }}
+{{ $anioActual := $hoy.Year }}
+
+{{/* --------------------------------------------------------
+   NOTICIA NORMAL
+--------------------------------------------------------- */}}
+
+{{ if not .Params.fechaBase }}
+
+  {{ return (dict
+      "activa" true
+      "fecha" .Date
+  ) }}
+
+{{ end }}
+
+
+{{/* --------------------------------------------------------
+   NOTICIA RECURRENTE
+   Ejemplo:
+
+   fechaBase = "08/15"
+   fechaInicio = 3
+   fechaFin = 14
+--------------------------------------------------------- */}}
+
+{{ $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") }}
+{{ $fechaBase := time.AsTime $fechaBaseTexto }}
+
+{{ $diasAntes := int .Params.fechaInicio }}
+{{ $diasDespues := int .Params.fechaFin }}
+
+{{ $fechaInicio := $fechaBase.AddDate 0 0 (sub 0 $diasAntes) }}
+{{ $fechaFin := $fechaBase.AddDate 0 0 $diasDespues }}
+
+
+{{/* --------------------------------------------------------
+   COMPROBAR SI ESTÁ ACTIVA
+--------------------------------------------------------- */}}
+
+{{ $activa := and
+    (ge $hoy $fechaInicio)
+    (le $hoy $fechaFin)
+}}
+
+
+{{/* --------------------------------------------------------
+   DEVOLVER RESULTADO
+--------------------------------------------------------- */}}
+
+{{ return (dict
+    "activa" $activa
+    "fecha" $fechaBase
+) }}

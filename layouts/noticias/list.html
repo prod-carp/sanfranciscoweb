@@ -35,11 +35,105 @@
 </section>
 
 
-{{ $main := first 1 (where .Pages "Params.tags" "intersect" (slice "importante")) }}
-{{ $mainPost := index $main 0 }}
 
-{{ $others := where .Pages "Permalink" "ne" $mainPost.Permalink }}
-{{ $sortedOthers := sort $others "Date" "desc" }}
+
+{{/* ==========================================================
+   TODAS LAS NOTICIAS DE LA SECCIÓN
+========================================================== */}}
+
+{{- $pages := where site.RegularPages "Section" "noticias" -}}
+
+{{/* ==========================================================
+   NOTICIAS ACTIVAS
+========================================================== */}}
+
+{{- $hoy := now -}}
+{{- $anioActual := $hoy.Year -}}
+{{- $activePages := slice -}}
+
+{{- range $pages -}}
+
+    {{- if .Params.fechaBase -}}
+
+        {{/* ---------- Noticia recurrente ---------- */}}
+
+        {{- $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") -}}
+        {{- $fechaBase := time.AsTime $fechaBaseTexto -}}
+
+        {{- $fechaInicio := $fechaBase -}}
+        {{- $fechaFin := $fechaBase -}}
+
+        {{- range seq 1 (int .Params.fechaInicio) -}}
+            {{- $fechaInicio = $fechaInicio.AddDate 0 0 -1 -}}
+        {{- end -}}
+
+        {{- range seq 1 (int .Params.fechaFin) -}}
+            {{- $fechaFin = $fechaFin.AddDate 0 0 1 -}}
+        {{- end -}}
+
+        {{- if and (ge $hoy $fechaInicio) (le $hoy $fechaFin) -}}
+            {{- $activePages = $activePages | append . -}}
+        {{- end -}}
+
+    {{- else -}}
+
+        {{/* ---------- Noticia normal ---------- */}}
+
+        {{- $activePages = $activePages | append . -}}
+
+    {{- end -}}
+
+{{- end -}}
+
+
+{{/* ==========================================================
+   NOTICIA DESTACADA
+========================================================== */}}
+
+{{- $main := first 1 (where $activePages "Params.tags" "intersect" (slice "importante")) -}}
+{{- $mainPost := index $main 0 -}}
+
+
+{{/* ==========================================================
+   RESTO DE NOTICIAS
+========================================================== */}}
+
+{{/* ==========================================================
+   RESTO DE NOTICIAS CON FECHA EFECTIVA
+========================================================== */}}
+
+{{- $others := where $activePages "Permalink" "ne" $mainPost.Permalink -}}
+
+{{- $postsWithDate := slice -}}
+
+{{- range $others -}}
+
+    {{- $fechaOrden := .Date -}}
+
+    {{- if .Params.fechaBase -}}
+        {{- $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") -}}
+        {{- $fechaOrden = time.AsTime $fechaBaseTexto -}}
+    {{- end -}}
+
+    {{- $item := dict
+        "page" .
+        "date" $fechaOrden
+    -}}
+
+    {{- $postsWithDate = $postsWithDate | append $item -}}
+
+{{- end -}}
+
+{{- $postsWithDate = sort $postsWithDate "date" "desc" -}}
+
+{{- $sortedOthers := slice -}}
+
+{{- range $postsWithDate -}}
+    {{- $sortedOthers = $sortedOthers | append .page -}}
+{{- end -}}
+
+
+
 
 
 <div class="buttons-container">
@@ -201,6 +295,25 @@
 <hr>
 {{ end }}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Más noticias -->
 <h2 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
   <strong>Más noticias</strong>
@@ -231,8 +344,43 @@
     {{ end }}
 {{ end }}
 
-{{/* Ordenar por fecha */}}
-{{ $selectedPosts = sort $selectedPosts "Date" "desc" }}
+
+
+{{/* ==========================================================
+   ORDENAR LAS SELECCIONADAS POR FECHA EFECTIVA
+========================================================== */}}
+
+{{- $selectedWithDate := slice -}}
+
+{{- range $selectedPosts -}}
+
+    {{- $fechaOrden := .Date -}}
+
+    {{- if .Params.fechaBase -}}
+        {{- $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") -}}
+        {{- $fechaOrden = time.AsTime $fechaBaseTexto -}}
+    {{- end -}}
+
+    {{- $item := dict
+        "page" .
+        "date" $fechaOrden
+    -}}
+
+    {{- $selectedWithDate = $selectedWithDate | append $item -}}
+
+{{- end -}}
+
+{{- $selectedWithDate = sort $selectedWithDate "date" "desc" -}}
+
+{{- $selectedPosts = slice -}}
+
+{{- range $selectedWithDate -}}
+    {{- $selectedPosts = $selectedPosts | append .page -}}
+{{- end -}}
+
+
+
+
 
 {{/* ---------- Segunda pasada: segunda noticia ---------- */}}
 {{ if lt (len $selectedPosts) $needed }}
@@ -276,7 +424,13 @@
       <div class="item-content">
         <!-- FECHA -->
         <h5 class="item-title mbr-fonts-style display-4">
-          <em>{{ .Date.Format "02/01/2006" }}</em>
+{{ if .Params.fechaBase }}
+  {{ $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") }}
+  {{ $fechaEfectiva := time.AsTime $fechaBaseTexto }}
+  <em>{{ $fechaEfectiva.Format "02/01/2006" }}</em>
+{{ else }}
+  <em>{{ .Date.Format "02/01/2006" }}</em>
+{{ end }}
         </h5>
 
         <!-- TITULAR -->
@@ -291,7 +445,7 @@
         <!-- SUBTÍTULO -->
         {{ with .Params.subtitle }}
           <p class="mbr-text mbr-fonts-style mt-3 display-7">
-            {{ . }}
+            {{ . | truncate 200 }}
           </p>
         {{ end }}
         <br>
@@ -320,7 +474,13 @@
       <div class="item-content">
         <!-- FECHA -->
         <h5 class="item-title mbr-fonts-style display-4">
-          <em>{{ .Date.Format "02/01/2006" }}</em>
+{{ if .Params.fechaBase }}
+  {{ $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") }}
+  {{ $fechaEfectiva := time.AsTime $fechaBaseTexto }}
+  <em>{{ $fechaEfectiva.Format "02/01/2006" }}</em>
+{{ else }}
+  <em>{{ .Date.Format "02/01/2006" }}</em>
+{{ end }}
         </h5>
 
         <!-- TITULAR -->
@@ -335,7 +495,7 @@
         <!-- SUBTÍTULO -->
         {{ with .Params.subtitle }}
           <p class="mbr-text mbr-fonts-style mt-3 display-7">
-            {{ . }}
+            {{ . | truncate 200 }}
           </p>
         {{ end }}
         <br>

@@ -37,7 +37,36 @@
             <line x1="8" y1="2" x2="8" y2="6"></line>
             <line x1="3" y1="10" x2="21" y2="10"></line>
           </svg>
-          {{ .Date.Format "02/01/2006" }}
+{{ if .Params.fechaBase }}
+
+  {{ $hoy := now }}
+  {{ $anioActual := $hoy.Year }}
+
+  {{ $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") }}
+  {{ $fechaBase := time.AsTime $fechaBaseTexto }}
+
+  {{ $fechaInicio := $fechaBase }}
+  {{ $fechaFin := $fechaBase }}
+
+  {{ range seq 1 (int .Params.fechaInicio) }}
+    {{ $fechaInicio = $fechaInicio.AddDate 0 0 -1 }}
+  {{ end }}
+
+  {{ range seq 1 (int .Params.fechaFin) }}
+    {{ $fechaFin = $fechaFin.AddDate 0 0 1 }}
+  {{ end }}
+
+  {{ if and (ge $hoy $fechaInicio) (le $hoy $fechaFin) }}
+    {{ $fechaBase.Format "02/01/2006" }}
+  {{ else }}
+    {{ .Date.Format "02/01/2006" }}
+  {{ end }}
+
+{{ else }}
+
+  {{ .Date.Format "02/01/2006" }}
+
+{{ end }}
         </div>
         
         <div class="post-reading-time">
