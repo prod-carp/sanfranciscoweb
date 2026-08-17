@@ -54,9 +54,9 @@ Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
 
 $newHead = @"
 <html lang="es">
-<link rel="canonical" href="$canonicalTag">
 
 <head>
+<link rel="canonical" href="$canonicalTag">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
