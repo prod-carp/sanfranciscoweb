@@ -10,15 +10,6 @@
 [
 
   {
-    "category": "Tiempo Litúrgico",
-    "title": "La Pascua: El Triunfo de la Vida sobre la Muerte",
-    "subtitle": "\"Cristo ha resucitado, verdaderamente ha resucitado\"",
-    "date": "2026-11-29",
-    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/la-pascua-el-triunfo-de-la-vida-sobre_20260818_111625.webp",
-    "url": "/noticias/tiempo-liturgico/2026-08-18-la-pascua-el-triunfo-de-la-vida-sobre/"
-  },
-
-  {
     "category": "Santoral",
     "title": "La Asunción de la Virgen en Fuenlabrada: una mirada al cielo",
     "subtitle": "El 15 de agosto es una fecha señalada en el calendario. Para muchos, marca el ecuador del verano y el comienzo o fin de unas merecidas vacaciones, pero para los católicos, es la Solemnidad de la Asunción de la Virgen María, una de las festividades marianas más importantes del año litúrgico.",
@@ -43,5 +34,14 @@
     "date": "2026-07-31",
     "image": "https://sanfranciscoysantaclara.es/assets/images/blog/vigilia-del-perdon-de-asis_20260731_223859.webp",
     "url": "/noticias/2026-07-31-vigilia-del-perdon-de-asis/"
+  },
+
+  {
+    "category": "Formación",
+    "title": "¿Tuvo Jesús hermanos? Una mirada a la Biblia y a la figura de la Virgen María",
+    "subtitle": "Si la Biblia habla de los \"hermanos de Jesús\", ¿cómo puede afirmar la Iglesia que la Virgen María permaneció siempre virgen?",
+    "date": "2026-07-09",
+    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/_20260709_163757.webp",
+    "url": "/noticias/tuvo-jesus-hermanos/"
   }
 ]

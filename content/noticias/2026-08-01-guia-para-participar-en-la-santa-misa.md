@@ -248,7 +248,7 @@ Se presentan el pan y el vino, que serán transformados en el Cuerpo y la Sangre
 
 **R:** Bendito seas por siempre, Señor.
 
-Después:
+**Postura:** De pie.
 
 **S:** Orad, hermanos, para que este sacrificio, mío y vuestro, sea agradable a Dios, Padre todopoderoso.
 
@@ -366,7 +366,7 @@ Mientras el sacerdote parte la Hostia se canta o recita:
 
 Jesucristo mismo se entrega como alimento para nuestra alma.
 
-Antes de acercarnos a comulgar conviene hacer un examen de conciencia y recordar que para recibir dignamente la Sagrada Comunión debemos estar en gracia de Dios. Si somos conscientes de haber cometido un pecado grave, debemos confesarnos antes de comulgar.
+Antes de acercarnos a comulgar conviene hacer un examen de conciencia y recordar que para recibir dignamente la Sagrada Comunión debemos estar en gracia de Dios. Si somos conscientes de haber cometido un pecado grave, debemos **[confesarnos](https://sanfranciscoysantaclara.es/confesion.html)** antes de comulgar.
 
 También la Iglesia nos pide guardar el ayuno eucarístico durante al menos una hora antes de recibir la Comunión, salvo las excepciones previstas.
 
