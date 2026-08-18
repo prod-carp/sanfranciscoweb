@@ -1,15 +1,16 @@
 ﻿+++
 title = 'La Asunción de la Virgen en Fuenlabrada: una mirada al cielo'
 subtitle = 'El 15 de agosto es una fecha señalada en el calendario. Para muchos, marca el ecuador del verano y el comienzo o fin de unas merecidas vacaciones, pero para los católicos, es la Solemnidad de la Asunción de la Virgen María, una de las festividades marianas más importantes del año litúrgico.'
-date = '2025-08-15T16:44:08+02:00'
+date = '2025-07-10T16:44:08+02:00'
 draft = false
-categorias = ["Formación"]
-tags = [""]
+categorias = ["Santoral"]
+tags = ["importante"]
+diasDestacado = 4
 weight = 0
 image = "/assets/images/blog/la-asuncion-de-la-virgen-en-fuenlabrada_20260817_164349.webp"
 fechaBase = '08/15'
 fechaInicio = 3
-fechaFin = 14
+fechaFin = 30
 +++
 
 ## El origen de la tradición en Fuenlabrada

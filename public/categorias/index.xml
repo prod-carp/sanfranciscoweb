@@ -43,5 +43,19 @@
       <guid>http://localhost:1313/categorias/testimonios/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Tiempo Litúrgico</title>
+      <link>http://localhost:1313/categorias/tiempo-lit%C3%BArgico/</link>
+      <pubDate>Mon, 18 Aug 2025 11:17:05 +0200</pubDate>
+      <guid>http://localhost:1313/categorias/tiempo-lit%C3%BArgico/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Santoral</title>
+      <link>http://localhost:1313/categorias/santoral/</link>
+      <pubDate>Thu, 10 Jul 2025 16:44:08 +0200</pubDate>
+      <guid>http://localhost:1313/categorias/santoral/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

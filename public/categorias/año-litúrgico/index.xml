@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Año Litúrgico on Parroquia San Francisco y Santa Clara de Asís</title>
+    <link>http://localhost:1313/categorias/a%C3%B1o-lit%C3%BArgico/</link>
+    <description>Recent content in Año Litúrgico on Parroquia San Francisco y Santa Clara de Asís</description>
+    <generator>Hugo</generator>
+    <language>es-es</language>
+    <atom:link href="http://localhost:1313/categorias/a%C3%B1o-lit%C3%BArgico/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

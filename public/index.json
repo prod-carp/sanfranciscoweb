@@ -1,29 +1,47 @@
-[{
-    "category": "Formación",
+
+
+
+
+
+
+
+
+
+[
+
+  {
+    "category": "Tiempo Litúrgico",
+    "title": "La Pascua: El Triunfo de la Vida sobre la Muerte",
+    "subtitle": "\"Cristo ha resucitado, verdaderamente ha resucitado\"",
+    "date": "2026-11-29",
+    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/la-pascua-el-triunfo-de-la-vida-sobre_20260818_111625.webp",
+    "url": "/noticias/tiempo-liturgico/2026-08-18-la-pascua-el-triunfo-de-la-vida-sobre/"
+  },
+
+  {
+    "category": "Santoral",
     "title": "La Asunción de la Virgen en Fuenlabrada: una mirada al cielo",
     "subtitle": "El 15 de agosto es una fecha señalada en el calendario. Para muchos, marca el ecuador del verano y el comienzo o fin de unas merecidas vacaciones, pero para los católicos, es la Solemnidad de la Asunción de la Virgen María, una de las festividades marianas más importantes del año litúrgico.",
     "date": "2026-08-15",
     "image": "https://sanfranciscoysantaclara.es/assets/images/blog/la-asuncion-de-la-virgen-en-fuenlabrada_20260817_164349.webp",
-    "url": "/noticias/recurrentes/2026-08-17-la-asuncion-de-la-virgen-en-fuenlabrada/"
-  },{
+    "url": "/noticias/santoral/2026-08-17-la-asuncion-de-la-virgen-en-fuenlabrada/"
+  },
+
+  {
     "category": "Espiritualidad",
     "title": "Guía para participar en la Santa Misa | Respuestas y significado",
     "subtitle": "Aprende paso a paso cómo participar en la Santa Misa: respuestas, gestos y el significado de cada parte para vivir la Eucaristía con mayor comprensión y devoción.",
     "date": "2026-08-01",
     "image": "https://sanfranciscoysantaclara.es/assets/images/blog/guia-para-participar-en-la-santa-misa_20260801_000031.webp",
     "url": "/noticias/2026-08-01-guia-para-participar-en-la-santa-misa/"
-  },{
+  },
+
+  {
     "category": "Parroquia",
     "title": "Vigilia del Perdón de Asís | VIII Centenario del Tránsito de San Francisco de Asís",
     "subtitle": "Con motivo del VIII Centenario del Tránsito de San Francisco de Asís, compartimos el subsidio litúrgico de la Vigilia del Perdón de Asís para ayudar a preparar y vivir esta celebración de la misericordia de Dios.",
     "date": "2026-07-31",
     "image": "https://sanfranciscoysantaclara.es/assets/images/blog/vigilia-del-perdon-de-asis_20260731_223859.webp",
     "url": "/noticias/2026-07-31-vigilia-del-perdon-de-asis/"
-  },{
-    "category": "Peregrinaciones",
-    "title": "Un día inolvidable junto al Papa León: crónica de una jornada de fe en Madrid",
-    "subtitle": "Así vivimos la celebración de la Santa Misa presidida por el Papa León en Madrid, una jornada marcada por la fe, y la alegría ser parte de la Iglesia universal.",
-    "date": "2026-06-07",
-    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/visitapapa.webp",
-    "url": "/noticias/visita-papa-leon/"
-  }]
+  }
+]

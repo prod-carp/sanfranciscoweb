@@ -1,68 +1,37 @@
 {{- $pages := where site.RegularPages "Section" "noticias" -}}
-
-{{/* ==========================================================
-   FECHA ACTUAL
-========================================================== */}}
-
-{{- $hoy := now -}}
-{{- $anioActual := $hoy.Year -}}
-
+{{- $categorias := dict -}}
+{{- $ultimas := slice -}}
 
 {{/* ==========================================================
    CREAR LISTA DE NOTICIAS ACTIVAS
-   Cada elemento contiene:
-   - page → página original
-   - date → fecha efectiva para ordenar
+
+   fecha-recurrente.html determina:
+   - si la noticia está activa
+   - cuál es su fecha efectiva
+
+   Esto funciona tanto para:
+   - fechas normales
+   - fechas fijas recurrentes
+   - fiestas de Pascua
+   - Adviento
+   - Cristo Rey
+   - Bautismo del Señor
+   - Sagrada Familia
 ========================================================== */}}
 
 {{- $activePosts := slice -}}
 
 {{- range $pages -}}
 
-  {{- $activa := true -}}
-  {{- $fechaOrden := .Date -}}
+  {{- $resultado := partial "fecha-recurrente.html" . -}}
 
-  {{- if .Params.fechaBase -}}
-
-    {{/* Fecha base del año actual */}}
-
-    {{- $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") -}}
-    {{- $fechaBase := time.AsTime $fechaBaseTexto -}}
-
-    {{/* Inicio y fin del período */}}
-
-    {{- $fechaInicio := $fechaBase -}}
-    {{- $fechaFin := $fechaBase -}}
-
-    {{- range seq 1 (int .Params.fechaInicio) -}}
-      {{- $fechaInicio = $fechaInicio.AddDate 0 0 -1 -}}
-    {{- end -}}
-
-    {{- range seq 1 (int .Params.fechaFin) -}}
-      {{- $fechaFin = $fechaFin.AddDate 0 0 1 -}}
-    {{- end -}}
-
-    {{/* Comprobar si está activa */}}
-
-    {{- $activa = and
-        (ge $hoy $fechaInicio)
-        (le $hoy $fechaFin)
-    -}}
-
-    {{/* La fecha efectiva es la fecha base */}}
-
-    {{- $fechaOrden = $fechaBase -}}
-
-  {{- end -}}
-
-  {{/* Guardar solamente las activas */}}
-
-  {{- if $activa -}}
+  {{- if $resultado.activa -}}
 
     {{- $activePosts = $activePosts | append (dict
         "page" .
-        "date" $fechaOrden
-    ) -}}
+        "fecha" $resultado.fecha
+      )
+    -}}
 
   {{- end -}}
 
@@ -70,14 +39,12 @@
 
 
 {{/* ==========================================================
-   DESCUBRIR CATEGORÍAS
+   DESCUBRIR TODAS LAS CATEGORÍAS
 ========================================================== */}}
 
-{{- $categorias := dict -}}
+{{- range $post := $activePosts -}}
 
-{{- range $item := $activePosts -}}
-
-  {{- range $item.page.Params.categorias -}}
+  {{- range $post.page.Params.categorias -}}
 
     {{- if not (isset $categorias .) -}}
       {{- $categorias = merge $categorias (dict . true) -}}
@@ -89,59 +56,55 @@
 
 
 {{/* ==========================================================
-   PRIMERA NOTICIA DE CADA CATEGORÍA
-========================================================== */}}
+   OBTENER LA NOTICIA MÁS RECIENTE DE CADA CATEGORÍA
 
-{{- $ultimas := slice -}}
+   IMPORTANTE:
+   Se utiliza "fecha", que es la fecha efectiva calculada
+   por fecha-recurrente.html.
+========================================================== */}}
 
 {{- range $categoria, $_ := $categorias -}}
 
-  {{- $postsCategoria := slice -}}
+  {{- $postsCategoria := where
+        $activePosts
+        "page.Params.categorias"
+        "intersect"
+        (slice $categoria)
+  -}}
 
-  {{- range $activePosts -}}
+  {{- $ordenados := sort $postsCategoria "fecha" "desc" -}}
 
-    {{- if in .page.Params.categorias $categoria -}}
-      {{- $postsCategoria = $postsCategoria | append . -}}
-    {{- end -}}
+  {{- $ultima := index $ordenados 0 -}}
 
-  {{- end -}}
-
-  {{/* Ordenar la categoría por fecha efectiva */}}
-
-  {{- $postsCategoria = sort $postsCategoria "date" "desc" -}}
-
-  {{/* Quedarnos con la primera */}}
-
-  {{- if gt (len $postsCategoria) 0 -}}
-    {{- $ultimas = $ultimas | append (index $postsCategoria 0) -}}
+  {{- if $ultima -}}
+    {{- $ultimas = $ultimas | append $ultima -}}
   {{- end -}}
 
 {{- end -}}
 
 
 {{/* ==========================================================
-   ORDENAR LAS PRIMERAS DE CADA CATEGORÍA
-   Y QUEDARSE CON LAS 4 MÁS RECIENTES
+   ORDENAR LAS CATEGORÍAS POR LA FECHA EFECTIVA
+   DE SU ÚLTIMA NOTICIA
+
+   Y QUEDARNOS CON LAS 4 MÁS RECIENTES.
 ========================================================== */}}
 
-{{- $ultimas = first 4 (sort $ultimas "date" "desc") -}}
+{{- $ultimas = first 4 (sort $ultimas "fecha" "desc") -}}
 
 
 [
-{{- range $i, $item := $ultimas -}}
+{{- range $i, $post := $ultimas -}}
 
-  {{- if gt $i 0 }},{{ end -}}
-
-  {{- $post := $item.page -}}
-  {{- $fechaEfectiva := $item.date -}}
+  {{- if gt $i 0 }},{{ end }}
 
   {
-    "category": {{ index $post.Params.categorias 0 | jsonify }},
-    "title": {{ $post.Title | jsonify }},
-    "subtitle": {{ $post.Params.subtitle | jsonify }},
-    "date": {{ $fechaEfectiva.Format "2006-01-02" | jsonify }},
-    "image": {{ printf "https://sanfranciscoysantaclara.es%s" $post.Params.image | jsonify }},
-    "url": {{ $post.RelPermalink | jsonify }}
+    "category": {{ index $post.page.Params.categorias 0 | jsonify }},
+    "title": {{ $post.page.Title | jsonify }},
+    "subtitle": {{ $post.page.Params.subtitle | jsonify }},
+    "date": {{ $post.fecha.Format "2006-01-02" | jsonify }},
+    "image": {{ printf "https://sanfranciscoysantaclara.es%s" $post.page.Params.image | jsonify }},
+    "url": {{ $post.page.RelPermalink | jsonify }}
   }
 
 {{- end -}}

@@ -32,42 +32,14 @@
       <div class="post-meta">
         <div class="post-date">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-            <line x1="16" y1="2" x2="16" y2="6"></line>
-            <line x1="8" y1="2" x2="8" y2="6"></line>
-            <line x1="3" y1="10" x2="21" y2="10"></line>
-          </svg>
-{{ if .Params.fechaBase }}
-
-  {{ $hoy := now }}
-  {{ $anioActual := $hoy.Year }}
-
-  {{ $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") }}
-  {{ $fechaBase := time.AsTime $fechaBaseTexto }}
-
-  {{ $fechaInicio := $fechaBase }}
-  {{ $fechaFin := $fechaBase }}
-
-  {{ range seq 1 (int .Params.fechaInicio) }}
-    {{ $fechaInicio = $fechaInicio.AddDate 0 0 -1 }}
-  {{ end }}
-
-  {{ range seq 1 (int .Params.fechaFin) }}
-    {{ $fechaFin = $fechaFin.AddDate 0 0 1 }}
-  {{ end }}
-
-  {{ if and (ge $hoy $fechaInicio) (le $hoy $fechaFin) }}
-    {{ $fechaBase.Format "02/01/2006" }}
-  {{ else }}
-    {{ .Date.Format "02/01/2006" }}
-  {{ end }}
-
-{{ else }}
-
-  {{ .Date.Format "02/01/2006" }}
-
-{{ end }}
-        </div>
+      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+      <line x1="16" y1="2" x2="16" y2="6"></line>
+      <line x1="8" y1="2" x2="8" y2="6"></line>
+      <line x1="3" y1="10" x2="21" y2="10"></line>
+    </svg>
+    {{ $resultado := partial "fecha-recurrente.html" . }}
+    {{ $resultado.fecha.Format "02/01/2006" }}
+  </div>
         
         <div class="post-reading-time">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

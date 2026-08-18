@@ -51,86 +51,97 @@
 {{- $anioActual := $hoy.Year -}}
 {{- $activePages := slice -}}
 
-{{- range $pages -}}
+{{ range .Pages }}
 
-    {{- if .Params.fechaBase -}}
+    {{ $resultado := partial "fecha-recurrente.html" . }}
 
-        {{/* ---------- Noticia recurrente ---------- */}}
+    {{ if $resultado.activa }}
 
-        {{- $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") -}}
-        {{- $fechaBase := time.AsTime $fechaBaseTexto -}}
+        {{ $activePages = $activePages | append (dict
+            "page" .
+            "fecha" $resultado.fecha
+        ) }}
 
-        {{- $fechaInicio := $fechaBase -}}
-        {{- $fechaFin := $fechaBase -}}
+    {{ end }}
 
-        {{- range seq 1 (int .Params.fechaInicio) -}}
-            {{- $fechaInicio = $fechaInicio.AddDate 0 0 -1 -}}
+{{ end }}
+
+
+{{/* ==========================================================
+   NOTICIA DESTACADA
+   - "importante" sin diasDestacado = destacada permanente.
+   - "importante" con diasDestacado = destacada temporal.
+   - La fecha de inicio es la fecha efectiva de la noticia.
+   - Solo se muestra la destacada temporal mientras esté activa.
+   - Si caduca, vuelve a poder aparecer la destacada permanente.
+========================================================== */}}
+
+{{- $importantPosts := slice -}}
+
+{{- range $activePages -}}
+
+    {{- $esImportante := in .page.Params.tags "importante" -}}
+
+    {{- if $esImportante -}}
+
+        {{/* Por defecto, una noticia importante es permanente */}}
+        {{- $puedeSerDestacada := true -}}
+
+        {{/* Si tiene diasDestacado, comprobar si sigue dentro del plazo */}}
+        {{- if .page.Params.diasDestacado -}}
+
+            {{- $diasDestacado := int .page.Params.diasDestacado -}}
+            {{- $fechaFinDestacado := .fecha.AddDate 0 0 $diasDestacado -}}
+
+            {{- if gt now $fechaFinDestacado -}}
+                {{- $puedeSerDestacada = false -}}
+            {{- end -}}
+
         {{- end -}}
 
-        {{- range seq 1 (int .Params.fechaFin) -}}
-            {{- $fechaFin = $fechaFin.AddDate 0 0 1 -}}
+        {{/* Añadir solamente las que pueden ser destacadas */}}
+        {{- if $puedeSerDestacada -}}
+            {{- $importantPosts = $importantPosts | append . -}}
         {{- end -}}
-
-        {{- if and (ge $hoy $fechaInicio) (le $hoy $fechaFin) -}}
-            {{- $activePages = $activePages | append . -}}
-        {{- end -}}
-
-    {{- else -}}
-
-        {{/* ---------- Noticia normal ---------- */}}
-
-        {{- $activePages = $activePages | append . -}}
 
     {{- end -}}
 
 {{- end -}}
 
+{{/* Ordenar las destacadas por fecha efectiva, de más reciente a más antigua */}}
 
-{{/* ==========================================================
-   NOTICIA DESTACADA
-========================================================== */}}
+{{- $importantPosts = sort $importantPosts "fecha" "desc" -}}
 
-{{- $main := first 1 (where $activePages "Params.tags" "intersect" (slice "importante")) -}}
-{{- $mainPost := index $main 0 -}}
+{{/* Solo puede haber UNA noticia destacada */}}
 
+{{- $main := first 1 $importantPosts -}}
 
-{{/* ==========================================================
-   RESTO DE NOTICIAS
-========================================================== */}}
+{{/* Guardar la destacada de forma segura */}}
+
+{{- $mainPost := false -}}
+
+{{- if gt (len $main) 0 -}}
+    {{- $mainPost = index $main 0 -}}
+{{- end -}}
+
 
 {{/* ==========================================================
    RESTO DE NOTICIAS CON FECHA EFECTIVA
 ========================================================== */}}
 
-{{- $others := where $activePages "Permalink" "ne" $mainPost.Permalink -}}
+{{- $others := slice -}}
 
-{{- $postsWithDate := slice -}}
+{{- range $activePages -}}
 
-{{- range $others -}}
-
-    {{- $fechaOrden := .Date -}}
-
-    {{- if .Params.fechaBase -}}
-        {{- $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") -}}
-        {{- $fechaOrden = time.AsTime $fechaBaseTexto -}}
+    {{- if ne .page.RelPermalink $mainPost.page.RelPermalink -}}
+        {{- $others = $others | append . -}}
     {{- end -}}
 
-    {{- $item := dict
-        "page" .
-        "date" $fechaOrden
-    -}}
-
-    {{- $postsWithDate = $postsWithDate | append $item -}}
-
 {{- end -}}
 
-{{- $postsWithDate = sort $postsWithDate "date" "desc" -}}
+{{/* Ordenar por fecha efectiva */}}
 
-{{- $sortedOthers := slice -}}
-
-{{- range $postsWithDate -}}
-    {{- $sortedOthers = $sortedOthers | append .page -}}
-{{- end -}}
+{{- $sortedOthers := sort $others "fecha" "desc" -}}
 
 
 
@@ -244,6 +255,9 @@
 
 {{ range $main }}
 
+  {{ $post := .page }}
+  {{ $fecha := .fecha }}
+
 <section data-bs-version="5.1" class="article8 cid-viKUxaBqdW">
 
   <div class="row justify-content-center" style="background-color: #f5f5f5;">
@@ -252,8 +266,8 @@
 
         <!-- IMAGEN -->
         <div class="image-wrapper d-flex justify-content-center mb-2">
-          {{ $permalink := .RelPermalink }}
-          {{ with .Params.image }}
+          {{ $permalink := $post.RelPermalink }}
+          {{ with $post.Params.image }}
             <a href="{{ $permalink }}">
               <img src="{{ . | relURL }}" alt="{{ $.Title }}">
             </a>
@@ -262,14 +276,14 @@
 
         <!-- FECHA -->
         <p class="mbr-text mbr-fonts-style display-7">
-          {{ .Date.Format "02/01/2006" }}
+          <em>{{ $fecha.Format "02/01/2006" }}</em>
         </p>
 
         <div class="card-content-text">
           <!-- TITULAR -->
           <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-6">
             <strong>
-              <a href="{{ .RelPermalink }}" style="color: black; text-decoration: none; font-weight: bold;">{{ .Title }}</a>
+              <a href="{{ $post.RelPermalink }}" style="color: black; text-decoration: none; font-weight: bold;">{{ $post.Title }}</a>
             </strong>
           </h3>
 
@@ -277,10 +291,10 @@
             <div class="item features-without-image col-12">
               <div class="item-wrapper">
                 <!-- SUBTÍTULO -->
-                {{ with .Params.subtitle }}
-                  <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5">
-                    <strong>{{ . }}</strong>
-                  </h4>
+                {{ with $post.Params.subtitle }}
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5">
+                <strong>{{ . }}</strong>
+                </h4>
                 {{ end }}
               </div>
             </div>
@@ -325,95 +339,102 @@
    - Segunda pasada: la segunda más reciente de cada categoría.
 ========================================================== */}}
 
-{{/* Agrupar noticias por categoría */}}
-{{ $postsByCategory := dict }}
+{{/* ==========================================================
+   AGRUPAR NOTICIAS ACTIVAS POR CATEGORÍA
+========================================================== */}}
 
-{{ range $sortedOthers }}
-    {{ $category := index .Params.categorias 0 }}
-    {{ $list := index $postsByCategory $category | default (slice) }}
-    {{ $postsByCategory = merge $postsByCategory (dict $category ($list | append .)) }}
-{{ end }}
+{{- $postsByCategory := dict -}}
 
-{{ $selectedPosts := slice }}
-{{ $needed := 8 }}
+{{- range $sortedOthers -}}
 
-{{/* ---------- Primera pasada: primera noticia ---------- */}}
-{{ range $category, $posts := $postsByCategory }}
-    {{ if and (gt (len $posts) 0) (lt (len $selectedPosts) $needed) }}
-        {{ $selectedPosts = $selectedPosts | append (index $posts 0) }}
-    {{ end }}
-{{ end }}
+    {{- $post := .page -}}
+    {{- $category := index $post.Params.categorias 0 -}}
 
+    {{- $list := index $postsByCategory $category | default (slice) -}}
+
+    {{- $postsByCategory = merge $postsByCategory (dict
+        $category
+        ($list | append .)
+    ) -}}
+
+{{- end -}}
+
+
+{{/* ==========================================================
+   SELECCIONAR HASTA 8 NOTICIAS
+   Primera noticia de cada categoría.
+========================================================== */}}
+
+{{- $selectedPosts := slice -}}
+{{- $needed := 8 -}}
+
+{{- range $category, $posts := $postsByCategory -}}
+
+    {{- if and (gt (len $posts) 0) (lt (len $selectedPosts) $needed) -}}
+        {{- $selectedPosts = $selectedPosts | append (index $posts 0) -}}
+    {{- end -}}
+
+{{- end -}}
 
 
 {{/* ==========================================================
    ORDENAR LAS SELECCIONADAS POR FECHA EFECTIVA
 ========================================================== */}}
 
-{{- $selectedWithDate := slice -}}
+{{- $selectedPosts = sort $selectedPosts "fecha" "desc" -}}
 
-{{- range $selectedPosts -}}
 
-    {{- $fechaOrden := .Date -}}
+{{/* ==========================================================
+   SEGUNDA PASADA:
+   Añadir la segunda noticia de cada categoría si aún
+   no hemos llegado a 8.
+========================================================== */}}
 
-    {{- if .Params.fechaBase -}}
-        {{- $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") -}}
-        {{- $fechaOrden = time.AsTime $fechaBaseTexto -}}
+{{- if lt (len $selectedPosts) $needed -}}
+
+    {{- $secondPosts := slice -}}
+
+    {{- range $category, $posts := $postsByCategory -}}
+
+        {{- if gt (len $posts) 1 -}}
+            {{- $secondPosts = $secondPosts | append (index $posts 1) -}}
+        {{- end -}}
+
     {{- end -}}
 
-    {{- $item := dict
-        "page" .
-        "date" $fechaOrden
-    -}}
+    {{- $secondPosts = sort $secondPosts "fecha" "desc" -}}
 
-    {{- $selectedWithDate = $selectedWithDate | append $item -}}
+    {{- range $secondPosts -}}
+
+        {{- if lt (len $selectedPosts) $needed -}}
+            {{- $selectedPosts = $selectedPosts | append . -}}
+        {{- end -}}
+
+    {{- end -}}
 
 {{- end -}}
 
-{{- $selectedWithDate = sort $selectedWithDate "date" "desc" -}}
 
-{{- $selectedPosts = slice -}}
+{{/* ==========================================================
+   VOLVER A ORDENAR LAS 8 FINALES POR FECHA EFECTIVA
+========================================================== */}}
 
-{{- range $selectedWithDate -}}
-    {{- $selectedPosts = $selectedPosts | append .page -}}
-{{- end -}}
-
-
-
-
-
-{{/* ---------- Segunda pasada: segunda noticia ---------- */}}
-{{ if lt (len $selectedPosts) $needed }}
-
-    {{ $secondPosts := slice }}
-
-    {{ range $category, $posts := $postsByCategory }}
-        {{ if gt (len $posts) 1 }}
-            {{ $secondPosts = $secondPosts | append (index $posts 1) }}
-        {{ end }}
-    {{ end }}
-
-    {{ $secondPosts = sort $secondPosts "Date" "desc" }}
-
-    {{ range $secondPosts }}
-        {{ if lt (len $selectedPosts) $needed }}
-            {{ $selectedPosts = $selectedPosts | append . }}
-        {{ end }}
-    {{ end }}
-
-{{ end }}
+{{- $selectedPosts = sort $selectedPosts "fecha" "desc" -}}
 
 <!-- Mostrar las primeras 4 noticias -->
 <div class="container">
 <div class="row mt-4">
 
 {{ range first 4 $selectedPosts }}
+
+  {{ $post := .page }}
+  {{ $fecha := .fecha }}
   <div class="item features-image col-12 col-md-6 col-lg-3">
     <div class="item-wrapper">
       <!-- IMAGEN -->
       <div class="item-img">
-        {{ $permalink := .RelPermalink }}
-        {{ with .Params.image }}
+        {{ $permalink := $post.RelPermalink }}
+        {{ with $post.Params.image }}
           <a href="{{ $permalink }}">
             <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="width:100%; height:300px; object-fit:cover;">
           </a>
@@ -424,26 +445,20 @@
       <div class="item-content">
         <!-- FECHA -->
         <h5 class="item-title mbr-fonts-style display-4">
-{{ if .Params.fechaBase }}
-  {{ $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") }}
-  {{ $fechaEfectiva := time.AsTime $fechaBaseTexto }}
-  <em>{{ $fechaEfectiva.Format "02/01/2006" }}</em>
-{{ else }}
-  <em>{{ .Date.Format "02/01/2006" }}</em>
-{{ end }}
+<em>{{ $fecha.Format "02/01/2006" }}</em>
         </h5>
 
         <!-- TITULAR -->
         <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
           <strong>
-            <a href="{{ .RelPermalink }}" style="color: black; text-decoration: none; font-weight: bold;">
-              {{ .Title }}
+            <a href="{{ $post.RelPermalink }}" style="color: black; text-decoration: none; font-weight: bold;">
+            {{ $post.Title }}
             </a>
           </strong>
         </h6>
 
         <!-- SUBTÍTULO -->
-        {{ with .Params.subtitle }}
+        {{ with $post.Params.subtitle }}
           <p class="mbr-text mbr-fonts-style mt-3 display-7">
             {{ . | truncate 200 }}
           </p>
@@ -458,12 +473,15 @@
 <!-- Segunda fila: siguientes 4 noticias -->
 <div class="row mt-4">
 {{ range after 4 (first 8 $selectedPosts) }}
+
+  {{ $post := .page }}
+  {{ $fecha := .fecha }}
   <div class="item features-image col-12 col-md-6 col-lg-3">
     <div class="item-wrapper">
       <!-- IMAGEN -->
       <div class="item-img">
-        {{ $permalink := .RelPermalink }}
-        {{ with .Params.image }}
+        {{ $permalink := $post.RelPermalink }}
+{{ with $post.Params.image }}
           <a href="{{ $permalink }}">
             <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="width:100%; height:300px; object-fit:cover;">
           </a>
@@ -474,26 +492,20 @@
       <div class="item-content">
         <!-- FECHA -->
         <h5 class="item-title mbr-fonts-style display-4">
-{{ if .Params.fechaBase }}
-  {{ $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") }}
-  {{ $fechaEfectiva := time.AsTime $fechaBaseTexto }}
-  <em>{{ $fechaEfectiva.Format "02/01/2006" }}</em>
-{{ else }}
-  <em>{{ .Date.Format "02/01/2006" }}</em>
-{{ end }}
+          <em>{{ $fecha.Format "02/01/2006" }}</em>
         </h5>
 
         <!-- TITULAR -->
         <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
           <strong>
-            <a href="{{ .RelPermalink }}" style="color: black; text-decoration: none; font-weight: bold;">
-              {{ .Title }}
-            </a>
+            <a href="{{ $post.RelPermalink }}"style="color: black; text-decoration: none; font-weight: bold;">
+           {{ $post.Title }}
+           </a>
           </strong>
         </h6>
 
         <!-- SUBTÍTULO -->
-        {{ with .Params.subtitle }}
+        {{ with $post.Params.subtitle }}
           <p class="mbr-text mbr-fonts-style mt-3 display-7">
             {{ . | truncate 200 }}
           </p>

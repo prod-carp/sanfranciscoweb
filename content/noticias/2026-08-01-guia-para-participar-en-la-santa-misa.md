@@ -4,7 +4,7 @@ subtitle = 'Aprende paso a paso cómo participar en la Santa Misa: respuestas, g
 date = '2026-08-01T00:00:55+02:00'
 draft = false
 categorias = ["Espiritualidad"]
-tags = [""]
+tags = []
 weight = 0
 image = "/assets/images/blog/guia-para-participar-en-la-santa-misa_20260801_000031.webp"
 +++

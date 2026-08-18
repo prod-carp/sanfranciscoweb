@@ -1,79 +1,434 @@
 {{/*
 ============================================================
-  FECHA RECURRENTE
+ FECHA RECURRENTE
 
-  Recibe:
-    .
+ Devuelve:
+   activa → true / false
+   fecha  → fecha efectiva
 
-  Devuelve un dict con:
+ SISTEMA 1: fecha fija
+   fechaBase = "MM/DD"
+   fechaInicio = días antes
+   fechaFin = días después
 
-    activa       → true / false
-    fecha        → fecha efectiva para ordenar/mostrar
-
-  Noticias normales:
-    activa = true
-    fecha  = .Date
-
-  Noticias recurrentes:
-    fechaBase = "MM/DD"
-    fechaInicio = días antes
-    fechaFin = días después
-
-  La fecha efectiva se calcula para el año actual.
+ SISTEMA 2: fecha móvil
+   tipoFecha:
+     ceniza
+     ramos
+     jueves-santo
+     viernes-santo
+     pascua
+     ascension
+     pentecostes
+     trinidad
+     corpus
+     sagrado-corazon
+     inmaculado-corazon
 ============================================================
 */}}
 
-{{ $hoy := now }}
-{{ $anioActual := $hoy.Year }}
+{{ $activa := true }}
+{{ $fecha := .Date }}
 
-{{/* --------------------------------------------------------
-   NOTICIA NORMAL
---------------------------------------------------------- */}}
+{{/* ========================================================
+   SISTEMA 1 — FECHA FIJA
+======================================================== */}}
 
-{{ if not .Params.fechaBase }}
+{{ with .Params.fechaBase }}
 
-  {{ return (dict
-      "activa" true
-      "fecha" .Date
-  ) }}
+    {{ $hoy := now }}
+    {{ $anio := $hoy.Year }}
+
+    {{ $partes := split . "/" }}
+
+    {{ if eq (len $partes) 2 }}
+
+        {{ $mes := index $partes 0 }}
+        {{ $dia := index $partes 1 }}
+
+        {{ $fechaTexto := printf "%d-%s-%s" $anio $mes $dia }}
+        {{ $fechaBase := time.AsTime $fechaTexto }}
+
+        {{ $fecha = $fechaBase }}
+
+        {{ $diasAntes := int $.Params.fechaInicio }}
+        {{ $diasDespues := int $.Params.fechaFin }}
+
+        {{ $fechaInicio := $fechaBase.AddDate 0 0 (sub 0 $diasAntes) }}
+        {{ $fechaFin := $fechaBase.AddDate 0 0 $diasDespues }}
+
+        {{ $activa = and
+            (ge $hoy $fechaInicio)
+            (le $hoy $fechaFin)
+        }}
+
+    {{ end }}
 
 {{ end }}
 
 
-{{/* --------------------------------------------------------
-   NOTICIA RECURRENTE
-   Ejemplo:
+{{/* ========================================================
+   SISTEMA 2 — FECHAS MÓVILES BASADAS EN PASCUA
 
-   fechaBase = "08/15"
-   fechaInicio = 3
-   fechaFin = 14
---------------------------------------------------------- */}}
+   Las fechas se calculan a partir del Domingo de Pascua.
+======================================================== */}}
 
-{{ $fechaBaseTexto := printf "%d-%s" $anioActual (replace .Params.fechaBase "/" "-") }}
-{{ $fechaBase := time.AsTime $fechaBaseTexto }}
+{{ if .Params.tipoFecha }}
 
-{{ $diasAntes := int .Params.fechaInicio }}
-{{ $diasDespues := int .Params.fechaFin }}
+    {{ $hoy := now }}
+    {{ $anio := $hoy.Year }}
 
-{{ $fechaInicio := $fechaBase.AddDate 0 0 (sub 0 $diasAntes) }}
-{{ $fechaFin := $fechaBase.AddDate 0 0 $diasDespues }}
+    {{/* ==================================================
+       FECHAS DE PASCUA
+       2025 - 2050
+    ================================================== */}}
 
+    {{ $pascuas := dict
+        "2025" "2025-04-20"
+        "2026" "2026-04-05"
+        "2027" "2027-03-28"
+        "2028" "2028-04-16"
+        "2029" "2029-04-01"
+        "2030" "2030-04-21"
+        "2031" "2031-04-13"
+        "2032" "2032-03-28"
+        "2033" "2033-04-17"
+        "2034" "2034-04-09"
+        "2035" "2035-03-25"
+        "2036" "2036-04-13"
+        "2037" "2037-04-05"
+        "2038" "2038-04-25"
+        "2039" "2039-04-10"
+        "2040" "2040-04-01"
+        "2041" "2041-04-21"
+        "2042" "2042-04-06"
+        "2043" "2043-03-29"
+        "2044" "2044-04-17"
+        "2045" "2045-04-09"
+        "2046" "2046-03-25"
+        "2047" "2047-04-14"
+        "2048" "2048-04-05"
+        "2049" "2049-04-18"
+        "2050" "2050-04-10"
+    }}
 
-{{/* --------------------------------------------------------
-   COMPROBAR SI ESTÁ ACTIVA
---------------------------------------------------------- */}}
+    {{ $fechaPascuaTexto := index $pascuas (printf "%d" $anio) }}
 
-{{ $activa := and
-    (ge $hoy $fechaInicio)
-    (le $hoy $fechaFin)
+    {{ if $fechaPascuaTexto }}
+
+        {{ $fechaPascua := time.AsTime $fechaPascuaTexto }}
+
+        {{/* ==================================================
+           CALCULAR LA FECHA SEGÚN EL TIPO
+        ================================================== */}}
+
+        {{ $desplazamiento := 0 }}
+
+        {{ if eq .Params.tipoFecha "ceniza" }}
+            {{ $desplazamiento = -46 }}
+
+        {{ else if eq .Params.tipoFecha "ramos" }}
+            {{ $desplazamiento = -7 }}
+
+        {{ else if eq .Params.tipoFecha "jueves-santo" }}
+            {{ $desplazamiento = -3 }}
+
+        {{ else if eq .Params.tipoFecha "viernes-santo" }}
+            {{ $desplazamiento = -2 }}
+
+        {{ else if eq .Params.tipoFecha "pascua" }}
+            {{ $desplazamiento = 0 }}
+
+        {{ else if eq .Params.tipoFecha "misericordia" }}
+            {{ $desplazamiento = 7 }}
+
+        {{ else if eq .Params.tipoFecha "ascension" }}
+            {{ $desplazamiento = 39 }}
+
+        {{ else if eq .Params.tipoFecha "pentecostes" }}
+            {{ $desplazamiento = 49 }}
+
+        {{ else if eq .Params.tipoFecha "trinidad" }}
+            {{ $desplazamiento = 56 }}
+
+        {{ else if eq .Params.tipoFecha "corpus" }}
+            {{ $desplazamiento = 60 }}
+
+        {{ else if eq .Params.tipoFecha "sagrado-corazon" }}
+            {{ $desplazamiento = 68 }}
+
+        {{ else if eq .Params.tipoFecha "inmaculado-corazon" }}
+            {{ $desplazamiento = 69 }}
+
+        {{ end }}
+
+        {{/* ==================================================
+           FECHA EFECTIVA
+        ================================================== */}}
+
+        {{ $fechaEfectiva := $fechaPascua.AddDate 0 0 $desplazamiento }}
+
+        {{ $fecha = $fechaEfectiva }}
+
+        {{/* ==================================================
+           PERÍODO DE PUBLICACIÓN
+        ================================================== */}}
+
+        {{ $diasAntes := int .Params.diasAntes }}
+        {{ $diasDespues := int .Params.diasDespues }}
+
+        {{ $fechaInicio := $fechaEfectiva.AddDate 0 0 (sub 0 $diasAntes) }}
+        {{ $fechaFin := $fechaEfectiva.AddDate 0 0 $diasDespues }}
+
+        {{ $activa = and
+            (ge $hoy $fechaInicio)
+            (le $hoy $fechaFin)
+        }}
+
+    {{ end }}
+
+{{ end }}
+
+{{/* ========================================================
+   SISTEMA 3 — AÑO LITÚRGICO
+   tipoFecha = "cristo-rey"
+   tipoFecha = "adviento"
+
+   Cristo Rey:
+     Último domingo del año litúrgico.
+     Es el domingo inmediatamente anterior al primer
+     domingo de Adviento.
+
+   Adviento:
+     Primer domingo de Adviento.
+======================================================== */}}
+
+{{ if or
+    (eq .Params.tipoFecha "cristo-rey")
+    (eq .Params.tipoFecha "adviento")
 }}
 
+    {{ $hoy := now }}
+    {{ $anio := $hoy.Year }}
 
-{{/* --------------------------------------------------------
+    {{/* ==================================================
+       TOMAMOS EL 30 DE NOVIEMBRE COMO REFERENCIA
+
+       El primer domingo de Adviento está entre
+       el 27 de noviembre y el 3 de diciembre.
+
+       Cristo Rey es el domingo anterior.
+    ================================================== */}}
+
+    {{ $fechaReferencia := time.AsTime (printf "%d-11-30" $anio) }}
+
+    {{/* 
+       Weekday:
+       Sunday = 0
+       Monday = 1
+       ...
+       Saturday = 6
+    */}}
+
+    {{ $diaSemana := int $fechaReferencia.Weekday }}
+
+    {{/* 
+       Días que hay que retroceder desde el 30 de noviembre
+       para llegar al domingo inmediatamente anterior.
+    */}}
+
+    {{/* ==================================================
+   CALCULAR EL PRIMER DOMINGO DE ADVIENTO
+
+   Desde el 30 de noviembre retrocedemos hasta
+   encontrar el domingo correspondiente.
+================================================== */}}
+
+{{ $diasRetroceso := $diaSemana }}
+
+{{ $primerDomingoAdviento := $fechaReferencia.AddDate 0 0 (sub 0 $diasRetroceso) }}
+
+{{/* 
+   Si el 30 de noviembre es domingo, ese mismo día
+   es el primer domingo de Adviento.
+*/}}
+
+{{/* ==================================================
+   CRISTO REY
+
+   Es el domingo inmediatamente anterior al
+   primer domingo de Adviento.
+================================================== */}}
+
+{{ $cristoRey := $primerDomingoAdviento.AddDate 0 0 -7 }}
+
+    {{/* ==================================================
+       ELEGIR FECHA EFECTIVA
+    ================================================== */}}
+
+    {{ if eq .Params.tipoFecha "cristo-rey" }}
+        {{ $fecha = $cristoRey }}
+    {{ else if eq .Params.tipoFecha "adviento" }}
+        {{ $fecha = $primerDomingoAdviento }}
+    {{ end }}
+
+    {{/* ==================================================
+       PERÍODO DE PUBLICACIÓN
+    ================================================== */}}
+
+    {{ $diasAntes := int .Params.diasAntes }}
+    {{ $diasDespues := int .Params.diasDespues }}
+
+    {{ $fechaInicio := $fecha.AddDate 0 0 (sub 0 $diasAntes) }}
+    {{ $fechaFin := $fecha.AddDate 0 0 $diasDespues }}
+
+    {{ $activa = and
+        (ge $hoy $fechaInicio)
+        (le $hoy $fechaFin)
+    }}
+
+{{ end }}
+
+{{/* ========================================================
+   SISTEMA 4 — BAUTISMO DEL SEÑOR
+   tipoFecha = "bautismo-senor"
+
+   Se celebra el domingo siguiente a la Epifanía,
+   salvo cuando la Epifanía cae en domingo, en cuyo
+   caso se celebra el domingo siguiente.
+
+   El cálculo se realiza a partir del 6 de enero.
+======================================================== */}}
+
+{{ if eq .Params.tipoFecha "bautismo-senor" }}
+
+    {{ $hoy := now }}
+    {{ $anio := $hoy.Year }}
+
+    {{/* 6 de enero — Epifanía */}}
+
+    {{ $epifania := time.AsTime (printf "%d-01-06" $anio) }}
+
+    {{/* Día de la semana:
+         Domingo = 0
+         Lunes = 1
+         ...
+         Sábado = 6
+    */}}
+
+    {{ $diaSemana := int $epifania.Weekday }}
+
+    {{/* 
+       Días hasta el domingo siguiente.
+       Si Epifanía cae en domingo, serán 7 días.
+    */}}
+
+    {{ $diasHastaDomingo := sub 7 $diaSemana }}
+
+    {{ $fechaBautismo := $epifania.AddDate 0 0 $diasHastaDomingo }}
+
+    {{ $fecha = $fechaBautismo }}
+
+    {{/* ==================================================
+       PERÍODO DE PUBLICACIÓN
+    ================================================== */}}
+
+    {{ $diasAntes := int .Params.diasAntes }}
+    {{ $diasDespues := int .Params.diasDespues }}
+
+    {{ $fechaInicio := $fechaBautismo.AddDate 0 0 (sub 0 $diasAntes) }}
+    {{ $fechaFin := $fechaBautismo.AddDate 0 0 $diasDespues }}
+
+    {{ $activa = and
+        (ge $hoy $fechaInicio)
+        (le $hoy $fechaFin)
+    }}
+
+{{ end }}
+
+
+{{/* ========================================================
+   SISTEMA 5 — SAGRADA FAMILIA
+   tipoFecha = "sagrada-familia"
+
+   Normalmente se celebra el domingo siguiente a Navidad
+   dentro de la octava.
+
+   Si el 25 de diciembre cae en domingo, se celebra
+   el 30 de diciembre.
+======================================================== */}}
+
+{{ if eq .Params.tipoFecha "sagrada-familia" }}
+
+    {{ $hoy := now }}
+    {{ $anio := $hoy.Year }}
+
+    {{/* 25 de diciembre — Navidad */}}
+
+    {{ $navidad := time.AsTime (printf "%d-12-25" $anio) }}
+
+    {{/* Día de la semana:
+         Domingo = 0
+         Lunes = 1
+         ...
+         Sábado = 6
+    */}}
+
+    {{ $diaSemana := int $navidad.Weekday }}
+
+    {{ $fechaSagradaFamilia := $navidad }}
+
+    {{ if eq $diaSemana 0 }}
+
+        {{/* Navidad cae en domingo → 30 de diciembre */}}
+
+        {{ $fechaSagradaFamilia = $navidad.AddDate 0 0 5 }}
+
+    {{ else }}
+
+        {{/* 
+           Buscar el domingo siguiente a Navidad.
+
+           Si Navidad es lunes → +6
+           martes → +5
+           miércoles → +4
+           jueves → +3
+           viernes → +2
+           sábado → +1
+        */}}
+
+        {{ $diasHastaDomingo := sub 7 $diaSemana }}
+
+        {{ $fechaSagradaFamilia = $navidad.AddDate 0 0 $diasHastaDomingo }}
+
+    {{ end }}
+
+    {{ $fecha = $fechaSagradaFamilia }}
+
+    {{/* ==================================================
+       PERÍODO DE PUBLICACIÓN
+    ================================================== */}}
+
+    {{ $diasAntes := int .Params.diasAntes }}
+    {{ $diasDespues := int .Params.diasDespues }}
+
+    {{ $fechaInicio := $fechaSagradaFamilia.AddDate 0 0 (sub 0 $diasAntes) }}
+    {{ $fechaFin := $fechaSagradaFamilia.AddDate 0 0 $diasDespues }}
+
+    {{ $activa = and
+        (ge $hoy $fechaInicio)
+        (le $hoy $fechaFin)
+    }}
+
+{{ end }}
+
+
+
+{{/* ========================================================
    DEVOLVER RESULTADO
---------------------------------------------------------- */}}
+======================================================== */}}
 
 {{ return (dict
     "activa" $activa
-    "fecha" $fechaBase
+    "fecha" $fecha
 ) }}

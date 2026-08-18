@@ -1,0 +1,141 @@
+{{/*
+============================================================
+ FECHA RECURRENTE
+
+ Devuelve:
+   activa → true / false
+   fecha  → fecha efectiva
+
+ SISTEMA 1: fecha fija
+   fechaBase = "MM/DD"
+   fechaInicio = días antes
+   fechaFin = días después
+
+ SISTEMA 2: fecha móvil
+   tipoFecha = "pascua"
+   diasAntes = días antes
+   diasDespues = días después
+============================================================
+*/}}
+
+{{ $activa := true }}
+{{ $fecha := .Date }}
+
+{{/* ========================================================
+   SISTEMA 1 — FECHA FIJA
+======================================================== */}}
+
+{{ with .Params.fechaBase }}
+
+    {{ $hoy := now }}
+    {{ $anio := $hoy.Year }}
+
+    {{ $partes := split . "/" }}
+
+    {{ if eq (len $partes) 2 }}
+
+        {{ $mes := index $partes 0 }}
+        {{ $dia := index $partes 1 }}
+
+        {{ $fechaTexto := printf "%d-%s-%s" $anio $mes $dia }}
+        {{ $fechaBase := time.AsTime $fechaTexto }}
+
+        {{ $fecha = $fechaBase }}
+
+        {{ $diasAntes := int $.Params.fechaInicio }}
+        {{ $diasDespues := int $.Params.fechaFin }}
+
+        {{ $fechaInicio := $fechaBase.AddDate 0 0 (sub 0 $diasAntes) }}
+        {{ $fechaFin := $fechaBase.AddDate 0 0 $diasDespues }}
+
+        {{ $activa = and
+            (ge $hoy $fechaInicio)
+            (le $hoy $fechaFin)
+        }}
+
+    {{ end }}
+
+{{ end }}
+
+
+{{/* ========================================================
+   SISTEMA 2 — PASCUA
+
+   Algoritmo de Meeus/Jones/Butcher
+======================================================== */}}
+
+{{ if eq .Params.tipoFecha "pascua" }}
+
+    {{ $hoy := now }}
+    {{ $anio := $hoy.Year }}
+
+    {{/* ==================================================
+       FECHAS DE PASCUA
+       2025 - 2050
+    ================================================== */}}
+
+    {{ $pascuas := dict
+        "2025" "2025-04-20"
+        "2026" "2026-04-05"
+        "2027" "2027-03-28"
+        "2028" "2028-04-16"
+        "2029" "2029-04-01"
+        "2030" "2030-04-21"
+        "2031" "2031-04-13"
+        "2032" "2032-03-28"
+        "2033" "2033-04-17"
+        "2034" "2034-04-09"
+        "2035" "2035-03-25"
+        "2036" "2036-04-13"
+        "2037" "2037-04-05"
+        "2038" "2038-04-25"
+        "2039" "2039-04-10"
+        "2040" "2040-04-01"
+        "2041" "2041-04-21"
+        "2042" "2042-04-06"
+        "2043" "2043-03-29"
+        "2044" "2044-04-17"
+        "2045" "2045-04-09"
+        "2046" "2046-03-25"
+        "2047" "2047-04-14"
+        "2048" "2048-04-05"
+        "2049" "2049-04-18"
+        "2050" "2050-04-10"
+    }}
+
+    {{ $fechaPascuaTexto := index $pascuas (printf "%d" $anio) }}
+
+    {{ if $fechaPascuaTexto }}
+
+        {{ $fechaPascua := time.AsTime $fechaPascuaTexto }}
+
+        {{/* La fecha efectiva es Pascua */}}
+
+        {{ $fecha = $fechaPascua }}
+
+        {{/* Período de publicación */}}
+
+        {{ $diasAntes := int .Params.diasAntes }}
+        {{ $diasDespues := int .Params.diasDespues }}
+
+        {{ $fechaInicio := $fechaPascua.AddDate 0 0 (sub 0 $diasAntes) }}
+        {{ $fechaFin := $fechaPascua.AddDate 0 0 $diasDespues }}
+
+        {{ $activa = and
+            (ge $hoy $fechaInicio)
+            (le $hoy $fechaFin)
+        }}
+
+    {{ end }}
+
+{{ end }}
+
+
+{{/* ========================================================
+   DEVOLVER RESULTADO
+======================================================== */}}
+
+{{ return (dict
+    "activa" $activa
+    "fecha" $fecha
+) }}
