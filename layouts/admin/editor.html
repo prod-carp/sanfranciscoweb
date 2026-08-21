@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,follow">
+
+  <title>
+    Administración | Parroquia San Francisco y Santa Clara de Asís
+  </title>
+
+<link
+  rel="stylesheet"
+  href="/admin/editor/easymde.min.css"
+>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    body {
+
+      margin: 0;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background: #f5f5f5;
+
+      color: #333;
+
+    }
+
+
+    /* ======================================================
+       CABECERA
+       ====================================================== */
+
+    .admin-header {
+
+      background: #333;
+
+      color: white;
+
+      padding: 16px 25px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 20px;
+
+    }
+
+
+    .admin-header h1 {
+
+      margin: 0;
+
+      font-size: 1.15rem;
+
+    }
+
+
+    .header-right {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 15px;
+
+      font-size: 0.9rem;
+
+    }
+
+
+    .logout-button {
+
+      border: 1px solid rgba(255,255,255,0.5);
+
+      background: transparent;
+
+      color: white;
+
+      padding: 8px 14px;
+
+      border-radius: 5px;
+
+      cursor: pointer;
+
+    }
+
+
+    .logout-button:hover {
+
+      background: rgba(255,255,255,0.1);
+
+    }
+
+
+    /* ======================================================
+       CONTENEDOR
+       ====================================================== */
+
+    .admin-container {
+
+      max-width: 900px;
+
+      margin: 35px auto;
+
+      padding: 0 20px;
+
+    }
+
+
+    /* ======================================================
+       TARJETAS
+       ====================================================== */
+
+    .admin-card {
+
+      background: white;
+
+      border-radius: 10px;
+
+      padding: 28px;
+
+      margin-bottom: 25px;
+
+      box-shadow:
+        0 3px 15px rgba(0,0,0,0.07);
+
+    }
+
+
+    .admin-card h2 {
+
+      margin-top: 0;
+
+      margin-bottom: 25px;
+
+      font-size: 1.35rem;
+
+    }
+
+
+    /* ======================================================
+       CAMPOS
+       ====================================================== */
+
+    .form-group {
+
+      margin-bottom: 22px;
+
+    }
+
+
+    .form-group label {
+
+      display: block;
+
+      margin-bottom: 7px;
+
+      font-weight: bold;
+
+    }
+
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+
+      width: 100%;
+
+      padding: 11px 12px;
+
+      border: 1px solid #ccc;
+
+      border-radius: 6px;
+
+      font-size: 1rem;
+
+      font-family: inherit;
+
+    }
+
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+
+      outline: none;
+
+      border-color: #777;
+
+    }
+
+
+    /* ======================================================
+       CONTADORES
+       ====================================================== */
+
+    .character-counter {
+
+      margin-top: 5px;
+
+      text-align: right;
+
+      font-size: 0.82rem;
+
+      color: #777;
+
+    }
+
+
+    /* ======================================================
+       AYUDAS
+       ====================================================== */
+
+    .field-help {
+
+      margin-top: 7px;
+
+      font-size: 0.9rem;
+
+      line-height: 1.45;
+
+      color: #666;
+
+    }
+
+
+    .category-description {
+
+      margin-top: 10px;
+
+      padding: 12px;
+
+      border-left: 3px solid #777;
+
+      background: #f7f7f7;
+
+      font-size: 0.9rem;
+
+      line-height: 1.45;
+
+      color: #555;
+
+    }
+
+
+    /* ======================================================
+       OPCIONES AVANZADAS
+       ====================================================== */
+
+    .advanced-options {
+
+      display: none;
+
+      margin-top: 25px;
+
+      padding-top: 25px;
+
+      border-top: 1px solid #ddd;
+
+    }
+
+
+    .advanced-options.visible {
+
+      display: block;
+
+    }
+
+
+    .advanced-title {
+
+      font-size: 1.05rem;
+
+      font-weight: bold;
+
+      margin-bottom: 18px;
+
+    }
+
+
+    .checkbox-row {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      margin-bottom: 15px;
+
+    }
+
+
+    .checkbox-row input {
+
+      width: auto;
+
+    }
+
+
+    /* ======================================================
+       IMAGEN
+       ====================================================== */
+
+    .image-upload {
+
+      border: 2px dashed #bbb;
+
+      border-radius: 8px;
+
+      padding: 30px 20px;
+
+      text-align: center;
+
+      cursor: pointer;
+
+      transition: background 0.2s;
+
+    }
+
+
+    .image-upload:hover {
+
+      background: #fafafa;
+
+    }
+
+
+    .image-upload input {
+
+      display: none;
+
+    }
+
+
+    .image-upload-icon {
+
+      font-size: 2rem;
+
+      margin-bottom: 8px;
+
+    }
+
+
+    .image-preview {
+
+      display: none;
+
+      margin-top: 15px;
+
+      text-align: center;
+
+    }
+
+
+    .image-preview img {
+
+      max-width: 220px;
+
+      max-height: 220px;
+
+      border-radius: 6px;
+
+    }
+
+
+    /* ======================================================
+       BOTONES
+       ====================================================== */
+
+    .form-actions {
+
+      display: flex;
+
+      justify-content: flex-end;
+
+      gap: 12px;
+
+      flex-wrap: wrap;
+
+      margin-top: 30px;
+
+    }
+
+
+    .button {
+
+      padding: 11px 20px;
+
+      border-radius: 6px;
+
+      border: none;
+
+      cursor: pointer;
+
+      font-size: 1rem;
+
+    }
+
+
+    .button-preview {
+
+      background: #eee;
+
+      color: #333;
+
+    }
+
+
+    .button-submit {
+
+      background: #333;
+
+      color: white;
+
+    }
+
+
+    .button-submit:hover {
+
+      background: #222;
+
+    }
+
+
+    /* ======================================================
+       ESTADO
+       ====================================================== */
+
+    .user-role {
+
+      padding: 5px 9px;
+
+      border-radius: 4px;
+
+      background: rgba(255,255,255,0.12);
+
+    }
+
+
+    /* ======================================================
+       RESPONSIVE
+       ====================================================== */
+
+    @media (max-width: 600px) {
+
+      .admin-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+      }
+
+
+      .header-right {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+      }
+
+
+      .admin-container {
+
+        margin-top: 20px;
+
+        padding: 0 12px;
+
+      }
+
+
+      .admin-card {
+
+        padding: 20px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       CABECERA
+       ===================================================== -->
+
+  <header class="admin-header">
+
+    <h1>
+      Administración parroquial
+    </h1>
+
+
+    <div class="header-right">
+
+      <span
+        id="user-role"
+        class="user-role"
+      >
+        Cargando...
+      </span>
+
+
+      <button
+        id="logout-button"
+        class="logout-button"
+      >
+        Cerrar sesión
+      </button>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       CONTENIDO
+       ===================================================== -->
+
+  <main class="admin-container">
+
+
+    <!-- INFORMACIÓN DEL USUARIO -->
+
+    <section class="admin-card">
+
+      <h2>
+        Nueva noticia
+      </h2>
+
+
+      <p class="field-help">
+        Usuario:
+        <strong id="user-email"></strong>
+      </p>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         DATOS DE LA NOTICIA
+         =================================================== -->
+
+    <section class="admin-card">
+
+
+      <!-- TÍTULO -->
+
+      <div class="form-group">
+
+        <label for="post-title">
+          Título de la noticia
+        </label>
+
+
+        <input
+          type="text"
+          id="post-title"
+          minlength="20"
+          maxlength="60"
+          placeholder="Escribe el título de la noticia"
+          required
+        >
+
+
+        <div
+          id="title-counter"
+          class="character-counter"
+        >
+          0 / 60 · mínimo 20
+        </div>
+
+
+        <div class="field-help">
+
+          El título debe ser claro y describir brevemente
+          el contenido de la noticia.
+
+        </div>
+
+      </div>
+
+
+
+      <!-- SUBTÍTULO -->
+
+      <div class="form-group">
+
+        <label for="post-subtitle">
+          Subtítulo
+        </label>
+
+
+        <input
+          type="text"
+          id="post-subtitle"
+          minlength="30"
+          maxlength="150"
+          placeholder="Resumen breve de la noticia"
+          required
+        >
+
+
+        <div
+          id="subtitle-counter"
+          class="character-counter"
+        >
+          0 / 150 · mínimo 30
+        </div>
+
+      </div>
+
+
+
+      <!-- CATEGORÍA -->
+
+      <div class="form-group">
+
+        <label for="post-category">
+          Categoría
+        </label>
+
+
+        <select id="post-category">
+
+          <option value="">
+            Selecciona una categoría
+          </option>
+
+        </select>
+
+
+        <div
+          id="category-description"
+          class="category-description"
+          style="display:none;"
+        ></div>
+
+      </div>
+
+
+
+      <!-- FECHA -->
+
+      <div class="form-group">
+
+        <label for="post-date">
+          Fecha de publicación
+        </label>
+
+
+        <input
+          type="date"
+          id="post-date"
+          required
+        >
+
+
+        <div class="field-help">
+
+          La fecha indicada será la fecha de la noticia.
+          La publicación efectiva puede demorarse según
+          el tiempo necesario para su revisión y aprobación.
+
+        </div>
+
+      </div>
+
+
+
+      <!-- =================================================
+           OPCIONES AVANZADAS
+           ================================================= -->
+
+      <div
+        id="advanced-options"
+        class="advanced-options"
+      >
+
+        <div class="advanced-title">
+          Opciones avanzadas
+        </div>
+
+
+        <!-- DESTACAR -->
+
+        <div class="checkbox-row">
+
+          <input
+            type="checkbox"
+            id="highlight-post"
+          >
+
+          <label for="highlight-post">
+            Destacar noticia
+          </label>
+
+        </div>
+
+
+<div
+  id="highlight-days-container"
+  class="form-group"
+  style="display:none;"
+>
+
+  <label for="highlight-days">
+    Duración de la destacada
+  </label>
+
+
+  <select id="highlight-days">
+
+    <option value="">
+      Permanente
+    </option>
+
+    <option value="1">
+      1 día
+    </option>
+
+    <option value="2">
+      2 días
+    </option>
+
+    <option value="3">
+      3 días
+    </option>
+
+    <option value="4">
+      4 días
+    </option>
+
+    <option value="5">
+      5 días
+    </option>
+
+    <option value="7">
+      1 semana
+    </option>
+
+    <option value="14">
+      2 semanas
+    </option>
+
+    <option value="30">
+      1 mes
+    </option>
+
+    <option value="60">
+      2 meses
+    </option>
+
+  </select>
+
+
+  <div class="field-help">
+
+    Si seleccionas «Permanente», la noticia permanecerá
+    destacada hasta que sea sustituida por otra más reciente.
+
+  </div>
+
+</div>
+
+
+        <!-- RECURRENTE -->
+
+        <div class="checkbox-row">
+
+          <input
+            type="checkbox"
+            id="recurring-post"
+          >
+
+          <label for="recurring-post">
+            Noticia recurrente anual
+          </label>
+
+        </div>
+
+
+<div
+  id="recurring-type-container"
+  class="form-group"
+  style="display:none;"
+>
+
+  <label for="recurring-type">
+    Tipo de recurrencia
+  </label>
+
+
+  <select id="recurring-type">
+
+    <option value="">
+      Selecciona una opción
+    </option>
+
+    <option value="annual">
+      Anual
+    </option>
+
+    <option value="liturgical">
+      Según tiempo litúrgico
+    </option>
+
+  </select>
+
+</div>
+
+<!-- RECURRENCIA ANUAL -->
+
+<!-- =====================================================
+     RECURRENCIA ANUAL
+     ===================================================== -->
+
+<div
+  id="annual-options"
+  class="advanced-suboptions"
+  style="display:none;"
+>
+
+  <div class="form-group">
+
+    <label>
+      Fecha base
+    </label>
+
+    <div style="
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    ">
+
+      <select
+        id="base-month"
+        style="flex:1; min-width:140px;"
+      >
+
+        <option value="">
+          Mes
+        </option>
+
+        <option value="01">Enero</option>
+        <option value="02">Febrero</option>
+        <option value="03">Marzo</option>
+        <option value="04">Abril</option>
+        <option value="05">Mayo</option>
+        <option value="06">Junio</option>
+        <option value="07">Julio</option>
+        <option value="08">Agosto</option>
+        <option value="09">Septiembre</option>
+        <option value="10">Octubre</option>
+        <option value="11">Noviembre</option>
+        <option value="12">Diciembre</option>
+
+      </select>
+
+
+      <select
+        id="base-day"
+        style="flex:1; min-width:100px;"
+      >
+
+        <option value="">
+          Día
+        </option>
+
+      </select>
+
+    </div>
+
+
+    <div class="field-help">
+
+      Indica únicamente el día y el mes. La noticia se
+      repetirá cada año en esta fecha.
+
+    </div>
+
+  </div>
+
+
+  <div class="form-group">
+
+    <label for="days-before">
+      Días antes de la fecha base
+    </label>
+
+    <input
+      type="number"
+      id="days-before"
+      min="0"
+      max="365"
+      value="0"
+    >
+
+  </div>
+
+
+  <div class="form-group">
+
+    <label for="days-after">
+      Días después de la fecha base
+    </label>
+
+    <input
+      type="number"
+      id="days-after"
+      min="1"
+      max="365"
+      value="1"
+    >
+
+  </div>
+
+
+  <div class="field-help">
+
+    La noticia se publicará todos los años tomando como
+    referencia la fecha base indicada, desde el número
+    de días establecido antes hasta el número de días
+    establecido después.
+
+  </div>
+
+</div>
+
+<!-- RECURRENCIA LITÚRGICA -->
+
+
+<div
+  id="liturgical-recurring-options"
+  class="advanced-suboptions"
+  style="display:none;"
+>
+
+  <div
+    id="liturgical-recurring-selector-container"
+    class="form-group"
+  >
+
+    <label for="liturgical-recurring-type">
+      Tiempo litúrgico
+    </label>
+
+
+    <select id="liturgical-recurring-type">
+
+      <option value="">
+        Selecciona una celebración
+      </option>
+
+      <option value="ceniza">
+        Miércoles de Ceniza
+      </option>
+
+      <option value="ramos">
+        Domingo de Ramos
+      </option>
+
+      <option value="jueves-santo">
+        Jueves Santo
+      </option>
+
+      <option value="viernes-santo">
+        Viernes Santo
+      </option>
+
+      <option value="pascua">
+        Domingo de Pascua
+      </option>
+
+      <option value="misericordia">
+        Día de la Divina Misericordia
+      </option>
+
+      <option value="ascension">
+        Ascensión del Señor
+      </option>
+
+      <option value="pentecostes">
+        Domingo de Pentecostés
+      </option>
+
+      <option value="trinidad">
+        Santísima Trinidad
+      </option>
+
+      <option value="corpus">
+        Corpus Christi
+      </option>
+
+      <option value="sagrado-corazon">
+        Sagrado Corazón de Jesús
+      </option>
+
+      <option value="inmaculado-corazon">
+        Inmaculado Corazón de María
+      </option>
+
+      <option value="cristo-rey">
+        Cristo Rey
+      </option>
+
+      <option value="adviento">
+        Adviento
+      </option>
+
+      <option value="bautismo-senor">
+        Bautismo del Señor
+      </option>
+
+      <option value="sagrada-familia">
+        Sagrada Familia
+      </option>
+
+    </select>
+
+  </div>
+
+
+  <div class="form-group">
+
+    <label for="liturgical-days-before">
+      Días antes
+    </label>
+
+    <input
+      type="number"
+      id="liturgical-days-before"
+      min="0"
+      max="365"
+      value="0"
+    >
+
+  </div>
+
+
+  <div class="form-group">
+
+    <label for="liturgical-days-after">
+      Días después
+    </label>
+
+    <input
+      type="number"
+      id="liturgical-days-after"
+      min="1"
+      max="365"
+      value="1"
+    >
+
+  </div>
+
+
+  <div class="field-help">
+
+    La noticia se activará automáticamente cada año
+    tomando como referencia la celebración litúrgica
+    seleccionada, desde los días anteriores hasta los
+    días posteriores indicados.
+
+  </div>
+
+</div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         IMAGEN
+         =================================================== -->
+
+    <section class="admin-card">
+
+      <h2>
+        Imagen de la noticia
+      </h2>
+
+
+      <div
+        id="image-upload"
+        class="image-upload"
+      >
+
+<div class="form-group">
+
+<div class="image-upload-icon">
+          📷
+        </div>
+
+
+        <div>
+          Pulsa aquí para seleccionar una imagen
+        </div>
+
+
+
+  <input
+    type="file"
+    id="post-image"
+    accept="image/jpeg,image/png,image/webp"
+  >
+
+  <div class="field-help">
+
+    La imagen es obligatoria. Se admiten JPG, PNG y WebP.
+    El lado menor de la imagen debe tener al menos 637 píxeles.
+    La imagen se recortará y optimizará automáticamente
+    antes de enviarla.
+
+  </div>
+
+  <div
+    id="image-validation-message"
+    class="field-help"
+    style="display:none;"
+  ></div>
+
+
+  <!-- RECORTADOR -->
+
+  <div
+    id="image-cropper"
+    style="
+      display:none;
+      margin-top:20px;
+    "
+  >
+
+    <div
+      class="field-help"
+      style="margin-bottom:10px;"
+    >
+
+      <strong>Encuadra la imagen</strong><br>
+
+      Arrastra la imagen para elegir el encuadre.
+      Utiliza la rueda del ratón para ampliar o reducir.
+
+    </div>
+
+
+    <div
+      id="cropper-container"
+      style="
+        position:relative;
+        width:100%;
+        max-width:637px;
+        aspect-ratio:1 / 1;
+        margin:0 auto;
+        overflow:hidden;
+        background:#111;
+        touch-action:none;
+        user-select:none;
+      "
+    >
+
+      <canvas
+        id="cropper-canvas"
+        style="
+          display:block;
+          width:100%;
+          height:100%;
+          cursor:grab;
+        "
+      ></canvas>
+
+
+      <!-- Cuadrícula -->
+
+      <div
+        id="crop-grid"
+        style="
+          pointer-events:none;
+          position:absolute;
+          inset:0;
+          border:2px solid rgba(255,255,255,.8);
+          box-sizing:border-box;
+        "
+      >
+
+        <div
+          style="
+            pointer-events:none;
+            position:absolute;
+            left:33.333%;
+            top:0;
+            bottom:0;
+            border-left:1px solid rgba(255,255,255,.35);
+          "
+        ></div>
+
+        <div
+          style="
+            pointer-events:none;
+            position:absolute;
+            left:66.666%;
+            top:0;
+            bottom:0;
+            border-left:1px solid rgba(255,255,255,.35);
+          "
+        ></div>
+
+        <div
+          style="
+            pointer-events:none;
+            position:absolute;
+            top:33.333%;
+            left:0;
+            right:0;
+            border-top:1px solid rgba(255,255,255,.35);
+          "
+        ></div>
+
+        <div
+          style="
+            pointer-events:none;
+            position:absolute;
+            top:66.666%;
+            left:0;
+            right:0;
+            border-top:1px solid rgba(255,255,255,.35);
+          "
+        ></div>
+
+      </div>
+
+    </div>
+
+
+    <div
+      style="
+        display:flex;
+        justify-content:center;
+        gap:10px;
+        margin-top:15px;
+        flex-wrap:wrap;
+      "
+    >
+
+      <button
+        type="button"
+        id="crop-apply"
+      >
+        ✓ Aplicar recorte
+      </button>
+
+      <button
+        type="button"
+        id="crop-reset"
+      >
+        ↺ Restablecer
+      </button>
+
+    </div>
+
+
+    <div
+      id="crop-result-message"
+      class="field-help"
+      style="
+        display:none;
+        text-align:center;
+        margin-top:10px;
+      "
+    ></div>
+
+  </div>
+
+
+
+<!-- =====FIN RECORTADOR============ -->
+
+
+</div>
+
+      </div>
+
+
+      <div
+        id="image-preview"
+        class="image-preview"
+      >
+
+        <img
+          id="preview-image"
+          alt="Vista previa de la imagen"
+        >
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         CONTENIDO
+         =================================================== -->
+
+    <section class="admin-card">
+
+      <h2>
+        Contenido
+      </h2>
+
+
+      <div class="form-group">
+
+<textarea
+  id="post-content"
+  rows="18"
+  minlength="300"
+  maxlength="10000"
+  placeholder="Escribe aquí el contenido de la noticia..."
+  required
+></textarea>
+
+<div
+  id="content-counter"
+  class="character-counter"
+>
+  0 / 10.000 · mínimo 300
+</div>
+
+
+<div class="field-help">
+
+  Escribe aquí el contenido completo de la noticia.
+  Debe tener al menos 300 caracteres para que pueda
+  considerarse una noticia suficientemente desarrollada.
+
+</div>
+
+      </div>
+
+
+      <!-- BOTONES -->
+
+      <div class="form-actions">
+
+        <button
+          type="button"
+          id="preview-button"
+          class="button button-preview"
+        >
+          👁 Vista previa
+        </button>
+
+
+        <button
+          type="button"
+          id="submit-button"
+          class="button button-submit"
+        >
+          Enviar para revisión
+        </button>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+<script
+  src="/admin/editor/easymde.min.js"
+></script>
+
+<script
+  src="/admin/editor/markdown-editor.js"
+></script>
+
+  <script
+    type="module"
+    src="/admin/js/editor.js"
+  ></script>
+
+
+</body>
+
+</html>

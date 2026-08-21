@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,follow">
+
+  <title>Administración | Parroquia San Francisco y Santa Clara de Asís</title>
+</head>
+
+<body>
+
+  <p>Comprobando acceso...</p>
+
+  <script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+
+    import {
+      getAuth,
+      onAuthStateChanged
+    } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDjdSGRbYmQhAFNEuvl99dIqwd_MiWJ7UU",
+      authDomain: "sanfranciscoyclara-d34c2.firebaseapp.com",
+      projectId: "sanfranciscoyclara-d34c2",
+      storageBucket: "sanfranciscoyclara-d34c2.firebasestorage.app",
+      messagingSenderId: "752378732662",
+      appId: "1:752378732662:web:7399bfb7aab75f6b2e7f57",
+      measurementId: "G-JLZCDHMBVT"
+    };
+
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+
+    onAuthStateChanged(auth, (user) => {
+
+      if (user) {
+        window.location.replace("/admin/editor/");
+      } else {
+        window.location.replace("/admin/login/");
+      }
+
+    });
+
+  </script>
+
+</body>
+
+</html>
