@@ -1,0 +1,154 @@
+/* ==========================================================
+   EDITOR DE TEXTO
+   ========================================================== */
+
+.text-editor {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+
+/* BARRA */
+
+.text-editor-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  background: #f7f7f7;
+}
+
+
+.text-editor-toolbar button {
+  min-width: 36px;
+  height: 34px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 15px;
+  transition:
+    background 0.1s,
+    border-color 0.1s,
+    box-shadow 0.1s;
+}
+
+
+.text-editor-toolbar button:hover {
+  background: #e9e9e9;
+}
+
+
+.text-editor-toolbar button.active {
+  background: #d6d6d6;
+  border-color: #999;
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+
+
+.toolbar-separator {
+  width: 1px;
+  height: 24px;
+  margin: 0 4px;
+  background: #ccc;
+}
+
+
+/* PESTAÑAS */
+
+.text-editor-tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.text-editor-tab {
+  padding: 9px 16px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.text-editor-tab.active {
+  font-weight: 600;
+  border-bottom: 2px solid currentColor;
+}
+
+
+/* ÁREA DE ESCRITURA */
+
+.markdown-editor,
+.markdown-preview {
+  min-height: 350px;
+  padding: 18px;
+  box-sizing: border-box;
+  line-height: 1.65;
+}
+
+
+.markdown-editor {
+  outline: none;
+}
+
+
+.markdown-editor:empty::before {
+  content: attr(data-placeholder);
+  color: #999;
+  pointer-events: none;
+}
+
+
+/* PREVISUALIZACIÓN */
+
+.markdown-preview h2 {
+  margin-top: 1.5em;
+}
+
+
+.markdown-preview h3 {
+  margin-top: 1.3em;
+}
+
+
+.markdown-preview blockquote {
+  margin-left: 0;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+}
+
+
+.markdown-preview a {
+  text-decoration: underline;
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+  .text-editor-toolbar {
+    gap: 2px;
+  }
+
+
+  .text-editor-toolbar button {
+    min-width: 32px;
+    height: 32px;
+  }
+
+
+  .markdown-editor,
+  .markdown-preview {
+    min-height: 300px;
+    padding: 14px;
+  }
+
+}

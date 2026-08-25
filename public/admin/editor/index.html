@@ -11,10 +11,7 @@
     Administración | Parroquia San Francisco y Santa Clara de Asís
   </title>
 
-<link
-  rel="stylesheet"
-  href="/admin/editor/easymde.min.css"
->
+<link rel="stylesheet" href="/admin/editor/editor.css">
 
   <style>
 
@@ -1065,268 +1062,270 @@
 
 
 
+
+
+<section class="admin-card">
+  <h2>Imagen de la noticia</h2>
+
+  
+  <div id="image-upload" class="image-upload">
+    <div class="image-upload-icon">📷</div>
+    <div>Pulsa aquí para seleccionar una imagen</div>
+    
+    <input type="file" id="post-image" accept="image/jpeg,image/png,image/webp">
+    
+    <div class="field-help">
+      La imagen es obligatoria. Se admiten JPG, PNG y WebP.
+      El lado menor de la imagen debe tener al menos 637 píxeles.
+    </div>
+    
+    <div id="image-validation-message" class="field-help" style="display:none;"></div>
+  </div>
+
+  
+  <div id="image-cropper" style="display:none; margin-top:20px;">
+    <div class="field-help" style="margin-bottom:10px;">
+      <strong>Encuadra la imagen</strong><br>
+      Arrastra la imagen para elegir el encuadre.
+      Utiliza la rueda del ratón para ampliar o reducir.
+    </div>
+
+    <div id="cropper-container" style="position:relative; width:100%; max-width:637px; aspect-ratio:1/1; margin:0 auto; overflow:hidden; background:#111; touch-action:none; user-select:none;">
+      <canvas id="cropper-canvas" style="display:block; width:100%; height:100%; cursor:grab;"></canvas>
+
+      
+      <div id="crop-grid" style="pointer-events:none; position:absolute; inset:0; border:2px solid rgba(255,255,255,.8); box-sizing:border-box;">
+        <div style="pointer-events:none; position:absolute; left:33.333%; top:0; bottom:0; border-left:1px solid rgba(255,255,255,.35);"></div>
+        <div style="pointer-events:none; position:absolute; left:66.666%; top:0; bottom:0; border-left:1px solid rgba(255,255,255,.35);"></div>
+        <div style="pointer-events:none; position:absolute; top:33.333%; left:0; right:0; border-top:1px solid rgba(255,255,255,.35);"></div>
+        <div style="pointer-events:none; position:absolute; top:66.666%; left:0; right:0; border-top:1px solid rgba(255,255,255,.35);"></div>
+      </div>
+    </div>
+
+    <div style="display:flex; justify-content:center; gap:10px; margin-top:15px; flex-wrap:wrap;">
+      <button type="button" id="crop-apply">✓ Aplicar recorte</button>
+      <button type="button" id="crop-reset">↺ Restablecer</button>
+    </div>
+
+    <div id="crop-result-message" class="field-help" style="display:none; text-align:center; margin-top:10px;"></div>
+  </div>
+
+  
+  <div id="image-preview" class="image-preview" style="display:none;">
+    <img id="preview-image" alt="Vista previa de la imagen">
+  </div> 
+
+</section>  
+
+
+
+
+
     
 
     <section class="admin-card">
 
-      <h2>
-        Imagen de la noticia
-      </h2>
-
-
-      <div
-        id="image-upload"
-        class="image-upload"
-      >
+      <h2>Contenido</h2>
 
 <div class="form-group">
 
-<div class="image-upload-icon">
-          📷
-        </div>
-
-
-        <div>
-          Pulsa aquí para seleccionar una imagen
-        </div>
-
-
-
-  <input
-    type="file"
-    id="post-image"
-    accept="image/jpeg,image/png,image/webp"
-  >
-
-  <div class="field-help">
-
-    La imagen es obligatoria. Se admiten JPG, PNG y WebP.
-    El lado menor de la imagen debe tener al menos 637 píxeles.
-    La imagen se recortará y optimizará automáticamente
-    antes de enviarla.
-
-  </div>
 
   <div
-    id="image-validation-message"
-    class="field-help"
-    style="display:none;"
-  ></div>
-
-
-  
-
-  <div
-    id="image-cropper"
-    style="
-      display:none;
-      margin-top:20px;
-    "
+    id="text-editor"
+    class="text-editor"
   >
 
-    <div
-      class="field-help"
-      style="margin-bottom:10px;"
-    >
-
-      <strong>Encuadra la imagen</strong><br>
-
-      Arrastra la imagen para elegir el encuadre.
-      Utiliza la rueda del ratón para ampliar o reducir.
-
-    </div>
-
+    
 
     <div
-      id="cropper-container"
-      style="
-        position:relative;
-        width:100%;
-        max-width:637px;
-        aspect-ratio:1 / 1;
-        margin:0 auto;
-        overflow:hidden;
-        background:#111;
-        touch-action:none;
-        user-select:none;
-      "
-    >
-
-      <canvas
-        id="cropper-canvas"
-        style="
-          display:block;
-          width:100%;
-          height:100%;
-          cursor:grab;
-        "
-      ></canvas>
-
-
-      
-
-      <div
-        id="crop-grid"
-        style="
-          pointer-events:none;
-          position:absolute;
-          inset:0;
-          border:2px solid rgba(255,255,255,.8);
-          box-sizing:border-box;
-        "
-      >
-
-        <div
-          style="
-            pointer-events:none;
-            position:absolute;
-            left:33.333%;
-            top:0;
-            bottom:0;
-            border-left:1px solid rgba(255,255,255,.35);
-          "
-        ></div>
-
-        <div
-          style="
-            pointer-events:none;
-            position:absolute;
-            left:66.666%;
-            top:0;
-            bottom:0;
-            border-left:1px solid rgba(255,255,255,.35);
-          "
-        ></div>
-
-        <div
-          style="
-            pointer-events:none;
-            position:absolute;
-            top:33.333%;
-            left:0;
-            right:0;
-            border-top:1px solid rgba(255,255,255,.35);
-          "
-        ></div>
-
-        <div
-          style="
-            pointer-events:none;
-            position:absolute;
-            top:66.666%;
-            left:0;
-            right:0;
-            border-top:1px solid rgba(255,255,255,.35);
-          "
-        ></div>
-
-      </div>
-
-    </div>
-
-
-    <div
-      style="
-        display:flex;
-        justify-content:center;
-        gap:10px;
-        margin-top:15px;
-        flex-wrap:wrap;
-      "
+      class="text-editor-toolbar"
+      role="toolbar"
+      aria-label="Herramientas de formato"
     >
 
       <button
         type="button"
-        id="crop-apply"
+        data-command="bold"
+        title="Negrita"
       >
-        ✓ Aplicar recorte
+        <strong>B</strong>
       </button>
 
       <button
         type="button"
-        id="crop-reset"
+        data-command="italic"
+        title="Cursiva"
       >
-        ↺ Restablecer
+        <em>C</em>
+      </button>
+
+
+
+      <span class="toolbar-separator"></span>
+
+
+      <button
+        type="button"
+        data-command="h2"
+        title="Título H2"
+      >
+        H2
+      </button>
+
+      <button
+        type="button"
+        data-command="h3"
+        title="Título H3"
+      >
+        H3
+      </button>
+
+
+      <span class="toolbar-separator"></span>
+
+
+      <button
+        type="button"
+        data-command="unordered-list"
+        title="Lista"
+      >
+        •
+      </button>
+
+      <button
+        type="button"
+        data-command="ordered-list"
+        title="Lista numerada"
+      >
+        1.
+      </button>
+
+
+      <span class="toolbar-separator"></span>
+
+
+      <button
+        type="button"
+        data-command="link"
+        title="Insertar enlace"
+      >
+        🔗
+      </button>
+
+      <button
+        type="button"
+        data-command="quote"
+        title="Cita"
+      >
+        "
+      </button>
+
+<button
+  type="button"
+  data-command="horizontal-rule"
+  title="Insertar separador"
+>
+  ―
+</button>
+
+      <span class="toolbar-separator"></span>
+
+
+      <button
+        type="button"
+        data-command="undo"
+        title="Deshacer"
+      >
+        ↶
+      </button>
+
+      <button
+        type="button"
+        data-command="redo"
+        title="Rehacer"
+      >
+        ↷
+      </button>
+
+
+      <button
+        type="button"
+        data-command="clear"
+        title="Limpiar formato"
+      >
+        🧹
       </button>
 
     </div>
-
-
-    <div
-      id="crop-result-message"
-      class="field-help"
-      style="
-        display:none;
-        text-align:center;
-        margin-top:10px;
-      "
-    ></div>
-
-  </div>
-
-
-
-
-
-
-</div>
-
-      </div>
-
-
-      <div
-        id="image-preview"
-        class="image-preview"
-      >
-
-        <img
-          id="preview-image"
-          alt="Vista previa de la imagen"
-        >
-
-      </div>
-
-    </section>
-
 
 
     
 
-    <section class="admin-card">
+<div class="text-editor-tabs">
 
-      <h2>
-        Contenido
-      </h2>
+  <button
+    type="button"
+    class="text-editor-tab active"
+    data-tab="visual"
+  >
+    👁 Vista previa
+  </button>
+
+  <button
+    type="button"
+    class="text-editor-tab"
+    data-tab="markdown"
+  >
+    &lt;/&gt; Markdown
+  </button>
+
+</div>
 
 
-      <div class="form-group">
 
-<textarea
-  id="post-content"
-  rows="18"
-  minlength="300"
-  maxlength="10000"
-  placeholder="Escribe aquí el contenido de la noticia..."
-  required
-></textarea>
 
 <div
-  id="content-counter"
-  class="character-counter"
->
-  0 / 10.000 · mínimo 300
+  id="visual-editor"
+  class="visual-editor"
+  contenteditable="true"
+  role="textbox"
+  aria-multiline="true"
+  data-placeholder="Escribe aquí el contenido de la noticia..."
+></div>
+
+
+
+
+<textarea
+  id="markdown-editor"
+  class="markdown-editor"
+  spellcheck="false"
+  placeholder="Escribe o pega aquí Markdown..."
+  style="display:none;"
+></textarea>
+
+
+  </div>
+
+
+  <div
+    id="content-counter"
+    class="character-counter"
+  >
+    0 / 10.000 · mínimo 300
+  </div>
+
+
+  <div class="field-help">
+
+    Puedes utilizar las herramientas de formato para
+    dar estructura a la noticia. El contenido se
+    convertirá automáticamente a Markdown compatible
+    con Hugo.
+
+  </div>
+
 </div>
-
-
-<div class="field-help">
-
-  Escribe aquí el contenido completo de la noticia.
-  Debe tener al menos 300 caracteres para que pueda
-  considerarse una noticia suficientemente desarrollada.
-
-</div>
-
-      </div>
 
 
       
@@ -1338,7 +1337,7 @@
           id="preview-button"
           class="button button-preview"
         >
-          👁 Vista previa
+          Guardar Borrador
         </button>
 
 
@@ -1347,7 +1346,7 @@
           id="submit-button"
           class="button button-submit"
         >
-          Enviar para revisión
+          👁 Revisar para enviar
         </button>
 
       </div>
@@ -1357,19 +1356,14 @@
 
   </main>
 
-<script
-  src="/admin/editor/easymde.min.js"
-></script>
+<script type="module" src="/admin/js/editor.js"></script>
+<script type="module">
+  
+  import { markdownToHtml } from "/admin/editor/text-editor.js";
+  window.markdownToHtml = markdownToHtml;
+</script>
 
-<script
-  src="/admin/editor/markdown-editor.js"
-></script>
-
-  <script
-    type="module"
-    src="/admin/js/editor.js"
-  ></script>
-
+<script type="module" src="/admin/js/editor.js"></script>
 
 </body>
 

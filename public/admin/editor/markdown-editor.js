@@ -67,12 +67,6 @@ function initMarkdownEditor() {
         "Escribe aquí el contenido de la noticia...",
 
 
-      /*
-       * No utilizamos autosave porque el contenido
-       * debe desaparecer al cerrar/enviar el formulario.
-       */
-
-      autosave: false,
 
 
       /*

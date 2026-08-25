@@ -17,7 +17,7 @@
 const ADMIN_PREFIXES = [
   "admin@",
   "admin-",
-  "blog@"
+  "aika"
 ];
 
 const PREFERRED_PREFIXES = [
@@ -26,7 +26,8 @@ const PREFERRED_PREFIXES = [
 ];
 
 const GROUP_PREFIXES = [
-  "grupo-"
+  "grupo-",
+  "blog"
 ];
 
 

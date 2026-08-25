@@ -13,6 +13,13 @@ import {
   CATEGORY_DESCRIPTIONS
 } from "./permissions.js";
 
+import {
+  getMarkdown,
+  getPlainText,
+  onContentChange
+} from "../editor/text-editor.js";
+
+
 
 // ==========================================================
 // FIREBASE
@@ -68,10 +75,7 @@ const baseDay =
     "base-day"
   );
 
-const contentInput =
-  document.getElementById(
-    "post-content"
-  );
+// const contentInput = document.getElementById("post-content");
 
 const contentCounter =
   document.getElementById(
@@ -131,20 +135,130 @@ const imageUpload =
 const imageInput =
   document.getElementById("post-image");
 
-const imagePreview =
-  document.getElementById("image-preview");
-
-const previewImage =
-  document.getElementById("preview-image");
-
 const imageValidationMessage = 
   document.getElementById("image-validation-message");
 
-const imagePreviewContainer =
-  document.getElementById("image-preview-container");
-
 const postDate =
   document.getElementById("post-date");
+
+// ==========================================================
+// CONTADOR DE CONTENIDO
+// ==========================================================
+
+const CONTENT_MIN =
+  300;
+
+const CONTENT_MAX =
+  10000;
+
+
+function updateContentCounter(
+  text
+) {
+
+  const length =
+    text.length;
+
+
+  contentCounter.textContent =
+    `${length.toLocaleString("es-ES")} / 10.000 · mínimo 300`;
+
+
+  // --------------------------------------------------------
+  // Color del contador
+  // --------------------------------------------------------
+
+  contentCounter.style.color =
+    length > 0 && length < CONTENT_MIN
+      ? "#a33"
+      : "";
+
+
+  // --------------------------------------------------------
+  // Si supera el máximo
+  // --------------------------------------------------------
+
+  if (
+    length > CONTENT_MAX
+  ) {
+
+    contentCounter.style.color =
+      "#a33";
+
+  }
+
+}
+
+
+// ==========================================================
+// ESCUCHAR CAMBIOS DEL EDITOR
+// ==========================================================
+
+onContentChange(
+  updateContentCounter
+);
+
+
+// ==========================================================
+// RECORTADOR DE IMAGEN - ELEMENTOS
+// ==========================================================
+
+const cropper =
+  document.getElementById(
+    "image-cropper"
+  );
+
+const cropperContainer =
+  document.getElementById(
+    "cropper-container"
+  );
+
+const cropperCanvas =
+  document.getElementById(
+    "cropper-canvas"
+  );
+
+const cropApply =
+  document.getElementById(
+    "crop-apply"
+  );
+
+const cropReset =
+  document.getElementById(
+    "crop-reset"
+  );
+
+const cropResultMessage =
+  document.getElementById(
+    "crop-result-message"
+  );
+
+// ==========================================================
+// RECORTADOR DE IMAGEN - VARIABLES DE ESTADO
+// ==========================================================
+
+const cropContext =
+  cropperCanvas?.getContext(
+    "2d"
+  );
+
+let cropImage = null;
+
+let cropScale = 1;
+
+let cropX = 0;
+
+let cropY = 0;
+
+let cropStartX = 0;
+
+let cropStartY = 0;
+
+let cropDragging = false;
+
+let cropInitialScale = 1;
+
+let croppedImageBlob = null;
 
 
 // ==========================================================
@@ -246,6 +360,7 @@ onAuthStateChanged(auth, (user) => {
 
 });
 
+
 // ==========================================================
 // DÍAS DE LA FECHA BASE
 // ==========================================================
@@ -309,46 +424,11 @@ baseMonth.addEventListener(
 );
 
 
-// ==========================================================
-// CONTADOR DEL CONTENIDO
-// ==========================================================
-
-contentInput.addEventListener(
-  "input",
-  () => {
-
-    const length =
-      contentInput.value.length;
-
-
-    contentCounter.textContent =
-      `${length.toLocaleString("es-ES")} / 10.000 · mínimo 300`;
-
-
-    if (
-      length > 0 &&
-      length < 300
-    ) {
-
-      contentCounter.style.color =
-        "#a33";
-
-    } else {
-
-      contentCounter.style.color =
-        "";
-
-    }
-
-  }
-);
-
 
 // ==========================================================
 // CATEGORÍA
 // ==========================================================
 
-// 1. Definir la función fuera del event listener
 function updateCategoryDescription(category) {
   if (!category) {
     categoryDescription.style.display = "none";
@@ -367,13 +447,10 @@ function updateCategoryDescription(category) {
   }
 }
 
-// 2. Event listener correcto
 categorySelect.addEventListener("change", () => {
   const category = categorySelect.value;
   updateCategoryDescription(category);
 });
-
-
 
 
 // ==========================================================
@@ -510,8 +587,17 @@ recurringType.addEventListener(
         liturgicalRecurringSelectorContainer.style.display =
           "none";
 
-        liturgicalRecurringType.value =
-          liturgicalCategory.value;
+        // CORREGIDO: Usar categorySelect.value directamente
+        // o un selector litúrgico si existe
+        const liturgicalSelect =
+          document.getElementById(
+            "liturgical-category"
+          );
+
+        if (liturgicalSelect) {
+          liturgicalRecurringType.value =
+            liturgicalSelect.value;
+        }
 
       } else {
 
@@ -532,52 +618,61 @@ recurringType.addEventListener(
 
 imageUpload.addEventListener(
   "click",
-  () => {
-
+  (event) => {
+    // Prevenir que otros elementos padre reciban el click
+    event.stopPropagation();
     imageInput.click();
-
   }
 );
 
-
-imageInput.addEventListener(
-  "change",
-  () => {
-
-    const file =
-      imageInput.files[0];
-
-
-    if (!file) {
-
-      return;
-
-    }
-
-
-    const reader =
-      new FileReader();
-
-
-    reader.onload = (event) => {
-
-      previewImage.src =
-        event.target.result;
-
-      imagePreview.style.display =
-        "block";
-
-    };
-
-
-    reader.readAsDataURL(file);
-
-  }
-);
 
 // ==========================================================
 // VALIDACIÓN DE IMAGEN
 // ==========================================================
+
+function loadImage(file) {
+
+  return new Promise(
+    (resolve, reject) => {
+
+      const image =
+        new Image();
+
+
+      image.onload = () => {
+
+        URL.revokeObjectURL(
+          image.src
+        );
+
+        resolve(image);
+
+      };
+
+
+      image.onerror = () => {
+
+        URL.revokeObjectURL(
+          image.src
+        );
+
+        reject(
+          new Error(
+            "No se ha podido leer la imagen."
+          )
+        );
+
+      };
+
+
+      image.src =
+        URL.createObjectURL(file);
+
+    }
+  );
+
+}
+
 
 async function validateImage(file) {
 
@@ -664,53 +759,185 @@ async function validateImage(file) {
 
 }
 
-// FUNCION PARA LEER LA IMAGEN
 
-function loadImage(file) {
+// ==========================================================
+// RECORTADOR DE IMAGEN - FUNCIONES
+// ==========================================================
 
-  return new Promise(
-    (resolve, reject) => {
+function resizeCropCanvas() {
 
-      const image =
-        new Image();
+  if (!cropperContainer) return;
 
-
-      image.onload = () => {
-
-        URL.revokeObjectURL(
-          image.src
-        );
-
-        resolve(image);
-
-      };
+  const size =
+    cropperContainer.clientWidth;
 
 
-      image.onerror = () => {
-
-        URL.revokeObjectURL(
-          image.src
-        );
-
-        reject(
-          new Error(
-            "No se ha podido leer la imagen."
-          )
-        );
-
-      };
+  if (cropperCanvas) {
+    cropperCanvas.width = size;
+    cropperCanvas.height = size;
+  }
 
 
-      image.src =
-        URL.createObjectURL(file);
+  drawCropper();
 
-    }
+}
+
+
+function drawCropper() {
+
+  if (!cropImage || !cropContext || !cropperCanvas) {
+    return;
+  }
+
+
+  const size =
+    cropperCanvas.width;
+
+
+  // Limpiar correctamente el canvas
+  cropContext.clearRect(
+    0,
+    0,
+    size,
+    size
+  );
+
+
+  // Fondo negro para que se vea mejor el contraste
+  cropContext.fillStyle = "#000";
+  cropContext.fillRect(0, 0, size, size);
+
+
+  const width =
+    cropImage.naturalWidth *
+    cropScale;
+
+  const height =
+    cropImage.naturalHeight *
+    cropScale;
+
+
+  cropContext.drawImage(
+    cropImage,
+    cropX,
+    cropY,
+    width,
+    height
   );
 
 }
 
-// COMPROBAR LA IMAGEN SELECCIONADA
 
+function initializeCropper(image) {
+
+  cropImage = image;
+
+  cropper.style.display =
+    "block";
+
+  /*
+   * Esperamos a que el navegador haya aplicado
+   * display:block antes de calcular el tamaño.
+   */
+
+  requestAnimationFrame(() => {
+
+    resizeCropCanvas();
+
+    const size =
+      cropperContainer.clientWidth;
+
+    cropInitialScale =
+      Math.max(
+        size / image.naturalWidth,
+        size / image.naturalHeight
+      );
+
+    cropScale =
+      cropInitialScale;
+
+    cropX =
+      (
+        size -
+        image.naturalWidth *
+        cropScale
+      ) / 2;
+
+    cropY =
+      (
+        size -
+        image.naturalHeight *
+        cropScale
+      ) / 2;
+
+    drawCropper();
+
+  });
+}
+
+
+function constrainCrop() {
+
+  if (!cropperCanvas || !cropImage) return;
+
+  const size =
+    cropperCanvas.width;
+
+
+  const width =
+    cropImage.naturalWidth *
+    cropScale;
+
+  const height =
+    cropImage.naturalHeight *
+    cropScale;
+
+
+  if (width <= size) {
+
+    cropX =
+      (size - width) / 2;
+
+  } else {
+
+    cropX =
+      Math.min(
+        0,
+        Math.max(
+          size - width,
+          cropX
+        )
+      );
+
+  }
+
+
+  if (height <= size) {
+
+    cropY =
+      (size - height) / 2;
+
+  } else {
+
+    cropY =
+      Math.min(
+        0,
+        Math.max(
+          size - height,
+          cropY
+        )
+      );
+
+  }
+
+}
+
+
+// ==========================================================
+// RECORTADOR DE IMAGEN - EVENTOS
+// ==========================================================
+
+// Evento change del input de imagen
 imageInput.addEventListener(
   "change",
   async () => {
@@ -719,12 +946,47 @@ imageInput.addEventListener(
       imageInput.files[0];
 
 
-    imageValidationMessage.style.display =
-      "block";
+    // Resetear estado del recortador
+    croppedImageBlob = null;
+
+    if (cropResultMessage) {
+      cropResultMessage.style.display =
+        "none";
+    }
+
+    if (cropApply) {
+      cropApply.textContent =
+        "✓ Aplicar recorte";
+    }
 
 
-    imageValidationMessage.textContent =
-      "Comprobando imagen...";
+    if (!file) {
+
+      if (imageValidationMessage) {
+        imageValidationMessage.style.display =
+          "none";
+      }
+
+      if (cropper) {
+        cropper.style.display =
+          "none";
+      }
+
+      return;
+
+    }
+
+
+    if (imageValidationMessage) {
+      imageValidationMessage.style.display =
+        "block";
+
+      imageValidationMessage.textContent =
+        "Comprobando imagen...";
+
+      imageValidationMessage.style.color =
+        "#333";
+    }
 
 
     try {
@@ -735,19 +997,23 @@ imageInput.addEventListener(
 
       if (!result.valid) {
 
-        imageValidationMessage.textContent =
-          result.message;
+        if (imageValidationMessage) {
+          imageValidationMessage.textContent =
+            result.message;
 
-        imageValidationMessage.style.color =
-          "#a33";
+          imageValidationMessage.style.color =
+            "#a33";
+        }
 
 
         imageInput.value =
           "";
 
 
-        imagePreviewContainer.style.display =
-          "none";
+        if (cropper) {
+          cropper.style.display =
+            "none";
+        }
 
 
         return;
@@ -759,45 +1025,503 @@ imageInput.addEventListener(
         result.image;
 
 
-      imageValidationMessage.textContent =
-        `Imagen válida: ${
-          image.naturalWidth
-        } × ${
-          image.naturalHeight
-        } píxeles.`;
+      if (imageValidationMessage) {
+        imageValidationMessage.textContent =
+          `Imagen válida: ${
+            image.naturalWidth
+          } × ${
+            image.naturalHeight
+          } píxeles.`;
+
+        imageValidationMessage.style.color =
+          "#2a5";
+      }
 
 
-      imageValidationMessage.style.color =
-        "";
+      // Inicializar recortador
+      initializeCropper(
+        image
+      );
 
 
-      imagePreview.src =
-        image.src;
+      if (cropper) {
+        cropper.style.display =
+          "block";
+      }
 
 
-      imagePreviewContainer.style.display =
-        "block";
+      // Resetear estado de recorte
+      croppedImageBlob = null;
+
+      if (cropApply) {
+        cropApply.textContent =
+          "✓ Aplicar recorte";
+      }
+
+      if (cropResultMessage) {
+        cropResultMessage.style.display =
+          "none";
+      }
 
     } catch (error) {
 
       console.error(error);
 
 
-      imageValidationMessage.textContent =
-        "No se ha podido leer la imagen.";
+      if (imageValidationMessage) {
+        imageValidationMessage.textContent =
+          "No se ha podido leer la imagen.";
 
-
-      imageValidationMessage.style.color =
-        "#a33";
+        imageValidationMessage.style.color =
+          "#a33";
+      }
 
 
       imageInput.value =
         "";
 
+    }
 
-      imagePreviewContainer.style.display =
+  }
+);
+
+
+// Event listener para el botón de aplicar recorte
+if (cropApply) {
+  cropApply.addEventListener(
+    "click",
+    (event) => {
+      // Prevenir propagación
+      event.stopPropagation();
+      
+      if (!cropImage) {
+
+        alert(
+          "Primero debes seleccionar una imagen."
+        );
+
+        return;
+
+      }
+
+
+      if (!cropperCanvas) {
+
+        alert(
+          "No se ha podido cargar el recortador."
+        );
+
+        return;
+
+      }
+
+
+      /*
+       * El resultado final siempre será exactamente
+       * 637 × 637 píxeles.
+       */
+
+      const outputCanvas =
+        document.createElement(
+          "canvas"
+        );
+
+
+      outputCanvas.width =
+        637;
+
+      outputCanvas.height =
+        637;
+
+
+      const outputContext =
+        outputCanvas.getContext(
+          "2d"
+        );
+
+
+      const canvasSize =
+        cropperCanvas.width;
+
+      const ratio =
+        637 / canvasSize;
+
+
+      // Dibujar la imagen recortada
+      outputContext.drawImage(
+        cropImage,
+
+        -cropX * ratio,
+        -cropY * ratio,
+
+        cropImage.naturalWidth *
+          cropScale *
+          ratio,
+
+        cropImage.naturalHeight *
+          cropScale *
+          ratio
+      );
+
+
+      outputCanvas.toBlob(
+        blob => {
+
+          if (!blob) {
+
+            if (cropResultMessage) {
+              cropResultMessage.textContent =
+                "No se ha podido preparar la imagen.";
+
+              cropResultMessage.style.display =
+                "block";
+
+              cropResultMessage.style.color =
+                "#a33";
+            }
+
+            return;
+
+          }
+
+
+          /*
+           * Guardamos el resultado para utilizarlo
+           * posteriormente al enviar el post.
+           */
+
+          croppedImageBlob =
+            blob;
+
+
+          if (cropResultMessage) {
+            cropResultMessage.textContent =
+              "✓ Recorte aplicado. La imagen está preparada en formato WebP 637 × 637 px.";
+
+            cropResultMessage.style.display =
+              "block";
+
+            cropResultMessage.style.color =
+              "#2a5";
+          }
+
+
+          if (cropApply) {
+            cropApply.textContent =
+              "✓ Recorte aplicado";
+          }
+
+        },
+        "image/webp",
+        0.80
+      );
+
+    }
+  );
+}
+
+
+// Todos los eventos del canvas previenen propagación
+if (cropperCanvas) {
+
+  // Prevenir que el click del canvas abra el selector de archivos
+  cropperCanvas.addEventListener(
+    "click",
+    (event) => {
+      event.stopPropagation();
+    }
+  );
+
+  cropperCanvas.addEventListener(
+    "pointerdown",
+    (event) => {
+      // Prevenir propagación
+      event.stopPropagation();
+      
+      cropDragging =
+        true;
+
+
+      if (event.pointerId !== undefined) {
+        cropperCanvas.setPointerCapture(
+          event.pointerId
+        );
+      }
+
+
+      cropStartX =
+        event.clientX -
+        cropX;
+
+      cropStartY =
+        event.clientY -
+        cropY;
+
+
+      cropperCanvas.style.cursor =
+        "grabbing";
+
+    }
+  );
+
+
+  cropperCanvas.addEventListener(
+    "pointermove",
+    (event) => {
+      // Prevenir propagación
+      event.stopPropagation();
+
+      if (!cropDragging) {
+        return;
+      }
+
+
+      cropX =
+        event.clientX -
+        cropStartX;
+
+      cropY =
+        event.clientY -
+        cropStartY;
+
+
+      constrainCrop();
+
+
+      drawCropper();
+
+
+      // Resetear estado de recorte al mover
+      croppedImageBlob =
+        null;
+
+      if (cropApply) {
+        cropApply.textContent =
+          "✓ Aplicar recorte";
+      }
+
+      if (cropResultMessage) {
+        cropResultMessage.style.display =
+          "none";
+      }
+
+    }
+  );
+
+
+  cropperCanvas.addEventListener(
+    "pointerup",
+    (event) => {
+      // Prevenir propagación
+      event.stopPropagation();
+
+      cropDragging =
+        false;
+
+
+      if (event.pointerId !== undefined) {
+        cropperCanvas.releasePointerCapture(
+          event.pointerId
+        );
+      }
+
+
+      cropperCanvas.style.cursor =
+        "grab";
+
+
+      // Resetear estado de recorte al soltar
+      croppedImageBlob =
+        null;
+
+      if (cropApply) {
+        cropApply.textContent =
+          "✓ Aplicar recorte";
+      }
+
+      if (cropResultMessage) {
+        cropResultMessage.style.display =
+          "none";
+      }
+
+    }
+  );
+
+
+  cropperCanvas.addEventListener(
+    "pointercancel",
+    (event) => {
+      // Prevenir propagación
+      event.stopPropagation();
+      cropDragging =
+        false;
+
+    }
+  );
+
+
+  // Zoom con la rueda del ratón
+// ==========================================================
+// ZOOM CON LA RUEDA DEL RATÓN
+// ==========================================================
+
+// Zoom con la rueda del ratón
+cropperCanvas.addEventListener(
+  "wheel",
+  (event) => {
+    // Prevenir propagación
+    event.preventDefault();
+    event.stopPropagation();
+
+    const zoom =
+      event.deltaY < 0
+        ? 1.05
+        : 0.95;
+
+    const oldScale =
+      cropScale;
+
+    cropScale *=
+      zoom;
+
+    /*
+     * No permitimos reducir la imagen por debajo
+     * del tamaño necesario para cubrir el cuadrado.
+     */
+    cropScale =
+      Math.max(
+        cropInitialScale,
+        cropScale
+      );
+
+    /*
+     * Limitar el zoom máximo para evitar pixelación
+     * El zoom máximo será cuando el lado más pequeño de la imagen
+     * alcance 637 píxeles en el canvas (tamaño de salida)
+     */
+    const canvasSize = cropperCanvas.width;
+    const imageSmallestSide = Math.min(
+      cropImage.naturalWidth,
+      cropImage.naturalHeight
+    );
+    
+    // La escala máxima es cuando el lado menor de la imagen = 637px
+    const maxScale = (canvasSize / imageSmallestSide) * (637 / canvasSize);
+    
+    // Asegurarnos de que maxScale sea al menos cropInitialScale
+    const effectiveMaxScale = Math.max(maxScale, cropInitialScale * 1.5);
+    
+    cropScale = Math.min(
+      effectiveMaxScale,
+      cropScale
+    );
+
+    const rect =
+      cropperCanvas.getBoundingClientRect();
+
+    const mouseX =
+      event.clientX -
+      rect.left;
+
+    const mouseY =
+      event.clientY -
+      rect.top;
+
+    /*
+     * Mantiene como punto de referencia
+     * la posición del cursor.
+     */
+    const scaleRatio =
+      cropScale /
+      oldScale;
+
+    cropX =
+      mouseX -
+      (
+        mouseX -
+        cropX
+      ) *
+      scaleRatio;
+
+    cropY =
+      mouseY -
+      (
+        mouseY -
+        cropY
+      ) *
+      scaleRatio;
+
+    constrainCrop();
+
+    drawCropper();
+
+    // Resetear estado de recorte al hacer zoom
+    croppedImageBlob = null;
+
+    if (cropApply) {
+      cropApply.textContent =
+        "✓ Aplicar recorte";
+    }
+
+    if (cropResultMessage) {
+      cropResultMessage.style.display =
         "none";
+    }
 
+  },
+  {
+    passive:false
+  }
+);
+
+}
+
+
+// Restablecer recorte
+if (cropReset) {
+  cropReset.addEventListener(
+    "click",
+    (event) => {
+      // Prevenir propagación
+      event.stopPropagation();
+
+      if (!cropImage) {
+        return;
+      }
+
+
+      initializeCropper(
+        cropImage
+      );
+
+
+      if (cropResultMessage) {
+        cropResultMessage.style.display =
+          "none";
+      }
+
+
+      // Resetear estado de recorte
+      croppedImageBlob =
+        null;
+
+      if (cropApply) {
+        cropApply.textContent =
+          "✓ Aplicar recorte";
+      }
+
+    }
+  );
+}
+
+
+// Redimensionar el canvas cuando cambie el tamaño de la ventana
+window.addEventListener(
+  "resize",
+  () => {
+
+    if (cropImage) {
+      resizeCropCanvas();
     }
 
   }
@@ -849,7 +1573,7 @@ document
 
 
 // ==========================================================
-// ENVIAR
+// ENVIAR PARA REVISION
 // ==========================================================
 
 document.getElementById("submit-button").addEventListener("click", async () => {
@@ -857,8 +1581,8 @@ document.getElementById("submit-button").addEventListener("click", async () => {
   const title = titleInput.value.trim();
   const subtitle = subtitleInput.value.trim();
   const category = categorySelect.value;
-  const content = contentInput.value.trim();
   const publicationDate = postDate.value;
+//  const content = contentInput.value.trim();
 
  
   // Validar título
@@ -894,73 +1618,184 @@ document.getElementById("submit-button").addEventListener("click", async () => {
     return;
   }
 
-// Validar fecha de publicacion
-if (!publicationDate) {
-  alert("Debes introducir una fecha de publicación.");
-  postDate.focus();
-  return;
-}
+  // Validar fecha de publicacion
+  if (!publicationDate) {
+    alert("Debes introducir una fecha de publicación.");
+    postDate.focus();
+    return;
+  }
 
-// COMPROBAR QUE EXISTE UNA IMAGEN PARA ENVIAR
+  // COMPROBAR QUE EXISTE UNA IMAGEN PARA ENVIAR
+  const imageFile = imageInput.files[0];
 
-const imageFile =
-  imageInput.files[0];
+  if (!imageFile) {
+    alert("Es necesario subir una imagen para poder enviar la noticia.");
+    imageInput.focus();
+    return;
+  }
 
+  const imageResult = await validateImage(imageFile);
 
-if (!imageFile) {
-
-  alert(
-    "Es necesario subir una imagen para poder enviar la noticia."
-  );
-
-  imageInput.focus();
-
-  return;
-
-}
-
-
-const imageResult =
-  await validateImage(
-    imageFile
-  );
-
-
-if (!imageResult.valid) {
-
-  alert(
-    imageResult.message
-  );
-
-  return;
-
-}
-  
-  // Validar contenido
-  if (!content) {
-    alert("Escribe el contenido de la noticia.");
-    contentInput.focus();
+  if (!imageResult.valid) {
+    alert(imageResult.message);
     return;
   }
   
-  if (content.length < 300) {
-    alert("El contenido es demasiado breve. La noticia debe tener al menos 300 caracteres.");
-    contentInput.focus();
+  if (!croppedImageBlob) {
+    alert(
+      "Debes seleccionar el encuadre de la imagen " +
+      "y pulsar «Aplicar recorte» antes de enviar la noticia."
+    );
+    cropApply?.focus();
     return;
   }
-  
-  if (content.length > 10000) {
-    alert("El contenido supera el máximo permitido de 10.000 caracteres.");
-    contentInput.focus();
-    return;
+
+
+// Validar contenido
+const contentText = getPlainText();
+
+if (!contentText) return alert("Escribe el contenido de la noticia.");
+if (contentText.length < 300) return alert("El contenido es demasiado breve. La noticia debe tener al menos 300 caracteres.");
+if (contentText.length > 10000) return alert("El contenido supera el máximo permitido de 10.000 caracteres.");
+
+
+  // Validar recurrencia anual
+  if (
+    recurringCheckbox.checked &&
+    recurringType.value === "annual"
+  ) {
+    if (!baseMonth.value || !baseDay.value) {
+      alert(
+        "Para una noticia recurrente anual debes " +
+        "indicar la fecha base."
+      );
+      baseMonth.focus();
+      return;
+    }
   }
-  
+
+  // Validar recurrencia litúrgica
+  if (
+    recurringCheckbox.checked &&
+    recurringType.value === "liturgical"
+  ) {
+    if (!liturgicalRecurringType.value) {
+      alert(
+        "Selecciona la celebración litúrgica " +
+        "que determinará la recurrencia."
+      );
+      liturgicalRecurringType.focus();
+      return;
+    }
+  }
+
+ // ========================================================
+  // PREPARAR IMAGEN PARA LA REVISIÓN
+  // ========================================================
+
+  const imagePreview =
+    croppedImageBlob
+      ? await blobToDataURL(
+          croppedImageBlob
+        )
+      : null;
 
 
-  // Resto de validaciones...
-  alert("La validación y el envío a Firebase los construiremos en el siguiente paso.");
+  // ========================================================
+  // PREPARAR DATOS PARA LA REVISIÓN
+  // ========================================================
+
+  const reviewData = {
+
+    title:
+      title,
+
+    subtitle:
+      subtitle,
+
+    category:
+      category,
+
+    publicationDate:
+      publicationDate,
+
+    content:
+      getMarkdown(),
+
+    image:
+      imagePreview
+
+  };
+
+
+  // ========================================================
+  // GUARDAR TEMPORALMENTE LA NOTICIA
+  // ========================================================
+
+// TEMPORAL PRUEBA
+console.log(
+  "DATOS PARA REVISIÓN:",
+  reviewData
+);
+
+sessionStorage.setItem(
+  "pending-review",
+  JSON.stringify(
+    reviewData
+  )
+);
+
+// TEMPORAL PRUEBA
+window.location.href =
+  "/admin/editor/review/";
+
+
+  // ========================================================
+  // IR A LA PÁGINA DE REVISIÓN
+  // ========================================================
+
+  window.location.href =
+    "/admin/editor/review/";
 
 });
+
+// ==========================================================
+// CONVERTIR BLOB A DATA URL
+// ==========================================================
+
+function blobToDataURL(
+  blob
+) {
+
+  return new Promise(
+    (resolve, reject) => {
+
+      const reader =
+        new FileReader();
+
+
+      reader.onload =
+        () => {
+
+          resolve(
+            reader.result
+          );
+
+        };
+
+
+      reader.onerror =
+        reject;
+
+
+      reader.readAsDataURL(
+        blob
+      );
+
+    }
+  );
+
+}
 
 // ==========================================================
 // CERRAR SESIÓN
