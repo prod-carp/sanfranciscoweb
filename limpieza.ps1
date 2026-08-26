@@ -22,8 +22,8 @@ $total = 0
 $canonicalAdded = 0
 $mobiriseRemoved = 0
 
-# Recorrer todos los HTML en static/
-Get-ChildItem -Path "static" -Recurse -Filter "*.html" | ForEach-Object {
+# Recorrer solo los HTML en la carpeta static (sin subcarpetas)
+Get-ChildItem -Path "static" -Filter "*.html" | ForEach-Object {
     $total++
     $relativePath = $_.FullName.Replace((Get-Location).Path + "\static\", "").Replace("\", "/")
     Write-Host "Procesando: $relativePath" -ForegroundColor White

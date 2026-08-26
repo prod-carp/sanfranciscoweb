@@ -525,7 +525,261 @@ function configureReviewButton(role) {
 }
 
 // ==========================================================
-// ENVIAR PARA APROBACIÓN
+// ENVIAR / APROBAR
 // ==========================================================
 
-// approveButton.addEventListener("click", () => { alert("El envío para aprobación lo construiremos en la siguiente fase."); });
+approveButton.addEventListener(
+  "click",
+  async () => {
+
+    const action =
+      approveButton.dataset.action;
+
+
+    // ======================================================
+    // FASE 1
+    // ======================================================
+    //
+    // En esta fase solo implementamos:
+    //
+    // COLABORADOR
+    //     ↓
+    // ENVIAR PARA APROBACIÓN
+    //     ↓
+    // WORKER
+    //     ↓
+    // D1 + R2
+    //
+    // La aprobación del Administrador/Preferente
+    // la construiremos después.
+    // ======================================================
+
+    if (
+      action !== "submit"
+    ) {
+
+      alert(
+        "La aprobación de artículos se implementará en la siguiente fase."
+      );
+
+      return;
+
+    }
+
+
+    // ------------------------------------------------------
+    // Obtener datos
+    // ------------------------------------------------------
+
+    const reviewDataString =
+      sessionStorage.getItem(
+        "pending-review"
+      );
+
+
+    if (!reviewDataString) {
+
+      alert(
+        "No se han encontrado los datos de la noticia."
+      );
+
+      return;
+
+    }
+
+
+    let reviewData;
+
+    try {
+
+      reviewData =
+        JSON.parse(
+          reviewDataString
+        );
+
+    } catch {
+
+      alert(
+        "No se han podido leer los datos de la noticia."
+      );
+
+      return;
+
+    }
+
+
+    // ------------------------------------------------------
+    // Confirmación
+    // ------------------------------------------------------
+
+    const confirmed =
+      window.confirm(
+        "¿Quieres enviar esta noticia para su aprobación?"
+      );
+
+
+    if (!confirmed) {
+
+      return;
+
+    }
+
+
+    // ------------------------------------------------------
+    // Desactivar botón
+    // ------------------------------------------------------
+
+    approveButton.disabled =
+      true;
+
+    approveButton.textContent =
+      "Enviando…";
+
+
+    try {
+
+      // ----------------------------------------------------
+      // Usuario Firebase
+      // ----------------------------------------------------
+
+      const user =
+        auth.currentUser;
+
+
+      if (!user) {
+
+        throw new Error(
+          "Tu sesión ha caducado. Vuelve a iniciar sesión."
+        );
+
+      }
+
+
+      // ----------------------------------------------------
+      // Obtener Firebase ID Token
+      // ----------------------------------------------------
+
+      const idToken =
+        await user.getIdToken(
+          true
+        );
+
+
+      // ----------------------------------------------------
+      // Enviar al Worker
+      // ----------------------------------------------------
+
+      const response =
+        await fetch(
+          "https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/articles",
+          {
+
+            method:
+              "POST",
+
+            headers: {
+
+              "Content-Type":
+                "application/json",
+
+              "Authorization":
+                `Bearer ${idToken}`
+
+            },
+
+            body:
+              JSON.stringify(
+                reviewData
+              )
+
+          }
+        );
+
+
+      let result;
+
+      try {
+
+        result =
+          await response.json();
+
+      } catch {
+
+        throw new Error(
+          "El servidor devolvió una respuesta no válida."
+        );
+
+      }
+
+
+      if (
+        !response.ok ||
+        !result.success
+      ) {
+
+        throw new Error(
+          result.error ||
+          "No se ha podido enviar la noticia."
+        );
+
+      }
+
+
+      // ----------------------------------------------------
+      // ÉXITO
+      // ----------------------------------------------------
+
+      console.log(
+        "✅ Artículo enviado:",
+        result
+      );
+
+
+      // Limpiar la revisión temporal
+
+      sessionStorage.removeItem(
+        "pending-review"
+      );
+
+      sessionStorage.removeItem(
+        "editing-article"
+      );
+
+
+      alert(
+        "✅ La noticia se ha enviado correctamente para su aprobación."
+      );
+
+
+      // Por ahora volvemos al editor.
+      // Posteriormente iremos al panel del colaborador.
+
+      window.location.href =
+        "/admin/editor/";
+
+    } catch (error) {
+
+      console.error(
+        "❌ Error enviando artículo:",
+        error
+      );
+
+
+      alert(
+        "No se ha podido enviar la noticia.\n\n" +
+        error.message
+      );
+
+
+      // Restaurar botón
+
+      approveButton.disabled =
+        false;
+
+      approveButton.textContent =
+        "Enviar para aprobación →";
+
+    }
+
+  }
+);

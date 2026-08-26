@@ -42,6 +42,380 @@ const auth = getAuth(app);
 
 
 // ==========================================================
+// RESTAURAR ARTÍCULO DESDE REVISIÓN
+// ==========================================================
+
+function restaurarArticuloDesdeRevision() {
+  
+  // Buscar primero en editing-article (para cuando venimos de modificar)
+  let datosGuardados = sessionStorage.getItem("editing-article");
+  
+  // Si no hay, buscar en pending-review (por si el usuario vuelve directamente)
+  if (!datosGuardados) {
+    datosGuardados = sessionStorage.getItem("pending-review");
+  }
+  
+  if (!datosGuardados) {
+    return false;
+  }
+  
+  try {
+    
+    const data = JSON.parse(datosGuardados);
+    console.log("📝 Restaurando artículo desde revisión:", data);
+    
+    // ======================================================
+    // RESTAURAR TÍTULO
+    // ======================================================
+    
+    if (titleInput && data.title) {
+      titleInput.value = data.title;
+      titleInput.dispatchEvent(new Event('input'));
+    }
+    
+    // ======================================================
+    // RESTAURAR SUBTÍTULO
+    // ======================================================
+    
+    if (subtitleInput && data.subtitle) {
+      subtitleInput.value = data.subtitle;
+      subtitleInput.dispatchEvent(new Event('input'));
+    }
+    
+    // ======================================================
+    // RESTAURAR CATEGORÍA
+    // ======================================================
+    
+    if (categorySelect && data.category) {
+      
+      const checkCategoryLoaded = () => {
+        const optionExists = Array.from(categorySelect.options).some(
+          option => option.value === data.category
+        );
+        
+        if (optionExists) {
+          categorySelect.value = data.category;
+          categorySelect.dispatchEvent(new Event('change'));
+          console.log("✅ Categoría restaurada:", data.category);
+        } else {
+          console.log("⏳ Esperando categorías...");
+          setTimeout(checkCategoryLoaded, 100);
+        }
+      };
+      
+      checkCategoryLoaded();
+    }
+    
+    // ======================================================
+    // RESTAURAR FECHA DE PUBLICACIÓN
+    // ======================================================
+    
+    if (postDate && data.publicationDate) {
+      postDate.value = data.publicationDate;
+    }
+    
+// ======================================================
+// RESTAURAR DESTACADO
+// ======================================================
+
+if (
+  highlightCheckbox &&
+  typeof data.highlight === "boolean"
+) {
+
+  highlightCheckbox.checked =
+    data.highlight;
+
+  highlightCheckbox.dispatchEvent(
+    new Event("change")
+  );
+
+}
+
+
+if (
+  data.highlightDays !== null &&
+  data.highlightDays !== undefined
+) {
+
+  const highlightDays =
+    document.getElementById(
+      "highlight-days"
+    );
+
+  if (highlightDays) {
+
+    highlightDays.value =
+      String(
+        data.highlightDays
+      );
+
+  }
+
+}
+
+
+// ======================================================
+// RESTAURAR RECURRENCIA
+// ======================================================
+
+if (
+  recurringCheckbox &&
+  typeof data.recurring === "boolean"
+) {
+
+  recurringCheckbox.checked =
+    data.recurring;
+
+  recurringCheckbox.dispatchEvent(
+    new Event("change")
+  );
+
+}
+
+
+if (
+  data.recurringType
+) {
+
+  recurringType.value =
+    data.recurringType;
+
+  recurringType.dispatchEvent(
+    new Event("change")
+  );
+
+}
+
+
+// ======================================================
+// RESTAURAR RECURRENCIA ANUAL
+// ======================================================
+
+if (
+  data.baseMonth
+) {
+
+  baseMonth.value =
+    String(
+      data.baseMonth
+    );
+
+}
+
+
+if (
+  data.baseDay
+) {
+
+  baseDay.value =
+    String(
+      data.baseDay
+    );
+
+}
+
+
+// ======================================================
+// RESTAURAR RECURRENCIA LITÚRGICA
+// ======================================================
+
+if (
+  data.liturgicalType
+) {
+
+  liturgicalRecurringType.value =
+    data.liturgicalType;
+
+}
+
+
+const daysBefore =
+  document.getElementById(
+    "liturgical-days-before"
+  );
+
+
+const daysAfter =
+  document.getElementById(
+    "liturgical-days-after"
+  );
+
+
+if (
+  daysBefore &&
+  data.daysBefore !== null &&
+  data.daysBefore !== undefined
+) {
+
+  daysBefore.value =
+    String(
+      data.daysBefore
+    );
+
+}
+
+
+if (
+  daysAfter &&
+  data.daysAfter !== null &&
+  data.daysAfter !== undefined
+) {
+
+  daysAfter.value =
+    String(
+      data.daysAfter
+    );
+
+}
+
+
+    // ======================================================
+    // RESTAURAR CONTENIDO
+    // ======================================================
+    
+    if (data.content) {
+      
+      console.log("📝 Restaurando contenido...");
+      
+      const visualEditor = document.getElementById("visual-editor");
+      const markdownEditor = document.getElementById("markdown-editor");
+      
+      // Guardar en la variable global
+      if (typeof markdownContent !== 'undefined') {
+        markdownContent = data.content;
+      }
+      
+      // Actualizar textarea Markdown
+      if (markdownEditor) {
+        markdownEditor.value = data.content;
+      }
+      
+      // Actualizar editor visual usando la función global
+      if (visualEditor && typeof window.markdownToHtml === 'function') {
+        visualEditor.innerHTML = window.markdownToHtml(data.content);
+        console.log("✅ Editor visual restaurado");
+      } else if (visualEditor) {
+        // Fallback: mostrar el contenido en bruto
+        visualEditor.innerHTML = data.content;
+        console.warn("⚠️ markdownToHtml no disponible globalmente");
+      }
+      
+      // Disparar eventos para actualizar contadores
+      if (markdownEditor) markdownEditor.dispatchEvent(new Event('input'));
+      if (visualEditor) visualEditor.dispatchEvent(new Event('input'));
+      
+      console.log("✅ Contenido restaurado, longitud:", data.content.length);
+    }
+    
+    // ======================================================
+    // RESTAURAR IMAGEN
+    // ======================================================
+    
+    if (data.image) {
+      
+      console.log("🖼️ Restaurando imagen...");
+      
+      const previewImage = document.getElementById("preview-image");
+      const imagePreview = document.getElementById("image-preview");
+      
+      if (previewImage && imagePreview) {
+        previewImage.src = data.image;
+        imagePreview.style.display = "block";
+        console.log("✅ Imagen mostrada en vista previa");
+      }
+      
+      convertirDataURLToBlob(data.image).then(blob => {
+        if (blob) {
+          croppedImageBlob = blob;
+          console.log("✅ Imagen preparada para envío, tamaño:", blob.size);
+          
+          const cropResultMessage = document.getElementById("crop-result-message");
+          if (cropResultMessage) {
+            cropResultMessage.textContent = "✓ Imagen restaurada desde revisión.";
+            cropResultMessage.style.display = "block";
+            cropResultMessage.style.color = "#2a5";
+          }
+          
+          const cropApply = document.getElementById("crop-apply");
+          if (cropApply) {
+            cropApply.textContent = "✓ Recorte aplicado";
+          }
+        }
+      }).catch(err => {
+        console.warn("⚠️ No se pudo restaurar la imagen como blob:", err);
+      });
+      
+    }
+    
+    // ======================================================
+    // MOSTRAR MENSAJE DE RESTAURACIÓN
+    // ======================================================
+    
+    mostrarMensajeRestauracion();
+    
+    return true;
+    
+  } catch (error) {
+    
+    console.error("❌ Error al restaurar el artículo:", error);
+    return false;
+    
+  }
+}
+
+
+// ==========================================================
+// MOSTRAR MENSAJE DE RESTAURACIÓN
+// ==========================================================
+
+function mostrarMensajeRestauracion() {
+  // Buscar si existe un contenedor para mensajes de restauración
+  let mensajeContainer = document.getElementById("restore-message");
+  
+  if (!mensajeContainer) {
+    // Crear el contenedor si no existe
+    mensajeContainer = document.createElement("div");
+    mensajeContainer.id = "restore-message";
+    mensajeContainer.style.cssText = `
+      background: #e8f5e9;
+      color: #2e7d32;
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+      border-left: 4px solid #4caf50;
+    `;
+    
+    // Insertar al principio de la tarjeta principal
+    const firstCard = document.querySelector(".admin-card");
+    if (firstCard) {
+      firstCard.parentNode.insertBefore(mensajeContainer, firstCard);
+    } else {
+      document.querySelector(".admin-container")?.prepend(mensajeContainer);
+    }
+  }
+  
+  mensajeContainer.textContent = "📝 Artículo restaurado desde revisión. Puedes seguir editándolo.";
+  mensajeContainer.style.display = "block";
+  
+  // Ocultar después de 5 segundos
+  setTimeout(() => {
+    if (mensajeContainer) {
+      mensajeContainer.style.opacity = "0";
+      mensajeContainer.style.transition = "opacity 0.5s ease";
+      setTimeout(() => {
+        if (mensajeContainer) {
+          mensajeContainer.style.display = "none";
+          mensajeContainer.style.opacity = "1";
+        }
+      }, 500);
+    }
+  }, 5000);
+}
+
+
+// ==========================================================
 // ELEMENTOS
 // ==========================================================
 
@@ -263,6 +637,16 @@ let cropDragging = false;
 let cropInitialScale = 1;
 
 let croppedImageBlob = null;
+
+
+// ==========================================================
+// RESTAURAR ARTÍCULO AL CARGAR (EJECUCIÓN TEMPRANA)
+// ==========================================================
+
+// Intentar restaurar el artículo inmediatamente
+// (los elementos ya están declarados arriba)
+restaurarArticuloDesdeRevision();
+
 
 
 // ==========================================================
@@ -576,40 +960,6 @@ recurringType.addEventListener(
       liturgicalRecurringOptions.style.display =
         "block";
 
-
-      /*
-       * Si la categoría ya es Tiempo Litúrgico,
-       * utilizamos la celebración seleccionada
-       * arriba y no mostramos otro selector.
-       */
-
-      if (
-        categorySelect.value ===
-        "Tiempo Litúrgico"
-      ) {
-
-        liturgicalRecurringSelectorContainer.style.display =
-          "none";
-
-        // CORREGIDO: Usar categorySelect.value directamente
-        // o un selector litúrgico si existe
-        const liturgicalSelect =
-          document.getElementById(
-            "liturgical-category"
-          );
-
-        if (liturgicalSelect) {
-          liturgicalRecurringType.value =
-            liturgicalSelect.value;
-        }
-
-      } else {
-
-        liturgicalRecurringSelectorContainer.style.display =
-          "block";
-
-      }
-
     }
 
   }
@@ -680,15 +1030,7 @@ function loadImage(file) {
 
 async function validateImage(file) {
 
-  if (!file) {
-
-    return {
-      valid: false,
-      message:
-        "Es necesario subir una imagen."
-    };
-
-  }
+if (!file) { return { valid: false, message: "Es necesario subir una imagen." }; }
 
 
   const allowedTypes = [
@@ -1214,6 +1556,12 @@ outputCanvas.toBlob(
     croppedImageBlob =
       blob;
 
+// Ocultar el recortador al finalizar
+if (cropper) {
+  cropper.style.display =
+    "none";
+}
+
 
     // ======================================================
     // MOSTRAR LA IMAGEN FINAL
@@ -1260,22 +1608,22 @@ outputCanvas.toBlob(
     }
 
 
-    // ======================================================
-    // MENSAJE DE ÉXITO
-    // ======================================================
+// ======================================================
+// MENSAJE DE ÉXITO
+// ======================================================
 
-    if (cropResultMessage) {
+if (imageValidationMessage) {
 
-      cropResultMessage.textContent =
-        "✓ Imagen preparada: WebP · 637 × 637 px · calidad 80 %.";
+  imageValidationMessage.textContent =
+    "✓ Imagen preparada: WebP · 637 × 637 px · calidad 80 %.";
 
-      cropResultMessage.style.display =
-        "block";
+  imageValidationMessage.style.display =
+    "block";
 
-      cropResultMessage.style.color =
-        "#2a5";
+  imageValidationMessage.style.color =
+    "#2a5";
 
-    }
+}
 
 
     if (cropApply) {
@@ -1699,30 +2047,76 @@ document.getElementById("submit-button").addEventListener("click", async () => {
     return;
   }
 
-  // COMPROBAR QUE EXISTE UNA IMAGEN PARA ENVIAR
-  const imageFile = imageInput.files[0];
+// ======================================================
+// COMPROBAR QUE EXISTE UNA IMAGEN PARA ENVIAR
+// ======================================================
 
-  if (!imageFile) {
-    alert("Es necesario subir una imagen para poder enviar la noticia.");
-    imageInput.focus();
-    return;
-  }
+const imageFile =
+  imageInput.files[0];
 
-  const imageResult = await validateImage(imageFile);
+
+// ------------------------------------------------------
+// CASO 1: No hay imagen original ni WebP preparado
+// ------------------------------------------------------
+
+if (
+  !imageFile &&
+  !croppedImageBlob
+) {
+
+  alert(
+    "Es necesario subir una imagen para poder enviar la noticia."
+  );
+
+  imageInput.focus();
+
+  return;
+
+}
+
+
+// ------------------------------------------------------
+// CASO 2: Hay una imagen nueva seleccionada
+// ------------------------------------------------------
+
+if (imageFile) {
+
+  const imageResult =
+    await validateImage(
+      imageFile
+    );
+
 
   if (!imageResult.valid) {
-    alert(imageResult.message);
-    return;
-  }
-  
-  if (!croppedImageBlob) {
+
     alert(
-      "Debes seleccionar el encuadre de la imagen " +
-      "y pulsar «Aplicar recorte» antes de enviar la noticia."
+      imageResult.message
     );
-    cropApply?.focus();
+
     return;
+
   }
+
+}
+
+
+// ------------------------------------------------------
+// CASO 3: Hay imagen, pero todavía no se ha aplicado
+// el recorte
+// ------------------------------------------------------
+
+if (!croppedImageBlob) {
+
+  alert(
+    "Debes seleccionar el encuadre de la imagen " +
+    "y pulsar «Aplicar recorte» antes de enviar la noticia."
+  );
+
+  cropApply?.focus();
+
+  return;
+
+}
 
 
 // Validar contenido
@@ -1779,27 +2173,54 @@ if (contentText.length > 10000) return alert("El contenido supera el máximo per
   // PREPARAR DATOS PARA LA REVISIÓN
   // ========================================================
 
-  const reviewData = {
+const reviewData = {
 
-    title:
-      title,
+  // DATOS BÁSICOS
+  title: title,
+  subtitle: subtitle,
+  category: category,
+  publicationDate: publicationDate,
+  content: getMarkdown(),
 
-    subtitle:
-      subtitle,
+  // IMAGEN
+  image: imagePreview,
 
-    category:
-      category,
+  // DESTACADO
+  highlight: highlightCheckbox.checked,
+  highlightDays: highlightCheckbox.checked && highlightDaysContainer
+    ? (document.getElementById("highlight-days")?.value || null)
+    : null,
 
-    publicationDate:
-      publicationDate,
+  // TAGS - Si está destacado, añadir etiqueta "importante"
+  tags: highlightCheckbox.checked ? ["importante"] : [],
 
-    content:
-      getMarkdown(),
+  // RECURRENCIA
+  recurring: recurringCheckbox.checked,
+  recurringType: recurringCheckbox.checked ? recurringType.value || null : null,
 
-    image:
-      imagePreview
+  // RECURRENCIA ANUAL
+  baseMonth: recurringCheckbox.checked && recurringType.value === "annual"
+    ? baseMonth.value || null
+    : null,
+  baseDay: recurringCheckbox.checked && recurringType.value === "annual"
+    ? baseDay.value || null
+    : null,
 
-  };
+  // RECURRENCIA LITÚRGICA
+  liturgicalType: recurringCheckbox.checked && recurringType.value === "liturgical"
+    ? liturgicalRecurringType.value || null
+    : null,
+  daysBefore: recurringCheckbox.checked && recurringType.value === "liturgical"
+    ? (document.getElementById("liturgical-days-before")?.value || 0)
+    : null,
+  daysAfter: recurringCheckbox.checked && recurringType.value === "liturgical"
+    ? (document.getElementById("liturgical-days-after")?.value || 0)
+    : null,
+
+  // HUGO
+  weight: 0
+
+};
 
 
   // ========================================================
@@ -1870,6 +2291,45 @@ function blobToDataURL(
   );
 
 }
+
+// ==========================================================
+// CONVERTIR DATA URL A BLOB
+// ==========================================================
+
+function convertirDataURLToBlob(dataURL) {
+  
+  return new Promise((resolve, reject) => {
+    
+    try {
+      
+      // Separar el tipo MIME y los datos
+      const [header, base64Data] = dataURL.split(',');
+      const mimeType = header.match(/:(.*?);/)[1];
+      
+      // Decodificar base64
+      const byteCharacters = atob(base64Data);
+      const byteNumbers = new Array(byteCharacters.length);
+      
+      for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
+      }
+      
+      const byteArray = new Uint8Array(byteNumbers);
+      const blob = new Blob([byteArray], { type: mimeType });
+      
+      resolve(blob);
+      
+    } catch (error) {
+      
+      console.error("Error al convertir DataURL a Blob:", error);
+      reject(error);
+      
+    }
+    
+  });
+  
+}
+
 
 // ==========================================================
 // CERRAR SESIÓN

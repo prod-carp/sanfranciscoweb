@@ -26,12 +26,12 @@ import {
 // ==========================================================
 
 const firebaseConfig = {
-  apiKey: "***",
+  apiKey: "AIzaSyDjdSGRbYmQhAFNEuvl99dIqwd_MiWJ7UU",
   authDomain: "sanfranciscoyclara-d34c2.firebaseapp.com",
   projectId: "sanfranciscoyclara-d34c2",
   storageBucket: "sanfranciscoyclara-d34c2.firebasestorage.app",
   messagingSenderId: "752378732662",
-  appId: "***",
+  appId: "1:752378732662:web:7399bfb7aab75f6b2e7f57",
   measurementId: "G-JLZCDHMBVT"
 };
 
@@ -114,6 +114,260 @@ function restaurarArticuloDesdeRevision() {
       postDate.value = data.publicationDate;
     }
     
+// ======================================================
+// RESTAURAR DESTACADO
+// ======================================================
+
+if (
+  highlightCheckbox &&
+  typeof data.highlight === "boolean"
+) {
+
+  highlightCheckbox.checked =
+    data.highlight;
+
+  highlightDaysContainer.style.display =
+    data.highlight
+      ? "block"
+      : "none";
+
+}
+
+
+if (
+  data.highlightDays !== null &&
+  data.highlightDays !== undefined
+) {
+
+  const highlightDays =
+    document.getElementById(
+      "highlight-days"
+    );
+
+  if (
+    highlightDays
+  ) {
+
+    highlightDays.value =
+      String(
+        data.highlightDays
+      );
+
+  }
+
+}
+
+
+// ======================================================
+// RESTAURAR RECURRENCIA
+// ======================================================
+
+if (
+  recurringCheckbox &&
+  typeof data.recurring === "boolean"
+) {
+
+  recurringCheckbox.checked =
+    data.recurring;
+
+  // Mostrar inmediatamente el selector de tipo
+  recurringTypeContainer.style.display =
+    data.recurring
+      ? "block"
+      : "none";
+
+}
+
+
+// ======================================================
+// RESTAURAR TIPO DE RECURRENCIA
+// ======================================================
+
+if (
+  data.recurringType
+) {
+
+  recurringType.value =
+    data.recurringType;
+
+}
+
+
+// ======================================================
+// RESTAURAR RECURRENCIA ANUAL
+// ======================================================
+
+if (
+  data.recurring &&
+  data.recurringType === "annual"
+) {
+
+  // Mostrar opciones anuales
+  annualOptions.style.display =
+    "block";
+
+  liturgicalRecurringOptions.style.display =
+    "none";
+
+
+  // ----------------------------------------------------
+  // Restaurar MES
+  // ----------------------------------------------------
+
+  if (
+    data.baseMonth
+  ) {
+
+    baseMonth.value =
+      String(
+        data.baseMonth
+      );
+
+  }
+
+
+  // ----------------------------------------------------
+  // MUY IMPORTANTE:
+  // Generar los días después de restaurar el mes
+  // ----------------------------------------------------
+
+  updateBaseDays();
+
+
+  // ----------------------------------------------------
+  // Ahora sí podemos restaurar el DÍA
+  // ----------------------------------------------------
+
+  if (
+    data.baseDay
+  ) {
+
+    baseDay.value =
+      String(
+        data.baseDay
+      );
+
+  }
+
+
+  // ----------------------------------------------------
+  // Restaurar días antes
+  // ----------------------------------------------------
+
+  const annualDaysBefore =
+    document.getElementById(
+      "days-before"
+    );
+
+
+  if (
+    annualDaysBefore &&
+    data.annualDaysBefore !== null &&
+    data.annualDaysBefore !== undefined
+  ) {
+
+    annualDaysBefore.value =
+      String(
+        data.annualDaysBefore
+      );
+
+  }
+
+
+  // ----------------------------------------------------
+  // Restaurar días después
+  // ----------------------------------------------------
+
+  const annualDaysAfter =
+    document.getElementById(
+      "days-after"
+    );
+
+
+  if (
+    annualDaysAfter &&
+    data.annualDaysAfter !== null &&
+    data.annualDaysAfter !== undefined
+  ) {
+
+    annualDaysAfter.value =
+      String(
+        data.annualDaysAfter
+      );
+
+  }
+
+}
+
+
+// ======================================================
+// RESTAURAR RECURRENCIA LITÚRGICA
+// ======================================================
+
+if (
+  data.recurring &&
+  data.recurringType === "liturgical"
+) {
+
+  annualOptions.style.display =
+    "none";
+
+  liturgicalRecurringOptions.style.display =
+    "block";
+
+
+  if (
+    data.liturgicalType
+  ) {
+
+    liturgicalRecurringType.value =
+      data.liturgicalType;
+
+  }
+
+
+  const liturgicalDaysBefore =
+    document.getElementById(
+      "liturgical-days-before"
+    );
+
+
+  const liturgicalDaysAfter =
+    document.getElementById(
+      "liturgical-days-after"
+    );
+
+
+  if (
+    liturgicalDaysBefore &&
+    data.daysBefore !== null &&
+    data.daysBefore !== undefined
+  ) {
+
+    liturgicalDaysBefore.value =
+      String(
+        data.daysBefore
+      );
+
+  }
+
+
+  if (
+    liturgicalDaysAfter &&
+    data.daysAfter !== null &&
+    data.daysAfter !== undefined
+  ) {
+
+    liturgicalDaysAfter.value =
+      String(
+        data.daysAfter
+      );
+
+  }
+
+}
+
+
     // ======================================================
     // RESTAURAR CONTENIDO
     // ======================================================
@@ -489,7 +743,7 @@ let croppedImageBlob = null;
 
 // Intentar restaurar el artículo inmediatamente
 // (los elementos ya están declarados arriba)
-restaurarArticuloDesdeRevision();
+// restaurarArticuloDesdeRevision();
 
 
 
@@ -804,44 +1058,21 @@ recurringType.addEventListener(
       liturgicalRecurringOptions.style.display =
         "block";
 
-
-      /*
-       * Si la categoría ya es Tiempo Litúrgico,
-       * utilizamos la celebración seleccionada
-       * arriba y no mostramos otro selector.
-       */
-
-      if (
-        categorySelect.value ===
-        "Tiempo Litúrgico"
-      ) {
-
-        liturgicalRecurringSelectorContainer.style.display =
-          "none";
-
-        // CORREGIDO: Usar categorySelect.value directamente
-        // o un selector litúrgico si existe
-        const liturgicalSelect =
-          document.getElementById(
-            "liturgical-category"
-          );
-
-        if (liturgicalSelect) {
-          liturgicalRecurringType.value =
-            liturgicalSelect.value;
-        }
-
-      } else {
-
-        liturgicalRecurringSelectorContainer.style.display =
-          "block";
-
-      }
-
     }
 
   }
 );
+
+// ==========================================================
+// RESTAURAR ARTÍCULO DESDE REVISIÓN
+// ==========================================================
+//
+// Todos los elementos y eventos del formulario ya están
+// preparados. Ahora sí podemos restaurar correctamente
+// el estado anterior.
+//
+
+restaurarArticuloDesdeRevision();
 
 
 // ==========================================================
@@ -2051,27 +2282,46 @@ if (contentText.length > 10000) return alert("El contenido supera el máximo per
   // PREPARAR DATOS PARA LA REVISIÓN
   // ========================================================
 
-  const reviewData = {
+const reviewData = {
 
-    title:
-      title,
+  // DATOS BÁSICOS
+  title: title,
+  subtitle: subtitle,
+  category: category,
+  publicationDate: publicationDate,
+  content: getMarkdown(),
 
-    subtitle:
-      subtitle,
+  // IMAGEN
+  image: imagePreview,
 
-    category:
-      category,
+  // DESTACADO
+  highlight: highlightCheckbox.checked,
+  highlightDays: highlightCheckbox.checked && highlightDaysContainer
+    ? (document.getElementById("highlight-days")?.value || null)
+    : null,
 
-    publicationDate:
-      publicationDate,
+  // TAGS - Si está destacado, añadir etiqueta "importante"
+  tags: highlightCheckbox.checked ? ["importante"] : [],
 
-    content:
-      getMarkdown(),
+  // RECURRENCIA
+  recurring: recurringCheckbox.checked,
+  recurringType: recurringCheckbox.checked ? recurringType.value || null : null,
 
-    image:
-      imagePreview
+// RECURRENCIA ANUAL
+baseMonth: recurringCheckbox.checked && recurringType.value === "annual" ? baseMonth.value || null : null,
+baseDay: recurringCheckbox.checked && recurringType.value === "annual" ? baseDay.value || null : null,
+annualDaysBefore: recurringCheckbox.checked && recurringType.value === "annual" ? (document.getElementById("days-before")?.value || 0) : null,
+annualDaysAfter: recurringCheckbox.checked && recurringType.value === "annual" ? (document.getElementById("days-after")?.value || 0) : null,
 
-  };
+// RECURRENCIA LITÚRGICA
+liturgicalType: recurringCheckbox.checked && recurringType.value === "liturgical" ? liturgicalRecurringType.value || null : null,
+daysBefore: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-before")?.value || 0) : null,
+daysAfter: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-after")?.value || 0) : null,
+
+  // HUGO
+  weight: 0
+
+};
 
 
   // ========================================================

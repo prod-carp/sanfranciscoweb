@@ -114,6 +114,161 @@ function restaurarArticuloDesdeRevision() {
       postDate.value = data.publicationDate;
     }
     
+// ======================================================
+// RESTAURAR DESTACADO
+// ======================================================
+
+if (
+  highlightCheckbox &&
+  typeof data.highlight === "boolean"
+) {
+
+  highlightCheckbox.checked =
+    data.highlight;
+
+  highlightCheckbox.dispatchEvent(
+    new Event("change")
+  );
+
+}
+
+
+if (
+  data.highlightDays !== null &&
+  data.highlightDays !== undefined
+) {
+
+  const highlightDays =
+    document.getElementById(
+      "highlight-days"
+    );
+
+  if (highlightDays) {
+
+    highlightDays.value =
+      String(
+        data.highlightDays
+      );
+
+  }
+
+}
+
+
+// ======================================================
+// RESTAURAR RECURRENCIA
+// ======================================================
+
+if (
+  recurringCheckbox &&
+  typeof data.recurring === "boolean"
+) {
+
+  recurringCheckbox.checked =
+    data.recurring;
+
+  recurringCheckbox.dispatchEvent(
+    new Event("change")
+  );
+
+}
+
+
+if (
+  data.recurringType
+) {
+
+  recurringType.value =
+    data.recurringType;
+
+  recurringType.dispatchEvent(
+    new Event("change")
+  );
+
+}
+
+
+// ======================================================
+// RESTAURAR RECURRENCIA ANUAL
+// ======================================================
+
+if (
+  data.baseMonth
+) {
+
+  baseMonth.value =
+    String(
+      data.baseMonth
+    );
+
+}
+
+
+if (
+  data.baseDay
+) {
+
+  baseDay.value =
+    String(
+      data.baseDay
+    );
+
+}
+
+// ======================================================
+// RESTAURAR RECURRENCIA LITÚRGICA
+// ======================================================
+
+if (
+  data.liturgicalType
+) {
+
+  liturgicalRecurringType.value =
+    data.liturgicalType;
+
+}
+
+
+const daysBefore =
+  document.getElementById(
+    "liturgical-days-before"
+  );
+
+
+const daysAfter =
+  document.getElementById(
+    "liturgical-days-after"
+  );
+
+
+if (
+  daysBefore &&
+  data.daysBefore !== null &&
+  data.daysBefore !== undefined
+) {
+
+  daysBefore.value =
+    String(
+      data.daysBefore
+    );
+
+}
+
+
+if (
+  daysAfter &&
+  data.daysAfter !== null &&
+  data.daysAfter !== undefined
+) {
+
+  daysAfter.value =
+    String(
+      data.daysAfter
+    );
+
+}
+
+
     // ======================================================
     // RESTAURAR CONTENIDO
     // ======================================================
@@ -171,7 +326,7 @@ function restaurarArticuloDesdeRevision() {
       
       convertirDataURLToBlob(data.image).then(blob => {
         if (blob) {
-          window.croppedImageBlob = blob;
+          croppedImageBlob = blob;
           console.log("✅ Imagen preparada para envío, tamaño:", blob.size);
           
           const cropResultMessage = document.getElementById("crop-result-message");
@@ -804,40 +959,6 @@ recurringType.addEventListener(
       liturgicalRecurringOptions.style.display =
         "block";
 
-
-      /*
-       * Si la categoría ya es Tiempo Litúrgico,
-       * utilizamos la celebración seleccionada
-       * arriba y no mostramos otro selector.
-       */
-
-      if (
-        categorySelect.value ===
-        "Tiempo Litúrgico"
-      ) {
-
-        liturgicalRecurringSelectorContainer.style.display =
-          "none";
-
-        // CORREGIDO: Usar categorySelect.value directamente
-        // o un selector litúrgico si existe
-        const liturgicalSelect =
-          document.getElementById(
-            "liturgical-category"
-          );
-
-        if (liturgicalSelect) {
-          liturgicalRecurringType.value =
-            liturgicalSelect.value;
-        }
-
-      } else {
-
-        liturgicalRecurringSelectorContainer.style.display =
-          "block";
-
-      }
-
     }
 
   }
@@ -908,15 +1029,7 @@ function loadImage(file) {
 
 async function validateImage(file) {
 
-  if (!file) {
-
-    return {
-      valid: false,
-      message:
-        "Es necesario subir una imagen."
-    };
-
-  }
+if (!file) { return { valid: false, message: "Es necesario subir una imagen." }; }
 
 
   const allowedTypes = [
@@ -1442,6 +1555,12 @@ outputCanvas.toBlob(
     croppedImageBlob =
       blob;
 
+// Ocultar el recortador al finalizar
+if (cropper) {
+  cropper.style.display =
+    "none";
+}
+
 
     // ======================================================
     // MOSTRAR LA IMAGEN FINAL
@@ -1488,22 +1607,22 @@ outputCanvas.toBlob(
     }
 
 
-    // ======================================================
-    // MENSAJE DE ÉXITO
-    // ======================================================
+// ======================================================
+// MENSAJE DE ÉXITO
+// ======================================================
 
-    if (cropResultMessage) {
+if (imageValidationMessage) {
 
-      cropResultMessage.textContent =
-        "✓ Imagen preparada: WebP · 637 × 637 px · calidad 80 %.";
+  imageValidationMessage.textContent =
+    "✓ Imagen preparada: WebP · 637 × 637 px · calidad 80 %.";
 
-      cropResultMessage.style.display =
-        "block";
+  imageValidationMessage.style.display =
+    "block";
 
-      cropResultMessage.style.color =
-        "#2a5";
+  imageValidationMessage.style.color =
+    "#2a5";
 
-    }
+}
 
 
     if (cropApply) {
@@ -1927,30 +2046,76 @@ document.getElementById("submit-button").addEventListener("click", async () => {
     return;
   }
 
-  // COMPROBAR QUE EXISTE UNA IMAGEN PARA ENVIAR
-  const imageFile = imageInput.files[0];
+// ======================================================
+// COMPROBAR QUE EXISTE UNA IMAGEN PARA ENVIAR
+// ======================================================
 
-  if (!imageFile) {
-    alert("Es necesario subir una imagen para poder enviar la noticia.");
-    imageInput.focus();
-    return;
-  }
+const imageFile =
+  imageInput.files[0];
 
-  const imageResult = await validateImage(imageFile);
+
+// ------------------------------------------------------
+// CASO 1: No hay imagen original ni WebP preparado
+// ------------------------------------------------------
+
+if (
+  !imageFile &&
+  !croppedImageBlob
+) {
+
+  alert(
+    "Es necesario subir una imagen para poder enviar la noticia."
+  );
+
+  imageInput.focus();
+
+  return;
+
+}
+
+
+// ------------------------------------------------------
+// CASO 2: Hay una imagen nueva seleccionada
+// ------------------------------------------------------
+
+if (imageFile) {
+
+  const imageResult =
+    await validateImage(
+      imageFile
+    );
+
 
   if (!imageResult.valid) {
-    alert(imageResult.message);
-    return;
-  }
-  
-  if (!croppedImageBlob) {
+
     alert(
-      "Debes seleccionar el encuadre de la imagen " +
-      "y pulsar «Aplicar recorte» antes de enviar la noticia."
+      imageResult.message
     );
-    cropApply?.focus();
+
     return;
+
   }
+
+}
+
+
+// ------------------------------------------------------
+// CASO 3: Hay imagen, pero todavía no se ha aplicado
+// el recorte
+// ------------------------------------------------------
+
+if (!croppedImageBlob) {
+
+  alert(
+    "Debes seleccionar el encuadre de la imagen " +
+    "y pulsar «Aplicar recorte» antes de enviar la noticia."
+  );
+
+  cropApply?.focus();
+
+  return;
+
+}
 
 
 // Validar contenido
@@ -2007,27 +2172,46 @@ if (contentText.length > 10000) return alert("El contenido supera el máximo per
   // PREPARAR DATOS PARA LA REVISIÓN
   // ========================================================
 
-  const reviewData = {
+const reviewData = {
 
-    title:
-      title,
+  // DATOS BÁSICOS
+  title: title,
+  subtitle: subtitle,
+  category: category,
+  publicationDate: publicationDate,
+  content: getMarkdown(),
 
-    subtitle:
-      subtitle,
+  // IMAGEN
+  image: imagePreview,
 
-    category:
-      category,
+  // DESTACADO
+  highlight: highlightCheckbox.checked,
+  highlightDays: highlightCheckbox.checked && highlightDaysContainer
+    ? (document.getElementById("highlight-days")?.value || null)
+    : null,
 
-    publicationDate:
-      publicationDate,
+  // TAGS - Si está destacado, añadir etiqueta "importante"
+  tags: highlightCheckbox.checked ? ["importante"] : [],
 
-    content:
-      getMarkdown(),
+  // RECURRENCIA
+  recurring: recurringCheckbox.checked,
+  recurringType: recurringCheckbox.checked ? recurringType.value || null : null,
 
-    image:
-      imagePreview
+// RECURRENCIA ANUAL
+baseMonth: recurringCheckbox.checked && recurringType.value === "annual" ? baseMonth.value || null : null,
+baseDay: recurringCheckbox.checked && recurringType.value === "annual" ? baseDay.value || null : null,
+annualDaysBefore: recurringCheckbox.checked && recurringType.value === "annual" ? (document.getElementById("days-before")?.value || 0) : null,
+annualDaysAfter: recurringCheckbox.checked && recurringType.value === "annual" ? (document.getElementById("days-after")?.value || 0) : null,
 
-  };
+// RECURRENCIA LITÚRGICA
+liturgicalType: recurringCheckbox.checked && recurringType.value === "liturgical" ? liturgicalRecurringType.value || null : null,
+daysBefore: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-before")?.value || 0) : null,
+daysAfter: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-after")?.value || 0) : null,
+
+  // HUGO
+  weight: 0
+
+};
 
 
   // ========================================================

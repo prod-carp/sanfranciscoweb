@@ -126,10 +126,9 @@ if (
   highlightCheckbox.checked =
     data.highlight;
 
-  highlightDaysContainer.style.display =
-    data.highlight
-      ? "block"
-      : "none";
+  highlightCheckbox.dispatchEvent(
+    new Event("change")
+  );
 
 }
 
@@ -144,9 +143,7 @@ if (
       "highlight-days"
     );
 
-  if (
-    highlightDays
-  ) {
+  if (highlightDays) {
 
     highlightDays.value =
       String(
@@ -170,18 +167,12 @@ if (
   recurringCheckbox.checked =
     data.recurring;
 
-  // Mostrar inmediatamente el selector de tipo
-  recurringTypeContainer.style.display =
-    data.recurring
-      ? "block"
-      : "none";
+  recurringCheckbox.dispatchEvent(
+    new Event("change")
+  );
 
 }
 
-
-// ======================================================
-// RESTAURAR TIPO DE RECURRENCIA
-// ======================================================
 
 if (
   data.recurringType
@@ -189,6 +180,10 @@ if (
 
   recurringType.value =
     data.recurringType;
+
+  recurringType.dispatchEvent(
+    new Event("change")
+  );
 
 }
 
@@ -198,104 +193,25 @@ if (
 // ======================================================
 
 if (
-  data.recurring &&
-  data.recurringType === "annual"
+  data.baseMonth
 ) {
 
-  // Mostrar opciones anuales
-  annualOptions.style.display =
-    "block";
-
-  liturgicalRecurringOptions.style.display =
-    "none";
-
-
-  // ----------------------------------------------------
-  // Restaurar MES
-  // ----------------------------------------------------
-
-  if (
-    data.baseMonth
-  ) {
-
-    baseMonth.value =
-      String(
-        data.baseMonth
-      );
-
-  }
-
-
-  // ----------------------------------------------------
-  // MUY IMPORTANTE:
-  // Generar los días después de restaurar el mes
-  // ----------------------------------------------------
-
-  updateBaseDays();
-
-
-  // ----------------------------------------------------
-  // Ahora sí podemos restaurar el DÍA
-  // ----------------------------------------------------
-
-  if (
-    data.baseDay
-  ) {
-
-    baseDay.value =
-      String(
-        data.baseDay
-      );
-
-  }
-
-
-  // ----------------------------------------------------
-  // Restaurar días antes
-  // ----------------------------------------------------
-
-  const annualDaysBefore =
-    document.getElementById(
-      "days-before"
+  baseMonth.value =
+    String(
+      data.baseMonth
     );
 
-
-  if (
-    annualDaysBefore &&
-    data.annualDaysBefore !== null &&
-    data.annualDaysBefore !== undefined
-  ) {
-
-    annualDaysBefore.value =
-      String(
-        data.annualDaysBefore
-      );
-
-  }
+}
 
 
-  // ----------------------------------------------------
-  // Restaurar días después
-  // ----------------------------------------------------
+if (
+  data.baseDay
+) {
 
-  const annualDaysAfter =
-    document.getElementById(
-      "days-after"
+  baseDay.value =
+    String(
+      data.baseDay
     );
-
-
-  if (
-    annualDaysAfter &&
-    data.annualDaysAfter !== null &&
-    data.annualDaysAfter !== undefined
-  ) {
-
-    annualDaysAfter.value =
-      String(
-        data.annualDaysAfter
-      );
-
-  }
 
 }
 
@@ -305,65 +221,51 @@ if (
 // ======================================================
 
 if (
-  data.recurring &&
-  data.recurringType === "liturgical"
+  data.liturgicalType
 ) {
 
-  annualOptions.style.display =
-    "none";
+  liturgicalRecurringType.value =
+    data.liturgicalType;
 
-  liturgicalRecurringOptions.style.display =
-    "block";
-
-
-  if (
-    data.liturgicalType
-  ) {
-
-    liturgicalRecurringType.value =
-      data.liturgicalType;
-
-  }
+}
 
 
-  const liturgicalDaysBefore =
-    document.getElementById(
-      "liturgical-days-before"
+const daysBefore =
+  document.getElementById(
+    "liturgical-days-before"
+  );
+
+
+const daysAfter =
+  document.getElementById(
+    "liturgical-days-after"
+  );
+
+
+if (
+  daysBefore &&
+  data.daysBefore !== null &&
+  data.daysBefore !== undefined
+) {
+
+  daysBefore.value =
+    String(
+      data.daysBefore
     );
 
+}
 
-  const liturgicalDaysAfter =
-    document.getElementById(
-      "liturgical-days-after"
+
+if (
+  daysAfter &&
+  data.daysAfter !== null &&
+  data.daysAfter !== undefined
+) {
+
+  daysAfter.value =
+    String(
+      data.daysAfter
     );
-
-
-  if (
-    liturgicalDaysBefore &&
-    data.daysBefore !== null &&
-    data.daysBefore !== undefined
-  ) {
-
-    liturgicalDaysBefore.value =
-      String(
-        data.daysBefore
-      );
-
-  }
-
-
-  if (
-    liturgicalDaysAfter &&
-    data.daysAfter !== null &&
-    data.daysAfter !== undefined
-  ) {
-
-    liturgicalDaysAfter.value =
-      String(
-        data.daysAfter
-      );
-
-  }
 
 }
 
@@ -743,7 +645,7 @@ let croppedImageBlob = null;
 
 // Intentar restaurar el artículo inmediatamente
 // (los elementos ya están declarados arriba)
-// restaurarArticuloDesdeRevision();
+restaurarArticuloDesdeRevision();
 
 
 
@@ -1062,17 +964,6 @@ recurringType.addEventListener(
 
   }
 );
-
-// ==========================================================
-// RESTAURAR ARTÍCULO DESDE REVISIÓN
-// ==========================================================
-//
-// Todos los elementos y eventos del formulario ya están
-// preparados. Ahora sí podemos restaurar correctamente
-// el estado anterior.
-//
-
-restaurarArticuloDesdeRevision();
 
 
 // ==========================================================
@@ -2307,16 +2198,24 @@ const reviewData = {
   recurring: recurringCheckbox.checked,
   recurringType: recurringCheckbox.checked ? recurringType.value || null : null,
 
-// RECURRENCIA ANUAL
-baseMonth: recurringCheckbox.checked && recurringType.value === "annual" ? baseMonth.value || null : null,
-baseDay: recurringCheckbox.checked && recurringType.value === "annual" ? baseDay.value || null : null,
-annualDaysBefore: recurringCheckbox.checked && recurringType.value === "annual" ? (document.getElementById("days-before")?.value || 0) : null,
-annualDaysAfter: recurringCheckbox.checked && recurringType.value === "annual" ? (document.getElementById("days-after")?.value || 0) : null,
+  // RECURRENCIA ANUAL
+  baseMonth: recurringCheckbox.checked && recurringType.value === "annual"
+    ? baseMonth.value || null
+    : null,
+  baseDay: recurringCheckbox.checked && recurringType.value === "annual"
+    ? baseDay.value || null
+    : null,
 
-// RECURRENCIA LITÚRGICA
-liturgicalType: recurringCheckbox.checked && recurringType.value === "liturgical" ? liturgicalRecurringType.value || null : null,
-daysBefore: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-before")?.value || 0) : null,
-daysAfter: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-after")?.value || 0) : null,
+  // RECURRENCIA LITÚRGICA
+  liturgicalType: recurringCheckbox.checked && recurringType.value === "liturgical"
+    ? liturgicalRecurringType.value || null
+    : null,
+  daysBefore: recurringCheckbox.checked && recurringType.value === "liturgical"
+    ? (document.getElementById("liturgical-days-before")?.value || 0)
+    : null,
+  daysAfter: recurringCheckbox.checked && recurringType.value === "liturgical"
+    ? (document.getElementById("liturgical-days-after")?.value || 0)
+    : null,
 
   // HUGO
   weight: 0

@@ -1,179 +1,148 @@
-// ==========================================================
-// PÁGINA DE REVISIÓN
-// ==========================================================
+import {
+  getAuth,
+  onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
 
+import {
+  getUserRole,
+  getRoleName
+} from "../../js/permissions.js";
 
-const reviewTitle =
-  document.getElementById(
-    "review-title"
-  );
-
-
-const reviewSubtitle =
-  document.getElementById(
-    "review-subtitle"
-  );
-
-
-const reviewImage =
-  document.getElementById(
-    "review-image"
-  );
-
-
-const reviewContent =
-  document.getElementById(
-    "review-content"
-  );
-
-
-const reviewMeta =
-  document.getElementById(
-    "review-meta"
-  );
-
-
-const modifyButton =
-  document.getElementById(
-    "modify-button"
-  );
-
-
-const approveButton =
-  document.getElementById(
-    "approve-submit-button"
-  );
+import {
+  initializeApp
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
 
 
 // ==========================================================
-// RECUPERAR DATOS
-// ==========================================================
-//
-// Por ahora utilizaremos sessionStorage.
-//
-// Esto NO es todavía el sistema definitivo de borradores.
-// En la siguiente fase lo sustituiremos por Firebase.
+// FIREBASE
 // ==========================================================
 
+const firebaseConfig = {
+  apiKey: "AIzaSyDjdSGRbYmQhAFNEuvl99dIqwd_MiWJ7UU",
+  authDomain: "sanfranciscoyclara-d34c2.firebaseapp.com",
+  projectId: "sanfranciscoyclara-d34c2",
+  storageBucket: "sanfranciscoyclara-d34c2.firebasestorage.app",
+  messagingSenderId: "752378732662",
+  appId: "1:752378732662:web:7399bfb7aab75f6b2e7f57",
+  measurementId: "G-JLZCDHMBVT"
+};
 
 
-const reviewData =
-  sessionStorage.getItem(
-    "pending-review"
-  );
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+
+// ==========================================================
+// COMPROBAR AUTENTICACIÓN Y ROL
+// ==========================================================
+
+onAuthStateChanged(
+  auth,
+  (user) => {
+
+    // ------------------------------------------------------
+    // SIN SESIÓN
+    // ------------------------------------------------------
+
+    if (!user) {
+      window.location.href = "/admin/login/";
+      return;
+    }
+
+    // ------------------------------------------------------
+    // USUARIO AUTENTICADO → Mostrar página y cargar datos
+    // ------------------------------------------------------
+
+    const email = user.email || "";
+    const role = getUserRole(email);
+    const roleName = getRoleName(role);
+
+    console.log("Usuario autenticado:", email);
+    console.log("Rol:", roleName);
+
+    // ✅ Mostrar la página
+    document.getElementById("review-page").style.display = "block";
+
+    // ✅ Configurar botón según rol
+    configureReviewButton(role);
+
+    // ✅ Cargar datos de la revisión
+    loadReviewData();
+
+  }
+);
 
 
-if (!reviewData) {
+// ==========================================================
+// FUNCIÓN PARA CARGAR DATOS DE LA REVISIÓN
+// ==========================================================
 
-  alert(
-    "No hay ninguna noticia pendiente de revisión."
-  );
+function loadReviewData() {
 
-  window.location.href =
-    "/admin/editor/";
+  const reviewData = sessionStorage.getItem("pending-review");
 
-} else {
+  if (!reviewData) {
+    alert("No hay ninguna noticia pendiente de revisión.");
+    window.location.href = "/admin/editor/";
+    return;
+  }
 
   try {
-
-    const data =
-      JSON.parse(
-        reviewData
-      );
-
-    showReview(
-      data
-    );
-
+    const data = JSON.parse(reviewData);
+    showReview(data);
   } catch {
-
-    alert(
-      "No se ha podido cargar la noticia."
-    );
-
-    window.location.href =
-      "/admin/editor/";
-
+    alert("No se ha podido cargar la noticia.");
+    window.location.href = "/admin/editor/";
   }
 
 }
 
 
 // ==========================================================
+// PÁGINA DE REVISIÓN - Referencias a elementos
+// ==========================================================
+
+const reviewTitle = document.getElementById("review-title");
+const reviewSubtitle = document.getElementById("review-subtitle");
+const reviewImage = document.getElementById("review-image");
+const reviewContent = document.getElementById("review-content");
+const reviewMeta = document.getElementById("review-meta");
+const modifyButton = document.getElementById("modify-button");
+const approveButton = document.getElementById("approve-submit-button");
+
+
+// ==========================================================
 // MOSTRAR NOTICIA
 // ==========================================================
 
-function showReview(
-  data
-) {
+function showReview(data) {
 
-  reviewTitle.textContent =
-    data.title || "";
+  reviewTitle.textContent = data.title || "";
 
+  reviewSubtitle.textContent = data.subtitle || "";
 
-  reviewSubtitle.textContent =
-    data.subtitle || "";
-
-
-  // --------------------------------------------------------
   // Imagen
-  // --------------------------------------------------------
-
-  if (
-    data.image
-  ) {
-
-    reviewImage.src =
-      data.image;
-
-    reviewImage.alt =
-      data.title || "Imagen de la noticia";
-
-    reviewImage.style.display =
-      "block";
-
+  if (data.image) {
+    reviewImage.src = data.image;
+    reviewImage.alt = data.title || "Imagen de la noticia";
+    reviewImage.style.display = "block";
   }
 
-
-  // --------------------------------------------------------
   // Contenido
-  // --------------------------------------------------------
+  reviewContent.innerHTML = markdownToHtml(data.content);
 
-  reviewContent.innerHTML =
-    markdownToHtml(
-      data.content
-    );
-
-
-  // --------------------------------------------------------
   // Información
-  // --------------------------------------------------------
-
   let meta = "";
 
-
-  if (
-    data.category
-  ) {
-
-    meta +=
-      `<strong>Categoría:</strong> ${escapeHtml(data.category)}`;
-
+  if (data.category) {
+    meta += `<strong>Categoría:</strong> ${escapeHtml(data.category)}`;
   }
 
-
-  if (
-    data.publicationDate
-  ) {
-
-    meta +=
-      `<br><strong>Fecha de publicación:</strong> ${escapeHtml(data.publicationDate)}`;
-
+  if (data.publicationDate) {
+    meta += `<br><strong>Fecha de publicación:</strong> ${escapeHtml(data.publicationDate)}`;
   }
 
-
-  reviewMeta.innerHTML =
-    meta;
+  reviewMeta.innerHTML = meta;
 
 }
 
@@ -522,28 +491,41 @@ function escapeHtml(
 // MODIFICAR
 // ==========================================================
 
-modifyButton.addEventListener(
-  "click",
-  () => {
-
-    window.location.href =
-      "/admin/editor/";
-
+modifyButton.addEventListener("click", () => {
+  const reviewData = sessionStorage.getItem("pending-review");
+  if (reviewData) {
+    sessionStorage.setItem("editing-article", reviewData);
   }
-);
+  window.location.href = "/admin/editor/";
+});
 
+
+// ==========================================================
+// CONFIGURAR BOTÓN SEGÚN EL ROL
+// ==========================================================
+
+function configureReviewButton(role) {
+
+  const button = document.getElementById("approve-submit-button");
+
+  if (!button) return;
+
+  if (role === "group") {
+    button.textContent = "Enviar para aprobación →";
+    button.dataset.action = "submit";
+    return;
+  }
+
+  if (role === "preferred" || role === "admin") {
+    button.textContent = "Aprobar artículo →";
+    button.dataset.action = "approve";
+    return;
+  }
+
+}
 
 // ==========================================================
 // ENVIAR PARA APROBACIÓN
 // ==========================================================
 
-approveButton.addEventListener(
-  "click",
-  () => {
-
-    alert(
-      "El envío para aprobación lo construiremos en la siguiente fase."
-    );
-
-  }
-);
+// approveButton.addEventListener("click", () => { alert("El envío para aprobación lo construiremos en la siguiente fase."); });
