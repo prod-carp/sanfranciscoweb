@@ -14,6 +14,20 @@ import {
 
 
 // ==========================================================
+// DETECTAR MODO: ADMINISTRATIVO O COLABORADOR
+// ==========================================================
+
+const urlParams = new URLSearchParams(window.location.search);
+const articleId = urlParams.get("id");
+const administrativeReview = Boolean(articleId);
+
+console.log("Modo de revisión:", administrativeReview ? "Administrativo" : "Colaborador");
+console.log("ID del artículo:", articleId || "N/A");
+
+let currentImageObjectUrl = null;
+
+
+// ==========================================================
 // FIREBASE
 // ==========================================================
 
@@ -67,7 +81,7 @@ onAuthStateChanged(
     configureReviewButton(role);
 
     // ✅ Cargar datos de la revisión
-    loadReviewData();
+    loadReviewData(user);
 
   }
 );
@@ -77,7 +91,24 @@ onAuthStateChanged(
 // FUNCIÓN PARA CARGAR DATOS DE LA REVISIÓN
 // ==========================================================
 
-function loadReviewData() {
+async function loadReviewData(user) {
+
+  // 📌 Si hay ?id= → modo administrador → cargar desde D1
+  if (administrativeReview && articleId) {
+    await loadArticleFromD1(user, articleId);
+    return;
+  }
+
+  // 📌 Si no hay ?id= → modo colaborador → cargar desde sessionStorage
+  loadArticleFromSessionStorage();
+
+}
+
+// ==========================================================
+// CARGAR ARTÍCULO DESDE SESSION STORAGE (COLABORADOR)
+// ==========================================================
+
+function loadArticleFromSessionStorage() {
 
   const reviewData = sessionStorage.getItem("pending-review");
 
@@ -96,6 +127,204 @@ function loadReviewData() {
   }
 
 }
+
+// ==========================================================
+// CARGAR ARTÍCULO DESDE D1 (ADMINISTRADOR)
+// ==========================================================
+
+async function loadArticleFromD1(
+  user,
+  articleId
+) {
+
+  try {
+
+    // ------------------------------------------------------
+    // TOKEN FIREBASE
+    // ------------------------------------------------------
+
+    const token =
+      await user.getIdToken(
+        true
+      );
+
+
+    // ------------------------------------------------------
+    // LLAMAR AL WORKER
+    // ------------------------------------------------------
+
+    const response =
+      await fetch(
+        `https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(articleId)}`,
+        {
+
+          method:
+            "GET",
+
+          headers: {
+
+            "Authorization":
+              `Bearer ${token}`
+
+          }
+
+        }
+      );
+
+
+    // ------------------------------------------------------
+    // RESPUESTA JSON
+    // ------------------------------------------------------
+
+    let result;
+
+    try {
+
+      result =
+        await response.json();
+
+    } catch {
+
+      throw new Error(
+        "El servidor devolvió una respuesta no válida."
+      );
+
+    }
+
+
+    // ------------------------------------------------------
+    // ERROR
+    // ------------------------------------------------------
+
+    if (
+      !response.ok ||
+      !result.success
+    ) {
+
+      throw new Error(
+        result.error ||
+        "No se ha podido cargar el artículo."
+      );
+
+    }
+
+
+    // ------------------------------------------------------
+    // ARTÍCULO D1
+    // ------------------------------------------------------
+
+    const article =
+      result.article;
+
+
+    // ------------------------------------------------------
+    // CONVERTIR FORMATO D1 → FORMATO REVIEW
+    // ------------------------------------------------------
+
+let category = "";
+try {
+  const categories = JSON.parse(article.categories || "[]");
+  category = categories[0] || "";
+} catch {
+  category = article.categories || "";
+}
+
+let tags = [];
+try {
+  tags = JSON.parse(article.tags || "[]");
+} catch {
+  tags = [];
+}
+
+// CARGAR IMAGEN PRIVADA DESDE R2
+let imageUrl = "";
+if (article.image_key) {
+  const imageResponse = await fetch(`https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(article.id)}/image`, {
+    method: "GET",
+    headers: { "Authorization": `Bearer ${token}` }
+  });
+  if (imageResponse.ok) {
+    const imageBlob = await imageResponse.blob();
+    
+    // ✅ LIMPIAR URL ANTERIOR (si existe)
+    if (currentImageObjectUrl) {
+      URL.revokeObjectURL(currentImageObjectUrl);
+    }
+
+    // ✅ CREAR NUEVA URL
+    currentImageObjectUrl = URL.createObjectURL(imageBlob);
+    imageUrl = currentImageObjectUrl;
+    
+  } else {
+    console.warn("No se ha podido cargar la imagen de R2.");
+  }
+}
+
+
+const reviewData = {
+  id: article.id,
+  title: article.title,
+  subtitle: article.subtitle,
+  category,
+  tags,
+  publicationDate: article.publication_date,
+  content: article.content,
+
+  image: imageUrl,
+  imageKey: article.image_key,
+
+  highlight: Number(article.highlight) === 1,
+  highlightDays: article.highlight_days,
+
+  recurring: Boolean(article.recurrence_type),
+  recurringType: article.recurrence_type,
+
+  baseMonth: article.base_date ? article.base_date.split("/")[0] : "",
+  baseDay: article.base_date ? article.base_date.split("/")[1] : "",
+  annualDaysBefore: article.start_date,
+  annualDaysAfter: article.end_date,
+
+  liturgicalType: article.liturgical_type,
+  daysBefore: article.days_before,
+  daysAfter: article.days_after,
+
+  status: article.status,
+  authorEmail: article.author_email,
+  submittedAt: article.submitted_at
+};
+
+
+    // ------------------------------------------------------
+    // MOSTRAR
+    // ------------------------------------------------------
+
+    showReview(
+      reviewData
+    );
+
+  } catch (error) {
+
+    console.error(
+      "Error cargando artículo:",
+      error
+    );
+
+
+    alert(
+      error.message ||
+      "No se ha podido cargar el artículo."
+    );
+
+
+    window.location.href =
+      "/admin/dashboard/";
+
+  }
+
+}
+
+
+
 
 
 // ==========================================================
@@ -116,6 +345,24 @@ const approveButton = document.getElementById("approve-submit-button");
 // ==========================================================
 
 function showReview(data) {
+
+  // Guardar los datos actuales de la revisión
+
+  try {
+
+    sessionStorage.setItem(
+      "pending-review",
+      JSON.stringify(data)
+    );
+
+  } catch (error) {
+
+    console.error(
+      "No se han podido guardar los datos de revisión:",
+      error
+    );
+
+  }
 
   reviewTitle.textContent = data.title || "";
 
@@ -491,13 +738,81 @@ function escapeHtml(
 // MODIFICAR
 // ==========================================================
 
-modifyButton.addEventListener("click", () => {
-  const reviewData = sessionStorage.getItem("pending-review");
-  if (reviewData) {
-    sessionStorage.setItem("editing-article", reviewData);
+modifyButton.addEventListener(
+  "click",
+  () => {
+
+    const reviewData =
+      sessionStorage.getItem(
+        "pending-review"
+      );
+
+
+    if (!reviewData) {
+
+      alert(
+        "No se han encontrado los datos de la noticia."
+      );
+
+      return;
+
+    }
+
+
+    try {
+
+      const data =
+        JSON.parse(
+          reviewData
+        );
+
+
+      // ----------------------------------------------------
+      // Marcar si estamos modificando un artículo existente
+
+
+      if (
+        administrativeReview &&
+        data.id
+      ) {
+
+        data.editingExistingArticle =
+          true;
+
+      }
+
+
+      sessionStorage.setItem(
+        "editing-article",
+        JSON.stringify(
+          data
+        )
+      );
+
+
+      // ----------------------------------------------------
+      // Ir al editor
+
+
+      window.location.href =
+        "/admin/editor/";
+
+    } catch (error) {
+
+      console.error(
+        "Error preparando modificación:",
+        error
+      );
+
+
+      alert(
+        "No se ha podido preparar la noticia para modificarla."
+      );
+
+    }
+
   }
-  window.location.href = "/admin/editor/";
-});
+);
 
 
 // ==========================================================

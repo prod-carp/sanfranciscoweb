@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+
+  <title>
+    Panel de administración · Noticias
+  </title>
+
+  <link rel="stylesheet" href="/admin/editor/editor.css">
+
+</head>
+
+
+<body>
+
+
+  <header class="admin-header">
+
+    <h1>
+      Administración parroquial
+    </h1>
+
+
+    <div class="header-right">
+
+      <span
+        id="user-role"
+        class="user-role"
+      >
+        Cargando...
+      </span>
+
+
+      <button
+        id="logout-button"
+        class="logout-button"
+      >
+        Cerrar sesión
+      </button>
+
+    </div>
+
+
+
+  </header>
+
+
+  <main
+    id="dashboard-page"
+    class="dashboard-container"
+    style="display:none;"
+  >
+
+    <div class="dashboard-header">
+
+      <h1>
+        Panel de administración
+      </h1>
+
+      <div
+        id="user-email"
+        class="dashboard-user"
+      ></div>
+
+    </div>
+
+
+    <div class="dashboard-actions">
+
+      <a
+        href="/admin/editor/"
+        class="dashboard-button"
+      >
+        ✏️ Escribir artículo
+      </a>
+
+    </div>
+
+
+    <section
+      class="dashboard-section"
+    >
+
+      <h2>
+        Artículos pendientes de revisión
+      </h2>
+
+
+      <div
+        id="articles-list"
+      >
+
+        <div class="empty-message">
+          Cargando artículos...
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script type="module" src="/admin/js/admin-dashboard.js"></script>
+
+</body>
+
+</html>

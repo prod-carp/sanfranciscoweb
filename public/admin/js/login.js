@@ -66,7 +66,7 @@ loginForm.addEventListener("submit", async (event) => {
       password
     );
 
-    window.location.href = "/admin/editor/";
+    window.location.href = "/admin/dashboard/";
 
   } catch (error) {
 

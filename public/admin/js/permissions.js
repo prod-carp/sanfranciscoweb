@@ -17,17 +17,17 @@
 const ADMIN_PREFIXES = [
   "admin@",
   "admin-",
-  "pepe"
+  "blog@"
 ];
 
 const PREFERRED_PREFIXES = [
   "parroco@",
-  "parroco-"
+  "parroco"
 ];
 
 const GROUP_PREFIXES = [
   "grupo-",
-  "blog@"
+  "colaborador"
 ];
 
 
@@ -121,9 +121,9 @@ const PERMISSIONS = {
 
     categories: GROUP_CATEGORIES,
 
-    canHighlight: false,
+    canHighlight: true,
 
-    canRecurring: false
+    canRecurring: true
 
   }
 
