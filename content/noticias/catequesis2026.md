@@ -1,7 +1,7 @@
 +++
 title = 'Catequesis de Primera Comunión: ¡abrimos el plazo de inscripción!'
 subtitle = 'Cómo inscribir a tu hijo en la Catequesis de Primera Comunión. Comienza junto a él un bonito camino de fe y encuentro con Jesús.'
-date = '2026-06-27T12:29:54+02:00'
+date = '2026-08-27T12:29:54+02:00'
 draft = false
 categorias = ["Parroquia"]
 tags = ["importante"]
