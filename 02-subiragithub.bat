@@ -6,6 +6,46 @@ color 0A
 REM ============================================================
 REM    SCRIPT DE SUBIDA A GITHUB CON VERIFICACIONES DE SEGURIDAD
 REM ============================================================
+echo.
+echo ========================================
+echo    Comprobando conexion con GitHub...
+echo ========================================
+echo.
+
+set "FALLOS=0"
+
+for /L %%i in (1,1,8) do (
+    echo Comprobacion %%i/8...
+
+    curl.exe -s --connect-timeout 5 --max-time 10 -I https://github.com >nul 2>&1
+
+    if errorlevel 1 (
+        echo    ERROR
+        set /a FALLOS+=1
+    ) else (
+        echo    OK
+    )
+)
+
+echo.
+
+if %FALLOS% NEQ 0 (
+    echo.
+    echo ========================================
+    echo    GITHUB NO ESTA DISPONIBLE
+    echo ========================================
+    echo.
+    echo No se ha podido conectar con GitHub.
+    echo Intentalo de nuevo mas tarde.
+    echo.
+    pause
+    exit /b 1
+)
+
+echo GitHub esta disponible.
+echo.
+CLS
+
 
 REM ============================================================
 REM PASO 1: LIMPIEZA INICIAL
