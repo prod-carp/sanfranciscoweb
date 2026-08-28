@@ -1,0 +1,128 @@
+{{/* ==========================================================
+   GENERAR JSON DE LA NOTICIA DESTACADA
+
+   Misma lógica utilizada actualmente en list.html:
+
+   1. Obtener las noticias de la sección "noticias".
+   2. Calcular su fecha efectiva mediante fecha-recurrente.html.
+   3. Quedarse solamente con las noticias activas.
+   4. Filtrar las que tienen la etiqueta "importante".
+   5. Si tienen diasDestacado, comprobar si siguen activas
+      como destacadas.
+   6. Ordenar por fecha efectiva, de más reciente a antigua.
+   7. Seleccionar solamente una.
+========================================================== */}}
+
+
+{{/* ==========================================================
+   TODAS LAS NOTICIAS DE LA SECCIÓN
+========================================================== */}}
+
+{{- $pages := where site.RegularPages "Section" "noticias" -}}
+
+
+{{/* ==========================================================
+   NOTICIAS ACTIVAS CON FECHA EFECTIVA
+========================================================== */}}
+
+{{- $activePages := slice -}}
+
+{{- range $pages -}}
+
+    {{- $resultado := partial "fecha-recurrente.html" . -}}
+
+    {{- if $resultado.activa -}}
+
+        {{- $activePages = $activePages | append (dict
+            "page" .
+            "fecha" $resultado.fecha
+        ) -}}
+
+    {{- end -}}
+
+{{- end -}}
+
+
+{{/* ==========================================================
+   SELECCIONAR CANDIDATAS A DESTACADA
+========================================================== */}}
+
+{{- $importantPosts := slice -}}
+
+{{- range $activePages -}}
+
+    {{- $esImportante := in .page.Params.tags "importante" -}}
+
+    {{- if $esImportante -}}
+
+        {{/* Por defecto, una noticia importante es permanente */}}
+
+        {{- $puedeSerDestacada := true -}}
+
+
+        {{/* ==================================================
+           Si tiene diasDestacado, comprobar si sigue dentro
+           del periodo de destacada.
+        ================================================== */}}
+
+        {{- if .page.Params.diasDestacado -}}
+
+            {{- $diasDestacado := int .page.Params.diasDestacado -}}
+
+            {{- $fechaFinDestacado := .fecha.AddDate 0 0 $diasDestacado -}}
+
+            {{- if gt now $fechaFinDestacado -}}
+
+                {{- $puedeSerDestacada = false -}}
+
+            {{- end -}}
+
+        {{- end -}}
+
+
+        {{/* Añadir solamente las que pueden ser destacadas */}}
+
+        {{- if $puedeSerDestacada -}}
+
+            {{- $importantPosts = $importantPosts | append . -}}
+
+        {{- end -}}
+
+    {{- end -}}
+
+{{- end -}}
+
+
+{{/* ==========================================================
+   ORDENAR POR FECHA EFECTIVA
+========================================================== */}}
+
+{{- $importantPosts = sort $importantPosts "fecha" "desc" -}}
+
+
+{{/* ==========================================================
+   SOLO UNA NOTICIA DESTACADA
+========================================================== */}}
+
+{{- $main := first 1 $importantPosts -}}
+
+
+{{/* ==========================================================
+   GENERAR JSON
+========================================================== */}}
+
+[
+{{- range $i, $post := $main -}}
+
+  {{- if gt $i 0 }},{{ end -}}
+
+  {
+    "title": {{ $post.page.Title | jsonify }},
+    "subtitle": {{ $post.page.Params.subtitle | jsonify }},
+    "date": {{ $post.fecha.Format "2006-01-02" | jsonify }},
+    "image": {{ printf "https://sanfranciscoysantaclara.es%s" $post.page.Params.image | jsonify }},
+    "url": {{ $post.page.RelPermalink | jsonify }}
+  }
+
+{{- end -}}
+]

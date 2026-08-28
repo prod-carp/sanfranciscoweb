@@ -1,0 +1,113 @@
+{{/* ==========================================================
+   JSON DE NOTICIA DESTACADA
+
+   Utiliza exactamente la misma lógica de list.html:
+   - fecha-recurrente.html
+   - fecha efectiva
+   - noticias activas
+   - tag "importante"
+   - diasDestacado
+   - orden por fecha efectiva
+   - una sola noticia
+========================================================== */}}
+
+
+{{/* ==========================================================
+   TODAS LAS NOTICIAS
+========================================================== */}}
+
+{{- $pages := where site.RegularPages "Section" "noticias" -}}
+
+
+{{/* ==========================================================
+   NOTICIAS ACTIVAS + FECHA EFECTIVA
+========================================================== */}}
+
+{{- $activePages := slice -}}
+
+{{- range $pages -}}
+
+    {{- $resultado := partial "fecha-recurrente.html" . -}}
+
+    {{- if $resultado.activa -}}
+
+        {{- $activePages = $activePages | append (dict
+            "page" .
+            "fecha" $resultado.fecha
+        ) -}}
+
+    {{- end -}}
+
+{{- end -}}
+
+
+{{/* ==========================================================
+   BUSCAR NOTICIAS IMPORTANTES
+========================================================== */}}
+
+{{- $importantPosts := slice -}}
+
+{{- range $activePages -}}
+
+    {{- $esImportante := in .page.Params.tags "importante" -}}
+
+    {{- if $esImportante -}}
+
+        {{- $puedeSerDestacada := true -}}
+
+        {{/* Comprobar diasDestacado */}}
+
+        {{- if .page.Params.diasDestacado -}}
+
+            {{- $diasDestacado := int .page.Params.diasDestacado -}}
+
+            {{- $fechaFinDestacado := .fecha.AddDate 0 0 $diasDestacado -}}
+
+            {{- if gt now $fechaFinDestacado -}}
+                {{- $puedeSerDestacada = false -}}
+            {{- end -}}
+
+        {{- end -}}
+
+        {{- if $puedeSerDestacada -}}
+            {{- $importantPosts = $importantPosts | append . -}}
+        {{- end -}}
+
+    {{- end -}}
+
+{{- end -}}
+
+
+{{/* ==========================================================
+   ORDENAR POR FECHA EFECTIVA
+========================================================== */}}
+
+{{- $importantPosts = sort $importantPosts "fecha" "desc" -}}
+
+
+{{/* ==========================================================
+   SELECCIONAR SOLO UNA
+========================================================== */}}
+
+{{- $main := first 1 $importantPosts -}}
+
+
+{{/* ==========================================================
+   GENERAR JSON
+========================================================== */}}
+
+[
+{{- range $i, $post := $main -}}
+
+  {{- if gt $i 0 }},{{ end -}}
+
+  {
+    "title": {{ $post.page.Title | jsonify }},
+    "subtitle": {{ $post.page.Params.subtitle | jsonify }},
+    "date": {{ $post.fecha.Format "2006-01-02" | jsonify }},
+    "image": {{ printf "https://sanfranciscoysantaclara.es%s" $post.page.Params.image | jsonify }},
+    "url": {{ $post.page.RelPermalink | jsonify }}
+  }
+
+{{- end -}}
+]

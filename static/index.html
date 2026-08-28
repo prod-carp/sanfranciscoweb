@@ -257,24 +257,196 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="info3 cid-vn74KQ4mab" id="info3-8u">
-
+<section data-bs-version="5.1" class="content6 cid-vtAJ5eXZ9o" id="content6-al">
     
-
-    
-    <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(0, 0, 0);">
-    </div>
-
     <div class="container">
         <div class="row justify-content-center">
-            <div class="card col-12 col-lg-10">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                        <h2 class="card-title mbr-fonts-style align-center mb-4 display-1"><strong>Inscripciones Primera Comunión</strong></h2>
-                        <p class="mbr-text mbr-fonts-style mb-4 display-7">Abierto el plazo para niños nacidos en 2019 que cursen 2.º de Primaria en 2026-2027. Comienza con tu hijo un bonito camino de fe y encuentro con Jesús.<br></p>
-                        <div class="mbr-section-btn mt-3"><a class="btn btn-warning display-4" href="https://sanfranciscoysantaclara.es/noticias/catequesis2026/">Saber más sobre la Catequesis de Primera Comunión</a></div>
-                    </div>
-                </div>
+            <div class="col-md-12 col-lg-9">
+                <hr class="line">
+                <p class="mbr-text align-center mbr-fonts-style my-4 display-5">
+<style>
+
+  .featured-news-banner {
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .featured-news-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.55) 50%,
+      rgba(0, 0, 0, 0.10) 100%
+    );
+  }
+
+  .featured-news-content {
+    max-width: 750px;
+    padding: 3rem;
+    color: white;
+  }
+
+  .featured-news-label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .featured-news-title {
+    margin: 0 0 1rem;
+    font-size: 2.7rem;
+    line-height: 1.15;
+    color: white;
+  }
+
+  .featured-news-subtitle {
+    margin: 0 0 1.8rem;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: white;
+  }
+
+  .featured-news-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    background: white;
+    color: #1e293b;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+  }
+
+  .featured-news-button:hover {
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 600px) {
+
+    .featured-news-banner {
+      min-height: 480px;
+    }
+
+    .featured-news-overlay {
+      align-items: flex-end;
+
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.15) 0%,
+        rgba(0, 0, 0, 0.75) 60%,
+        rgba(0, 0, 0, 0.92) 100%
+      );
+    }
+
+    .featured-news-content {
+      padding: 2rem 1.5rem;
+    }
+
+    .featured-news-title {
+      font-size: 2rem;
+    }
+
+    .featured-news-subtitle {
+      font-size: 1rem;
+    }
+
+  }
+
+</style>
+
+<div id="featuredNews">
+  <div class="loading">Cargando noticia destacada...</div>
+</div>
+
+<script>
+(function() {
+
+  const container = document.getElementById('featuredNews');
+
+  fetch('/datos/destacada.json')
+    .then(response => {
+
+      if (!response.ok) {
+        throw new Error(`Error HTTP: ${response.status}`);
+      }
+
+      return response.json();
+
+    })
+    .then(data => {
+
+      if (!Array.isArray(data) || data.length === 0) {
+        container.innerHTML = '';
+        return;
+      }
+
+      const item = data[0];
+
+      const banner = document.createElement('article');
+      banner.className = 'featured-news-banner';
+
+      banner.style.backgroundImage =
+        `url("${item.image}")`;
+
+      const overlay = document.createElement('div');
+      overlay.className = 'featured-news-overlay';
+
+      const content = document.createElement('div');
+      content.className = 'featured-news-content';
+
+      const label = document.createElement('div');
+      label.className = 'featured-news-label';
+      label.textContent = 'Información destacada';
+
+      const title = document.createElement('h2');
+      title.className = 'featured-news-title';
+      title.textContent = item.title;
+
+      const subtitle = document.createElement('p');
+      subtitle.className = 'featured-news-subtitle';
+      subtitle.textContent = item.subtitle || '';
+
+      const button = document.createElement('a');
+      button.className = 'featured-news-button';
+      button.href = item.url;
+      button.textContent = 'VER TODA LA INFORMACIÓN';
+
+      content.appendChild(label);
+      content.appendChild(title);
+      content.appendChild(subtitle);
+      content.appendChild(button);
+
+      overlay.appendChild(content);
+      banner.appendChild(overlay);
+
+      container.innerHTML = '';
+      container.appendChild(banner);
+
+    })
+    .catch(error => {
+
+      console.error('Error al cargar noticia destacada:', error);
+      container.innerHTML = '';
+
+    });
+
+})();
+</script>
+</p>
+                <hr class="line">
             </div>
         </div>
     </div>

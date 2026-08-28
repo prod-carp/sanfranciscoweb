@@ -16,5 +16,10 @@ buildFuture = false
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
+[outputFormats.destacada]
+  mediaType = "application/json"
+  baseName = "destacada"
+  isPlainText = true
+
 
 

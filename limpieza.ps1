@@ -198,6 +198,8 @@ Write-Host ""
 
 Write-Host "Ejecutando noticias..."
 & "$PSScriptRoot\noticias.ps1"
+Write-Host "Ejecutando destacado..."
+& "$PSScriptRoot\destacado.ps1"
 
 # Read-Host "Presiona Enter para salir"
 Clear-Host
