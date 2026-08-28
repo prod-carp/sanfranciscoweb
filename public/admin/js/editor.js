@@ -2350,13 +2350,13 @@ const reviewData = {
 // RECURRENCIA ANUAL
 baseMonth: recurringCheckbox.checked && recurringType.value === "annual" ? baseMonth.value || null : null,
 baseDay: recurringCheckbox.checked && recurringType.value === "annual" ? baseDay.value || null : null,
-annualDaysBefore: recurringCheckbox.checked && recurringType.value === "annual" ? (document.getElementById("days-before")?.value || 0) : null,
-annualDaysAfter: recurringCheckbox.checked && recurringType.value === "annual" ? (document.getElementById("days-after")?.value || 0) : null,
+annualDaysBefore: recurringCheckbox.checked && recurringType.value === "annual" ? parseInt(document.getElementById("days-before")?.value || "0", 10) : null,
+annualDaysAfter: recurringCheckbox.checked && recurringType.value === "annual" ? parseInt(document.getElementById("days-after")?.value || "0", 10) : null,
 
-// RECURRENCIA LITÚRGICA
-liturgicalType: recurringCheckbox.checked && recurringType.value === "liturgical" ? liturgicalRecurringType.value || null : null,
-daysBefore: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-before")?.value || 0) : null,
-daysAfter: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-after")?.value || 0) : null,
+  // RECURRENCIA LITÚRGICA
+  liturgicalType: recurringCheckbox.checked && recurringType.value === "liturgical" ? liturgicalRecurringType.value || null : null,
+  daysBefore: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-before")?.value || 0) : null,
+  daysAfter: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-after")?.value || 0) : null,
 
   // HUGO
   weight: 0

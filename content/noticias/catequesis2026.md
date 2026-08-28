@@ -4,7 +4,8 @@ subtitle = 'Cómo inscribir a tu hijo en la Catequesis de Primera Comunión. Com
 date = '2026-06-27T12:29:54+02:00'
 draft = false
 categorias = ["Parroquia"]
-tags = []
+tags = ["importante"]
+diasDestacado = 6
 weight = 0
 image = "/assets/images/blog/catequesis2026.webp"
 +++
