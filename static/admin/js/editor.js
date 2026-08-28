@@ -2322,7 +2322,33 @@ if (contentText.length > 10000) return alert("El contenido supera el máximo per
   // PREPARAR DATOS PARA LA REVISIÓN
   // ========================================================
 
+const editingArticleData =
+  JSON.parse(
+    sessionStorage.getItem(
+      "editing-article"
+    ) || "{}"
+  );
+
+const editingArticleId =
+  editingArticleData.id || null;
+
+const editingImageKey =
+  editingArticleData.imageKey || null;
+
 const reviewData = {
+
+  // IDENTIDAD DEL ARTÍCULO
+  id:
+    editingArticleId,
+
+  editingExistingArticle:
+    Boolean(
+      editingArticleId
+    ),
+
+  imageKey:
+    editingImageKey,
+
 
   // DATOS BÁSICOS
   title: title,
@@ -2379,6 +2405,21 @@ sessionStorage.setItem(
   JSON.stringify(
     reviewData
   )
+);
+
+console.log(
+  "🔎 ID conservado:",
+  reviewData.id
+);
+
+console.log(
+  "🔎 Imagen R2 conservada:",
+  reviewData.imageKey
+);
+
+console.log(
+  "🔎 Es modificación:",
+  reviewData.editingExistingArticle
 );
 
 // TEMPORAL PRUEBA

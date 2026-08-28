@@ -848,38 +848,21 @@ approveButton.addEventListener(
   async () => {
 
     const action =
-      approveButton.dataset.action;
+  approveButton.dataset.action;
 
 
-    // ======================================================
-    // FASE 1
-    // ======================================================
-    //
-    // En esta fase solo implementamos:
-    //
-    // COLABORADOR
-    //     ↓
-    // ENVIAR PARA APROBACIÓN
-    //     ↓
-    // WORKER
-    //     ↓
-    // D1 + R2
-    //
-    // La aprobación del Administrador/Preferente
-    // la construiremos después.
-    // ======================================================
+if (
+  action !== "submit" &&
+  action !== "approve"
+) {
 
-    if (
-      action !== "submit"
-    ) {
+  alert(
+    "No se ha podido determinar la acción."
+  );
 
-      alert(
-        "La aprobación de artículos se implementará en la siguiente fase."
-      );
+  return;
 
-      return;
-
-    }
+}
 
 
     // ------------------------------------------------------
@@ -922,6 +905,233 @@ approveButton.addEventListener(
 
     }
 
+// ======================================================
+// ADMINISTRADOR / PREFERENTE → APROBAR
+// ======================================================
+
+if (
+  action === "approve"
+) {
+
+  const confirmed =
+    window.confirm(
+      "¿Quieres aprobar este artículo?\n\nEl artículo quedará marcado como APROBADO y estará preparado para su publicación."
+    );
+
+
+  if (!confirmed) {
+
+    return;
+
+  }
+
+
+  approveButton.disabled =
+    true;
+
+  approveButton.textContent =
+    "Aprobando…";
+
+
+  try {
+
+    const user =
+      auth.currentUser;
+
+
+    if (!user) {
+
+      throw new Error(
+        "Tu sesión ha caducado. Vuelve a iniciar sesión."
+      );
+
+    }
+
+
+    const idToken =
+      await user.getIdToken(
+        true
+      );
+
+
+    if (
+      !reviewData.id
+    ) {
+
+      throw new Error(
+        "No se ha encontrado el ID del artículo."
+      );
+
+    }
+
+// -----------------------------------------------
+// ACTUALIZAR DATOS DEL ARTÍCULO
+// -----------------------------------------------
+
+const updateResponse =
+  await fetch(
+    `https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(reviewData.id)}`,
+    {
+
+      method:
+        "PUT",
+
+      headers: {
+
+        "Content-Type":
+          "application/json",
+
+        "Authorization":
+          `Bearer ${idToken}`
+
+      },
+
+      body:
+        JSON.stringify(
+          reviewData
+        )
+
+    }
+  );
+
+
+let updateResult;
+
+try {
+
+  updateResult =
+    await updateResponse.json();
+
+} catch {
+
+  throw new Error(
+    "El servidor devolvió una respuesta no válida al actualizar."
+  );
+
+}
+
+
+if (
+  !updateResponse.ok ||
+  !updateResult.success
+) {
+
+  throw new Error(
+    updateResult.error ||
+    "No se han podido guardar los cambios."
+  );
+
+}
+
+
+console.log(
+  "✅ Artículo actualizado antes de aprobar."
+);
+
+// FIN BLOQUE ACTUALIZAR DATOS DEL ARTÍCULO
+
+    const response =
+      await fetch(
+        `https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(reviewData.id)}/approve`,
+        {
+
+          method:
+            "POST",
+
+          headers: {
+
+            "Authorization":
+              `Bearer ${idToken}`
+
+          }
+
+        }
+      );
+
+
+    let result;
+
+    try {
+
+      result =
+        await response.json();
+
+    } catch {
+
+      throw new Error(
+        "El servidor devolvió una respuesta no válida."
+      );
+
+    }
+
+
+    if (
+      !response.ok ||
+      !result.success
+    ) {
+
+      throw new Error(
+        result.error ||
+        "No se ha podido aprobar el artículo."
+      );
+
+    }
+
+
+    // -----------------------------------------------
+    // LIMPIAR DATOS TEMPORALES
+    // -----------------------------------------------
+
+    sessionStorage.removeItem(
+      "pending-review"
+    );
+
+    sessionStorage.removeItem(
+      "editing-article"
+    );
+
+
+    alert(
+      "✓ Artículo aprobado correctamente."
+    );
+
+
+    // -----------------------------------------------
+    // VOLVER AL DASHBOARD
+    // -----------------------------------------------
+
+    window.location.href =
+      "/admin/dashboard/";
+
+
+    return;
+
+  } catch (error) {
+
+    console.error(
+      "Error aprobando artículo:",
+      error
+    );
+
+
+    alert(
+      error.message ||
+      "No se ha podido aprobar el artículo."
+    );
+
+
+    approveButton.disabled =
+      false;
+
+    approveButton.textContent =
+      "Aprobar artículo →";
+
+
+    return;
+
+  }
+
+}
 
     // ------------------------------------------------------
     // Confirmación
@@ -1098,3 +1308,78 @@ approveButton.addEventListener(
 
   }
 );
+// ==========================================================
+// PRUEBA TEMPORAL - GENERAR MARKDOWN DESDE WORKER
+// ==========================================================
+
+window.probarMarkdownWorker = async function(articleId) {
+
+  try {
+
+    const user = auth.currentUser;
+
+    if (!user) {
+      throw new Error(
+        "No hay ningún usuario autenticado."
+      );
+    }
+
+    const idToken =
+      await user.getIdToken(true);
+
+    const response =
+      await fetch(
+        `https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(articleId)}/markdown`,
+        {
+          method: "GET",
+
+          headers: {
+            "Authorization":
+              `Bearer ${idToken}`
+          }
+        }
+      );
+
+    const result =
+      await response.json();
+
+    console.log(
+      "Respuesta del Worker:",
+      result
+    );
+
+    if (!response.ok) {
+
+      throw new Error(
+        result.error ||
+        "El Worker devolvió un error."
+      );
+
+    }
+
+    console.log(
+      "========== MARKDOWN HUGO =========="
+    );
+
+    console.log(
+      result.markdown
+    );
+
+    console.log(
+      "==================================="
+    );
+
+    return result;
+
+  } catch (error) {
+
+    console.error(
+      "Error en prueba Markdown:",
+      error
+    );
+
+    throw error;
+
+  }
+
+};

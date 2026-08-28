@@ -42,10 +42,48 @@ const auth = getAuth(app);
 
 
 // ==========================================================
+// OBTENER ID DEL ARTÍCULO QUE ESTAMOS MODIFICANDO
+// ==========================================================
+
+function getEditingArticleId() {
+  try {
+    const data = JSON.parse(sessionStorage.getItem("editing-article") || "{}");
+    return data.id || null;
+  } catch (error) {
+    console.warn("No se pudo obtener el ID del artículo:", error);
+    return null;
+  }
+}
+
+// CARGAR IMAGEN EXISTENTE DESDE R2
+async function cargarImagenExistenteDesdeR2(user, imageKey) {
+  const articleId = getEditingArticleId();
+  if (!user || !imageKey || !articleId) {
+    console.warn("Faltan datos para cargar la imagen de R2.");
+    return null;
+  }
+  try {
+    const token = await user.getIdToken(true);
+    const response = await fetch(`https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(articleId)}/image`, {
+      method: "GET",
+      headers: { "Authorization": `Bearer ${token}` }
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const blob = await response.blob();
+    console.log("✅ Imagen obtenida desde R2:", blob.size, "bytes");
+    return blob;
+  } catch (error) {
+    console.error("❌ Error cargando imagen desde R2:", error);
+    return null;
+  }
+}
+
+
+// ==========================================================
 // RESTAURAR ARTÍCULO DESDE REVISIÓN
 // ==========================================================
 
-function restaurarArticuloDesdeRevision() {
+async function restaurarArticuloDesdeRevision(user) {
   
   // Buscar primero en editing-article (para cuando venimos de modificar)
   let datosGuardados = sessionStorage.getItem("editing-article");
@@ -406,45 +444,57 @@ if (
       console.log("✅ Contenido restaurado, longitud:", data.content.length);
     }
     
-    // ======================================================
-    // RESTAURAR IMAGEN
-    // ======================================================
-    
-    if (data.image) {
-      
-      console.log("🖼️ Restaurando imagen...");
-      
+// ======================================================
+// RESTAURAR IMAGEN
+// ======================================================
+
+if (data.editingExistingArticle && data.imageKey) {
+  // ARTÍCULO EXISTENTE: Cargar imagen directamente desde R2
+  console.log("🖼️ Cargando imagen existente desde R2...");
+  
+  if (user) {
+    const existingImageBlob = await cargarImagenExistenteDesdeR2(user, data.imageKey);
+    if (existingImageBlob) {
+      croppedImageBlob = existingImageBlob;
+      const imageUrl = URL.createObjectURL(existingImageBlob);
       const previewImage = document.getElementById("preview-image");
       const imagePreview = document.getElementById("image-preview");
-      
-      if (previewImage && imagePreview) {
-        previewImage.src = data.image;
-        imagePreview.style.display = "block";
-        console.log("✅ Imagen mostrada en vista previa");
+      if (previewImage) previewImage.src = imageUrl;
+      if (imagePreview) imagePreview.style.display = "block";
+      const cropResultMessage = document.getElementById("crop-result-message");
+      if (cropResultMessage) {
+        cropResultMessage.textContent = "✓ Imagen actual restaurada desde R2.";
+        cropResultMessage.style.display = "block";
+        cropResultMessage.style.color = "#2a5";
       }
-      
-      convertirDataURLToBlob(data.image).then(blob => {
-        if (blob) {
-          croppedImageBlob = blob;
-          console.log("✅ Imagen preparada para envío, tamaño:", blob.size);
-          
-          const cropResultMessage = document.getElementById("crop-result-message");
-          if (cropResultMessage) {
-            cropResultMessage.textContent = "✓ Imagen restaurada desde revisión.";
-            cropResultMessage.style.display = "block";
-            cropResultMessage.style.color = "#2a5";
-          }
-          
-          const cropApply = document.getElementById("crop-apply");
-          if (cropApply) {
-            cropApply.textContent = "✓ Recorte aplicado";
-          }
-        }
-      }).catch(err => {
-        console.warn("⚠️ No se pudo restaurar la imagen como blob:", err);
-      });
-      
+      const cropApply = document.getElementById("crop-apply");
+      if (cropApply) cropApply.textContent = "✓ Imagen actual";
+      console.log("✅ Imagen existente preparada para envío.");
+    } else {
+      console.warn("⚠️ No se pudo recuperar la imagen desde R2.");
     }
+  } else {
+    console.warn("⚠️ No hay usuario autenticado para recuperar la imagen.");
+  }
+} else if (data.image) {
+  // ARTÍCULO NORMAL: La imagen viene como Data URL
+  console.log("🖼️ Restaurando imagen desde Data URL...");
+  const previewImage = document.getElementById("preview-image");
+  const imagePreview = document.getElementById("image-preview");
+  if (previewImage && imagePreview) {
+    previewImage.src = data.image;
+    imagePreview.style.display = "block";
+  }
+  try {
+    const blob = await convertirDataURLToBlob(data.image);
+    if (blob) {
+      croppedImageBlob = blob;
+      console.log("✅ Imagen preparada para envío:", blob.size, "bytes");
+    }
+  } catch (error) {
+    console.warn("⚠️ No se pudo restaurar la imagen como Blob:", error);
+  }
+}
     
     // ======================================================
     // MOSTRAR MENSAJE DE RESTAURACIÓN
@@ -737,37 +787,27 @@ let cropInitialScale = 1;
 let croppedImageBlob = null;
 
 
-// ==========================================================
-// RESTAURAR ARTÍCULO AL CARGAR (EJECUCIÓN TEMPRANA)
-// ==========================================================
-
-// Intentar restaurar el artículo inmediatamente
-// (los elementos ya están declarados arriba)
-// restaurarArticuloDesdeRevision();
-
-
 
 // ==========================================================
 // AUTENTICACIÓN
 // ==========================================================
 
-onAuthStateChanged(auth, (user) => {
+onAuthStateChanged(auth, async (user) => {
 
   if (!user) {
-
     window.location.replace("/admin/login/");
-
     return;
-
   }
 
-
   const email = user.email || "";
-
   const role = getUserRole(email);
+  const permissions = getPermissionsForRole(role);
 
-  const permissions =
-    getPermissionsForRole(role);
+  // ======================================================
+  // RESTAURAR ARTÍCULO DESDE REVISIÓN (AHORA CON USER)
+  // ======================================================
+
+  await restaurarArticuloDesdeRevision(user);
 
 
   // --------------------------------------------------------
@@ -2310,13 +2350,13 @@ const reviewData = {
 // RECURRENCIA ANUAL
 baseMonth: recurringCheckbox.checked && recurringType.value === "annual" ? baseMonth.value || null : null,
 baseDay: recurringCheckbox.checked && recurringType.value === "annual" ? baseDay.value || null : null,
-annualDaysBefore: recurringCheckbox.checked && recurringType.value === "annual" ? (document.getElementById("days-before")?.value || 0) : null,
-annualDaysAfter: recurringCheckbox.checked && recurringType.value === "annual" ? (document.getElementById("days-after")?.value || 0) : null,
+annualDaysBefore: recurringCheckbox.checked && recurringType.value === "annual" ? parseInt(document.getElementById("days-before")?.value || "0", 10) : null,
+annualDaysAfter: recurringCheckbox.checked && recurringType.value === "annual" ? parseInt(document.getElementById("days-after")?.value || "0", 10) : null,
 
-// RECURRENCIA LITÚRGICA
-liturgicalType: recurringCheckbox.checked && recurringType.value === "liturgical" ? liturgicalRecurringType.value || null : null,
-daysBefore: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-before")?.value || 0) : null,
-daysAfter: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-after")?.value || 0) : null,
+  // RECURRENCIA LITÚRGICA
+  liturgicalType: recurringCheckbox.checked && recurringType.value === "liturgical" ? liturgicalRecurringType.value || null : null,
+  daysBefore: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-before")?.value || 0) : null,
+  daysAfter: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-after")?.value || 0) : null,
 
   // HUGO
   weight: 0
@@ -2430,6 +2470,8 @@ function convertirDataURLToBlob(dataURL) {
   });
   
 }
+
+
 
 
 // ==========================================================
