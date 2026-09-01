@@ -1,7 +1,7 @@
 ﻿+++
-title = '15 de agosto: La Asunción de la Virgen María: una mirada al cielo'
-subtitle = 'Significado, historia y esperanza de una solemnidad que nos mira desde el cielo.'
-date = '2025-07-10T16:44:08+02:00'
+title = 'La Asunción de la Bienaventurada Virgen María'
+subtitle = 'Descubre qué celebra la Iglesia en la Asunción de María, qué enseña sobre su destino eterno y por qué esta solemnidad es importante para los cristianos.'
+date = '2027-08-15T16:44:08+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -13,13 +13,9 @@ fechaInicio = 1
 fechaFin = 90
 +++
 
-*Descubre qué celebra la Iglesia el 15 de agosto, por qué la Asunción es un dogma de fe y qué mensaje de esperanza nos deja para nuestra vida cotidiana.*
-
 Cada **15 de agosto**, la Iglesia católica levanta su mirada al cielo para celebrar la **Asunción de la Virgen María**. No es solo una fiesta más en el calendario. Es la certeza de que Dios no abandona a quienes confían en Él. Es el anuncio gozoso de que María, nuestra Madre, está ya en la gloria, **en cuerpo y alma**, junto a su Hijo.
 
 Y eso no es un detalle menor: significa que nuestra vida, nuestro cuerpo, nuestro caminar diario, tiene un destino eterno. La Asunción nos dice que **la muerte no tiene la última palabra**.
-
----
 
 ## ¿Qué significa la Asunción?
 
@@ -32,8 +28,6 @@ Es importante entender una diferencia clave:
 
 Y esto no la aleja de nosotros. Al contrario: desde el cielo, María intercede por sus hijos y nos acompaña en el camino.
 
----
-
 ## ¿Por qué la Iglesia cree en la Asunción?
 
 Aunque no está narrada directamente en la Biblia, la Asunción tiene **fundamentos sólidos** en la fe de la Iglesia. No es un invento ni una leyenda. Es la conclusión lógica de todo lo que Dios hizo en María.
@@ -42,43 +36,37 @@ Piensa: María fue elegida para ser la Madre de Jesús, el Hijo de Dios. Desde e
 
 Si María estuvo tan profundamente unida a Cristo, ¿cómo podría la muerte tener poder sobre ella? **El pecado introdujo la muerte en el mundo, y María, libre de pecado, no estaba sujeta a esa ley.** Por eso, la Iglesia contempla su Asunción como la coronación de una vida de entrega total a Dios.
 
----
-
 ## María, Madre de Jesús y Madre nuestra
 
 El fundamento de todo lo que María es, está en su relación con Jesús. No es una figura aislada. Es la criatura humana que más cerca ha estado de Dios.
 
 El ángel Gabriel le dijo:
 
-> *«Concebirás en tu vientre y darás a luz un hijo, y le pondrás por nombre Jesús»* (Lc 1,31).
+*«Concebirás en tu vientre y darás a luz un hijo, y le pondrás por nombre Jesús»* (Lc 1,31).
 
 Y ella, con humildad y confianza, respondió:
 
-> *«He aquí la esclava del Señor; hágase en mí según tu palabra»* (Lc 1,38).
+*«He aquí la esclava del Señor; hágase en mí según tu palabra»* (Lc 1,38).
 
 Ese «sí» cambió la historia. Porque María no solo dio a luz a Jesús, sino que lo acompañó toda su vida, incluso en los momentos más duros. En las bodas de Caná, fue ella quien pidió el primer milagro y dijo a los sirvientes:
 
-> *«Haced lo que él os diga»* (Jn 2,5).
+*«Haced lo que él os diga»* (Jn 2,5).
 
 Esas palabras resumen su misión: **siempre señala a Jesús, siempre nos acerca a Él.**
-
----
 
 ## María junto a la cruz
 
 Si hay un momento que muestra la fidelidad de María, es el Calvario. Mientras muchos huían, ella permaneció.
 
-> *«Junto a la cruz de Jesús estaban su madre...»* (Jn 19,25).
+*«Junto a la cruz de Jesús estaban su madre...»* (Jn 19,25).
 
 No se fue. No se desentendió. Estuvo allí, en silencio, con el corazón atravesado de dolor, pero firme en la fe. La Iglesia ve en esa actitud un modelo para todos los cristianos: **seguir a Cristo también cuando duele, también cuando no entendemos.**
 
 Después de la resurrección, la encontramos de nuevo, esta vez junto a los discípulos:
 
-> *«Todos ellos perseveraban en la oración, con un mismo espíritu, en compañía de algunas mujeres y de María, la madre de Jesús»* (Hch 1,14).
+*«Todos ellos perseveraban en la oración, con un mismo espíritu, en compañía de algunas mujeres y de María, la madre de Jesús»* (Hch 1,14).
 
 María está presente en el nacimiento de la Iglesia. Es la madre que ora, que sostiene, que espera. Y al final de su vida, Dios la glorifica.
-
----
 
 ## ¿María murió antes de ser asunta?
 
@@ -90,17 +78,13 @@ María fue concebida sin pecado original. El pecado es el que introduce la muert
 
 No hay duda en la doctrina católica: **María reina en el cielo, junto a su Hijo, en la plenitud de su ser.**
 
----
-
 ## «Una mujer vestida de sol»
 
 El libro del Apocalipsis nos regala una imagen que la tradición ha relacionado con María:
 
-> *«Una gran señal apareció en el cielo: una mujer vestida de sol, y la luna bajo sus pies y una corona de doce estrellas sobre su cabeza»* (Ap 12,1).
+*«Una gran señal apareció en el cielo: una mujer vestida de sol, y la luna bajo sus pies y una corona de doce estrellas sobre su cabeza»* (Ap 12,1).
 
 Esta mujer representa al pueblo de Dios, pero también es figura de María, la nueva Eva, la madre del Salvador. Su triunfo sobre el mal y la muerte anticipa el destino de todos los que creen en Cristo. **La Asunción es el anticipo de nuestra propia resurrección.**
-
----
 
 ## Un signo de esperanza para nosotros
 
@@ -110,15 +94,13 @@ Vivimos en un mundo marcado por la enfermedad, el dolor, la pérdida y la muerte
 
 San Pablo lo dice con claridad:
 
-> *«Se siembra un cuerpo corruptible, resucita incorruptible»* (1 Co 15,42).
+*«Se siembra un cuerpo corruptible, resucita incorruptible»* (1 Co 15,42).
 
 Y también:
 
-> *«Los sufrimientos del tiempo presente no se pueden comparar con la gloria futura que se nos va a revelar»* (Rm 8,18).
+*«Los sufrimientos del tiempo presente no se pueden comparar con la gloria futura que se nos va a revelar»* (Rm 8,18).
 
 María llegó primero. Pero nosotros estamos llamados a seguirla. No por nuestros méritos, sino por la gracia de Cristo.
-
----
 
 ## María, modelo de fe
 
@@ -126,23 +108,19 @@ La Asunción no es un premio caído del cielo. Es la culminación de una vida en
 
 En el Magníficat, ella misma canta:
 
-> *«Proclama mi alma la grandeza del Señor, y se alegra mi espíritu en Dios, mi Salvador»* (Lc 1,46-47).
+*«Proclama mi alma la grandeza del Señor, y se alegra mi espíritu en Dios, mi Salvador»* (Lc 1,46-47).
 
 Ella reconoce que todo lo que tiene viene de Dios. Y esa actitud de corazón es lo que la hizo grande.
 
 Por eso, mirar a María es también un examen para nosotros: ¿confiamos en Dios? ¿Le entregamos nuestra vida? ¿Le decimos «sí» aunque no entendamos del todo sus planes?
 
----
-
 ## La proclamación del dogma
 
 La fe en la Asunción no es nueva. Los cristianos de Oriente y Occidente la celebraban desde los primeros siglos. Pero fue en 1950 cuando el papa Pío XII, movido por el Espíritu Santo y en comunión con toda la Iglesia, proclamó solemnemente:
 
-> «María, terminado el curso de su vida terrena, fue asunta en cuerpo y alma a la gloria del cielo».
+«María, terminado el curso de su vida terrena, fue asunta en cuerpo y alma a la gloria del cielo».
 
 No fue un invento ni una imposición. Fue la confirmación de lo que el pueblo cristiano ya creía y celebraba: **la Madre de Jesús está en el cielo, completa, gloriosa, viva.**
-
----
 
 ## La Asunción y la dignidad de nuestro cuerpo
 
@@ -152,8 +130,6 @@ Jesús resucitó corporalmente. Y María, asunta al cielo, nos muestra que nuest
 
 Eso nos invita a **cuidar nuestro cuerpo y el de los demás**, pero también a no idolatrarlo. Sabemos que esta vida pasa, pero no se pierde. Todo será transformado.
 
----
-
 ## ¿Por qué es importante recordar la Asunción?
 
 Porque nos recuerda que **no estamos solos**. María nos precede en el cielo, y desde allí nos cuida. Porque nos recuerda que **el dolor y la muerte no son el final**. Porque nos recuerda que **nuestra vida tiene sentido y destino eterno**.
@@ -162,9 +138,7 @@ Y también porque nos invita a vivir con esperanza. No una esperanza ingenua, si
 
 Ella supo esperar. Supo sufrir. Supo creer. Y al final, recibió la gloria.
 
----
-
-## 📖 Citas bíblicas para meditar
+## Citas bíblicas para meditar
 
 - **Lucas 1,26-38** — La Anunciación y el «sí» de María.
 - **Lucas 1,46-55** — El Magníficat.
@@ -175,23 +149,19 @@ Ella supo esperar. Supo sufrir. Supo creer. Y al final, recibió la gloria.
 - **1 Corintios 15,42-44** — La resurrección del cuerpo.
 - **Apocalipsis 12,1** — La mujer vestida de sol.
 
----
-
-## 📅 ¿Cuándo se celebra?
+## ¿Cuándo se celebra?
 
 - **15 de agosto** — Asunción de la Bienaventurada Virgen María.
 - **Categoría litúrgica:** Solemnidad.
 - Es fiesta de precepto en muchos países, y en España coincide con numerosas fiestas patronales.
 - Es una fecha fija: siempre se celebra el 15 de agosto.
 
----
-
-## 🌿 Y tú, ¿qué puedes aprender de la Asunción?
+## Y tú, ¿qué puedes aprender de la Asunción?
 
 Que Dios cumple sus promesas. Que la humildad y la fe tienen recompensa. Que la muerte no es el final. Que nuestra madre está en el cielo y nos espera.
 
 La Asunción no es solo una historia del pasado. Es un mensaje para el presente: **levanta la mirada, confía, espera.** María ya está allí. Y tú también estás llamado a estar con ella.
 
-> *«Proclama mi alma la grandeza del Señor, y se alegra mi espíritu en Dios, mi Salvador»* (Lc 1,46-47).
+*«Proclama mi alma la grandeza del Señor, y se alegra mi espíritu en Dios, mi Salvador»* (Lc 1,46-47).
 
 **María, asunta al cielo, ruega por nosotros, que recurrimos a ti.**

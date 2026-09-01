@@ -10,15 +10,6 @@
   },
 
   {
-    "category": "Santoral",
-    "title": "15 de agosto: La Asunción de la Virgen María: una mirada al cielo",
-    "subtitle": "Significado, historia y esperanza de una solemnidad que nos mira desde el cielo.",
-    "date": "2026-08-15",
-    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/la-asuncion-de-la-virgen-en-fuenlabrada_20260817_164349.webp",
-    "url": "/noticias/santoral/15-08-la-asuncion-de-la-virgen/"
-  },
-
-  {
     "category": "Espiritualidad",
     "title": "Guía para participar en la Santa Misa | Respuestas y significado",
     "subtitle": "Aprende paso a paso cómo participar en la Santa Misa: respuestas, gestos y el significado de cada parte para vivir la Eucaristía con mayor comprensión y devoción.",
@@ -34,4 +25,13 @@
     "date": "2026-07-09",
     "image": "https://sanfranciscoysantaclara.es/assets/images/blog/_20260709_163757.webp",
     "url": "/noticias/tuvo-jesus-hermanos/"
+  },
+
+  {
+    "category": "Peregrinaciones",
+    "title": "Un día inolvidable junto al Papa León: crónica de una jornada de fe en Madrid",
+    "subtitle": "Así vivimos la celebración de la Santa Misa presidida por el Papa León en Madrid, una jornada marcada por la fe, y la alegría ser parte de la Iglesia universal.",
+    "date": "2026-06-07",
+    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/visitapapa.webp",
+    "url": "/noticias/visita-papa-leon/"
   }]

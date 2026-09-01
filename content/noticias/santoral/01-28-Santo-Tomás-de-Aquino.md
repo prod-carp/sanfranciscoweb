@@ -13,8 +13,6 @@ fechaInicio = 1
 fechaFin = 90
 +++
 
-### 
-
 Después de San Pablo, encontramos a una de las figuras intelectuales y espirituales más importantes de toda la historia de la Iglesia: **Santo Tomás de Aquino**, sacerdote dominico, teólogo y filósofo, reconocido como uno de los grandes maestros de la doctrina católica.
 
 Su importancia no se debe únicamente a la enorme cantidad de escritos que dejó,
