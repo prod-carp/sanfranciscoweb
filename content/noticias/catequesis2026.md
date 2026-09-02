@@ -5,7 +5,7 @@ date = '2026-08-27T12:29:54+02:00'
 draft = false
 categorias = ["Parroquia"]
 tags = ["importante"]
-diasDestacado = 6
+diasDestacado = 14
 weight = 0
 image = "/assets/images/blog/catequesis2026.webp"
 +++

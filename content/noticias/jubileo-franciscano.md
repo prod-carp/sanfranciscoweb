@@ -6,7 +6,7 @@ draft = false
 categorias = ["Parroquia"]
 tags = ["importante"]
 weight = 0
-image = "https://sanfranciscoysantaclara.es/assets/images/sanfrancisco-parte1.webp"
+image = "/assets/images/sanfrancisco-parte1.webp"
 +++
 
 
