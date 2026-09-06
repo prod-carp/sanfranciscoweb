@@ -2,9 +2,14 @@ name: Publicar noticias
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # 03:00 (hora UTC) = 05:00 (hora España en verano)
+    - cron: "0 3 * * *"
 
   workflow_dispatch:
+    inputs:
+      verificar_pr:
+        description: 'Número de PR ya fusionado para verificar (opcional)'
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -12,157 +17,402 @@ permissions:
 
 jobs:
 
-  publicar-noticias:   # ← Renombrado para que coincida con lo que ves en Actions
-
+  publicar:
     runs-on: ubuntu-latest
 
     steps:
 
+
       # ==========================================================
-      # PUBLICAR PR DE NOTICIAS
+      # PROCESAR PR
       # ==========================================================
 
-      - name: Publicar PR de noticias
-        # ✅ ELIMINAR LA CONDICIÓN
+      - name: Fusionar y verificar publicaciones
         env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: prod-carp/sanfranciscoweb
         run: |
-
-          # ======================================================
-          # MANEJO DE ERRORES
-          # ======================================================
 
           set -e
           set -o pipefail
 
-          echo "========================================"
-          echo " PUBLICACIÓN AUTOMÁTICA DE NOTICIAS"
-          echo "========================================"
+          TEMP_FILE=$(mktemp)
+
+          trap 'rm -f "$TEMP_FILE"' EXIT
+
+
+          # ========================================================
+          # MODO MANUAL:
+          # verificar un PR ya fusionado
+          # ========================================================
+
+          if [ -n "${{ inputs.verificar_pr }}" ]; then
+
+            NUMBER="${{ inputs.verificar_pr }}"
+
+            echo ""
+            echo "=========================================="
+            echo "VERIFICACIÓN MANUAL"
+            echo "PR #$NUMBER"
+            echo "=========================================="
+            echo ""
+
+            STATE=$(gh pr view "$NUMBER" \
+              --repo "$GH_REPO" \
+              --json state \
+              --jq '.state')
+
+            if [ "$STATE" != "MERGED" ]; then
+
+              echo "❌ El PR #$NUMBER no está fusionado."
+              echo "Estado actual: $STATE"
+
+              exit 1
+
+            fi
+
+
+            # ------------------------------------------------------
+            # Obtener archivos del PR
+            # ------------------------------------------------------
+
+            FILES=$(gh api \
+              "repos/$GH_REPO/pulls/$NUMBER/files" \
+              --paginate \
+              --jq '.[].filename')
+
+
+            MARKDOWN_PATH=$(echo "$FILES" |
+              awk '/^content\/noticias\/.*\.md$/ {print; exit}')
+
+
+            IMAGE_PATH=$(echo "$FILES" |
+              awk '/^static\/assets\/images\/blog\// {print; exit}')
+
+
+            if [ -z "$MARKDOWN_PATH" ]; then
+
+              echo "❌ No se encontró el Markdown del artículo."
+
+              exit 1
+
+            fi
+
+
+            if [ -z "$IMAGE_PATH" ]; then
+
+              echo "❌ No se encontró la imagen del artículo."
+
+              exit 1
+
+            fi
+
+
+            echo "Markdown:"
+            echo "  $MARKDOWN_PATH"
+
+            echo ""
+
+            echo "Imagen:"
+            echo "  $IMAGE_PATH"
+
+            echo ""
+
+
+            # ------------------------------------------------------
+            # Obtener commit de merge
+            # ------------------------------------------------------
+
+            MERGE_SHA=$(gh pr view "$NUMBER" \
+              --repo "$GH_REPO" \
+              --json mergeCommit \
+              --jq '.mergeCommit.oid')
+
+
+            if [ -z "$MERGE_SHA" ] || [ "$MERGE_SHA" = "null" ]; then
+
+              echo "❌ No se ha podido obtener el commit de merge."
+
+              exit 1
+
+            fi
+
+
+            echo "Commit de merge:"
+            echo "  $MERGE_SHA"
+
+            echo ""
+
+
+            # ------------------------------------------------------
+            # Verificar Markdown
+            # ------------------------------------------------------
+
+            if gh api \
+              "repos/$GH_REPO/contents/$MARKDOWN_PATH?ref=$MERGE_SHA" \
+              >/dev/null; then
+
+              echo "✓ Markdown localizado en main."
+
+            else
+
+              echo "❌ El Markdown NO se encuentra en main."
+
+              exit 1
+
+            fi
+
+
+            # ------------------------------------------------------
+            # Verificar imagen
+            # ------------------------------------------------------
+
+            if gh api \
+              "repos/$GH_REPO/contents/$IMAGE_PATH?ref=$MERGE_SHA" \
+              >/dev/null; then
+
+              echo "✓ Imagen localizada en main."
+
+            else
+
+              echo "❌ La imagen NO se encuentra en main."
+
+              exit 1
+
+            fi
+
+
+            echo ""
+            echo "=========================================="
+            echo "✓ PUBLICACIÓN CONFIRMADA"
+            echo "=========================================="
+            echo ""
+
+            echo "PR: #$NUMBER"
+            echo "Commit: $MERGE_SHA"
+            echo "Markdown: OK"
+            echo "Imagen: OK"
+
+            echo ""
+
+            echo "⚠ D1 y R2 todavía NO se modifican."
+
+            exit 0
+
+          fi
+
+
+          # ========================================================
+          # MODO AUTOMÁTICO
+          # ========================================================
 
           echo ""
-          echo "🕒 Hora de ejecución: $(date)"
+          echo "=========================================="
+          echo "BUSCANDO PR ABIERTOS"
+          echo "=========================================="
           echo ""
 
-          # ======================================================
-          # LISTAR PRs ABIERTOS CONTRA MAIN
-          # ======================================================
 
-          PRS=$(gh pr list \
+          gh pr list \
             --repo "$GH_REPO" \
             --state open \
             --base main \
             --json number,headRefName,isDraft,title \
-            --limit 100)
+            --jq '.[] | [
+              .number,
+              .headRefName,
+              .isDraft,
+              .title
+            ] | @tsv' > "$TEMP_FILE"
 
-          if [ "$PRS" = "[]" ]; then
-            echo "No hay Pull Requests abiertos."
+
+          if [ ! -s "$TEMP_FILE" ]; then
+
+            echo "No hay PR abiertos para publicar."
+
             exit 0
+
           fi
 
-          # ======================================================
-          # ARCHIVO TEMPORAL
-          # ======================================================
 
-          TEMP_FILE=$(mktemp)
-          trap 'rm -f "$TEMP_FILE"' EXIT
-
-          echo "$PRS" | jq -c '.[]' > "$TEMP_FILE"
-
-          # ======================================================
-          # PROCESAR CADA PR
-          # ======================================================
-
-          while read -r PR; do
-
-            NUMBER=$(echo "$PR" | jq -r '.number')
-            BRANCH=$(echo "$PR" | jq -r '.headRefName')
-            IS_DRAFT=$(echo "$PR" | jq -r '.isDraft')
-            TITLE=$(echo "$PR" | jq -r '.title')
+          while IFS=$'\t' read -r NUMBER BRANCH DRAFT TITLE
+          do
 
             echo ""
-            echo "----------------------------------------"
+            echo "------------------------------------------"
             echo "PR #$NUMBER"
             echo "Título: $TITLE"
             echo "Rama: $BRANCH"
-            echo "Draft: $IS_DRAFT"
-            echo "----------------------------------------"
+            echo "------------------------------------------"
 
-            # ==================================================
-            # SOLO RAMAS noticia/*
-            # ==================================================
+
+            # ------------------------------------------------------
+            # Solo ramas noticia/*
+            # ------------------------------------------------------
 
             if [[ "$BRANCH" != noticia/* ]]; then
-              echo "→ Se omite: no es una rama noticia/."
+
+              echo "→ No es una rama de noticia. Se omite."
+
               continue
+
             fi
 
-            # ==================================================
-            # NO PUBLICAR DRAFTS
-            # ==================================================
 
-            if [ "$IS_DRAFT" = "true" ]; then
-              echo "→ Se omite: el PR está en Draft."
+            # ------------------------------------------------------
+            # No fusionar Draft
+            # ------------------------------------------------------
+
+            if [ "$DRAFT" = "true" ]; then
+
+              echo "→ El PR está marcado como Draft. Se omite."
+
               continue
+
             fi
 
-            # ==================================================
-            # COMPROBAR MERGEABLE
-            # ==================================================
+
+            # ------------------------------------------------------
+            # Obtener archivos ANTES del merge
+            # ------------------------------------------------------
+
+            FILES=$(gh api \
+              "repos/$GH_REPO/pulls/$NUMBER/files" \
+              --paginate \
+              --jq '.[].filename')
+
+
+            MARKDOWN_PATH=$(echo "$FILES" |
+              awk '/^content\/noticias\/.*\.md$/ {print; exit}')
+
+
+            IMAGE_PATH=$(echo "$FILES" |
+              awk '/^static\/assets\/images\/blog\// {print; exit}')
+
+
+            if [ -z "$MARKDOWN_PATH" ]; then
+
+              echo "❌ No se encontró el Markdown."
+
+              continue
+
+            fi
+
+
+            if [ -z "$IMAGE_PATH" ]; then
+
+              echo "❌ No se encontró la imagen."
+
+              continue
+
+            fi
+
+
+            echo "Markdown:"
+            echo "  $MARKDOWN_PATH"
+
+            echo ""
+
+            echo "Imagen:"
+            echo "  $IMAGE_PATH"
+
+
+            # ------------------------------------------------------
+            # Comprobar mergeabilidad
+            # ------------------------------------------------------
 
             MERGEABLE="UNKNOWN"
 
-            for INTENTO in 1 2 3 4 5; do
+            ATTEMPT=1
+
+
+            while [ "$ATTEMPT" -le 5 ]
+            do
+
+              echo ""
+              echo "Comprobación de mergeabilidad $ATTEMPT/5..."
+
 
               MERGEABLE=$(gh pr view "$NUMBER" \
                 --repo "$GH_REPO" \
                 --json mergeable \
                 --jq '.mergeable')
 
-              echo "Intento $INTENTO/5 → Mergeable: $MERGEABLE"
+
+              echo "Estado: $MERGEABLE"
+
 
               if [ "$MERGEABLE" != "UNKNOWN" ]; then
+
                 break
+
               fi
 
-              if [ "$INTENTO" -lt 5 ]; then
-                echo "GitHub todavía no ha calculado la mergeabilidad."
+
+              if [ "$ATTEMPT" -lt 5 ]; then
+
+                echo "GitHub todavía está calculando..."
                 echo "Esperando 10 segundos..."
+
                 sleep 10
+
               fi
+
+
+              ATTEMPT=$((ATTEMPT + 1))
 
             done
 
-            echo ""
 
-            # ==================================================
-            # SI HAY CONFLICTOS → NO PUBLICAR
-            # ==================================================
+            # ------------------------------------------------------
+            # Conflicto
+            # ------------------------------------------------------
 
             if [ "$MERGEABLE" = "CONFLICTING" ]; then
-              echo "❌ PR #$NUMBER tiene conflictos."
-              echo "→ Se mantiene abierto y no se publica."
+
+              echo "⚠ El PR tiene conflictos."
+              echo "→ Se deja abierto."
+
               continue
+
             fi
 
-            # ==================================================
-            # SI SIGUE UNKNOWN → NO PUBLICAR
-            # ==================================================
+
+            # ------------------------------------------------------
+            # UNKNOWN definitivo
+            # ------------------------------------------------------
+
+            if [ "$MERGEABLE" = "UNKNOWN" ]; then
+
+              echo "⚠ GitHub no ha podido determinar la mergeabilidad."
+              echo "→ Se deja abierto."
+
+              continue
+
+            fi
+
+
+            # ------------------------------------------------------
+            # Solo fusionar MERGEABLE
+            # ------------------------------------------------------
 
             if [ "$MERGEABLE" != "MERGEABLE" ]; then
-              echo "⚠ PR #$NUMBER continúa con estado: $MERGEABLE"
-              echo "→ Se mantiene abierto y no se publica."
+
+              echo "⚠ Estado no esperado: $MERGEABLE"
+              echo "→ Se deja abierto."
+
               continue
+
             fi
 
-            # ==================================================
-            # PR PREPARADO → MERGE REAL
-            # ==================================================
 
-            echo "✅ PR #$NUMBER está preparado para publicación."
             echo ""
-            echo "→ Iniciando merge del PR #$NUMBER..."
+            echo "✓ PR preparado para fusionarse."
+
+
+            # ======================================================
+            # MERGE REAL
+            # ======================================================
 
             if gh pr merge "$NUMBER" \
               --repo "$GH_REPO" \
@@ -171,7 +421,6 @@ jobs:
 
               echo ""
               echo "✅ PR #$NUMBER fusionado correctamente."
-              echo "   Rama eliminada: $BRANCH"
 
             else
 
@@ -179,18 +428,99 @@ jobs:
               echo "❌ No se ha podido fusionar el PR #$NUMBER."
               echo "→ El PR permanecerá abierto."
 
-              # Si quieres que el workflow falle cuando un merge falla:
-              # exit 1
-
               continue
 
             fi
 
+
+            # ======================================================
+            # OBTENER COMMIT DE MERGE
+            # ======================================================
+
+            MERGE_SHA=$(gh pr view "$NUMBER" \
+              --repo "$GH_REPO" \
+              --json mergeCommit \
+              --jq '.mergeCommit.oid')
+
+
+            if [ -z "$MERGE_SHA" ] || [ "$MERGE_SHA" = "null" ]; then
+
+              echo "❌ El PR se fusionó, pero no se pudo localizar el commit."
+
+              exit 1
+
+            fi
+
+
+            echo ""
+            echo "Commit de merge:"
+            echo "  $MERGE_SHA"
+
+
+            # ======================================================
+            # VERIFICAR MARKDOWN EN MAIN
+            # ======================================================
+
+            echo ""
+            echo "Verificando Markdown..."
+
+
+            if gh api \
+              "repos/$GH_REPO/contents/$MARKDOWN_PATH?ref=$MERGE_SHA" \
+              >/dev/null; then
+
+              echo "✓ Markdown localizado en main."
+
+            else
+
+              echo "❌ El Markdown NO se encuentra en main."
+
+              exit 1
+
+            fi
+
+
+            # ======================================================
+            # VERIFICAR IMAGEN EN MAIN
+            # ======================================================
+
+            echo ""
+            echo "Verificando imagen..."
+
+
+            if gh api \
+              "repos/$GH_REPO/contents/$IMAGE_PATH?ref=$MERGE_SHA" \
+              >/dev/null; then
+
+              echo "✓ Imagen localizada en main."
+
+            else
+
+              echo "❌ La imagen NO se encuentra en main."
+
+              exit 1
+
+            fi
+
+
+            # ======================================================
+            # PUBLICACIÓN CONFIRMADA
+            # ======================================================
+
+            echo ""
+            echo "=========================================="
+            echo "✓ PUBLICACIÓN CONFIRMADA"
+            echo "=========================================="
+
+            echo ""
+            echo "PR: #$NUMBER"
+            echo "Título: $TITLE"
+            echo "Commit: $MERGE_SHA"
+            echo "Markdown: OK"
+            echo "Imagen: OK"
+
             echo ""
 
-          done < "$TEMP_FILE"
+            echo "⚠ D1 y R2 todavía NO se modifican."
 
-          echo ""
-          echo "========================================"
-          echo " FIN DE LA PUBLICACIÓN"
-          echo "========================================"
+          done < "$TEMP_FILE"
