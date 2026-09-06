@@ -1,0 +1,137 @@
+name: Comprobar noticias para publicación
+
+on:
+  schedule:
+    - cron: "0 3,4 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+
+  comprobar-noticias:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Comprobar hora de Madrid
+        id: hora
+        run: |
+
+          HORA_MADRID=$(TZ="Europe/Madrid" date +"%H")
+
+          echo "Hora actual en Madrid: $HORA_MADRID"
+
+          if [ "$HORA_MADRID" != "05" ]; then
+
+            echo "No son las 05:00 en Madrid."
+            echo "No se realizará ninguna publicación."
+
+            echo "ejecutar=false" >> "$GITHUB_OUTPUT"
+
+          else
+
+            echo "Son las 05:00 en Madrid."
+
+            echo "ejecutar=true" >> "$GITHUB_OUTPUT"
+
+          fi
+
+
+      - name: Buscar PR de noticias
+        if: steps.hora.outputs.ejecutar == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+
+        run: |
+
+          echo "========================================"
+          echo " COMPROBACIÓN DE NOTICIAS"
+          echo "========================================"
+
+          echo ""
+
+          PRS=$(gh pr list \
+            --repo "$GH_REPO" \
+            --state open \
+            --base main \
+            --json number,headRefName,isDraft,mergeable,title \
+            --limit 100)
+
+          echo "$PRS"
+
+          echo ""
+
+
+          if [ "$PRS" = "[]" ]; then
+
+            echo "No hay Pull Requests abiertos."
+
+            exit 0
+
+          fi
+
+
+          echo "$PRS" |
+          jq -c '.[]' |
+          while read -r PR; do
+
+            NUMBER=$(echo "$PR" | jq -r '.number')
+            BRANCH=$(echo "$PR" | jq -r '.headRefName')
+            IS_DRAFT=$(echo "$PR" | jq -r '.isDraft')
+            MERGEABLE=$(echo "$PR" | jq -r '.mergeable')
+            TITLE=$(echo "$PR" | jq -r '.title')
+
+
+            echo ""
+            echo "----------------------------------------"
+            echo "PR #$NUMBER"
+            echo "Título: $TITLE"
+            echo "Rama: $BRANCH"
+            echo "Draft: $IS_DRAFT"
+            echo "Mergeable: $MERGEABLE"
+            echo "----------------------------------------"
+
+
+            if [[ "$BRANCH" != noticia/* ]]; then
+
+              echo "→ Se omite: no es una rama noticia/."
+
+              continue
+
+            fi
+
+
+            if [ "$IS_DRAFT" = "true" ]; then
+
+              echo "→ Se omite: el PR está en Draft."
+
+              continue
+
+            fi
+
+
+            if [ "$MERGEABLE" != "MERGEABLE" ]; then
+
+              echo "→ Se omite: el PR no está listo para merge."
+
+              continue
+
+            fi
+
+
+            echo "✓ PR #$NUMBER está preparado para publicación."
+
+
+          done
+
+
+          echo ""
+          echo "========================================"
+          echo " FIN DE LA COMPROBACIÓN"
+          echo "========================================"
