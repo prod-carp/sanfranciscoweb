@@ -1,6 +1,15 @@
 [
 
   {
+    "category": "Santoral",
+    "title": "Santa Teresa de Calcuta: un corazón entregado a los pobres",
+    "subtitle": "Santa Teresa de Calcuta dedicó su vida a servir a los más pobres, viendo en cada persona necesitada el rostro de Cristo y mostrando que el amor también se expresa en pequeños gestos.",
+    "date": "2026-09-05",
+    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/*.webp",
+    "url": "/noticias/santoral/09-05-santa-teresa-de-calcuta/"
+  },
+
+  {
     "category": "Parroquia",
     "title": "Catequesis de Primera Comunión: ¡abrimos el plazo de inscripción!",
     "subtitle": "Cómo inscribir a tu hijo en la Catequesis de Primera Comunión. Comienza junto a él un bonito camino de fe y encuentro con Jesús.",
@@ -25,13 +34,4 @@
     "date": "2026-07-09",
     "image": "https://sanfranciscoysantaclara.es/assets/images/blog/_20260709_163757.webp",
     "url": "/noticias/tuvo-jesus-hermanos/"
-  },
-
-  {
-    "category": "Peregrinaciones",
-    "title": "Un día inolvidable junto al Papa León: crónica de una jornada de fe en Madrid",
-    "subtitle": "Así vivimos la celebración de la Santa Misa presidida por el Papa León en Madrid, una jornada marcada por la fe, y la alegría ser parte de la Iglesia universal.",
-    "date": "2026-06-07",
-    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/visitapapa.webp",
-    "url": "/noticias/visita-papa-leon/"
   }]

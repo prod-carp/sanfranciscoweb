@@ -905,7 +905,6 @@ if (
 
     }
 
-
 // ======================================================
 // ADMINISTRADOR / PREFERENTE → APROBAR
 // ======================================================
@@ -955,193 +954,85 @@ if (
       );
 
 
-    // ----------------------------------------------------
-    // DISTINGUIR ENTRE:
-    //
-    // 1. Artículo existente
-    //    → PUT + aprobar
-    //
-    // 2. Artículo nuevo creado por admin/preferente
-    //    → POST /api/articles
-    //    → recibir ID
-    //    → aprobar
-    // ----------------------------------------------------
+    if (
+      !reviewData.id
+    ) {
 
-    let articleId =
-      reviewData.id || null;
-
-
-    // ----------------------------------------------------
-    // ARTÍCULO NUEVO
-    // ----------------------------------------------------
-
-    if (!articleId) {
-
-      console.log(
-        "🆕 Creando artículo nuevo antes de aprobar..."
-      );
-
-
-      const createResponse =
-        await fetch(
-          "https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/articles",
-          {
-
-            method:
-              "POST",
-
-            headers: {
-
-              "Content-Type":
-                "application/json",
-
-              "Authorization":
-                `Bearer ${idToken}`
-
-            },
-
-            body:
-              JSON.stringify(
-                reviewData
-              )
-
-          }
-        );
-
-
-      let createResult;
-
-      try {
-
-        createResult =
-          await createResponse.json();
-
-      } catch {
-
-        throw new Error(
-          "El servidor devolvió una respuesta no válida al crear el artículo."
-        );
-
-      }
-
-
-      if (
-        !createResponse.ok ||
-        !createResult.success ||
-        !createResult.articleId
-      ) {
-
-        throw new Error(
-          createResult.error ||
-          "No se ha podido crear el artículo."
-        );
-
-      }
-
-
-      // ID generado por el Worker
-      articleId =
-        createResult.articleId;
-
-
-      // Conservar el ID para el resto del flujo
-      reviewData.id =
-        articleId;
-
-      reviewData.editingExistingArticle =
-        false;
-
-
-      console.log(
-        "✅ Artículo nuevo creado:",
-        articleId
+      throw new Error(
+        "No se ha encontrado el ID del artículo."
       );
 
     }
 
+// -----------------------------------------------
+// ACTUALIZAR DATOS DEL ARTÍCULO
+// -----------------------------------------------
 
-    // ----------------------------------------------------
-    // ARTÍCULO EXISTENTE
-    // ----------------------------------------------------
+const updateResponse =
+  await fetch(
+    `https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(reviewData.id)}`,
+    {
 
-    else {
+      method:
+        "PUT",
 
-      console.log(
-        "✏️ Actualizando artículo existente antes de aprobar:",
-        articleId
-      );
+      headers: {
 
+        "Content-Type":
+          "application/json",
 
-      const updateResponse =
-        await fetch(
-          `https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(articleId)}`,
-          {
+        "Authorization":
+          `Bearer ${idToken}`
 
-            method:
-              "PUT",
+      },
 
-            headers: {
-
-              "Content-Type":
-                "application/json",
-
-              "Authorization":
-                `Bearer ${idToken}`
-
-            },
-
-            body:
-              JSON.stringify(
-                reviewData
-              )
-
-          }
-        );
-
-
-      let updateResult;
-
-      try {
-
-        updateResult =
-          await updateResponse.json();
-
-      } catch {
-
-        throw new Error(
-          "El servidor devolvió una respuesta no válida al actualizar."
-        );
-
-      }
-
-
-      if (
-        !updateResponse.ok ||
-        !updateResult.success
-      ) {
-
-        throw new Error(
-          updateResult.error ||
-          "No se han podido guardar los cambios."
-        );
-
-      }
-
-
-      console.log(
-        "✅ Artículo existente actualizado antes de aprobar."
-      );
+      body:
+        JSON.stringify(
+          reviewData
+        )
 
     }
+  );
 
 
-    // ----------------------------------------------------
-    // APROBAR EL ARTÍCULO
-    // ----------------------------------------------------
+let updateResult;
+
+try {
+
+  updateResult =
+    await updateResponse.json();
+
+} catch {
+
+  throw new Error(
+    "El servidor devolvió una respuesta no válida al actualizar."
+  );
+
+}
+
+
+if (
+  !updateResponse.ok ||
+  !updateResult.success
+) {
+
+  throw new Error(
+    updateResult.error ||
+    "No se han podido guardar los cambios."
+  );
+
+}
+
+
+console.log(
+  "✅ Artículo actualizado antes de aprobar."
+);
+
+// FIN BLOQUE ACTUALIZAR DATOS DEL ARTÍCULO
 
     const response =
       await fetch(
-        `https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(articleId)}/approve`,
+        `https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(reviewData.id)}/approve`,
         {
 
           method:
@@ -1187,9 +1078,9 @@ if (
     }
 
 
-    // ----------------------------------------------------
+    // -----------------------------------------------
     // LIMPIAR DATOS TEMPORALES
-    // ----------------------------------------------------
+    // -----------------------------------------------
 
     sessionStorage.removeItem(
       "pending-review"
@@ -1205,9 +1096,9 @@ if (
     );
 
 
-    // ----------------------------------------------------
+    // -----------------------------------------------
     // VOLVER AL DASHBOARD
-    // ----------------------------------------------------
+    // -----------------------------------------------
 
     window.location.href =
       "/admin/dashboard/";
