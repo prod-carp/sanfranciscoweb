@@ -2,7 +2,7 @@ name: Publicar noticias
 
 on:
   schedule:
-    - cron: "0 3 * * *" 
+    - cron: "0 3 * * *"   # 03:00 (hora UTC) = 05:00 (hora España en verano)
 
   workflow_dispatch:
 
@@ -12,19 +12,18 @@ permissions:
 
 jobs:
 
-  publicar-noticias:
+  publicar-noticias:   # ← Renombrado para que coincida con lo que ves en Actions
 
     runs-on: ubuntu-latest
 
     steps:
 
       # ==========================================================
-      # BUSCAR Y PUBLICAR PR DE NOTICIAS
+      # PUBLICAR PR DE NOTICIAS
       # ==========================================================
 
       - name: Publicar PR de noticias
-        if: steps.hora.outputs.ejecutar == 'true'
-
+        # ✅ ELIMINAR LA CONDICIÓN
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -38,7 +37,6 @@ jobs:
           set -e
           set -o pipefail
 
-
           echo "========================================"
           echo " PUBLICACIÓN AUTOMÁTICA DE NOTICIAS"
           echo "========================================"
@@ -46,7 +44,6 @@ jobs:
           echo ""
           echo "🕒 Hora de ejecución: $(date)"
           echo ""
-
 
           # ======================================================
           # LISTAR PRs ABIERTOS CONTRA MAIN
@@ -59,26 +56,19 @@ jobs:
             --json number,headRefName,isDraft,title \
             --limit 100)
 
-
           if [ "$PRS" = "[]" ]; then
-
             echo "No hay Pull Requests abiertos."
             exit 0
-
           fi
-
 
           # ======================================================
           # ARCHIVO TEMPORAL
           # ======================================================
 
           TEMP_FILE=$(mktemp)
-
           trap 'rm -f "$TEMP_FILE"' EXIT
 
-          echo "$PRS" |
-            jq -c '.[]' > "$TEMP_FILE"
-
+          echo "$PRS" | jq -c '.[]' > "$TEMP_FILE"
 
           # ======================================================
           # PROCESAR CADA PR
@@ -91,7 +81,6 @@ jobs:
             IS_DRAFT=$(echo "$PR" | jq -r '.isDraft')
             TITLE=$(echo "$PR" | jq -r '.title')
 
-
             echo ""
             echo "----------------------------------------"
             echo "PR #$NUMBER"
@@ -100,39 +89,29 @@ jobs:
             echo "Draft: $IS_DRAFT"
             echo "----------------------------------------"
 
-
             # ==================================================
             # SOLO RAMAS noticia/*
             # ==================================================
 
             if [[ "$BRANCH" != noticia/* ]]; then
-
               echo "→ Se omite: no es una rama noticia/."
-
               continue
-
             fi
-
 
             # ==================================================
             # NO PUBLICAR DRAFTS
             # ==================================================
 
             if [ "$IS_DRAFT" = "true" ]; then
-
               echo "→ Se omite: el PR está en Draft."
-
               continue
-
             fi
-
 
             # ==================================================
             # COMPROBAR MERGEABLE
             # ==================================================
 
             MERGEABLE="UNKNOWN"
-
 
             for INTENTO in 1 2 3 4 5; do
 
@@ -141,73 +120,49 @@ jobs:
                 --json mergeable \
                 --jq '.mergeable')
 
-
               echo "Intento $INTENTO/5 → Mergeable: $MERGEABLE"
 
-
               if [ "$MERGEABLE" != "UNKNOWN" ]; then
-
                 break
-
               fi
 
-
               if [ "$INTENTO" -lt 5 ]; then
-
                 echo "GitHub todavía no ha calculado la mergeabilidad."
                 echo "Esperando 10 segundos..."
-
                 sleep 10
-
               fi
 
             done
 
-
             echo ""
-
 
             # ==================================================
             # SI HAY CONFLICTOS → NO PUBLICAR
             # ==================================================
 
             if [ "$MERGEABLE" = "CONFLICTING" ]; then
-
               echo "❌ PR #$NUMBER tiene conflictos."
               echo "→ Se mantiene abierto y no se publica."
-
               continue
-
             fi
-
 
             # ==================================================
             # SI SIGUE UNKNOWN → NO PUBLICAR
             # ==================================================
 
             if [ "$MERGEABLE" != "MERGEABLE" ]; then
-
               echo "⚠ PR #$NUMBER continúa con estado: $MERGEABLE"
               echo "→ Se mantiene abierto y no se publica."
-
               continue
-
             fi
 
-
             # ==================================================
-            # PR PREPARADO
+            # PR PREPARADO → MERGE REAL
             # ==================================================
 
             echo "✅ PR #$NUMBER está preparado para publicación."
-
             echo ""
             echo "→ Iniciando merge del PR #$NUMBER..."
-
-
-            # ==================================================
-            # MERGE REAL
-            # ==================================================
 
             if gh pr merge "$NUMBER" \
               --repo "$GH_REPO" \
@@ -224,19 +179,16 @@ jobs:
               echo "❌ No se ha podido fusionar el PR #$NUMBER."
               echo "→ El PR permanecerá abierto."
 
+              # Si quieres que el workflow falle cuando un merge falla:
+              # exit 1
+
               continue
 
             fi
 
-
             echo ""
 
           done < "$TEMP_FILE"
-
-
-          # ======================================================
-          # FIN
-          # ======================================================
 
           echo ""
           echo "========================================"
