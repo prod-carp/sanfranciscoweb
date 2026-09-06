@@ -1,4 +1,4 @@
-name: Comprobar noticias para publicación
+name: Publicar noticias
 
 on:
   schedule:
@@ -19,33 +19,38 @@ jobs:
     steps:
 
       # ==========================================================
-      # BUSCAR PR DE NOTICIAS (SIN RESTRICCIÓN DE HORA)
+      # BUSCAR Y PUBLICAR PR DE NOTICIAS
       # ==========================================================
 
-      - name: Buscar PR de noticias
+      - name: Publicar PR de noticias
+        if: steps.hora.outputs.ejecutar == 'true'
+
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
 
         run: |
 
-          # ==========================================================
-          # CONFIGURAR MANEJO DE ERRORES
-          # ==========================================================
+          # ======================================================
+          # MANEJO DE ERRORES
+          # ======================================================
 
           set -e
           set -o pipefail
 
+
           echo "========================================"
-          echo " COMPROBACIÓN DE NOTICIAS"
+          echo " PUBLICACIÓN AUTOMÁTICA DE NOTICIAS"
           echo "========================================"
 
           echo ""
           echo "🕒 Hora de ejecución: $(date)"
+          echo ""
 
-          # ==========================================================
-          # LISTAR PRs
-          # ==========================================================
+
+          # ======================================================
+          # LISTAR PRs ABIERTOS CONTRA MAIN
+          # ======================================================
 
           PRS=$(gh pr list \
             --repo "$GH_REPO" \
@@ -54,21 +59,30 @@ jobs:
             --json number,headRefName,isDraft,title \
             --limit 100)
 
+
           if [ "$PRS" = "[]" ]; then
+
             echo "No hay Pull Requests abiertos."
             exit 0
+
           fi
 
-          # ==========================================================
-          # PROCESAR PRs
-          # ==========================================================
+
+          # ======================================================
+          # ARCHIVO TEMPORAL
+          # ======================================================
 
           TEMP_FILE=$(mktemp)
 
-          # Limpiar el archivo temporal incluso si el script falla
           trap 'rm -f "$TEMP_FILE"' EXIT
 
-          echo "$PRS" | jq -c '.[]' > "$TEMP_FILE"
+          echo "$PRS" |
+            jq -c '.[]' > "$TEMP_FILE"
+
+
+          # ======================================================
+          # PROCESAR CADA PR
+          # ======================================================
 
           while read -r PR; do
 
@@ -76,6 +90,7 @@ jobs:
             BRANCH=$(echo "$PR" | jq -r '.headRefName')
             IS_DRAFT=$(echo "$PR" | jq -r '.isDraft')
             TITLE=$(echo "$PR" | jq -r '.title')
+
 
             echo ""
             echo "----------------------------------------"
@@ -85,8 +100,9 @@ jobs:
             echo "Draft: $IS_DRAFT"
             echo "----------------------------------------"
 
+
             # ==================================================
-            # COMPROBAR RAMA
+            # SOLO RAMAS noticia/*
             # ==================================================
 
             if [[ "$BRANCH" != noticia/* ]]; then
@@ -97,8 +113,9 @@ jobs:
 
             fi
 
+
             # ==================================================
-            # COMPROBAR DRAFT
+            # NO PUBLICAR DRAFTS
             # ==================================================
 
             if [ "$IS_DRAFT" = "true" ]; then
@@ -109,11 +126,13 @@ jobs:
 
             fi
 
+
             # ==================================================
             # COMPROBAR MERGEABLE
             # ==================================================
 
             MERGEABLE="UNKNOWN"
+
 
             for INTENTO in 1 2 3 4 5; do
 
@@ -122,11 +141,16 @@ jobs:
                 --json mergeable \
                 --jq '.mergeable')
 
+
               echo "Intento $INTENTO/5 → Mergeable: $MERGEABLE"
 
+
               if [ "$MERGEABLE" != "UNKNOWN" ]; then
+
                 break
+
               fi
+
 
               if [ "$INTENTO" -lt 5 ]; then
 
@@ -139,31 +163,82 @@ jobs:
 
             done
 
+
             echo ""
 
+
             # ==================================================
-            # RESULTADO
+            # SI HAY CONFLICTOS → NO PUBLICAR
             # ==================================================
 
-            if [ "$MERGEABLE" = "MERGEABLE" ]; then
-
-              echo "✅ PR #$NUMBER está preparado para publicación."
-
-            elif [ "$MERGEABLE" = "CONFLICTING" ]; then
+            if [ "$MERGEABLE" = "CONFLICTING" ]; then
 
               echo "❌ PR #$NUMBER tiene conflictos."
-              echo "→ Se omite. No se realizará ningún merge."
+              echo "→ Se mantiene abierto y no se publica."
 
-            else
-
-              echo "⚠ PR #$NUMBER continúa con estado: $MERGEABLE"
-              echo "→ Se omite por seguridad."
+              continue
 
             fi
 
+
+            # ==================================================
+            # SI SIGUE UNKNOWN → NO PUBLICAR
+            # ==================================================
+
+            if [ "$MERGEABLE" != "MERGEABLE" ]; then
+
+              echo "⚠ PR #$NUMBER continúa con estado: $MERGEABLE"
+              echo "→ Se mantiene abierto y no se publica."
+
+              continue
+
+            fi
+
+
+            # ==================================================
+            # PR PREPARADO
+            # ==================================================
+
+            echo "✅ PR #$NUMBER está preparado para publicación."
+
+            echo ""
+            echo "→ Iniciando merge del PR #$NUMBER..."
+
+
+            # ==================================================
+            # MERGE REAL
+            # ==================================================
+
+            if gh pr merge "$NUMBER" \
+              --repo "$GH_REPO" \
+              --merge \
+              --delete-branch; then
+
+              echo ""
+              echo "✅ PR #$NUMBER fusionado correctamente."
+              echo "   Rama eliminada: $BRANCH"
+
+            else
+
+              echo ""
+              echo "❌ No se ha podido fusionar el PR #$NUMBER."
+              echo "→ El PR permanecerá abierto."
+
+              continue
+
+            fi
+
+
+            echo ""
+
           done < "$TEMP_FILE"
+
+
+          # ======================================================
+          # FIN
+          # ======================================================
 
           echo ""
           echo "========================================"
-          echo " FIN DE LA COMPROBACIÓN"
+          echo " FIN DE LA PUBLICACIÓN"
           echo "========================================"
