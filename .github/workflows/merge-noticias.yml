@@ -2,7 +2,7 @@ name: Comprobar noticias para publicación
 
 on:
   schedule:
-    - cron: "0 3,4 * * *"
+    - cron: "0 3 * * *" 
 
   workflow_dispatch:
 
@@ -18,29 +18,115 @@ jobs:
 
     steps:
 
-      - name: Comprobar hora de Madrid
-        id: hora
+      # ==========================================================
+      # BUSCAR PR DE NOTICIAS (SIN RESTRICCIÓN DE HORA)
+      # ==========================================================
+
+      - name: Buscar PR de noticias
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+
         run: |
 
-          HORA_MADRID=$(TZ="Europe/Madrid" date +"%H")
+          echo "========================================"
+          echo " COMPROBACIÓN DE NOTICIAS"
+          echo "========================================"
 
-          echo "Hora actual en Madrid: $HORA_MADRID"
+          echo ""
+          echo "🕒 Hora de ejecución: $(date)"
 
-          if [ "$HORA_MADRID" != "17" ]; then
+          PRS=$(gh pr list \
+            --repo "$GH_REPO" \
+            --state open \
+            --base main \
+            --json number,headRefName,isDraft,title \
+            --limit 100)
 
-            echo "No son las 05:00 en Madrid."
-            echo "No se realizará ninguna publicación."
+          echo "$PRS"
 
-            echo "ejecutar=false" >> "$GITHUB_OUTPUT"
+          echo ""
 
-          else
-
-            echo "Son las 05:00 en Madrid."
-
-            echo "ejecutar=true" >> "$GITHUB_OUTPUT"
-
+          if [ "$PRS" = "[]" ]; then
+            echo "No hay Pull Requests abiertos."
+            exit 0
           fi
 
+          echo "$PRS" |
+          jq -c '.[]' |
+          while read -r PR; do
+
+            NUMBER=$(echo "$PR" | jq -r '.number')
+            BRANCH=$(echo "$PR" | jq -r '.headRefName')
+            IS_DRAFT=$(echo "$PR" | jq -r '.isDraft')
+            TITLE=$(echo "$PR" | jq -r '.title')
+
+            echo ""
+            echo "----------------------------------------"
+            echo "PR #$NUMBER"
+            echo "Título: $TITLE"
+            echo "Rama: $BRANCH"
+            echo "Draft: $IS_DRAFT"
+            echo "----------------------------------------"
+
+            if [[ "$BRANCH" != noticia/* ]]; then
+              echo "→ Se omite: no es una rama noticia/."
+              continue
+            fi
+
+            if [ "$IS_DRAFT" = "true" ]; then
+              echo "→ Se omite: el PR está en Draft."
+              continue
+            fi
+
+            # ==================================================
+            # COMPROBAR MERGEABLE
+            # ==================================================
+
+            MERGEABLE="UNKNOWN"
+
+            for INTENTO in 1 2 3 4 5; do
+
+              MERGEABLE=$(gh pr view "$NUMBER" \
+                --repo "$GH_REPO" \
+                --json mergeable \
+                --jq '.mergeable')
+
+              echo "Intento $INTENTO/5 → Mergeable: $MERGEABLE"
+
+              if [ "$MERGEABLE" != "UNKNOWN" ]; then
+                break
+              fi
+
+              if [ "$INTENTO" -lt 5 ]; then
+                echo "GitHub todavía no ha calculado la mergeabilidad."
+                echo "Esperando 10 segundos..."
+                sleep 10
+              fi
+
+            done
+
+            echo ""
+
+            if [ "$MERGEABLE" = "MERGEABLE" ]; then
+              echo "✅ PR #$NUMBER está preparado para publicación."
+            elif [ "$MERGEABLE" = "CONFLICTING" ]; then
+              echo "❌ PR #$NUMBER tiene conflictos."
+            else
+              echo "⚠ PR #$NUMBER continúa con estado: $MERGEABLE"
+            fi
+
+          done
+
+          echo ""
+          echo "========================================"
+          echo " FIN DE LA COMPROBACIÓN"
+          echo "========================================"
+
+
+      # ==========================================================
+      # BUSCAR PR DE NOTICIAS
+      # ==========================================================
 
       - name: Buscar PR de noticias
         if: steps.hora.outputs.ejecutar == 'true'
@@ -60,7 +146,7 @@ jobs:
             --repo "$GH_REPO" \
             --state open \
             --base main \
-            --json number,headRefName,isDraft,mergeable,title \
+            --json number,headRefName,isDraft,title \
             --limit 100)
 
           echo "$PRS"
@@ -84,7 +170,6 @@ jobs:
             NUMBER=$(echo "$PR" | jq -r '.number')
             BRANCH=$(echo "$PR" | jq -r '.headRefName')
             IS_DRAFT=$(echo "$PR" | jq -r '.isDraft')
-            MERGEABLE=$(echo "$PR" | jq -r '.mergeable')
             TITLE=$(echo "$PR" | jq -r '.title')
 
 
@@ -94,9 +179,12 @@ jobs:
             echo "Título: $TITLE"
             echo "Rama: $BRANCH"
             echo "Draft: $IS_DRAFT"
-            echo "Mergeable: $MERGEABLE"
             echo "----------------------------------------"
 
+
+            # ==================================================
+            # COMPROBAR RAMA
+            # ==================================================
 
             if [[ "$BRANCH" != noticia/* ]]; then
 
@@ -107,6 +195,10 @@ jobs:
             fi
 
 
+            # ==================================================
+            # COMPROBAR DRAFT
+            # ==================================================
+
             if [ "$IS_DRAFT" = "true" ]; then
 
               echo "→ Se omite: el PR está en Draft."
@@ -116,16 +208,69 @@ jobs:
             fi
 
 
-            if [ "$MERGEABLE" != "MERGEABLE" ]; then
+            # ==================================================
+            # COMPROBAR MERGEABLE
+            #
+            # GitHub puede devolver UNKNOWN mientras calcula
+            # la posibilidad de hacer merge.
+            #
+            # Hacemos hasta 5 intentos, esperando 10 segundos
+            # entre cada uno.
+            # ==================================================
 
-              echo "→ Se omite: el PR no está listo para merge."
+            MERGEABLE="UNKNOWN"
 
-              continue
+            for INTENTO in 1 2 3 4 5; do
+
+              MERGEABLE=$(gh pr view "$NUMBER" \
+                --repo "$GH_REPO" \
+                --json mergeable \
+                --jq '.mergeable')
+
+              echo "Intento $INTENTO/5 → Mergeable: $MERGEABLE"
+
+
+              if [ "$MERGEABLE" != "UNKNOWN" ]; then
+
+                break
+
+              fi
+
+
+              if [ "$INTENTO" -lt 5 ]; then
+
+                echo "GitHub todavía no ha calculado la mergeabilidad."
+                echo "Esperando 10 segundos antes de volver a consultar..."
+
+                sleep 10
+
+              fi
+
+            done
+
+
+            echo ""
+
+
+            # ==================================================
+            # RESULTADO FINAL DE MERGEABILIDAD
+            # ==================================================
+
+            if [ "$MERGEABLE" = "MERGEABLE" ]; then
+
+              echo "✓ PR #$NUMBER está preparado para publicación."
+
+            elif [ "$MERGEABLE" = "CONFLICTING" ]; then
+
+              echo "✗ PR #$NUMBER tiene conflictos."
+              echo "→ Se omite y NO se realizará ningún merge."
+
+            else
+
+              echo "⚠ PR #$NUMBER continúa con estado: $MERGEABLE"
+              echo "→ No se realizará ningún merge por seguridad."
 
             fi
-
-
-            echo "✓ PR #$NUMBER está preparado para publicación."
 
 
           done
