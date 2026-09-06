@@ -12,7 +12,7 @@ permissions:
 
 jobs:
 
-  comprobar-noticias:
+  publicar-noticias:
 
     runs-on: ubuntu-latest
 
