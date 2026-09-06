@@ -26,7 +26,7 @@ jobs:
 
           echo "Hora actual en Madrid: $HORA_MADRID"
 
-          if [ "$HORA_MADRID" != "05" ]; then
+          if [ "$HORA_MADRID" != "17" ]; then
 
             echo "No son las 05:00 en Madrid."
             echo "No se realizará ninguna publicación."
