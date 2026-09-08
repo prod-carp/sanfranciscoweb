@@ -1,7 +1,7 @@
 ﻿+++
 title = 'La Asunción de la Bienaventurada Virgen María'
 subtitle = 'Descubre qué celebra la Iglesia en la Asunción de María, qué enseña sobre su destino eterno y por qué esta solemnidad es importante para los cristianos.'
-date = '2027-08-15T16:44:08+02:00'
+date = '2026-08-15T16:44:08+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/la-asuncion-de-la-virgen-en-fuenlabrada_20260817_164349.webp"
 fechaBase = '08/15'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 Cada **15 de agosto**, la Iglesia católica levanta su mirada al cielo para celebrar la **Asunción de la Virgen María**. No es solo una fiesta más en el calendario. Es la certeza de que Dios no abandona a quienes confían en Él. Es el anuncio gozoso de que María, nuestra Madre, está ya en la gloria, **en cuerpo y alma**, junto a su Hijo.

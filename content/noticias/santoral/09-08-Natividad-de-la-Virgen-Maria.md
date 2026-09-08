@@ -1,7 +1,7 @@
 ﻿+++
 title = 'Natividad de la Virgen María: el nacimiento de María'
 subtitle = 'La Iglesia celebra el nacimiento de la Virgen María cada 8 de septiembre, una fiesta llena de esperanza que nos recuerda el comienzo de la vida de la Madre de Jesús.'
-date = '2026-09-08T16:44:08+02:00'
+date = '2026-09-08T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -9,11 +9,9 @@ diasDestacado = 1
 weight = 0
 image = "/assets/images/blog/natividad-virgen-maria.webp"
 fechaBase = '09/08'
-fechaInicio = 1
-fechaFin = 90
+fechaInicio = 0
+fechaFin = 300
 +++
-
-### 
 
 Hay nacimientos que llenan de alegría a una familia y hay otros que, con el paso del tiempo, adquieren un significado mucho más grande. El nacimiento de la **Virgen María** pertenece a estos últimos.
 

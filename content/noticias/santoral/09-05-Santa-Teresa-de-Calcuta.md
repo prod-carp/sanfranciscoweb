@@ -13,7 +13,6 @@ fechaInicio = 1
 fechaFin = 90
 +++
 
-### 
 
 Hay personas cuya vida parece responder a una sola pregunta: **¿cómo puedo amar y servir a Dios en los demás?** Santa Teresa de Calcuta fue una de ellas.
 
