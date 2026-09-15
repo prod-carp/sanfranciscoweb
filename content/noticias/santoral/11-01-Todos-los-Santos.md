@@ -1,7 +1,7 @@
 ﻿+++
 title = 'Todos los Santos: significado, historia y fe católica'
 subtitle = 'Descubre qué celebra la Iglesia en Todos los Santos, quiénes forman parte de esta gran familia y por qué esta solemnidad invita a vivir buscando la santidad.'
-date = '2026-11-01T16:44:08+02:00'
+date = '2026-11-01T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '11/01'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 ### 

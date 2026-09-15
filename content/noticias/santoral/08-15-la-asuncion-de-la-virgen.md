@@ -1,7 +1,7 @@
 ﻿+++
 title = 'La Asunción de la Bienaventurada Virgen María'
 subtitle = 'Descubre qué celebra la Iglesia en la Asunción de María, qué enseña sobre su destino eterno y por qué esta solemnidad es importante para los cristianos.'
-date = '2026-08-15T16:44:08+02:00'
+date = '2026-08-15T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]

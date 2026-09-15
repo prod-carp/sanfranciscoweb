@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Francisco Javier: el misionero que llevó a Cristo lejos'
 subtitle = 'San Francisco Javier dejó una vida de estudios y comodidades para anunciar el Evangelio en tierras lejanas. Su historia es un ejemplo de entrega, fe y valentía.'
-date = '2026-12-03T16:44:08+02:00'
+date = '2026-12-03T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '12/03'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 Hay personas que sienten una llamada tan fuerte en el corazón que están dispuestas a dejarlo todo para seguirla. **San Francisco Javier** fue uno de ellos.

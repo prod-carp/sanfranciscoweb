@@ -1,7 +1,7 @@
 ﻿+++
 title = 'Presentación del Señor: significado, historia y fe católica'
 subtitle = 'Descubre qué celebra la Iglesia en la Presentación de Jesús, quiénes fueron Simeón y Ana y qué significado tiene esta fiesta para la vida cristiana.'
-date = '2027-02-02T16:44:08+02:00'
+date = '2027-02-02T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/2F-la-presenacion.webp"
 fechaBase = '02/02'
 fechaInicio = 1
-fechaFin = 90 
+fechaFin = 300 
 +++
 
 La **Presentación del Señor** es una de las celebraciones más antiguas del calendario cristiano y tiene lugar el **2 de febrero**, cuarenta días después de Navidad. En ella, la Iglesia recuerda el momento en que María y José llevaron al Niño Jesús al templo de Jerusalén para presentarlo al Señor.

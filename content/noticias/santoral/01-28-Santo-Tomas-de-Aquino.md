@@ -1,7 +1,7 @@
 ﻿+++
 title = 'Santo Tomás de Aquino: fe, razón, sabiduría y santidad'
 subtitle = 'Conoce la vida de Santo Tomás de Aquino, su defensa de la armonía entre fe y razón y por qué su enseñanza sigue siendo fundamental en la Iglesia y la teología.'
-date = '2027-01-28T16:44:08+02:00'
+date = '2027-01-28T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '01/28'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 Después de San Pablo, encontramos a una de las figuras intelectuales y espirituales más importantes de toda la historia de la Iglesia: **Santo Tomás de Aquino**, sacerdote dominico, teólogo y filósofo, reconocido como uno de los grandes maestros de la doctrina católica.

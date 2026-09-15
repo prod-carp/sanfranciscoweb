@@ -1,19 +1,18 @@
 ﻿+++
-title = 'Sagrada Familia: un hogar que nos enseña a amar'
+title = 'La Sagrada Familia: Un hogar que nos enseña a amar'
 subtitle = 'Jesús, María y José forman la Sagrada Familia, modelo de amor, fe y confianza en Dios para todas las familias que desean caminar unidas.'
-date = '2026-12-27T16:44:08+02:00'
+date = '2026-12-27T00:00:00+02:00'
 draft = false
-categorias = ["Santoral"]
-tags = ["importante"]
-diasDestacado = 1
+categorias = ["Tiempo Litúrgico"]
+tags = [""]
 weight = 0
-image = "/assets/images/blog/*.webp"
-fechaBase = '12/27'
-fechaInicio = 1
-fechaFin = 90
+image = "/assets/images/blog/la-pascua-el-triunfo-de-la-vida-sobre_20260818_111625.webp"
+tipoFecha = "sagrada-familia"
+diasAntes = 2
+diasDespues = 2
 +++
 
-## ¿Qué es la Sagrada Familia?
+**¿Qué es la Sagrada Familia?**
 
 La **Sagrada Familia** está formada por **Jesús, María y José**. Es la familia en la que el Hijo de Dios quiso crecer durante los primeros años de su vida terrena.
 
@@ -449,29 +448,29 @@ La santidad puede crecer precisamente allí, en medio de la vida cotidiana.
 
 ### Oración a la Sagrada Familia
 
-**Jesús, María y José,  
-Sagrada Familia de Nazaret,  
-bendecid nuestros hogares  
+**Jesús, María y José, 
+Sagrada Familia de Nazaret, 
+bendecid nuestros hogares 
 y enseñadnos a vivir unidos en el amor.**
 
-**Jesús, enséñanos a servir.  
-María, enséñanos a confiar.  
+**Jesús, enséñanos a servir. 
+María, enséñanos a confiar. 
 José, enséñanos a proteger y cuidar a quienes amamos.**
 
-**Ayudad a las familias que atraviesan dificultades,  
-a los padres preocupados por sus hijos,  
-a los matrimonios que necesitan reconciliarse  
+**Ayudad a las familias que atraviesan dificultades, 
+a los padres preocupados por sus hijos, 
+a los matrimonios que necesitan reconciliarse 
 y a quienes se sienten solos o abandonados.**
 
-**Que en nuestros hogares haya paciencia,  
+**Que en nuestros hogares haya paciencia, 
 perdón, respeto y generosidad.**
 
 **Y que nunca olvidemos poner a Dios en el centro de nuestra familia.**
 
-**Sagrada Familia de Nazaret,  
-haz de nuestros hogares  
+**Sagrada Familia de Nazaret, 
+haz de nuestros hogares 
 lugares de amor, de paz y de fe.**
 
-**Jesús, María y José,  
-rogad por nosotros y por nuestras familias.  
+**Jesús, María y José, 
+rogad por nosotros y por nuestras familias. 
 Amén.**

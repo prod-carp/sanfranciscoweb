@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Pío de Pietrelcina: un santo marcado por Cristo'
 subtitle = '**San Pío de Pietrelcina entregó su vida a Dios como sacerdote capuchino, sirvió a los enfermos y llevó en su cuerpo los estigmas de Cristo.'
-date = '2026-09-23T16:44:08+02:00'
+date = '2026-09-23T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '09/23'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 Hay santos cuya vida está marcada por acontecimientos extraordinarios, pero cuya verdadera grandeza se encuentra en algo mucho más profundo: **su amor a Jesucristo y su entrega diaria a Dios**. San Pío de Pietrelcina fue uno de ellos.

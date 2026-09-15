@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Ambrosio: el pastor que defendió la verdad'
 subtitle = 'San Ambrosio fue un gran obispo, maestro de la fe y defensor de la Iglesia. Su vida nos enseña a buscar la verdad, vivir con valentía y permanecer fieles a Cristo.'
-date = '2026-12-07T16:44:08+02:00'
+date = '2026-12-07T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '12/07'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 Hay momentos en la vida en los que una persona tiene que tomar decisiones importantes, aunque no las haya planeado. La historia de **San Ambrosio** comenzó precisamente de una manera inesperada.

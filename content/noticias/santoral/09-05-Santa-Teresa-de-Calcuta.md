@@ -1,7 +1,7 @@
 ﻿+++
 title = 'Santa Teresa de Calcuta: un corazón entregado a los pobres'
 subtitle = 'Santa Teresa de Calcuta dedicó su vida a servir a los más pobres, viendo en cada persona necesitada el rostro de Cristo y mostrando que el amor también se expresa en pequeños gestos.'
-date = '2026-09-05T16:44:08+02:00'
+date = '2026-09-05T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,9 +10,8 @@ weight = 0
 image = "/assets/images/blog/santateresadecalcuta.webp"
 fechaBase = '09/05'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
-
 
 Hay personas cuya vida parece responder a una sola pregunta: **¿cómo puedo amar y servir a Dios en los demás?** Santa Teresa de Calcuta fue una de ellas.
 

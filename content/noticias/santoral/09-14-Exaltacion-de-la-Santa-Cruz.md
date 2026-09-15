@@ -1,16 +1,16 @@
 ﻿+++
 title = 'Exaltación de la Santa Cruz: historia y fe católica'
 subtitle = 'Descubre qué celebra la Iglesia en la Exaltación de la Santa Cruz, qué representa la cruz de Cristo y por qué sigue siendo el centro de la fe cristiana.'
-date = '2026-09-14T16:44:08+02:00'
+date = '2026-09-14T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
 diasDestacado = 1
 weight = 0
-image = "/assets/images/blog/*.webp"
+image = "/assets/images/blog/santa-cruz.webp"
 fechaBase = '09/14'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 La **Exaltación de la Santa Cruz** es una de las celebraciones más significativas del calendario litúrgico de la Iglesia católica. Cada **14 de septiembre**, los cristianos contemplan la cruz no simplemente como un instrumento de sufrimiento y muerte, sino como el signo de la **victoria de Cristo sobre el pecado y la muerte**.

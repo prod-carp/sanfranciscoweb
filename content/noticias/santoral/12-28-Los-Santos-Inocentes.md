@@ -1,7 +1,7 @@
 ﻿+++
 title = 'Santos Inocentes: los pequeños que dieron la vida por Jesús'
 subtitle = 'Los Santos Inocentes son los niños de Belén asesinados por orden del rey Herodes. La Iglesia los recuerda como los primeros mártires de Cristo, víctimas inocentes de la violencia.'
-date = '2026-12-28T16:44:08+02:00'
+date = '2026-12-28T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '12/28'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 ## ¿Quiénes son los Santos Inocentes?

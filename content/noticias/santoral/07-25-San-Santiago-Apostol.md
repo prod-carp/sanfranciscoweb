@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Santiago Apóstol: vida, martirio y fe en Cristo'
 subtitle = 'Conoce la vida de Santiago Apóstol, uno de los primeros discípulos de Jesús, su martirio, su misión evangelizadora y su importancia para la Iglesia.'
-date = '2027-07-25T16:44:08+02:00'
+date = '2027-07-25T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '07/25'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 **¿Quién fue San Santiago Apóstol?**

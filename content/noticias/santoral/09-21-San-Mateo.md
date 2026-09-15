@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Mateo: el hombre que dejó todo para seguir a Jesús'
 subtitle = 'San Mateo pasó de ser recaudador de impuestos a apóstol de Jesús y evangelista. Su vida nos recuerda que Cristo puede transformar un corazón y darle un nuevo rumbo.'
-date = '2026-09-21T16:44:08+02:00'
+date = '2026-09-21T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '09/21'
 fechaInicio = 1
-fechaFin = 90 
+fechaFin = 300
 +++
 
 Hay encuentros con Jesús que cambian una vida para siempre. El de **San Mateo** fue así.

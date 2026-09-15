@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Juan Bautista: la voz que preparó el camino a Cristo'
 subtitle = 'Descubre la vida de San Juan Bautista, el profeta que llamó a la conversión, preparó el camino de Jesús y dio testimonio de Él hasta entregar su vida.'
-date = '2027-08-29T16:44:08+02:00'
+date = '2027-08-29T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '08/29'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 Hay personajes en la Biblia cuya vida parece estar completamente orientada hacia una misión. **San Juan Bautista** es uno de ellos. Desde antes de su nacimiento, Dios lo había elegido para preparar al pueblo de Israel para la llegada del Mesías.

@@ -1,16 +1,16 @@
 ﻿+++
 title = 'San Ignacio de Antioquía: un corazón unido a Cristo'
 subtitle = 'San Ignacio de Antioquía fue un obispo que amó profundamente a Cristo y entregó su vida como mártir. Su testimonio nos enseña a permanecer firmes en la fe.'
-date = '2026-10-17T16:44:08+02:00'
+date = '2026-10-17T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
 diasDestacado = 1
 weight = 0
-image = "/assets/images/blog/*.webp"
+image = "/assets/images/blog/.webp"
 fechaBase = '10/17'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 Hay santos cuya vida nos recuerda que seguir a Cristo no siempre significa tener un camino fácil. **San Ignacio de Antioquía** vivió en los primeros tiempos de la Iglesia, cuando ser cristiano podía significar arriesgar la propia vida.

@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Juan Pablo II: el Papa que llevó a Cristo al mundo'
 subtitle = '**San Juan Pablo II dedicó su vida a anunciar a Cristo, defender la dignidad humana y acercar a los jóvenes a Dios. Su legado sigue vivo en la Iglesia.'
-date = '2026-10-22T16:44:08+02:00'
+date = '2026-10-22T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '10/22'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 Hay personas cuya vida queda profundamente unida a la historia de la Iglesia. **San Juan Pablo II** fue una de ellas.

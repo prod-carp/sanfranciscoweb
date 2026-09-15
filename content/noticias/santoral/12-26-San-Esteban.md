@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Esteban: el primer mártir que murió por Cristo'
 subtitle = 'San Esteban fue el primer cristiano que entregó su vida por anunciar a Jesús. Su perdón ante la muerte nos enseña a responder al mal con fe y amor.'
-date = '2026-12-26T16:44:08+02:00'
+date = '2026-12-26T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '12/26'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 ## ¿Quién fue San Esteban?

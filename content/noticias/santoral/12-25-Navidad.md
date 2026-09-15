@@ -1,7 +1,7 @@
 ﻿+++
 title = 'Navidad: Dios se hace hombre y nace entre nosotros'
 subtitle = 'La Navidad celebra el nacimiento de Jesucristo, el Hijo de Dios que vino al mundo para salvarnos y mostrarnos el amor de Dios de una manera cercana.'
-date = '2026-12-25T16:44:08+02:00'
+date = '2026-12-25T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '12/25'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 ## ¿Qué celebramos en Navidad?

@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Jerónimo: el hombre que dedicó su vida a la Biblia'
 subtitle = 'San Jerónimo dedicó su vida a conocer, traducir y explicar la Sagrada Escritura. Su amor por la Palabra de Dios lo convirtió en uno de los grandes maestros de la Iglesia.'
-date = '2026-09-30T16:44:08+02:00'
+date = '2026-09-30T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '09/30'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 Pocas personas han dedicado tanto esfuerzo a conocer y transmitir la **Sagrada Escritura** como San Jerónimo. Fue un hombre de carácter fuerte, apasionado por el estudio y profundamente enamorado de la Palabra de Dios.

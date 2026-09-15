@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Gregorio Magno: el pastor que sirvió a la Iglesia'
 subtitle = 'Papa, monje, pastor y Doctor de la Iglesia, San Gregorio Magno dedicó su vida a servir a Dios, cuidar a los pobres y anunciar el Evangelio.'
-date = '2026-09-03T16:44:08+02:00'
+date = '2026-09-03T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/san-gregorio-magno.webp"
 fechaBase = '09/03'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 ### 

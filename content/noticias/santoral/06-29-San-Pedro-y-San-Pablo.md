@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Pedro y San Pablo: dos vidas, una misma misión'
 subtitle = 'Pedro, el pescador que siguió a Jesús, y Pablo, el perseguidor que se convirtió en apóstol, nos muestran que Dios puede transformar una vida y llamarnos a anunciar el Evangelio.'
-date = '2027-06-29T16:44:08+02:00'
+date = '2027-06-29T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '06/29'
 fechaInicio = 1
-fechaFin = 90 
+fechaFin = 300 
 +++
 
 Cada **29 de junio**, la Iglesia Católica celebra con alegría la solemnidad de **San Pedro y San Pablo**, dos de los grandes apóstoles de Jesucristo. Sus historias son muy diferentes, pero ambos tuvieron algo en común: entregaron su vida a Cristo y fueron testigos de su Evangelio hasta el final.

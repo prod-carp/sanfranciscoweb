@@ -1,7 +1,7 @@
 ﻿+++
 title = 'Santa Teresa del Niño Jesús: el camino de la sencillez'
 subtitle = 'Santa Teresa del Niño Jesús descubrió que no necesitaba hacer grandes cosas para amar a Dios. Su pequeño camino de confianza la convirtió en una de las santas más queridas.'
-date = '2026-10-01T16:44:08+02:00'
+date = '2026-10-01T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '10/01'
 fechaInicio = 1
-fechaFin = 90 
+fechaFin = 300
 +++
 
 ****

@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Juan de la Cruz: el santo de la unión con Dios'
 subtitle = 'San Juan de la Cruz enseñó que el verdadero camino hacia Dios pasa por el amor, la entrega y la confianza, incluso cuando atravesamos momentos de oscuridad y sufrimiento.'
-date = '2026-12-14T16:44:08+02:00'
+date = '2026-12-14T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '12/14'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 ## ¿Quién fue San Juan de la Cruz?

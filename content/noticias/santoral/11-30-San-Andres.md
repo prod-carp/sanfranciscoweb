@@ -1,7 +1,7 @@
 ﻿+++
 title = 'San Andrés: el apóstol que llevó a otros hacia Jesús'
 subtitle = 'San Andrés fue uno de los primeros discípulos llamados por Jesús. Su vida nos enseña a reconocer al Señor y a llevar a otras personas hacia Él con sencillez y fe.'
-date = '2026-11-30T16:44:08+02:00'
+date = '2026-11-30T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '11/30'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 A veces, una persona puede cambiar nuestra vida simplemente porque nos presenta a alguien. Algo parecido ocurrió con **San Andrés**.

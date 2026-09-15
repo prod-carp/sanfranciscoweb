@@ -1,16 +1,16 @@
 ﻿+++
 title = 'Inmaculada Concepción: María, llena de gracia desde el inicio'
 subtitle = 'Desde el primer instante de su existencia, María fue preservada del pecado original por una gracia especial de Dios, para prepararla para ser la Madre de Jesús.'
-date = '2026-12-08T16:44:08+02:00'
+date = '2026-12-08T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
 diasDestacado = 1
 weight = 0
-image = "/assets/images/blog/*.webp"
+image = "/assets/images/blog/natividad-virgen-maria.webp"
 fechaBase = '12/08'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 ## ¿Qué es la Inmaculada Concepción?
