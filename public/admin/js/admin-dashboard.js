@@ -163,7 +163,7 @@ async function loadPendingArticles(
 
     const response =
       await fetch(
-        "https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles",
+        "https://api.sanfranciscoysantaclara.es/api/admin/articles",
         {
 
           method:

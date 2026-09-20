@@ -155,7 +155,7 @@ async function loadArticleFromD1(
 
     const response =
       await fetch(
-        `https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(articleId)}`,
+        `https://api.sanfranciscoysantaclara.es/api/admin/articles/${encodeURIComponent(articleId)}`,
         {
 
           method:
@@ -239,7 +239,7 @@ try {
 // CARGAR IMAGEN PRIVADA DESDE R2
 let imageUrl = "";
 if (article.image_key) {
-  const imageResponse = await fetch(`https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(article.id)}/image`, {
+  const imageResponse = await fetch(`https://api.sanfranciscoysantaclara.es/api/admin/articles/${encodeURIComponent(article.id)}/image`, {
     method: "GET",
     headers: { "Authorization": `Bearer ${token}` }
   });
@@ -984,7 +984,7 @@ if (
 
       const createResponse =
         await fetch(
-          "https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/articles",
+          "https://api.sanfranciscoysantaclara.es/api/articles",
           {
 
             method:
@@ -1074,7 +1074,7 @@ if (
 
       const updateResponse =
         await fetch(
-          `https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(articleId)}`,
+          `https://api.sanfranciscoysantaclara.es/api/admin/articles/${encodeURIComponent(articleId)}`,
           {
 
             method:
@@ -1141,7 +1141,7 @@ if (
 
     const response =
       await fetch(
-        `https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(articleId)}/approve`,
+        `https://api.sanfranciscoysantaclara.es/api/admin/articles/${encodeURIComponent(articleId)}/approve`,
         {
 
           method:
@@ -1305,7 +1305,7 @@ if (
 
       const response =
         await fetch(
-          "https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/articles",
+          "https://api.sanfranciscoysantaclara.es/api/articles",
           {
 
             method:

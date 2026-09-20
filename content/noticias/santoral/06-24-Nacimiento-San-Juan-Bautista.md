@@ -1,14 +1,13 @@
 ﻿+++
 title = 'San Juan Bautista: la voz que preparó el camino a Cristo'
 subtitle = 'Descubre la vida de San Juan Bautista, el profeta que llamó a la conversión, preparó el camino de Jesús y dio testimonio de Él hasta entregar su vida.'
-date = '2027-08-29T00:00:00+02:00'
+date = '2027-06-24T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
-tags = ["importante"]
-diasDestacado = 1
+tags = []
 weight = 0
 image = "/assets/images/blog/*.webp"
-fechaBase = '08/29'
+fechaBase = '06/24'
 fechaInicio = 1
 fechaFin = 300
 +++

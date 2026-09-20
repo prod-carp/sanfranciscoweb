@@ -64,7 +64,7 @@ async function cargarImagenExistenteDesdeR2(user, imageKey) {
   }
   try {
     const token = await user.getIdToken(true);
-    const response = await fetch(`https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles/${encodeURIComponent(articleId)}/image`, {
+    const response = await fetch(`https://api.sanfranciscoysantaclara.es/api/admin/articles/${encodeURIComponent(articleId)}/image`, {
       method: "GET",
       headers: { "Authorization": `Bearer ${token}` }
     });
