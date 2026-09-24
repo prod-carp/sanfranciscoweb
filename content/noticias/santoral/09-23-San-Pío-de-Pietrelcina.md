@@ -1,6 +1,6 @@
 ﻿+++
 title = 'San Pío de Pietrelcina: un franciscano marcado por Cristo'
-subtitle = '**San Pío de Pietrelcina entregó su vida a Dios como sacerdote capuchino, sirvió a los enfermos y llevó en su cuerpo los estigmas de Cristo.'
+subtitle = 'San Pío de Pietrelcina entregó su vida a Dios como sacerdote capuchino, sirvió a los enfermos y llevó en su cuerpo los estigmas de Cristo.'
 date = '2026-09-23T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]

@@ -129,6 +129,8 @@ $content = $content -replace '(?s)<html.*?</head>', $newHead
     if ($content -match $pattern) { $content = $content -replace $pattern, '<script src="assets/theme/js/script.js"></script>' }
     $pattern = '<script type="text/plain" data-src="assets/parallax/jarallax.js"></script>'
     if ($content -match $pattern) { $content = $content -replace $pattern, '<script src="assets/parallax/jarallax.js"></script>' }
+    $pattern = '<script type="text/plain" data-src="assets/countdown/countdown.js">'
+    if ($content -match $pattern) { $content = $content -replace $pattern, '<script data-src="assets/countdown/countdown.js">' }
 
     # 1.5.5 TABLÓN DE ANUNCIOS
     $pattern = '<img src="assets/images/tablondeanuncios.webp" alt="Tablón de anuncios">';
@@ -171,6 +173,7 @@ $content = $content -replace '(?s)<html.*?</head>', $newHead
     $pattern = '<a href="https://www.instagram.com/san.franciscoyclara/" target="_blank"><span class="socicon-instagram socicon" style="font-size: 70px;"></span></a>'
     if ($content -match $pattern) { $content = $content -replace $pattern, '<a href="https://www.instagram.com/san.franciscoyclara/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de la parroquia San Francisco y Santa Clara"><span class="socicon-instagram socicon" style="font-size: 70px;"></span></a>' }
 
+   
     # 1.6 PAGINAS NO RASTREABLES
     if ($_.Name -in '404.html', 'legal.html', 'cookies.html', 'privacidad.html') {
         $content = $content -replace 'index,follow,max-image-preview:large', 'noindex,follow'
