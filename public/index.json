@@ -1,6 +1,15 @@
 [
 
   {
+    "category": "Peregrinaciones",
+    "title": "Ilusionismo familiar para celebrar a San Francisco",
+    "subtitle": "Una mañana de asombro y alegría para toda la familia con Lord Raymon",
+    "date": "2026-09-25",
+    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/mago.webp",
+    "url": "/noticias/magia-familiar/"
+  },
+
+  {
     "category": "Santoral",
     "title": "San Pío de Pietrelcina: un franciscano marcado por Cristo",
     "subtitle": "San Pío de Pietrelcina entregó su vida a Dios como sacerdote capuchino, sirvió a los enfermos y llevó en su cuerpo los estigmas de Cristo.",
@@ -25,13 +34,4 @@
     "date": "2026-08-01",
     "image": "https://sanfranciscoysantaclara.es/assets/images/blog/guia-para-participar-en-la-santa-misa_20260801_000031.webp",
     "url": "/noticias/2026-08-01-guia-para-participar-en-la-santa-misa/"
-  },
-
-  {
-    "category": "Formación",
-    "title": "¿Tuvo Jesús hermanos? Una mirada a la Biblia y a la figura de la Virgen María",
-    "subtitle": "Si la Biblia habla de los \"hermanos de Jesús\", ¿cómo puede afirmar la Iglesia que la Virgen María permaneció siempre virgen?",
-    "date": "2026-07-09",
-    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/_20260709_163757.webp",
-    "url": "/noticias/tuvo-jesus-hermanos/"
   }]
