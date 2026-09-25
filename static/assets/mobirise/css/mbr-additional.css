@@ -1330,7 +1330,7 @@ a {
   color: #fafafa;
 }
 .cid-vw7WAeGMyG {
-  background-image: url("../../../assets/images/banergrupos1.webp");
+  background-image: url("../../../assets/images/fondogrupos.webp");
 }
 .cid-vw7WAeGMyG .mbr-fallback-image.disabled {
   display: none;
@@ -1343,6 +1343,13 @@ a {
   height: 100%;
   position: absolute;
   top: 0;
+}
+.cid-vw7WAeGMyG .mbr-section-title {
+  color: #9fdbf8;
+}
+.cid-vw7WAeGMyG .mbr-text,
+.cid-vw7WAeGMyG .mbr-section-btn {
+  color: #ffffff;
 }
 .cid-vtAJ5eXZ9o {
   padding-top: 0rem;
@@ -19800,10 +19807,10 @@ a {
 }
 .cid-vw3QiECya1 .mbr-text,
 .cid-vw3QiECya1 .mbr-section-btn {
-  color: #000000;
+  color: #ffffff;
 }
 .cid-vw3QiECya1 .mbr-section-title {
-  color: #000000;
+  color: #ffffff;
 }
 .cid-vw3QiEQiQB {
   padding-top: 1rem;
