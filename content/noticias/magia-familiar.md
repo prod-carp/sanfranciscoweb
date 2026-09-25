@@ -6,7 +6,7 @@ draft = false
 categorias = ["Peregrinaciones"]
 tags = []
 weight = 0
-image = "/assets/images/blog/entrada-parroquia-800x600.webp"
+image = "/assets/images/blog/mago.webp"
 +++
 
 En el marco de la alegre celebración de nuestra fiesta patronal en honor a San Francisco de Asís, la Parroquia San Francisco y Santa Clara de Asís tiene el gozo de invitar a todas las familias, y de manera especial a los más pequeños de la casa, a participar en un encuentro pensado para compartir la fraternidad y la sencillez que caracterizan a nuestro santo patrono.
