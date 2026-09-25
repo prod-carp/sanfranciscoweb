@@ -5108,7 +5108,7 @@ a {
 .cid-vis70t6rYN {
   padding-top: 7rem;
   padding-bottom: 7rem;
-  background-image: url("../../../assets/images/francisco-1-726x1185.webp");
+  background-image: url("../../../assets/images/sanfrancisco-meta.webp");
 }
 .cid-vis70t6rYN .mbr-fallback-image.disabled {
   display: none;
@@ -5828,7 +5828,7 @@ a {
 .cid-viscNjLr1w {
   padding-top: 7rem;
   padding-bottom: 7rem;
-  background-image: url("../../../assets/images/clara-947x1181.webp");
+  background-image: url("../../../assets/images/santaclara-meta.webp");
 }
 .cid-viscNjLr1w .mbr-fallback-image.disabled {
   display: none;
@@ -11828,7 +11828,7 @@ a {
 }
 .cid-vl0DXi5yM4 .mbr-iconfont {
   font-size: 3rem;
-  color: #9fe870;
+  color: #483810;
   padding-right: 2rem;
 }
 .cid-vl0DXi5yM4 .content-head {
@@ -11836,6 +11836,35 @@ a {
 }
 .cid-vl0DXi5yM4 .mbr-section-subtitle {
   text-align: justify;
+}
+.cid-vwfgboLMpw {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-image: url("../../../assets/images/padrepio-2.webp");
+}
+.cid-vwfgboLMpw .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-vwfgboLMpw .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-vwfgboLMpw .mbr-text,
+.cid-vwfgboLMpw .mbr-section-btn {
+  color: #232323;
+}
+.cid-vwfgboLMpw .card-title,
+.cid-vwfgboLMpw .card-box {
+  color: #ffffff;
+}
+.cid-vwfgboLMpw .mbr-text,
+.cid-vwfgboLMpw .link-wrap {
+  color: #ffffff;
 }
 .cid-viuks8vXSg {
   padding-top: 2rem;

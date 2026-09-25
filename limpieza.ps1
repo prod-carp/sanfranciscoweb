@@ -23,7 +23,7 @@ $canonicalAdded = 0
 $mobiriseRemoved = 0
 
 # Recorrer solo los HTML en la carpeta static (sin subcarpetas)
-Get-ChildItem -Path "static" -Filter "*.html" | ForEach-Object {
+Get-ChildItem -Path "static" -Filter "*.html" -Exclude "404.html", "cuestionario.html" | ForEach-Object {
     $total++
     $relativePath = $_.FullName.Replace((Get-Location).Path + "\static\", "").Replace("\", "/")
     Write-Host "Procesando: $relativePath" -ForegroundColor White
@@ -175,7 +175,7 @@ $content = $content -replace '(?s)<html.*?</head>', $newHead
 
    
     # 1.6 PAGINAS NO RASTREABLES
-    if ($_.Name -in '404.html', 'legal.html', 'cookies.html', 'privacidad.html') {
+    if ($_.Name -in '404.html', 'cuestionario-grupos-parroquiales.html', 'legal.html', 'cookies.html', 'privacidad.html') {
         $content = $content -replace 'index,follow,max-image-preview:large', 'noindex,follow'
     }
     

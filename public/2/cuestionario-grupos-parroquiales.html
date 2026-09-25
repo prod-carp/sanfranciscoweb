@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Qué grupo parroquial puede encajar contigo?</title>
+  <meta name="description" content="Descubre qué grupos parroquiales de San Francisco y Santa Clara de Asís pueden encajar mejor contigo según tus intereses, edad y situación personal.">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f9;
+      color: #333;
+    }
+
+    .quiz-container {
+      width: min(900px, calc(100% - 32px));
+      margin: 40px auto 60px;
+    }
+
+    .quiz-card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.08);
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .intro .icon {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0 0 15px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #333;
+    }
+
+    .intro p {
+      max-width: 680px;
+      margin: 0 auto 28px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #666;
+    }
+
+    .button {
+      display: inline-block;
+      border: 0;
+      border-radius: 50px;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: #667eea;
+      color: #fff;
+      box-shadow: 0 5px 15px rgba(102,126,234,.25);
+    }
+
+    .button-secondary {
+      background: #eee;
+      color: #444;
+    }
+
+    .hidden { display: none !important; }
+
+    .progress-area {
+      margin-bottom: 35px;
+    }
+
+    .progress-text {
+      display: flex;
+      justify-content: space-between;
+      font-size: .9rem;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    .progress-bar {
+      height: 8px;
+      background: #eee;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background: #667eea;
+      border-radius: 20px;
+      transition: width .3s ease;
+    }
+
+    .question {
+      text-align: center;
+    }
+
+    .question h2 {
+      margin: 0 0 28px;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .option {
+      background: #fff;
+      border: 2px solid #e3e3e8;
+      border-radius: 16px;
+      padding: 18px 16px;
+      min-height: 70px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all .2s ease;
+    }
+
+    .option:hover {
+      border-color: #667eea;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,.06);
+    }
+
+    .option.selected {
+      background: #667eea;
+      border-color: #667eea;
+      color: #fff;
+    }
+
+    .multi-help {
+      color: #777;
+      margin-top: -15px;
+      margin-bottom: 20px;
+      font-size: .95rem;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .navigation .button:only-child {
+      margin-left: auto;
+    }
+
+    .results-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .results-header .icon {
+      font-size: 3rem;
+    }
+
+    .results-header h2 {
+      font-size: 2.2rem;
+      margin: 10px 0;
+    }
+
+    .results-header p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .results {
+      display: grid;
+      gap: 18px;
+    }
+
+    .group-card {
+      border: 1px solid #e5e5e5;
+      border-radius: 18px;
+      padding: 24px;
+      background: #fff;
+    }
+
+    .group-card.first {
+      border: 2px solid #667eea;
+      box-shadow: 0 5px 20px rgba(102,126,234,.12);
+    }
+
+    .group-number {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      background: #f0f1ff;
+      color: #5365c9;
+      font-size: .8rem;
+      font-weight: bold;
+    }
+
+    .group-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .group-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 18px;
+    }
+
+    .tag {
+      padding: 6px 10px;
+      background: #f4f4f6;
+      border-radius: 20px;
+      font-size: .85rem;
+    }
+
+    .group-link {
+      display: inline-block;
+      color: #5365c9;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .group-link:hover {
+      text-decoration: underline;
+    }
+
+    .restart {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 650px) {
+      .quiz-card {
+        padding: 25px 18px;
+      }
+
+      .options {
+        grid-template-columns: 1fr;
+      }
+
+      .navigation {
+        flex-direction: column-reverse;
+      }
+
+      .navigation .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="quiz-container">
+  <div class="quiz-card">
+
+    <!-- INTRODUCCIÓN -->
+    <section id="intro" class="intro">
+      <div class="icon">🤝</div>
+      <h1>¿Qué grupo parroquial puede encajar contigo?</h1>
+      <p>
+        Responde a unas sencillas preguntas y descubre los grupos de nuestra
+        parroquia que pueden encajar mejor contigo, con tus intereses y con
+        tu situación actual.
+      </p>
+      <button class="button button-primary" onclick="startQuiz()">
+        Empezar el cuestionario
+      </button>
+    </section>
+
+    <!-- CUESTIONARIO -->
+    <section id="quiz" class="hidden">
+
+      <div class="progress-area">
+        <div class="progress-text">
+          <span id="progress-label">Pregunta 1 de 6</span>
+          <span id="progress-percent">17%</span>
+        </div>
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <div id="question-container"></div>
+
+    </section>
+
+    <!-- RESULTADOS -->
+    <section id="results-section" class="hidden">
+
+      <div class="results-header">
+        <div class="icon">✨</div>
+        <h2>Estos grupos podrían encajar contigo</h2>
+        <p>
+          Según tus respuestas, estos son los tres grupos que mejor coinciden
+          con tus intereses, circunstancias y disponibilidad.
+        </p>
+      </div>
+
+      <div id="results" class="results"></div>
+
+      <div class="restart">
+        <button class="button button-secondary" onclick="restartQuiz()">
+          Volver a empezar
+        </button>
+      </div>
+
+    </section>
+
+  </div>
+</div>
+
+<script>
+/*
+ * ============================================================
+ * DATOS DE LOS GRUPOS
+ * ============================================================
+ *
+ * Para añadir un nuevo grupo, copia uno de estos objetos.
+ *
+ * Campos principales:
+ * nombre
+ * intereses
+ * participante
+ * edades
+ * hijos
+ * estado_civil
+ * dias
+ * horario
+ * enlace
+ *
+ * Campo opcional:
+ * primera_comunion
+ *   - Si vale ["si"], solo se muestra a quienes hayan hecho
+ *     la Primera Comunión.
+ *   - Si no aparece, no existe esta restricción.
+ */
+
+const grupos = [
+   {
+    nombre: "Grupo de Oración",
+    intereses: ["Oracion"],
+    participante: ["hombre", "mujer", "pareja"],
+    edades: ["+18"],
+    hijos: ["si", "no"],
+    estado_civil: ["soltero", "casado"],
+    dias: ["jueves"],
+    horario: "17:00",
+    enlace: "https://sanfranciscoysantaclara.es/grupodeoracion.html"
+  },
+
+  {
+    nombre: "Grupo de Oración de madres",
+    intereses: ["Oracion"],
+    participante: ["mujer"],
+    edades: ["+18"],
+    hijos: ["si"],
+    estado_civil: ["soltero", "casado"],
+    dias: ["viernes"],
+    horario: "18:00",
+    enlace: "https://sanfranciscoysantaclara.es/grupooracionmadres.html"
+  },
+
+  {
+    nombre: "Rezo del Santo Rosario",
+    intereses: ["Oracion"],
+    participante: ["hombre", "mujer", "pareja"],
+    edades: ["+18"],
+    hijos: ["si", "no"],
+    estado_civil: ["soltero", "casado"],
+    dias: ["sabado"],
+    horario: "17:30",
+    enlace: "https://sanfranciscoysantaclara.es/rezorosario.html"
+  },
+
+  {
+    nombre: "Cáritas",
+    intereses: ["Voluntariado"],
+    participante: ["hombre", "mujer", "pareja"],
+    edades: ["+18"],
+    hijos: ["si", "no"],
+    estado_civil: ["soltero", "casado"],
+    dias: ["jueves"],
+    horario: "18:00",
+    enlace: "https://sanfranciscoysantaclara.es/caritas.html"
+  },
+
+  {
+    nombre: "Grupo Escuela Caleb",
+    intereses: ["Oracion", "Formacion"],
+    participante: ["hombre", "mujer", "pareja"],
+    edades: ["+18"],
+    hijos: ["si", "no"],
+    estado_civil: ["soltero", "casado"],
+    dias: ["domingo"],
+    horario: "10:30",
+    enlace: "https://sanfranciscoysantaclara.es/grupo-caleb.html"
+  },
+
+  {
+    nombre: "Mision David",
+    intereses: ["Entretenimiento", "Formacion", "Coro"],
+    participante: ["hombre", "mujer"],
+    edades: ["6-11"],
+    hijos: ["no"],
+    estado_civil: ["soltero"],
+    dias: ["domingo"],
+    horario: "10:30",
+    enlace: "https://sanfranciscoysantaclara.es/mision-david.html"
+  },
+
+  {
+    nombre: "Grupo de Matrimonios",
+    intereses: ["Oracion", "Formacion"],
+    participante: ["pareja"],
+    edades: ["+18"],
+    hijos: ["si", "no"],
+    estado_civil: ["casado"],
+    dias: ["sabado"],
+    horario: "18:00",
+    enlace: "https://sanfranciscoysantaclara.es/grupomatrimonios.html"
+  },
+
+  {
+    nombre: "Grupo Cana",
+    intereses: ["Oracion", "Formacion"],
+    participante: ["hombre", "mujer"],
+    edades: ["+18"],
+    hijos: ["si", "no"],
+    estado_civil: ["casado"],
+    dias: ["miercoles"],
+    horario: "17:30",
+    enlace: "https://sanfranciscoysantaclara.es/grupo-cana.html"
+  },
+
+  {
+    nombre: "Grupo Manualidades",
+    intereses: ["Entretenimiento"],
+    participante: ["hombre", "mujer", "pareja"],
+    edades: ["6-11", "11-15", "16-20", "+18"],
+    hijos: ["si", "no"],
+    estado_civil: ["soltero", "casado"],
+    dias: ["jueves"],
+    horario: "17:30",
+    enlace: "https://sanfranciscoysantaclara.es/manualidades.html"
+  },
+
+  {
+    nombre: "Life teen",
+    intereses: ["Oracion", "Formacion", "Entretenimiento"],
+    participante: ["hombre", "mujer"],
+    edades: ["11-15"],
+    hijos: ["no"],
+    estado_civil: ["soltero"],
+    dias: ["sabado"],
+    horario: "11:00",
+    enlace: "https://sanfranciscoysantaclara.es/lifeteen.html"
+  },
+
+  {
+    nombre: "Jovenes confirmacion",
+    intereses: ["Oracion", "Formacion"],
+    participante: ["hombre", "mujer"],
+    edades: ["16-20"],
+    hijos: ["no"],
+    estado_civil: ["soltero"],
+    dias: ["viernes"],
+    horario: "18:00",
+    enlace: "https://sanfranciscoysantaclara.es/grupoconfirmacion.html"
+  },
+
+  {
+    nombre: "Grupo de limpieza",
+    intereses: ["Voluntariado"],
+    participante: ["hombre", "mujer", "pareja"],
+    edades: ["+18"],
+    hijos: ["si", "no"],
+    estado_civil: ["soltero", "casado"],
+    dias: ["martes", "miercoles"],
+    horario: "09:00",
+    enlace: "https://sanfranciscoysantaclara.es/grupolimpieza.html"
+  },
+
+  {
+    nombre: "Adoración Nocturna",
+    intereses: ["Oracion"],
+    participante: ["hombre", "mujer", "pareja"],
+    edades: ["+18"],
+    hijos: ["si", "no"],
+    estado_civil: ["soltero", "casado"],
+    dias: ["sabado"],
+    horario: "18:30",
+    enlace: "https://sanfranciscoysantaclara.es/ane.html"
+  },
+
+  {
+    nombre: "Grupo de Oración del Padre Pío",
+    intereses: ["Oracion"],
+    participante: ["hombre", "mujer", "pareja"],
+    edades: ["+18"],
+    hijos: ["si", "no"],
+    estado_civil: ["soltero", "casado"],
+    dias: ["martes"],
+    horario: "18:15",
+    enlace: "https://sanfranciscoysantaclara.es/grupo-padre-pio.html"
+  },
+
+  {
+    nombre: "Grupo de Liturgia",
+    intereses: ["Voluntariado"],
+    participante: ["hombre", "mujer", "pareja"],
+    edades: ["+18"],
+    hijos: ["si", "no"],
+    estado_civil: ["soltero", "casado"],
+    dias: ["viernes"],
+    horario: "20:00",
+    enlace: "https://sanfranciscoysantaclara.es/grupo-liturgia.html"
+  },
+
+  {
+    nombre: "Grupo de Monaguillos",
+    intereses: ["Voluntariado"],
+    participante: ["hombre", "mujer"],
+    edades: ["6-11", "11-15", "16-20"],
+    hijos: ["no"],
+    estado_civil: ["soltero"],
+    dias: ["domingo"],
+    horario: "10:00",
+    primera_comunion: ["si"],
+    enlace: "https://sanfranciscoysantaclara.es/monaguillos.html"
+  },
+
+  {
+    nombre: "Coro misa niños",
+    intereses: ["Coro"],
+    participante: ["hombre", "mujer"],
+    edades: ["6-11", "11-15", "16-20", "+18"],
+    hijos: ["no"],
+    estado_civil: ["soltero"],
+    dias: ["domingo"],
+    horario: "10:30",
+    enlace: "https://sanfranciscoysantaclara.es/corojoven.html"
+  }
+
+  /*
+   * EJEMPLO PARA GRUPO DE MONAGUILLOS:
+   *
+   * {
+   *   nombre: "Grupo de Monaguillos",
+   *   intereses: ["Formacion"],
+   *   participante: ["hombre", "mujer"],
+   *   edades: ["6-11", "11-15"],
+   *   hijos: ["no"],
+   *   estado_civil: ["soltero"],
+   *   dias: ["domingo"],
+   *   horario: "10:30",
+   *   primera_comunion: ["si"],
+   *   enlace: "https://sanfranciscoysantaclara.es/grupo-monaguillos.html"
+   * }
+   */
+];
+
+
+/* ============================================================
+ * PREGUNTAS BASE
+ * ============================================================ */
+
+const preguntasBase = [
+  {
+    campo: "edades",
+    texto: "¿Qué edad tienes?",
+    opciones: [
+      { valor: "6-11", texto: "Entre 6 y 11 años" },
+      { valor: "11-15", texto: "Entre 11 y 15 años" },
+      { valor: "16-20", texto: "Entre 16 y 19 años" },
+      { valor: "+18", texto: "Más de 20 años" }
+    ]
+  },
+
+  {
+    campo: "participante",
+    texto: "Indica tu género",
+    opciones: [
+      { valor: "hombre", texto: "Masculino" },
+      { valor: "mujer", texto: "Femenino" }
+    ]
+  },
+
+  {
+    campo: "hijos",
+    texto: "¿Tienes hijos?",
+    opciones: [
+      { valor: "si", texto: "Sí" },
+      { valor: "no", texto: "No" }
+    ]
+  },
+
+  {
+    campo: "estado_civil",
+    texto: "¿Cuál es tu situación actual?",
+    opciones: [
+      { valor: "soltero", texto: "Soltero/a, Viudo/a" },
+      { valor: "casado", texto: "Casado/a" }
+    ]
+  },
+
+  {
+    campo: "intereses",
+    texto: "¿Qué te gustaría encontrar principalmente?",
+    multiple: true,
+    ayuda: "Puedes elegir una o varias opciones.",
+    opciones: [
+      { valor: "Oracion", texto: "🙏 Activar mi vida espiritual" },
+      { valor: "Formacion", texto: "📖 Ser mejor cristiano" },
+      { valor: "Coro", texto: "🎶 Música y canto" },
+      { valor: "Voluntariado", texto: "🤝 Ayudar en lo que sea" },
+      { valor: "Entretenimiento", texto: "🎉 Actividades y entretenimiento" }
+    ]
+  },
+
+  {
+    campo: "dias",
+    texto: "¿Qué día te viene mejor?",
+    multiple: true,
+    opciones: [
+      { valor: "martes", texto: "Martes" },
+      { valor: "miercoles", texto: "Miércoles" },
+      { valor: "jueves", texto: "Jueves" },
+      { valor: "viernes", texto: "Viernes" },
+      { valor: "sabado", texto: "Sábado" },
+      { valor: "domingo", texto: "Domingo" },
+      { valor: "indiferente", texto: "Me es indiferente" }
+    ]
+  }
+];
+
+let preguntas = [];
+let preguntaActual = 0;
+let respuestas = {};
+
+
+/* ============================================================
+ * CONSTRUCCIÓN DINÁMICA DE LAS PREGUNTAS
+ * ============================================================ */
+
+function construirPreguntas() {
+  preguntas = [];
+
+  // Edad siempre es la primera pregunta.
+  preguntas.push(preguntasBase[0]);
+
+  // Primera Comunión solo para 6-11 y 11-15.
+  if (respuestas.edades === "6-11" || respuestas.edades === "11-15") {
+    preguntas.push({
+      campo: "primera_comunion",
+      texto: "¿Has hecho ya la primera comunión?",
+      opciones: [
+        { valor: "si", texto: "Sí" },
+        { valor: "no", texto: "No" }
+      ]
+    });
+  }
+
+  // Participante siempre se pregunta.
+  preguntas.push(preguntasBase[1]);
+
+  // Menores de 20: se establecen automáticamente estas respuestas.
+  if (respuestas.edades === "16-20" ||
+      respuestas.edades === "6-11" ||
+      respuestas.edades === "11-15") {
+    respuestas.hijos = "no";
+    respuestas.estado_civil = "soltero";
+  } else {
+    preguntas.push(preguntasBase[2]);
+    preguntas.push(preguntasBase[3]);
+  }
+
+  // Si es menor de 20 no se pregunta por hijos/estado civil.
+  // Si es adulto y está casado, la pregunta de pareja se añade
+  // después de conocer el estado civil.
+  if (respuestas.estado_civil === "casado") {
+    preguntas.push({
+      campo: "pareja",
+      texto: "¿Vendrías con tu pareja?",
+      opciones: [
+        { valor: "pareja", texto: "Sí" },
+        { valor: "solo", texto: "No" }
+      ]
+    });
+  }
+
+  preguntas.push(preguntasBase[4]);
+  preguntas.push(preguntasBase[5]);
+}
+
+
+/* ============================================================
+ * INICIAR / REINICIAR
+ * ============================================================
+ */
+
+function startQuiz() {
+  preguntaActual = 0;
+  respuestas = {};
+  construirPreguntas();
+
+  document.getElementById("intro").classList.add("hidden");
+  document.getElementById("results-section").classList.add("hidden");
+  document.getElementById("quiz").classList.remove("hidden");
+
+  mostrarPregunta();
+}
+
+function restartQuiz() {
+  preguntaActual = 0;
+  respuestas = {};
+  preguntas = [];
+
+  document.getElementById("results-section").classList.add("hidden");
+  document.getElementById("quiz").classList.add("hidden");
+  document.getElementById("intro").classList.remove("hidden");
+}
+
+
+/* ============================================================
+ * MOSTRAR PREGUNTA
+ * ============================================================
+ */
+
+function mostrarPregunta() {
+
+  const pregunta = preguntas[preguntaActual];
+  const container = document.getElementById("question-container");
+
+  const total = preguntas.length;
+  const porcentaje = Math.round(((preguntaActual + 1) / total) * 100);
+
+  document.getElementById("progress-label").textContent =
+    `Pregunta ${preguntaActual + 1} de ${total}`;
+
+  document.getElementById("progress-percent").textContent =
+    `${porcentaje}%`;
+
+  document.getElementById("progress-fill").style.width =
+    `${porcentaje}%`;
+
+  let html = `
+    <div class="question">
+      <h2>${pregunta.texto}</h2>
+  `;
+
+  if (pregunta.ayuda) {
+    html += `<p class="multi-help">${pregunta.ayuda}</p>`;
+  }
+
+  html += `<div class="options">`;
+
+  pregunta.opciones.forEach(opcion => {
+
+    let seleccionado = "";
+
+    if (pregunta.multiple && respuestas[pregunta.campo]) {
+      if (respuestas[pregunta.campo].includes(opcion.valor)) {
+        seleccionado = "selected";
+      }
+    }
+
+    if (!pregunta.multiple && respuestas[pregunta.campo] === opcion.valor) {
+      seleccionado = "selected";
+    }
+
+    html += `
+      <button
+        type="button"
+        class="option ${seleccionado}"
+        onclick="seleccionarOpcion('${opcion.valor}')">
+        ${opcion.texto}
+      </button>
+    `;
+  });
+
+  html += `</div>`;
+
+  html += `
+    <div class="navigation">
+      ${
+        preguntaActual > 0
+          ? `<button class="button button-secondary" onclick="preguntaAnterior()">Atrás</button>`
+          : `<span></span>`
+      }
+
+      ${
+        pregunta.multiple
+          ? `<button class="button button-primary" onclick="siguientePregunta()">Continuar</button>`
+          : ``
+      }
+    </div>
+    </div>
+  `;
+
+  container.innerHTML = html;
+}
+
+
+/* ============================================================
+ * SELECCIONAR RESPUESTA
+ * ============================================================
+ */
+
+function seleccionarOpcion(valor) {
+
+  const pregunta = preguntas[preguntaActual];
+
+if (pregunta.multiple) {
+
+  if (!respuestas[pregunta.campo]) {
+    respuestas[pregunta.campo] = [];
+  }
+
+  const lista = respuestas[pregunta.campo];
+
+  // 👇 NUEVO: gestión especial de "indiferente"
+  if (pregunta.campo === "dias" && valor === "indiferente") {
+    respuestas.dias = lista.includes("indiferente") ? [] : ["indiferente"];
+    mostrarPregunta();
+    return;
+  }
+
+  // Si marca un día concreto y estaba "indiferente", quítalo
+  if (pregunta.campo === "dias" && lista.includes("indiferente")) {
+    respuestas.dias = [];
+  }
+
+  const posicion = respuestas[pregunta.campo].indexOf(valor);
+  if (posicion === -1) {
+    respuestas[pregunta.campo].push(valor);
+  } else {
+    respuestas[pregunta.campo].splice(posicion, 1);
+  }
+
+  mostrarPregunta();
+  return;
+}
+
+  respuestas[pregunta.campo] = valor;
+
+  // 👇 NUEVO: si es la pregunta de pareja, guardamos también en participante
+  if (pregunta.campo === "pareja" && valor === "pareja") {
+    respuestas.participante = "pareja";
+  }
+  // 👇 Y si dice que no, restauramos el participante original
+  if (pregunta.campo === "pareja" && valor === "solo") {
+    // Vuelve al valor de género que eligió antes
+    respuestas.participante = respuestas.genero || respuestas.participante;
+  }
+
+
+  /*
+   * Al contestar edad hay que reconstruir las preguntas porque
+   * cambian las preguntas siguientes.
+   */
+  if (pregunta.campo === "edades") {
+    construirPreguntas();
+    preguntaActual = 1;
+    mostrarPregunta();
+    return;
+  }
+
+  /*
+   * Si se responde Primera Comunión, seguimos normalmente.
+   */
+  if (pregunta.campo === "primera_comunion") {
+    if (preguntaActual < preguntas.length - 1) {
+      preguntaActual++;
+      mostrarPregunta();
+    }
+    return;
+  }
+
+  /*
+   * Al responder estado civil hay que reconstruir para añadir
+   * la pregunta de pareja únicamente si está casado/a.
+   */
+  if (pregunta.campo === "estado_civil") {
+    construirPreguntas();
+    preguntaActual = preguntas.findIndex(p => p.campo === "pareja");
+
+    if (preguntaActual === -1) {
+      preguntaActual = preguntas.findIndex(p => p.campo === "intereses");
+    }
+
+    mostrarPregunta();
+    return;
+  }
+
+  if (preguntaActual < preguntas.length - 1) {
+    preguntaActual++;
+    mostrarPregunta();
+  } else {
+    mostrarResultados();
+  }
+}
+
+
+/* ============================================================
+ * NAVEGACIÓN
+ * ============================================================
+ */
+
+function siguientePregunta() {
+
+  const pregunta = preguntas[preguntaActual];
+
+  if (
+    pregunta.multiple &&
+    (!respuestas[pregunta.campo] ||
+     respuestas[pregunta.campo].length === 0)
+  ) {
+    alert("Selecciona al menos una opción para continuar.");
+    return;
+  }
+
+  if (preguntaActual < preguntas.length - 1) {
+    preguntaActual++;
+    mostrarPregunta();
+  } else {
+    mostrarResultados();
+  }
+}
+
+function preguntaAnterior() {
+
+  if (preguntaActual > 0) {
+    preguntaActual--;
+    mostrarPregunta();
+  }
+}
+
+
+/* ============================================================
+ * COMPATIBILIDAD DE EDAD
+ * ============================================================
+ *
+ * No se puntúan grupos que estén fuera del rango de edad.
+ * La función admite estos valores:
+ *   6-11
+ *   11-15
+ *   16-20
+ *   +11
+ *   +18
+ *
+ * Cuando un grupo solo acepta un rango que no corresponde al
+ * usuario, queda excluido completamente de los resultados.
+ */
+
+function grupoCorrespondeAEdad(grupo) {
+
+  const edad = respuestas.edades;
+
+  if (!edad) return false;
+
+  const rangosGrupo = grupo.edades || [];
+
+  if (rangosGrupo.includes(edad)) return true;
+
+  // +11: válido para usuarios cuyo rango empieza en 11 o más.
+  if (rangosGrupo.includes("+11")) {
+    return edad === "11-15" || edad === "16-20" || edad === "+18";
+  }
+
+  // +18: válido únicamente cuando el usuario ha indicado +18.
+  if (rangosGrupo.includes("+18")) {
+    return edad === "+18";
+  }
+
+  return false;
+}
+
+
+/* ============================================================
+ * CÁLCULO DE COMPATIBILIDAD
+ * ============================================================
+ *
+ * Edad:             requisito obligatorio, no puntúa: filtra.
+ * Participante:     25 puntos
+ * Estado civil:     20 puntos
+ * Hijos:            10 puntos
+ * Intereses:        hasta 20 puntos
+ * Día:               8 puntos
+ * Venir en pareja:  25 puntos si el usuario viene en pareja
+ */
+
+function calcularPuntuacion(grupo) {
+
+  // Un grupo fuera de edad no puede competir.
+  if (!grupoCorrespondeAEdad(grupo)) {
+    return -1;
+  }
+
+  // Si el grupo exige Primera Comunión, debe cumplirse.
+  if (
+    grupo.primera_comunion &&
+    grupo.primera_comunion.includes("si") &&
+    respuestas.primera_comunion !== "si"
+  ) {
+    return -1;
+  }
+
+  let puntos = 0;
+
+  // Participante
+  if (
+    respuestas.participante &&
+    grupo.participante.includes(respuestas.participante)
+  ) {
+    puntos += 25;
+  }
+
+  // Estado civil
+  if (
+    respuestas.estado_civil &&
+    grupo.estado_civil.includes(respuestas.estado_civil)
+  ) {
+    puntos += 20;
+  }
+
+  // Hijos
+  if (
+    respuestas.hijos &&
+    grupo.hijos.includes(respuestas.hijos)
+  ) {
+    puntos += 10;
+  }
+
+  // Venir en pareja
+  if (
+    respuestas.pareja === "pareja" &&
+    grupo.participante.includes("pareja")
+  ) {
+    puntos += 25;
+  }
+
+  // Intereses
+  if (respuestas.intereses && respuestas.intereses.length) {
+
+    const coincidencias = respuestas.intereses.filter(interes =>
+      grupo.intereses.includes(interes)
+    ).length;
+
+    puntos += Math.min(coincidencias * 10, 20);
+  }
+
+  // Día
+if (respuestas.dias && respuestas.dias.length) {
+
+  const indiferente = respuestas.dias.includes("indiferente");
+
+  const coincide = grupo.dias.some(dia =>
+    respuestas.dias.includes(dia)
+  );
+
+  if (indiferente || coincide) {
+    puntos += 8;
+  }
+}
+
+  return puntos;
+}
+
+
+/* ============================================================
+ * RESULTADOS
+ * ============================================================
+ */
+
+function mostrarResultados() {
+
+  document.getElementById("quiz").classList.add("hidden");
+  document.getElementById("results-section").classList.remove("hidden");
+
+  const resultados = grupos
+    .map(grupo => ({
+      grupo: grupo,
+      puntos: calcularPuntuacion(grupo)
+    }))
+    .filter(resultado => resultado.puntos >= 0)
+    .sort((a, b) => b.puntos - a.puntos)
+    .slice(0, 3);
+
+  const container = document.getElementById("results");
+
+  if (resultados.length === 0) {
+    container.innerHTML = `
+      <article class="group-card">
+        <h3>No hemos encontrado un grupo que encaje con todos tus criterios.</h3>
+        <p>
+          Puedes volver a realizar el cuestionario y probar otras opciones.
+        </p>
+      </article>
+    `;
+    return;
+  }
+
+  container.innerHTML = resultados.map((resultado, index) => {
+
+    const grupo = resultado.grupo;
+
+    const intereses = grupo.intereses.map(interes =>
+      traducirInteres(interes)
+    );
+
+    return `
+      <article class="group-card ${index === 0 ? "first" : ""}">
+
+        <span class="group-number">
+          ${index === 0 ? "✨ Puede encajar especialmente contigo" : `Opción ${index + 1}`}
+        </span>
+
+        <h3>${grupo.nombre}</h3>
+
+        <div class="group-info">
+          ${intereses.map(interes =>
+            `<span class="tag">${interes}</span>`
+          ).join("")}
+
+          <span class="tag">📅 ${traducirDia(grupo.dias[0])}</span>
+          <span class="tag">🕐 ${grupo.horario}</span>
+        </div>
+
+        <a
+          class="group-link"
+          href="${grupo.enlace}">
+          Conocer este grupo →
+        </a>
+
+      </article>
+    `;
+  }).join("");
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+
+/* ============================================================
+ * TRADUCCIONES
+ * ============================================================
+ */
+
+function traducirInteres(interes) {
+
+  const traducciones = {
+    "Oracion": "🙏 Oración",
+    "Formacion": "📖 Formación",
+    "Coro": "🎶 Coro",
+    "Entretenimiento": "🎉 Actividades"
+  };
+
+  return traducciones[interes] || interes;
+}
+
+function traducirDia(dia) {
+
+  const traducciones = {
+    "miercoles": "Miércoles",
+    "jueves": "Jueves",
+    "viernes": "Viernes",
+    "sabado": "Sábado",
+    "domingo": "Domingo"
+  };
+
+  return traducciones[dia] || dia;
+}
+
+</script>
+
+</body>
+</html>
