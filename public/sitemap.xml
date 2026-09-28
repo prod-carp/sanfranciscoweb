@@ -11,24 +11,9 @@
   
   
     
-  
-
-  
-  
-    
       <url>
         <loc>http://localhost:1313/noticias/</loc>
-        <lastmod>2026-09-27T00:00:00+02:00</lastmod>
-      </url>
-    
-  
-
-  
-  
-    
-      <url>
-        <loc>http://localhost:1313/noticias/santoral/09-27-novena-sf-dia3/</loc>
-        <lastmod>2026-09-27T00:00:00+02:00</lastmod>
+        <lastmod>2026-09-28T00:00:00+02:00</lastmod>
       </url>
     
   
@@ -38,6 +23,36 @@
     
       <url>
         <loc>http://localhost:1313/</loc>
+        <lastmod>2026-09-28T00:00:00+02:00</lastmod>
+      </url>
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+      <url>
+        <loc>http://localhost:1313/noticias/vigilia-espigas/</loc>
+        <lastmod>2026-09-28T00:00:00+02:00</lastmod>
+      </url>
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+      <url>
+        <loc>http://localhost:1313/noticias/santoral/09-27-novena-sf-dia3/</loc>
         <lastmod>2026-09-27T00:00:00+02:00</lastmod>
       </url>
     
@@ -76,36 +91,6 @@
   
   
     
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-      <url>
-        <loc>http://localhost:1313/noticias/santoral/09-23-san-p%C3%ADo-de-pietrelcina/</loc>
-        <lastmod>2026-09-23T00:00:00+02:00</lastmod>
-      </url>
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
       <url>
         <loc>http://localhost:1313/noticias/2026-09-21-grupo-cana-para-personas-casadas-que-viven-su-fe-en-soledad/</loc>
         <lastmod>2026-09-21T00:00:00+02:00</lastmod>
@@ -131,10 +116,25 @@
   
   
     
+  
+
+  
+  
+    
+  
+
+  
+  
+    
       <url>
         <loc>http://localhost:1313/noticias/24-09-novena-san-francisco/</loc>
         <lastmod>2026-09-20T00:00:00+02:00</lastmod>
       </url>
+    
+  
+
+  
+  
     
   
 
@@ -372,6 +372,16 @@
   
     
       <url>
+        <loc>http://localhost:1313/noticias/santoral/09-23-san-p%C3%ADo-de-pietrelcina/</loc>
+        <lastmod>2025-09-23T00:00:00+02:00</lastmod>
+      </url>
+    
+  
+
+  
+  
+    
+      <url>
         <loc>http://localhost:1313/noticias/tiempo-liturgico/03-pascua-de-resurreci%C3%B3n/</loc>
         <lastmod>2025-08-18T11:17:05+02:00</lastmod>
       </url>
@@ -434,7 +444,7 @@
     
       <url>
         <loc>http://localhost:1313/ane.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -445,7 +455,7 @@
     
       <url>
         <loc>http://localhost:1313/bautismo.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -454,7 +464,7 @@
     
       <url>
         <loc>http://localhost:1313/calendario.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -463,7 +473,7 @@
     
       <url>
         <loc>http://localhost:1313/caritas.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -472,7 +482,7 @@
     
       <url>
         <loc>http://localhost:1313/comunion.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -481,7 +491,7 @@
     
       <url>
         <loc>http://localhost:1313/confesion.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -490,7 +500,7 @@
     
       <url>
         <loc>http://localhost:1313/confirmacion.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -499,7 +509,7 @@
     
       <url>
         <loc>http://localhost:1313/contacto.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -512,7 +522,7 @@
     
       <url>
         <loc>http://localhost:1313/corodeadultos.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -521,7 +531,7 @@
     
       <url>
         <loc>http://localhost:1313/corojoven.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -530,7 +540,7 @@
     
       <url>
         <loc>http://localhost:1313/cuestionario.html</loc>
-        <lastmod>2026-09-26T15:20:41&#43;02:00</lastmod>
+        <lastmod>2026-09-28T12:01:20&#43;02:00</lastmod>
       </url>
     
   
@@ -539,7 +549,7 @@
     
       <url>
         <loc>http://localhost:1313/donativos.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -552,7 +562,7 @@
     
       <url>
         <loc>http://localhost:1313/fotos.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -561,7 +571,7 @@
     
       <url>
         <loc>http://localhost:1313/grupo-caleb.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -570,7 +580,7 @@
     
       <url>
         <loc>http://localhost:1313/grupo-cana.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -579,7 +589,7 @@
     
       <url>
         <loc>http://localhost:1313/grupo-liturgia.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -588,7 +598,7 @@
     
       <url>
         <loc>http://localhost:1313/grupo-padre-pio.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -597,7 +607,7 @@
     
       <url>
         <loc>http://localhost:1313/grupoconfirmacion.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -606,7 +616,7 @@
     
       <url>
         <loc>http://localhost:1313/grupodeoracion.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -615,7 +625,7 @@
     
       <url>
         <loc>http://localhost:1313/grupolimpieza.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -624,7 +634,7 @@
     
       <url>
         <loc>http://localhost:1313/grupomatrimonios.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -633,7 +643,7 @@
     
       <url>
         <loc>http://localhost:1313/grupooracionmadres.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -642,7 +652,7 @@
     
       <url>
         <loc>http://localhost:1313/grupos.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -653,7 +663,7 @@
     
       <url>
         <loc>http://localhost:1313/horarios.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -670,7 +680,7 @@
     
       <url>
         <loc>http://localhost:1313/lifeteen.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -679,7 +689,7 @@
     
       <url>
         <loc>http://localhost:1313/manualidades.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -688,7 +698,7 @@
     
       <url>
         <loc>http://localhost:1313/matrimonio.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -697,7 +707,7 @@
     
       <url>
         <loc>http://localhost:1313/mision-david.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -706,7 +716,7 @@
     
       <url>
         <loc>http://localhost:1313/monaguillos.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -715,7 +725,7 @@
     
       <url>
         <loc>http://localhost:1313/ordensacerdotal.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -732,7 +742,7 @@
     
       <url>
         <loc>http://localhost:1313/rezorosario.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -743,7 +753,7 @@
     
       <url>
         <loc>http://localhost:1313/rosariomanto.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -752,7 +762,7 @@
     
       <url>
         <loc>http://localhost:1313/sanfrancisco.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -761,7 +771,7 @@
     
       <url>
         <loc>http://localhost:1313/santaclara.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -770,7 +780,7 @@
     
       <url>
         <loc>http://localhost:1313/santos-patronos.html</loc>
-        <lastmod>2026-09-27T11:35:56&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -783,7 +793,7 @@
     
       <url>
         <loc>http://localhost:1313/tablon.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -792,7 +802,7 @@
     
       <url>
         <loc>http://localhost:1313/ubicacion.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   
@@ -801,7 +811,7 @@
     
       <url>
         <loc>http://localhost:1313/uncionenfermos.html</loc>
-        <lastmod>2026-09-27T11:35:55&#43;02:00</lastmod>
+        <lastmod>2026-09-28T14:17:58&#43;02:00</lastmod>
       </url>
     
   

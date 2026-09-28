@@ -6,8 +6,15 @@
     <description>Recent content on Parroquia San Francisco y Santa Clara de Asís</description>
     <generator>Hugo</generator>
     <language>es-es</language>
-    <lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Una noche de oración y esperanza: Vigilia de Espigas de Griñón</title>
+      <link>http://localhost:1313/noticias/vigilia-espigas/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/noticias/vigilia-espigas/</guid>
+      <description>&lt;p&gt;Algunos fieles de la parroquia de San Francisco y Santa Clara de Asís de Fuenlabrada participaron el pasado 26 de octubre en la Vigilia de Espigas, organizada por la Adoración Nocturna Española (ANE), en colaboración con la parroquia de Nuestra Señora de la Asunción de Griñón, con motivo del XXV aniversario de su Sección de Adoración Nocturna.&lt;/p&gt;&#xA;&lt;p&gt;La celebración reunió a adoradores y fieles en una noche de oración, fraternidad y adoración eucarística, siguiendo una tradición de la Iglesia que invita a dedicar las horas nocturnas al encuentro con Jesús Sacramentado y a dar gracias a Dios por los frutos de la tierra.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Novena a San Francisco de Asís - Día 3</title>
       <link>http://localhost:1313/noticias/santoral/09-27-novena-sf-dia3/</link>
@@ -35,13 +42,6 @@
       <pubDate>Fri, 25 Sep 2026 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/noticias/santoral/09-25-novena-sf-dia1/</guid>
       <description>&lt;h2 id=&#34;modo-de-hacer-la-novena&#34;&gt;MODO DE HACER LA NOVENA&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Puestos delante de una imagen de San Francisco de Asís&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Nos santiguamos&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;acto-de-contrición&#34;&gt;ACTO DE CONTRICIÓN&lt;/h2&gt;&#xA;&lt;p&gt;Señor mío Jesucristo, Dios y hombre verdadero. Ante vuestra divina presencia reconozco que he pecado muchas veces y porque os amo sobre todas las cosas, me pesa de haberos ofendido. Ayudado de vuestra divina gracia, propongo no volver a caer más, confesarme y cumplir la penitencia que el confesor me imponga. Amén.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>San Pío de Pietrelcina: un franciscano marcado por Cristo</title>
-      <link>http://localhost:1313/noticias/santoral/09-23-san-p%C3%ADo-de-pietrelcina/</link>
-      <pubDate>Wed, 23 Sep 2026 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/noticias/santoral/09-23-san-p%C3%ADo-de-pietrelcina/</guid>
-      <description>&lt;p&gt;Hay santos cuya vida está marcada por acontecimientos extraordinarios, pero cuya verdadera grandeza se encuentra en algo mucho más profundo: &lt;strong&gt;su amor a Jesucristo y su entrega diaria a Dios&lt;/strong&gt;. San Pío de Pietrelcina fue uno de ellos.&lt;/p&gt;&#xA;&lt;p&gt;Conocido cariñosamente como &lt;strong&gt;Padre Pío&lt;/strong&gt;, fue un sacerdote italiano de la Orden de los Hermanos Menores Capuchinos. Su vida estuvo marcada por la oración, la celebración de la Eucaristía, el sacramento de la Reconciliación, la caridad con los necesitados y un profundo amor por la Pasión de Cristo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Grupo Cana: Para personas casadas que viven su fe en soledad</title>
@@ -217,6 +217,13 @@
       <pubDate>Sat, 10 Jan 2026 12:29:54 +0200</pubDate>
       <guid>http://localhost:1313/noticias/jubileo-franciscano/</guid>
       <description>&lt;p&gt;Del &lt;strong&gt;10 de enero de 2026 al 10 de enero de 2027&lt;/strong&gt;, la familia franciscana celebra un acontecimiento especial: el &lt;strong&gt;800 aniversario de la muerte de San Francisco de Asís&lt;/strong&gt;, uno de los santos más queridos y admirados de la historia de la Iglesia.&lt;/p&gt;&#xA;&lt;p&gt;Con este motivo, la Iglesia ha concedido un &lt;strong&gt;Año Jubilar Franciscano&lt;/strong&gt;, un tiempo de gracia que invita a los fieles a acercarse más a Dios, profundizar en el Evangelio y redescubrir el ejemplo de vida de San Francisco.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>San Pío de Pietrelcina: un franciscano marcado por Cristo</title>
+      <link>http://localhost:1313/noticias/santoral/09-23-san-p%C3%ADo-de-pietrelcina/</link>
+      <pubDate>Tue, 23 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/noticias/santoral/09-23-san-p%C3%ADo-de-pietrelcina/</guid>
+      <description>&lt;p&gt;Hay santos cuya vida está marcada por acontecimientos extraordinarios, pero cuya verdadera grandeza se encuentra en algo mucho más profundo: &lt;strong&gt;su amor a Jesucristo y su entrega diaria a Dios&lt;/strong&gt;. San Pío de Pietrelcina fue uno de ellos.&lt;/p&gt;&#xA;&lt;p&gt;Conocido cariñosamente como &lt;strong&gt;Padre Pío&lt;/strong&gt;, fue un sacerdote italiano de la Orden de los Hermanos Menores Capuchinos. Su vida estuvo marcada por la oración, la celebración de la Eucaristía, el sacramento de la Reconciliación, la caridad con los necesitados y un profundo amor por la Pasión de Cristo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>La Pascua: El Triunfo de la Vida sobre la Muerte</title>
