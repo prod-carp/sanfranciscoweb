@@ -39,7 +39,7 @@ const ALL_CATEGORIES = [
   "Parroquia",
   "Peregrinaciones",
   "Testimonios",
-  "Espiritualidad",
+  "Oraciones",
   "Formación",
   "Exterior",
   "Santoral",

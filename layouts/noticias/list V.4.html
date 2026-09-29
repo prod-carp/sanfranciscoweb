@@ -1,15 +1,38 @@
 {{ define "main" }}
 
+
+<!-- Hero Section -->
+<section class="hero-section" style="
+  position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px 20px;
+  margin-bottom: 50px;
+  border-radius: 0 0 50px 50px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+">
+  <!-- Efecto de ondas usando CSS puro -->
+  <div style="
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 20px, transparent 20px, transparent 40px);
+    pointer-events: none;
+  "></div>
   
   <div class="container" style="position: relative; z-index: 1;">
     <h1 class="mbr-section-title mbr-fonts-style align-center mb-3 display-1">
-      <strong>NOTICIAS Y ACTUALIDAD PARROQUIAL</strong>
+      NOTICIAS Y ACTUALIDAD PARROQUIAL
     </h1>
     
-    <p class="mbr-section-subtitle mbr-fonts-style align-center mb-1 display-7">
+    <p class="mbr-section-subtitle mbr-fonts-style align-center mb-1 display-5">
       Últimas noticias, testimonios y vida de la comunidad de la parroquia San Francisco y Santa Clara de Asís.
     </p>
   </div>
+</section>
 
 
 
@@ -122,9 +145,8 @@
 
 
 
-<!-- ==========================================================
-     BOTÓN ÚLTIMAS NOTICIAS
-========================================================== -->
+
+
 <div class="buttons-container">
   <div class="buttons-wrapper">
     <a href="/hemeroteca/" class="custom-button button-recientes">
@@ -133,20 +155,96 @@
     </a>
     <a href="/categorias/" class="custom-button button-tematicas">
       <span class="button-icon">📂</span>
-      Explorar temáticas
+      Noticias por temas
     </a>
-<!--     <a href="/tags/importante/" class="custom-button button-importantes">
+    <a href="/tags/importante/" class="custom-button button-importantes">
       <span class="button-icon">⭐</span>
       Noticias destacadas
-    </a> -->
+    </a>
   </div>
 </div>
 
+<style>
+.buttons-container {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
 
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
 
-<!-- ==========================================================
-     NOTICIA DESTACADA
-========================================================== -->
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.button-icon {
+  font-size: 1.2rem;
+}
+
+/* Botón Más recientes */
+.button-recientes {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.button-recientes:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Botón Temáticas */
+.button-tematicas {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.button-tematicas:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(240, 147, 251, 0.4);
+}
+
+/* Botón Más importantes */
+.button-importantes {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  color: #333;
+}
+
+.button-importantes:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(250, 112, 154, 0.4);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .buttons-wrapper {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .custom-button {
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+  }
+}
+</style>
 
 <div class="container">
 
@@ -215,272 +313,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-{{/* ==========================================================
-   OBTENER LAS 8 CATEGORÍAS CON CONTENIDO MÁS RECIENTE
-   ----------------------------------------------------------
-   Se calcula aquí de forma independiente porque el grid de
-   categorías va arriba y no puede usar $orderedByCategory
-   (que se define más abajo, en la sección "Más noticias").
-========================================================== */}}
-
-{{- $catsForGrid := dict -}}
-
-{{- range $activePages -}}
-    {{- $post := .page -}}
-    {{- $category := index $post.Params.categorias 0 | default "General" -}}
-    {{- $list := index $catsForGrid $category | default (slice) -}}
-    {{- $list = $list | append . -}}
-    {{- $catsForGrid = merge $catsForGrid (dict $category $list) -}}
-{{- end -}}
-
-{{- $categoriesWithDate := slice -}}
-
-{{- range $category, $posts := $catsForGrid -}}
-
-    {{- if gt (len $posts) 0 -}}
-
-        {{/* Ordenar las noticias de esta categoría por fecha desc
-             para quedarnos con la más reciente */}}
-        {{- $sortedPosts := sort $posts "fecha" "desc" -}}
-        {{- $latest := index $sortedPosts 0 -}}
-
-        {{- $categoriesWithDate = $categoriesWithDate | append (dict
-            "name" $category
-            "fecha" $latest.fecha
-            "count" (len $posts)
-        ) -}}
-
-    {{- end -}}
-
-{{- end -}}
-
-{{- $categoriesWithDate = sort $categoriesWithDate "fecha" "desc" -}}
-{{- $topCategories := first 6 $categoriesWithDate -}}
-
-
-
-
-
-
-
-<!-- ==========================================================
-     CUADRÍCULA DE CATEGORÍAS (2 columnas × 4 filas)
-========================================================== -->
-<div class="categories-container">
-
-  <h3 class="categories-title">Temáticas más recientes</h3>
-
-  <div class="categories-grid">
-
-    {{- $icons := dict
-        "Oraciones"       "📿"
-        "Formación"       "📖"
-        "Parroquia"       "⛪"
-        "Peregrinaciones" "🚶"
-        "Santoral"        "✨"
-        "Testimonios"     "💬"
-        "Tiempo Litúrgico" "🕯️"
-        "Exterior"        "🌐"
-    -}}
-
-    {{ range $topCategories }}
-      <a href="/categorias/{{ .name | urlize }}/" class="category-card">
-        <span class="category-icon">
-          {{ index $icons .name | default "📁" }}
-        </span>
-        <span class="category-name">{{ .name }}</span>
-      </a>
-    {{ end }}
-
-  </div>
-</div>
-
-<style>
-/* ==========================================================
-   BOTÓN ÚLTIMAS NOTICIAS
-========================================================== */
-.buttons-container {
-  width: 100%;
-  margin: 2rem 0 1rem 0;
-  padding: 0 1rem;
-}
-
-.buttons-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.custom-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.75rem;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: none;
-  background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.button-icon {
-  font-size: 1.2rem;
-}
-
-.button-recientes {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-}
-
-.button-recientes:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-}
-
-
-/* Botón Temáticas */
-.button-tematicas {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  color: white;
-}
-
-.button-tematicas:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(240, 147, 251, 0.4);
-}
-
-
-/* ==========================================================
-   CUADRÍCULA DE CATEGORÍAS
-========================================================== */
-.categories-container {
-  max-width: 720px;
-  margin: 1.5rem auto 2.5rem auto;
-  padding: 0 1rem;
-}
-
-.categories-title {
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #555;
-  margin-bottom: 1rem;
-  letter-spacing: 0.5px;
-}
-
-.categories-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem;
-}
-
-.category-card {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.7rem 1.1rem;
-  background: #f5f5f7;
-  border-radius: 14px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: all 0.25s ease;
-  border: 2px solid transparent;
-  min-height: 35px;
-  box-sizing: border-box;
-}
-
-.category-card:hover {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(102, 126, 234, 0.3);
-  border-color: rgba(255,255,255,0.3);
-}
-
-.category-icon {
-  font-size: 1.5rem;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-.category-name {
-  line-height: 1.2;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
-@media (max-width: 768px) {
-  .buttons-wrapper {
-    gap: 1rem;
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .custom-button {
-    justify-content: center;
-    padding: 0.6rem 1.2rem;
-  }
-
-  .categories-container {
-    padding: 0 0.75rem;
-  }
-
-  .categories-grid {
-    gap: 0.6rem;
-  }
-
-  .category-card {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
-    min-height: 32px;
-  }
-
-  .category-icon {
-    font-size: 1.3rem;
-  }
-}
-
-/* En pantallas muy pequeñas, mantener 2 columnas
-   pero reducir aún más */
-@media (max-width: 400px) {
-  .category-card {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.85rem;
-    gap: 0.5rem;
-    min-height: 30px;
-  }
-
-  .category-icon {
-    font-size: 1.2rem;
-  }
-
-
-}
-</style>
-<hr>
 
 
 
