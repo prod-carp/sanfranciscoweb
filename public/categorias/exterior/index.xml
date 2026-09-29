@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exterior on Parroquia San Francisco y Santa Clara de Asís</title>
+    <link>http://localhost:1313/categorias/exterior/</link>
+    <description>Recent content in Exterior on Parroquia San Francisco y Santa Clara de Asís</description>
+    <generator>Hugo</generator>
+    <language>es-es</language>
+    <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/categorias/exterior/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Una noche de oración y esperanza: Vigilia de Espigas en Griñón</title>
+      <link>http://localhost:1313/noticias/vigilia-espigas/</link>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/noticias/vigilia-espigas/</guid>
+      <description>&lt;p&gt;Los Adoradores de la Sección de Fuenlabrada, miembros de la Adoración Nocturna que se lleva a cabo en la parroquia de San Francisco y Santa Clara de Asís de Fuenlabrada, participaron el pasado 26 de octubre en la Vigilia de Espigas, organizada por la Adoración Nocturna Española (ANE), en colaboración con la parroquia de Nuestra Señora de la Asunción de Griñón, con motivo del XXV aniversario de su Sección de Adoración Nocturna.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -9,11 +9,11 @@
     <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/noticias/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Una noche de oración y esperanza: Vigilia de Espigas de Griñón</title>
+      <title>Una noche de oración y esperanza: Vigilia de Espigas en Griñón</title>
       <link>http://localhost:1313/noticias/vigilia-espigas/</link>
       <pubDate>Mon, 28 Sep 2026 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/noticias/vigilia-espigas/</guid>
-      <description>&lt;p&gt;Algunos fieles de la parroquia de San Francisco y Santa Clara de Asís de Fuenlabrada participaron el pasado 26 de octubre en la Vigilia de Espigas, organizada por la Adoración Nocturna Española (ANE), en colaboración con la parroquia de Nuestra Señora de la Asunción de Griñón, con motivo del XXV aniversario de su Sección de Adoración Nocturna.&lt;/p&gt;&#xA;&lt;p&gt;La celebración reunió a adoradores y fieles en una noche de oración, fraternidad y adoración eucarística, siguiendo una tradición de la Iglesia que invita a dedicar las horas nocturnas al encuentro con Jesús Sacramentado y a dar gracias a Dios por los frutos de la tierra.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Los Adoradores de la Sección de Fuenlabrada, miembros de la Adoración Nocturna que se lleva a cabo en la parroquia de San Francisco y Santa Clara de Asís de Fuenlabrada, participaron el pasado 26 de octubre en la Vigilia de Espigas, organizada por la Adoración Nocturna Española (ANE), en colaboración con la parroquia de Nuestra Señora de la Asunción de Griñón, con motivo del XXV aniversario de su Sección de Adoración Nocturna.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Novena a San Francisco de Asís - Día 3</title>
@@ -217,6 +217,13 @@
       <pubDate>Sat, 10 Jan 2026 12:29:54 +0200</pubDate>
       <guid>http://localhost:1313/noticias/jubileo-franciscano/</guid>
       <description>&lt;p&gt;Del &lt;strong&gt;10 de enero de 2026 al 10 de enero de 2027&lt;/strong&gt;, la familia franciscana celebra un acontecimiento especial: el &lt;strong&gt;800 aniversario de la muerte de San Francisco de Asís&lt;/strong&gt;, uno de los santos más queridos y admirados de la historia de la Iglesia.&lt;/p&gt;&#xA;&lt;p&gt;Con este motivo, la Iglesia ha concedido un &lt;strong&gt;Año Jubilar Franciscano&lt;/strong&gt;, un tiempo de gracia que invita a los fieles a acercarse más a Dios, profundizar en el Evangelio y redescubrir el ejemplo de vida de San Francisco.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La espiritualidad de San Francisco de Asís</title>
+      <link>http://localhost:1313/noticias/10-05-espiritualidad-san-francisco/</link>
+      <pubDate>Sun, 05 Oct 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/noticias/10-05-espiritualidad-san-francisco/</guid>
+      <description>&lt;p&gt;San Francisco de Asís (1181/1182-1226) es una de las figuras más importantes de la espiritualidad cristiana. Su vida y su pensamiento nos ofrecen una riqueza teológica extraordinaria, especialmente en torno a Cristo, la pobreza evangélica, la fraternidad, la creación, la Eucaristía y la paz.&lt;/p&gt;&#xA;&lt;p&gt;Lo más característico de su espiritualidad es que no desarrolla una teología principalmente académica o sistemática, sino una teología profundamente vivida: contempla a Dios, se deja transformar por el Evangelio y procura reflejar a Cristo en cada aspecto de su vida.&lt;/p&gt;</description>
     </item>
     <item>
       <title>San Pío de Pietrelcina: un franciscano marcado por Cristo</title>

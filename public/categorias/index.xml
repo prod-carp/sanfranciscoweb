@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/categorias/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Peregrinaciones</title>
-      <link>http://localhost:1313/categorias/peregrinaciones/</link>
+      <title>Exterior</title>
+      <link>http://localhost:1313/categorias/exterior/</link>
       <pubDate>Mon, 28 Sep 2026 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/categorias/peregrinaciones/</guid>
+      <guid>http://localhost:1313/categorias/exterior/</guid>
       <description></description>
     </item>
     <item>
@@ -20,6 +20,13 @@
       <link>http://localhost:1313/categorias/espiritualidad/</link>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/categorias/espiritualidad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Peregrinaciones</title>
+      <link>http://localhost:1313/categorias/peregrinaciones/</link>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/categorias/peregrinaciones/</guid>
       <description></description>
     </item>
     <item>
@@ -48,6 +55,13 @@
       <link>http://localhost:1313/categorias/testimonios/</link>
       <pubDate>Sun, 31 May 2026 12:29:54 +0200</pubDate>
       <guid>http://localhost:1313/categorias/testimonios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Formacion</title>
+      <link>http://localhost:1313/categorias/formacion/</link>
+      <pubDate>Sun, 05 Oct 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/categorias/formacion/</guid>
       <description></description>
     </item>
     <item>

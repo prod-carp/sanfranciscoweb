@@ -5,11 +5,11 @@ date = '2026-10-04T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
-diasDestacado = 1
+diasDestacado = 5
 weight = 0
 image = "/assets/images/blog/*.webp"
 fechaBase = '10/04'
-fechaInicio = 1
+fechaInicio = 0
 fechaFin = 300
 +++
 

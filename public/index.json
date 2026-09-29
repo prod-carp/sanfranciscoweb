@@ -1,12 +1,30 @@
 [
 
   {
-    "category": "Peregrinaciones",
-    "title": "Una noche de oración y esperanza: Vigilia de Espigas de Griñón",
+    "category": "Formacion",
+    "title": "La espiritualidad de San Francisco de Asís",
+    "subtitle": "Una de las figuras más importantes de la espiritualidad cristiana, que desarrolla una teología profundamente vivida.",
+    "date": "2026-09-29",
+    "image": "https://sanfranciscoysantaclara.es/assets/images/sanfrancisco-parte2.webp",
+    "url": "/noticias/10-05-espiritualidad-san-francisco/"
+  },
+
+  {
+    "category": "Exterior",
+    "title": "Una noche de oración y esperanza: Vigilia de Espigas en Griñón",
     "subtitle": "Algunos feligreses de nuestra parroquia asistieron a la Vigilia de Espigas por el XXV aniversario de la Adoración Nocturna de Griñón",
     "date": "2026-09-28",
     "image": "https://sanfranciscoysantaclara.es/assets/images/blog/espigas.webp",
     "url": "/noticias/vigilia-espigas/"
+  },
+
+  {
+    "category": "Peregrinaciones",
+    "title": "Ilusionismo familiar para celebrar a San Francisco",
+    "subtitle": "Una mañana de asombro y alegría para toda la familia con Lord Raymon",
+    "date": "2026-09-25",
+    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/mago.webp",
+    "url": "/noticias/magia-familiar/"
   },
 
   {
@@ -16,22 +34,4 @@
     "date": "2026-09-23",
     "image": "https://sanfranciscoysantaclara.es/assets/images/blog/padre-pio.webp",
     "url": "/noticias/santoral/09-23-san-p%C3%ADo-de-pietrelcina/"
-  },
-
-  {
-    "category": "Parroquia",
-    "title": "Grupo Cana: Para personas casadas que viven su fe en soledad",
-    "subtitle": "Porque no estás solo... Dios también camina contigo en la vida matrimonial",
-    "date": "2026-09-21",
-    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/2026-09-21-grupo-cana-para-personas-casadas-que-viven-su-fe-en-soledad.webp",
-    "url": "/noticias/2026-09-21-grupo-cana-para-personas-casadas-que-viven-su-fe-en-soledad/"
-  },
-
-  {
-    "category": "Espiritualidad",
-    "title": "Guía para participar en la Santa Misa | Respuestas y significado",
-    "subtitle": "Aprende paso a paso cómo participar en la Santa Misa: respuestas, gestos y el significado de cada parte para vivir la Eucaristía con mayor comprensión y devoción.",
-    "date": "2026-08-01",
-    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/guia-para-participar-en-la-santa-misa_20260801_000031.webp",
-    "url": "/noticias/2026-08-01-guia-para-participar-en-la-santa-misa/"
   }]

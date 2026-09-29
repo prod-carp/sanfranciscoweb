@@ -1,5 +1,5 @@
 +++
-title = 'Una noche de oración y esperanza: Vigilia de Espigas de Griñón'
+title = 'Una noche de oración y esperanza: Vigilia de Espigas en Griñón'
 subtitle = 'Algunos feligreses de nuestra parroquia asistieron a la Vigilia de Espigas por el XXV aniversario de la Adoración Nocturna de Griñón'
 date = '2026-09-28T00:00:00+02:00'
 draft = false
@@ -9,7 +9,7 @@ weight = 0
 image = "/assets/images/blog/espigas.webp"
 +++
 
-Algunos fieles de la parroquia de San Francisco y Santa Clara de Asís de Fuenlabrada participaron el pasado 26 de octubre en la Vigilia de Espigas, organizada por la Adoración Nocturna Española (ANE), en colaboración con la parroquia de Nuestra Señora de la Asunción de Griñón, con motivo del XXV aniversario de su Sección de Adoración Nocturna.
+Los Adoradores de la Sección de Fuenlabrada, miembros de la Adoración Nocturna que se lleva a cabo en la parroquia de San Francisco y Santa Clara de Asís de Fuenlabrada, participaron el pasado 26 de octubre en la Vigilia de Espigas, organizada por la Adoración Nocturna Española (ANE), en colaboración con la parroquia de Nuestra Señora de la Asunción de Griñón, con motivo del XXV aniversario de su Sección de Adoración Nocturna.
 
 La celebración reunió a adoradores y fieles en una noche de oración, fraternidad y adoración eucarística, siguiendo una tradición de la Iglesia que invita a dedicar las horas nocturnas al encuentro con Jesús Sacramentado y a dar gracias a Dios por los frutos de la tierra.
 
