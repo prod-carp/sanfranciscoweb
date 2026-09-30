@@ -1,6 +1,15 @@
 [
 
   {
+    "category": "Santoral",
+    "title": "San Jerónimo: el hombre que dedicó su vida a la Biblia",
+    "subtitle": "San Jerónimo dedicó su vida a conocer, traducir y explicar la Sagrada Escritura. Su amor por la Palabra de Dios lo convirtió en uno de los grandes maestros de la Iglesia.",
+    "date": "2026-09-30",
+    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/san-jeronimo2.webp",
+    "url": "/noticias/santoral/09-30-san-jeronimo/"
+  },
+
+  {
     "category": "Exterior",
     "title": "Una noche de oración y esperanza: Vigilia de Espigas en Griñón",
     "subtitle": "Algunos feligreses de nuestra parroquia asistieron a la Vigilia de Espigas por el XXV aniversario de la Adoración Nocturna de Griñón",
@@ -16,15 +25,6 @@
     "date": "2026-09-25",
     "image": "https://sanfranciscoysantaclara.es/assets/images/blog/mago.webp",
     "url": "/noticias/magia-familiar/"
-  },
-
-  {
-    "category": "Santoral",
-    "title": "San Pío de Pietrelcina: un franciscano marcado por Cristo",
-    "subtitle": "San Pío de Pietrelcina entregó su vida a Dios como sacerdote capuchino, sirvió a los enfermos y llevó en su cuerpo los estigmas de Cristo.",
-    "date": "2026-09-23",
-    "image": "https://sanfranciscoysantaclara.es/assets/images/blog/padre-pio.webp",
-    "url": "/noticias/santoral/09-23-san-p%C3%ADo-de-pietrelcina/"
   },
 
   {

@@ -14,15 +14,13 @@
     {{ range $paginator.Pages }}
       <div class="item features-image col-12 col-md-6 col-lg-3">
         <div class="item-wrapper">
-          <!-- IMAGEN -->
-          <div class="item-img">
-            {{ $permalink := .RelPermalink }}
-            {{ with .Params.image }}
-              <a href="{{ $permalink }}">
-                <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="width:100%; height:300px; object-fit:cover;">
-              </a>
-            {{ end }}
-          </div>
+
+<!-- IMAGEN -->
+<div class="item-img">
+  <a href="{{ .RelPermalink }}">
+    {{ partial "imagen-articulo.html" . }}
+  </a>
+</div>
 
           <div class="item-content">
 

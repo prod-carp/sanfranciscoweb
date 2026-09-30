@@ -24,6 +24,7 @@ La novena nos ayudará a preparar el corazón para llegar al **4 de octubre**, d
 San Francisco nos recuerda que seguir a Cristo es una llamada a vivir con sencillez, a servir a los demás, a cuidar de nuestros hermanos y de la creación, y a descubrir la alegría que nace de confiar plenamente en Dios.
 
 Por eso, estos días no son solamente una cuenta atrás hacia la fiesta, sino una invitación a **caminar juntos como comunidad parroquial**, poniendo nuestra mirada en Cristo y aprendiendo del testimonio de nuestro santo patrón.
+
 👉 **[Lee aquí la vida de San Francisco de Asís](https://sanfranciscoysantaclara.es/sanfrancisco.html)**
 
 ## Jubileo Franciscano 2026
@@ -33,6 +34,7 @@ Este año, la invitación cobra un significado especial, ya que 2026 marca el Ju
 El Papa León XIV ha anunciado un Jubileo Franciscano que se extenderá hasta el 10 de enero de 2027, para conmemorar el 800.º aniversario de la muerte de San Francisco. Todo este año es un tiempo de gracia; el Papa ha concedido de manera especial la Indulgencia Plenaria a todos los fieles que, con corazón arrepentido, visiten iglesias o lugares vinculados a San Francisco. 
 
 Nuestra parroquia, dedicada a San Francisco y Santa Clara de Asís, es uno de los lugares designados para recibir las gracias del Jubileo. La novena y la Misa de la fiesta nos ofrecen valiosas oportunidades para celebrar el Jubileo y recibir estas gracias. 
+
 👉 **[Saber más sobre el jubileo](https://sanfranciscoysantaclara.es/noticias/jubileo-franciscano/)**
 
 ### El broche de oro: 4 de octubre

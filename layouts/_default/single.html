@@ -51,13 +51,12 @@
       </div>
     </header>
     
-    <!-- Imagen principal -->
-    {{ with .Params.image }}
-      <div class="post-featured-image">
-        <img src="{{ . | relURL }}" width="637" height="637" alt="{{ $.Title }}" loading="lazy">
-      </div>
-    {{ end }}
+<!-- Imagen principal -->
+<div class="post-featured-image">
+  {{ partial "imagen-articulo.html" . }}
+</div>
     
+
     <!-- Botones de compartir -->
     <div class="share-section">
       <p class="share-text">
@@ -350,6 +349,20 @@
   margin-bottom: 1.4rem;
   line-height: 1.5;
 
+}
+
+.post-content a {
+  color: #38a169;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+.post-content a:hover {
+  color: #2f855a;
+  text-decoration-thickness: 2px;
 }
 
 .post-content img {
