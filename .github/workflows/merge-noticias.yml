@@ -29,6 +29,7 @@ jobs:
 
       - name: Fusionar y verificar publicaciones
         env:
+          PUBLICATION_WEBHOOK_SECRET: ${{ secrets.PUBLICATION_WEBHOOK_SECRET }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: prod-carp/sanfranciscoweb
         run: |
@@ -521,6 +522,28 @@ jobs:
 
             echo ""
 
-            echo "⚠ D1 y R2 todavía NO se modifican."
+echo
+echo "=========================================="
+echo "FINALIZANDO PUBLICACIÓN EN D1 Y R2"
+echo "=========================================="
+
+echo
+echo "→ Actualizando D1..."
+
+curl \
+  --fail-with-body \
+  --silent \
+  --show-error \
+  --request POST \
+  "https://api.sanfranciscoysantaclara.es/api/internal/publication-confirmed" \
+  --header "Authorization: Bearer ${PUBLICATION_WEBHOOK_SECRET}" \
+  --header "Content-Type: application/json" \
+  --data "{
+    \"prNumber\": ${NUMBER},
+    \"mergeCommit\": \"${MERGE_SHA}\"
+  }"
+
+echo
+echo "✓ D1/R2 actualizados correctamente."
 
           done < "$TEMP_FILE"
