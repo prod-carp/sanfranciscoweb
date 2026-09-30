@@ -522,28 +522,24 @@ jobs:
 
             echo ""
 
-echo
-echo "=========================================="
-echo "FINALIZANDO PUBLICACIÓN EN D1 Y R2"
-echo "=========================================="
+            echo "=========================================="
+            echo "FINALIZANDO PUBLICACIÓN EN D1 Y R2"
+            echo "=========================================="
 
-echo
-echo "→ Actualizando D1..."
+            echo ""
+            echo "→ Actualizando D1..."
 
-curl \
-  --fail-with-body \
-  --silent \
-  --show-error \
-  --request POST \
-  "https://api.sanfranciscoysantaclara.es/api/internal/publication-confirmed" \
-  --header "Authorization: Bearer ${PUBLICATION_WEBHOOK_SECRET}" \
-  --header "Content-Type: application/json" \
-  --data "{
-    \"prNumber\": ${NUMBER},
-    \"mergeCommit\": \"${MERGE_SHA}\"
-  }"
+            curl \
+              --fail-with-body \
+              --silent \
+              --show-error \
+              --request POST \
+              "https://api.sanfranciscoysantaclara.es/api/internal/publication-confirmed" \
+              --header "Authorization: Bearer ${PUBLICATION_WEBHOOK_SECRET}" \
+              --header "Content-Type: application/json" \
+              --data "{\"prNumber\": ${NUMBER}, \"mergeCommit\": \"${MERGE_SHA}\"}"
 
-echo
-echo "✓ D1/R2 actualizados correctamente."
+            echo ""
+            echo "✓ D1/R2 actualizados correctamente."
 
           done < "$TEMP_FILE"
