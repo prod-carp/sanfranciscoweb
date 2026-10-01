@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "grupos.html",
+    "currentPage": "grupooracionmadres.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -107,7 +107,7 @@
         "footer_custom": "",
         "html_before": "",
         "socialSharingUrl": "https://sanfranciscoysantaclara.es/assets/images/parroquia.webp",
-        "meta_image": "@PROJECT_PATH@/assets/images/entrada-parroquia-800x600.webp"
+        "meta_image": "@PROJECT_PATH@/assets/images/nuevaportadaoct2026.webp"
       },
       "components": [
         {
@@ -8388,7 +8388,7 @@
         "title": "Contacto | Parroquia San Francisco y Santa Clara de Asís",
         "order": "9",
         "meta_descr": "¿Necesitas información? Contacta con la Parroquia San Francisco y Clara. Consulta horarios, dirección y teléfono o envíanos un email.",
-        "meta_image": "@PROJECT_PATH@/assets/images/nuevaportada.webp"
+        "meta_image": "@PROJECT_PATH@/assets/images/nuevaportadaoct2026.webp"
       },
       "components": [
         {
@@ -9439,7 +9439,7 @@
         "title": "Dona a tu Iglesia | Parroquia San Francisco y Santa Clara de Asís",
         "order": "31",
         "meta_descr": "Apoya a la parroquia San Francisco y Clara de Asís de  Fuenlabrada con donativos por Bizum. Método rápido, seguro y sin comisiones. Sigue las instrucciones y contribuye desde tu móvil en segundos.",
-        "meta_image": "@PROJECT_PATH@/assets/images/index-meta-1200x630.webp"
+        "meta_image": "@PROJECT_PATH@/assets/images/nuevaportadaoct2026.webp"
       },
       "components": [
         {
@@ -14467,7 +14467,7 @@
         "title": "Grupos Parroquiales | Participa y Conecta",
         "order": "2",
         "meta_descr": "Conoce los grupos parroquiales disponibles en San Francisco y Clara de Asís y únete a la vida de la comunidad. Formación, oración, voluntariado y actividades para todas las edades.",
-        "meta_image": "@PROJECT_PATH@/assets/images/index-meta-1200x630.webp"
+        "meta_image": "@PROJECT_PATH@/assets/images/nuevaportadaoct2026.webp"
       },
       "components": [
         {
@@ -16335,7 +16335,7 @@
         "title": "Grupo de oración de las madres",
         "order": "5",
         "meta_descr": "Grupo de oración de las madres en la Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada.",
-        "meta_image": "@PROJECT_PATH@/assets/images/oracion-madres2.webp"
+        "meta_image": "@PROJECT_PATH@/assets/images/oracionmadres-cuadrado.webp"
       },
       "components": [
         {
@@ -16782,7 +16782,7 @@
           },
           "_name": "header1",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"7\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/oracion-madres2.webp\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Grupo de Oración de madres</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">\n                        Header Subtitle\n                    </h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Un espacio semanal para rezar por los hijos</b><br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Quiero asistir</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"7\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/oracion-madres2.webp\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Grupo de Oración de madres</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">\n                        Header Subtitle\n                    </h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Un espacio semanal para rezar por los hijos</b><br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Quiero asistir</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "vkP3n1dokA",
           "_anchor": "header1-52",
           "_protectedParams": [],
@@ -23125,7 +23125,7 @@
         "title": "Fotos de la Parroquia de San Francisco y Santa Clara de Asís",
         "order": "1",
         "meta_descr": "Recorre nuestra galería de imágenes, y la belleza de nuestro templo. Descubre el significado de las imágenes de nuestra parroquia y la arquitectura de nuestro templo.",
-        "meta_image": "@PROJECT_PATH@/assets/images/d96ca4b9-515a-45f1-be53-d4aee30b694f-1566x1005.png"
+        "meta_image": "@PROJECT_PATH@/assets/images/nuevaportadaoct2026.webp"
       },
       "components": [
         {
@@ -25852,7 +25852,7 @@
         "title": "Life Teen confirmación | Parroquia San Francisco y Santa Clara de Asís",
         "order": "19",
         "meta_descr": "Grupo de Confirmación de Jóvenes en la Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada. Formación cristiana y preparación para el sacramento.",
-        "meta_image": "@PROJECT_PATH@/assets/images/confirmacion-3.webp"
+        "meta_image": "@PROJECT_PATH@/assets/images/lifeteen.webp"
       },
       "components": [
         {
@@ -28546,7 +28546,7 @@
         "order": "4",
         "meta_descr": "Grupo de oración perteneciente a la espiritualidad de los Grupos de Oración de Padre Pío.",
         "socialSharingUrl": "",
-        "meta_image": "@PROJECT_PATH@/assets/images/padrepio-1.webp"
+        "meta_image": "@PROJECT_PATH@/assets/images/es-nuovo-logo-gdp-2025-596x596.png"
       },
       "components": [
         {
