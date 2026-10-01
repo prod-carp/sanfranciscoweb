@@ -1,0 +1,75 @@
+{{ $carteles := readDir "static/carteles" | sort }}
+
+{{ if gt (len $carteles) 0 }}
+
+<section class="carteles-destacados">
+
+  <div class="carteles-heading">
+
+    <div>
+      <h2>Tablón de anuncios</h2>
+      <p>Información y avisos de nuestra parroquia</p>
+    </div>
+
+    <a
+      href="{{ "/tablon/" | relURL }}"
+      class="carteles-ver-todos"
+    >
+      Ver todos
+    </a>
+
+  </div>
+
+
+  <div class="carteles-carousel">
+
+    <div class="carteles-track">
+
+      {{ range first 4 $carteles }}
+
+        {{ if not .IsDir }}
+
+          {{ $nombre := .Name }}
+
+          {{ if or
+              (strings.HasSuffix $nombre ".webp")
+              (strings.HasSuffix $nombre ".jpg")
+              (strings.HasSuffix $nombre ".jpeg")
+              (strings.HasSuffix $nombre ".png")
+          }}
+
+            <a
+              class="cartel-slide"
+              href="{{ printf "/carteles/%s" $nombre }}"
+            >
+
+              <img
+                src="{{ printf "/carteles/%s" $nombre }}"
+                alt="Cartel parroquial"
+                loading="lazy"
+              >
+
+            </a>
+
+          {{ end }}
+
+        {{ end }}
+
+      {{ end }}
+
+    </div>
+
+  </div>
+
+
+  <div class="carteles-mobile-link">
+
+    <a href="{{ "/tablon/" | relURL }}">
+      Ver todos los anuncios →
+    </a>
+
+  </div>
+
+</section>
+
+{{ end }}
