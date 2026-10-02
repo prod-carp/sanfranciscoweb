@@ -350,44 +350,22 @@ $replace = @"
     if (visor) {
         var imagen = visor.querySelector('img');
         var cerrar = document.getElementById('cartel-visor-cerrar');
-        var scrollY = 0;
-
-        function abrirVisor(src, alt) {
-            scrollY = window.scrollY || window.pageYOffset || 0;
-
-            imagen.src = src;
-            imagen.alt = alt || 'Cartel ampliado';
-
-            // Bloqueo robusto del scroll (funciona en iOS y Android)
-            document.body.style.position = 'fixed';
-            document.body.style.top = '-' + scrollY + 'px';
-            document.body.style.left = '0';
-            document.body.style.right = '0';
-            document.body.style.width = '100%';
-
-            visor.classList.add('abierto');
-        }
+        var anterior = null;
 
         function cerrarVisor() {
             visor.classList.remove('abierto');
             imagen.src = '';
-
-            // Restaurar estilos del body
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.body.style.left = '';
-            document.body.style.right = '';
-            document.body.style.width = '';
-
-            // Volver exactamente a donde estaba el usuario
-            window.scrollTo(0, scrollY);
+            document.body.style.overflow = anterior || '';
         }
 
         document.querySelectorAll('#tablon-anuncios [data-cartel]').forEach(function (enlace) {
             enlace.addEventListener('click', function (e) {
                 e.preventDefault();
-                var img = enlace.querySelector('img');
-                abrirVisor(enlace.getAttribute('data-cartel'), img ? img.alt : '');
+                imagen.src = enlace.getAttribute('data-cartel');
+                imagen.alt = enlace.querySelector('img').alt;
+                anterior = document.body.style.overflow;
+                document.body.style.overflow = 'hidden';
+                visor.classList.add('abierto');
             });
         });
 
