@@ -353,94 +353,109 @@ $replace = @"
 </div>
 
 <script>
-
 (function () {
+    // ============================================================
+    // VISOR AMPLIADO
+    // ============================================================
     var visor = document.getElementById('cartel-visor');
-    if (!visor) return;
 
-    var imagen = visor.querySelector('img');
-    var cerrar = document.getElementById('cartel-visor-cerrar');
-    var scrollGuardado = 0;
-    var estilosBody = null;
-    var abierto = false;
+    if (visor) {
+        var imagen = visor.querySelector('img');
+        var cerrar = document.getElementById('cartel-visor-cerrar');
+        var scrollGuardado = 0;
+        var abierto = false;
 
-    function abrirVisor(enlace) {
-        if (abierto) return;
+        function abrirVisor(enlace) {
+            if (abierto) return;
 
-        // Guardar la posición ANTES de bloquear el body.
-        scrollGuardado = window.scrollY || window.pageYOffset;
-        
-        // Guardar los estilos inline originales para restaurarlos.
-        estilosBody = {
-            position: document.body.style.position,
-            top: document.body.style.top,
-            left: document.body.style.left,
-            right: document.body.style.right,
-            width: document.body.style.width,
-            overflow: document.body.style.overflow
-        };
+            scrollGuardado = window.scrollY || window.pageYOffset || 0;
 
-        imagen.src = enlace.getAttribute('data-cartel');
-        imagen.alt = enlace.querySelector('img').alt;
+            imagen.src = enlace.getAttribute('data-cartel');
+            var img = enlace.querySelector('img');
+            imagen.alt = img ? img.alt : 'Cartel ampliado';
 
-        // Bloquear el fondo manteniendo la posición visual.
-        document.body.style.position = 'fixed';
-        document.body.style.top = '-' + scrollGuardado + 'px';
-        document.body.style.left = '0';
-        document.body.style.right = '0';
-        document.body.style.width = '100%';
-        document.body.style.overflow = 'hidden';
+            // Bloquear scroll fijando el body arriba
+            document.body.style.position = 'fixed';
+            document.body.style.top = '-' + scrollGuardado + 'px';
+            document.body.style.left = '0';
+            document.body.style.right = '0';
+            document.body.style.width = '100%';
 
-        visor.classList.add('abierto');
-        abierto = true;
-    }
+            visor.classList.add('abierto');
+            abierto = true;
+        }
 
-    function cerrarVisor() {
-        if (!abierto) return;
+        function cerrarVisor() {
+            if (!abierto) return;
 
-        // Ocultar el visor y restaurar los estilos originales.
-        visor.classList.remove('abierto');
-        imagen.src = '';
+            visor.classList.remove('abierto');
+            imagen.src = '';
 
-        document.body.style.position = estilosBody.position;
-        document.body.style.top = estilosBody.top;
-        document.body.style.left = estilosBody.left;
-        document.body.style.right = estilosBody.right;
-        document.body.style.width = estilosBody.width;
-        document.body.style.overflow = estilosBody.overflow;
+            // Quitar el bloqueo
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.left = '';
+            document.body.style.right = '';
+            document.body.style.width = '';
 
-        abierto = false;
+            abierto = false;
 
-        // Restaurar el scroll DESPUÉS de quitar position:fixed.
-        // Dos frames ayudan a Safari móvil a recalcular el layout.
-        requestAnimationFrame(function () {
-            window.scrollTo(0, scrollGuardado);
-
+            // Restaurar posición en el siguiente frame (o dos, por Safari)
             requestAnimationFrame(function () {
                 window.scrollTo(0, scrollGuardado);
+                requestAnimationFrame(function () {
+                    window.scrollTo(0, scrollGuardado);
+                });
             });
+        }
+
+        document.querySelectorAll('#tablon-anuncios [data-cartel]')
+            .forEach(function (enlace) {
+                enlace.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    abrirVisor(enlace);
+                });
+            });
+
+        cerrar.addEventListener('click', cerrarVisor);
+
+        visor.addEventListener('click', function (e) {
+            if (e.target === visor) cerrarVisor();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && abierto) {
+                cerrarVisor();
+            }
         });
     }
 
-    document.querySelectorAll('#tablon-anuncios [data-cartel]')
-        .forEach(function (enlace) {
-            enlace.addEventListener('click', function (e) {
-                e.preventDefault();
-                abrirVisor(enlace);
-            });
-        });
+    // ============================================================
+    // BOTONES DE NAVEGACIÓN DEL CARRUSEL
+    // ============================================================
+    var carrusel = document.querySelector('#tablon-anuncios .cartel-carrusel');
+    var btnPrev  = document.querySelector('#tablon-anuncios .cartel-nav.prev');
+    var btnNext  = document.querySelector('#tablon-anuncios .cartel-nav.next');
 
-    cerrar.addEventListener('click', cerrarVisor);
-
-    visor.addEventListener('click', function (e) {
-        if (e.target === visor) cerrarVisor();
-    });
-
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && abierto) {
-            cerrarVisor();
+    if (carrusel && btnPrev && btnNext) {
+        function desplazar(dir) {
+            var paso = carrusel.clientWidth * 0.8;
+            carrusel.scrollBy({ left: dir * paso, behavior: 'smooth' });
         }
-    });
+
+        btnPrev.addEventListener('click', function () { desplazar(-1); });
+        btnNext.addEventListener('click', function () { desplazar(1); });
+
+        function actualizarBotones() {
+            var maxScroll = carrusel.scrollWidth - carrusel.clientWidth;
+            btnPrev.style.opacity = carrusel.scrollLeft <= 4 ? '0.3' : '1';
+            btnNext.style.opacity = carrusel.scrollLeft >= maxScroll - 4 ? '0.3' : '1';
+        }
+
+        carrusel.addEventListener('scroll', actualizarBotones, { passive: true });
+        window.addEventListener('resize', actualizarBotones);
+        actualizarBotones();
+    }
 })();
 </script>
 "@
