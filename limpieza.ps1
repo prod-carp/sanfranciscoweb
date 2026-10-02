@@ -140,7 +140,7 @@ $content = $content -replace '(?s)<html.*?</head>', $newHead
 # Genera el carrusel directamente en el HTML estático de Mobirise.
 
 $carpetaCarteles = Join-Path $PSScriptRoot "static/carteles"
-$pattern = '<img src="assets/images/tablondeanuncios\.webp" alt="Tablón de anuncios">'
+$pattern = '<img src="assets/images/tablondeanuncios\.webp" alt="Tablón de anuncios horizontal">'
 
 # Obtener imágenes y ordenarlas alfabéticamente por nombre.
 $extensiones = @(".webp", ".jpg", ".jpeg", ".png")
