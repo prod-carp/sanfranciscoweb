@@ -135,11 +135,12 @@ $content = $content -replace '(?s)<html.*?</head>', $newHead
     if ($content -match $pattern) { $content = $content -replace $pattern, '<script data-src="assets/countdown/countdown.js">' }
 
 
+
 # 1.5.5 TABLÓN DE ANUNCIOS
 # Genera el carrusel directamente en el HTML estático de Mobirise.
 
 $carpetaCarteles = Join-Path $PSScriptRoot "static/carteles"
-$pattern = '<img src="assets/images/tablondeanuncios\.webp" alt="Tablón de anuncios horizontal">'
+$pattern = '<img src="assets/images/tablondeanuncios\.webp" alt="Tablón de anuncios">'
 
 # Obtener imágenes y ordenarlas alfabéticamente por nombre.
 $extensiones = @(".webp", ".jpg", ".jpeg", ".png")
@@ -264,45 +265,6 @@ $replace = @"
             line-height:1;
             cursor:pointer;
         }
-
-        /* Botones de navegación del carrusel */
-        #tablon-anuncios .cartel-carrusel-wrapper {
-            position: relative;
-        }
-
-        #tablon-anuncios .cartel-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            border: none;
-            background: rgba(36, 91, 73, .85);
-            color: #fff;
-            font-size: 22px;
-            line-height: 1;
-            cursor: pointer;
-            display: none;               /* ocultos por defecto (escritorio) */
-            align-items: center;
-            justify-content: center;
-            z-index: 5;
-            transition: background .2s ease, opacity .2s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,.25);
-        }
-
-        #tablon-anuncios .cartel-nav:hover {
-            background: #183f33;
-        }
-
-        #tablon-anuncios .cartel-nav.prev { left: 6px; }
-        #tablon-anuncios .cartel-nav.next { right: 6px; }
-
-        /* Solo se muestran en móvil/tablet, que es donde hay scroll horizontal */
-        @media (max-width: 767px) {
-            #tablon-anuncios .cartel-nav { display: flex; }
-        }
-
         @media(max-width:767px) {
             #tablon-anuncios .cartel-carrusel {
                 display:flex;
@@ -322,18 +284,12 @@ $replace = @"
         }
     </style>
 
-    <div class="cartel-carrusel-wrapper">
-        <button class="cartel-nav prev" type="button" aria-label="Anterior">&#10094;</button>
-
-            <div class="cartel-carrusel" aria-label="Últimos anuncios parroquiales">
-                $($tarjetas.ToString())
-            </div>
-
-        <button class="cartel-nav next" type="button" aria-label="Siguiente">&#10095;</button>
+    <div class="cartel-carrusel" aria-label="Últimos anuncios parroquiales">
+        $($tarjetas.ToString())
     </div>
 
     <div class="cartel-acciones">
-        <a class="btn btn-primary" href="/tablon/">VER TODOS LOS CARTELES</a>
+        <a class="cartel-boton" href="/tablon/">Ver todos los anuncios</a>
     </div>
 </div>
 
@@ -345,100 +301,37 @@ $replace = @"
 <script>
 (function () {
     var visor = document.getElementById('cartel-visor');
+    if (!visor) return;
+    var imagen = visor.querySelector('img');
+    var cerrar = document.getElementById('cartel-visor-cerrar');
+    var anterior = null;
 
-    // ---------- Visor ampliado ----------
-    if (visor) {
-        var imagen = visor.querySelector('img');
-        var cerrar = document.getElementById('cartel-visor-cerrar');
-        var scrollY = 0;
+    function cerrarVisor() {
+        visor.classList.remove('abierto');
+        imagen.src = '';
+        document.body.style.overflow = anterior || '';
+    }
 
-        function abrirVisor(src, alt) {
-            // Guardar posición actual (varias fuentes por compatibilidad)
-            scrollY = window.scrollY
-                   || window.pageYOffset
-                   || document.documentElement.scrollTop
-                   || document.body.scrollTop
-                   || 0;
-
-            imagen.src = src;
-            imagen.alt = alt || 'Cartel ampliado';
-
-            // Fijar el body para bloquear el scroll de fondo
-            document.body.style.position = 'fixed';
-            document.body.style.top = '-' + scrollY + 'px';
-            document.body.style.left = '0';
-            document.body.style.right = '0';
-            document.body.style.width = '100%';
-
+    document.querySelectorAll('#tablon-anuncios [data-cartel]').forEach(function (enlace) {
+        enlace.addEventListener('click', function (e) {
+            e.preventDefault();
+            imagen.src = enlace.getAttribute('data-cartel');
+            imagen.alt = enlace.querySelector('img').alt;
+            anterior = document.body.style.overflow;
+            document.body.style.overflow = 'hidden';
             visor.classList.add('abierto');
-        }
-
-        function cerrarVisor() {
-            visor.classList.remove('abierto');
-            imagen.src = '';
-
-            // 1) Quitar estilos del body
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.body.style.left = '';
-            document.body.style.right = '';
-            document.body.style.width = '';
-
-            // 2) Forzar reflow para que el navegador recalcule el layout
-            void document.body.offsetHeight;
-
-            // 3) Restaurar la posición en el siguiente frame
-            requestAnimationFrame(function () {
-                window.scrollTo(0, scrollY);
-                // Fallback para iOS
-                document.documentElement.scrollTop = scrollY;
-                document.body.scrollTop = scrollY;
-            });
-        }
-
-        document.querySelectorAll('#tablon-anuncios [data-cartel]').forEach(function (enlace) {
-            enlace.addEventListener('click', function (e) {
-                e.preventDefault();
-                var img = enlace.querySelector('img');
-                abrirVisor(enlace.getAttribute('data-cartel'), img ? img.alt : '');
-            });
         });
+    });
 
-        cerrar.addEventListener('click', cerrarVisor);
-        visor.addEventListener('touchmove', function (e) {
-            if (e.target === visor) e.preventDefault();
-        }, { passive: false });
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && visor.classList.contains('abierto')) {
-                cerrarVisor();
-            }
-        });
-    }
-
-    // ---------- Botones de navegación del carrusel ----------
-    var carrusel = document.querySelector('#tablon-anuncios .cartel-carrusel');
-    var btnPrev  = document.querySelector('#tablon-anuncios .cartel-nav.prev');
-    var btnNext  = document.querySelector('#tablon-anuncios .cartel-nav.next');
-
-    if (carrusel && btnPrev && btnNext) {
-        function desplazar(dir) {
-            var paso = carrusel.clientWidth * 0.8;
-            carrusel.scrollBy({ left: dir * paso, behavior: 'smooth' });
+    cerrar.addEventListener('click', cerrarVisor);
+    visor.addEventListener('click', function (e) {
+        if (e.target === visor) cerrarVisor();
+    });
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && visor.classList.contains('abierto')) {
+            cerrarVisor();
         }
-
-        btnPrev.addEventListener('click', function () { desplazar(-1); });
-        btnNext.addEventListener('click', function () { desplazar(1); });
-
-        function actualizarBotones() {
-            var maxScroll = carrusel.scrollWidth - carrusel.clientWidth;
-            btnPrev.style.opacity = carrusel.scrollLeft <= 4 ? '0.3' : '1';
-            btnNext.style.opacity = carrusel.scrollLeft >= maxScroll - 4 ? '0.3' : '1';
-        }
-
-        carrusel.addEventListener('scroll', actualizarBotones, { passive: true });
-        window.addEventListener('resize', actualizarBotones);
-        actualizarBotones();
-    }
+    });
 })();
 </script>
 "@
