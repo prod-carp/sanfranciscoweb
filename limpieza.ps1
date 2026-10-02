@@ -353,12 +353,17 @@ $replace = @"
         var scrollY = 0;
 
         function abrirVisor(src, alt) {
-            scrollY = window.scrollY || window.pageYOffset || 0;
+            // Guardar posición actual (varias fuentes por compatibilidad)
+            scrollY = window.scrollY
+                   || window.pageYOffset
+                   || document.documentElement.scrollTop
+                   || document.body.scrollTop
+                   || 0;
 
             imagen.src = src;
             imagen.alt = alt || 'Cartel ampliado';
 
-            // Bloqueo robusto del scroll (funciona en iOS y Android)
+            // Fijar el body para bloquear el scroll de fondo
             document.body.style.position = 'fixed';
             document.body.style.top = '-' + scrollY + 'px';
             document.body.style.left = '0';
@@ -372,15 +377,23 @@ $replace = @"
             visor.classList.remove('abierto');
             imagen.src = '';
 
-            // Restaurar estilos del body
+            // 1) Quitar estilos del body
             document.body.style.position = '';
             document.body.style.top = '';
             document.body.style.left = '';
             document.body.style.right = '';
             document.body.style.width = '';
 
-            // Volver exactamente a donde estaba el usuario
-            window.scrollTo(0, scrollY);
+            // 2) Forzar reflow para que el navegador recalcule el layout
+            void document.body.offsetHeight;
+
+            // 3) Restaurar la posición en el siguiente frame
+            requestAnimationFrame(function () {
+                window.scrollTo(0, scrollY);
+                // Fallback para iOS
+                document.documentElement.scrollTop = scrollY;
+                document.body.scrollTop = scrollY;
+            });
         }
 
         document.querySelectorAll('#tablon-anuncios [data-cartel]').forEach(function (enlace) {
