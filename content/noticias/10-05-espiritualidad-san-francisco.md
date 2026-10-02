@@ -201,105 +201,19 @@ Su espiritualidad culmina en una confianza radical en el amor de Dios, que permi
 
 ## El núcleo de la espiritualidad de San Francisco
 
-|
-Tema
-
-|
-
-Idea teológica fundamental
-
-|
+| Tema | Idea teológica fundamental |
 | --- | --- |
-|
+| Jesucristo | Seguir e imitar a Cristo, especialmente en su humildad y entrega. |
+| Pobreza | Vivir libres de los bienes materiales y confiar en la Providencia. |
+| Fraternidad | Reconocer a todos como hermanos e hijos de un mismo Padre. |
+| Creación | Alabar a Dios por la belleza y bondad de todas sus criaturas. |
+| Eucaristía | Adorar a Cristo presente y entregado por amor. |
+| Conversión | Dejarse transformar por la gracia y practicar la misericordia. |
+| Paz | Ser instrumentos de reconciliación y diálogo. |
+| Iglesia | Vivir el Evangelio en comunión y obediencia eclesial. |
+| Alegría perfecta | Encontrar la verdadera alegría en Cristo, incluso en la adversidad. |
+| Muerte y esperanza | Acoger la vida y la muerte con confianza en Dios. |
 
-Jesucristo
-
-|
-
-Seguir e imitar a Cristo, especialmente en su humildad y entrega.
-
-|
-|
-
-Pobreza
-
-|
-
-Vivir libres de los bienes materiales y confiar en la Providencia.
-
-|
-|
-
-Fraternidad
-
-|
-
-Reconocer a todos como hermanos e hijos de un mismo Padre.
-
-|
-|
-
-Creación
-
-|
-
-Alabar a Dios por la belleza y bondad de todas sus criaturas.
-
-|
-|
-
-Eucaristía
-
-|
-
-Adorar a Cristo presente y entregado por amor.
-
-|
-|
-
-Conversión
-
-|
-
-Dejarse transformar por la gracia y practicar la misericordia.
-
-|
-|
-
-Paz
-
-|
-
-Ser instrumentos de reconciliación y diálogo.
-
-|
-|
-
-Iglesia
-
-|
-
-Vivir el Evangelio en comunión y obediencia eclesial.
-
-|
-|
-
-Alegría perfecta
-
-|
-
-Encontrar la verdadera alegría en Cristo, incluso en la adversidad.
-
-|
-|
-
-Muerte y esperanza
-
-|
-
-Acoger la vida y la muerte con confianza en Dios.
-
-|
 
 ## ¿Cuál es la idea que une todos estos temas?
 

@@ -53,27 +53,28 @@ Es una ocasión para dedicar un tiempo especial a la oración y a la adoración,
 
 ## 📅 Horarios de nuestros grupos
 
-**Grupo** - Día - Hora
+| Grupo | Día | Hora |
+|---|---|---|
+| Limpieza | Martes / 2.º miércoles | 9:00 h |
+| Grupo de oración Padre Pío | Martes | 18:15 h |
+| Cana | Miércoles | 17:00 h |
+| Exposición del Santísimo | Jueves | 10:00–19:30 h |
+| Grupo de oración | Jueves | 17:00 h |
+| Manualidades | Jueves | 17:30 h |
+| Cáritas | Jueves | 18:00 h |
+| Oración de madres | Jueves / Viernes | 18:00 h |
+| Jóvenes Confirmación | Viernes | 18:00 h |
+| Liturgia | Viernes | 20:00 h |
+| Life Teen Confirmación (10–12 años) | Sábado | 11:00 h |
+| Adoración Nocturna | 2.º sábado de mes | 18:30 h |
+| Rosario Virgen de Guadalupe | 3.º sábado de mes | 18:00 h |
+| Matrimonios | 4.º sábado de mes | 18:00 h |
+| Monaguillos | Domingo | 10:00 h |
+| Coro niños | Domingo | 10:30 h |
+| Escuela Caleb | Domingo | 10:30 h |
+| Misión David | Domingo | 10:30 h |
+| Catequesis | Martes / Miércoles | 18:00 h |
 
-**Limpieza** - Martes / 2.º miércoles -  9:00 h
-**Grupo de oración Padre Pío **- Martes - 18:15 h
-**Cana** - Miércoles - 17:00 h
-**Exposición del Santísimo** - Jueves	10:00–19:30 h
-**Grupo de oración **- Jueves - 17:00 h
-**Manualidades** - Jueves - 17:30 h
-**Cáritas** - Jueves - 18:00 h
-**Oración de madres** - Jueves / Viernes - 18:00 h
-**Jóvenes Confirmación** - Viernes - 18:00 h
-**Liturgia** - Viernes - 20:00 h
-**Life Teen Confirmación** (10–12 años) - Sábado - 11:00 h
-**Adoración Nocturna** - 2.º sábado de mes - 18:30 h
-**Rosario Virgen de Guadalupe** - 3.º sábado de mes - 18:00 h
-**Matrimonios** - 4.º sábado de mes - 18:00 h
-**Monaguillos** - Domingo - 10:00 h
-**Coro niños** - Domingo - 10:30 h
-**Escuela Caleb** - Domingo - 10:30 h
-**Misión David** - Domingo - 10:30 h
-**Catequesis** - Martes / Miércoles - 18:00 h
 
 **Los horarios pueden estar sujetos a cambios. Para conocer cualquier modificación puntual, recomendamos consultar los avisos de la parroquia.**
 
