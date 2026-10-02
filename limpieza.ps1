@@ -405,9 +405,9 @@ $replace = @"
         });
 
         cerrar.addEventListener('click', cerrarVisor);
-        visor.addEventListener('click', function (e) {
-            if (e.target === visor) cerrarVisor();
-        });
+        visor.addEventListener('touchmove', function (e) {
+            if (e.target === visor) e.preventDefault();
+        }, { passive: false });
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape' && visor.classList.contains('abierto')) {
                 cerrarVisor();
