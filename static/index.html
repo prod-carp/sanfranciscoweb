@@ -20,13 +20,13 @@
 <meta property="og:title" content="Parroquia San Francisco y Santa Clara de Asís">
 <meta property="og:description" content="Bienvenido a la Parroquia San Francisco y Santa Clara de Asís de Fuenlabrada. Consulta horarios de misa, sacramentos, grupos parroquiales, noticias, avisos y actividades de la comunidad.">
 <meta property="og:url" content="https://sanfranciscoysantaclara.es/index.html">
-<meta property="og:image" content="https://sanfranciscoysantaclara.es/assets/images/index-meta.webp">
+<meta property="og:image" content="https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/assets/images/index-meta.webp">
 <meta property="og:locale" content="es_ES">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Parroquia San Francisco y Santa Clara de Asís">
 <meta name="twitter:description" content="Bienvenido a la Parroquia San Francisco y Santa Clara de Asís de Fuenlabrada. Consulta horarios de misa, sacramentos, grupos parroquiales, noticias, avisos y actividades de la comunidad.">
-<meta name="twitter:image" content="https://sanfranciscoysantaclara.es/assets/images/index-meta.webp">
+<meta name="twitter:image" content="https://sanfranciscoysantaclara.es/https://sanfranciscoysantaclara.es/assets/images/index-meta.webp">
 
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
@@ -718,6 +718,55 @@
             line-height:1;
             cursor:pointer;
         }
+
+        /* Evita desplazamientos táctiles accidentales en el visor */
+        #cartel-visor {
+            overscroll-behavior: contain;
+            touch-action: none;
+        }
+
+        #cartel-visor img {
+            touch-action: pan-x pan-y pinch-zoom;
+        }
+
+        /* Botones de navegación del carrusel */
+        #tablon-anuncios .cartel-carrusel-wrapper {
+            position: relative;
+        }
+
+        #tablon-anuncios .cartel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(36, 91, 73, .85);
+            color: #fff;
+            font-size: 22px;
+            line-height: 1;
+            cursor: pointer;
+            display: none;               /* ocultos por defecto (escritorio) */
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
+            transition: background .2s ease, opacity .2s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,.25);
+        }
+
+        #tablon-anuncios .cartel-nav:hover {
+            background: #183f33;
+        }
+
+        #tablon-anuncios .cartel-nav.prev { left: 6px; }
+        #tablon-anuncios .cartel-nav.next { right: 6px; }
+
+        /* Solo se muestran en móvil/tablet, que es donde hay scroll horizontal */
+        @media (max-width: 767px) {
+            #tablon-anuncios .cartel-nav { display: flex; }
+        }
+
         @media(max-width:767px) {
             #tablon-anuncios .cartel-carrusel {
                 display:flex;
@@ -737,8 +786,11 @@
         }
     </style>
 
-    <div class="cartel-carrusel" aria-label="Últimos anuncios parroquiales">
-                <div class="cartel-slide">
+    <div class="cartel-carrusel-wrapper">
+        <button class="cartel-nav prev" type="button" aria-label="Anterior">&#10094;</button>
+
+            <div class="cartel-carrusel" aria-label="Últimos anuncios parroquiales">
+                        <div class="cartel-slide">
             <a href="/carteles/01-grupos.webp" class="cartel-enlace" data-cartel="/carteles/01-grupos.webp" aria-label="Ampliar cartel: 01-grupos">
                 <img src="/carteles/01-grupos.webp" alt="01-grupos" loading="lazy">
             </a>
@@ -759,10 +811,13 @@
             </a>
         </div>
 
+            </div>
+
+        <button class="cartel-nav next" type="button" aria-label="Siguiente">&#10095;</button>
     </div>
 
     <div class="cartel-acciones">
-        <a class="cartel-boton" href="/tablon/">Ver todos los anuncios</a>
+        <a class="btn btn-primary" href="/tablon/">VER TODOS LOS CARTELES</a>
     </div>
 </div>
 
@@ -772,36 +827,91 @@
 </div>
 
 <script>
+
 (function () {
     var visor = document.getElementById('cartel-visor');
     if (!visor) return;
+
     var imagen = visor.querySelector('img');
     var cerrar = document.getElementById('cartel-visor-cerrar');
-    var anterior = null;
+    var scrollGuardado = 0;
+    var estilosBody = null;
+    var abierto = false;
 
-    function cerrarVisor() {
-        visor.classList.remove('abierto');
-        imagen.src = '';
-        document.body.style.overflow = anterior || '';
+    function abrirVisor(enlace) {
+        if (abierto) return;
+
+        // Guardar la posición ANTES de bloquear el body.
+        scrollGuardado = window.scrollY || window.pageYOffset;
+        
+        // Guardar los estilos inline originales para restaurarlos.
+        estilosBody = {
+            position: document.body.style.position,
+            top: document.body.style.top,
+            left: document.body.style.left,
+            right: document.body.style.right,
+            width: document.body.style.width,
+            overflow: document.body.style.overflow
+        };
+
+        imagen.src = enlace.getAttribute('data-cartel');
+        imagen.alt = enlace.querySelector('img').alt;
+
+        // Bloquear el fondo manteniendo la posición visual.
+        document.body.style.position = 'fixed';
+        document.body.style.top = '-' + scrollGuardado + 'px';
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.style.width = '100%';
+        document.body.style.overflow = 'hidden';
+
+        visor.classList.add('abierto');
+        abierto = true;
     }
 
-    document.querySelectorAll('#tablon-anuncios [data-cartel]').forEach(function (enlace) {
-        enlace.addEventListener('click', function (e) {
-            e.preventDefault();
-            imagen.src = enlace.getAttribute('data-cartel');
-            imagen.alt = enlace.querySelector('img').alt;
-            anterior = document.body.style.overflow;
-            document.body.style.overflow = 'hidden';
-            visor.classList.add('abierto');
+    function cerrarVisor() {
+        if (!abierto) return;
+
+        // Ocultar el visor y restaurar los estilos originales.
+        visor.classList.remove('abierto');
+        imagen.src = '';
+
+        document.body.style.position = estilosBody.position;
+        document.body.style.top = estilosBody.top;
+        document.body.style.left = estilosBody.left;
+        document.body.style.right = estilosBody.right;
+        document.body.style.width = estilosBody.width;
+        document.body.style.overflow = estilosBody.overflow;
+
+        abierto = false;
+
+        // Restaurar el scroll DESPUÉS de quitar position:fixed.
+        // Dos frames ayudan a Safari móvil a recalcular el layout.
+        requestAnimationFrame(function () {
+            window.scrollTo(0, scrollGuardado);
+
+            requestAnimationFrame(function () {
+                window.scrollTo(0, scrollGuardado);
+            });
         });
-    });
+    }
+
+    document.querySelectorAll('#tablon-anuncios [data-cartel]')
+        .forEach(function (enlace) {
+            enlace.addEventListener('click', function (e) {
+                e.preventDefault();
+                abrirVisor(enlace);
+            });
+        });
 
     cerrar.addEventListener('click', cerrarVisor);
+
     visor.addEventListener('click', function (e) {
         if (e.target === visor) cerrarVisor();
     });
+
     document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && visor.classList.contains('abierto')) {
+        if (e.key === 'Escape' && abierto) {
             cerrarVisor();
         }
     });

@@ -1,7 +1,7 @@
 +++
 title = 'Nuestros grupos parroquiales: una comunidad que camina unida'
 subtitle = 'Oración, formación, servicio, fraternidad y vida cristiana para todas las edades'
-date = '2026-10-01T00:00:00+02:00'
+date = '2026-10-02T00:00:00+02:00'
 draft = false
 categorias = ["Parroquia"]
 weight = 0

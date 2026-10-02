@@ -135,6 +135,7 @@ $content = $content -replace '(?s)<html.*?</head>', $newHead
     if ($content -match $pattern) { $content = $content -replace $pattern, '<script data-src="assets/countdown/countdown.js">' }
 
 
+
 # 1.5.5 TABLÓN DE ANUNCIOS
 # Genera el carrusel directamente en el HTML estático de Mobirise.
 
@@ -264,55 +265,6 @@ $replace = @"
             line-height:1;
             cursor:pointer;
         }
-
-        /* Evita desplazamientos táctiles accidentales en el visor */
-        #cartel-visor {
-            overscroll-behavior: contain;
-            touch-action: none;
-        }
-
-        #cartel-visor img {
-            touch-action: pan-x pan-y pinch-zoom;
-        }
-
-        /* Botones de navegación del carrusel */
-        #tablon-anuncios .cartel-carrusel-wrapper {
-            position: relative;
-        }
-
-        #tablon-anuncios .cartel-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            border: none;
-            background: rgba(36, 91, 73, .85);
-            color: #fff;
-            font-size: 22px;
-            line-height: 1;
-            cursor: pointer;
-            display: none;               /* ocultos por defecto (escritorio) */
-            align-items: center;
-            justify-content: center;
-            z-index: 5;
-            transition: background .2s ease, opacity .2s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,.25);
-        }
-
-        #tablon-anuncios .cartel-nav:hover {
-            background: #183f33;
-        }
-
-        #tablon-anuncios .cartel-nav.prev { left: 6px; }
-        #tablon-anuncios .cartel-nav.next { right: 6px; }
-
-        /* Solo se muestran en móvil/tablet, que es donde hay scroll horizontal */
-        @media (max-width: 767px) {
-            #tablon-anuncios .cartel-nav { display: flex; }
-        }
-
         @media(max-width:767px) {
             #tablon-anuncios .cartel-carrusel {
                 display:flex;
@@ -332,18 +284,12 @@ $replace = @"
         }
     </style>
 
-    <div class="cartel-carrusel-wrapper">
-        <button class="cartel-nav prev" type="button" aria-label="Anterior">&#10094;</button>
-
-            <div class="cartel-carrusel" aria-label="Últimos anuncios parroquiales">
-                $($tarjetas.ToString())
-            </div>
-
-        <button class="cartel-nav next" type="button" aria-label="Siguiente">&#10095;</button>
+    <div class="cartel-carrusel" aria-label="Últimos anuncios parroquiales">
+        $($tarjetas.ToString())
     </div>
 
     <div class="cartel-acciones">
-        <a class="btn btn-primary" href="/tablon/">VER TODOS LOS CARTELES</a>
+        <a class="cartel-boton" href="/tablon/">Ver todos los anuncios</a>
     </div>
 </div>
 
@@ -353,91 +299,36 @@ $replace = @"
 </div>
 
 <script>
-
 (function () {
     var visor = document.getElementById('cartel-visor');
     if (!visor) return;
-
     var imagen = visor.querySelector('img');
     var cerrar = document.getElementById('cartel-visor-cerrar');
-    var scrollGuardado = 0;
-    var estilosBody = null;
-    var abierto = false;
-
-    function abrirVisor(enlace) {
-        if (abierto) return;
-
-        // Guardar la posición ANTES de bloquear el body.
-        scrollGuardado = window.scrollY || window.pageYOffset;
-        
-        // Guardar los estilos inline originales para restaurarlos.
-        estilosBody = {
-            position: document.body.style.position,
-            top: document.body.style.top,
-            left: document.body.style.left,
-            right: document.body.style.right,
-            width: document.body.style.width,
-            overflow: document.body.style.overflow
-        };
-
-        imagen.src = enlace.getAttribute('data-cartel');
-        imagen.alt = enlace.querySelector('img').alt;
-
-        // Bloquear el fondo manteniendo la posición visual.
-        document.body.style.position = 'fixed';
-        document.body.style.top = '-' + scrollGuardado + 'px';
-        document.body.style.left = '0';
-        document.body.style.right = '0';
-        document.body.style.width = '100%';
-        document.body.style.overflow = 'hidden';
-
-        visor.classList.add('abierto');
-        abierto = true;
-    }
+    var anterior = null;
 
     function cerrarVisor() {
-        if (!abierto) return;
-
-        // Ocultar el visor y restaurar los estilos originales.
         visor.classList.remove('abierto');
         imagen.src = '';
-
-        document.body.style.position = estilosBody.position;
-        document.body.style.top = estilosBody.top;
-        document.body.style.left = estilosBody.left;
-        document.body.style.right = estilosBody.right;
-        document.body.style.width = estilosBody.width;
-        document.body.style.overflow = estilosBody.overflow;
-
-        abierto = false;
-
-        // Restaurar el scroll DESPUÉS de quitar position:fixed.
-        // Dos frames ayudan a Safari móvil a recalcular el layout.
-        requestAnimationFrame(function () {
-            window.scrollTo(0, scrollGuardado);
-
-            requestAnimationFrame(function () {
-                window.scrollTo(0, scrollGuardado);
-            });
-        });
+        document.body.style.overflow = anterior || '';
     }
 
-    document.querySelectorAll('#tablon-anuncios [data-cartel]')
-        .forEach(function (enlace) {
-            enlace.addEventListener('click', function (e) {
-                e.preventDefault();
-                abrirVisor(enlace);
-            });
+    document.querySelectorAll('#tablon-anuncios [data-cartel]').forEach(function (enlace) {
+        enlace.addEventListener('click', function (e) {
+            e.preventDefault();
+            imagen.src = enlace.getAttribute('data-cartel');
+            imagen.alt = enlace.querySelector('img').alt;
+            anterior = document.body.style.overflow;
+            document.body.style.overflow = 'hidden';
+            visor.classList.add('abierto');
         });
+    });
 
     cerrar.addEventListener('click', cerrarVisor);
-
     visor.addEventListener('click', function (e) {
         if (e.target === visor) cerrarVisor();
     });
-
     document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && abierto) {
+        if (e.key === 'Escape' && visor.classList.contains('abierto')) {
             cerrarVisor();
         }
     });
