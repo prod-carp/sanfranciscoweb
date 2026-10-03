@@ -81,11 +81,11 @@
 
     .hidden { display: none !important; }
 
-    .progress-area {
+    .progreso-area {
       margin-bottom: 35px;
     }
 
-    .progress-text {
+    .progreso-text {
       display: flex;
       justify-content: space-between;
       font-size: .9rem;
@@ -93,14 +93,14 @@
       margin-bottom: 8px;
     }
 
-    .progress-bar {
+    .progreso-bar {
       height: 8px;
       background: #eee;
       border-radius: 20px;
       overflow: hidden;
     }
 
-    .progress-fill {
+    .progreso-fill {
       height: 100%;
       width: 0;
       background: #667eea;
@@ -269,13 +269,12 @@
 
 <!-- CSS -->
 
-  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/animatecss/animate.css">
-  <link rel="stylesheet" href="/assets/dropdown/css/style.css">
+<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="/assets/animatecss/animate.css">
+<link rel="stylesheet" href="/assets/dropdown/css/style.css">
 <!--  <link rel="stylesheet" href="/assets/socicon/css/styles.css"> -->
-  <link rel="stylesheet" href="/assets/theme/css/style.css">
-  <link rel="stylesheet" href="/assets/css/fonts.css">
-  <link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css?v=G1za5k" type="text/css">
+<link rel="stylesheet" href="/assets/theme/css/style.css">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css?v=G1za5k" type="text/css">
 
 </head>
 
@@ -414,13 +413,13 @@
     <!-- CUESTIONARIO -->
     <section id="quiz" class="hidden">
 
-      <div class="progress-area">
-        <div class="progress-text">
-          <span id="progress-label">Pregunta 1 de 6</span>
-          <span id="progress-percent">17%</span>
+      <div class="progreso-area">
+        <div class="progreso-text">
+          <span id="progreso-label">Pregunta 1 de 6</span>
+          <span id="progreso-percent">17%</span>
         </div>
-        <div class="progress-bar">
-          <div id="progress-fill" class="progress-fill"></div>
+        <div class="progreso-bar">
+          <div id="progreso-fill" class="progreso-fill"></div>
         </div>
       </div>
 
@@ -878,13 +877,13 @@ function mostrarPregunta() {
   const total = preguntas.length;
   const porcentaje = Math.round(((preguntaActual + 1) / total) * 100);
 
-  document.getElementById("progress-label").textContent =
+  document.getElementById("progreso-label").textContent =
     `Pregunta ${preguntaActual + 1} de ${total}`;
 
-  document.getElementById("progress-percent").textContent =
+  document.getElementById("progreso-percent").textContent =
     `${porcentaje}%`;
 
-  document.getElementById("progress-fill").style.width =
+  document.getElementById("progreso-fill").style.width =
     `${porcentaje}%`;
 
   let html = `
@@ -1354,12 +1353,12 @@ function traducirDia(dia) {
         </div>
     </div>
 </section>
+
 <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
-<script src="/assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
 <script src="/assets/smoothscroll/smooth-scroll.js"></script>
 <script type="text/plain" data-src="/assets/ytplayer/index.js"></script>
 <script src="/assets/dropdown/js/navbar-dropdown.js"></script>
 <script src="/assets/theme/js/script.js"></script>
+
 
 </html>
