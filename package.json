@@ -1,0 +1,11 @@
+{
+  "name": "web-parroquia",
+  "private": true,
+  "scripts": {
+    "fetch-calendar": "node scripts/fetch-calendar.js",
+    "build": "npm run fetch-calendar && hugo --minify"
+  },
+  "dependencies": {
+    "node-ical": "^0.20.1"
+  }
+}

@@ -1,18 +1,16 @@
 ﻿+++
-title = 'Novena a San Francisco de Asís - Día 1'
+title = 'Novena a San Francisco de Asís - Día 8'
 subtitle = 'Rezamos el día de hoy correspondiente a la novena de nuestro santo patrón'
-date = '2026-09-25T00:00:00+02:00'
+date = '2026-10-02T00:00:00+02:00'
 draft = false
 categorias = ["Oraciones"]
 tags = []
 weight = 0
-image = "/assets/images/blog/NOVENA-01.webp"
-fechaBase = '09/25'
+image = "/assets/images/blog/NOVENA-08.webp"
+fechaBase = '10/02'
 fechaInicio = 0
 fechaFin = 1
 +++
-
-## MODO DE HACER LA NOVENA
 
 *Puestos delante de una imagen de San Francisco de Asís*.
 
@@ -96,11 +94,9 @@ Omnipotente Dios, misericordioso Salvador.
 
 ---
 
-## ORACIÓN PARA EL DÍA 25
+## ORACIÓN PARA EL DÍA OCTAVO
 
-Bendito seáis, Padre mío San Francisco de Asís, por aquella admirable y sobrenatural prudencia con que obrabais siempre y por los acertados consejos que dabais siempre a todos. Concededme la gracia de que yo os imite para no errar nunca el camino de mi salvación. Haced, Santo mío, que aprenda a consultar rectamente con Dios y con sus representantes, siguiendo dócilmente sus órdenes e inspiraciones.
-
-Apartadme siempre de la vida fácil y acomodaticia, pues deseo en todo obrar sólo por motivos nobles y sobrenaturales, que son los que dan valor y mérito a las acciones humanas. Espero, pues, de vuestra mano el precioso don de la prudencia Así sea.
+Piadosísimo Santo mío, ya que como siervo fiel observasteis el precepto que con la voz y con el ejemplo nos intimó nuestro Redentor Soberano mandándonos amar a los enemigos, yo ofrezco imitaros en esta excelente virtud, olvidándome de cuantos agravios se me hayan hecho, y propongo hacer bien a quien me hizo o deseó algún mal y rogar al Señor por ellos, y deponiendo cualquier odio o rencor que se haya albergado en mi alma, tratarles en adelante con toda mansedumbre, afabilidad y cariño, para que este obsequio merecer vuestra protección y la infinita piedad junto con el favor que os pido en esta Novena. Así sea.
 
 ---
 

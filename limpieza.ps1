@@ -242,6 +242,7 @@ $replace = @"
             cursor:zoom-out;
         }
         #cartel-visor.abierto { display:flex; }
+        body.cartel-visor-abierto { overflow: hidden !important; }
         #cartel-visor img {
             max-width:96vw;
             max-height:92vh;
@@ -304,22 +305,25 @@ $replace = @"
     if (!visor) return;
     var imagen = visor.querySelector('img');
     var cerrar = document.getElementById('cartel-visor-cerrar');
-    var anterior = null;
+
+    function abrirVisor(src, alt) {
+        imagen.src = src;
+        imagen.alt = alt || 'Cartel ampliado';
+        visor.classList.add('abierto');
+        document.body.classList.add('cartel-visor-abierto');
+    }
 
     function cerrarVisor() {
         visor.classList.remove('abierto');
         imagen.src = '';
-        document.body.style.overflow = anterior || '';
+        document.body.classList.remove('cartel-visor-abierto');
     }
 
     document.querySelectorAll('#tablon-anuncios [data-cartel]').forEach(function (enlace) {
         enlace.addEventListener('click', function (e) {
             e.preventDefault();
-            imagen.src = enlace.getAttribute('data-cartel');
-            imagen.alt = enlace.querySelector('img').alt;
-            anterior = document.body.style.overflow;
-            document.body.style.overflow = 'hidden';
-            visor.classList.add('abierto');
+            var img = enlace.querySelector('img');
+            abrirVisor(enlace.getAttribute('data-cartel'), img ? img.alt : '');
         });
     });
 
@@ -409,6 +413,8 @@ Write-Host "Ejecutando noticias..."
 & "$PSScriptRoot\noticias.ps1"
 Write-Host "Ejecutando destacado..."
 & "$PSScriptRoot\destacado.ps1"
+Write-Host "Actualizando calendario..."
+& "$PSScriptRoot\calendario.ps1"
 
 Read-Host "Presiona Enter para salir"
 Clear-Host

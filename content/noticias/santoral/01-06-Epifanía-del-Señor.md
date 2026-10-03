@@ -7,9 +7,9 @@ categorias = ["Santoral"]
 tags = ["importante"]
 diasDestacado = 1
 weight = 0
-image = "/assets/images/blog/*.webp"
+image = "/assets/images/blog/epifania2.webp"
 fechaBase = '01/06'
-fechaInicio = 1
+fechaInicio = 3
 fechaFin = 300
 +++
 

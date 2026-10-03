@@ -4,12 +4,11 @@ subtitle = 'San Francisco de Sales enseñó que la santidad no es solo para reli
 date = '2027-01-24T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
-tags = ["importante"]
-diasDestacado = 1
+tags = []
 weight = 0
-image = "/assets/images/blog/*.webp"
+image = "/assets/images/blog/sanfranciscosales.webp"
 fechaBase = '01/24'
-fechaInicio = 1
+fechaInicio = 0
 fechaFin = 300
 +++
 

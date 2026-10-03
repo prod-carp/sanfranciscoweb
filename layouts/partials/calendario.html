@@ -1,0 +1,44 @@
+{{- $eventos := .Site.Data.eventos | default slice -}}
+{{- $ahora := now -}}
+
+{{- /* Filtramos los que ya han terminado */ -}}
+{{- $proximos := slice -}}
+{{- range $eventos -}}
+  {{- $fin := .fin | default .inicio -}}
+  {{- if gt (time $fin) $ahora -}}
+    {{- $proximos = $proximos | append . -}}
+  {{- end -}}
+{{- end -}}
+
+<section class="calendario">
+  <h2>Próximos eventos</h2>
+
+  {{- if $proximos -}}
+    <ul class="calendario-lista">
+      {{- range $proximos -}}
+        <li class="calendario-evento">
+          <time class="calendario-fecha" datetime="{{ .inicio }}">
+            {{- if .todoElDia -}}
+              {{ (time .inicio).Format "02 Jan 2006" }}
+            {{- else -}}
+              {{ (time .inicio).Format "02 Jan 2006 · 15:04" }}
+            {{- end -}}
+          </time>
+          <span class="calendario-titulo">{{ .titulo }}</span>
+          {{- with .lugar -}}
+            <span class="calendario-lugar">📍 {{ . }}</span>
+          {{- end -}}
+        </li>
+      {{- end -}}
+    </ul>
+  {{- else -}}
+    <p>No hay eventos próximos.</p>
+  {{- end -}}
+
+  <p class="calendario-suscribir">
+    <a href="https://calendar.google.com/calendar/u/0/r?cid=4740a699d121c13c5f47848a6ef091822ef678a6df9e562b97942e6f168c8734%40group.calendar.google.com"
+       target="_blank" rel="noopener">
+      📅 Suscribirse al calendario
+    </a>
+  </p>
+</section>
