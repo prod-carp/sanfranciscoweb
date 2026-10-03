@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
   schedule:
     - cron: '0 1 * * *'
 
@@ -11,13 +12,99 @@ concurrency:
   group: firebase-deploy
   cancel-in-progress: true
 
+# Este workflow solo necesita leer el repositorio.
+permissions:
+  contents: read
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
+
+      # ==========================================================
+      # 1. DESCARGAR REPOSITORIO
+      # ==========================================================
+
       - name: Descargar repositorio
         uses: actions/checkout@v4
+
+
+      # ==========================================================
+      # 2. INSTALAR NODE.JS
+      # ==========================================================
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+
+      # ==========================================================
+      # 3. INSTALAR DEPENDENCIAS
+      # ==========================================================
+
+      - name: Instalar dependencias
+        run: npm ci
+
+
+      # ==========================================================
+      # 4. DESCARGAR GOOGLE CALENDAR
+      # ==========================================================
+
+      - name: Descargar ICS y generar data/eventos.json
+        env:
+          GCAL_ICS_URL: ${{ secrets.GCAL_ICS_URL }}
+        run: |
+          set -e
+          set -o pipefail
+
+          if [ -z "$GCAL_ICS_URL" ]; then
+            echo "❌ Falta el secreto GCAL_ICS_URL."
+            exit 1
+          fi
+
+          echo "Descargando datos de Google Calendar..."
+          npm run fetch-calendar
+
+          echo "Comprobando data/eventos.json..."
+
+          if [ ! -f "data/eventos.json" ]; then
+            echo "❌ No se ha generado data/eventos.json."
+            exit 1
+          fi
+
+          if [ ! -s "data/eventos.json" ]; then
+            echo "❌ data/eventos.json está vacío."
+            exit 1
+          fi
+
+          node -e "
+            const fs = require('fs');
+            const file = 'data/eventos.json';
+
+            try {
+              const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+
+              if (!Array.isArray(data)) {
+                throw new Error('El JSON no contiene un array.');
+              }
+
+              console.log('✅ JSON válido.');
+              console.log('   Eventos encontrados:', data.length);
+
+            } catch (error) {
+              console.error('❌ data/eventos.json no contiene JSON válido.');
+              console.error(error.message);
+              process.exit(1);
+            }
+          "
+
+
+      # ==========================================================
+      # 5. INSTALAR HUGO
+      # ==========================================================
 
       - name: Instalar Hugo
         uses: peaceiris/actions-hugo@v3
@@ -25,8 +112,18 @@ jobs:
           hugo-version: '0.159.2'
           extended: true
 
+
+      # ==========================================================
+      # 6. GENERAR SITIO HUGO
+      # ==========================================================
+
       - name: Generar sitio Hugo
         run: hugo
+
+
+      # ==========================================================
+      # 7. INSTALAR FIREBASE CLI
+      # ==========================================================
 
       - name: Instalar Firebase CLI
         run: |
@@ -34,17 +131,29 @@ jobs:
           echo "Firebase CLI version:"
           firebase --version
 
+
+      # ==========================================================
+      # 8. AUTENTICACIÓN FIREBASE
+      # ==========================================================
+
       - name: Autenticación Firebase (Service Account)
         run: |
-          echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > $HOME/firebase-key.json
-          echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/firebase-key.json" >> $GITHUB_ENV
+          echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > "$HOME/firebase-key.json"
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/firebase-key.json" >> "$GITHUB_ENV"
+
+
+      # ==========================================================
+      # 9. DEPLOY A FIREBASE HOSTING
+      # ==========================================================
 
       - name: Deploy a Firebase Hosting
         run: |
           set +e
+
           firebase deploy --only hosting --non-interactive
+
           EXIT_CODE=$?
-          
+
           if [ $EXIT_CODE -ne 0 ]; then
             echo "Firebase devolvió warning/error final, pero el deploy puede haberse aplicado correctamente."
             echo "Se marca como éxito para evitar falsos negativos en GitHub."
