@@ -1,0 +1,198 @@
+{{- $eventos := .Site.Data.eventos | default slice -}}
+{{- $ahora := now -}}
+
+{{- /* Filtramos los eventos que ya han terminado */ -}}
+{{- $proximos := slice -}}
+
+{{- range $eventos -}}
+  {{- $fin := .fin | default .inicio -}}
+  {{- if gt (time $fin) $ahora -}}
+    {{- $proximos = $proximos | append . -}}
+  {{- end -}}
+{{- end -}}
+
+
+{{- /* ==========================================================
+     NOMBRES DE MESES Y DÍAS EN ESPAÑOL
+     ========================================================== */ -}}
+
+{{- $meses := dict
+  "01" "ENE"
+  "02" "FEB"
+  "03" "MAR"
+  "04" "ABR"
+  "05" "MAY"
+  "06" "JUN"
+  "07" "JUL"
+  "08" "AGO"
+  "09" "SEP"
+  "10" "OCT"
+  "11" "NOV"
+  "12" "DIC"
+-}}
+
+{{- $dias := dict
+  "Sunday" "DOMINGO"
+  "Monday" "LUNES"
+  "Tuesday" "MARTES"
+  "Wednesday" "MIÉRCOLES"
+  "Thursday" "JUEVES"
+  "Friday" "VIERNES"
+  "Saturday" "SÁBADO"
+-}}
+
+
+<section class="calendario">
+
+  <!-- CABECERA -->
+
+  <div class="calendario-intro">
+
+    <span class="calendario-icono">📅</span>
+
+    <div>
+      <h2>Próximos eventos</h2>
+
+      <p>
+        Consulta las próximas actividades y celebraciones de nuestra parroquia.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- EVENTOS -->
+
+  {{- if $proximos -}}
+
+    <div class="calendario-lista">
+
+      {{- range $proximos -}}
+
+        {{- $fecha := time .inicio -}}
+        {{- $mesNumero := $fecha.Format "01" -}}
+        {{- $mes := index $meses $mesNumero -}}
+        {{- $diaSemana := index $dias $fecha.Weekday.String -}}
+
+        <article
+          class="calendario-evento {{ if .todoElDia }}calendario-evento-todo-dia{{ else }}calendario-evento-hora{{ end }}"
+        >
+
+          <!-- FECHA -->
+
+          <div class="calendario-fecha">
+
+            <span class="calendario-dia">
+              {{ $fecha.Format "02" }}
+            </span>
+
+            <span class="calendario-mes">
+              {{ $mes }}
+            </span>
+
+            <span class="calendario-dia-semana">
+              {{ $diaSemana }}
+            </span>
+
+          </div>
+
+
+          <!-- INFORMACIÓN -->
+
+          <div class="calendario-contenido">
+
+            <h3 class="calendario-titulo">
+              {{ .titulo }}
+            </h3>
+
+
+            {{- if .todoElDia -}}
+
+              <div class="calendario-hora calendario-todo-dia">
+
+                <span class="calendario-meta-icono">☀️</span>
+
+                <span>Todo el día</span>
+
+              </div>
+
+            {{- else -}}
+
+              <div class="calendario-hora">
+
+                <span class="calendario-meta-icono">🕐</span>
+
+                <span>{{ $fecha.Format "15:04" }} h</span>
+
+              </div>
+
+            {{- end -}}
+
+
+            {{- with .lugar -}}
+
+              <div class="calendario-lugar">
+
+                <span class="calendario-meta-icono">📍</span>
+
+                <span>{{ . }}</span>
+
+              </div>
+
+            {{- end -}}
+
+          </div>
+
+        </article>
+
+      {{- end -}}
+
+    </div>
+
+  {{- else -}}
+
+    <!-- SIN EVENTOS -->
+
+    <div class="calendario-vacio">
+
+      <span>📅</span>
+
+      <p>No hay eventos próximos.</p>
+
+    </div>
+
+  {{- end -}}
+
+
+  <!-- SUSCRIPCIÓN -->
+
+  <div class="calendario-suscripcion">
+
+    <div class="calendario-suscripcion-icono">
+      📅
+    </div>
+
+    <div class="calendario-suscripcion-texto">
+
+      <strong>
+        ¿Quieres tener el calendario siempre a mano?
+      </strong>
+
+      <span>
+        Suscríbete al calendario de la parroquia en Google Calendar.
+      </span>
+
+    </div>
+
+    <a
+      href="https://calendar.google.com/calendar/u/0/r?cid=4740a699d121c13c5f47848a6ef091822ef678a6df9e562b97942e6f168c8734%40group.calendar.google.com"
+      target="_blank"
+      rel="noopener"
+    >
+      Suscribirse
+      <span>→</span>
+    </a>
+
+  </div>
+
+</section>
