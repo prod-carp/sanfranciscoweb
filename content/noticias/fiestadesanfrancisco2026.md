@@ -7,7 +7,7 @@ categorias = ["Parroquia"]
 tags = ["importante"]
 diasDestacado = 3
 weight = 0
-image = "/assets/images/imagensanfrancisco2.webp"
+image = "/assets/images/blog/imagensanfrancisco2.webp"
 +++
 
 ## Una fiesta de San Francisco vivida con alegría y fraternidad
