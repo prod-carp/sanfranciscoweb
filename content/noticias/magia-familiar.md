@@ -11,15 +11,15 @@ image = "/assets/images/blog/mago.webp"
 
 Ayer, sábado 3 de octubre, nuestra parroquia de San Francisco y Santa Clara de Asís vivió una mañana muy especial con motivo de nuestra fiesta patronal en honor a San Francisco de Asís. Fue una mañana de esas que se disfrutan en familia, con sonrisas, encuentros y, sobre todo, mucha ilusión.
 
-A las doce del mediodía, los salones parroquiales se llenaron de familias y, muy especialmente, de los más pequeños de la casa, que esperaban con entusiasmo el espectáculo de ilusionismo de Lord Raymon, el mago.
+A las doce del mediodía, los salones parroquiales se llenaron de familias y, muy especialmente, de los más pequeños de la casa, que esperaban con entusiasmo el espectáculo de ilusionismo de Lord Raymon.
 
 Desde los primeros momentos se podía respirar un ambiente festivo. Los niños ocupaban sus lugares con esa mezcla de curiosidad y expectación tan propia de quien sabe que algo sorprendente está a punto de suceder. Y no tardaron en llegar las primeras sorpresas.
 
-Durante el espectáculo, la magia, el humor y la participación del público fueron haciendo las delicias de pequeños y mayores. Las caras de asombro de los niños, las risas y los aplausos fueron la mejor señal de que estábamos viviendo una mañana verdaderamente especial. Por un rato, todos —niños, padres, abuelos y familias enteras— pudimos dejarnos llevar por la ilusión y disfrutar sencillamente de estar juntos.
+Durante el espectáculo, el ilusionismo, el humor y la participación del público fueron haciendo las delicias de pequeños y mayores. Las caras de asombro de los niños, las risas y los aplausos fueron la mejor señal de que estábamos viviendo una mañana verdaderamente especial. Por un rato, todos —niños, padres, abuelos y familias enteras— pudimos dejarnos llevar por la ilusión y disfrutar sencillamente de estar juntos.
 
 Y es precisamente esa sencillez la que nos recuerda tanto a San Francisco. Nuestro patrón nos enseña que la alegría no siempre necesita grandes cosas: puede nacer de un encuentro, de una sonrisa compartida, de una familia reunida o de la oportunidad de regalar un poco de felicidad a los demás.
 
-## Después de la magia, llegó el encuentro
+## Después del espectáculo, llegó el encuentro
 
 Pero la mañana no terminó con el último aplauso. Después del espectáculo continuamos la celebración con un refrigerio en los salones parroquiales.
 

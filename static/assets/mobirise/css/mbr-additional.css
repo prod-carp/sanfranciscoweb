@@ -1278,100 +1278,16 @@ a {
 .cid-vu0rCGjZSW .mbr-section-title {
   color: #4479d9;
 }
-.cid-vw7L5t6f6S {
-  background-image: url("../../../assets/images/baner4octb.webp");
-}
-.cid-vw7L5t6f6S .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-vw7L5t6f6S .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-vw7L5t6f6S .number-wrap {
-  color: #ffffff;
-  text-align: center;
-}
-.cid-vw7L5t6f6S .number {
-  color: #ffffff;
-}
-.cid-vw7L5t6f6S .period {
-  display: block;
-}
-.cid-vw7L5t6f6S .dot {
-  display: none;
-}
-@media (max-width: 767px) {
-  .cid-vw7L5t6f6S .period {
-    font-size: 0.8rem;
-  }
-}
-.cid-vw7L5t6f6S .btn {
-  height: 100%;
-  margin: 0;
-}
-.cid-vw7L5t6f6S .mbr-section-btn {
-  margin-bottom: 1.2rem;
-}
-.cid-vw7L5t6f6S .mbr-section-title {
-  color: #ffffff;
-}
-.cid-vw7L5t6f6S .mbr-text {
-  color: #ffffff;
-}
-.cid-vw7L5t6f6S .icons-menu .soc-item {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-.cid-vw7L5t6f6S .icons-menu .soc-item .mbr-iconfont {
-  font-size: 2rem;
-  display: flex;
-  border-radius: 50%;
-  text-align: center;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  justify-content: center;
-  align-content: center;
-  transition: all 0.3s;
-}
-.cid-vw7L5t6f6S .icons-menu .soc-item .mbr-iconfont:before {
-  padding: 0.6rem;
-}
-.cid-vw7L5t6f6S .icons-menu .soc-item .mbr-iconfont:hover {
+.cid-vtAJ5eXZ9o {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
-  color: #000000;
 }
-.cid-vw7L5t6f6S .mbr-text,
-.cid-vw7L5t6f6S .mbr-section-btn {
-  color: #ffffff;
-}
-.cid-vw7L5t6f6S .mbr-section-subtitle {
-  color: #fafafa;
-}
-.cid-visMHwGNRh {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  background-color: #4479d9;
-}
-.cid-visMHwGNRh .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-visMHwGNRh .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-visMHwGNRh .mbr-section-title {
-  color: #fafafa;
+.cid-vtAJ5eXZ9o .line {
+  background-color: #6592e6;
+  align: center;
+  height: 2px;
+  margin: 0 auto;
 }
 .cid-vw7WAeGMyG {
   background-image: url("../../../assets/images/fondogrupos.webp");
@@ -1395,16 +1311,25 @@ a {
 .cid-vw7WAeGMyG .mbr-section-btn {
   color: #ffffff;
 }
-.cid-vtAJ5eXZ9o {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  background-color: #ffffff;
+.cid-visMHwGNRh {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-color: #4479d9;
 }
-.cid-vtAJ5eXZ9o .line {
-  background-color: #6592e6;
-  align: center;
-  height: 2px;
-  margin: 0 auto;
+.cid-visMHwGNRh .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-visMHwGNRh .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-visMHwGNRh .mbr-section-title {
+  color: #fafafa;
 }
 .cid-vnt0YV5xFQ {
   padding-top: 4rem;

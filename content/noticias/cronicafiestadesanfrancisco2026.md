@@ -5,7 +5,7 @@ date = '2026-10-05T00:00:00+02:00'
 draft = false
 categorias = ["Parroquia"]
 tags = ["importante"]
-diasDestacado = 3
+diasDestacado = 7
 weight = 0
 image = "/assets/images/imagensanfrancisco2.webp"
 +++
