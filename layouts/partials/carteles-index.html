@@ -332,79 +332,48 @@ Máximo: 4 carteles
 
 <script>
 (function () {
-
     var visor = document.getElementById('cartel-visor');
-
     if (!visor) return;
 
     var imagen = visor.querySelector('img');
     var cerrar = document.getElementById('cartel-visor-cerrar');
 
-    var anterior = null;
-
-
-    function cerrarVisor() {
-
-        visor.classList.remove('abierto');
-
-        imagen.src = '';
-
-        document.body.style.overflow = anterior || '';
-
+    function abrirVisor(src, alt) {
+        imagen.src = src;
+        imagen.alt = alt || 'Cartel ampliado';
+        visor.classList.add('abierto');
+        document.body.classList.add('cartel-visor-abierto');
     }
 
+    function cerrarVisor() {
+        visor.classList.remove('abierto');
+        imagen.src = '';
+        document.body.classList.remove('cartel-visor-abierto');
+    }
 
     document
         .querySelectorAll('.cartel-carrusel-wrapper [data-cartel]')
         .forEach(function (enlace) {
-
             enlace.addEventListener('click', function (e) {
-
                 e.preventDefault();
-
-                imagen.src = enlace.getAttribute('data-cartel');
-
-                var miniatura = enlace.querySelector('img');
-
-                if (miniatura) {
-                    imagen.alt = miniatura.alt;
-                }
-
-                anterior = document.body.style.overflow;
-
-                document.body.style.overflow = 'hidden';
-
-                visor.classList.add('abierto');
-
+                var img = enlace.querySelector('img');
+                abrirVisor(
+                    enlace.getAttribute('data-cartel'),
+                    img ? img.alt : ''
+                );
             });
-
         });
-
 
     cerrar.addEventListener('click', cerrarVisor);
 
-
     visor.addEventListener('click', function (e) {
-
-        if (e.target === visor) {
-            cerrarVisor();
-        }
-
+        if (e.target === visor) cerrarVisor();
     });
-
 
     document.addEventListener('keydown', function (e) {
-
-        if (
-            e.key === 'Escape' &&
-            visor.classList.contains('abierto')
-        ) {
-
+        if (e.key === 'Escape' && visor.classList.contains('abierto')) {
             cerrarVisor();
-
         }
-
     });
-
 })();
 </script>

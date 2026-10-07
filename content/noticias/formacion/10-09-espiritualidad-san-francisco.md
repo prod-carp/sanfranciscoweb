@@ -1,14 +1,14 @@
 ﻿+++
 title = 'La espiritualidad de San Francisco de Asís'
 subtitle = 'Una de las figuras más importantes de la espiritualidad cristiana, que desarrolló una teología inseparable de su propia experiencia de vida.'
-date = '2025-10-08T00:00:00+02:00'
+date = '2025-10-09T00:00:00+02:00'
 draft = false
 categorias = ["Formación"]
 tags = ["importante"]
-diasDestacado = 5
+diasDestacado = 3
 weight = 0
 image = "/assets/images/sanfrancisco-parte2.webp"
-fechaBase = '10/08'
+fechaBase = '10/09'
 fechaInicio = 0
 fechaFin = 300
 +++
