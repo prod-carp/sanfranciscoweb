@@ -1,0 +1,410 @@
+{{/*
+============================================================
+CARRUSEL DE CARTELERÍA - PORTADA
+
+Convenciones:
+
+TEMP-AAAA-MM-DD-nombre.ext
+    → temporal
+    → visible hasta el día indicado, inclusive
+
+01-nombre.ext
+02-nombre.ext
+...
+    → permanente normal
+    → mantiene el orden por nombre
+
+ROT-01-nombre.ext
+ROT-02-nombre.ext
+...
+    → permanente rotativo
+    → solo participa en la rotación de la portada
+
+Prioridad:
+
+1. TEMP vigentes
+2. Carteles normales
+3. ROT según rotación diaria
+
+Máximo: 4 carteles
+============================================================
+*/}}
+
+
+{{/* --------------------------------------------------------
+     CONFIGURACIÓN
+-------------------------------------------------------- */}}
+
+{{ $zonaHoraria := "Europe/Madrid" }}
+{{ $maxCarteles := 4 }}
+{{ $saltoRotacion := 2 }}
+
+{{ $extensiones := slice ".webp" ".jpg" ".jpeg" ".png" }}
+
+
+{{/* --------------------------------------------------------
+     FECHA ACTUAL EN MADRID
+
+     Creamos la fecha de hoy a medianoche en Europe/Madrid.
+     Esto hace que un TEMP-2026-10-12 siga visible durante
+     todo el día 12 y desaparezca el día 13.
+-------------------------------------------------------- */}}
+
+{{ $ahora := time.Now | time.In $zonaHoraria }}
+{{ $hoyTexto := $ahora | time.Format "2006-01-02" }}
+{{ $hoy := time.AsTime $hoyTexto $zonaHoraria }}
+
+
+{{/* --------------------------------------------------------
+     LEER CARTELERÍA
+-------------------------------------------------------- */}}
+
+{{ $archivos := readDir "static/carteles" }}
+
+{{ $temporales := slice }}
+{{ $normales := slice }}
+{{ $rotativos := slice }}
+
+
+{{ range $archivo := $archivos }}
+
+    {{ if not $archivo.IsDir }}
+
+        {{ $nombre := $archivo.Name }}
+        {{ $extension := path.Ext $nombre | lower }}
+
+        {{ if in $extensiones $extension }}
+
+
+            {{/* =================================================
+                 TEMPORALES
+            ================================================= */}}
+
+            {{ if hasPrefix $nombre "TEMP-" }}
+
+                {{/*
+                    TEMP-2026-10-12-virgen-pilar.webp
+
+                    split por "-"
+                    0 = TEMP
+                    1 = 2026
+                    2 = 10
+                    3 = 12
+                */}}
+
+                {{ $partes := split $nombre "-" }}
+
+                {{ if ge (len $partes) 4 }}
+
+                    {{ $fechaTexto := printf "%s-%s-%s"
+                        (index $partes 1)
+                        (index $partes 2)
+                        (index $partes 3)
+                    }}
+
+                    {{ $fechaCaducidad := time.AsTime $fechaTexto $zonaHoraria }}
+
+                    {{/*
+                        Sigue visible durante el día de
+                        caducidad.
+
+                        12/10 → visible
+                        13/10 → desaparece
+                    */}}
+
+                    {{ if not ($fechaCaducidad.Before $hoy) }}
+
+                        {{ $temporales = $temporales | append $archivo }}
+
+                    {{ end }}
+
+                {{ end }}
+
+
+            {{/* =================================================
+                 ROTATIVOS
+            ================================================= */}}
+
+            {{ else if hasPrefix $nombre "ROT-" }}
+
+                {{ $rotativos = $rotativos | append $archivo }}
+
+
+            {{/* =================================================
+                 NORMALES
+            ================================================= */}}
+
+            {{ else }}
+
+                {{ $normales = $normales | append $archivo }}
+
+            {{ end }}
+
+        {{ end }}
+
+    {{ end }}
+
+{{ end }}
+
+
+{{/* --------------------------------------------------------
+     ORDENAR
+-------------------------------------------------------- */}}
+
+{{ $temporales = sort $temporales "Name" "asc" }}
+{{ $normales = sort $normales "Name" "asc" }}
+{{ $rotativos = sort $rotativos "Name" "asc" }}
+
+
+{{/* --------------------------------------------------------
+     CALCULAR ROTACIÓN
+
+     Ejemplo con 6 ROT:
+
+     Día 0 → 01 02 03 04
+     Día 1 → 03 04 05 06
+     Día 2 → 05 06 01 02
+     Día 3 → 01 02 03 04
+
+     La referencia es fija para que la rotación sea
+     completamente determinista.
+-------------------------------------------------------- */}}
+
+{{ $rotacion := slice }}
+
+{{ if gt (len $rotativos) 0 }}
+
+    {{ $fechaReferencia := time.AsTime "2026-01-01" $zonaHoraria }}
+
+    {{ $duracion := $hoy.Sub $fechaReferencia }}
+
+    {{ $diasTranscurridos := int ($duracion.Hours | div 24) }}
+
+    {{ $inicio := mod (mul $diasTranscurridos $saltoRotacion) (len $rotativos) }}
+
+    {{ $cantidadRotativos := len $rotativos }}
+
+    {{ $limite := $cantidadRotativos }}
+
+    {{ if gt $limite $maxCarteles }}
+        {{ $limite = $maxCarteles }}
+    {{ end }}
+
+    {{ range $i := seq 0 (sub $limite 1) }}
+
+        {{ $indice := mod (add $inicio $i) $cantidadRotativos }}
+
+        {{ $rotacion = $rotacion | append (index $rotativos $indice) }}
+
+    {{ end }}
+
+{{ end }}
+
+
+{{/* --------------------------------------------------------
+     SELECCIÓN FINAL
+
+     TEMP → normales → ROT
+
+     Los ROT nunca desplazan a un TEMP ni a un cartel
+     normal.
+-------------------------------------------------------- */}}
+
+{{ $seleccion := slice }}
+
+
+{{/* TEMPORALES */}}
+
+{{ range $cartel := $temporales }}
+
+    {{ if lt (len $seleccion) $maxCarteles }}
+
+        {{ $seleccion = $seleccion | append $cartel }}
+
+    {{ end }}
+
+{{ end }}
+
+
+{{/* NORMALES */}}
+
+{{ range $cartel := $normales }}
+
+    {{ if lt (len $seleccion) $maxCarteles }}
+
+        {{ $seleccion = $seleccion | append $cartel }}
+
+    {{ end }}
+
+{{ end }}
+
+
+{{/* ROTATIVOS */}}
+
+{{ range $cartel := $rotacion }}
+
+    {{ if lt (len $seleccion) $maxCarteles }}
+
+        {{ $seleccion = $seleccion | append $cartel }}
+
+    {{ end }}
+
+{{ end }}
+
+
+{{/* --------------------------------------------------------
+     HTML
+-------------------------------------------------------- */}}
+
+<div class="cartel-carrusel-wrapper">
+
+    <div class="cartel-carrusel"
+         aria-label="Anuncios parroquiales">
+
+        {{ range $cartel := $seleccion }}
+
+            {{ $nombre := $cartel.Name }}
+
+            {{ $url := printf "/carteles/%s" $nombre | relURL }}
+
+            {{ $alt := path.BaseName $nombre }}
+
+            <div class="cartel-slide">
+
+                <a href="{{ $url }}"
+                   class="cartel-enlace"
+                   data-cartel="{{ $url }}"
+                   aria-label="Ampliar cartel">
+
+                    <img src="{{ $url }}"
+                         alt="{{ $alt }}"
+                         loading="lazy">
+
+                </a>
+
+            </div>
+
+        {{ end }}
+
+    </div>
+
+
+    <div class="cartel-acciones">
+
+        <a href="{{ "tablon/" | relURL }}"
+           class="cartel-boton">
+
+            Ver todos los anuncios
+
+        </a>
+
+    </div>
+
+</div>
+
+
+{{/* --------------------------------------------------------
+     VISOR AMPLIADO
+-------------------------------------------------------- */}}
+
+<div id="cartel-visor"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Cartel ampliado">
+
+    <button id="cartel-visor-cerrar"
+            type="button"
+            aria-label="Cerrar">
+
+        &times;
+
+    </button>
+
+    <img src=""
+         alt="Cartel ampliado">
+
+</div>
+
+
+
+
+
+
+<script>
+(function () {
+
+    var visor = document.getElementById('cartel-visor');
+
+    if (!visor) return;
+
+    var imagen = visor.querySelector('img');
+    var cerrar = document.getElementById('cartel-visor-cerrar');
+
+    var anterior = null;
+
+
+    function cerrarVisor() {
+
+        visor.classList.remove('abierto');
+
+        imagen.src = '';
+
+        document.body.style.overflow = anterior || '';
+
+    }
+
+
+    document
+        .querySelectorAll('.cartel-carrusel-wrapper [data-cartel]')
+        .forEach(function (enlace) {
+
+            enlace.addEventListener('click', function (e) {
+
+                e.preventDefault();
+
+                imagen.src = enlace.getAttribute('data-cartel');
+
+                var miniatura = enlace.querySelector('img');
+
+                if (miniatura) {
+                    imagen.alt = miniatura.alt;
+                }
+
+                anterior = document.body.style.overflow;
+
+                document.body.style.overflow = 'hidden';
+
+                visor.classList.add('abierto');
+
+            });
+
+        });
+
+
+    cerrar.addEventListener('click', cerrarVisor);
+
+
+    visor.addEventListener('click', function (e) {
+
+        if (e.target === visor) {
+            cerrarVisor();
+        }
+
+    });
+
+
+    document.addEventListener('keydown', function (e) {
+
+        if (
+            e.key === 'Escape' &&
+            visor.classList.contains('abierto')
+        ) {
+
+            cerrarVisor();
+
+        }
+
+    });
+
+})();
+</script>

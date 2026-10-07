@@ -1,0 +1,139 @@
+{{ define "main" }}
+
+<section class="tablon-page">
+
+  <div class="tablon-header">
+    <h1 class="mbr-section-title mbr-fonts-style align-center mb-3 display-1"><strong>TABLÓN DE ANUNCIOS</strong></h1>
+    <p class="mbr-section-subtitle mbr-fonts-style align-center mb-1 display-7">Información, actividades y avisos de nuestra parroquia.</p>
+  </div>
+
+  <div class="tablon-grid">
+
+    {{ $carteles := readDir "static/carteles" | sort }}
+
+    {{ range $carteles }}
+
+      {{ if not .IsDir }}
+
+        {{ $nombre := .Name }}
+
+        {{ if or (strings.HasSuffix $nombre ".webp") (strings.HasSuffix $nombre ".jpg") (strings.HasSuffix $nombre ".jpeg") (strings.HasSuffix $nombre ".png") }}
+
+          <button
+            class="cartel-card"
+            type="button"
+            data-cartel="/carteles/{{ $nombre }}"
+            aria-label="Ver cartel {{ $nombre }}"
+          >
+
+            <img
+              src="/carteles/{{ $nombre }}"
+              alt="Cartel parroquial"
+              loading="lazy"
+            >
+
+          </button>
+
+        {{ end }}
+
+      {{ end }}
+
+    {{ end }}
+
+  </div>
+
+</section>
+
+
+<!-- VISOR A PANTALLA COMPLETA -->
+
+<div
+  class="cartel-lightbox"
+  id="cartel-lightbox"
+  aria-hidden="true"
+>
+
+  <button
+    class="cartel-lightbox-close"
+    type="button"
+    aria-label="Cerrar"
+  >
+    ×
+  </button>
+
+  <img
+    id="cartel-lightbox-image"
+    src=""
+    alt="Cartel ampliado"
+  >
+
+</div>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const cards = document.querySelectorAll(".cartel-card");
+  const lightbox = document.getElementById("cartel-lightbox");
+  const lightboxImage = document.getElementById("cartel-lightbox-image");
+  const closeButton = document.querySelector(".cartel-lightbox-close");
+
+  cards.forEach(card => {
+
+    card.addEventListener("click", function () {
+
+      const image = this.dataset.cartel;
+
+      lightboxImage.src = image;
+
+      lightbox.classList.add("active");
+      lightbox.setAttribute("aria-hidden", "false");
+
+      document.body.classList.add("cartel-no-scroll");
+
+    });
+
+  });
+
+
+  function cerrarLightbox() {
+
+    lightbox.classList.remove("active");
+    lightbox.setAttribute("aria-hidden", "true");
+
+    document.body.classList.remove("cartel-no-scroll");
+
+    setTimeout(() => {
+      lightboxImage.src = "";
+    }, 250);
+
+  }
+
+
+  closeButton.addEventListener("click", cerrarLightbox);
+
+
+  lightbox.addEventListener("click", function (event) {
+
+    if (event.target === lightbox) {
+      cerrarLightbox();
+    }
+
+  });
+
+
+  document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+      cerrarLightbox();
+    }
+
+  });
+
+});
+
+</script>
+
+
+{{ end }}

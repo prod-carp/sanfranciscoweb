@@ -9,34 +9,104 @@
 
   <div class="tablon-grid">
 
-    {{ $carteles := readDir "static/carteles" | sort }}
+    {{/* ============================================================
+         CARTELERÍA
+         - TEMP-AAAA-MM-DD-nombre.ext = temporal
+         - Todo lo demás = permanente
+         ============================================================ */}}
 
-    {{ range $carteles }}
+    {{ $archivos := readDir "static/carteles" }}
 
-      {{ if not .IsDir }}
+    {{ $temporales := slice }}
+    {{ $permanentes := slice }}
 
-        {{ $nombre := .Name }}
+    {{/* Fecha actual en horario de Madrid */}}
+    {{ $hoyTexto := time.Now | time.Format "2006-01-02" }}
+    {{ $hoy := time.AsTime $hoyTexto "Europe/Madrid" }}
 
-        {{ if or (strings.HasSuffix $nombre ".webp") (strings.HasSuffix $nombre ".jpg") (strings.HasSuffix $nombre ".jpeg") (strings.HasSuffix $nombre ".png") }}
+    {{ range $archivo := $archivos }}
 
-          <button
-            class="cartel-card"
-            type="button"
-            data-cartel="/carteles/{{ $nombre }}"
-            aria-label="Ver cartel {{ $nombre }}"
-          >
+        {{ if not $archivo.IsDir }}
 
-            <img
-              src="/carteles/{{ $nombre }}"
-              alt="Cartel parroquial"
-              loading="lazy"
-            >
+            {{ $nombre := $archivo.Name }}
+            {{ $extension := path.Ext $nombre | lower }}
 
-          </button>
+            {{/* Solo imágenes */}}
+            {{ if in (slice ".webp" ".jpg" ".jpeg" ".png") $extension }}
+
+                {{ if hasPrefix $nombre "TEMP-" }}
+
+                    {{/*
+                        Extraemos:
+                        TEMP-2026-10-12-virgen-pilar.webp
+                              ↓
+                        2026-10-12
+                    */}}
+
+                    {{ $partes := split $nombre "-" }}
+
+                    {{ if ge (len $partes) 4 }}
+
+                        {{ $fechaTexto := printf "%s-%s-%s" (index $partes 1) (index $partes 2) (index $partes 3) }}
+
+                        {{ $fechaCaducidad := time.AsTime $fechaTexto "Europe/Madrid" }}
+
+                        {{/*
+                            El cartel sigue vigente durante TODO el día
+                            indicado.
+
+                            TEMP-2026-10-12...
+                            → visible el día 12
+                            → desaparece desde el día 13
+                        */}}
+
+                        {{ if not ($fechaCaducidad.Before $hoy) }}
+                            {{ $temporales = $temporales | append $archivo }}
+                        {{ end }}
+
+                    {{ end }}
+
+                {{ else }}
+
+                    {{/* Todos los demás carteles son permanentes */}}
+                    {{ $permanentes = $permanentes | append $archivo }}
+
+                {{ end }}
+
+            {{ end }}
 
         {{ end }}
 
-      {{ end }}
+    {{ end }}
+
+    {{/* Los temporales primero */}}
+    {{ $temporales = sort $temporales "Name" "asc" }}
+
+    {{/* Los permanentes mantienen su orden por nombre */}}
+    {{ $permanentes = sort $permanentes "Name" "asc" }}
+
+    {{/* Lista final del tablón */}}
+    {{ $carteles := $temporales | append $permanentes }}
+
+
+    {{ range $carteles }}
+
+      {{ $nombre := .Name }}
+
+      <button
+        class="cartel-card"
+        type="button"
+        data-cartel="/carteles/{{ $nombre }}"
+        aria-label="Ver cartel {{ $nombre }}"
+      >
+
+        <img
+          src="/carteles/{{ $nombre }}"
+          alt="Cartel parroquial"
+          loading="lazy"
+        >
+
+      </button>
 
     {{ end }}
 
