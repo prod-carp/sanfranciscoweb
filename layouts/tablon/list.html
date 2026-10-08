@@ -1,5 +1,8 @@
 {{ define "main" }}
 
+{{ $css := resources.Get "css/carteles.css" }}
+<style>{{ $css.Content | safeCSS }}</style>
+
 <section class="tablon-page">
 
   <div class="tablon-header">

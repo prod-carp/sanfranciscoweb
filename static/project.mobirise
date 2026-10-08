@@ -68,10 +68,10 @@
     ],
     "imageResize": true,
     "uniqCompNum": 478,
-    "versionPublish": "6.1.12",
+    "versionPublish": "6.1.9",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/iconosfyc-48x48.png",
-    "mbrsiteDomain": "3j5yhndwud",
+    "mbrsiteDomain": "q2eqptiwmi",
     "usedWebp": true,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -79,23 +79,9 @@
     "siteUrl": false,
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
     "gdpr": false,
-    "cookiesAlert": {
-      "customDialogSelector": false,
-      "colorText": "#424a4d",
-      "colorBg": "#ffdab9",
-      "colorButton": "#000000",
-      "rejectColor": "#ffffff",
-      "colorLink": "#424a4d",
-      "underlineLink": true,
-      "opacityOverlay": "0",
-      "bgOpacity": "100",
-      "text": "Usamos cookies para ofrecerte la mejor experiencia como te contamos en nuestra <a href='https://sanfranciscoysantaclara.es/cookies.html'>política de cookies</a>. Al rechazar cookies puede hacer que algunas características no funcionen.",
-      "textButton": "ACEPTAR",
-      "rejectText": "RECHAZAR"
-    },
-    "cookiesAlertType": "2",
     "publishType": "local",
-    "publishPath": "@PROJECT_PATH@"
+    "publishPath": "@PROJECT_PATH@",
+    "cookiesAlert": false
   },
   "pages": {
     "index.html": {

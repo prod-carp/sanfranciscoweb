@@ -256,6 +256,10 @@ Máximo: 4 carteles
      HTML
 -------------------------------------------------------- */}}
 
+{{ $css := resources.Get "css/carteles2.0.css" }}
+<style>{{ $css.Content | safeCSS }}</style>
+
+
 <div class="cartel-carrusel-wrapper">
 
     <div class="cartel-carrusel"
@@ -292,7 +296,7 @@ Máximo: 4 carteles
     <div class="cartel-acciones">
 
         <a href="{{ "tablon/" | relURL }}"
-           class="cartel-boton">
+           class="btn btn-primary">
 
             Ver todos los anuncios
 

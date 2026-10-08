@@ -24,7 +24,7 @@ $mobiriseRemoved = 0
 
 # Recorrer solo los HTML en la carpeta static (sin subcarpetas)
 Get-ChildItem -Path "static" -File -Filter "*.html" |
-    Where-Object { $_.Name -notin @("404.html", "cuestionario.html") } |
+    Where-Object { $_.Name -notin @("index.html", "404.html", "cuestionario.html") } |
     ForEach-Object {
     $total++
     $relativePath = $_.FullName.Replace((Get-Location).Path + "\static\", "").Replace("\", "/")
