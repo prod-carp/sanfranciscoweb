@@ -53,7 +53,7 @@ REM ============================================================
 REM Ejecutamos script de limpieza si existe
 IF EXIST limpieza.ps1 (
     echo [LIMPIEZA] Ejecutando limpieza.ps1...
-    powershell -ExecutionPolicy Bypass -File "limpieza.ps1"
+    REM powershell -ExecutionPolicy Bypass -File "limpieza.ps1"
     echo.
 ) ELSE (ECHO No se encontró el archivo "limpieza.ps1" necesario & PAUSE & EXIT)
 IF %errorlevel% NEQ 0 (Echo Error %errorlevel%: al ejecutar limpieza.ps1 & pause & EXIT) 
