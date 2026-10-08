@@ -409,10 +409,13 @@ Write-Host "Código Mobirise eliminado: $mobiriseRemoved" -ForegroundColor Green
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
-Write-Host "Ejecutando noticias..."
-& "$PSScriptRoot\noticias.ps1"
-Write-Host "Ejecutando destacado..."
-& "$PSScriptRoot\destacado.ps1"
+Write-Host "Eliminando viejo index..."
+Remove-Item -Path ".\static\index.html" -ErrorAction SilentlyContinue
+
+# Write-Host "Ejecutando noticias..."
+# & "$PSScriptRoot\noticias.ps1"
+# Write-Host "Ejecutando destacado..."
+# & "$PSScriptRoot\destacado.ps1"
 # Write-Host "Actualizando calendario..."
 # & "$PSScriptRoot\calendario.ps1"
 
