@@ -687,14 +687,8 @@ a {
   outline-offset: 2px !important;
   transition: outline 0.2s ease-in-out;
 }
-.cid-sFHpMqcXGj {
-  z-index: 1000;
-  width: 100%;
-  position: relative;
-  min-height: 60px;
-}
-.cid-sFHpMqcXGj nav.navbar {
-  position: fixed;
+.cid-sFHpMqcXGj .navbar-dropdown {
+  position: relative !important;
 }
 .cid-sFHpMqcXGj .dropdown-item:before {
   font-family: Moririse2 !important;
@@ -1010,7 +1004,6 @@ a {
 }
 .cid-sFHpMqcXGj .navbar-dropdown {
   padding: 0 1rem;
-  position: fixed;
 }
 .cid-sFHpMqcXGj a.nav-link {
   display: flex;

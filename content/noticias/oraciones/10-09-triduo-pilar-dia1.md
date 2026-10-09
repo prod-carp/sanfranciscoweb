@@ -1,5 +1,5 @@
 ﻿+++
-title = 'Triduo a la Santísima Virgen del Pilar - Día 1'
+title = 'Triduo a la Santísima Virgen del Pilar - Día primero'
 subtitle = 'Rezamos el día de hoy correspondiente al triduo a Nuestra Madre'
 date = '2026-10-09T00:00:00+02:00'
 draft = false
@@ -58,3 +58,5 @@ Madre del Pilar, recibe nuestras súplicas y preséntalas ante tu Hijo Jesucrist
 Santa María del Pilar, ruega por nosotros. Amén.
 
 En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén.
+
+
