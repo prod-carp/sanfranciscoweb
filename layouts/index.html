@@ -1,21 +1,6 @@
 ﻿{{ define "main" }}
 
-<!--
-<section data-bs-version="5.1" class="image3 cid-vwjsuuo3lk" id="image3-d7">
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                <div class="image-wrapper">
-                    <img src="/assets/images/nuevaportadaoct2026.webp" alt="Parroquia San Francisco y Santa Clara de Asís">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
--->
-
-
+<!-- IMAGEN -->
 <section class="hero-image" id="image3-d7">
     <img src="/assets/images/nuevaportadaoct2026.webp" 
          alt="Parroquia San Francisco y Santa Clara de Asís">
@@ -49,13 +34,8 @@ html, body {
 </style>
 
 
-
-
+<!-- PRESENTACION -->
 <section data-bs-version="5.1" class="content4 cid-vwjtvh2lE3" id="content4-d8">
-    
-
-    
-    
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-8">
@@ -68,170 +48,17 @@ html, body {
     </div>
 </section>
 
+<!-- HORARIOS -->
 <section data-bs-version="5.1" class="features8 cid-vgBoBk9g1V" id="features8-2">
-    <!---->
-    
-
-    
-    
-    <div class="container">
-        <div class="row">
-            <div class="title col-12">
-                <h2 class="mbr-section-title mbr-fonts-style mb-3 display-2">
-                    <strong>Horario de misas</strong></h2>
-                
-            </div>
-            <div class="card col-12 col-md-6">
-                <div class="card-wrapper">
-                    <div class="top-line">
-                        <h3 class="card-title mbr-fonts-style display-5"><strong>Martes a sábados</strong></h3>
-                        <p class="mbr-text cost mbr-fonts-style display-5">19:30</p>
-                    </div>
-                    <div class="bottom-line">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6">
-                <div class="card-wrapper">
-                    <div class="top-line">
-                        <h3 class="card-title mbr-fonts-style display-5"><strong>Domingos y festivos</strong></h3>
-                        <p class="mbr-text cost mbr-fonts-style display-5">11:00<br>12:30</p>
-                    </div>
-                    <div class="bottom-line">
-                        
-                    </div>
-                </div>
-            </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </div>
-    </div>
+<div class="container">
+{{ $css := resources.Get "css/horarios-parroquia.css" }}
+{{ if $css }}
+  <style>{{ $css.Content | safeCSS }}</style>
+{{ end }}
+{{ partial "horarios-parroquia.html" . }}
+</div>
 </section>
 
-<section data-bs-version="5.1" class="features8 cid-vngLrf3Zeq" id="features8-8v">
-    <!---->
-    
-
-    
-    
-    <div class="container">
-        <div class="row">
-            <div class="title col-12">
-                <h2 class="mbr-section-title mbr-fonts-style mb-3 display-2">
-                    <strong>Confesiones</strong></h2>
-                
-            </div>
-            <div class="card col-12 col-md-6">
-                <div class="card-wrapper">
-                    <div class="top-line">
-                        <h3 class="card-title mbr-fonts-style display-5"><strong>Media hora antes de cada misa</strong></h3>
-                        <p class="mbr-text cost mbr-fonts-style display-5">-30'</p>
-                    </div>
-                    <div class="bottom-line">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6">
-                <div class="card-wrapper">
-                    <div class="top-line">
-                        <h3 class="card-title mbr-fonts-style display-5"><strong>Jueves por la mañana:</strong></h3>
-                        <p class="mbr-text cost mbr-fonts-style display-5">10:00 a 12:00</p>
-                    </div>
-                    <div class="bottom-line">
-                        
-                    </div>
-                </div>
-            </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="features8 cid-vngLsbmxGV" id="features8-8w">
-    <div class="container">
-        <div class="row">
-            <div class="title col-12">
-                <h2 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Adoración eucarística</strong></h2>
-                
-            </div>
-            <div class="card col-12 col-md-6">
-                <div class="card-wrapper">
-                    <div class="top-line">
-                        <h3 class="card-title mbr-fonts-style display-5"><strong>Exposición al Santísimo&nbsp;</strong></h3>
-                        <p class="mbr-text cost mbr-fonts-style display-5">Jueves de 10:00 a 19:30</p>
-                    </div>
-                    <div class="bottom-line">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6">
-                <div class="card-wrapper">
-                    <div class="top-line">
-                        <h3 class="card-title mbr-fonts-style display-5"><strong>Adoración nocturna:</strong></h3>
-                        <p class="mbr-text cost mbr-fonts-style display-5">2º Sábado de mes De 18:30 a 23:30</p>
-                    </div>
-                    <div class="bottom-line">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="features8 cid-vu0rCGjZSW" id="features8-ao">
-    <div class="container">
-        <div class="row">
-            <div class="title col-12">
-                <h2 class="mbr-section-title mbr-fonts-style mb-3 display-2">
-                    <strong>Despacho parroquial</strong></h2>
-                
-            </div>
-            <div class="card col-12 col-md-6">
-                <div class="card-wrapper">
-                    <div class="top-line">
-                        <h3 class="card-title mbr-fonts-style display-5"><strong>Miércoles:</strong></h3>
-                        <p class="mbr-text cost mbr-fonts-style display-5">de 17:00 a 18:00</p>
-                    </div>
-                    <div class="bottom-line">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6">
-                <div class="card-wrapper">
-                    <div class="top-line">
-                        <h3 class="card-title mbr-fonts-style display-5"><strong>Jueves:</strong></h3>
-                        <p class="mbr-text cost mbr-fonts-style display-5">de 12:00 a 13:00</p>
-                    </div>
-                    <div class="bottom-line">
-                        
-                    </div>
-                </div>
-            </div>
-         </div>
-    </div>
-</section>
 
 <section data-bs-version="5.1" class="content6 cid-vtAJ5eXZ9o" id="content6-al">
     

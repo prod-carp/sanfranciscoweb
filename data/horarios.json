@@ -1,0 +1,87 @@
+{
+  "titulo": "Horarios parroquiales",
+  "secciones": [
+    {
+      "id": "misas",
+      "titulo": "Horario de misas",
+      "icono": "church",
+      "visible": true,
+      "horarios": [
+        {
+          "nombre": "Martes a sábados",
+          "hora": "19:30",
+          "temporadas": [
+            {
+              "desdeMes": 7,
+              "hastaMes": 9,
+              "hora": "20:00"
+            }
+          ]
+        },
+        {
+          "nombre": "Domingos y festivos",
+          "hora": "12:30"
+        },
+        {
+          "nombre": "Misa de niños",
+          "hora": "Domingos, 11:00",
+          "desde": "10-05",
+          "hasta": "06-30"
+        }
+      ]
+    },
+    {
+      "id": "confesiones",
+      "titulo": "Confesiones",
+      "icono": "heart",
+      "visible": true,
+      "ocultarMeses": [8],
+      "horarios": [
+        {
+          "nombre": "Antes de cada misa",
+          "descripcion": "Media hora antes de cada misa",
+          "hora": "-30 min"
+        },
+        {
+          "nombre": "Jueves por la mañana",
+          "hora": "10:00–12:00"
+        }
+      ]
+    },
+    {
+      "id": "adoracion",
+      "titulo": "Adoración eucarística",
+      "icono": "sun",
+      "visible": true,
+      "ocultarMeses": [8],
+      "horarios": [
+        {
+          "nombre": "Exposición al Santísimo",
+          "hora": "Jueves, 10:00–19:30"
+        },
+        {
+          "nombre": "Adoración nocturna",
+          "descripcion": "2.º sábado de mes",
+          "hora": "18:30–23:30"
+        }
+      ]
+    },
+    {
+      "id": "despacho",
+      "titulo": "Despacho parroquial",
+      "icono": "calendar-clock",
+      "visible": true,
+      "ocultarMeses": [8],
+      "horarios": [
+        {
+          "nombre": "Miércoles",
+          "hora": "17:00–18:00"
+        },
+        {
+          "nombre": "Jueves",
+          "hora": "12:00–13:00"
+        }
+      ]
+    }
+  ]
+}
