@@ -50,7 +50,7 @@
     },
     {
       "id": "adoracion",
-      "titulo": "Adoración eucarística",
+      "titulo": "Adoración Eucarística",
       "icono": "sun",
       "visible": true,
       "ocultarMeses": [8],

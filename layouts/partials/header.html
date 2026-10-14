@@ -102,7 +102,7 @@
         </div>
     </nav>
 </section>
-<hr>
+{{ if not .IsHome }}<br>{{ end }}
 {{ range .Site.Menus.main }}
   <a href="{{ .URL }}">{{ .Name }}</a>
 {{ end }}

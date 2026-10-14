@@ -1,4 +1,26 @@
 /* ==========================================================
+   SECCIÓN CONTENEDORA — HORARIOS
+   Fondo gris con padding simétrico. El componente interior
+   (horarios-parroquia) se encarga solo de sus tarjetas.
+   ========================================================== */
+
+.seccion-horarios {
+  --sh-bg: #f4f2ed;          /* gris cálido, combina con el dorado */
+  --sh-padding-y: clamp(2.5rem, 5vw, 4.5rem);
+
+  padding-block: var(--sh-padding-y);
+  background: var(--sh-bg);
+  /* Opcional: separación del resto de secciones de la página */
+  margin-block: 0;
+}
+
+/* El container de Bootstrap ya centra y limita el ancho.
+   Solo aseguramos un poco de aire lateral en móviles muy estrechos. */
+.seccion-horarios > .container {
+  padding-inline: clamp(1rem, 4vw, 1.5rem);
+}
+
+/* ==========================================================
    HORARIOS PARROQUIALES — Parroquia San Francisco y Santa Clara
    Compatible con layouts/partials/horarios-parroquia.html
    ========================================================== */
@@ -237,7 +259,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 440px) {
   .horarios-parroquia .horario-item {
     flex-direction: column;
     align-items: flex-start;
