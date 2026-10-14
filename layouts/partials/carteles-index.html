@@ -170,19 +170,36 @@ Máximo: 4 carteles
      completamente determinista.
 -------------------------------------------------------- */}}
 
+{{/* --------------------------------------------------------
+     CALCULAR ROTACIÓN DIARIA
+-------------------------------------------------------- */}}
+
 {{ $rotacion := slice }}
 
 {{ if gt (len $rotativos) 0 }}
 
-    {{ $fechaReferencia := time.AsTime "2026-01-01" $zonaHoraria }}
+    {{/* Fecha fija de referencia: no cambiar cada día */}}
+    {{ $fechaReferencia := time.AsTime "2026-01-01" "UTC" }}
 
-    {{ $duracion := $hoy.Sub $fechaReferencia }}
+    {{/* Convertir la fecha actual de Madrid a fecha de calendario */}}
+    {{ $hoyUTC := time.AsTime $hoyTexto "UTC" }}
 
-    {{ $diasTranscurridos := int ($duracion.Hours | div 24) }}
+    {{/* Diferencia exacta entre días de calendario */}}
+    {{ $duracion := $hoyUTC.Sub $fechaReferencia }}
+    {{ $diasTranscurridos := int (div $duracion.Hours 24) }}
 
-    {{ $inicio := mod (mul $diasTranscurridos $saltoRotacion) (len $rotativos) }}
+    {{/* Evitar índices negativos si se cambia la referencia */}}
+    {{ if lt $diasTranscurridos 0 }}
+        {{ $diasTranscurridos = 0 }}
+    {{ end }}
 
     {{ $cantidadRotativos := len $rotativos }}
+
+    {{/* Avanzar dos posiciones cada día */}}
+    {{ $inicio := mod
+        (mul $diasTranscurridos $saltoRotacion)
+        $cantidadRotativos
+    }}
 
     {{ $limite := $cantidadRotativos }}
 

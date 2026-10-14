@@ -1,0 +1,97 @@
+{{/* =========================================================
+     BLOQUE TEMPORAL CONDICIONAL
+     ---------------------------------------------------------
+     Muestra el partial "bloque-temporada-contenido.html"
+     únicamente durante la SEGUNDA SEMANA de determinados meses.
+
+     Configuración:
+       - Meses activos: octubre (10) → julio (7)
+         Es decir: 10, 11, 12, 1, 2, 3, 4, 5, 6, 7
+         Excluye: agosto (8) y septiembre (9)
+
+       - Semana activa: la 2ª semana del mes (lunes → domingo)
+
+     Criterio de "semana del mes":
+       - Se cuenta el número de lunes desde el primer lunes
+         del mes.
+       - Si el lunes de esta semana pertenece al mes anterior,
+         esa semana se considera la ÚLTIMA del mes anterior
+         (no la primera del actual).
+
+     Zona horaria: Europe/Madrid (coherente con carteles).
+
+     Uso desde el index:
+       {{ partial "bloque-temporada-condicional.html" . }}
+     ========================================================= */}}
+
+{{- $zonaHoraria := "Europe/Madrid" -}}
+
+
+{{- /* Fecha actual en Madrid, a medianoche */ -}}
+{{- $ahora := time.Now | time.In $zonaHoraria -}}
+{{- $hoyTexto := $ahora | time.Format "2006-01-02" -}}
+{{- $hoy := time.AsTime $hoyTexto $zonaHoraria -}} 
+
+
+
+{{- /* Mes y año de hoy */ -}}
+{{- $mes := int ($hoy.Format "1") -}}
+{{- $anio := int ($hoy.Format "2006") -}}
+
+{{- /* Día de la semana ISO: lunes=1 ... domingo=7 */ -}}
+{{- $iso := 0 -}}
+{{- $wd := $hoy.Weekday -}}
+{{- if eq $wd 0 -}}
+    {{- $iso = 7 -}} {{/* domingo */}}
+{{- else -}}
+    {{- $iso = int $wd -}} {{/* lunes=1 ... sábado=6 */}}
+{{- end -}}
+
+{{- /* Lunes de la semana que contiene a hoy */ -}}
+{{- $lunes := $hoy.AddDate 0 0 (sub 1 $iso) -}}
+
+{{- /* Mes y año del lunes */ -}}
+{{- $mesLunes := int ($lunes.Format "1") -}}
+{{- $anioLunes := int ($lunes.Format "2006") -}}
+
+{{- /* Número de semana dentro del mes (1, 2, 3, ...)
+       Si el lunes pertenece al mes anterior → 0 (no computa
+       como semana del mes actual). */ -}}
+{{- $numeroSemana := 0 -}}
+
+{{- if and (eq $mesLunes $mes) (eq $anioLunes $anio) -}}
+
+    {{- /* Primer día del mes */ -}}
+    {{- $primerDiaTexto := printf "%04d-%02d-01" $anio $mes -}}
+    {{- $primerDia := time.AsTime $primerDiaTexto $zonaHoraria -}}
+
+    {{- /* Día ISO del primer día del mes */ -}}
+    {{- $isoPrimer := 0 -}}
+    {{- $wdPrimer := $primerDia.Weekday -}}
+    {{- if eq $wdPrimer 0 -}}
+        {{- $isoPrimer = 7 -}}
+    {{- else -}}
+        {{- $isoPrimer = int $wdPrimer -}}
+    {{- end -}}
+
+    {{- /* Primer lunes del mes */ -}}
+    {{- $primerLunes := $primerDia.AddDate 0 0 (sub 1 $isoPrimer) -}}
+    {{- if $primerLunes.Before $primerDia -}}
+        {{- $primerLunes = $primerLunes.AddDate 0 0 7 -}}
+    {{- end -}}
+
+    {{- /* Nº de semana = ((lunes - primerLunes) / 7) + 1 */ -}}
+    {{- $dif := $lunes.Sub $primerLunes -}}
+    {{- $numeroSemana = add 1 (int (div $dif.Hours 24 7)) -}}
+
+{{- end -}}
+
+{{- /* ¿Mes dentro del rango octubre → julio? */ -}}
+{{- $mesEnRango := or (ge $mes 10) (le $mes 7) -}}
+
+{{- /* Condición final */ -}}
+{{- $mostrar := and $mesEnRango (eq $numeroSemana 2) -}}
+
+{{- if $mostrar -}}
+    {{ partial "bloque-temporada-contenido.html" . }}
+{{- end -}}

@@ -15,18 +15,43 @@
 
     {{/* ============================================================
          CARTELERÍA
-         - TEMP-AAAA-MM-DD-nombre.ext = temporal
-         - Todo lo demás = permanente
+
+         Convenciones (idénticas al carrusel de portada):
+
+         TEMP-AAAA-MM-DD-nombre.ext
+             → temporal
+             → visible hasta el día indicado, inclusive
+
+         01-nombre.ext
+         02-nombre.ext
+             → permanente normal
+             → mantiene el orden por nombre
+
+         ROT-01-nombre.ext
+         ROT-02-nombre.ext
+             → permanente rotativo
+             → rota su orden de aparición cada día
+
+         Orden final en el tablón:
+             1. TEMP vigentes
+             2. Carteles normales
+             3. ROT según rotación diaria
          ============================================================ */}}
+
+    {{ $zonaHoraria := "Europe/Madrid" }}
+    {{ $saltoRotacion := 2 }}
+    {{ $extensiones := slice ".webp" ".jpg" ".jpeg" ".png" }}
+
+    {{/* Fecha de hoy a medianoche en Madrid */}}
+    {{ $ahora := time.Now | time.In $zonaHoraria }}
+    {{ $hoyTexto := $ahora | time.Format "2006-01-02" }}
+    {{ $hoy := time.AsTime $hoyTexto $zonaHoraria }}
 
     {{ $archivos := readDir "static/carteles" }}
 
     {{ $temporales := slice }}
-    {{ $permanentes := slice }}
-
-    {{/* Fecha actual en horario de Madrid */}}
-    {{ $hoyTexto := time.Now | time.Format "2006-01-02" }}
-    {{ $hoy := time.AsTime $hoyTexto "Europe/Madrid" }}
+    {{ $normales := slice }}
+    {{ $rotativos := slice }}
 
     {{ range $archivo := $archivos }}
 
@@ -35,45 +60,39 @@
             {{ $nombre := $archivo.Name }}
             {{ $extension := path.Ext $nombre | lower }}
 
-            {{/* Solo imágenes */}}
-            {{ if in (slice ".webp" ".jpg" ".jpeg" ".png") $extension }}
+            {{ if in $extensiones $extension }}
 
+                {{/* ============ TEMPORALES ============ */}}
                 {{ if hasPrefix $nombre "TEMP-" }}
-
-                    {{/*
-                        Extraemos:
-                        TEMP-2026-10-12-virgen-pilar.webp
-                              ↓
-                        2026-10-12
-                    */}}
 
                     {{ $partes := split $nombre "-" }}
 
                     {{ if ge (len $partes) 4 }}
 
-                        {{ $fechaTexto := printf "%s-%s-%s" (index $partes 1) (index $partes 2) (index $partes 3) }}
+                        {{ $fechaTexto := printf "%s-%s-%s"
+                            (index $partes 1)
+                            (index $partes 2)
+                            (index $partes 3)
+                        }}
 
-                        {{ $fechaCaducidad := time.AsTime $fechaTexto "Europe/Madrid" }}
+                        {{ $fechaCaducidad := time.AsTime $fechaTexto $zonaHoraria }}
 
-                        {{/*
-                            El cartel sigue vigente durante TODO el día
-                            indicado.
-
-                            TEMP-2026-10-12...
-                            → visible el día 12
-                            → desaparece desde el día 13
-                        */}}
-
+                        {{/* Visible durante todo el día de caducidad */}}
                         {{ if not ($fechaCaducidad.Before $hoy) }}
                             {{ $temporales = $temporales | append $archivo }}
                         {{ end }}
 
                     {{ end }}
 
+                {{/* ============ ROTATIVOS ============ */}}
+                {{ else if hasPrefix $nombre "ROT-" }}
+
+                    {{ $rotativos = $rotativos | append $archivo }}
+
+                {{/* ============ NORMALES ============ */}}
                 {{ else }}
 
-                    {{/* Todos los demás carteles son permanentes */}}
-                    {{ $permanentes = $permanentes | append $archivo }}
+                    {{ $normales = $normales | append $archivo }}
 
                 {{ end }}
 
@@ -83,14 +102,57 @@
 
     {{ end }}
 
-    {{/* Los temporales primero */}}
+
+    {{/* -------------------- ORDENAR -------------------- */}}
+
     {{ $temporales = sort $temporales "Name" "asc" }}
+    {{ $normales   = sort $normales   "Name" "asc" }}
+    {{ $rotativos  = sort $rotativos  "Name" "asc" }}
 
-    {{/* Los permanentes mantienen su orden por nombre */}}
-    {{ $permanentes = sort $permanentes "Name" "asc" }}
 
-    {{/* Lista final del tablón */}}
-    {{ $carteles := $temporales | append $permanentes }}
+    {{/* -------------------- ROTACIÓN DIARIA --------------------
+         Mismo algoritmo determinista que el carrusel.
+         Referencia fija: 2026-01-01 (UTC).
+         Se avanza $saltoRotacion posiciones por día.
+    --------------------------------------------------------- */}}
+
+    {{ $rotacion := slice }}
+
+    {{ if gt (len $rotativos) 0 }}
+
+        {{ $fechaReferencia := time.AsTime "2026-01-01" "UTC" }}
+        {{ $hoyUTC := time.AsTime $hoyTexto "UTC" }}
+
+        {{ $duracion := $hoyUTC.Sub $fechaReferencia }}
+        {{ $diasTranscurridos := int (div $duracion.Hours 24) }}
+
+        {{ if lt $diasTranscurridos 0 }}
+            {{ $diasTranscurridos = 0 }}
+        {{ end }}
+
+        {{ $cantidadRotativos := len $rotativos }}
+
+        {{ $inicio := mod
+            (mul $diasTranscurridos $saltoRotacion)
+            $cantidadRotativos
+        }}
+
+        {{ range $i := seq 0 (sub $cantidadRotativos 1) }}
+
+            {{ $indice := mod (add $inicio $i) $cantidadRotativos }}
+
+            {{ $rotacion = $rotacion | append (index $rotativos $indice) }}
+
+        {{ end }}
+
+    {{ end }}
+
+
+    {{/* -------------------- LISTA FINAL --------------------
+         TEMP → NORMALES → ROT (rotados)
+    --------------------------------------------------------- */}}
+
+    {{ $carteles := $temporales | append $normales | append $rotacion }}
 
 
     {{ range $carteles }}
