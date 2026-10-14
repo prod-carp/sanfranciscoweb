@@ -99,7 +99,8 @@ $newHead = @"
 <link rel="stylesheet" href="/assets/socicon/css/styles.css">
 <link rel="stylesheet" href="/assets/theme/css/style.css">
 <link rel="stylesheet" href="/assets/css/fonts.css">
-<link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css?v=G1za5k" type="text/css">
+<!-- link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css?v=G1za5k" type="text/css"> -->
+<link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css?v=m5qhTD" type="text/css">
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Church","name":"Parroquia San Francisco y Santa Clara de Asís","url":"https://sanfranciscoysantaclara.es","telephone":"+34 91 615 24 31","image":"https://sanfranciscoysantaclara.es/assets/images/index-meta-1200x630.webp","address":{"@type":"PostalAddress","streetAddress":"Calle de Suecia, 2","addressLocality":"Fuenlabrada","addressRegion":"Madrid","postalCode":"28942","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":40.2896387,"longitude":-3.8060985},"sameAs":["https://www.instagram.com/san.franciscoyclara/"]}</script>
 
