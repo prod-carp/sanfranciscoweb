@@ -259,19 +259,24 @@
   }
 }
 
-@media (max-width: 440px) {
-  .horarios-parroquia .horario-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.65rem;
-  }
-
-  .horarios-parroquia .horario-hora {
-    align-self: flex-start;
-    text-align: left;
-    padding: 0.4rem 0.8rem;
-  }
+/* Apilado SOLO cuando la fila concreta no quepa */
+.horarios-parroquia .horario-item {
+  flex-wrap: wrap;                       /* permite que la hora baje si no cabe */
+  align-items: baseline;                  /* alineación elegante entre texto y hora */
+  gap: 0.5rem 0.75rem;                    /* fila / columna */
 }
+
+.horarios-parroquia .horario-texto {
+  flex: 1 1 auto;                         /* el texto ocupa lo que necesite */
+  min-width: 0;
+}
+
+.horarios-parroquia .horario-hora {
+  flex: 0 0 auto;                         /* la hora nunca se encoge */
+  text-align: right;                      /* si baja, alineada a la derecha */
+}
+
+
 
 @media (max-width: 380px) {
   .horarios-parroquia {
