@@ -3,7 +3,7 @@
   "secciones": [
     {
       "id": "misas",
-      "titulo": "Horario de misas",
+      "titulo": "Horario de Misas",
       "icono": "church",
       "visible": true,
       "horarios": [
