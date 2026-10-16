@@ -6,8 +6,10 @@ draft = false
 categorias = ["Exterior"]
 weight = 0
 image = "/assets/images/blog/2026-10-14-el-domund-celebra-100-anos-de-compromiso-con-las-misiones.webp"
-tags = ["importante"]
-diasDestacado = 4
+tags = [""]
+tipoFecha = "domund"
+diasAntes = 5
+diasDespues = 30
 +++
 
 ## El espíritu misionero franciscano: llevar el Evangelio a los más necesitados
@@ -16,7 +18,7 @@ diasDestacado = 4
 
 Cada año, el mes de octubre nos invita a mirar más allá de nuestras preocupaciones cotidianas y recordar a quienes dedican su vida a anunciar a Jesucristo en lugares donde la presencia de la Iglesia es pequeña y las necesidades humanas son grandes.
 
-El próximo domingo 18 de octubre, la Iglesia celebra el **DOMUND, el Domingo Mundial de las Misiones**, que en 2026 cumple cien años desde su institución en 1926. Una ocasión especial para dar gracias por la entrega de tantos misioneros y renovar nuestro compromiso con la evangelización.
+El próximo {{< fecha-recurrente tipo="domund" >}}, la Iglesia celebra el **DOMUND, el Domingo Mundial de las Misiones**, que en 2026 cumple cien años desde su institución en 1926. Una ocasión especial para dar gracias por la entrega de tantos misioneros y renovar nuestro compromiso con la evangelización.
 
 Pero ¿qué significa ser misionero? ¿Es necesario marcharse a otro continente para vivir esta vocación? La espiritualidad franciscana nos ayuda a descubrir que la misión comienza en el encuentro con Cristo y se manifiesta en la manera en que amamos y servimos a los demás.
 

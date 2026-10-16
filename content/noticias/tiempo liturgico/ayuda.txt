@@ -1,0 +1,155 @@
+   tipoFecha:
+     ceniza
+     ramos
+     jueves-santo
+     viernes-santo
+     pascua
+     ascension
+     pentecostes
+     trinidad
+     corpus
+     sagrado-corazon
+     inmaculado-corazon
+cristo-rey
+adviento
+bautismo-senor
+sagrada-familia
+domund
+
+   Cristo Rey:
+     Último domingo del año litúrgico.
+     Es el domingo inmediatamente anterior al primer
+     domingo de Adviento.
+
+   Adviento:
+     Primer domingo de Adviento.
+
+Bautismo:
+   Se celebra el domingo siguiente a la Epifanía,
+   salvo cuando la Epifanía cae en domingo, en cuyo
+   caso se celebra el domingo siguiente.
+
+Sagrada Familia:
+   Normalmente se celebra el domingo siguiente a Navidad
+   dentro de la octava.
+
+Ddomund:
+   Se celebra el tercer domingo de octubre.
+
+
+---
+
+
+Recuerda que el partial devuelve este dict:
+
+go-html-template
+{{ return (dict
+    "activa"  $activa
+    "fecha"   $fecha
+    "texto"   $textoArticulo
+    "corto"   $textoCorto
+    "largo"   $textoLargo
+) }}
+Con tipoFecha = "domund" y año 2026, los valores son:
+
+Campo	Valor devuelto	Ejemplo
+activa	booleano	true / false
+fecha	objeto time.Time	(no imprimible directamente)
+texto	cadena con día de la semana	domingo 18 de octubre
+corto	cadena sin día de la semana	18 de octubre
+largo	cadena completa con año	domingo, 18 de octubre de 2026
+2. Cómo pedir cada uno desde el shortcode
+El shortcode fecha-recurrente.html acepta tres parámetros:
+
+markdown
+{{< fecha-recurrente tipo="domund" anio="2026" formato="largo" >}}
+tipo → obligatorio. El valor de tipoFecha que quieras: domund, pascua, ceniza, adviento, cristo-rey, bautismo-senor, sagrada-familia, etc.
+
+anio → opcional. Si no lo pones, usa el año actual (now.Year).
+
+formato → opcional. Por defecto texto. Valores válidos: texto, corto, largo, activa, fecha.
+
+3. Ejemplos concretos con domund
+formato="texto" (por defecto)
+markdown
+Hoy es {{< fecha-recurrente tipo="domund" anio="2026" >}}
+→ Hoy es domingo 18 de octubre
+
+formato="corto"
+markdown
+El próximo domingo {{< fecha-recurrente tipo="domund" anio="2026" formato="corto" >}}
+→ El próximo domingo 18 de octubre
+
+formato="largo"
+markdown
+La celebración tendrá lugar el {{< fecha-recurrente tipo="domund" anio="2026" formato="largo" >}}
+→ La celebración tendrá lugar el domingo, 18 de octubre de 2026
+
+formato="activa"
+markdown
+¿Está activo el DOMUND? {{< fecha-recurrente tipo="domund" anio="2026" formato="activa" >}}
+→ ¿Está activo el DOMUND? true (o false según la fecha real)
+
+Útil si quieres condicionar la visualización de un bloque con un if en otra plantilla, no tanto dentro del .md.
+
+formato="fecha"
+markdown
+{{< fecha-recurrente tipo="domund" anio="2026" formato="fecha" >}}
+→ Imprime el objeto time.Time tal cual. No lo uses en el cuerpo del artículo: Hugo lo renderizará en formato ISO largo o dará error según el contexto. Está pensado para usarse programáticamente, no para texto visible.
+
+4. Otros tipo que puedes usar
+Como el shortcode es genérico, puedes pedir cualquier fecha recurrente ya soportada por el partial:
+
+markdown
+{{< fecha-recurrente tipo="pascua" anio="2026" formato="largo" >}}
+→ domingo, 5 de abril de 2026
+
+{{< fecha-recurrente tipo="ceniza" anio="2026" formato="largo" >}}
+→ miércoles, 18 de febrero de 2026
+
+{{< fecha-recurrente tipo="ramos" anio="2026" formato="largo" >}}
+→ domingo, 29 de marzo de 2026
+
+{{< fecha-recurrente tipo="pentecostes" anio="2026" formato="largo" >}}
+→ domingo, 24 de mayo de 2026
+
+{{< fecha-recurrente tipo="cristo-rey" anio="2026" formato="largo" >}}
+→ domingo, 22 de noviembre de 2026
+
+{{< fecha-recurrente tipo="adviento" anio="2026" formato="largo" >}}
+→ domingo, 29 de noviembre de 2026
+
+{{< fecha-recurrente tipo="bautismo-senor" anio="2026" formato="largo" >}}
+→ domingo, 11 de enero de 2026
+
+{{< fecha-recurrente tipo="sagrada-familia" anio="2026" formato="largo" >}}
+→ domingo, 27 de diciembre de 2026
+(Estas fechas concretas dependen de que el partial esté corregido para respetar el año que le pasas; si no, devolverá las del año actual.)
+
+5. Sin pasar anio → usa el año actual
+markdown
+{{< fecha-recurrente tipo="domund" formato="corto" >}}
+Si hoy estamos en 2026, dará 18 de octubre. Si el año que viene el mismo post se renderiza, dará la fecha de 2027. Ojo: esto puede no ser lo que quieres si el artículo está fechado en 2026.
+
+6. Bonus: combinar con formato en la sintaxis posicional
+Si creas shortcodes específicos como fecha-domund.html, puedes usar parámetros posicionales:
+
+markdown
+{{< fecha-domund 2026 >}}              → domingo 18 de octubre
+{{< fecha-domund 2026 "corto" >}}      → 18 de octubre
+{{< fecha-domund 2026 "largo" >}}      → domingo, 18 de octubre de 2026
+Mucho más limpio para escribir dentro del artículo.
+
+7. Resumen visual
+Quieres...	Usa
+"domingo 18 de octubre"	formato="texto" (por defecto)
+"18 de octubre"	formato="corto"
+"domingo, 18 de octubre de 2026"	formato="largo"
+true / false	formato="activa"
+El objeto fecha crudo	formato="fecha"
+Necesitas...	Parámetro
+Cambiar de festividad	tipo="..."
+Fijar el año	anio="2026"
+Elegir el estilo	formato="..."
+¿Quieres que añada algún formato más, por ejemplo uno tipo "18/10/2026" o "18 de octubre de 2026" sin el día de la semana? Es trivial añadirlo al dict del partial.
+

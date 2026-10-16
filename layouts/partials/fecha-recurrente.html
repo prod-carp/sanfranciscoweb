@@ -423,12 +423,98 @@
 {{ end }}
 
 
+{{/* ========================================================
+   SISTEMA 6 — DOMUND
+   tipoFecha = "domund"
+
+   Se celebra el tercer domingo de octubre.
+======================================================== */}}
+
+{{ if eq .Params.tipoFecha "domund" }}
+
+    {{ $hoy := now }}
+    {{ $anio := $hoy.Year }}
+
+    {{/* 1 de octubre como referencia */}}
+
+    {{ $primeroOctubre := time.AsTime (printf "%d-10-01" $anio) }}
+
+    {{/* Día de la semana:
+         Domingo = 0
+         Lunes   = 1
+         ...
+         Sábado  = 6
+    */}}
+
+    {{ $diaSemana := int $primeroOctubre.Weekday }}
+
+    {{/* Días hasta el primer domingo de octubre.
+       Si el 1 de octubre ya es domingo, son 0 días.
+    */}}
+
+    {{ $diasHastaPrimerDomingo := 0 }}
+    {{ if ne $diaSemana 0 }}
+        {{ $diasHastaPrimerDomingo = sub 7 $diaSemana }}
+    {{ end }}
+
+    {{ $primerDomingo := $primeroOctubre.AddDate 0 0 $diasHastaPrimerDomingo }}
+
+    {{/* Tercer domingo = primer domingo + 14 días */}}
+
+    {{ $fechaDomund := $primerDomingo.AddDate 0 0 14 }}
+
+    {{ $fecha = $fechaDomund }}
+
+    {{/* ==================================================
+       PERÍODO DE PUBLICACIÓN
+    ================================================== */}}
+
+    {{ $diasAntes := int .Params.diasAntes }}
+    {{ $diasDespues := int .Params.diasDespues }}
+
+    {{ $fechaInicio := $fechaDomund.AddDate 0 0 (sub 0 $diasAntes) }}
+    {{ $fechaFin := $fechaDomund.AddDate 0 0 $diasDespues }}
+
+    {{ $activa = and
+        (ge $hoy $fechaInicio)
+        (le $hoy $fechaFin)
+    }}
+
+{{ end }}
+
+
+
+{{/* ========================================================
+   TEXTO FORMATEADO EN ESPAÑOL
+======================================================== */}}
+
+{{ $meses := slice "" "enero" "febrero" "marzo" "abril" "mayo" "junio"
+                    "julio" "agosto" "septiembre" "octubre" "noviembre" "diciembre" }}
+
+{{ $diasSemana := slice "domingo" "lunes" "martes" "miércoles"
+                         "jueves" "viernes" "sábado" }}
+
+{{ $diaSemana := index $diasSemana (int $fecha.Weekday) }}
+{{ $mes := index $meses (int $fecha.Month) }}
+
+{{/* Texto corto: "18 de octubre" */}}
+{{ $textoCorto := printf "%d de %s" $fecha.Day $mes }}
+
+{{/* Texto largo: "domingo, 18 de octubre de 2026" */}}
+{{ $textoLargo := printf "%s, %d de %s de %d" $diaSemana $fecha.Day $mes $fecha.Year }}
+
+{{/* Texto con año corto: "domingo 18 de octubre" (sin año, útil dentro del artículo) */}}
+{{ $textoArticulo := printf "%s %d de %s" $diaSemana $fecha.Day $mes }}
+
 
 {{/* ========================================================
    DEVOLVER RESULTADO
 ======================================================== */}}
 
 {{ return (dict
-    "activa" $activa
-    "fecha" $fecha
+    "activa"  $activa
+    "fecha"   $fecha
+    "texto"   $textoArticulo
+    "corto"   $textoCorto
+    "largo"   $textoLargo
 ) }}

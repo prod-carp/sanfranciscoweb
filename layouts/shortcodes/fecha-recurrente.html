@@ -1,0 +1,27 @@
+{{- $tipo := .Get "tipo" -}}
+{{- $anio := .Get "anio" -}}
+
+{{- if not $tipo -}}
+    {{- errorf "shortcode fecha-recurrente: falta el parámetro 'tipo'" -}}
+{{- end -}}
+
+{{- /* Construimos un contexto mínimo que el partial pueda leer */ -}}
+{{- $params := dict
+    "tipoFecha"   $tipo
+    "diasAntes"   0
+    "diasDespues" 0
+-}}
+
+{{- /* Si se pasa año, lo usamos para desplazar la fecha.
+       El partial original usa now.Year, así que aquí forzamos
+       el cálculo para ese año concreto. */ -}}
+{{- $resultado := partial "fecha-recurrente.html" (dict
+    "Params" $params
+    "Date"   (time.AsTime (printf "%d-01-01" (default now.Year $anio)))
+) -}}
+
+{{- /* Formato elegido según parámetro opcional 'formato' */ -}}
+{{- $formato := .Get "formato" | default "texto" -}}
+{{- $salida := index $resultado $formato -}}
+
+{{- $salida -}}
