@@ -2,7 +2,7 @@
 title = 'Una guitarra, una cabasa y mucha ilusión: nuestra experiencia en el coro de niños'
 subtitle = 'Así comenzó nuestra pequeña aventura en el coro de niños de la parroquia durante este final de temporada de comuniones de 2026'
 date = '2026-05-31T12:29:54+02:00'
-draft = false
+draft = true
 categorias = ["Testimonios"]
 tags = []
 weight = 0

@@ -163,7 +163,7 @@ async function loadPendingArticles(
 
     const response =
       await fetch(
-        "https://sanfrancisco-noticias.produccioncarprinter.workers.dev/api/admin/articles",
+        "https://api.sanfranciscoysantaclara.es/api/admin/articles",
         {
 
           method:
@@ -387,21 +387,19 @@ function renderArticles(
     .forEach(
       button => {
 
-        button.addEventListener(
-          "click",
-          () => {
+button.addEventListener(
+  "click",
+  () => {
 
-            const id =
-              button.dataset.id;
+    const id =
+      button.dataset.id;
 
-            alert(
-              "La apertura de la revisión se implementará en el siguiente paso.\n\nID: " +
-              id
-            );
+    window.location.href =
+      "/admin/editor/review/?id=" +
+      encodeURIComponent(id);
 
-          }
-        );
-
+  }
+);
       }
     );
 

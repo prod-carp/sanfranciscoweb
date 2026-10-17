@@ -1,14 +1,13 @@
+
 import {
   initializeApp
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
-
 
 import {
   getAuth,
   onAuthStateChanged,
   signOut
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
-
 
 import {
   getUserRole,
@@ -36,81 +35,36 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 
-
 // ==========================================================
-// ELEMENTOS
+// ELEMENTOS DEL DOM
 // ==========================================================
 
-const dashboardPage =
-  document.getElementById(
-    "dashboard-page"
-  );
-
-
-const userEmailElement =
-  document.getElementById(
-    "user-email"
-  );
-
-
-const userRoleElement =
-  document.getElementById(
-    "user-role"
-  );
-
-
-const logoutButton =
-  document.getElementById(
-    "logout-button"
-  );
-
-
-const articlesList =
-  document.getElementById(
-    "articles-list"
-  );
+const dashboardPage = document.getElementById("dashboard-page");
+const userEmailElement = document.getElementById("user-email");
+const userRoleElement = document.getElementById("user-role");
+const logoutButton = document.getElementById("logout-button");
+const articlesList = document.getElementById("articles-list");
 
 
 // ==========================================================
 // FORMATO DE FECHA
 // ==========================================================
 
-function formatDate(
-  value
-) {
-
+function formatDate(value) {
   if (!value) {
-
     return "—";
-
   }
 
+  const date = new Date(value);
 
-  const date =
-    new Date(
-      value
-    );
-
-
-  if (
-    Number.isNaN(
-      date.getTime()
-    )
-  ) {
-
+  if (Number.isNaN(date.getTime())) {
     return value;
-
   }
 
-
-  return date.toLocaleString(
-    "es-ES",
-    {
-      dateStyle: "medium",
-      timeStyle: "short"
-    }
-  );
-
+  return date.toLocaleString("es-ES", {
+    dateStyle: "medium",
+    timeStyle: "short"
+  });
 }
 
 
@@ -118,121 +72,65 @@ function formatDate(
 // ESCAPAR HTML
 // ==========================================================
 
-function escapeHtml(
-  text
-) {
-
-  const div =
-    document.createElement(
-      "div"
-    );
-
-
-  div.textContent =
-    text ?? "";
-
-
+function escapeHtml(text) {
+  const div = document.createElement("div");
+  div.textContent = text ?? "";
   return div.innerHTML;
-
 }
 
 
 // ==========================================================
-// CARGAR ARTÍCULOS
+// CARGAR ARTÍCULOS PENDIENTES
 // ==========================================================
 
-async function loadPendingArticles(
-  user
-) {
-
-  articlesList.innerHTML =
-    `
-      <div class="empty-message">
-        Cargando artículos...
-      </div>
-    `;
-
+async function loadPendingArticles(user) {
+  articlesList.innerHTML = `
+    <div class="empty-message">
+      Cargando artículos...
+    </div>
+  `;
 
   try {
+    const idToken = await user.getIdToken(true);
 
-    const idToken =
-      await user.getIdToken(
-        true
-      );
-
-
-    const response =
-      await fetch(
-        "https://api.sanfranciscoysantaclara.es/api/admin/articles",
-        {
-
-          method:
-            "GET",
-
-          headers: {
-
-            "Authorization":
-              `Bearer ${idToken}`
-
-          }
-
+    const response = await fetch(
+      "https://api.sanfranciscoysantaclara.es/api/admin/articles",
+      {
+        method: "GET",
+        headers: {
+          "Authorization": `Bearer ${idToken}`
         }
-      );
-
+      }
+    );
 
     let result;
 
     try {
-
-      result =
-        await response.json();
-
+      result = await response.json();
     } catch {
-
       throw new Error(
         "El servidor devolvió una respuesta no válida."
       );
-
     }
 
-
-    if (
-      !response.ok ||
-      !result.success
-    ) {
-
+    if (!response.ok || !result.success) {
       throw new Error(
         result.error ||
         "No se han podido cargar los artículos."
       );
-
     }
 
-
-    renderArticles(
-      result.articles || []
-    );
-
+    renderArticles(result.articles || []);
 
   } catch (error) {
+    console.error("Error cargando artículos:", error);
 
-    console.error(
-      "Error cargando artículos:",
-      error
-    );
-
-
-    articlesList.innerHTML =
-      `
-        <div class="error-message">
-          ${escapeHtml(
-            error.message
-          )}
-        </div>
-      `;
-
+    articlesList.innerHTML = `
+      <div class="error-message">
+        ${escapeHtml(error.message)}
+      </div>
+    `;
   }
-
 }
 
 
@@ -240,280 +138,245 @@ async function loadPendingArticles(
 // MOSTRAR ARTÍCULOS
 // ==========================================================
 
-function renderArticles(
-  articles
-) {
-
-  if (
-    !articles.length
-  ) {
-
-    articlesList.innerHTML =
-      `
-        <div class="empty-message">
-          No hay artículos pendientes de revisión.
-        </div>
-      `;
-
+function renderArticles(articles) {
+  if (!articles.length) {
+    articlesList.innerHTML = `
+      <div class="empty-message">
+        No hay artículos pendientes de revisión.
+      </div>
+    `;
     return;
-
   }
 
+  articlesList.innerHTML = articles.map(article => {
+    let categories = "";
 
-  articlesList.innerHTML =
-    articles
-      .map(
-        article => {
+    try {
+      const parsed = JSON.parse(
+        article.categories || "[]"
+      );
 
-          let categories = "";
+      categories = Array.isArray(parsed)
+        ? parsed.join(", ")
+        : String(parsed);
 
-          try {
+    } catch {
+      categories = article.categories || "";
+    }
 
-            const parsed =
-              JSON.parse(
-                article.categories ||
-                "[]"
-              );
+    const highlighted =
+      Number(article.highlight) === 1
+        ? " · ⭐ Destacada"
+        : "";
 
-            categories =
-              parsed.join(
-                ", "
-              );
+    return `
+      <article class="article-card">
 
-          } catch {
+        <h3 class="article-title">
+          ${escapeHtml(article.title)}
+        </h3>
 
-            categories =
-              article.categories ||
-              "";
+        <div class="article-meta">
+          <strong>Categoría:</strong>
+          ${escapeHtml(categories)}
+          ${highlighted}
 
-          }
+          <br>
 
+          <strong>Autor:</strong>
+          ${escapeHtml(article.author_email)}
 
-          const highlighted =
-            Number(
-              article.highlight
-            ) === 1
-              ? " · ⭐ Destacada"
-              : "";
+          <br>
 
+          <strong>Enviado:</strong>
+          ${escapeHtml(formatDate(article.submitted_at))}
+        </div>
 
-          return `
-            <article
-              class="article-card"
-            >
+        <span class="article-status">
+          🟠 Pendiente
+        </span>
 
-              <h3
-                class="article-title"
-              >
-                ${escapeHtml(
-                  article.title
-                )}
-              </h3>
+        <div class="article-actions">
 
+          <button
+            class="review-button"
+            data-id="${escapeHtml(article.id)}"
+            type="button"
+          >
+            Revisar
+          </button>
 
-              <div
-                class="article-meta"
-              >
+          <button
+            class="delete-button"
+            data-id="${escapeHtml(article.id)}"
+            data-title="${escapeHtml(article.title)}"
+            type="button"
+          >
+            Eliminar
+          </button>
 
-                <strong>
-                  Categoría:
-                </strong>
+        </div>
 
-                ${escapeHtml(
-                  categories
-                )}
-
-                ${highlighted}
-
-                <br>
-
-                <strong>
-                  Autor:
-                </strong>
-
-                ${escapeHtml(
-                  article.author_email
-                )}
-
-                <br>
-
-                <strong>
-                  Enviado:
-                </strong>
-
-                ${escapeHtml(
-                  formatDate(
-                    article.submitted_at
-                  )
-                )}
-
-              </div>
+      </article>
+    `;
+  }).join("");
 
 
-              <span
-                class="article-status"
-              >
-                🟠 Pendiente
-              </span>
+  // --------------------------------------------------------
+  // BOTÓN REVISAR
+  // --------------------------------------------------------
+
+  document.querySelectorAll(".review-button").forEach(button => {
+    button.addEventListener("click", () => {
+      const id = button.dataset.id;
+
+      window.location.href =
+        "/admin/editor/review/?id=" +
+        encodeURIComponent(id);
+    });
+  });
 
 
-              <div
-                class="article-actions"
-              >
+  // --------------------------------------------------------
+  // BOTÓN ELIMINAR
+  // --------------------------------------------------------
 
-                <button
-                  class="review-button"
-                  data-id="${escapeHtml(
-                    article.id
-                  )}"
-                >
-                  Revisar
-                </button>
+  document.querySelectorAll(".delete-button").forEach(button => {
+    button.addEventListener("click", async () => {
+      const id = button.dataset.id;
+      const title = button.dataset.title || "este artículo";
 
-              </div>
+      const confirmed = confirm(
+        `¿Seguro que quieres eliminar «${title}»?\n\n` +
+        "Se borrará el registro de D1 y su imagen temporal " +
+        "de R2. Esta acción no se puede deshacer."
+      );
 
-            </article>
-          `;
-
-        }
-      )
-      .join("");
-
-
-  document
-    .querySelectorAll(
-      ".review-button"
-    )
-    .forEach(
-      button => {
-
-button.addEventListener(
-  "click",
-  () => {
-
-    const id =
-      button.dataset.id;
-
-    window.location.href =
-      "/admin/editor/review/?id=" +
-      encodeURIComponent(id);
-
-  }
-);
+      if (!confirmed) {
+        return;
       }
-    );
 
+      const originalText = button.textContent;
+
+      button.disabled = true;
+      button.textContent = "Eliminando…";
+
+      try {
+        const currentUser = auth.currentUser;
+
+        if (!currentUser) {
+          throw new Error(
+            "La sesión ha caducado. Vuelve a iniciar sesión."
+          );
+        }
+
+        const idToken = await currentUser.getIdToken(true);
+
+        const response = await fetch(
+          "https://api.sanfranciscoysantaclara.es/api/admin/articles/" +
+          encodeURIComponent(id),
+          {
+            method: "DELETE",
+            headers: {
+              "Authorization": `Bearer ${idToken}`
+            }
+          }
+        );
+
+        let result;
+
+        try {
+          result = await response.json();
+        } catch {
+          throw new Error(
+            "El servidor devolvió una respuesta no válida."
+          );
+        }
+
+        if (!response.ok || !result.success) {
+          throw new Error(
+            result.error ||
+            "No se ha podido eliminar el artículo."
+          );
+        }
+
+        alert(
+          "Artículo eliminado correctamente de D1 y su imagen temporal de R2."
+        );
+
+        // Recargar la lista tras el borrado.
+        if (auth.currentUser) {
+          await loadPendingArticles(auth.currentUser);
+        }
+
+      } catch (error) {
+        console.error("Error eliminando artículo:", error);
+
+        alert(
+          error.message ||
+          "Ha ocurrido un error al eliminar el artículo."
+        );
+
+        button.disabled = false;
+        button.textContent = originalText;
+      }
+    });
+  });
 }
 
 
 // ==========================================================
-// AUTENTICACIÓN
+// AUTENTICACIÓN Y CONTROL DE ACCESO
 // ==========================================================
 
-onAuthStateChanged(
-  auth,
-  async user => {
+onAuthStateChanged(auth, async user => {
+  if (!user) {
+    window.location.replace("/admin/login/");
+    return;
+  }
 
-    if (!user) {
+  const email = (user.email || "")
+    .trim()
+    .toLowerCase();
 
-      window.location.replace(
-        "/admin/login/"
-      );
-
-      return;
-
-    }
-
-
-    const email =
-      (
-        user.email ||
-        ""
-      )
-      .trim()
-      .toLowerCase();
+  const role = getUserRole(email);
+  const roleName = getRoleName(role);
 
 
-    const role =
-      getUserRole(
-        email
-      );
+  // --------------------------------------------------------
+  // SOLO ADMINISTRADOR O PREFERENTE
+  // --------------------------------------------------------
 
-
-    const roleName =
-      getRoleName(
-        role
-      );
-
-
-    // ------------------------------------------------------
-    // SOLO ADMIN / PREFERENTE
-    // ------------------------------------------------------
-
-    if (
-      role !== "admin" &&
-      role !== "preferred"
-    ) {
-
-      alert(
-        "No tienes permisos para acceder al panel de administración."
-      );
-
-
-      window.location.replace(
-        "/admin/editor/"
-      );
-
-      return;
-
-    }
-
-
-    userEmailElement.textContent =
-      email;
-
-
-    userRoleElement.textContent =
-      roleName;
-
-
-    dashboardPage.style.display =
-      "block";
-
-
-    await loadPendingArticles(
-      user
+  if (role !== "admin" && role !== "preferred") {
+    alert(
+      "No tienes permisos para acceder al panel de administración."
     );
 
+    window.location.replace("/admin/editor/");
+    return;
   }
-);
+
+  userEmailElement.textContent = email;
+  userRoleElement.textContent = roleName;
+  dashboardPage.style.display = "block";
+
+  await loadPendingArticles(user);
+});
 
 
 // ==========================================================
 // CERRAR SESIÓN
 // ==========================================================
 
-logoutButton.addEventListener(
-  "click",
-  async () => {
+logoutButton.addEventListener("click", async () => {
+  try {
+    await signOut(auth);
 
-    try {
+    window.location.href = "/admin/login/";
 
-      await signOut(
-        auth
-      );
+  } catch (error) {
+    console.error("Error cerrando sesión:", error);
 
-      window.location.href =
-        "/admin/login/";
-
-    } catch (error) {
-
-      console.error(
-        "Error cerrando sesión:",
-        error
-      );
-
-    }
-
+    alert("No se ha podido cerrar la sesión.");
   }
-);
+});

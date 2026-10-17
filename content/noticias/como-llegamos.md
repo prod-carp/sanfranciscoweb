@@ -2,7 +2,7 @@
 title = 'Cómo conocimos la parroquia: cuando Dios nos llevó un paso más allá'
 subtitle = 'Testimonio de cómo llegamos a la parroquia San Francisco y Santa Clara de Asís'
 date = '2026-04-02T12:29:54+02:00'
-draft = false
+draft = true
 categorias = ["Testimonios"]
 tags = []
 weight = 0
