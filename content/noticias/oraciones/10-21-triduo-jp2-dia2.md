@@ -1,14 +1,14 @@
 ﻿+++
 title = 'Triduo a San Juan Pablo II  - Día segundo'
 subtitle = 'Rezamos el día de hoy correspondiente al triduo a San Juan Pablo II'
-date = '2026-10-20T00:00:00+02:00'
+date = '2026-10-21T00:00:00+02:00'
 draft = false
 categorias = ["Oraciones"]
 tags = ["importante"]
 diasDestacado = 1
 weight = 0
 image = "/assets/images/blog/triduo-jp2.webp"
-fechaBase = '10/20'
+fechaBase = '10/21'
 fechaInicio = 0
 fechaFin = 300
 +++

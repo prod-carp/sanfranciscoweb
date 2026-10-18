@@ -1,0 +1,92 @@
+{{/* =========================================================
+     BLOQUE TEMPORAL CONDICIONAL (MULTISÁBADO)
+     ---------------------------------------------------------
+     Muestra uno de estos partials durante los 6 días previos
+     al sábado correspondiente (domingo → viernes anteriores):
+
+       - bloque-temporada-sabado1.html  → 6 días antes del 1er sábado
+       - bloque-temporada-sabado2.html  → 6 días antes del 2º sábado
+       - bloque-temporada-sabado3.html  → 6 días antes del 3er sábado
+       - bloque-temporada-sabado4.html  → 6 días antes del 4º sábado
+
+     Al partial se le pasa un dict con:
+       - "page"   → el contexto de la página (.)
+       - "fecha"  → time.Time del sábado correspondiente
+       - "numero" → 1, 2, 3 o 4
+       - "nombre" → "sábado"
+     ========================================================= */}}
+
+{{- $zonaHoraria := "Europe/Madrid" -}}
+
+{{- $fechaSimulada := "" -}}
+{{- with os.Getenv "HUGO_BANNER_FECHA" -}}
+    {{- $fechaSimulada = . -}}
+{{- else -}}
+    {{- with site.Params.bannerFecha -}}
+        {{- $fechaSimulada = . -}}
+    {{- end -}}
+{{- end -}}
+
+{{- $hoy := time.Now -}}
+{{- if $fechaSimulada -}}
+    {{- $hoy = time.AsTime $fechaSimulada $zonaHoraria -}}
+{{- end -}}
+{{- $hoy = $hoy | time.In $zonaHoraria -}}
+
+{{- $hoyTexto := $hoy | time.Format "2006-01-02" -}}
+{{- $hoy = time.AsTime $hoyTexto $zonaHoraria -}}
+
+{{- $mes := int ($hoy.Format "1") -}}
+{{- $anio := int ($hoy.Format "2006") -}}
+
+{{- $mesEnRango := or (ge $mes 10) (le $mes 7) -}}
+
+{{- $partialMostrar := "" -}}
+{{- $fechaMostrar := "" -}}
+{{- $numeroMostrar := 0 -}}
+
+{{- if $mesEnRango -}}
+
+    {{- $primerDiaTexto := printf "%04d-%02d-01" $anio $mes -}}
+    {{- $primerDia := time.AsTime $primerDiaTexto $zonaHoraria -}}
+
+    {{- $isoPrimer := 0 -}}
+    {{- $wdPrimer := $primerDia.Weekday -}}
+    {{- if eq $wdPrimer 0 -}}
+        {{- $isoPrimer = 7 -}}
+    {{- else -}}
+        {{- $isoPrimer = int $wdPrimer -}}
+    {{- end -}}
+
+    {{- $diasHastaPrimerSabado := sub 6 $isoPrimer -}}
+    {{- if lt $diasHastaPrimerSabado 0 -}}
+        {{- $diasHastaPrimerSabado = add $diasHastaPrimerSabado 7 -}}
+    {{- end -}}
+    {{- $primerSabado := $primerDia.AddDate 0 0 $diasHastaPrimerSabado -}}
+
+    {{- range $indice := seq 0 3 -}}
+
+        {{- $sabado := $primerSabado.AddDate 0 0 (mul $indice 7) -}}
+        {{- $inicioVentana := $sabado.AddDate 0 0 -6 -}}
+        {{- $finVentana    := $sabado.AddDate 0 0 -1 -}}
+
+        {{- $enVentana := and (not ($hoy.Before $inicioVentana)) (not ($hoy.After $finVentana)) -}}
+
+        {{- if $enVentana -}}
+            {{- $numeroMostrar = add $indice 1 -}}
+            {{- $partialMostrar = printf "bloque-temporada-sabado%d.html" $numeroMostrar -}}
+            {{- $fechaMostrar = $sabado -}}
+        {{- end -}}
+
+    {{- end -}}
+
+{{- end -}}
+
+{{- with $partialMostrar -}}
+    {{ partial . (dict
+        "page"   $
+        "fecha"  $fechaMostrar
+        "numero" $numeroMostrar
+        "nombre" "sábado"
+    ) }}
+{{- end -}}

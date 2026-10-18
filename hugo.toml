@@ -1,6 +1,7 @@
 baseURL = 'https://sanfranciscoysantaclara.es/'
 languageCode = 'es-es'
 title = 'Parroquia San Francisco y Santa Clara de Asís'
+defaultContentLanguage = "es"
 
 # Para URLs más limpias
 relativeURLs = false
