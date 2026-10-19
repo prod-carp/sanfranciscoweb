@@ -16,3 +16,4 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "Calendario actualizado." -ForegroundColor Green
+Read-Host "Presiona Enter para salir"
