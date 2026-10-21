@@ -1443,8 +1443,8 @@ a {
   margin: 0 auto;
 }
 .cid-vnhmbETu55 {
-  padding-top: 6rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 0rem;
   background-color: #fafafa;
 }
 .cid-vnhmbETu55 img {
@@ -1462,15 +1462,15 @@ a {
     max-width: 12.5%;
   }
 }
-.cid-vinYAWmFwc {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.cid-vyGatjCmws {
+  padding-top: 90px;
+  padding-bottom: 90px;
   background-color: #ffffff;
 }
-.cid-vinYAWmFwc .mbr-fallback-image.disabled {
+.cid-vyGatjCmws .mbr-fallback-image.disabled {
   display: none;
 }
-.cid-vinYAWmFwc .mbr-fallback-image {
+.cid-vyGatjCmws .mbr-fallback-image {
   display: block;
   background-size: cover;
   background-position: center center;
@@ -1479,27 +1479,43 @@ a {
   position: absolute;
   top: 0;
 }
-.cid-vinYAWmFwc .bg-instagram {
-  background: #f00075;
+.cid-vyGatjCmws .media-container-row {
+  justify-content: space-between;
+}
+.cid-vyGatjCmws .text-content {
+  max-width: 50%;
+}
+@media (max-width: 768px) {
+  .cid-vyGatjCmws .text-content {
+    max-width: none;
+  }
+}
+.cid-vyGatjCmws .mbr-iconfont-social {
+  margin: 0.5rem;
+  font-size: 32px;
+  display: flex;
+  border-radius: 50%;
+  text-align: center;
+  color: #6592e6;
+  border: 2px solid #6592e6;
+  justify-content: center;
+  align-content: center;
+  transition: all 0.3s;
+}
+.cid-vyGatjCmws .mbr-iconfont-social:before {
+  padding: 0.6rem;
+}
+.cid-vyGatjCmws .mbr-iconfont-social:hover {
+  background-color: #6592e6;
   color: #ffffff;
 }
-.cid-vinYAWmFwc .bg-instagram:hover {
-  background: #bd005c;
-}
-.cid-vinYAWmFwc .iconfont-wrapper {
-  display: inline-block;
-  font-size: 32px;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-}
-.cid-vinYAWmFwc [class^="socicon-"]:before,
-.cid-vinYAWmFwc [class*=" socicon-"]:before {
-  line-height: 55px;
-  padding: .6rem;
+@media (max-width: 768px) {
+  .cid-vyGatjCmws .icons {
+    justify-content: center !important;
+  }
+  .cid-vyGatjCmws .text-content * {
+    text-align: center;
+  }
 }
 .cid-vio2oWcDy2 {
   padding-top: 5rem;

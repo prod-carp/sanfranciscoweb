@@ -1,6 +1,30 @@
 {{ $siteName := "Parroquia San Francisco y Santa Clara de Asís" }}
-{{ $defaultImage := "/assets/images/index-meta-1200x630.webp" }}
+{{ $defaultImage := "/assets/images/nuevaportadaoct2026.webp" }}
 {{ $defaultDescription := "Parroquia San Francisco y Santa Clara de Asís en Fuenlabrada" }}
+{{ $churchSchema := dict
+  "@context" "https://schema.org"
+  "@type" "Church"
+  "name" "Parroquia San Francisco y Santa Clara de Asís"
+  "url" "https://sanfranciscoysantaclara.es"
+  "telephone" "+34 91 615 24 31"
+  "image" "https://sanfranciscoysantaclara.es/assets/images/nuevaportadaoct2026.webp"
+  "address" (dict
+    "@type" "PostalAddress"
+    "streetAddress" "Calle de Suecia, 2"
+    "addressLocality" "Fuenlabrada"
+    "addressRegion" "Madrid"
+    "postalCode" "28942"
+    "addressCountry" "ES"
+  )
+  "geo" (dict
+    "@type" "GeoCoordinates"
+    "latitude" 40.2896387
+    "longitude" -3.8060985
+  )
+  "sameAs" (slice "https://www.instagram.com/san.franciscoyclara/")
+-}}
+
+
 <head>
   <link rel="canonical" href="{{ .Permalink }}">
   <meta charset="UTF-8">
@@ -23,11 +47,12 @@ Parroquia San Francisco y Santa Clara de Asís | Fuenlabrada
 {{ if .IsHome }}
   <!-- HOME -->
   <meta property="og:type" content="website">
+  <script type="application/ld+json">{{ $churchSchema | jsonify | safeJS }}</script>
 {{ else if eq .Kind "page" }}
   <!-- CONTENIDO DE NOTICIA -->
   <meta property="og:type" content="article">
   <!-- Schema.org Church -->
-{{ $image := default "/assets/images/index-meta-1200x630.webp" .Params.image }}
+{{ $image := default "/assets/images/nuevaportadaoct2026.webp" .Params.image }}
 {{ $description := default .Title .Params.subtitle }}
 
 <script type="application/ld+json">
@@ -267,16 +292,16 @@ Parroquia San Francisco y Santa Clara de Asís | Fuenlabrada
 {{ end }}
 
 <meta property="og:site_name" content="Parroquia San Francisco y Santa Clara de Asís">
-<meta property="og:title" content="{{ .Title }} | Parroquia San Francisco y Santa Clara de Asís">
+<meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ default "Parroquia San Francisco y Santa Clara de Asís" .Params.subtitle }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ (default "/assets/images/index-meta-1200x630.webp" .Params.image) | absURL }}">
+<meta property="og:image" content="{{ (default "/assets/images/nuevaportadaoct2026.webp" .Params.image) | absURL }}">
 <meta property="og:locale" content="es_ES">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title }} | Parroquia San Francisco y Santa Clara de Asís">
+<meta name="twitter:title" content="{{ .Title }}">
 <meta name="twitter:description" content="{{ default "Parroquia San Francisco y Santa Clara de Asís" .Params.subtitle }}">
-<meta name="twitter:image" content="{{ (default "/assets/images/index-meta-1200x630.webp" .Params.image) | absURL }}">
+<meta name="twitter:image" content="{{ (default "/assets/images/nuevaportadaoct2026.webp" .Params.image) | absURL }}">
 
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">

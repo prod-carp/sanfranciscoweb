@@ -6,7 +6,7 @@ draft = false
 categorias = ["Formación"]
 tags = []
 weight = 0
-image = "/assets/images/7sacramentos.webp"
+image = "/assets/images/blog/7sacramentos.webp"
 +++
 
 Los sacramentos son uno de los mayores tesoros que Cristo ha dejado a su Iglesia. A través de ellos, Dios se hace presente en nuestra vida de una manera concreta, acompañándonos desde nuestro nacimiento hasta el final de nuestro camino en este mundo.

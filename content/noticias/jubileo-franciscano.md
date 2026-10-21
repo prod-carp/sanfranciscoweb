@@ -66,7 +66,7 @@ Que este tiempo de gracia nos ayude a renovar nuestra fe, nuestra esperanza y nu
 
 Para participar en la Santa Misa o recibir el sacramento de la reconciliación, puedes consultar los horarios actualizados:
 
-* **[Ver horario de Misas](https://sanfranciscoysantaclara.es/index.html#features8-2)**
-* **[Ver Horario de confesiones](https://sanfranciscoysantaclara.es/index.html#features8-8v)**
+* **[Ver horario de Misas](https://sanfranciscoysantaclara.es/index.html#horario-misas)**
+* **[Ver Horario de confesiones](https://sanfranciscoysantaclara.es/index.html#horario-confesiones)**
 
 Os esperamos durante este Año Jubilar Franciscano para compartir juntos este camino de fe y renovación espiritual.

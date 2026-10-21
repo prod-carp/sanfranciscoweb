@@ -6,7 +6,7 @@ draft = false
 categorias = ["Formación"]
 tags = []
 weight = 0
-image = "/assets/images/donesespiritusanto.webp"
+image = "/assets/images/blog/donesespiritusanto.webp"
 +++
 
 El Espíritu Santo es la tercera Persona de la Santísima Trinidad y el gran regalo que Jesucristo prometió a sus discípulos. Desde el día de Pentecostés,
