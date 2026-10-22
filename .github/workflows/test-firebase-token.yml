@@ -1,0 +1,29 @@
+
+name: Test Firebase Token
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-token:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Comprobar FIREBASE_TOKEN
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: |
+          if [ -z "$FIREBASE_TOKEN" ]; then
+            echo "ERROR: FIREBASE_TOKEN está vacío o no está disponible."
+            exit 1
+          fi
+
+          firebase projects:list --token "$FIREBASE_TOKEN"
