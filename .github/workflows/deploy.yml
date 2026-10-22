@@ -147,15 +147,4 @@ jobs:
       # ==========================================================
 
       - name: Deploy a Firebase Hosting
-        run: |
-          set +e
-
-          firebase deploy --only hosting --non-interactive
-
-          EXIT_CODE=$?
-
-          if [ $EXIT_CODE -ne 0 ]; then
-            echo "Firebase devolvió warning/error final, pero el deploy puede haberse aplicado correctamente."
-            echo "Se marca como éxito para evitar falsos negativos en GitHub."
-            exit 0
-          fi
+        run: firebase deploy --only hosting --non-interactive
