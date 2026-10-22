@@ -27,3 +27,35 @@ jobs:
           fi
 
           firebase projects:list --token "$FIREBASE_TOKEN"
+
+
+      - name: Comprobar cuenta de servicio
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          set -eu
+
+          if [ -z "$FIREBASE_SERVICE_ACCOUNT" ]; then
+            echo "ERROR: El secreto JSON está vacío o no está disponible."
+            exit 1
+          fi
+
+          KEY_FILE="$RUNNER_TEMP/firebase-key.json"
+          printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$KEY_FILE"
+          chmod 600 "$KEY_FILE"
+
+          export GOOGLE_APPLICATION_CREDENTIALS="$KEY_FILE"
+
+          node -e "
+            const fs = require('fs');
+            const key = JSON.parse(fs.readFileSync(process.env.GOOGLE_APPLICATION_CREDENTIALS, 'utf8'));
+            if (!key.client_email || !key.private_key || !key.project_id) {
+              throw new Error('El JSON no contiene los campos esperados.');
+            }
+            console.log('JSON válido. Tipo:', key.type);
+            console.log('Proyecto de la credencial:', key.project_id);
+            console.log('Correo de la cuenta:', key.client_email);
+          "
+
+          npx --yes firebase-tools projects:list --non-interactive
+
