@@ -1,0 +1,292 @@
+{{/*
+  Partial: agenda-dinamica.html
+  Uso en layouts/index.html:
+    {{ partial "agenda-dinamica.html" . }}
+
+  Fuentes:
+    - data/eventos.json
+    - data/horarios.json (solo la sección "misas" genera recurrencias)
+    - data/actividades.yaml
+
+  La agenda se recalcula en el navegador, por lo que el cambio de estado
+  horario no requiere un nuevo deploy. Los datos de Google Calendar sí se
+  actualizan cuando el workflow que genera eventos.json vuelve a ejecutarse.
+*/}}
+
+{{ $eventos := site.Data.eventos | default (slice) }}
+{{ $horarios := site.Data.horarios | default dict }}
+{{ $actividades := site.Data.actividades | default (slice) }}
+
+<section class="agenda-dinamica" id="agenda-dinamica" aria-label="Agenda parroquial">
+  <div class="agenda-dinamica__principal">
+    <div class="agenda-dinamica__cabecera">
+      <span class="agenda-dinamica__cabecera-icono" aria-hidden="true">🔔</span>
+      <div>
+        <p class="agenda-dinamica__sobretitulo">Agenda parroquial</p>
+        <h2 id="agenda-titulo-dia">Actividades de hoy</h2>
+      </div>
+    </div>
+    <div id="agenda-actividades-dia" class="agenda-dinamica__lista" aria-live="polite">
+      <p class="agenda-dinamica__vacio">Cargando actividades…</p>
+    </div>
+  </div>
+
+  <div class="agenda-dinamica__secundaria">
+    <h3>Próximas actividades destacadas</h3>
+    <div id="agenda-proximas" class="agenda-dinamica__lista agenda-dinamica__lista--compacta" aria-live="polite">
+      <p class="agenda-dinamica__vacio">Cargando próximas actividades…</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.agenda-dinamica{display:grid;gap:1rem;margin:1.5rem 0}
+.agenda-dinamica__principal{padding:1.15rem;border:1px solid var(--border-color,rgba(127,127,127,.25));border-radius:1rem;background:var(--card-background,rgba(127,127,127,.045))}
+.agenda-dinamica__cabecera{display:flex;align-items:center;gap:.8rem;margin-bottom:.8rem}
+.agenda-dinamica__cabecera-icono{display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:.8rem;background:var(--primary-color,rgba(127,127,127,.12));font-size:1.25rem}
+.agenda-dinamica__sobretitulo{margin:0;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;opacity:.7}
+.agenda-dinamica h2,.agenda-dinamica h3{margin:.1rem 0;font-size:1.25rem}
+.agenda-dinamica__lista{display:grid;gap:.55rem}
+.agenda-dinamica__actividad{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:.7rem;padding:.7rem .15rem;border-top:1px solid var(--border-color,rgba(127,127,127,.18))}
+.agenda-dinamica__actividad:first-child{border-top:0}
+.agenda-dinamica__actividad--siguiente{font-weight:600}
+.agenda-dinamica__hora{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:700}
+.agenda-dinamica__detalle{min-width:0}
+.agenda-dinamica__nombre{display:block;overflow-wrap:anywhere}
+.agenda-dinamica__fecha{display:block;font-size:.82rem;opacity:.7;margin-bottom:.1rem}
+.agenda-dinamica__icono{margin-right:.35rem}
+.agenda-dinamica__acciones{display:flex;align-items:center;gap:.45rem}
+.agenda-dinamica__info{font-size:.85rem;text-decoration:none;white-space:nowrap}
+.agenda-dinamica__info-icono{display:none;align-items:center;justify-content:center;width:1.8rem;height:1.8rem;border:1px solid currentColor;border-radius:50%;font-weight:700}
+.agenda-dinamica__estado{display:inline-block;margin-top:.3rem;padding:.16rem .45rem;border-radius:999px;background:#b42318;color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.04em}
+.agenda-dinamica__estrella{color:#c58b00;margin-right:.25rem}
+.agenda-dinamica__secundaria{padding:.1rem .2rem}
+.agenda-dinamica__secundaria h3{margin:0 0 .5rem}
+.agenda-dinamica__lista--compacta .agenda-dinamica__actividad{padding:.55rem .1rem}
+.agenda-dinamica__vacio{opacity:.7;font-size:.92rem}
+@media(max-width:520px){
+ .agenda-dinamica__principal{padding:.9rem}
+ .agenda-dinamica__actividad{grid-template-columns:auto 1fr auto;gap:.5rem}
+ .agenda-dinamica__info-texto{display:none}
+ .agenda-dinamica__info-icono{display:inline-flex}
+}
+</style>
+
+<script type="application/json" id="agenda-datos-eventos">{{ $eventos | jsonify | safeJS }}</script>
+<script type="application/json" id="agenda-datos-horarios">{{ $horarios | jsonify | safeJS }}</script>
+<script type="application/json" id="agenda-datos-manuales">{{ $actividades | jsonify | safeJS }}</script>
+
+<script>
+(() => {
+  const root = document.getElementById('agenda-dinamica');
+  if (!root || root.dataset.inicializada === '1') return;
+  root.dataset.inicializada = '1';
+
+  const leer = id => {
+    try { return JSON.parse(document.getElementById(id)?.textContent || 'null'); }
+    catch (_) { return null; }
+  };
+  const eventosCalendario = leer('agenda-datos-eventos') || [];
+  const datosHorarios = leer('agenda-datos-horarios') || {};
+  const actividadesManuales = leer('agenda-datos-manuales') || [];
+  const TZ = 'Europe/Madrid';
+  const ahora = () => new Date();
+
+  // Las claves se comparan sin distinguir mayúsculas ni tildes.
+  const normalizar = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const diccionario = [
+    { claves:['misa','eucaristia'], icono:'🕊️', url:'/horarios/#misas' },
+    { claves:['rosario'], icono:'📿', url:'/oracion/' },
+    { claves:['adoracion','santisimo'], icono:'🙏', url:'/horarios/#adoracion' },
+    { claves:['matrimonio','matrimonios','cana'], icono:'💍', url:'/grupos/' },
+    { claves:['bautizo','bautismo'], icono:'💧', url:'/sacramentos/bautismo/' },
+    { claves:['catequesis','catequistas','confirmacion','life teen'], icono:'✝️', url:'/catequesis/' },
+    { claves:['retiro'], icono:'🕯️', url:'/actualidad/' },
+    { claves:['mercadillo','solidario'], icono:'🤝', url:'/actualidad/' },
+    { claves:['obispo'], icono:'⛪', url:'/actualidad/' },
+    { claves:['reunion','reunión'], icono:'👥', url:'/grupos/' },
+    { claves:['novena','santo','santa teresa','san francisco'], icono:'🌹', url:'/actualidad/' },
+    { claves:['despacho'], icono:'🗓️', url:'/horarios/' }
+  ];
+  function metadatos(titulo, urlExplicita, iconoExplicito) {
+    const n = normalizar(titulo);
+    const entrada = diccionario.find(d => d.claves.some(k => n.includes(normalizar(k))));
+    return {
+      url: urlExplicita || (entrada ? entrada.url : ''),
+      icono: iconoExplicito || (entrada ? entrada.icono : '📅')
+    };
+  }
+  function fechaLocal(y,m,d,h=0,min=0) { return new Date(y,m,d,h,min,0,0); }
+  function claveDia(d) { return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
+  function inicioDia(d) { return fechaLocal(d.getFullYear(),d.getMonth(),d.getDate()); }
+  function parseHora(s) {
+    const m = String(s || '').match(/(?:^|,\s*)(\d{1,2}):(\d{2})/);
+    return m ? {h:Number(m[1]), min:Number(m[2])} : null;
+  }
+  function parseFechaISO(s) {
+    if (!s) return null;
+    const d = new Date(s);
+    return Number.isNaN(d.getTime()) ? null : d;
+  }
+  function dentroTemporada(item, d) {
+    if (!item.desde && !item.hasta) return true;
+    const mmdd = `${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    const desde = item.desde || '01-01', hasta = item.hasta || '12-31';
+    return desde <= hasta ? (mmdd >= desde && mmdd <= hasta) : (mmdd >= desde || mmdd <= hasta);
+  }
+  function horaDeTemporada(item, d) {
+    const mes = d.getMonth()+1;
+    const temporada = (item.temporadas || []).find(t => {
+      const desde = Number(t.desdeMes), hasta = Number(t.hastaMes);
+      return desde <= hasta ? (mes >= desde && mes <= hasta) : (mes >= desde || mes <= hasta);
+    });
+    return temporada?.hora || item.hora || '';
+  }
+  function esDomingo(d) { return d.getDay() === 0; }
+  function generarMisas() {
+    const secciones = datosHorarios.secciones || [];
+    const seccion = secciones.find(s => s.id === 'misas' && s.visible !== false);
+    if (!seccion) return [];
+    const salida = [];
+    const base = inicioDia(ahora());
+    // Se genera una ventana de 120 días; permite alimentar ambas listas.
+    for (let offset=0; offset<120; offset++) {
+      const dia = new Date(base); dia.setDate(base.getDate()+offset);
+      for (const item of (seccion.horarios || [])) {
+        if (!dentroTemporada(item,dia)) continue;
+        const nombre = normalizar(item.nombre);
+        const textoHorario = normalizar(item.hora);
+        let coincide = false;
+        if (nombre.includes('martes a sabados') || nombre.includes('martes a sabado')) coincide = dia.getDay() >= 2 && dia.getDay() <= 6;
+        else if (nombre.includes('domingos') || textoHorario.includes('domingo')) coincide = esDomingo(dia);
+        else if (nombre.includes('diario')) coincide = true;
+        else {
+          // Para horarios con día explícito en "nombre", admite días individuales.
+          const dias = [
+            ['lunes',1],['martes',2],['miercoles',3],['jueves',4],
+            ['viernes',5],['sabado',6],['domingo',0]
+          ];
+          coincide = dias.some(([texto,n]) => nombre.includes(texto) && dia.getDay() === n);
+        }
+        // "Domingos y festivos": se generan los domingos. Los festivos que
+        // caigan entre semana deben introducirse en eventos.json o actividades.yaml.
+        if (!coincide) continue;
+        const hora = parseHora(horaDeTemporada(item,dia));
+        if (!hora) continue;
+        const inicio = fechaLocal(dia.getFullYear(),dia.getMonth(),dia.getDate(),hora.h,hora.min);
+        salida.push({
+          titulo: item.nombre?.toLowerCase().includes('misa con niños') ? 'Misa con niños' : 'Santa Misa',
+          inicio: inicio.toISOString(), fin: new Date(inicio.getTime()+60*60000).toISOString(),
+          fuente:'horarios', prioridad:1, recurrente:true, url:item.url || '', icono:'🕊️'
+        });
+      }
+    }
+    return salida;
+  }
+  function convertirManual(item) {
+    if (!item || item.visible === false || !item.fecha || !item.hora || !item.titulo) return null;
+    const m = String(item.fecha).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    const h = String(item.hora).match(/^(\d{1,2}):(\d{2})$/);
+    if (!m || !h) return null;
+    const inicio = fechaLocal(+m[1],+m[2]-1,+m[3],+h[1],+h[2]);
+    let fin;
+    if (item.fin && /^\d{1,2}:\d{2}$/.test(item.fin)) {
+      const p=item.fin.split(':'); fin=fechaLocal(+m[1],+m[2]-1,+m[3],+p[0],+p[1]);
+      if (fin <= inicio) fin.setDate(fin.getDate()+1);
+    } else fin = new Date(inicio.getTime()+60*60000);
+    return {titulo:item.titulo,inicio:inicio.toISOString(),fin:fin.toISOString(),
+      fuente:'actividades',prioridad:3,url:item.url||'',icono:item.icono||'',
+      destacado:item.destacado===true,extraordinario:item.extraordinario===true};
+  }
+  function convertirCalendario(item) {
+    const inicio=parseFechaISO(item.inicio), fin=parseFechaISO(item.fin) || (inicio && new Date(inicio.getTime()+60*60000));
+    if (!inicio || !item.titulo) return null;
+    return {titulo:item.titulo,inicio:inicio.toISOString(),fin:fin.toISOString(),
+      fuente:'calendario',prioridad:2,url:item.url||'',icono:item.icono||''};
+  }
+  function claveConflicto(e) {
+    const d=new Date(e.inicio);
+    return `${claveDia(d)}-${d.getHours()}:${d.getMinutes()}`;
+  }
+  function unificar() {
+    const todos = [
+      ...generarMisas(),
+      ...eventosCalendario.map(convertirCalendario).filter(Boolean),
+      ...actividadesManuales.map(convertirManual).filter(Boolean)
+    ];
+    // Un evento por hora de inicio: actividades.yaml > eventos.json > horarios.json.
+    const elegidos = new Map();
+    for (const e of todos.sort((a,b) => b.prioridad-a.prioridad)) {
+      const k=claveConflicto(e);
+      if (!elegidos.has(k)) elegidos.set(k,e);
+    }
+    return [...elegidos.values()].sort((a,b)=>new Date(a.inicio)-new Date(b.inicio)).map(e=>{
+      const meta=metadatos(e.titulo,e.url,e.icono);
+      return {...e,url:meta.url,icono:meta.icono};
+    });
+  }
+  function fmtHora(d) { return new Intl.DateTimeFormat('es-ES',{hour:'2-digit',minute:'2-digit',hour12:false}).format(d); }
+  function fmtFecha(d, incluirDia=true) {
+    const hoy=inicioDia(ahora()), manana=new Date(hoy); manana.setDate(manana.getDate()+1);
+    if (claveDia(d)===claveDia(hoy)) return 'Hoy';
+    if (claveDia(d)===claveDia(manana)) return 'Mañana';
+    return new Intl.DateTimeFormat('es-ES',{weekday:'long',day:'numeric',month:'short'}).format(d);
+  }
+  function activa(e, now) {
+    const ini=new Date(e.inicio), fin=new Date(e.fin);
+    return now >= ini && now <= new Date(fin.getTime()+30*60000);
+  }
+  function visiblePrincipal(e, now) {
+    const ini=new Date(e.inicio), fin=new Date(e.fin);
+    return fin.getTime()+30*60000 >= now.getTime();
+  }
+  function escapar(s) {
+    return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+  function htmlActividad(e, compacta=false, primera=false, now=new Date()) {
+    const ini=new Date(e.inicio), enCurso=activa(e,now), url=e.url;
+    const fecha = compacta ? `<span class="agenda-dinamica__fecha">${escapar(fmtFecha(ini))} · ${fmtHora(ini)}</span>` : '';
+    const hora = compacta ? '' : `<span class="agenda-dinamica__hora">${fmtHora(ini)}</span>`;
+    const estrella = e.destacado ? '<span class="agenda-dinamica__estrella" title="Actividad destacada" aria-label="Actividad destacada">★</span>' : '';
+    const enlace = url ? `<a class="agenda-dinamica__info" href="${escapar(url)}" aria-label="Más información: ${escapar(e.titulo)}"><span class="agenda-dinamica__info-texto">Más información</span><span class="agenda-dinamica__info-icono" aria-hidden="true">i</span></a>` : '';
+    const estado = enCurso ? '<span class="agenda-dinamica__estado">EN ESTOS MOMENTOS</span>' : '';
+    return `<article class="agenda-dinamica__actividad${primera?' agenda-dinamica__actividad--siguiente':''}">
+      ${hora}
+      <div class="agenda-dinamica__detalle">${fecha}<span class="agenda-dinamica__nombre">${estrella}<span class="agenda-dinamica__icono" aria-hidden="true">${escapar(e.icono)}</span>${escapar(e.titulo)}</span>${estado}</div>
+      <div class="agenda-dinamica__acciones">${enlace}</div>
+    </article>`;
+  }
+  function render() {
+    const now=ahora(), todos=unificar();
+    const hoy=claveDia(now), mananaDate=new Date(now); mananaDate.setDate(mananaDate.getDate()+1);
+    const manana=claveDia(mananaDate);
+    const vigentes=todos.filter(e=>visiblePrincipal(e,now));
+    const deHoy=vigentes.filter(e=>claveDia(new Date(e.inicio))===hoy);
+    const deManana=vigentes.filter(e=>claveDia(new Date(e.inicio))===manana);
+    const principal=deHoy.length ? deHoy : deManana;
+    document.getElementById('agenda-titulo-dia').textContent = deHoy.length ? 'Actividades de hoy' : (deManana.length ? 'Actividades de mañana' : 'Próximas actividades');
+    document.getElementById('agenda-actividades-dia').innerHTML = principal.length
+      ? principal.map((e,i)=>htmlActividad(e,false,i===0,now)).join('')
+      : '<p class="agenda-dinamica__vacio">No hay actividades próximas registradas.</p>';
+
+    // La lista secundaria excluye todas las misas rutinarias, pero permite
+    // eventos extraordinarios que coincidan con una misa.
+    const especiales=todos.filter(e=>e.fuente!=='horarios' && new Date(e.inicio).getTime() >= now.getTime()-30*60000);
+    const destacadas=especiales.filter(e=>e.destacado);
+    const normales=especiales.filter(e=>!e.destacado);
+    const lista=[];
+    if (destacadas.length) lista.push(destacadas[0]);
+    for (const e of normales) {
+      if (lista.length >= (destacadas.length ? 5 : 4)) break;
+      lista.push(e);
+    }
+    lista.sort((a,b)=>new Date(a.inicio)-new Date(b.inicio));
+    document.getElementById('agenda-proximas').innerHTML = lista.length
+      ? lista.map(e=>htmlActividad(e,true,false,now)).join('')
+      : '<p class="agenda-dinamica__vacio">Próximamente anunciaremos nuevas actividades.</p>';
+  }
+  render();
+  // Refresca etiquetas y listas; no hace falta desplegar para que avance la hora.
+  window.setInterval(render, 30000);
+})();
+</script>

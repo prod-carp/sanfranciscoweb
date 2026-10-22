@@ -1,0 +1,149 @@
+# # Actividades puntuales que se mostrarán en la agenda.
+# Formato de fecha: AAAA-MM-DD. Hora y fin: HH:MM en hora local de Madrid.
+# Si se omite "fin", se considera que la actividad dura una hora.
+# "destacado: true" fija la actividad en la lista compacta con una estrella.
+#
+# Campos:
+# - titulo (obligatorio)
+# - fecha (obligatorio)
+# - hora (obligatorio)
+# - fin (opcional)
+# - url (opcional; si se omite se intenta resolver por palabras clave)
+# - icono (opcional; si se omite se intenta resolver por palabras clave)
+# - destacado (opcional, true/false) activado se lista siempre
+# - extraordinario (opcional, true/false)
+# - visible (opcional, false para ocultarlo)
+#
+# Copia este ejemplo y elimina el # de cada línea para añadir una actividad:
+#
+# - titulo: "Mercadillo solidario"
+#   fecha: "2026-10-24"
+#   hora: "10:00"
+#   fin: "14:00"
+#   destacado: true
+#   extraordinario: true
+#   visible: true
+#   url: "/actualidad/mercadillo-solidario/"
+#   icono: "🤝"
+#
+# - titulo: "Encuentro de matrimonios"
+#   fecha: "2026-11-14"
+#   hora: "18:00"
+#   fin: "20:00"
+#   url: "/grupos/grupo-cana/"
+#   icono: "💍"
+#   destacado: true
+# 
+#  Recurrencia semanal
+# - titulo: "Exposición al Santísimo"
+#   hora: "10:00"
+#   fin: "19:30"
+#   recurrencia:
+#     tipo: semanal
+#     dias: [jueves]
+# 
+# - titulo: "Santa Misa [Operación Kilo y colecta para Cáritas Parroquial]"
+#   hora: "12:30"
+#   fin: "13:30"
+#   visible: true
+#   recurrencia:
+#     tipo: mensual
+#     dia: domingo
+#     ordinal: 2
+
+- titulo: "Convivencia curso Catequesis"
+  fecha: "2026-11-21"
+  hora: "11:00"
+  fin: "18:00"
+  url: ""
+  destacado: true
+
+
+- titulo: "Adoración y Oración por los enfermos"
+  fecha: "2026-10-24"
+  hora: "18:30"
+  fin: "19:30"
+  url: "/noticias/santoral/10-22-san-juan-pablo-ii/"
+  icono: "🔆"
+#  destacado: true
+
+
+- titulo: "Paraliturgia de Navidad"
+  fecha: "2026-12-20"
+  hora: "12:30"
+  fin: "14:30"
+  url: ""
+  icono: "🔆"
+
+
+- titulo: "Mercadillo de Navidad"
+  fecha: "2026-11-22"
+  hora: "12:00"
+  fin: "14:00"
+  destacado: false
+  visible: true
+  url: "/actualidad/mercadillo-solidario/"
+  icono: "🤝"
+
+- titulo: "Mercadillo de Navidad"
+  fecha: "2026-11-29"
+  hora: "12:00"
+  fin: "14:00"
+  destacado: false
+  visible: true
+  url: "/actualidad/mercadillo-solidario/"
+  icono: "🤝"
+
+# Día de Todos los Santos
+- titulo: "Santa Misa [Por todos los fieles difuntos]"
+  fecha: "2026-11-02"
+  hora: "19:30"
+  fin: "20:00"
+  icono: "🔆"
+
+
+# Segundo domingo de cada mes
+- titulo: "Santa Misa [Colecta para Cáritas Parroquial]"
+  hora: "11:00"
+  fin: "12:00"
+  visible: true
+  recurrencia:
+    tipo: mensual
+    dia: domingo
+    ordinal: 2
+
+- titulo: "Santa Misa [Colecta para Cáritas Parroquial]"
+  hora: "12:30"
+  fin: "13:30"
+  visible: true
+  recurrencia:
+    tipo: mensual
+    dia: domingo
+    ordinal: 2
+
+- titulo: "Operación Kilo"
+  hora: "11:00"
+  fin: "13:30"
+  visible: true
+  recurrencia:
+    tipo: mensual
+    dia: domingo
+    ordinal: 2
+
+# Segundo sabado de cada mes
+- titulo: "Adoración nocturna"
+  hora: "18:30"
+  fin: "23:30"
+  visible: true
+  recurrencia:
+    tipo: mensual
+    dia: sabado
+    ordinal: 2
+
+# Todos los jueves
+- titulo: "Exposición al Santísimo"
+  hora: "10:00"
+  fin: "19:30"
+  recurrencia:
+    tipo: semanal
+    dias: [jueves]
