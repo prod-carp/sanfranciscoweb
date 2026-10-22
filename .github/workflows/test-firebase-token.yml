@@ -59,3 +59,19 @@ jobs:
 
           npx --yes firebase-tools projects:list --non-interactive
 
+
+      - name: Comprobar acceso a Firebase Hosting
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          set -eu
+
+          KEY_FILE="$RUNNER_TEMP/firebase-key.json"
+          printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$KEY_FILE"
+          chmod 600 "$KEY_FILE"
+          export GOOGLE_APPLICATION_CREDENTIALS="$KEY_FILE"
+
+          npx --yes firebase-tools hosting:sites:list \
+            --project sanfranciscoyclara-d34c2 \
+            --non-interactive
+
