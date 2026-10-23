@@ -63,9 +63,9 @@
   fecha: "2026-10-24"
   hora: "18:30"
   fin: "19:30"
-  url: "/noticias/santoral/10-22-san-juan-pablo-ii/"
+  url: ""
   icono: "🔆"
-#  destacado: true
+  destacado: true
 
 
 - titulo: "Paraliturgia de Navidad"
@@ -99,7 +99,7 @@
   fecha: "2026-11-02"
   hora: "19:30"
   fin: "20:00"
-  icono: "🔆"
+  icono: "⛪"
 
 
 # Segundo domingo de cada mes
