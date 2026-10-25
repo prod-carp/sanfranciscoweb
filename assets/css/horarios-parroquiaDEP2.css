@@ -1,0 +1,381 @@
+/* ==========================================================
+   SECCIÓN CONTENEDORA — HORARIOS
+   Fondo gris con padding simétrico. El componente interior
+   (horarios-parroquia) se encarga solo de sus tarjetas.
+   ========================================================== */
+
+.seccion-horarios {
+  --sh-bg: #f4f2ed;          /* gris cálido, combina con el dorado */
+  --sh-padding-y: clamp(2.5rem, 5vw, 4.5rem);
+
+  padding-block: var(--sh-padding-y);
+  background: var(--sh-bg);
+  /* Opcional: separación del resto de secciones de la página */
+  margin-block: 0;
+}
+
+/* El container de Bootstrap ya centra y limita el ancho.
+   Solo aseguramos un poco de aire lateral en móviles muy estrechos. */
+.seccion-horarios > .container {
+  padding-inline: clamp(1rem, 4vw, 1.5rem);
+}
+
+/* ==========================================================
+   HORARIOS PARROQUIALES — Parroquia San Francisco y Santa Clara
+   Compatible con layouts/partials/horarios-parroquia.html
+   ========================================================== */
+
+/* Cabecera con icono y título */
+.horarios-parroquia .horario-cabecera {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.1rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--hp-border);
+}
+
+.horarios-parroquia .horario-cabecera h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--hp-ink);
+  font-size: clamp(1.40rem, 2vw, 1.60rem);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+.horarios-parroquia .horario-icono {
+  display: inline-flex;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  color: var(--hp-gold);
+  background: var(--hp-gold-soft);
+  border: 1px solid #e9dfcc;
+  border-radius: 13px;
+}
+
+.horarios-parroquia .horario-icono svg {
+  display: block;
+  width: 23px;
+  height: 23px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+
+.horarios-parroquia {
+  --hp-ink: #23241f;
+  --hp-muted: #55574f;          /* más oscuro para mejor contraste */
+  --hp-gold: #8a6a35;
+  --hp-gold-dark: #5c4319;      /* más profundo, mejor legibilidad */
+  --hp-gold-soft: #f6f1e6;
+  --hp-gold-line: #c9ad78;
+  --hp-border: #e8e1d5;
+  --hp-divider: #efeae1;
+  --hp-card: #ffffff;
+  --hp-shadow: 0 8px 26px rgba(50, 42, 28, 0.06);
+  --hp-shadow-hover: 0 14px 34px rgba(50, 42, 28, 0.1);
+
+  width: 100%;
+  color: var(--hp-ink);
+  font-family: inherit;
+  /* Escala tipográfica fluida: crece con el viewport */
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.12rem);
+  line-height: 1.55;
+}
+
+.horarios-parroquia *,
+.horarios-parroquia *::before,
+.horarios-parroquia *::after {
+  box-sizing: border-box;
+}
+
+/* ---------- Rejilla ---------- */
+.horarios-parroquia .horarios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  align-items: stretch;
+}
+
+/* ---------- Tarjetas ---------- */
+.horarios-parroquia .horario-card {
+  position: relative;
+  min-width: 0;
+  padding: clamp(1.35rem, 2.6vw, 1.9rem);
+  overflow: hidden;
+  background: var(--hp-card);
+  border: 1px solid var(--hp-border);
+  border-radius: 18px;
+  box-shadow: var(--hp-shadow);
+  transition: transform 180ms ease, box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.horarios-parroquia .horario-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--hp-gold-line);
+  box-shadow: var(--hp-shadow-hover);
+}
+
+.horarios-parroquia .horario-card::before {
+  position: absolute;
+  top: 0;
+  right: 1.4rem;
+  left: 1.4rem;
+  height: 3px;
+  background: linear-gradient(90deg, var(--hp-gold-line), #e6d7b6);
+  border-radius: 0 0 3px 3px;
+  content: "";
+}
+
+.horarios-parroquia .horario-misas {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #ffffff 0%, #fdfbf6 100%);
+}
+
+/* ---------- Encabezados ---------- */
+.horarios-parroquia .horario-card > h2 {
+  margin: 0 0 1.25rem;
+  padding: 0 0 1rem;
+  color: var(--hp-ink);
+  border-bottom: 2px solid var(--hp-gold-soft);
+  font-size: clamp(1.35rem, 2.4vw, 1.6rem);
+  font-weight: 750;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+/* ---------- Filas ---------- */
+.horarios-parroquia .horario-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.1rem 0;
+}
+
+.horarios-parroquia .horario-item + .horario-item {
+  border-top: 1px solid var(--hp-divider);
+}
+
+.horarios-parroquia .horario-texto {
+  min-width: 0;
+}
+
+.horarios-parroquia .horario-texto h3 {
+  margin: 0;
+  color: var(--hp-ink);
+  font-size: clamp(1.08rem, 1.6vw, 1.2rem);
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.horarios-parroquia .horario-texto p {
+  margin: 0.4rem 0 0;
+  color: var(--hp-muted);
+  font-size: clamp(0.98rem, 1.2vw, 1.05rem);
+  line-height: 1.55;
+}
+
+/* ---------- Hora destacada ---------- */
+.horarios-parroquia .horario-hora {
+  flex: 0 0 auto;
+  padding: 0.45rem 0.85rem;
+  color: var(--hp-gold-dark);
+  background: var(--hp-gold-soft);
+  border-radius: 10px;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+/* ---------- Tarjeta de misas con más presencia ---------- */
+.horarios-parroquia .horario-misas .horario-item {
+  padding: 1.25rem 0;
+}
+
+.horarios-parroquia .horario-misas .horario-texto h3 {
+  font-size: clamp(1.15rem, 1.8vw, 1.3rem);
+}
+
+.horarios-parroquia .horario-misas .horario-texto p {
+  font-size: clamp(1rem, 1.3vw, 1.08rem);
+}
+
+.horarios-parroquia .horario-misas .horario-hora {
+  font-size: clamp(1.3rem, 2.6vw, 1.55rem);
+  padding: 0.5rem 1rem;
+}
+
+/* ---------- Bloque padre + subhorarios ---------- */
+
+/* El padre con subhorarios no lleva línea superior entre él y sus hijos.
+   La línea de separación la ponemos al bloque completo. */
+.horarios-parroquia .horario-item--padre {
+  padding-bottom: 0.4rem;
+  /* Quitamos la línea que normalmente separa esta fila de la anterior:
+     la línea se gestiona en .horario-sublista + .horario-item */
+  border-top: 1px solid var(--hp-divider);
+}
+
+/* La primera fila de la tarjeta nunca lleva línea arriba */
+.horarios-parroquia .horario-item:first-child,
+.horarios-parroquia .horario-cabecera + .horario-item,
+.horarios-parroquia .horario-cabecera + .horario-sublista {
+  border-top: 0;
+}
+
+/* La línea de separación aparece ANTES de la primera fila de cada bloque
+   (padre o item simple), no entre padre e hijos. */
+.horarios-parroquia .horario-item + .horario-item,
+.horarios-parroquia .horario-item + .horario-sublista,
+.horarios-parroquia .horario-sublista + .horario-item {
+  border-top: 1px solid var(--hp-divider);
+}
+
+/* Contenedor de subitems: sin padding lateral extra, con indentación ligera */
+.horarios-parroquia .horario-sublista {
+  padding-left: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Subitems compactos y sin línea entre ellos */
+.horarios-parroquia .horario-subitem {
+  padding: 0.35rem 0;
+  opacity: 1;
+}
+
+.horarios-parroquia .horario-subitem + .horario-subitem {
+  border-top: 0;
+}
+
+.horarios-parroquia .horario-subitem h3 {
+  font-size: 0.98em;
+  font-weight: 500;
+  color: var(--hp-muted);
+}
+
+.horarios-parroquia .horario-subitem .horario-hora {
+  font-size: clamp(1rem, 1.6vw, 1.1rem);
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+}
+
+
+/* ---------- Enlaces ---------- */
+.horarios-parroquia a {
+  color: var(--hp-gold-dark);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.horarios-parroquia a:hover {
+  color: var(--hp-ink);
+}
+
+.horarios-parroquia a:focus-visible {
+  outline: 2px solid var(--hp-gold);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* ---------- Tablet y móvil ---------- */
+@media (max-width: 1000px) {
+  .horarios-parroquia .horarios-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.1rem;
+  }
+
+  .horarios-parroquia .horario-misas {
+    grid-column: auto;
+  }
+
+  .horarios-parroquia .horario-card {
+    padding: 1.35rem;
+    border-radius: 15px;
+  }
+
+  .horarios-parroquia .horario-card:hover {
+    transform: none;
+  }
+}
+
+/* Apilado SOLO cuando la fila concreta no quepa */
+.horarios-parroquia .horario-item {
+  flex-wrap: wrap;                       /* permite que la hora baje si no cabe */
+  align-items: baseline;                  /* alineación elegante entre texto y hora */
+  gap: 0.5rem 0.75rem;                    /* fila / columna */
+}
+
+.horarios-parroquia .horario-texto {
+  flex: 1 1 auto;                         /* el texto ocupa lo que necesite */
+  min-width: 0;
+}
+
+.horarios-parroquia .horario-hora {
+  flex: 0 0 auto;                         /* la hora nunca se encoge */
+  text-align: right;                      /* si baja, alineada a la derecha */
+}
+
+
+
+@media (max-width: 380px) {
+  .horarios-parroquia {
+    font-size: 1rem;
+  }
+
+  .horarios-parroquia .horario-card {
+    padding: 1.1rem;
+  }
+
+  .horarios-parroquia .horario-texto h3 {
+    font-size: 1.05rem;
+  }
+
+  .horarios-parroquia .horario-texto p {
+    font-size: 0.96rem;
+  }
+
+  .horarios-parroquia .horario-hora {
+    font-size: 1.08rem;
+  }
+}
+
+/* ---------- Accesibilidad ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .horarios-parroquia .horario-card {
+    transition: none;
+  }
+
+  .horarios-parroquia .horario-card:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .horarios-parroquia {
+    --hp-muted: #333;
+    --hp-border: #b8b0a0;
+    --hp-divider: #d0c8b8;
+    --hp-gold-dark: #3d2b0a;
+  }
+
+  .horarios-parroquia .horario-hora {
+    background: #fff;
+    border: 1px solid var(--hp-gold-dark);
+  }
+}

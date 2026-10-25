@@ -1,0 +1,126 @@
+
+{{- $datos := site.Data.horarios -}}
+{{- $ahora := now -}}
+{{- $mes := int $ahora.Month -}}
+{{- $fecha := $ahora.Format "01-02" -}}
+
+<div class="horarios-parroquia">
+  <div class="horarios-grid">
+
+    {{- range $datos.secciones -}}
+      {{- $seccion := . -}}
+      {{- $visibleSeccion := .visible | default true -}}
+
+      {{- if and $visibleSeccion (not (in (.ocultarMeses | default slice) $mes)) -}}
+
+        {{- $lista := slice -}}
+
+        {{- range $seccion.horarios -}}
+          {{- $item := . -}}
+          {{- $visible := true -}}
+
+          {{- if and .desde .hasta -}}
+            {{- if gt .desde .hasta -}}
+              {{- $visible = or (ge $fecha .desde) (le $fecha .hasta) -}}
+            {{- else -}}
+              {{- $visible = and (ge $fecha .desde) (le $fecha .hasta) -}}
+            {{- end -}}
+          {{- end -}}
+
+          {{- $hora := .hora -}}
+
+          {{- range .temporadas -}}
+            {{- if and (ge $mes .desdeMes) (le $mes .hastaMes) -}}
+              {{- $hora = .hora -}}
+            {{- end -}}
+          {{- end -}}
+
+          {{- if $visible -}}
+{{- $lista = $lista | append (dict
+  "nombre"      $item.nombre
+  "hora"        $hora
+  "descripcion" ($item.descripcion | default "")
+  "subhorarios" ($item.subhorarios | default slice)
+) -}}
+          {{- end -}}
+        {{- end -}}
+
+        {{- if gt (len $lista) 0 -}}
+          <section class="horario-card horario-{{ $seccion.id }}" id="horario-{{ $seccion.id }}">
+            
+
+
+
+<div class="horario-cabecera">
+  <span class="horario-icono" aria-hidden="true">
+    {{- if eq $seccion.icono "church" -}}
+      <svg viewBox="0 0 24 24">
+        <path d="M3 21h18M5 21V10l7-6 7 6v11M9 21v-6h6v6M12 4V2M10 9h4"/>
+      </svg>
+    {{- else if eq $seccion.icono "heart" -}}
+      <svg viewBox="0 0 24 24">
+        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+      </svg>
+    {{- else if eq $seccion.icono "sun" -}}
+      <svg viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>
+      </svg>
+    {{- else if eq $seccion.icono "calendar-clock" -}}
+      <svg viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="16" rx="2"/>
+        <path d="M16 3v4M8 3v4M3 11h10M16 14v3l2 1"/>
+      </svg>
+    {{- end -}}
+  </span>
+  <h2>{{ $seccion.titulo }}</h2>
+</div>
+
+
+
+
+
+{{- range $lista -}}
+  <div class="horario-item{{ if .subhorarios }} horario-item--padre{{ end }}">
+    <div class="horario-texto">
+      <h3>{{ .nombre }}</h3>
+      {{- with .descripcion }}<p>{{ . }}</p>{{ end }}
+    </div>
+    {{- if not .subhorarios -}}
+      <div class="horario-hora">{{ .hora }}</div>
+    {{- end }}
+  </div>
+
+  {{- with .subhorarios -}}
+    <div class="horario-sublista">
+      {{- range . -}}
+        {{- $sub := . -}}
+        {{- $visibleSub := true -}}
+        {{- if and $sub.desde $sub.hasta -}}
+          {{- if gt $sub.desde $sub.hasta -}}
+            {{- $visibleSub = or (ge $fecha $sub.desde) (le $fecha $sub.hasta) -}}
+          {{- else -}}
+            {{- $visibleSub = and (ge $fecha $sub.desde) (le $fecha $sub.hasta) -}}
+          {{- end -}}
+        {{- end -}}
+        {{- if $visibleSub -}}
+          <div class="horario-item horario-subitem">
+            <div class="horario-texto">
+              <h3>{{ $sub.nombre }}</h3>
+            </div>
+            <div class="horario-hora">{{ $sub.hora }}</div>
+          </div>
+        {{- end -}}
+      {{- end -}}
+    </div>
+  {{- end -}}
+{{- end -}}
+
+          </section>
+        {{- end -}}
+
+      {{- end -}}
+    {{- end -}}
+
+  </div>
+</div>

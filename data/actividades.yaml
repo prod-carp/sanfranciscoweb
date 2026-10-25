@@ -51,14 +51,6 @@
 #     dia: domingo
 #     ordinal: 2
 
-- titulo: "Convivencia curso Catequesis"
-  fecha: "2026-11-21"
-  hora: "11:00"
-  fin: "18:00"
-  url: ""
-  destacado: true
-
-
 - titulo: "Adoración y Oración por los enfermos"
   fecha: "2026-10-24"
   hora: "18:30"
@@ -67,7 +59,6 @@
   icono: "🔆"
   destacado: true
 
-
 - titulo: "Paraliturgia de Navidad"
   fecha: "2026-12-20"
   hora: "12:30"
@@ -75,6 +66,12 @@
   url: ""
   icono: "🔆"
 
+- titulo: "Convivencia curso Catequesis"
+  fecha: "2026-11-21"
+  hora: "11:00"
+  fin: "18:00"
+  url: ""
+  destacado: true
 
 - titulo: "Mercadillo de Navidad"
   fecha: "2026-11-22"
@@ -99,6 +96,7 @@
   fecha: "2026-11-02"
   hora: "19:30"
   fin: "20:00"
+  url: "/noticias/2026-10-25-dia-de-todos-los-santos-en-san-francisco-y-santa-clara/"
   icono: "⛪"
 
 
@@ -147,3 +145,42 @@
   recurrencia:
     tipo: semanal
     dias: [jueves]
+
+# Mision David
+- titulo: "Misión David"
+  hora: "10:00"
+  fin: "11:00"
+  url: "/mision-david.html"
+  icono: "🌈"
+  recurrencia:
+    tipo: semanal
+    dias: [domingo]
+
+# Grupo de oración
+- titulo: "Grupo de oración"
+  hora: "17:00"
+  fin: "18:00"
+  url: "/grupodeoracion.html"
+  icono: "🙏"
+  recurrencia:
+    tipo: semanal
+    dias: [jueves]
+
+# Grupo de oración
+- titulo: "Oración de las madres"
+  hora: "18:00"
+  fin: "19:00"
+  url: "/grupooracionmadres.html"
+  icono: "🙏"
+  recurrencia:
+    tipo: semanal
+    dias: [jueves]
+
+# Grupo Cana
+- titulo: "Caná"
+  hora: "17:00"
+  fin: "18:00"
+  url: "/grupo-cana.html"
+  recurrencia:
+    tipo: semanal
+    dias: [miercoles]

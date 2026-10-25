@@ -79,16 +79,51 @@
 
 
 
-            {{- range $lista -}}
-              <div class="horario-item">
+            {{- if eq $seccion.id "misas" -}}
+              <div class="horario-item horario-misas-fila">
                 <div class="horario-texto">
-                  <h3>{{ .nombre }}</h3>
-                  {{- with .descripcion }}
-                    <p>{{ . }}</p>
-                  {{- end }}
+                  <h3>Martes a sábados</h3>
                 </div>
-                <div class="horario-hora">{{ .hora }}</div>
+                {{- range $lista -}}
+                  {{- if eq .nombre "Martes a sábados" -}}
+                    <div class="horario-hora">{{ .hora }}</div>
+                  {{- end -}}
+                {{- end -}}
               </div>
+
+              <div class="horario-item horario-misas-fila horario-misas-domingos">
+                <div class="horario-texto">
+                  <h3>Domingos y festivos</h3>
+                </div>
+                <div class="horario-misas-celebraciones">
+                  {{- range $lista -}}
+                    {{- if eq .nombre "Misa con niños" -}}
+                      {{- $horaNinos := replace .hora "Domingos, " "" -}}
+                      <div class="horario-misa">
+                        <span class="horario-misa-nombre">Misa con niños</span>
+                        <span class="horario-hora">{{ $horaNinos }}</span>
+                      </div>
+                    {{- else if eq .nombre "Domingos y festivos" -}}
+                      <div class="horario-misa">
+                        <span class="horario-misa-nombre">Misa mayor</span>
+                        <span class="horario-hora">{{ .hora }}</span>
+                      </div>
+                    {{- end -}}
+                  {{- end -}}
+                </div>
+              </div>
+            {{- else -}}
+              {{- range $lista -}}
+                <div class="horario-item">
+                  <div class="horario-texto">
+                    <h3>{{ .nombre }}</h3>
+                    {{- with .descripcion }}
+                      <p>{{ . }}</p>
+                    {{- end }}
+                  </div>
+                  <div class="horario-hora">{{ .hora }}</div>
+                </div>
+              {{- end -}}
             {{- end -}}
 
           </section>

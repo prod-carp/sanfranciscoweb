@@ -99,6 +99,35 @@
   box-sizing: border-box;
 }
 
+.horarios-parroquia .horario-misas-celebraciones {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  flex: 0 0 auto;            /* se ajusta al contenido, no ocupa toda la fila */
+  align-items: flex-end;     /* las dos misas pegadas a la derecha */
+  margin-left: auto;         /* empuja el bloque al extremo derecho de la fila */
+  min-width: 0;
+}
+
+.horarios-parroquia .horario-misa {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  white-space: nowrap;
+}
+
+.horarios-parroquia .horario-misa .horario-hora {
+  padding: 0.35rem 0.7rem;   /* un poco más compacto que el genérico */
+  font-size: clamp(1.05rem, 1.9vw, 1.25rem);
+}
+
+.horarios-parroquia .horario-misa-nombre {
+  color: var(--hp-muted);
+  font-size: clamp(0.95rem, 1.2vw, 1.02rem);
+}
+
+
 /* ---------- Rejilla ---------- */
 .horarios-parroquia .horarios-grid {
   display: grid;
@@ -266,6 +295,11 @@
   gap: 0.5rem 0.75rem;                    /* fila / columna */
 }
 
+/* Alineado a la derecha */
+.horarios-parroquia .horario-item > .horario-hora {
+  margin-left: auto;
+}
+
 .horarios-parroquia .horario-texto {
   flex: 1 1 auto;                         /* el texto ocupa lo que necesite */
   min-width: 0;
@@ -276,7 +310,14 @@
   text-align: right;                      /* si baja, alineada a la derecha */
 }
 
-
+@media (max-width: 480px) {
+  .horarios-parroquia .horario-misa {
+    justify-content: flex-end;
+  }
+  .horarios-parroquia .horario-misa .horario-hora {
+    margin-left: auto;
+  }
+}
 
 @media (max-width: 380px) {
   .horarios-parroquia {

@@ -7289,45 +7289,6 @@ a {
 .cid-vnlRPqntcL .item-subtitle {
   text-align: center;
 }
-.cid-visDCiZIdm {
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-  background-color: #ffffff;
-}
-.cid-visDCiZIdm .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-visDCiZIdm .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-visDCiZIdm .bg-instagram {
-  background: #f00075;
-  color: #ffffff;
-}
-.cid-visDCiZIdm .bg-instagram:hover {
-  background: #bd005c;
-}
-.cid-visDCiZIdm .iconfont-wrapper {
-  display: inline-block;
-  font-size: 32px;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-}
-.cid-visDCiZIdm [class^="socicon-"]:before,
-.cid-visDCiZIdm [class*=" socicon-"]:before {
-  line-height: 55px;
-  padding: .6rem;
-}
 .cid-viscNmrIdl {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -12527,7 +12488,7 @@ a {
 .cid-vkyYiqR7uz {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-image: url("../../../assets/images/grupo-oracion2.webp");
+  background-image: url("../../../assets/images/grupooracion2026.webp");
 }
 .cid-vkyYiqR7uz .mbr-fallback-image.disabled {
   display: none;
@@ -12571,10 +12532,26 @@ a {
 }
 .cid-vkzCxnVkHk {
   padding-top: 2rem;
-  padding-bottom: 10rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
 }
 .cid-vkzCxnVkHk .mbr-text {
+  text-align: justify;
+}
+.cid-vz63A3DT3J {
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+  background-color: #ffffff;
+}
+.cid-vz63A3DT3J .mbr-text {
+  text-align: justify;
+}
+.cid-vz63LfLGEC {
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+  background-color: #ffffff;
+}
+.cid-vz63LfLGEC .mbr-text {
   text-align: justify;
 }
 .cid-vio2oWcDy2 {
