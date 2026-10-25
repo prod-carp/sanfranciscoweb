@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "grupos.html",
+    "currentPage": "grupodeoracion.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -15412,7 +15412,7 @@
         "title": "Grupo de Oración | Parroquia San Francisco y Santa Clara de Asís",
         "order": "10",
         "meta_descr": "Grupo de Oración de la Parroquia San Francisco y Santa Clara de Asís de Fuenlabrada. Encuentra encuentros de oración, formación espiritual, adoración y vida comunitaria cristiana.",
-        "meta_image": "@PROJECT_PATH@/assets/images/grupo-oracion2.webp"
+        "meta_image": "@PROJECT_PATH@/assets/images/grupooracion2026.webp"
       },
       "components": [
         {
