@@ -5,11 +5,11 @@ date = '2026-11-01T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
-diasDestacado = 1
+diasDestacado = 4
 weight = 0
 image = "/assets/images/blog/todos-santos.webp"
 fechaBase = '11/01'
-fechaInicio = 1
+fechaInicio = 2
 fechaFin = 300
 +++
 

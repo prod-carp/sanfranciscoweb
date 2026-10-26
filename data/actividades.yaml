@@ -87,7 +87,7 @@
 # ----------- FESTIVIDADES -----------------
 
 # Día de Todos los Santos
-- titulo: "Santa Misa [Por todos los fieles difuntos]"
+- titulo: "Misa por todos los fieles difuntos"
   fecha: "2026-11-02"
   hora: "19:30"
   fin: "20:00"
@@ -149,49 +149,10 @@
 
 # ------------ACTIVIDADES SEMANALES -------------
 
-# Exposición al Santísimo
-- titulo: "Exposición del Santísimo"
-  hora: "10:00"
-  fin: "19:30"
-  url: "/exposicion-santisimo.html"
-  recurrencia:
-    tipo: semanal
-    dias: [jueves]
-
 # Confesiones
 - titulo: "Confesiones"
   hora: "10:00"
   fin: "12:00"
-  recurrencia:
-    tipo: semanal
-    dias: [jueves]
-
-# Mision David
-- titulo: "Misión David"
-  hora: "10:00"
-  fin: "11:00"
-  url: "/mision-david.html"
-  icono: "🌈"
-  recurrencia:
-    tipo: semanal
-    dias: [domingo]
-
-# Grupo de oración
-- titulo: "Grupo de oración"
-  hora: "17:00"
-  fin: "18:00"
-  url: "/grupodeoracion.html"
-  icono: "🙏"
-  recurrencia:
-    tipo: semanal
-    dias: [jueves]
-
-# Grupo de oración
-- titulo: "Oración de las madres"
-  hora: "18:00"
-  fin: "19:00"
-  url: "/grupooracionmadres.html"
-  icono: "🙏"
   recurrencia:
     tipo: semanal
     dias: [jueves]
@@ -222,3 +183,107 @@
   recurrencia:
     tipo: semanal
     dias: [jueves]
+
+# Grupo de oración
+- titulo: "Grupo de oración"
+  hora: "17:00"
+  fin: "18:00"
+  url: "/grupodeoracion.html"
+  icono: "🙏"
+  recurrencia:
+    tipo: semanal
+    dias: [jueves]
+
+# Exposición al Santísimo
+# - titulo: "Exposición del Santísimo"
+#   hora: "10:00"
+#   fin: "19:30"
+#   url: "/exposicion-santisimo.html"
+#   recurrencia:
+#     tipo: semanal
+#     dias: [jueves]
+
+# Manualidades
+- titulo: "Manualidades"
+  hora: "17:30"
+  fin: "19:30"
+  url: "/manualidades.html"
+  recurrencia:
+    tipo: semanal
+    dias: [jueves]
+
+# Manualidades2
+- titulo: "Manualidades"
+  hora: "17:30"
+  fin: "19:30"
+  url: "/manualidades.html"
+  recurrencia:
+    tipo: semanal
+    dias: [viernes]
+
+# Grupo de oración
+- titulo: "Oración de las madres"
+  hora: "18:00"
+  fin: "19:00"
+  url: "/grupooracionmadres.html"
+  icono: "🙏"
+  recurrencia:
+    tipo: semanal
+    dias: [jueves]
+
+# Cáritas
+- titulo: "Cáritas"
+  hora: "18:00"
+  fin: "18:30"
+  url: "/caritas.html"
+  recurrencia:
+    tipo: semanal
+    dias: [jueves]
+
+# Confirmación
+- titulo: "Jóvenes para confirmación"
+  hora: "18:00"
+  fin: "19:25"
+  url: "/grupoconfirmacion.html"
+  recurrencia:
+    tipo: semanal
+    dias: [viernes]
+
+# Liturgia
+- titulo: "Preparación liturgia"
+  hora: "20:00"
+  fin: "20:30"
+  url: "/grupo-liturgia.html"
+  recurrencia:
+    tipo: semanal
+    dias: [viernes]
+
+# Sabados
+- titulo: "Life Teen"
+  hora: "11:00"
+  fin: "12:45"
+  url: "/lifeteen.html"
+  recurrencia:
+    tipo: semanal
+    dias: [sabado]
+
+# Mision David
+- titulo: "Misión David"
+  hora: "10:00"
+  fin: "10:55"
+  url: "/mision-david.html"
+  icono: "🌈"
+  recurrencia:
+    tipo: semanal
+    dias: [domingo]
+
+
+# Monaguillos
+- titulo: "Monaguillos"
+  hora: "10:00"
+  fin: "10:55"
+  url: "/monaguillos.html"
+  icono: "🕯️"
+  recurrencia:
+    tipo: semanal
+    dias: [domingo]
