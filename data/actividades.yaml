@@ -51,20 +51,6 @@
 #     dia: domingo
 #     ordinal: 2
 
-- titulo: "Adoración y Oración por los enfermos"
-  fecha: "2026-10-24"
-  hora: "18:30"
-  fin: "19:30"
-  url: ""
-  icono: "🔆"
-  destacado: true
-
-- titulo: "Paraliturgia de Navidad"
-  fecha: "2026-12-20"
-  hora: "12:30"
-  fin: "14:30"
-  url: ""
-  icono: "🔆"
 
 - titulo: "Convivencia curso Catequesis"
   fecha: "2026-11-21"
@@ -91,14 +77,26 @@
   url: "/actualidad/mercadillo-solidario/"
   icono: "🤝"
 
+- titulo: "Paraliturgia de Navidad"
+  fecha: "2026-12-20"
+  hora: "12:30"
+  fin: "14:30"
+  url: ""
+  icono: "🔆"
+
+# ----------- FESTIVIDADES -----------------
+
 # Día de Todos los Santos
 - titulo: "Santa Misa [Por todos los fieles difuntos]"
   fecha: "2026-11-02"
   hora: "19:30"
   fin: "20:00"
+  destacado: true
   url: "/noticias/2026-10-25-dia-de-todos-los-santos-en-san-francisco-y-santa-clara/"
   icono: "⛪"
 
+
+# ------------ACTIVIDADES MENSUALES -------------
 
 # Segundo domingo de cada mes
 - titulo: "Santa Misa [Colecta para Cáritas Parroquial]"
@@ -138,10 +136,32 @@
     dia: sabado
     ordinal: 2
 
-# Todos los jueves
+# Tercer sabado de cada mes
+- titulo: "Rosario con el manto de la Virgen"
+  hora: "18:00"
+  fin: "19:15"
+  visible: true
+  url: "/rosariomanto.html"
+  recurrencia:
+    tipo: mensual
+    dia: sabado
+    ordinal: 3
+
+# ------------ACTIVIDADES SEMANALES -------------
+
+# Exposición al Santísimo
 - titulo: "Exposición al Santísimo"
   hora: "10:00"
   fin: "19:30"
+  url: "/exposicion-santisimo.html"
+  recurrencia:
+    tipo: semanal
+    dias: [jueves]
+
+# Confesiones
+- titulo: "Confesiones"
+  hora: "10:00"
+  fin: "12:00"
   recurrencia:
     tipo: semanal
     dias: [jueves]
@@ -184,3 +204,21 @@
   recurrencia:
     tipo: semanal
     dias: [miercoles]
+
+# Despacho parroquial
+- titulo: "Despacho parroquial"
+  hora: "17:00"
+  fin: "18:00"
+  url: ""
+  recurrencia:
+    tipo: semanal
+    dias: [miercoles]
+
+# Despacho parroquial
+- titulo: "Despacho parroquial"
+  hora: "12:00"
+  fin: "13:00"
+  url: ""
+  recurrencia:
+    tipo: semanal
+    dias: [jueves]
