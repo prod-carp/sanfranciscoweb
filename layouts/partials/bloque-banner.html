@@ -74,7 +74,7 @@
 
 .tarjeta-temporada__titulo {
   margin: 0;
-  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+  font-size: clamp(1.5rem, 2.5vw, 1.6rem);
   font-weight: 700;
   line-height: 1.25;
   color: var(--tt-acento-oscuro);
@@ -179,7 +179,7 @@
   Define $imagenTarjeta con la ruta de tu imagen.
   Déjala vacía para mostrar la tarjeta sin imagen.
 */ -}}
-{{- $imagenTarjeta := "/assets/images/blog/santi2.webp" -}}
+{{- $imagenTarjeta := "/assets/images/exposicion-santisimo.webp" -}}
 
 <article class="tarjeta-temporada tarjeta-matrimonios"
          aria-labelledby="tarjeta-matrimonios-titulo">
@@ -188,25 +188,25 @@
   <img
     class="tarjeta-temporada__imagen"
     src="{{ . | relURL }}"
-    alt="Matrimonios compartiendo un momento juntos"
+    alt="Exposición al Santísimo"
     loading="lazy"
     decoding="async"
   >
   {{- end }}
 
   <header class="tarjeta-temporada__cabecera">
-    <span class="tarjeta-temporada__etiqueta">Sábado 24 de Octubre (18:30 - 19:30)</span>
-    <h3 id="tarjeta-matrimonios-titulo" class="tarjeta-temporada__titulo">
-Adoración y alabanza - <em>Oración por los enfermos</em>    
-      <time></time>
-    </h3>
+    <span class="tarjeta-temporada__etiqueta">Exposición del Santísimo</span>
+    <h3 id="tarjeta-matrimonios-titulo" class="tarjeta-temporada__titulo">NECESITAMOS ADORADORES</h3>
   </header>
 
   <div class="tarjeta-temporada__cuerpo">
     <!-- <p class="tarjeta-temporada__destacado"> -->
-<p class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">
-El Ministerio Tienda del Encuentro nos invita a vivir una tarde de encuentro con el Señor, llena de alabanza, adoración y oración por los enfermos, en la presencia del Santísimo Sacramento.
-    </p>
+
+<p class="mbr-section-subtitle align-left mbr-fonts-style mb-1 display-7">
+Jesús te espera. Ayúdanos a acompañarlo en la oración, especialmente los <strong>jueves de <time datetime="12:00">12:00</time> a <time datetime="16:00">16:00</time> h</strong>, cuando más necesitamos tu presencia.</p>
+
+<em>Regálale un poco de tu tiempo. Él te espera con los brazos abiertos.</em>
+
 <!--
     <ul class="tarjeta-temporada__puntos">
       <li>Formación y acompañamiento para matrimonios.</li>
@@ -214,6 +214,15 @@ El Ministerio Tienda del Encuentro nos invita a vivir una tarde de encuentro con
       <li>Abierto a matrimonios de todas las edades.</li>
     </ul>
 -->
+
+    <div class="cartel-acciones">
+        <a href="{{ "/exposicion-santisimo.html" | relURL }}"
+           class="btn btn-primary">
+            QUIERO SER ADORADOR
+        </a>
+    </div>
+
+
   </div>
 
 

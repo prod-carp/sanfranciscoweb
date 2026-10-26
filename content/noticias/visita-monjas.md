@@ -1,7 +1,7 @@
 +++
 title = 'Un encuentro con las hermanas clarisas de Valdemoro: compartir la alegría de la fe'
 subtitle = '¿Cómo es la vida detrás del claustro? Jóvenes y adultos de la parroquia San Francisco y Santa Clara  visitan el convento de la Encarnación'
-date = '2026-08-27T12:29:54+02:00'
+date = '2026-10-26T00:29:54+02:00'
 draft = false
 categorias = ["Peregrinaciones"]
 tags = []
