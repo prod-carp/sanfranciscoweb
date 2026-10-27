@@ -78,18 +78,7 @@
       const meses = ["ENERO","FEBRERO","MARZO","ABRIL","MAYO","JUNIO","JULIO","AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE","DICIEMBRE"];
       const diasSemana = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
 
-      const iconosEventos = [
-        { palabras: ["Santísimo", "adoración"], icono: "🔆" },
-        { palabras: ["padres"], icono: "👨‍👩‍👧" },
-        { palabras: ["guadalupe"], icono: "🌹" },
-        { palabras: ["matrimonios", "Caná", "matrimonio"], icono: "💍" },
-        { palabras: ["bautizos", "bautizo"], icono: "💧" },
-        { palabras: ["catequistas", "catequista"], icono: "📖" },
-        { palabras: ["entrega"], icono: "🎁" },
-        { palabras: ["oratorio"], icono: "💒" },
-        { palabras: ["retiro", "peregrinación", "viaje", "excursión"], icono: "🚌" },
-        { palabras: ["rosario"], icono: "📿" }
-      ];
+      const iconosEventos = {{ partial "iconos-eventos.html" . | safeJS }};
       const iconoGenerico = "⛪";
 
       const contenedorDias = document.getElementById("calendario-dias");
@@ -107,7 +96,7 @@
       function iconoEvento(titulo) {
         const texto = String(titulo || "").toLocaleLowerCase("es").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         for (const grupo of iconosEventos) {
-          for (const palabra of grupo.palabras) {
+          for (const palabra of grupo.claves) {
             const clave = palabra.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             if (texto.includes(clave)) return grupo.icono;
           }

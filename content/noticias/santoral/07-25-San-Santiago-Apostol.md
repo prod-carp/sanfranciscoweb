@@ -7,9 +7,9 @@ categorias = ["Santoral"]
 tags = ["importante"]
 diasDestacado = 1
 weight = 0
-image = "/assets/images/blog/*.webp"
+image = "/assets/images/blog/santiago-apostol.webp"
 fechaBase = '07/25'
-fechaInicio = 1
+fechaInicio = 2
 fechaFin = 300
 +++
 

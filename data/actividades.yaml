@@ -183,6 +183,7 @@
   hora: "10:15"
   fin: "12:00"
   icono: "🛐"
+  url: "/confesion.html"
   recurrencia:
     tipo: semanal
     dias: [jueves]

@@ -1,0 +1,52 @@
+
+- claves: ["misa", "eucaristia"]
+  icono: "⛪"
+  url: "/#horario-misas"
+
+- claves: ["rosario", "guadalupe"]
+  icono: "📿"
+  url: "/noticias/oraciones/rezar-el-rosario/"
+
+- claves: ["adoracion", "santisimo"]
+  icono: "🔆"
+  url: "/exposicion-santisimo.html"
+
+- claves: ["matrimonio", "matrimonios", "caná"]
+  icono: "💍"
+  url: "/grupomatrimonios.html"
+
+- claves: ["bautizo", "bautismo"]
+  icono: "💧"
+  url: "/bautismo.html"
+
+- claves: ["catequesis", "catequistas", "catequista"]
+  icono: "📖"
+
+- claves: ["confirmacion", "life teen"]
+  icono: "🕊️"
+
+- claves: ["retiro", "peregrinacion", "convivencia", "viaje", "excursion"]
+  icono: "🚌"
+
+- claves: ["mercadillo", "solidario"]
+  icono: "🤝"
+
+- claves: ["obispo"]
+  icono: "⛪"
+
+- claves: ["entrega"]
+  icono: "🎁"
+
+- claves: ["oratorio"]
+  icono: "💒"
+
+- claves: ["padres"]
+  icono: "👨‍👩‍👧"
+
+- claves: ["novena", "triduo", "santo", "santa", "san"]
+  icono: "🙏"
+  url: "/categorias/oraciones/"
+
+- claves: ["despacho"]
+  icono: "🗓️"
+  url: "/#horario-despacho"

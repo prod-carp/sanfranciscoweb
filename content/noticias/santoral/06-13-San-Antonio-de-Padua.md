@@ -1,5 +1,5 @@
 ﻿+++
-title = 'San Antonio de Padua: el santo que anunció a Cristo'
+title = 'San Antonio de Padua: el franciscano que anunció a Cristo'
 subtitle = 'San Antonio de Padua fue un gran predicador y maestro de la fe. Su vida, marcada por la oración y la caridad, sigue acercando muchos corazones a Cristo.'
 date = '2027-06-13T00:00:00+02:00'
 draft = false

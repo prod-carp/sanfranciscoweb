@@ -1,16 +1,16 @@
 ﻿+++
 title = 'San Buenaventura: el franciscano que buscó a Dios con amor'
-subtitle = 'San Buenaventura unió la inteligencia y la fe para mostrar que todo conocimiento verdadero puede conducirnos a Dios cuando buscamos a Cristo con un corazón humilde.'
+subtitle = 'Unió la inteligencia y la fe para mostrar que todo conocimiento verdadero puede conducirnos a Dios cuando buscamos a Cristo con un corazón humilde.'
 date = '2027-07-15T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
 tags = ["importante"]
-diasDestacado = 1
+diasDestacado = 5
 weight = 0
-image = "/assets/images/blog/*.webp"
+image = "/assets/images/blog/san-buenaventura.webp"
 fechaBase = '07/15'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 ## ¿Quién fue San Buenaventura?

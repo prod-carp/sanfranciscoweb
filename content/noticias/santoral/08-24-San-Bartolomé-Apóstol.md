@@ -6,10 +6,10 @@ draft = false
 categorias = ["Santoral"]
 tags = []
 weight = 0
-image = "/assets/images/blog/*.webp"
+image = "/assets/images/blog/sanbartolome.webp"
 fechaBase = '08/24'
 fechaInicio = 1
-fechaFin = 90
+fechaFin = 300
 +++
 
 ## ¿Quién fue San Bartolomé?

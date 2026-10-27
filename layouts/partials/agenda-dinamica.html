@@ -329,22 +329,7 @@
   const VENTANA_DIAS = 180;
 
   const normalizar = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-  const diccionario = [
-    { claves:['misa','eucaristia'], icono:'⛪', url:'/#horario-misas' },
-    { claves:['rosario'], icono:'📿', url:'/noticias/oraciones/rezar-el-rosario/' },
-    { claves:['adoracion','santisimo'], icono:'🔆', url:'/exposicion-santisimo.html' },
-    { claves:['matrimonio','matrimonios'], icono:'💍', url:'/grupomatrimonios.html' },
-    { claves:['bautizo','bautismo'], icono:'💧', url:'/bautismo.html' },
-    { claves:['catequesis','catequistas','confirmacion','life teen'], icono:'✝️', url:'' },
-    { claves:['retiro','peregrinacion','convivencia'], icono:'🚌', url:'' },
-    { claves:['mercadillo','solidario'], icono:'🤝', url:'' },
-    { claves:['obispo'], icono:'⛪', url:'' },
-    { claves:['entrega'], icono:'🎁', url:'' },
-    { claves:['oratorio'], icono:'💒', url:'' },
-    { claves:['padres'], icono:'👨‍👩‍👧', url:'' },
-    { claves:['novena','triduo','santo','santa','san'], icono:'🌹', url:'/categorias/oraciones/' },
-    { claves:['despacho'], icono:'🗓️', url:'/#horario-despacho' }
-  ];
+  const diccionario = {{ partial "iconos-eventos.html" . | safeJS }};
   function metadatos(titulo, urlExplicita, iconoExplicito) {
     const n = normalizar(titulo);
     const entrada = diccionario.find(d => d.claves.some(k => n.includes(normalizar(k))));
@@ -410,7 +395,7 @@
         salida.push({
           titulo: item.nombre?.toLowerCase().includes('misa con niños') ? 'Misa con niños' : 'Santa Misa',
           inicio, fin: new Date(inicio.getTime()+60*60000),
-          fuente:'horarios', prioridad:1, recurrente:true, url:item.url || '', icono:'🕊️'
+          fuente:'horarios', prioridad:1, recurrente:true, url:item.url || '', icono:'⛪'
         });
       }
     }

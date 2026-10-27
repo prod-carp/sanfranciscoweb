@@ -42,6 +42,8 @@ Los fieles pueden obtener la indulgencia plenaria:
 * Participando en las celebraciones litúrgicas propias del jubileo.
 * Asistiendo a la Santa Misa o participando en los actos de oración establecidos para este Año Jubilar.
 
+* **[Ver oración a san Francisco](https://sanfranciscoysantaclara.es/noticias/oraciones/oracion-jubileo/)**
+
 Asimismo, quienes por edad avanzada, enfermedad u otras causas graves no puedan desplazarse, podrán unirse espiritualmente a las celebraciones, ofreciendo a Dios sus oraciones, sufrimientos y obras buenas.
 
 ## Condiciones habituales para recibir la indulgencia plenaria
