@@ -118,7 +118,7 @@
     ordinal: 2
 
 - titulo: "Operación Kilo"
-  hora: "11:00"
+  hora: "12:00"
   fin: "13:30"
   visible: true
   recurrencia:
@@ -149,31 +149,43 @@
 
 # ------------ACTIVIDADES SEMANALES -------------
 
-# Confesiones
-- titulo: "Confesiones"
-  hora: "10:00"
-  fin: "12:00"
+# Grupo Padre Pio
+- titulo: "Oración del Padre Pío"
+  hora: "18:15"
+  fin: "19:20"
+  url: "/grupo-padre-pio.html"
+  icono: "🙏"
   recurrencia:
     tipo: semanal
-    dias: [jueves]
+    dias: [martes]
 
 # Grupo Cana
 - titulo: "Caná"
   hora: "17:00"
   fin: "18:00"
   url: "/grupo-cana.html"
+  icono: "💍"
   recurrencia:
     tipo: semanal
     dias: [miercoles]
 
 # Despacho parroquial
 - titulo: "Despacho parroquial"
-  hora: "17:00"
+  hora: "17:05"
   fin: "18:00"
   url: ""
   recurrencia:
     tipo: semanal
     dias: [miercoles]
+
+# Confesiones
+- titulo: "Confesiones"
+  hora: "10:15"
+  fin: "12:00"
+  icono: "🛐"
+  recurrencia:
+    tipo: semanal
+    dias: [jueves]
 
 # Despacho parroquial
 - titulo: "Despacho parroquial"
@@ -208,18 +220,10 @@
   hora: "17:30"
   fin: "19:30"
   url: "/manualidades.html"
+  icono: "✂️"
   recurrencia:
     tipo: semanal
     dias: [jueves]
-
-# Manualidades2
-- titulo: "Manualidades"
-  hora: "17:30"
-  fin: "19:30"
-  url: "/manualidades.html"
-  recurrencia:
-    tipo: semanal
-    dias: [viernes]
 
 # Grupo de oración
 - titulo: "Oración de las madres"
@@ -233,18 +237,30 @@
 
 # Cáritas
 - titulo: "Cáritas"
-  hora: "18:00"
+  hora: "18:07"
   fin: "18:30"
   url: "/caritas.html"
+  icono: "❤️"
   recurrencia:
     tipo: semanal
     dias: [jueves]
+
+# Manualidades2
+- titulo: "Manualidades"
+  hora: "17:30"
+  fin: "19:30"
+  url: "/manualidades.html"
+  icono: "✂️"
+  recurrencia:
+    tipo: semanal
+    dias: [viernes]
 
 # Confirmación
 - titulo: "Jóvenes para confirmación"
   hora: "18:00"
   fin: "19:25"
   url: "/grupoconfirmacion.html"
+  icono: "🕊️"
   recurrencia:
     tipo: semanal
     dias: [viernes]
@@ -263,20 +279,10 @@
   hora: "11:00"
   fin: "12:45"
   url: "/lifeteen.html"
+  icono: "🕊️"
   recurrencia:
     tipo: semanal
     dias: [sabado]
-
-# Mision David
-- titulo: "Misión David"
-  hora: "10:00"
-  fin: "10:55"
-  url: "/mision-david.html"
-  icono: "🌈"
-  recurrencia:
-    tipo: semanal
-    dias: [domingo]
-
 
 # Monaguillos
 - titulo: "Monaguillos"
@@ -284,6 +290,16 @@
   fin: "10:55"
   url: "/monaguillos.html"
   icono: "🕯️"
+  recurrencia:
+    tipo: semanal
+    dias: [domingo]
+
+# Mision David
+- titulo: "Misión David"
+  hora: "10:30"
+  fin: "10:55"
+  url: "/mision-david.html"
+  icono: "🌈"
   recurrencia:
     tipo: semanal
     dias: [domingo]
