@@ -28,7 +28,7 @@ Ingresó en los franciscanos en 1416, después de obtener permiso para hacerlo, 
 
 ## Una voz que llamaba a la conversión
 
-Juan recorrió Italia y otros territorios de Europa predicando. Sus sermones atraían multitudes, hasta el punto de que a veces debía hablar en plazas públicas. Los relatos antiguos hablan de cantidades extraordinarias de oyentes, pero al menos una fuente reconoce que algunas cifras probablemente fueron exageradas; lo históricamente significativo es la amplitud de su fama y el impacto que se atribuía a sus misiones. Predicaba especialmente en tiempos litúrgicos como Adviento y Cuaresma, buscando despertar la conversión y renovar la vida cristiana.   
+Juan recorrió Italia y otros territorios de Europa predicando. Sus sermones atraían multitudes, hasta el punto de que a veces debía hablar en plazas públicas. Predicaba especialmente en tiempos litúrgicos como Adviento y Cuaresma, buscando despertar la conversión y renovar la vida cristiana.   
 
 Junto a san Bernardino **promovió la devoción al Nombre de Jesús**, representado con las letras **IHS**. Juan **defendió esa devoción** cuando fue objeto de acusaciones, convencido de que honrar el nombre de Cristo ayudaba a centrar la vida en Él. También colaboró en la reforma de los franciscanos observantes y en la defensa de una vida religiosa más fiel a la Regla. Por eso se le recuerda como **predicador y reformador**, no solo como figura pública.  
 
