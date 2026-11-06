@@ -100,12 +100,14 @@
   hora: "12:30"
   fin: "13:30"
   visible: true
+  url: "/noticias/tiempo-liturgico/11-dia-iglesia-diocesana/"
 
 - titulo: "Santa Misa [Colecta para la Iglesia Diocesana]"
   fecha: "2026-11-08"
   hora: "11:00"
   fin: "12:00"
   visible: true
+  url: "/noticias/tiempo-liturgico/11-dia-iglesia-diocesana/"
 
 
 

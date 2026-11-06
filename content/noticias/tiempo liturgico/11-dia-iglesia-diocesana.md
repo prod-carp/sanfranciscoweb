@@ -12,13 +12,13 @@ fechaInicio = 1
 fechaFin = 300
 +++
 
-Cada año, en noviembre, la Iglesia en España celebra el **Día de la Iglesia Diocesana**, una ocasión para dar gracias por la comunidad cristiana que vive y anuncia el Evangelio en cada diócesis. Es una invitación a descubrir que la Iglesia no es una realidad lejana: está presente en la parroquia, en la oración compartida, en la celebración de los sacramentos, en el servicio a quienes sufren y en tantas personas que ponen sus dones al servicio de los demás. 
+Cada año, en noviembre, la Iglesia en España celebra el **Día de la Iglesia Diocesana**, una ocasión para dar gracias por la comunidad cristiana que vive y anuncia el Evangelio en cada diócesis. Es una invitación a descubrir que la Iglesia está presente en la parroquia, en la oración compartida, en la celebración de los sacramentos, en el servicio a quienes sufren y en tantas personas que ponen sus dones al servicio de los demás. 
 
 ## ¿Qué significa pertenecer a una diócesis?
 
 Una diócesis es una comunidad de fieles que vive en un territorio y camina unida bajo el cuidado pastoral de un obispo, con la colaboración de los sacerdotes, los diáconos, las personas consagradas y todos los fieles laicos. En ella se hace cercana la Iglesia universal: la Iglesia entera vive y actúa en comunidades concretas, con sus parroquias, sus historias, sus necesidades y sus dones.
 
-Por eso, la diócesis no es simplemente una organización que coordina actividades. Es una **familia de fe**, formada por personas y comunidades distintas, unidas por Cristo y llamadas a servir juntas. La comunión cristiana tiene su raíz en la vida misma de Dios y se expresa en la vida sacramental, en la fraternidad y en el vínculo entre las Iglesias particulares. Y es que la Iglesia no nace de una idea humana, sino del mismo Corazón de Dios: es una familia donde compartimos su propia vida y su amor.
+Por eso, la diócesis no es simplemente una organización que coordina actividades. Es una **familia de fe**, formada por personas y comunidades distintas, unidas por Cristo y llamadas a servir juntas. La comunión cristiana tiene su raíz en la vida misma de Dios y se expresa en la vida sacramental, en la fraternidad y en el vínculo entre las Iglesias particulares. Y es que la Iglesia nace del mismo Corazón de Dios: es una familia donde compartimos su propia vida y su amor.
 
 Pertenecer a una diócesis es, por tanto, mucho más que estar inscrito en una parroquia o asistir a una celebración. Es saberse unido a otros creyentes, incluso a quienes no conocemos; compartir la alegría y las preocupaciones de la Iglesia local; y contribuir, desde la propia vocación, a que el Evangelio llegue a todos.
 
@@ -34,7 +34,7 @@ Esta variedad es una verdadera riqueza. Cuando cada persona aporta su don con hu
 
 Cada diócesis posee una historia propia, hecha de generaciones que han transmitido la fe, de comunidades que han rezado y celebrado juntas, de santos y testigos, y también de personas sencillas cuya entrega cotidiana quizá solo Dios conoce plenamente. En España, la vida cristiana ha ido dejando una huella profunda en la historia y en la cultura de sus pueblos, así como en numerosas obras de evangelización y servicio. San Juan Pablo II recordó la riqueza de la tradición cristiana española y el patrimonio de santidad que ha florecido en sus circunstancias más diversas.
 
-Esa memoria no es solo motivo de orgullo: es una herencia que se recibe para compartirla. La fe transmitida por quienes nos precedieron nos impulsa a preguntarnos cómo podemos anunciar hoy el Evangelio con palabras y obras; cómo acompañar a quienes buscan sentido; cómo cuidar a las familias, a los jóvenes, a los mayores y a quienes atraviesan momentos de soledad o dificultad.
+Esa memoria es motivo de orgullo y una herencia que se recibe para compartirla. La fe transmitida por quienes nos precedieron nos impulsa a preguntarnos cómo podemos anunciar hoy el Evangelio con palabras y obras; cómo acompañar a quienes buscan sentido; cómo cuidar a las familias, a los jóvenes, a los mayores y a quienes atraviesan momentos de soledad o dificultad.
 
 La diócesis es también una historia que sigue escribiéndose. Cada bautismo, cada Eucaristía, cada gesto de reconciliación, cada vocación y cada acto de servicio contribuyen a que la Iglesia sea signo de esperanza en el mundo. Por eso, el Día de la Iglesia Diocesana mira agradecido al pasado, celebra la vida de hoy y anima a seguir caminando con confianza.
 

@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/TT-pascuaresurreccion.webp"
 tipoFecha = "pascua"
 diasAntes = 0
-diasDespues = 300
+diasDespues = 200
 +++
 
 Queridos hermanos y hermanas en Cristo:

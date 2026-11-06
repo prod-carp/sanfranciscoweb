@@ -1,7 +1,7 @@
 +++
 title = 'El Cerro de los Ángeles acogerá la tradicional Vigilia de Cristo Rey y el fin del Año Litúrgico'
 subtitle = 'Una gran fiesta de la Iglesia, una gran esperanza: Vivamos juntos el Día de Todos los Santos y la Conmemoración de los Fieles Difuntos'
-date = '2026-10-25T00:00:00+02:00'
+date = '2026-11-17T00:00:00+02:00'
 draft = false
 categorias = ["Parroquia"]
 weight = 0
