@@ -1,27 +1,31 @@
-   tipoFecha:
-     ceniza
-     ramos
-     jueves-santo
-     viernes-santo
-     pascua
-     ascension
-     pentecostes
-     trinidad
-     corpus
-     sagrado-corazon
-     inmaculado-corazon
+# TipoFecha:
+
+ceniza
+ramos
+jueves-santo
+viernes-santo
+pascua
+ascension
+pentecostes
+trinidad
+corpus
+sagrado-corazon
+inmaculado-corazon
 cristo-rey
 adviento
 bautismo-senor
 sagrada-familia
 domund
 
-   Cristo Rey:
+
+--------------------------------
+
+Cristo Rey:
      Último domingo del año litúrgico.
      Es el domingo inmediatamente anterior al primer
      domingo de Adviento.
 
-   Adviento:
+Adviento:
      Primer domingo de Adviento.
 
 Bautismo:
@@ -33,7 +37,7 @@ Sagrada Familia:
    Normalmente se celebra el domingo siguiente a Navidad
    dentro de la octava.
 
-Ddomund:
+domund:
    Se celebra el tercer domingo de octubre.
 
 

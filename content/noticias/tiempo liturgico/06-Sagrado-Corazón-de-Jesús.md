@@ -4,12 +4,13 @@ subtitle = 'El Sagrado Corazón de Jesús nos invita a contemplar el amor de Cri
 date = '2027-06-04T00:00:00+02:00'
 draft = false
 categorias = ["Tiempo Litúrgico"]
-tags = [""]
+tags = ["importante"]
+diasDestacado = 5
 weight = 0
-image = "/assets/images/blog/la-pascua-el-triunfo-de-la-vida-sobre_20260818_111625.webp"
+image = "/assets/images/blog/TT-sagradocorazon.webp"
 tipoFecha = "sagrado-corazón"
-diasAntes = 2
-diasDespues = 2
+diasAntes = 1
+diasDespues = 300
 +++
 
 ## ¿Qué celebramos en el Sagrado Corazón de Jesús?

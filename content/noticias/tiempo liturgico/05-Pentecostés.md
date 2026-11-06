@@ -4,12 +4,13 @@ subtitle = 'Pentecostés recuerda la venida del Espíritu Santo sobre los apóst
 date = '2027-05-16T00:00:00+02:00'
 draft = false
 categorias = ["Tiempo Litúrgico"]
-tags = [""]
+tags = ["importante"]
+diasDestacado = 5
 weight = 0
-image = "/assets/images/blog/la-pascua-el-triunfo-de-la-vida-sobre_20260818_111625.webp"
+image = "/assets/images/blog/TT-pentecostes.webp"
 tipoFecha = "pentecostes"
-diasAntes = 2
-diasDespues = 2
+diasAntes = 1
+diasDespues = 300
 +++
 
 ## ¿Qué celebramos en Pentecostés?

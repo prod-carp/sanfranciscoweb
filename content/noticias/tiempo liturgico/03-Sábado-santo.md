@@ -4,12 +4,13 @@ subtitle = 'El Sábado Santo es el día de silencio ante el sepulcro de Jesús. 
 date = '2027-03-27T00:00:00+02:00'
 draft = false
 categorias = ["Tiempo Litúrgico"]
-tags = [""]
+tags = ["importante"]
+diasDestacado = 1
 weight = 0
-image = "/assets/images/blog/la-pascua-el-triunfo-de-la-vida-sobre_20260818_111625.webp"
+image = "/assets/images/blog/TT-sabadosanto.webp"
 tipoFecha = "sabado-santo"
-diasAntes = 2
-diasDespues = 2
+diasAntes = 0
+diasDespues = 300
 +++
 
 ## ¿Qué es el Sábado Santo?

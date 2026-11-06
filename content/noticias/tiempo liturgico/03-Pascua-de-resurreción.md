@@ -4,12 +4,13 @@ subtitle = '"Cristo ha resucitado, verdaderamente ha resucitado"'
 date = '2025-08-18T11:17:05+02:00'
 draft = false
 categorias = ["Tiempo Litúrgico"]
-tags = [""]
+tags = ["importante"]
+diasDestacado = 3
 weight = 0
-image = "/assets/images/blog/la-pascua-el-triunfo-de-la-vida-sobre_20260818_111625.webp"
+image = "/assets/images/blog/TT-pascuaresurreccion.webp"
 tipoFecha = "pascua"
-diasAntes = 2
-diasDespues = 2
+diasAntes = 0
+diasDespues = 300
 +++
 
 Queridos hermanos y hermanas en Cristo:

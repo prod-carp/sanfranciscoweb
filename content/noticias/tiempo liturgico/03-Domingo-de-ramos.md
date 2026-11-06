@@ -4,12 +4,13 @@ subtitle = 'El Domingo de Ramos recuerda la entrada de Jesús en Jerusalén, rec
 date = '2027-03-21T00:00:00+02:00'
 draft = false
 categorias = ["Tiempo Litúrgico"]
-tags = [""]
+tags = ["importante"]
+diasDestacado = 2
 weight = 0
-image = "/assets/images/blog/la-pascua-el-triunfo-de-la-vida-sobre_20260818_111625.webp"
+image = "/assets/images/blog/TT-domingoramos.webp"
 tipoFecha = "ramos"
-diasAntes = 2
-diasDespues = 2
+diasAntes = 1
+diasDespues = 300
 +++
 
 ## ¿Qué es el Domingo de Ramos?

@@ -4,12 +4,13 @@ subtitle = 'El Miércoles de Ceniza inicia la Cuaresma y nos invita a convertir 
 date = '2027-02-10T00:00:00+02:00'
 draft = false
 categorias = ["Tiempo Litúrgico"]
-tags = [""]
+tags = ["importante"]
+diasDestacado = 2
 weight = 0
-image = "/assets/images/blog/la-pascua-el-triunfo-de-la-vida-sobre_20260818_111625.webp"
+image = "/assets/images/blog/TT-miercolesceniza.webp"
 tipoFecha = "ceniza"
-diasAntes = 2
-diasDespues = 2
+diasAntes = 0
+diasDespues = 300
 +++
 
 ## ¿Qué es el Miércoles de Ceniza?

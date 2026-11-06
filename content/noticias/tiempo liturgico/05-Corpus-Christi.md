@@ -4,12 +4,13 @@ subtitle = 'Corpus Christi celebra la presencia real de Jesús en la Eucaristía
 date = '2027-05-27T00:00:00+02:00'
 draft = false
 categorias = ["Tiempo Litúrgico"]
-tags = [""]
+tags = ["importante"]
+diasDestacado = 5
 weight = 0
-image = "/assets/images/blog/la-pascua-el-triunfo-de-la-vida-sobre_20260818_111625.webp"
+image = "/assets/images/blog/TT-corpuschristi.webp"
 tipoFecha = "corpus"
 diasAntes = 2
-diasDespues = 2
+diasDespues = 300
 +++
 
 ## ¿Qué celebramos en Corpus Christi?

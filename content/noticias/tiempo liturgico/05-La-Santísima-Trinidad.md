@@ -4,12 +4,13 @@ subtitle = 'La Iglesia celebra el misterio de un solo Dios en tres Personas: Pad
 date = '2027-05-23T00:00:00+02:00'
 draft = false
 categorias = ["Tiempo Litúrgico"]
-tags = [""]
+tags = ["importante"]
+diasDestacado = 5
 weight = 0
-image = "/assets/images/blog/la-pascua-el-triunfo-de-la-vida-sobre_20260818_111625.webp"
+image = "/assets/images/blog/TT-santisimatrinidad.webp"
 tipoFecha = "trinidad"
-diasAntes = 2
-diasDespues = 2
+diasAntes = 1
+diasDespues = 300
 +++
 
 ## ¿Qué celebramos en la Santísima Trinidad?
