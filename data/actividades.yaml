@@ -95,6 +95,19 @@
   url: "/noticias/2026-10-25-dia-de-todos-los-santos-en-san-francisco-y-santa-clara/"
   icono: "⛪"
 
+- titulo: "Santa Misa [Colecta para la Iglesia Diocesana]"
+  fecha: "2026-11-08"
+  hora: "12:30"
+  fin: "13:30"
+  visible: true
+
+- titulo: "Santa Misa [Colecta para la Iglesia Diocesana]"
+  fecha: "2026-11-08"
+  hora: "11:00"
+  fin: "12:00"
+  visible: true
+
+
 
 # ------------ACTIVIDADES MENSUALES -------------
 
@@ -117,14 +130,14 @@
     dia: domingo
     ordinal: 2
 
-- titulo: "Operación Kilo"
-  hora: "12:00"
-  fin: "13:30"
-  visible: true
-  recurrencia:
-    tipo: mensual
-    dia: domingo
-    ordinal: 2
+# - titulo: "Operación Kilo"
+#   hora: "12:00"
+#   fin: "13:30"
+#   visible: true
+#   recurrencia:
+#     tipo: mensual
+#     dia: domingo
+#     ordinal: 2
 
 # Segundo sabado de cada mes
 - titulo: "Adoración nocturna"
@@ -208,13 +221,13 @@
     dias: [jueves]
 
 # Exposición al Santísimo
-# - titulo: "Exposición del Santísimo"
-#   hora: "10:00"
-#   fin: "19:30"
-#   url: "/exposicion-santisimo.html"
-#   recurrencia:
-#     tipo: semanal
-#     dias: [jueves]
+- titulo: "Exposición del Santísimo"
+  hora: "10:00"
+  fin: "19:30"
+  url: "/exposicion-santisimo.html"
+  recurrencia:
+    tipo: semanal
+    dias: [jueves]
 
 # Manualidades
 - titulo: "Manualidades"
@@ -276,14 +289,14 @@
     dias: [viernes]
 
 # Sabados
-- titulo: "Life Teen"
-  hora: "11:00"
-  fin: "12:45"
-  url: "/lifeteen.html"
-  icono: "🕊️"
-  recurrencia:
-    tipo: semanal
-    dias: [sabado]
+# - titulo: "Life Teen"
+#   hora: "11:00"
+#   fin: "12:45"
+#   url: "/lifeteen.html"
+#   icono: "🕊️"
+#   recurrencia:
+#     tipo: semanal
+#     dias: [sabado]
 
 # Monaguillos
 - titulo: "Monaguillos"
