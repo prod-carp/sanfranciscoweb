@@ -52,6 +52,28 @@
 #     ordinal: 2
 
 
+
+- titulo: "Santa Misa [Colecta para Cáritas Parroquial]"
+  fecha: "2026-11-15"
+  hora: "12:30"
+  fin: "13:30"
+  visible: true
+  url: "/caritas.html"
+
+- titulo: "Santa Misa [Colecta para Cáritas Parroquial]"
+  fecha: "2026-11-15"
+  hora: "11:00"
+  fin: "12:00"
+  visible: true
+  url: "/caritas.html"
+
+- titulo: "Operación Kilo-litro"
+  fecha: "2026-11-15"
+  hora: "11:45"
+  fin: "13:45"
+  visible: true
+  url: "/noticias/parroquia/11-09-operacion-kilo/"
+
 - titulo: "Convivencia curso Catequesis"
   fecha: "2026-11-21"
   hora: "11:00"
