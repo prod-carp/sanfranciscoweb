@@ -6,7 +6,7 @@ draft = false
 categorias = ["Oraciones"]
 tags = []
 weight = 0
-image = "/assets/images/blog/2026-10-14-el-domund-celebra-100-anos-de-compromiso-con-las-misiones.webp"
+image = "/assets/images/blog/sanpedroalcantara.webp"
 +++
 
 ## Oración:
