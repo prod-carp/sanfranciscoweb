@@ -1,5 +1,5 @@
 ﻿+++
-title = 'Jornada mundial de lo pobres'
+title = 'Jornada mundial de los pobres'
 subtitle = 'Una jornada que nos invita a reconocer la dignidad de cada persona y a vivir la fe con oración y cercanía.'
 date = '2026-11-13T00:00:00+02:00'
 draft = false
@@ -34,7 +34,7 @@ San Francisco de Asís descubrió en la pobreza una manera nueva de vivir el Eva
 
 Francisco comprendió que las cosas no están para poseerlas de manera egoísta, sino para recibirlas con gratitud y compartirlas. Su pobreza era una expresión de confianza: **sabía que Dios era su verdadero bien y que no necesitaba acumular para sentirse seguro**.
 
-Esta manera de entender la vida sigue teniendo mucho que decirnos. Los medios de comunicación con frecuencia nos invitan a tener más, consumir más, competir y medir nuestro valor por lo que poseemos. Frente a esa lógica, la espiritualidad franciscana nos propone recuperar la sencillez, valorar las cosas pequeñas y descubrir la alegría de una vida menos centrada en nosotros mismos.
+Esta manera de entender la vida sigue teniendo mucho que decirnos. Los medios de comunicación con frecuencia nos invitan a tener más, ser individualistas, competir y medir nuestro valor por lo que poseemos. Frente a esa lógica, la espiritualidad franciscana nos propone recuperar la sencillez, valorar las cosas pequeñas y descubrir la alegría de una vida menos centrada en nosotros mismos.
 
 Vivir la pobreza evangélica no significa despreciar los bienes ni considerar buena la miseria. Tampoco significa aceptar como inevitable que haya personas que carezcan de lo necesario. Significa aprender a utilizar los bienes con responsabilidad, sin convertirlos en el centro de nuestra existencia, y comprender que lo que tenemos también puede estar al servicio de la vida de los demás.
 
@@ -66,7 +66,7 @@ Una comunidad verdaderamente fraterna no clasifica a sus miembros entre los que 
 
 Vivir la pobreza evangélica tiene consecuencias concretas en nuestra vida cotidiana. No basta con hablar de sencillez o admirar el ejemplo de san Francisco; estamos llamados a traducir esa espiritualidad en nuestra manera de vivir.
 
-Podemos comenzar revisando nuestra relación con el consumo y con las cosas materiales: ¿necesitamos realmente todo lo que compramos?, ¿sabemos valorar lo que tenemos?, ¿somos capaces de compartir sin esperar nada a cambio? También podemos preguntarnos si dedicamos suficiente tiempo a las personas, si sabemos escuchar y si estamos disponibles para quienes necesitan compañía.
+Podemos comenzar revisando nuestra relación con las cosas materiales: ¿necesitamos realmente todo lo que compramos?, ¿sabemos valorar lo que tenemos?, ¿somos capaces de compartir sin esperar nada a cambio? También podemos preguntarnos si dedicamos suficiente tiempo a las personas, si sabemos escuchar y si estamos disponibles para quienes necesitan compañía.
 
 La generosidad no consiste solamente en dar dinero. También es generoso quien regala su tiempo, quien acompaña a una persona enferma, quien escucha sin juzgar, quien comparte sus conocimientos, quien ofrece una palabra de ánimo o quien sabe pedir ayuda cuando la necesita.
 
