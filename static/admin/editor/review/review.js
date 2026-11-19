@@ -1,3 +1,5 @@
+import { apiFetch } from "../../js/backend.js";
+
 import {
   getAuth,
   onAuthStateChanged
@@ -100,7 +102,7 @@ async function loadReviewData(user) {
   }
 
   // 📌 Si no hay ?id= → modo colaborador → cargar desde sessionStorage
-  loadArticleFromSessionStorage();
+  loadArticleFromSessionStorage(user);
 
 }
 
@@ -108,7 +110,7 @@ async function loadReviewData(user) {
 // CARGAR ARTÍCULO DESDE SESSION STORAGE (COLABORADOR)
 // ==========================================================
 
-function loadArticleFromSessionStorage() {
+function loadArticleFromSessionStorage(user) {
 
   const reviewData = sessionStorage.getItem("pending-review");
 
@@ -120,6 +122,11 @@ function loadArticleFromSessionStorage() {
 
   try {
     const data = JSON.parse(reviewData);
+    if (data.ownerUid !== user.uid) {
+      sessionStorage.removeItem("pending-review");
+      window.location.replace("/admin/editor/");
+      return;
+    }
     showReview(data);
   } catch {
     alert("No se ha podido cargar la noticia.");
@@ -154,8 +161,8 @@ async function loadArticleFromD1(
     // ------------------------------------------------------
 
     const response =
-      await fetch(
-        `https://api.sanfranciscoysantaclara.es/api/admin/articles/${encodeURIComponent(articleId)}`,
+      await apiFetch(
+        `/api/admin/articles/${encodeURIComponent(articleId)}`,
         {
 
           method:
@@ -239,7 +246,7 @@ try {
 // CARGAR IMAGEN PRIVADA DESDE R2
 let imageUrl = "";
 if (article.image_key) {
-  const imageResponse = await fetch(`https://api.sanfranciscoysantaclara.es/api/admin/articles/${encodeURIComponent(article.id)}/image`, {
+  const imageResponse = await apiFetch(`/api/admin/articles/${encodeURIComponent(article.id)}/image`, {
     method: "GET",
     headers: { "Authorization": `Bearer ${token}` }
   });
@@ -785,7 +792,7 @@ modifyButton.addEventListener(
       sessionStorage.setItem(
         "editing-article",
         JSON.stringify(
-          data
+          { ...data, ownerUid: auth.currentUser?.uid }
         )
       );
 
@@ -983,8 +990,8 @@ if (
 
 
       const createResponse =
-        await fetch(
-          "https://api.sanfranciscoysantaclara.es/api/articles",
+        await apiFetch(
+          "/api/articles",
           {
 
             method:
@@ -1073,8 +1080,8 @@ if (
 
 
       const updateResponse =
-        await fetch(
-          `https://api.sanfranciscoysantaclara.es/api/admin/articles/${encodeURIComponent(articleId)}`,
+        await apiFetch(
+          `/api/admin/articles/${encodeURIComponent(articleId)}`,
           {
 
             method:
@@ -1140,8 +1147,8 @@ if (
     // ----------------------------------------------------
 
     const response =
-      await fetch(
-        `https://api.sanfranciscoysantaclara.es/api/admin/articles/${encodeURIComponent(articleId)}/approve`,
+      await apiFetch(
+        `/api/admin/articles/${encodeURIComponent(articleId)}/approve`,
         {
 
           method:
@@ -1201,7 +1208,9 @@ if (
 
 
     alert(
-      "✓ Artículo aprobado correctamente."
+      result.simulated
+        ? "✓ Artículo aprobado en desarrollo. Publicación simulada."
+        : "✓ Artículo aprobado correctamente."
     );
 
 
@@ -1304,8 +1313,8 @@ if (
       // ----------------------------------------------------
 
       const response =
-        await fetch(
-          "https://api.sanfranciscoysantaclara.es/api/articles",
+        await apiFetch(
+          "/api/articles",
           {
 
             method:

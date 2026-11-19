@@ -583,3 +583,21 @@ body {
       background: #f8d7da;
       border-radius: 8px;
     }
+.admin-environment {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 0.55rem 1rem;
+  background: #243449;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.admin-environment[data-state="development"] {
+  background: #165648;
+}
+
+.admin-environment[data-state="warning"] {
+  background: #8c3e14;
+}

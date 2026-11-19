@@ -86,3 +86,13 @@ public/
 data/eventos.json
 enlacecalendar.txt
 generador/
+
+# Codex
+.codex/
+AGENTS.md
+iniciar-desarrollo.ps1
+
+# Wranger
+sanfrancisco-noticias/
+Actualizar-Worker.bat
+desplegar-produccion.ps1

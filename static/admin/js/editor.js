@@ -1,3 +1,5 @@
+import { apiFetch, expectedEnvironment } from "./backend.js";
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
 
 import {
@@ -16,6 +18,7 @@ import {
 import {
   getMarkdown,
   getPlainText,
+  markdownToHtml,
   onContentChange
 } from "../editor/text-editor.js";
 
@@ -39,6 +42,155 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
+
+const saveDraftButton = document.getElementById("save-draft-button");
+const discardDraftButton = document.getElementById("discard-draft-button");
+const draftStatus = document.getElementById("draft-status");
+const submitButton = document.getElementById("submit-button");
+const editorMain = document.querySelector("main.admin-container");
+let draftRevision = null;
+let draftDirty = false;
+let draftVersionKnown = false;
+let draftBusy = false;
+let pendingArticle = null;
+
+async function requestDraft(user, method, data) {
+  const headers = { Authorization: `Bearer ${await user.getIdToken()}` };
+  if (data) headers["Content-Type"] = "application/json";
+  const response = await apiFetch("/api/editor/draft", {
+    method,
+    headers,
+    cache: "no-store",
+    signal: AbortSignal.timeout(15000),
+    body: data ? JSON.stringify(data) : undefined
+  });
+  if (response.status === 404) {
+    throw new Error(expectedEnvironment === "development"
+      ? "El Worker local no ofrece la función de borradores. Detén la instancia anterior, ejecuta iniciar-desarrollo.ps1 y vuelve a intentarlo."
+      : "El Worker de producción aún no ofrece la función de borradores.");
+  }
+  const result = await response.json();
+  if (!response.ok) throw new Error(result.error || "El Worker no respondió correctamente.");
+  return result.draft;
+}
+
+function readReviewSession(user) {
+  let review = null;
+  for (const key of ["pending-review", "editing-article"]) {
+    let data;
+    try {
+      data = JSON.parse(sessionStorage.getItem(key));
+    } catch {
+      data = null;
+    }
+    if (data?.ownerUid !== user.uid) {
+      sessionStorage.removeItem(key);
+    } else {
+      review ??= data;
+    }
+  }
+  return review;
+}
+
+function updateDraftControls() {
+  saveDraftButton.hidden = Boolean(pendingArticle);
+  discardDraftButton.hidden = Boolean(pendingArticle);
+  saveDraftButton.disabled = draftBusy;
+  discardDraftButton.disabled = draftBusy;
+}
+
+async function initializeDraft(user) {
+  editorMain.inert = true;
+  draftVersionKnown = false;
+  draftRevision = null;
+  draftDirty = false;
+  try {
+    const review = readReviewSession(user);
+    pendingArticle = review?.id ? review : null;
+    if (review) {
+      if (!await restaurarFormulario(review, user)) throw new Error("No se pudo restaurar la revisión.");
+      mostrarMensajeRestauracion();
+      draftRevision = review.draftRevision ?? null;
+      draftDirty = true;
+    } else {
+      draftStatus.textContent = "Buscando borrador…";
+      const saved = await requestDraft(user, "GET");
+      if (saved) {
+        if (!await restaurarFormulario(saved.form, user)) throw new Error("No se pudo restaurar el formulario.");
+        draftRevision = saved.revision;
+      }
+      draftStatus.textContent = saved ? "Borrador recuperado." : "";
+    }
+    draftVersionKnown = !pendingArticle;
+  } catch (error) {
+    draftStatus.textContent = `No se pudo recuperar el borrador. ${error.message}`;
+  } finally {
+    editorMain.inert = false;
+    updateDraftControls();
+  }
+}
+
+async function changeDraft(method) {
+  const user = auth.currentUser;
+  if (!user || pendingArticle || draftBusy) return;
+  if (method === "DELETE" &&
+      !window.confirm("¿Descartar el borrador y vaciar el formulario? Los cambios no se podrán recuperar.")) {
+    return;
+  }
+  draftBusy = true;
+  editorMain.inert = true;
+  updateDraftControls();
+  draftStatus.textContent = method === "PUT" ? "Guardando borrador…" : "Descartando borrador…";
+  try {
+    if (!draftVersionKnown) {
+      const existing = await requestDraft(user, "GET");
+      if (existing) {
+        throw new Error("Hay un borrador guardado que este editor no ha cargado. Conserva lo que has escrito y recarga el editor para recuperarlo.");
+      }
+      draftVersionKnown = true;
+    }
+    const data = { revision: draftRevision };
+    if (method === "PUT") {
+      data.form = collectDraftForm(croppedImageBlob ? await blobToDataURL(croppedImageBlob) : null);
+    }
+    const saved = await requestDraft(user, method, data);
+    draftDirty = false;
+    if (method === "DELETE") {
+      sessionStorage.removeItem("editing-article");
+      sessionStorage.removeItem("pending-review");
+      draftBusy = false;
+      window.location.reload();
+      return;
+    }
+    draftRevision = saved.revision;
+    sessionStorage.removeItem("editing-article");
+    sessionStorage.removeItem("pending-review");
+    draftStatus.textContent = `Guardado a las ${new Date(saved.updatedAt).toLocaleTimeString("es-ES", {
+      hour: "2-digit", minute: "2-digit"
+    })}.`;
+  } catch (error) {
+    draftStatus.textContent = `No se pudo ${method === "PUT" ? "guardar" : "descartar"} el borrador. ${error.message}`;
+  } finally {
+    draftBusy = false;
+    editorMain.inert = false;
+    updateDraftControls();
+  }
+}
+
+saveDraftButton.addEventListener("click", () => changeDraft("PUT"));
+discardDraftButton.addEventListener("click", () => changeDraft("DELETE"));
+editorMain.addEventListener("input", () => {
+  if (!editorMain.inert) draftDirty = true;
+});
+document.getElementById("crop-apply").addEventListener("click", () => {
+  draftDirty = true;
+});
+window.addEventListener("beforeunload", (event) => {
+  if (draftDirty || draftBusy) {
+    event.preventDefault();
+    event.returnValue = "";
+  }
+});
 
 
 // ==========================================================
@@ -64,7 +216,7 @@ async function cargarImagenExistenteDesdeR2(user, imageKey) {
   }
   try {
     const token = await user.getIdToken(true);
-    const response = await fetch(`https://api.sanfranciscoysantaclara.es/api/admin/articles/${encodeURIComponent(articleId)}/image`, {
+    const response = await apiFetch(`/api/admin/articles/${encodeURIComponent(articleId)}/image`, {
       method: "GET",
       headers: { "Authorization": `Bearer ${token}` }
     });
@@ -83,24 +235,8 @@ async function cargarImagenExistenteDesdeR2(user, imageKey) {
 // RESTAURAR ARTÍCULO DESDE REVISIÓN
 // ==========================================================
 
-async function restaurarArticuloDesdeRevision(user) {
-  
-  // Buscar primero en editing-article (para cuando venimos de modificar)
-  let datosGuardados = sessionStorage.getItem("editing-article");
-  
-  // Si no hay, buscar en pending-review (por si el usuario vuelve directamente)
-  if (!datosGuardados) {
-    datosGuardados = sessionStorage.getItem("pending-review");
-  }
-  
-  if (!datosGuardados) {
-    return false;
-  }
-  
+async function restaurarFormulario(data, user) {
   try {
-    
-    const data = JSON.parse(datosGuardados);
-    console.log("📝 Restaurando artículo desde revisión:", data);
     
     // ======================================================
     // RESTAURAR TÍTULO
@@ -126,22 +262,8 @@ async function restaurarArticuloDesdeRevision(user) {
     
     if (categorySelect && data.category) {
       
-      const checkCategoryLoaded = () => {
-        const optionExists = Array.from(categorySelect.options).some(
-          option => option.value === data.category
-        );
-        
-        if (optionExists) {
-          categorySelect.value = data.category;
-          categorySelect.dispatchEvent(new Event('change'));
-          console.log("✅ Categoría restaurada:", data.category);
-        } else {
-          console.log("⏳ Esperando categorías...");
-          setTimeout(checkCategoryLoaded, 100);
-        }
-      };
-      
-      checkCategoryLoaded();
+      categorySelect.value = data.category;
+      categorySelect.dispatchEvent(new Event("change"));
     }
     
     // ======================================================
@@ -417,24 +539,15 @@ if (
       const visualEditor = document.getElementById("visual-editor");
       const markdownEditor = document.getElementById("markdown-editor");
       
-      // Guardar en la variable global
-      if (typeof markdownContent !== 'undefined') {
-        markdownContent = data.content;
-      }
-      
       // Actualizar textarea Markdown
       if (markdownEditor) {
         markdownEditor.value = data.content;
       }
       
       // Actualizar editor visual usando la función global
-      if (visualEditor && typeof window.markdownToHtml === 'function') {
-        visualEditor.innerHTML = window.markdownToHtml(data.content);
+      if (visualEditor) {
+        visualEditor.innerHTML = markdownToHtml(data.content);
         console.log("✅ Editor visual restaurado");
-      } else if (visualEditor) {
-        // Fallback: mostrar el contenido en bruto
-        visualEditor.innerHTML = data.content;
-        console.warn("⚠️ markdownToHtml no disponible globalmente");
       }
       
       // Disparar eventos para actualizar contadores
@@ -495,12 +608,6 @@ if (data.editingExistingArticle && data.imageKey) {
     console.warn("⚠️ No se pudo restaurar la imagen como Blob:", error);
   }
 }
-    
-    // ======================================================
-    // MOSTRAR MENSAJE DE RESTAURACIÓN
-    // ======================================================
-    
-    mostrarMensajeRestauracion();
     
     return true;
     
@@ -803,13 +910,6 @@ onAuthStateChanged(auth, async (user) => {
   const role = getUserRole(email);
   const permissions = getPermissionsForRole(role);
 
-  // ======================================================
-  // RESTAURAR ARTÍCULO DESDE REVISIÓN (AHORA CON USER)
-  // ======================================================
-
-  await restaurarArticuloDesdeRevision(user);
-
-
   // --------------------------------------------------------
   // Mostrar usuario
   // --------------------------------------------------------
@@ -883,6 +983,8 @@ onAuthStateChanged(auth, async (user) => {
       "none";
 
   }
+
+  await initializeDraft(user);
 
 });
 
@@ -1102,18 +1204,6 @@ recurringType.addEventListener(
 
   }
 );
-
-// ==========================================================
-// RESTAURAR ARTÍCULO DESDE REVISIÓN
-// ==========================================================
-//
-// Todos los elementos y eventos del formulario ya están
-// preparados. Ahora sí podemos restaurar correctamente
-// el estado anterior.
-//
-
-restaurarArticuloDesdeRevision();
-
 
 // ==========================================================
 // IMAGEN
@@ -2100,54 +2190,54 @@ window.addEventListener(
 
 
 // ==========================================================
-// VISTA PREVIA
-// ==========================================================
+function collectDraftForm(image) {
+  return {
 
-document
-  .getElementById("preview-button")
-  .addEventListener(
-    "click",
-    () => {
+    // DATOS BÁSICOS
+    title: titleInput.value,
+    subtitle: subtitleInput.value,
+    category: categorySelect.value,
+    publicationDate: postDate.value,
+    content: getMarkdown(),
 
-      const title =
-        titleInput.value.trim();
+    // IMAGEN
+    image,
 
-      const subtitle =
-        subtitleInput.value.trim();
+    // DESTACADO
+    highlight: highlightCheckbox.checked,
+    highlightDays: highlightCheckbox.checked && highlightDaysContainer
+      ? (document.getElementById("highlight-days")?.value || null)
+      : null,
 
-      const category =
-        categorySelect.value;
+    // TAGS - Si está destacado, añadir etiqueta "importante"
+    tags: highlightCheckbox.checked ? ["importante"] : [],
 
-      const content =
-        document
-          .getElementById("post-content")
-          .value.trim();
+    // RECURRENCIA
+    recurring: recurringCheckbox.checked,
+    recurringType: recurringCheckbox.checked ? recurringType.value || null : null,
 
+    // RECURRENCIA ANUAL
+    baseMonth: recurringCheckbox.checked && recurringType.value === "annual" ? baseMonth.value || null : null,
+    baseDay: recurringCheckbox.checked && recurringType.value === "annual" ? baseDay.value || null : null,
+    annualDaysBefore: recurringCheckbox.checked && recurringType.value === "annual" ? parseInt(document.getElementById("days-before")?.value || "0", 10) : null,
+    annualDaysAfter: recurringCheckbox.checked && recurringType.value === "annual" ? parseInt(document.getElementById("days-after")?.value || "0", 10) : null,
 
-      if (!title || !content) {
+    // RECURRENCIA LITÚRGICA
+    liturgicalType: recurringCheckbox.checked && recurringType.value === "liturgical" ? liturgicalRecurringType.value || null : null,
+    daysBefore: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-before")?.value || 0) : null,
+    daysAfter: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-after")?.value || 0) : null,
 
-        alert(
-          "Necesitas escribir al menos el título y el contenido."
-        );
+    // HUGO
+    weight: 0
 
-        return;
-
-      }
-
-
-      alert(
-        "La vista previa completa la construiremos en el siguiente paso."
-      );
-
-    }
-  );
-
+  };
+}
 
 // ==========================================================
 // ENVIAR PARA REVISION
 // ==========================================================
 
-document.getElementById("submit-button").addEventListener("click", async () => {
+submitButton.addEventListener("click", async () => {
   // Obtener todos los valores una sola vez
   const title = titleInput.value.trim();
   const subtitle = subtitleInput.value.trim();
@@ -2322,71 +2412,17 @@ if (contentText.length > 10000) return alert("El contenido supera el máximo per
   // PREPARAR DATOS PARA LA REVISIÓN
   // ========================================================
 
-const editingArticleData =
-  JSON.parse(
-    sessionStorage.getItem(
-      "editing-article"
-    ) || "{}"
-  );
-
-const editingArticleId =
-  editingArticleData.id || null;
-
-const editingImageKey =
-  editingArticleData.imageKey || null;
+const editingArticleId = pendingArticle?.id ?? null;
+const editingImageKey = pendingArticle?.imageKey ?? null;
 
 const reviewData = {
-
-  // IDENTIDAD DEL ARTÍCULO
-  id:
-    editingArticleId,
-
-  editingExistingArticle:
-    Boolean(
-      editingArticleId
-    ),
-
-  imageKey:
-    editingImageKey,
-
-
-  // DATOS BÁSICOS
-  title: title,
-  subtitle: subtitle,
-  category: category,
-  publicationDate: publicationDate,
-  content: getMarkdown(),
-
-  // IMAGEN
-  image: imagePreview,
-
-  // DESTACADO
-  highlight: highlightCheckbox.checked,
-  highlightDays: highlightCheckbox.checked && highlightDaysContainer
-    ? (document.getElementById("highlight-days")?.value || null)
-    : null,
-
-  // TAGS - Si está destacado, añadir etiqueta "importante"
-  tags: highlightCheckbox.checked ? ["importante"] : [],
-
-  // RECURRENCIA
-  recurring: recurringCheckbox.checked,
-  recurringType: recurringCheckbox.checked ? recurringType.value || null : null,
-
-// RECURRENCIA ANUAL
-baseMonth: recurringCheckbox.checked && recurringType.value === "annual" ? baseMonth.value || null : null,
-baseDay: recurringCheckbox.checked && recurringType.value === "annual" ? baseDay.value || null : null,
-annualDaysBefore: recurringCheckbox.checked && recurringType.value === "annual" ? parseInt(document.getElementById("days-before")?.value || "0", 10) : null,
-annualDaysAfter: recurringCheckbox.checked && recurringType.value === "annual" ? parseInt(document.getElementById("days-after")?.value || "0", 10) : null,
-
-  // RECURRENCIA LITÚRGICA
-  liturgicalType: recurringCheckbox.checked && recurringType.value === "liturgical" ? liturgicalRecurringType.value || null : null,
-  daysBefore: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-before")?.value || 0) : null,
-  daysAfter: recurringCheckbox.checked && recurringType.value === "liturgical" ? (document.getElementById("liturgical-days-after")?.value || 0) : null,
-
-  // HUGO
-  weight: 0
-
+  ...collectDraftForm(imagePreview),
+  title, subtitle, category, publicationDate,
+  id: editingArticleId,
+  editingExistingArticle: Boolean(editingArticleId),
+  imageKey: editingImageKey,
+  ownerUid: auth.currentUser?.uid,
+  draftRevision: editingArticleId ? null : draftRevision
 };
 
 
@@ -2422,17 +2458,8 @@ console.log(
   reviewData.editingExistingArticle
 );
 
-// TEMPORAL PRUEBA
-window.location.href =
-  "/admin/editor/review/";
-
-
-  // ========================================================
-  // IR A LA PÁGINA DE REVISIÓN
-  // ========================================================
-
-  window.location.href =
-    "/admin/editor/review/";
+  draftDirty = false;
+  window.location.href = "/admin/editor/review/";
 
 });
 

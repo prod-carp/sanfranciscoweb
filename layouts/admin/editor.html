@@ -59,7 +59,7 @@
        CONTENIDO
        ===================================================== -->
 
-  <main class="admin-container">
+  <main class="admin-container" inert>
 
 
     <!-- INFORMACIÓN DEL USUARIO -->
@@ -895,12 +895,16 @@
 
         <button
           type="button"
-          id="preview-button"
+          id="save-draft-button"
           class="button button-preview"
+          disabled
         >
-          Guardar Borrador
+          Guardar borrador
         </button>
 
+        <button type="button" id="discard-draft-button" class="button button-preview" disabled>
+          Descartar borrador
+        </button>
 
         <button
           type="button"
@@ -911,18 +915,12 @@
         </button>
 
       </div>
+      <p id="draft-status" role="status" aria-live="polite"></p>
 
     </section>
 
 
   </main>
-
-<script type="module" src="/admin/js/editor.js"></script>
-<script type="module">
-  // Importar y exponer la función markdownToHtml globalmente
-  import { markdownToHtml } from "/admin/editor/text-editor.js";
-  window.markdownToHtml = markdownToHtml;
-</script>
 
 <script type="module" src="/admin/js/editor.js"></script>
 

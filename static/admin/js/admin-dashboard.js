@@ -1,3 +1,4 @@
+import { apiFetch } from "./backend.js";
 
 import {
   initializeApp
@@ -93,8 +94,8 @@ async function loadPendingArticles(user) {
   try {
     const idToken = await user.getIdToken(true);
 
-    const response = await fetch(
-      "https://api.sanfranciscoysantaclara.es/api/admin/articles",
+    const response = await apiFetch(
+      "/api/admin/articles",
       {
         method: "GET",
         headers: {
@@ -272,8 +273,8 @@ function renderArticles(articles) {
 
         const idToken = await currentUser.getIdToken(true);
 
-        const response = await fetch(
-          "https://api.sanfranciscoysantaclara.es/api/admin/articles/" +
+        const response = await apiFetch(
+          "/api/admin/articles/" +
           encodeURIComponent(id),
           {
             method: "DELETE",
