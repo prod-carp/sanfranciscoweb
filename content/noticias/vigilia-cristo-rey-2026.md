@@ -1,6 +1,6 @@
 +++
 title = 'El Cerro de los Ángeles acogerá la tradicional Vigilia de Cristo Rey y el fin del Año Litúrgico'
-subtitle = 'Una gran fiesta de la Iglesia, una gran esperanza: Vivamos juntos el Día de Todos los Santos y la Conmemoración de los Fieles Difuntos'
+subtitle = 'El sábado 21 de noviembre de 2026 a partir de las 20:30h'
 date = '2026-11-17T00:00:00+02:00'
 draft = false
 categorias = ["Parroquia"]
@@ -8,7 +8,6 @@ weight = 0
 image = "/assets/images/blog/cerro-de-los-angeles.webp"
 tags = []
 +++
-
 
 **GETAFE / MADRID.** El próximo sábado 21 de noviembre de 2026, la Basílica del Cerro de los Ángeles en Getafe será el escenario de la tradicional **Vigilia de Cristo Rey (Rey de Reyes y Señor de Señores)**, cita que convoca conjuntamente a los fieles de las diócesis de Getafe, Madrid y Alcalá de Henares.
 
