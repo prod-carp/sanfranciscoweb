@@ -1,6 +1,6 @@
 +++
 title = 'Mercadillo Navideño en San Francisco y Santa Clara de Asís para colaborar con la parroquia'
-subtitle = 'Solo los dias 22 y 29 de noviembre a la salida de misas'
+subtitle = 'Solo los días 22 y 29 de noviembre a la salida de misas'
 date = '2026-11-21T10:38:06+02:00'
 draft = false
 categorias = ["Parroquia"]
