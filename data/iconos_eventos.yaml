@@ -28,8 +28,8 @@
 - claves: ["retiro", "peregrinacion", "convivencia", "viaje", "excursion"]
   icono: "🚌"
 
-- claves: ["mercadillo", "solidario"]
-  icono: "🤝"
+- claves: ["navideño", "navidad"]
+  icono: "🎄"
 
 - claves: ["obispo"]
   icono: "⛪"
