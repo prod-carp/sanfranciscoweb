@@ -4,11 +4,12 @@ subtitle = 'Una jornada que nos invita a reconocer la dignidad de cada persona y
 date = '2026-11-13T00:00:00+02:00'
 draft = false
 categorias = ["Tiempo Litúrgico"]
-tags = [""]
+tags = ["importante"]
+diasDestacado = 1
 weight = 0
 image = "/assets/images/blog/2026-10-14-el-domund-celebra-100-anos-de-compromiso-con-las-misiones.webp"
-tipoFecha = "cristo-rey"
-diasAntes = 7
+tipoFecha = "pobres"
+diasAntes = 2
 diasDespues = 300
 +++
 

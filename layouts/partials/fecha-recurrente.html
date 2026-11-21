@@ -290,6 +290,109 @@
 {{ end }}
 
 {{/* ========================================================
+   SISTEMA 7 — JORNADA MUNDIAL DE LOS POBRES
+   tipoFecha = "pobres"
+
+   Se celebra el domingo anterior a Cristo Rey.
+======================================================== */}}
+
+{{ if eq .Params.tipoFecha "pobres" }}
+
+    {{ $hoy := now }}
+    {{ $anio := $hoy.Year }}
+
+    {{/* 30 de noviembre como referencia (igual que Sistema 3) */}}
+
+    {{ $fechaReferencia := time.AsTime (printf "%d-11-30" $anio) }}
+    {{ $diaSemana := int $fechaReferencia.Weekday }}
+    {{ $diasRetroceso := $diaSemana }}
+
+    {{ $primerDomingoAdviento := $fechaReferencia.AddDate 0 0 (sub 0 $diasRetroceso) }}
+    {{ $cristoRey := $primerDomingoAdviento.AddDate 0 0 -7 }}
+
+    {{/* Domingo anterior a Cristo Rey */}}
+
+    {{ $fechaPobres := $cristoRey.AddDate 0 0 -7 }}
+
+    {{ $fecha = $fechaPobres }}
+
+    {{/* ==================================================
+       PERÍODO DE PUBLICACIÓN
+    ================================================== */}}
+
+    {{ $diasAntes := int .Params.diasAntes }}
+    {{ $diasDespues := int .Params.diasDespues }}
+
+    {{ $fechaInicio := $fechaPobres.AddDate 0 0 (sub 0 $diasAntes) }}
+    {{ $fechaFin := $fechaPobres.AddDate 0 0 $diasDespues }}
+
+    {{ $activa = and
+        (ge $hoy $fechaInicio)
+        (le $hoy $fechaFin)
+    }}
+
+{{ end }}
+
+{{/* ========================================================
+   SISTEMA 8 — DÍA DE LA IGLESIA DIOCESANA
+   tipoFecha = "diocesana"
+
+   Se celebra el segundo domingo de noviembre.
+======================================================== */}}
+
+{{ if eq .Params.tipoFecha "diocesana" }}
+
+    {{ $hoy := now }}
+    {{ $anio := $hoy.Year }}
+
+    {{/* 1 de noviembre como referencia */}}
+
+    {{ $primeroNoviembre := time.AsTime (printf "%d-11-01" $anio) }}
+
+    {{/* Día de la semana:
+         Domingo = 0
+         Lunes   = 1
+         ...
+         Sábado  = 6
+    */}}
+
+    {{ $diaSemana := int $primeroNoviembre.Weekday }}
+
+    {{/* Días hasta el primer domingo de noviembre.
+       Si el 1 de noviembre ya es domingo, son 0 días.
+    */}}
+
+    {{ $diasHastaPrimerDomingo := 0 }}
+    {{ if ne $diaSemana 0 }}
+        {{ $diasHastaPrimerDomingo = sub 7 $diaSemana }}
+    {{ end }}
+
+    {{ $primerDomingo := $primeroNoviembre.AddDate 0 0 $diasHastaPrimerDomingo }}
+
+    {{/* Segundo domingo = primer domingo + 7 días */}}
+
+    {{ $fechaDiocesana := $primerDomingo.AddDate 0 0 7 }}
+
+    {{ $fecha = $fechaDiocesana }}
+
+    {{/* ==================================================
+       PERÍODO DE PUBLICACIÓN
+    ================================================== */}}
+
+    {{ $diasAntes := int .Params.diasAntes }}
+    {{ $diasDespues := int .Params.diasDespues }}
+
+    {{ $fechaInicio := $fechaDiocesana.AddDate 0 0 (sub 0 $diasAntes) }}
+    {{ $fechaFin := $fechaDiocesana.AddDate 0 0 $diasDespues }}
+
+    {{ $activa = and
+        (ge $hoy $fechaInicio)
+        (le $hoy $fechaFin)
+    }}
+
+{{ end }}
+
+{{/* ========================================================
    SISTEMA 4 — BAUTISMO DEL SEÑOR
    tipoFecha = "bautismo-senor"
 

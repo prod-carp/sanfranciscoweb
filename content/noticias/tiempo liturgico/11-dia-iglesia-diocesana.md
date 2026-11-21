@@ -4,12 +4,13 @@ subtitle = '¿Qué don he recibido y cómo puedo ponerlo hoy al servicio de los 
 date = '2026-11-05T00:00:00+02:00'
 draft = false
 categorias = ["Exterior"]
-tags = [""]
+tags = ["importante"]
+diasDestacado = 1
 weight = 0
 image = "/assets/images/generic/relaciones/relaciones.webp"
-fechaBase = '11/05'
-fechaInicio = 1
-fechaFin = 300
+tipoFecha = "diocesana"
+diasAntes = 2
+diasDespues = 300
 +++
 
 Cada año, en noviembre, la Iglesia en España celebra el **Día de la Iglesia Diocesana**, una ocasión para dar gracias por la comunidad cristiana que vive y anuncia el Evangelio en cada diócesis. Es una invitación a descubrir que la Iglesia está presente en la parroquia, en la oración compartida, en la celebración de los sacramentos, en el servicio a quienes sufren y en tantas personas que ponen sus dones al servicio de los demás. 
