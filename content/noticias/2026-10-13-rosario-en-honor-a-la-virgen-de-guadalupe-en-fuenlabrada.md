@@ -1,7 +1,7 @@
 +++
 title = 'Rosario en honor a la Virgen de Guadalupe en Fuenlabrada'
 subtitle = 'La parroquia San Francisco y Santa Clara invita a todos los fieles a participar en un encuentro de oración dedicado a la Virgen de Guadalupe'
-date = '2026-10-13T00:00:00+02:00'
+date = '2026-12-08T00:00:00+02:00'
 draft = false
 categorias = ["Parroquia"]
 weight = 0
@@ -11,7 +11,7 @@ tags = []
 
 La parroquia San Francisco y Santa Clara invita a todos los fieles a participar en un encuentro de oración dedicado a la Virgen de Guadalupe, una ocasión para reunirse en comunidad, rezar el santo rosario y poner bajo la protección maternal de María nuestras familias, nuestras necesidades y las del mundo entero.
 
-**Próximo encuentro:** 17 de Octubre a las 18:00
+**Próximo encuentro:** 12 de Diciembre a las 18:00
 
 **Lugar:** Parroquia San Francisco y Santa Clara, Fuenlabrada.
 

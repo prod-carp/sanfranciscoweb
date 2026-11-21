@@ -1,6 +1,6 @@
 ﻿+++
-title = 'Presentación del Señor: significado, historia y fe católica'
-subtitle = 'Descubre qué celebra la Iglesia en la Presentación de Jesús, quiénes fueron Simeón y Ana y qué significado tiene esta fiesta para la vida cristiana.'
+title = 'La Presentación de Jesús en el Templo: cuando la Luz de Dios sale al encuentro de su pueblo'
+subtitle = 'María y José llevan al Niño Jesús al Templo de Jerusalén. Allí, dos ancianos, Simeón y Ana, reconocen en aquel pequeño al Salvador esperado.'
 date = '2027-02-02T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
@@ -13,124 +13,132 @@ fechaInicio = 1
 fechaFin = 300 
 +++
 
-La **Presentación del Señor** es una de las celebraciones más antiguas del calendario cristiano y tiene lugar el **2 de febrero**, cuarenta días después de Navidad. En ella, la Iglesia recuerda el momento en que María y José llevaron al Niño Jesús al templo de Jerusalén para presentarlo al Señor.
+*Cada 2 de febrero, cuarenta días después de Navidad, la Iglesia celebra una fiesta llena de significado: María y José llevan al Niño Jesús al Templo de Jerusalén. Allí, dos ancianos, Simeón y Ana, reconocen en aquel pequeño al Salvador esperado. Un encuentro que nos invita a descubrir la luz de Cristo en nuestra propia vida.*
 
-Esta celebración está profundamente relacionada con la Navidad, pero también anticipa aspectos fundamentales de la misión de Cristo: Él es la luz que viene al mundo y el Salvador esperado por Israel y por todos los pueblos.
+## Un niño en brazos, una promesa cumplida
 
-## ¿Qué significa la Presentación del Señor?
+Imaginemos por un momento aquella escena. Entre los numerosos peregrinos que acudían al Templo de Jerusalén, una joven madre y su esposo entran llevando a un niño de apenas cuarenta días. No hay grandes comitivas ni señales extraordinarias. Son María y José, una familia humilde que acude a cumplir lo establecido por la Ley de Moisés.
 
-El Evangelio de San Lucas cuenta que, después del nacimiento de Jesús, María y José llevaron al Niño a Jerusalén:
+Según la tradición judía, después del nacimiento de un hijo varón primogénito, sus padres debían consagrarlo al Señor. Además, la madre realizaba el rito de purificación previsto por la Ley. María y José, fieles a las costumbres religiosas de su pueblo, presentan a Jesús y ofrecen el sacrificio de dos tórtolas o dos pichones, la ofrenda permitida a las familias con menos recursos.
 
-*«Cuando se cumplieron los días de la purificación de ellos, según la Ley de Moisés, llevaron a Jesús a Jerusalén para presentarlo al Señor»* (Lc 2,22).
+Pero lo que parece un sencillo acto de obediencia es, en realidad, un acontecimiento extraordinario: **el Hijo de Dios entra en el Templo, la casa de su Padre, llevado en brazos por su Madre.**
 
-La práctica estaba relacionada con la **Ley de Moisés**. El primogénito pertenecía especialmente al Señor y debía ser presentado ante Él.
+Aquel que viene a salvar al mundo se presenta sin grandeza humana, sin riquezas y sin privilegios. Dios ha querido acercarse a nosotros desde la humildad de una familia.
 
-El Evangelio explica:
+## Simeón: unos ojos que supieron reconocer al Salvador
 
-*«Todo primogénito varón será consagrado al Señor»* (Lc 2,23; cf. Ex 13,2).
+En Jerusalén vivía un hombre justo y piadoso llamado Simeón. El Evangelio de san Lucas nos cuenta que esperaba el consuelo de Israel y que el Espíritu Santo le había revelado que no moriría sin haber visto al Mesías del Señor.
 
-Jesús, verdadero Hijo de Dios, es presentado en el templo. Este gesto manifiesta también la humildad de María y José, que cumplen fielmente las prescripciones religiosas de su pueblo.
+Movido por el Espíritu, Simeón acudió al Templo precisamente cuando María y José entraban con Jesús.
 
-## Simeón: el hombre que esperaba al Mesías
+Podemos imaginar la emoción de aquel anciano al tomar al Niño entre sus brazos. Había esperado durante años, quizá durante toda una vida, el cumplimiento de la promesa de Dios. Y ahora, ante sus ojos, no aparecía un rey poderoso ni un ejército victorioso, sino un bebé indefenso.
 
-En el templo se encontraba un hombre llamado **Simeón**. San Lucas lo describe como un hombre justo y piadoso que esperaba la consolación de Israel. El Espíritu Santo le había revelado que no moriría antes de haber visto al Mesías del Señor.
+Sin embargo, Simeón reconoció lo que muchos otros no podían ver.
 
-Cuando María y José llevaron al Niño al templo, Simeón lo tomó en sus brazos y reconoció en Él al Salvador. Entonces pronunció uno de los cánticos más conocidos de la liturgia:
+Entonces pronunció una de las oraciones más hermosas del Evangelio:
 
-*«Ahora, Señor, según tu promesa, puedes dejar a tu siervo irse en paz, porque mis ojos han visto a tu Salvador»* (Lc 2,29-30).
+> «Ahora, Señor, según tu promesa, puedes dejar a tu siervo irse en paz. Porque mis ojos han visto a tu Salvador».
+> 
+> — Lucas 2,29-30
 
-Simeón había esperado durante mucho tiempo. Y finalmente comprendió que la promesa de Dios se había cumplido. Su encuentro con Jesús nos enseña algo importante: **la espera confiada en Dios no es inútil**.
+Simeón comprendió que aquel Niño no había venido solamente para Israel, sino para todos los pueblos. Por eso lo proclamó **«luz para alumbrar a las naciones y gloria de tu pueblo Israel»** (Lc 2,32).
 
-## Jesús, luz para todos los pueblos
+Esta es la razón por la que la Presentación del Señor también se conoce popularmente como el **Día de la Candelaria**. Las velas que se bendicen y se llevan en procesión representan a Jesucristo, la verdadera Luz que ilumina nuestra existencia.
 
-Simeón continúa describiendo al Niño con unas palabras especialmente importantes:
+## Ana: la alegría de quien nunca deja de esperar
 
-*«Luz para iluminar a las naciones y gloria de tu pueblo Israel»* (Lc 2,32).
+Junto a Simeón aparece otra figura entrañable: Ana, una profetisa de avanzada edad que permanecía fiel al Señor mediante la oración y el ayuno.
 
-De aquí procede una de las características tradicionales de esta celebración: **la luz**. Jesús es presentado como la luz que ilumina a todos los pueblos.
+El Evangelio nos dice que, al encontrarse con Jesús, comenzó a dar gracias a Dios y a hablar del Niño a todos los que aguardaban la liberación de Jerusalén.
 
-La Iglesia entiende que Cristo no vino únicamente para Israel. La salvación que trae está destinada a toda la humanidad. Esta imagen conecta la Presentación con otras palabras de Jesús en el Evangelio:
+Ana nos recuerda algo importante: la fe no envejece cuando se alimenta de la esperanza.
 
-*«Yo soy la luz del mundo»* (Jn 8,12).
+Ella había pasado muchos años dedicada a Dios. Su vida podía parecer silenciosa y poco importante a los ojos del mundo, pero su perseverancia la preparó para reconocer al Salvador cuando llegó.
 
-Por eso, la celebración del 2 de febrero nos invita a reconocer a Cristo como la verdadera luz que puede iluminar nuestra vida.
+Simeón y Ana representan a tantas personas mayores que, con su oración, su fidelidad y su testimonio, sostienen la fe de nuestras familias y comunidades.
+
+**¡Cuánto debemos agradecer a nuestros mayores, a nuestros abuelos y a quienes nos han transmitido la fe!**
+
+## Una espada atravesará el alma de María
+
+Sin embargo, en medio de la alegría de aquel encuentro, Simeón dirige a María unas palabras misteriosas:
+
+> «Y a ti misma una espada te traspasará el alma».
+> 
+> — Lucas 2,35
+
+La Presentación de Jesús en el Templo no anuncia solamente la luz y la salvación. También anticipa el sufrimiento que acompañará la misión de Cristo.
+
+María, que sostiene amorosamente a su Hijo, escuchará estas palabras sin conocer todavía todos los acontecimientos que vendrán. Años después, permanecerá junto a la cruz, compartiendo con dolor de madre el sufrimiento de Jesús.
+
+Esta profecía nos ayuda a comprender que el amor verdadero no consiste en evitar siempre el sufrimiento, sino en permanecer fieles incluso cuando llegan las dificultades.
+
+María nos enseña a confiar en Dios cuando no entendemos sus caminos, a guardar su Palabra en el corazón y a seguir adelante sostenidos por la fe.
+
+## La luz de Cristo en nuestros hogares
+
+La fiesta de la Presentación también tiene un profundo significado para nuestras familias.
+
+María y José no viven su fe de manera aislada. Acuden juntos al Templo y presentan a Jesús ante Dios. En aquel gesto descubrimos una hermosa enseñanza para los padres cristianos: **los hijos son un don recibido de Dios, no una posesión, y nuestra misión es acompañarlos para que descubran su vocación y aprendan a amar.**
+
+Llevar a nuestros hijos a la iglesia, enseñarles a rezar, hablarles de Jesús y mostrarles con nuestro ejemplo lo que significa vivir el Evangelio son formas cotidianas de acercarlos al Señor.
+
+Pero esta fiesta también nos interpela como esposos, abuelos, catequistas y miembros de la comunidad parroquial.
+
+¿Somos capaces de reconocer la presencia de Cristo en nuestra vida diaria? ¿Dejamos que su luz ilumine nuestras decisiones, nuestras relaciones y nuestras dificultades?
+
+A veces buscamos a Dios en acontecimientos extraordinarios y olvidamos que puede salir a nuestro encuentro en una conversación familiar, en el perdón después de una discusión, en la paciencia con un hijo o en la atención a una persona que se siente sola.
+
+Como Simeón, necesitamos aprender a mirar con los ojos de la fe.
+
+## El Día de la Vida Consagrada
+
+El 2 de febrero, la Iglesia celebra también la **Jornada Mundial de la Vida Consagrada**, instituida por san Juan Pablo II en 1997.
+
+La elección de esta fecha tiene un hermoso sentido: así como Jesús fue presentado al Padre, los religiosos y religiosas ofrecen su vida a Dios mediante una entrega especial al servicio de la Iglesia y de los demás.
+
+En nuestra espiritualidad franciscana, esta celebración nos recuerda particularmente a san Francisco y santa Clara de Asís, que respondieron a la llamada del Señor abrazando una vida de pobreza evangélica, fraternidad, oración y amor.
+
+Santa Clara, desde la vida contemplativa, y san Francisco, siguiendo las huellas de Cristo pobre y crucificado, nos enseñan que una existencia entregada a Dios puede convertirse en una luz para el mundo.
+
+Es también un día para agradecer la presencia de tantas personas consagradas que, muchas veces de manera discreta, dedican su vida a la oración, la educación, el cuidado de los enfermos y la atención a los más necesitados.
+
+## Que nuestra vida sea también una pequeña luz
+
+La Presentación del Señor nos invita a contemplar una escena sencilla que encierra una verdad inmensa: Dios cumple sus promesas, aunque no siempre lo haga de la manera que esperamos.
+
+Simeón aguardó con paciencia. Ana perseveró en la oración. María y José caminaron en obediencia y confianza. Todos ellos nos muestran distintas maneras de responder al amor de Dios.
+
+Cuando encendemos una vela en esta fiesta, recordamos que Cristo es la Luz del mundo. Pero también asumimos un compromiso: llevar algo de esa luz a quienes nos rodean.
+
+Que nuestras familias sean lugares donde se pueda encontrar consuelo, esperanza y perdón. Que nuestra parroquia sea una comunidad acogedora, donde niños, jóvenes, adultos y mayores puedan reconocer el rostro de Jesús.
+
+Y que, al terminar cada jornada, podamos hacer nuestras las palabras de Simeón, con la paz de quien sabe que Dios está presente en su vida.
+
+### Oración para el día de la Presentación del Señor
+
+Señor Jesús, Luz que ilumina a todos los pueblos,  
+hoy queremos presentarte nuestra vida y nuestras familias.
+
+Como Simeón, enséñanos a reconocerte  
+incluso en las cosas más pequeñas.
+
+Como Ana, ayúdanos a perseverar en la oración  
+y a mantener viva la esperanza.
+
+Como María y José, danos un corazón humilde,  
+capaz de confiar en tu voluntad y caminar junto a ti.
+
+Ilumina nuestros hogares, fortalece nuestros matrimonios,  
+acompaña a nuestros hijos y consuela a nuestros mayores.
+
+Que nunca nos falte tu luz  
+y que sepamos compartirla con quienes más la necesitan.
+
+**Amén.**
 
 ---
 
-## La profecía de Simeón a María
+*«Porque mis ojos han visto a tu Salvador, a quien has presentado ante todos los pueblos» (Lucas 2,30-31).
 
-Sin embargo, el encuentro no contiene solamente palabras de alegría. Simeón también se dirige a María y le anuncia:
-
-*«Y a ti misma una espada te atravesará el alma»* (Lc 2,35).
-
-Estas palabras anticipan el sufrimiento que María experimentará al contemplar la pasión y muerte de su Hijo. La Presentación, por tanto, conecta la infancia de Jesús con el misterio de la cruz. Desde el comienzo de su vida, Jesús es presentado como el Salvador que entregará su vida por la humanidad. Y María aparece como aquella que permanecerá unida a Él incluso en el sufrimiento.
-
-## Ana, la profetisa
-
-En el templo también se encontraba una mujer llamada **Ana**, una profetisa de edad avanzada. San Lucas nos dice que:
-
-*«No se apartaba del templo, sirviendo a Dios noche y día con ayunos y oraciones»* (Lc 2,37).
-
-Cuando vio al Niño, comenzó a dar gracias a Dios y habló de Él a todos los que esperaban la redención de Jerusalén.
-
-Ana se convierte así en otra testigo de la llegada del Mesías. Su actitud muestra que reconocer a Cristo lleva también a anunciarlo a los demás. Simeón reconoce al Salvador y lo proclama; Ana lo encuentra y habla de Él.
-
-## ¿Por qué es importante esta celebración?
-
-La Presentación del Señor nos recuerda que **Jesús es el Salvador prometido por Dios** 
-
-También nos presenta varios modelos de fe:
-
-- **María y José**, que obedecen humildemente a Dios.
-- **Simeón**, que espera con perseverancia hasta contemplar el cumplimiento de la promesa.
-- **Ana**, que permanece fiel en la oración y reconoce la presencia de Dios.
-
-Todos ellos nos enseñan diferentes dimensiones de la vida cristiana: obedecer, esperar, orar y reconocer a Cristo.
-
-## La celebración de la Candelaria
-
-La Presentación del Señor también recibe tradicionalmente el nombre de **Candelaria**, debido a la bendición y procesión de las velas que se realizan en esta celebración.
-
-La luz de las velas representa a Cristo, identificado por Simeón como:
-
-*«Luz para iluminar a las naciones»* (Lc 2,32).
-
-Esta tradición explica también por qué esta fiesta ha estado vinculada históricamente con las velas y la luz. No se trata simplemente de un símbolo decorativo. La vela recuerda que Cristo es la luz que vence las tinieblas.
-
-## Una celebración relacionada con la vida consagrada
-
-El 2 de febrero también se celebra actualmente la **Jornada Mundial de la Vida Consagrada**.
-
-La relación tiene un profundo significado espiritual. En la Presentación, Jesús es presentado y consagrado al Señor. La Iglesia contempla en este misterio el significado de quienes entregan su vida de manera especial a Dios mediante la vida consagrada.
-
-Monjes, religiosas, religiosos, vírgenes consagradas y otros miembros de la vida consagrada buscan vivir una entrega particular a Cristo mediante la oración, la pobreza, la castidad y la obediencia, según su vocación.
-
-## Citas bíblicas relacionadas
-
-- **Lucas 2,22-40** — Relato completo de la Presentación de Jesús en el templo.
-- **Éxodo 13,2** — Consagración de los primogénitos al Señor.
-- **Isaías 42,6** — El Siervo como luz para las naciones.
-- **Isaías 49,6** — Dios presenta a su Siervo como luz para todos los pueblos.
-- **Juan 8,12** — «Yo soy la luz del mundo».
-- **Salmo 27,1** — «El Señor es mi luz y mi salvación».
-
-## ¿Cuándo se celebra?
-
-- **2 de febrero** — Presentación del Señor
-- **Categoría litúrgica:** Fiesta.
-- Se celebra exactamente **40 días después de Navidad** (25 de diciembre).
-- Tradicionalmente también recibe los nombres de **Fiesta de la Candelaria** y **Purificación de la Virgen María**, aunque el nombre litúrgico actual es **Presentación del Señor**.
-
-## ¿Qué podemos aprender de la Presentación del Señor?
-
-Esta celebración nos invita a mirar a Cristo como la luz que Dios ha enviado al mundo.
-
-Simeón había esperado durante años y no permitió que la espera debilitara su confianza. Cuando finalmente tuvo al Niño en sus brazos, reconoció que Dios había cumplido su promesa. También nosotros podemos atravesar momentos en los que parece que Dios tarda en responder. La actitud de Simeón nos enseña a perseverar en la esperanza.
-
-María y José nos enseñan a presentar nuestra vida a Dios. Ana nos recuerda el valor de la oración perseverante. Y Cristo nos recuerda que no estamos llamados a vivir en la oscuridad.
-
-La celebración de la Presentación puede resumirse en las palabras de Simeón:
-
-*«Mis ojos han visto a tu Salvador»* (Lc 2,30).
-
-**Cristo es la luz que ha venido al mundo. Y quien recibe esa luz está llamado también a reflejarla en su propia vida.**
+**Lectura bíblica:** Lucas 2,22-40.**
