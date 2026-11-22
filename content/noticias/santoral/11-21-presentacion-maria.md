@@ -26,7 +26,7 @@ Cuando María cumplió tres años, sus padres la llevaron al Templo de Jerusalé
 
 La imagen de aquella niña que sube los escalones del Templo ha inspirado numerosas obras de arte, oraciones y reflexiones espirituales a lo largo de la historia.
 
-Es importante recordar que el *Protoevangelio de Santiago* no forma parte de la Sagrada Escritura y que los detalles de esta narración no pueden considerarse hechos históricos demostrados. Sin embargo, la Iglesia ha conservado esta celebración por la profunda verdad espiritual que expresa: **María pertenece enteramente a Dios y se dispone, desde el comienzo de su existencia, a acoger su voluntad.**
+Es importante recordar que el *Protoevangelio de Santiago* no forma parte de la Sagrada Escritura, sin embargo, la Iglesia ha conservado esta celebración por la profunda verdad espiritual que expresa: **María pertenece enteramente a Dios y se dispone, desde el comienzo de su existencia, a acoger su voluntad.**
 
 ## La verdadera presentación: un corazón abierto a la voluntad de Dios
 
@@ -54,7 +54,7 @@ En el relato tradicional, Joaquín y Ana no consideran a su hija una posesión, 
 
 Esta actitud contiene una enseñanza especialmente hermosa para los padres cristianos.
 
-**Educar en la fe no significa decidir por los hijos el camino que deberán recorrer, sino ayudarles a descubrir que son amados por Dios y que su vida tiene una vocación propia.**
+**Educar en la fe a los hijos es ayudarles a descubrir que son amados por Dios y que su vida tiene una vocación propia, orientarles y enseñarles a discernir el camino que Dios tiene para sus vidas.**
 
 Cada oración compartida en familia, cada gesto de perdón, cada visita a la iglesia y cada ejemplo de caridad va sembrando en el corazón de los pequeños una semilla que, con la gracia de Dios, podrá dar fruto.
 
@@ -80,7 +80,7 @@ Su testimonio nos recuerda que la verdadera riqueza del cristiano no está en po
 
 ## También nosotros podemos presentarnos ante Dios
 
-La Presentación de la Virgen no es solamente una celebración para contemplar el pasado. Es también una invitación a preguntarnos cómo estamos viviendo nuestra propia relación con Dios.
+La Presentación de la Virgen es también una invitación a preguntarnos cómo estamos viviendo nuestra propia relación con Dios.
 
 No todos estamos llamados a la vida religiosa, pero todos los bautizados compartimos una vocación fundamental: la santidad.
 
@@ -102,7 +102,7 @@ A los ojos del mundo, aquel gesto podía parecer insignificante. Sin embargo, la
 
 También en nuestra vida, el Señor puede servirse de acontecimientos aparentemente pequeños para realizar grandes cosas.
 
-Una oración pronunciada con confianza, un acto de generosidad, una reconciliación familiar o una decisión tomada por amor pueden convertirse en el comienzo de algo que todavía no alcanzamos a comprender.
+Una oración con confianza, un acto de generosidad, una reconciliación familiar o una decisión tomada por amor pueden convertirse en el comienzo de algo que todavía no alcanzamos a comprender.
 
 María nos enseña que no necesitamos conocer de antemano todos los caminos de Dios. Basta con aprender a confiar en Él y responder con fidelidad a lo que nos pide cada día.
 
