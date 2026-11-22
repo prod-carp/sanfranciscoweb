@@ -11,6 +11,10 @@
   icono: "🔆"
   url: "/exposicion-santisimo.html"
 
+- claves: ["adoracion nocturna", "nocturna"]
+  icono: "🔆"
+  url: "/ane.html"
+
 - claves: ["matrimonio", "matrimonios", "caná"]
   icono: "💍"
   url: "/grupomatrimonios.html"
