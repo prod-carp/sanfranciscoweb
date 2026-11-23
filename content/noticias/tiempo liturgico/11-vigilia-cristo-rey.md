@@ -7,7 +7,7 @@ categorias = ["Tiempo Litúrgico"]
 tags = ["importante"]
 diasDestacado = 2
 weight = 0
-image = "/assets/images/blog/cerro-de-los-angeles.webp"
+image = "/assets/images/blog/visita-cerro-retoqueA.webp"
 tipoFecha = "cristo-rey"
 diasAntes = 2
 diasDespues = 300
@@ -70,6 +70,8 @@ Es una imagen hermosa: la bendición de Jesús descendiendo sobre los hogares, l
 Deseamos que su Reino de amor y de paz eche raíces en nuestra convivencia y que sepamos reconocernos unos a otros como hermanos.
 
 Porque **amar a nuestra patria también significa desear el bien de todos los que viven en ella y trabajar para que nadie quede olvidado.**
+
+![Evento Cerro de los Ángeles](/assets/images/blog/visita-cerro.webp)
 
 ## El Cerro de los Ángeles: un corazón que abraza a España
 

@@ -13,8 +13,6 @@ tags = []
 
 Esta celebración posee un profundo significado para todos nosotros, al marcar el cierre del Año Litúrgico. Durante la jornada se renovará de forma solemne la Consagración de España y de todo el Género Humano al Sagrado Corazón de Jesús. Asimismo, la reunión en este emblemático santuario evoca el legado de la fundación del Carmelo del Cerro en 1926 y el mensaje transmitido a santa Maravillas de Jesús: *"España se salvará por la oración"*.
 
-![Evento Cerro de los Ángeles](/assets/images/blog/visita-cerro.webp)
-
 ---
 
 ## Programa de la Vigilia (21 al 22 de noviembre)
