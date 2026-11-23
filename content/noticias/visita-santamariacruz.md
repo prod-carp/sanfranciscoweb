@@ -1,10 +1,11 @@
 +++
-title = 'Inscripciones abiertas para la peregrinación a Santa María de la Cruz'
-subtitle = 'El sábado 28 de noviembre'
+title = 'Apúntante a la peregrinación a Santa María de la Cruz'
+subtitle = 'Este sábado 28 de noviembre'
 date = '2026-11-23T00:29:54+02:00'
 draft = false
 categorias = ["Peregrinaciones"]
-tags = []
+tags = ["importante"]
+diasDestacado = 5
 weight = 0
 image = "/assets/images/blog/visita-santamaria-cruz.webp"
 +++
@@ -26,7 +27,7 @@ Comenzaremos a pie en Ugena y caminaremos hasta el monasterio, en Cubas de la Sa
 - **Llegada prevista:** alrededor de las **12:00 h**, al Monasterio de Santa María de la Cruz, en Cubas de la Sagra (Madrid).
 - **Al llegar:** tendremos un tiempo de **adoración al Santísimo** y celebraremos la **Santa Misa**, poniendo ante el Señor el camino recorrido y las intenciones que llevemos en el corazón.
 
-### ¡Ven a caminar con nosotros!
+### ¡Ven con nosotros a caminar!
 
 La peregrinación está abierta a todos: jóvenes y mayores, familias, amigos y cualquier persona que quiera compartir esta jornada con nuestra comunidad parroquial. No hace falta ser un gran caminante; lo importante es el deseo de participar, compartir y ofrecer al Señor cada paso.
 
@@ -34,6 +35,6 @@ Te recomendamos llevar calzado cómodo, agua y ropa adecuada para caminar. Y no 
 
 **Anímate a participar e invita a familiares y amigos.** Será una alegría caminar, rezar y compartir juntos esta jornada. Cuando caminamos unidos en la fe, el camino se convierte también en encuentro. 
 
-[**Contacta para más información**]((https://sanfranciscoysantaclara.es/contacto.html))
+[**Contacta para más información**](https://sanfranciscoysantaclara.es/contacto.html)
 
 **¡Te esperamos el sábado 28 de noviembre!**
