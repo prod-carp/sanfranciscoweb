@@ -96,3 +96,4 @@ iniciar-desarrollo.ps1
 sanfrancisco-noticias/
 Actualizar-Worker.bat
 desplegar-produccion.ps1
+.wrangler
