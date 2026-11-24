@@ -75,7 +75,7 @@ ENLACES_INTERNOS = {
     "oración del Padre Pío": "/grupo-padre-pio.html",
     ("oración de las madres", "oración de madres"): "/grupooracionmadres.html",
     "san Francisco de Asís": "/sanfrancisco.html",
-    "santa Clara": "/santaclara.html",
+    # "santa Clara": "/santaclara.html",
     "tablón de anuncios": "/tablon/",
     "Dones del Espíritu Santo": "/noticias/formacion/7-dones/",
     "nuestro calendario": "/calendario/",
