@@ -16,11 +16,11 @@ fechaFin = 300
 
 San Juan de la Cruz fue uno de los grandes santos y maestros espirituales de la Iglesia católica. Fue sacerdote, religioso carmelita, poeta y profundo conocedor de la vida interior.
 
-Nació en **Fontiveros, Ávila, en 1542**, en una familia de escasos recursos. Desde muy pequeño conoció las dificultades económicas y el sufrimiento. Su padre murió cuando Juan era todavía niño, por lo que su madre tuvo que sacar adelante a la familia con mucho esfuerzo.
+Nació en **Fontiveros, Ávila, en 1542**, en una familia de escasos recursos. Desde muy pequeño conoció las dificultades económicas y [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/). Su padre murió cuando Juan era todavía niño, por lo que su madre tuvo que sacar adelante a la familia con mucho esfuerzo.
 
 A pesar de las dificultades, Juan mostró desde joven una profunda inclinación hacia Dios. Ingresó en la Orden del Carmen y fue ordenado sacerdote.
 
-Su vida cambiaría especialmente después de conocer a **santa Teresa de Jesús**, quien estaba impulsando una reforma dentro de la Orden del Carmelo.
+Su vida cambiaría especialmente después de conocer a **[santa Teresa de Jesús](/noticias/santoral/10-15-Santa-Teresa-de-Jesús/)**, quien estaba impulsando una reforma dentro de la Orden del Carmelo.
 
 Teresa vio en Juan a una persona adecuada para colaborar en esta renovación y ambos trabajaron para recuperar una vida religiosa más centrada en la oración, la pobreza y la entrega completa a Dios.
 
@@ -46,7 +46,7 @@ Juan de la Cruz sufrió incomprensiones y llegó incluso a ser encarcelado en To
 
 Permaneció allí durante varios meses en condiciones muy duras.
 
-Aquel período de sufrimiento, se convirtió en una experiencia profunda de confianza en Dios.
+Aquel período de sufrimiento, se convirtió en una experiencia profunda de [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
 En medio de aquella oscuridad escribió algunos de sus poemas espirituales más conocidos.
 
@@ -102,7 +102,7 @@ Para Juan, el amor de Dios no deja al ser humano igual.
 
 Cuando una persona se acerca verdaderamente a Dios, comienza un proceso de transformación: aprende a amar de una manera más auténtica, a desprenderse del egoísmo y a buscar el bien de los demás.
 
-La santidad no consiste simplemente en cumplir normas externamente. También implica permitir que Dios transforme nuestro corazón.
+[La santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) no consiste simplemente en cumplir normas externamente. También implica permitir que Dios transforme nuestro corazón.
 
 ## «Cántico espiritual»
 

@@ -29,7 +29,7 @@ Por eso, en una comunidad cristiana no debería haber unos que siempre dan y otr
 
 La comunión entre hermanos comienza cuando dejamos de mirar a las personas desde lo que tienen o les falta y aprendemos a reconocerlas como hermanos y hermanas, con la misma dignidad y el mismo valor ante Dios.
 
-## San Francisco de Asís: la libertad de vivir con lo esencial
+## [San Francisco de Asís](/sanfrancisco.html): la libertad de vivir con lo esencial
 
 San Francisco de Asís descubrió en la pobreza una manera nueva de vivir el Evangelio. Su opción no consistía simplemente en renunciar a las riquezas materiales, sino en liberarse de todo aquello que podía apartarlo de Dios y de los hermanos.
 
@@ -45,7 +45,7 @@ La pobreza franciscana es, en definitiva, una forma de libertad. Nos ayuda a des
 
 Jesús proclama en el Evangelio: «Bienaventurados los pobres en el espíritu, porque de ellos es el reino de los cielos» (Mt 5,3).
 
-La pobreza de espíritu consiste en reconocer que no somos el centro de todo, que no lo podemos todo y que necesitamos recibir. Es una actitud de humildad y apertura que nos permite confiar en Dios y acercarnos a los demás sin creernos superiores.
+La pobreza de espíritu consiste en reconocer que no somos el centro de todo, que no lo podemos todo y que necesitamos recibir. Es una actitud de humildad y apertura que nos permite [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) y acercarnos a los demás sin creernos superiores.
 
 Quien vive con espíritu de pobreza sabe agradecer lo que tiene, no se aferra a sus posesiones y está dispuesto a compartir. Pero también sabe dejarse ayudar, reconocer sus propias limitaciones y aceptar que necesita de los demás. Esta actitud rompe con la autosuficiencia y nos abre a una auténtica experiencia de unidad.
 

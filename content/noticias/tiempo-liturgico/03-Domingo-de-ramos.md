@@ -31,7 +31,7 @@ Poco antes de su Pasión, Jesús se dirigió a Jerusalén. Sabía que allí se c
 
 Al acercarse a la ciudad, Jesús pidió a sus discípulos que fueran a buscar un asno. Después, montado sobre él, entró en Jerusalén.
 
-San Mateo explica que esto estaba relacionado con las palabras del profeta Zacarías:
+[San Mateo](/noticias/santoral/09-21-San-Mateo/) explica que esto estaba relacionado con las palabras del profeta Zacarías:
 
 «Mira a tu rey, que viene a ti, humilde, montado en un asno» (Mt 21,5; cf. Zac 9,9).
 
@@ -75,7 +75,7 @@ El Domingo de Ramos comienza con una procesión alegre, pero la celebración nos
 
 La Iglesia proclama el relato de los últimos momentos de la vida terrena de Jesús: su oración en Getsemaní, la traición de Judas, el arresto, el juicio, la condena, el camino hacia el Calvario y su muerte en la cruz.
 
-Por eso, durante la Misa, la alegría de las palmas se transforma en silencio y contemplación.
+Por eso, durante la [Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/), la alegría de las palmas se transforma en silencio y contemplación.
 
 La Iglesia quiere ayudarnos a comprender que **no podemos separar la gloria de Cristo de su Cruz**.
 
@@ -125,7 +125,7 @@ Podemos llevar una palma en nuestras manos, pero lo más importante es que **Cri
 
 La entrada de Jesús en Jerusalén marca el comienzo de los acontecimientos centrales de la Semana Santa.
 
-Después del Domingo de Ramos vendrán el **Jueves Santo**, cuando recordamos la institución de la Eucaristía y del sacerdocio y contemplamos el mandamiento del amor; el **Viernes Santo**, en el que acompañamos a Jesús en su Pasión y muerte; y finalmente la **Vigilia Pascual y el Domingo de Pascua**, cuando celebramos su gloriosa Resurrección.
+Después del Domingo de Ramos vendrán el **Jueves Santo**, cuando recordamos la institución de la [Eucaristía](/comunion.html) y del sacerdocio y contemplamos el mandamiento del amor; el **Viernes Santo**, en el que acompañamos a Jesús en su Pasión y muerte; y finalmente la **Vigilia Pascual y el Domingo de Pascua**, cuando celebramos su gloriosa Resurrección.
 
 Por eso, el Domingo de Ramos es como la puerta que nos introduce en el misterio pascual.
 
@@ -135,7 +135,7 @@ Esta celebración nos deja importantes enseñanzas para nuestra vida cristiana.
 
 **Nos enseña humildad.** Jesús entra en Jerusalén montado en un asno y no busca el poder humano.
 
-**Nos enseña a confiar en Dios.** Jesús continúa su camino incluso sabiendo que se acerca la Cruz.
+**Nos enseña a [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).** Jesús continúa su camino incluso sabiendo que se acerca la Cruz.
 
 **Nos enseña a servir.** Cristo reina entregándose por los demás.
 

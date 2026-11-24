@@ -30,7 +30,7 @@ Ingresó en los franciscanos en 1416, después de obtener permiso para hacerlo, 
 
 Juan recorrió Italia y otros territorios de Europa predicando. Sus sermones atraían multitudes, hasta el punto de que a veces debía hablar en plazas públicas. Predicaba especialmente en tiempos litúrgicos como Adviento y Cuaresma, buscando despertar la conversión y renovar la vida cristiana.   
 
-Junto a san Bernardino **promovió la devoción al Nombre de Jesús**, representado con las letras **IHS**. Juan **defendió esa devoción** cuando fue objeto de acusaciones, convencido de que honrar el nombre de Cristo ayudaba a centrar la vida en Él. También colaboró en la reforma de los franciscanos observantes y en la defensa de una vida religiosa más fiel a la Regla. Por eso se le recuerda como **predicador y reformador**, no solo como figura pública.  
+Junto a [san Bernardino](/noticias/santoral/05-20-san-bernardino-siena/) **promovió la devoción al Nombre de Jesús**, representado con las letras **IHS**. Juan **defendió esa devoción** cuando fue objeto de acusaciones, convencido de que honrar el nombre de Cristo ayudaba a centrar la vida en Él. También colaboró en la reforma de los franciscanos observantes y en la defensa de una vida religiosa más fiel a la Regla. Por eso se le recuerda como **predicador y reformador**, no solo como figura pública.  
 
 Los relatos de su época cuentan que visitaba a los enfermos, rezaba por ellos y los tocaba con reliquias de san Bernardino. Se le atribuyeron curaciones y otros milagros, tanto durante su vida como después de su muerte. La tradición lo presenta como un hombre cuya predicación iba acompañada de **oración y atención a quienes sufrían**.   
 
@@ -46,10 +46,10 @@ Agotado tras años de trabajo, Juan murió el 23 de octubre de 1456, en Ilok, en
 
 La vida de san Juan de Capistrano invita a preguntarnos qué hacemos con nuestros talentos y con las oportunidades inesperadas. Él pasó de la magistratura a la vida franciscana, de administrar una ciudad a recorrer caminos como predicador. Su ejemplo une **conversión y perseverancia**: cambiar de rumbo no fue para él un gesto pasajero, sino una decisión sostenida mediante el estudio, la oración y el trabajo.
 
-También deja una **enseñanza sobre la valentía**. No siempre significa vencer en una batalla o hablar ante multitudes; puede consistir en servir, corregir lo que se ha vuelto injusto o mantener la esperanza cuando otros sienten temor. 
+También deja una **enseñanza sobre la valentía**. No siempre significa vencer en una batalla o hablar ante multitudes; puede consistir en servir, corregir lo que se ha vuelto injusto o [mantener la esperanza](/noticias/gen/esperanza-y-paciencia-aprender-a-esperar-en-dios/) cuando otros sienten temor. 
 
 San Juan de Capistrano murió lejos de su tierra, después de desgastarse por una misión que consideraba urgente. 
 
 Su historia nos anima a defender con valentía la propia comunidad, los vulnerables, y nuestra propia fe.
 
-**¿Qué situaciones de división, indiferencia o desánimo dentro de nuestra parroquia estamos llamados a sanar y proteger?**
+**¿Qué situaciones de división, indiferencia o desánimo dentro de [nuestra parroquia](/fotos.html) estamos llamados a sanar y proteger?**

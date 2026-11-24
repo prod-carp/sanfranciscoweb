@@ -12,7 +12,7 @@ diasAntes = 1
 diasDespues = 30
 +++
 
-A continuación reproducimos la oración del DOMUND del Papa León XIV
+A continuación reproducimos la oración del [DOMUND](/noticias/tiempo-liturgico/10-Domund/) del Papa León XIV
 
 ## Oración del Domund
 

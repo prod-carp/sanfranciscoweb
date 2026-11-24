@@ -116,7 +116,7 @@ María proclama las maravillas que Dios realiza:
 
 El Dios que María anuncia es un Dios que escucha el clamor de los pequeños, levanta al que está caído y devuelve esperanza al que sufre.
 
-Por eso, contemplar a María no puede dejarnos indiferentes ante el sufrimiento de nuestros hermanos.
+Por eso, contemplar a María no puede dejarnos indiferentes ante [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) de nuestros hermanos.
 
 **Quien se acerca a la Madre del Buen Remedio aprende también a mirar con sus ojos.**
 

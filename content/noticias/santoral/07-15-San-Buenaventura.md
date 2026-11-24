@@ -19,7 +19,7 @@ San Buenaventura fue un religioso franciscano, obispo, cardenal, teólogo y uno 
 
 Nació alrededor del año 1217 en Bagnoregio, cerca de Viterbo, en Italia. Su nombre de nacimiento era Juan de Fidanza.
 
-Según una antigua tradición, cuando era niño estuvo gravemente enfermo y su madre pidió la intercesión de san Francisco de Asís. Después de recuperar la salud, habría exclamado: «¡Oh, buena ventura!». De esta tradición procede el nombre con el que sería conocido posteriormente.
+Según una antigua tradición, cuando era niño estuvo gravemente enfermo y su madre pidió la intercesión de [san Francisco de Asís](/sanfrancisco.html). Después de recuperar la salud, habría exclamado: «¡Oh, buena ventura!». De esta tradición procede el nombre con el que sería conocido posteriormente.
 
 Aunque este relato forma parte de la tradición sobre su vida, lo que conocemos con certeza es que Buenaventura llegó a ser uno de los grandes representantes de la espiritualidad franciscana.
 

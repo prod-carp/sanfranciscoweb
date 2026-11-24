@@ -15,9 +15,9 @@ fechaFin = 300
 
 Cada 7 de octubre la Iglesia celebra a **Nuestra Señora del Rosario**, una de las advocaciones marianas más extendidas en la Iglesia y una fiesta profundamente unida a la historia de la oración cristiana.
 
-El Rosario es, al mismo tiempo, una oración sencilla y profunda: mientras repetimos las palabras del Avemaría, contemplamos junto a María los principales misterios de la vida de Jesucristo.
+El [Rosario](/noticias/oraciones/rezar-el-rosario/) es, al mismo tiempo, una oración sencilla y profunda: mientras repetimos las palabras del Avemaría, contemplamos junto a María los principales misterios de la vida de Jesucristo.
 
-Pero ¿de dónde viene esta devoción? ¿Por qué se llama «Rosario»? ¿Qué tiene que ver con la batalla de Lepanto? ¿Y qué relación tiene todo esto con san Francisco de Asís y la espiritualidad franciscana?
+Pero ¿de dónde viene esta devoción? ¿Por qué se llama «Rosario»? ¿Qué tiene que ver con la batalla de Lepanto? ¿Y qué relación tiene todo esto con [san Francisco de Asís](/sanfrancisco.html) y la espiritualidad franciscana?
 
 ## 🌹 ¿Por qué se llama Rosario?
 
@@ -50,7 +50,7 @@ Así, el Rosario tiene un centro muy claro: **Jesucristo**.
 
 María nos enseña a mirarlo.
 
-San Juan Pablo II explicaba que María es modelo de contemplación porque nadie como ella contempló el rostro de su Hijo. Cuando rezamos el Rosario, nos ponemos en cierto modo junto a ella para recorrer los acontecimientos de la vida de Jesús.
+San [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/) explicaba que María es modelo de contemplación porque nadie como ella contempló el rostro de su Hijo. Cuando rezamos el Rosario, nos ponemos en cierto modo junto a ella para recorrer los acontecimientos de la vida de Jesús.
 
 [Ver la guía para rezar el rosario](https://sanfranciscoysantaclara.es/noticias/oraciones/rezar-el-rosario/)
 
@@ -68,7 +68,7 @@ San Pío V atribuyó aquella victoria a la intercesión de la Virgen María invo
 
 La tradición cuenta además que el Papa se encontraba rezando el Rosario en Roma cuando tuvo conocimiento de la victoria antes de que llegaran las noticias oficiales.
 
-No debemos entender esto como si el Rosario fuese una fórmula mágica para conseguir victorias humanas. Para la Iglesia, lo importante es la **confianza en Dios y la intercesión de María**, y la historia de Lepanto quedó vinculada a esa confianza.
+No debemos entender esto como si el Rosario fuese una fórmula mágica para conseguir victorias humanas. Para la Iglesia, lo importante es la **[confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) y la intercesión de María**, y la historia de Lepanto quedó vinculada a esa confianza.
 
 ## 🕊️ ¿Cómo nació la fiesta del 7 de octubre?
 
@@ -96,7 +96,7 @@ De este modo, una oración nacida y desarrollada a lo largo de siglos continúa 
 
 ## 🌹 San Francisco de Asís y el amor a María
 
-¿Y qué tiene que ver todo esto con una parroquia dedicada a **San Francisco y Santa Clara de Asís**?
+¿Y qué tiene que ver todo esto con una parroquia dedicada a **San Francisco y [Santa Clara](/santaclara.html) de Asís**?
 
 Aunque la difusión histórica del Rosario está especialmente vinculada a los dominicos, **la familia franciscana posee desde sus primeros siglos una profunda tradición de amor a la Virgen María**.
 
@@ -110,7 +110,7 @@ La espiritualidad franciscana no contempla a María como alguien que nos aleja d
 
 Por eso la tradición franciscana desarrolló también sus propias formas de oración mariana.
 
-Una de las más hermosas es **la Corona Franciscana de las Siete Alegrías de María**.
+Una de las más hermosas es **la [Corona Franciscana](/noticias/oraciones/corona-franciscana/) de las Siete Alegrías de María**.
 
 ## 🌹 La Corona Franciscana de las Siete Alegrías
 
@@ -126,7 +126,7 @@ Se parece al Rosario en su estructura de oración repetida y contemplativa, pero
 4. La adoración de los Reyes Magos.
 5. Jesús perdido y hallado en el Templo.
 6. La Resurrección de Jesús y su aparición a su Madre.
-7. La Asunción y Coronación de María en la gloria.
+7. [La Asunción](/noticias/santoral/08-15-la-asuncion-de-la-virgen/) y Coronación de María en la gloria.
 
 La Corona Franciscana muestra así algo profundamente propio del espíritu de san Francisco: **contemplar a Cristo desde la alegría, la humildad y la cercanía de María**.
 

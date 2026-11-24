@@ -82,7 +82,7 @@ Podemos presentarnos ante Él tal como somos, sin máscaras ni engaños.
 
 ### 3. La fe crece cuando nos acercamos a Cristo
 
-Felipe dijo a Natanael: «Ven y verás». Esta invitación sigue siendo actual. Para conocer verdaderamente a Jesús necesitamos acercarnos a su Palabra, a la oración, a los sacramentos y a la comunidad cristiana.
+Felipe dijo a Natanael: «Ven y verás». Esta invitación sigue siendo actual. Para conocer verdaderamente a Jesús necesitamos acercarnos a su Palabra, a la oración, a los [sacramentos](/noticias/formacion/los-7-sacramentos/) y a la comunidad cristiana.
 
 ### 4. Todo discípulo está llamado a anunciar el Evangelio
 

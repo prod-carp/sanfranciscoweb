@@ -93,6 +93,6 @@ Por eso, incluso en medio de la oscuridad, el cristiano puede repetir con espera
 
 **Dios no desea mi sufrimiento. Pero si lo ha permitido, sé que su gracia puede sacar de él un bien mucho mayor: acercarme más a Él y prepararme para la alegría eterna del cielo.**
 
-Esa es la esperanza que brota de la Cruz y culmina en la Resurrección: ninguna lágrima ofrecida a Dios se pierde, porque en sus manos todo puede convertirse en un camino hacia la santidad y hacia la vida eterna.
+Esa es la esperanza que brota de la Cruz y culmina en la Resurrección: ninguna lágrima ofrecida a Dios se pierde, porque en sus manos todo puede convertirse en un camino hacia [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) y hacia la vida eterna.
 FINAL
 

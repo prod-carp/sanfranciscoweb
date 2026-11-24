@@ -17,9 +17,9 @@ Hay personas cuya vida queda profundamente unida a la historia de la Iglesia. **
 
 Durante casi 27 años fue obispo de Roma y recorrió numerosos países llevando un mensaje que repitió incansablemente: **no tengáis miedo de abrir las puertas a Cristo**.
 
-Fue un Papa cercano a los jóvenes, defensor de la dignidad de toda persona y un gran evangelizador. Vivió momentos muy difíciles de la historia del siglo XX, pero nunca dejó de confiar en Dios.
+Fue un Papa cercano a los jóvenes, defensor de la dignidad de toda persona y un gran evangelizador. Vivió momentos muy difíciles de la historia del siglo XX, pero nunca dejó de [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
-Su vida estuvo marcada por el sufrimiento, la oración, el amor a la Virgen María y una profunda entrega a Jesucristo.
+Su vida estuvo marcada por [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/), la oración, el amor a la Virgen María y una profunda entrega a Jesucristo.
 
 ## ¿Quién fue San Juan Pablo II?
 

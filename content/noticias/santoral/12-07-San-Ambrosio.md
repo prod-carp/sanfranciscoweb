@@ -60,7 +60,7 @@ Intentó rechazar la elección e incluso, según la tradición, buscó distintas
 
 Pero finalmente aceptó lo que entendió como una llamada de Dios.
 
-Fue bautizado, recibió los sacramentos de iniciación cristiana y, pocos días después, fue ordenado sacerdote y consagrado obispo.
+Fue bautizado, recibió los [sacramentos](/noticias/formacion/los-7-sacramentos/) de iniciación cristiana y, pocos días después, fue ordenado sacerdote y consagrado obispo.
 
 Tenía alrededor de 34 años.
 
@@ -120,7 +120,7 @@ Ambrosio también tuvo que enfrentarse a situaciones difíciles relacionadas con
 
 Una de las más conocidas ocurrió con el emperador **Teodosio I**.
 
-Después de una violenta represión en Tesalónica, Ambrosio consideró que el emperador debía realizar penitencia antes de recibir la Eucaristía.
+Después de una violenta represión en Tesalónica, Ambrosio consideró que el emperador debía realizar penitencia antes de recibir la [Eucaristía](/comunion.html).
 
 No tuvo miedo de hablar con firmeza incluso ante el hombre más poderoso del Imperio.
 
@@ -130,7 +130,7 @@ Este episodio muestra una de las características de Ambrosio: **no consideraba 
 
 Para él, todos necesitaban conversión, incluso los gobernantes.
 
-## San Ambrosio y San Agustín
+## San Ambrosio y [San Agustín](/noticias/santoral/08-28-San-Agustín/)
 
 Una de las personas que tuvo un encuentro decisivo con Ambrosio fue **san Agustín de Hipona**.
 
@@ -188,7 +188,7 @@ Defendió la verdad de la fe, cuidó de los pobres, enseñó la Sagrada Escritur
 
 Fue también un gran maestro espiritual y ayudó a personas como san Agustín a acercarse a Cristo.
 
-La Iglesia lo reconoce como uno de los **cuatro grandes Padres de la Iglesia de Occidente**, junto con san Agustín, san Jerónimo y san Gregorio Magno.
+La Iglesia lo reconoce como uno de los **cuatro grandes Padres de la Iglesia de Occidente**, junto con san Agustín, [san Jerónimo](/noticias/santoral/09-30-San-Jeronimo/) y [san Gregorio](/noticias/santoral/09-03-san-gregorio-magno/) Magno.
 
 También es **Doctor de la Iglesia**, debido a la importancia de su enseñanza para la fe cristiana.
 

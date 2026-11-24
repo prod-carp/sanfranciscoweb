@@ -10,27 +10,27 @@ image = "/assets/images/sanfrancisco-parte1.webp"
 +++
 
 
-Del **10 de enero de 2026 al 10 de enero de 2027**, la familia franciscana celebra un acontecimiento especial: el **800 aniversario de la muerte de San Francisco de Asís**, uno de los santos más queridos y admirados de la historia de la Iglesia.
+Del **10 de enero de 2026 al 10 de enero de 2027**, la familia franciscana celebra un acontecimiento especial: el **800 aniversario de la muerte de [San Francisco de Asís](/sanfrancisco.html)**, uno de los santos más queridos y admirados de la historia de la Iglesia.
 
 Con este motivo, la Iglesia ha concedido un **Año Jubilar Franciscano**, un tiempo de gracia que invita a los fieles a acercarse más a Dios, profundizar en el Evangelio y redescubrir el ejemplo de vida de San Francisco.
 
 ## ¿Qué es un Año Jubilar?
 
-Un jubileo es un tiempo especial en el que la Iglesia anima a los fieles a renovar su vida cristiana mediante la conversión, la oración, los sacramentos y las obras de caridad.
+Un jubileo es un tiempo especial en el que la Iglesia anima a los fieles a renovar su vida cristiana mediante la conversión, la oración, los [sacramentos](/noticias/formacion/los-7-sacramentos/) y las obras de caridad.
 
 Durante estos periodos, los cristianos son invitados a volver su mirada hacia la misericordia de Dios y a fortalecer su relación con Cristo.
 
 En este caso, el jubileo se celebra en torno a la figura de **San Francisco de Asís**, cuya vida sigue siendo una llamada a vivir el Evangelio con sencillez, alegría, humildad y amor a Dios y al prójimo.
 
-## Nuestra parroquia, templo jubilar franciscano
+## [Nuestra parroquia](/fotos.html), templo jubilar franciscano
 
-La **Parroquia San Francisco y Santa Clara de Asís de Fuenlabrada** es uno de los lugares donde los fieles pueden participar de las gracias espirituales concedidas durante este Año Jubilar Franciscano, por tratarse de un lugar de culto franciscano.
+La **Parroquia San Francisco y [Santa Clara](/santaclara.html) de Asís de Fuenlabrada** es uno de los lugares donde los fieles pueden participar de las gracias espirituales concedidas durante este Año Jubilar Franciscano, por tratarse de un lugar de culto franciscano.
 
-Durante este año, los peregrinos podrán acudir a nuestra parroquia para rezar, participar en la Eucaristía y vivir este tiempo de gracia en comunión con toda la Iglesia.
+Durante este año, los peregrinos podrán acudir a nuestra parroquia para rezar, participar en la [Eucaristía](/comunion.html) y vivir este tiempo de gracia en comunión con toda la Iglesia.
 
 ## ¿Qué es una indulgencia plenaria?
 
-La indulgencia plenaria es un don espiritual que la Iglesia concede, por la misericordia de Dios y los méritos de Cristo, para la remisión de la pena temporal debida por los pecados ya perdonados en la confesión.
+La indulgencia plenaria es un don espiritual que la Iglesia concede, por la misericordia de Dios y los méritos de Cristo, para la remisión de la pena temporal debida por los pecados ya perdonados en la [confesión](/confesion.html).
 
 Lejos de ser algo automático, supone una invitación a la conversión sincera, a la vida sacramental y a la unión más profunda con Dios.
 
@@ -40,7 +40,7 @@ Los fieles pueden obtener la indulgencia plenaria:
 
 * Peregrinando a una iglesia franciscana o lugar de culto dedicado a San Francisco.
 * Participando en las celebraciones litúrgicas propias del jubileo.
-* Asistiendo a la Santa Misa o participando en los actos de oración establecidos para este Año Jubilar.
+* Asistiendo a la [Santa Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/) o participando en los actos de oración establecidos para este Año Jubilar.
 
 * **[Ver oración a san Francisco](https://sanfranciscoysantaclara.es/noticias/oraciones/oracion-jubileo/)**
 
@@ -60,7 +60,7 @@ Estas son las condiciones ordinarias establecidas por la Iglesia para recibir un
 
 Este Año Jubilar Franciscano es una oportunidad para contemplar de nuevo la vida de San Francisco de Asís y dejarse inspirar por su amor a Cristo.
 
-Su ejemplo nos recuerda que la verdadera alegría nace de la confianza en Dios, que la fraternidad es un camino de santidad y que el Evangelio puede vivirse plenamente en cualquier época.
+Su ejemplo nos recuerda que la verdadera alegría nace de la [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/), que la fraternidad es un camino de santidad y que el Evangelio puede vivirse plenamente en cualquier época.
 
 Que este tiempo de gracia nos ayude a renovar nuestra fe, nuestra esperanza y nuestra caridad, caminando cada día más cerca del Señor.
 

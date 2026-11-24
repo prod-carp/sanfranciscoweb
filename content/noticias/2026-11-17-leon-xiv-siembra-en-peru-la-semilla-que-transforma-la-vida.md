@@ -27,7 +27,7 @@ El amor es la decisión de buscar concretamente el bien del otro, incluso cuando
 
 ## Una fe que se hace visible en las obras
 
-El testimonio de los santos peruanos, especialmente de san Martín de Porres, nos ayuda a comprender que la santidad se construye también mediante los pequeños gestos cotidianos de servicio.
+El testimonio de los santos peruanos, especialmente de san Martín de Porres, nos ayuda a comprender que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) se construye también mediante los pequeños gestos cotidianos de servicio.
 
 San Martín no necesitó grandes responsabilidades ni reconocimiento social para transformar la vida de quienes le rodeaban. Su profunda unión con Dios se manifestaba en el cuidado de los enfermos, la atención a los pobres y la humildad con la que realizaba sus tareas.
 
@@ -35,7 +35,7 @@ Su ejemplo nos recuerda las palabras del apóstol Santiago:
 
 ««La fe, si no tiene obras, está muerta por dentro» (Sant 2,17).»
 
-La auténtica vida cristiana nace del encuentro con Cristo, se fortalece mediante la oración y los sacramentos, y encuentra su expresión en las obras de caridad. No podemos separar estas dimensiones sin empobrecer nuestra experiencia de la fe.
+La auténtica vida cristiana nace del encuentro con Cristo, se fortalece mediante la oración y los [sacramentos](/noticias/formacion/los-7-sacramentos/), y encuentra su expresión en las obras de caridad. No podemos separar estas dimensiones sin empobrecer nuestra experiencia de la fe.
 
 ## Construir la sociedad desde el Evangelio
 
@@ -55,7 +55,7 @@ También nuestras parroquias están llamadas a ser lugares donde las personas en
 
 Cada miembro de la comunidad tiene algo que aportar. Los mayores con su experiencia, los jóvenes con su entusiasmo, las familias con su testimonio y los niños con su alegría. Todos formamos parte de una misma misión.
 
-Este mensaje resuena especialmente en nuestra espiritualidad franciscana. San Francisco de Asís comprendió que el encuentro con Cristo transforma nuestra manera de mirar a los demás y nos enseña a reconocer en cada persona a un hermano.
+Este mensaje resuena especialmente en nuestra espiritualidad franciscana. [San Francisco de Asís](/sanfrancisco.html) comprendió que el encuentro con Cristo transforma nuestra manera de mirar a los demás y nos enseña a reconocer en cada persona a un hermano.
 
 ## Una misión que continúa
 

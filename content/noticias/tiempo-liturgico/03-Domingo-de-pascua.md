@@ -33,7 +33,7 @@ Después de la muerte de Jesús, su cuerpo fue colocado en un sepulcro.
 
 Al amanecer del primer día de la semana, varias mujeres fueron hasta allí. Cuando llegaron, encontraron la piedra retirada y el sepulcro vacío.
 
-El Evangelio de san Mateo relata que un ángel les anunció:
+El Evangelio de [san Mateo](/noticias/santoral/09-21-San-Mateo/) relata que un ángel les anunció:
 
 «No está aquí, porque ha resucitado como había dicho» (Mt 28,6).
 
@@ -139,9 +139,9 @@ También nosotros podemos atravesar momentos en los que todo parece perdido: una
 
 La Pascua nos recuerda que Dios puede abrir caminos donde nosotros solamente vemos oscuridad.
 
-La Resurrección no significa que nunca tendremos dificultades. Significa que **el sufrimiento y la muerte no tienen la última palabra**.
+La Resurrección no significa que nunca tendremos dificultades. Significa que **[el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) y la muerte no tienen la última palabra**.
 
-## La Pascua y nuestro Bautismo
+## La Pascua y nuestro [Bautismo](/bautismo.html)
 
 La Resurrección de Cristo está profundamente relacionada con el sacramento del Bautismo.
 
@@ -167,7 +167,7 @@ Después se proclaman las lecturas que recorren la historia de la salvación y s
 
 También se celebra el Bautismo de quienes han sido preparados para recibirlo y se renuevan las promesas bautismales.
 
-Finalmente, la Iglesia celebra la Eucaristía con la alegría de la Resurrección.
+Finalmente, la Iglesia celebra la [Eucaristía](/comunion.html) con la alegría de la Resurrección.
 
 ## La Pascua dura más que un solo día
 
@@ -211,7 +211,7 @@ Nuestra manera de vivir debería ser un reflejo de esa esperanza.
 
 La **Pascua de Resurrección se celebra el Domingo de Pascua**, después del Viernes Santo y del Sábado Santo.
 
-Es la celebración central del **Triduo Pascual**, que comienza con la Misa de la Cena del Señor el Jueves Santo, continúa con la Pasión del Señor el Viernes Santo y alcanza su culminación en la Vigilia Pascual y el Domingo de Resurrección.
+Es la celebración central del **Triduo Pascual**, que comienza con la [Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/) de la Cena del Señor el Jueves Santo, continúa con la Pasión del Señor el Viernes Santo y alcanza su culminación en la Vigilia Pascual y el Domingo de Resurrección.
 
 La fecha de Pascua cambia cada año y determina también la fecha de otras celebraciones del calendario litúrgico, como la Ascensión y Pentecostés.
 

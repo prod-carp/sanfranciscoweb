@@ -17,7 +17,7 @@ Hay noches en las que el silencio se convierte en oración y el corazón encuent
 
 La Vigilia de Cristo Rey es una de esas ocasiones especiales. Una noche para detenernos, dejar a un lado las preocupaciones cotidianas y permanecer junto al Señor, reconociendo que solo su amor puede transformar verdaderamente nuestros corazones y renovar la vida de los pueblos.
 
-Al finalizar el año litúrgico, la Iglesia nos invita a contemplar a Jesucristo como Rey del universo. Pero su realeza es muy distinta de los poderes de este mundo. **Jesús es un Rey que no lleva una corona de oro, sino de espinas; que no gobierna desde un trono de riquezas, sino desde la entrega de la cruz.**
+Al finalizar el año litúrgico, la Iglesia nos invita a contemplar a Jesucristo como [Rey del universo](/noticias/tiempo-liturgico/11-jesucristo-rey-del-universo/). Pero su realeza es muy distinta de los poderes de este mundo. **Jesús es un Rey que no lleva una corona de oro, sino de espinas; que no gobierna desde un trono de riquezas, sino desde la entrega de la cruz.**
 
 Su Reino es un Reino de verdad y de vida, de santidad y de gracia, de justicia, de amor y de paz.
 
@@ -99,7 +99,7 @@ Allí, donde tantas personas acuden para confiar sus preocupaciones al Sagrado C
 
 Santa Maravillas de Jesús nació en Madrid en 1891. Desde muy joven sintió una profunda llamada a entregarse completamente a Dios, y encontró en la espiritualidad del Carmelo el camino para responder a ese amor.
 
-Ingresó en el monasterio carmelita de El Escorial en 1919, siguiendo las huellas de santa Teresa de Jesús y san Juan de la Cruz.
+Ingresó en el monasterio carmelita de El Escorial en 1919, siguiendo las huellas de [santa Teresa de Jesús](/noticias/santoral/10-15-Santa-Teresa-de-Jesús/) y san Juan de la Cruz.
 
 Su vocación la llevó a descubrir la extraordinaria fecundidad de una vida escondida en Dios.
 
@@ -107,7 +107,7 @@ Para santa Maravillas, la oración era mucho más que una actividad dentro del m
 
 Su vida estuvo marcada por dificultades, desplazamientos y momentos de gran sufrimiento. Durante la sangrienta persecución religiosa llevada a cabo por el gobierno de la Segunda República, su comunidad tuvo que abandonar el monasterio del Cerro de los Ángeles.
 
-Sin embargo, aquellas pruebas no apagaron su confianza en Dios.
+Sin embargo, aquellas pruebas no apagaron su [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
 Con una fortaleza serena y una profunda fidelidad a su vocación, continuó trabajando por la vida contemplativa y fundó nuevos monasterios, ayudando a muchas mujeres a encontrar su camino de entrega al Señor.
 
@@ -121,7 +121,7 @@ Poco antes de morir, expresó con sencillez la alegría que había llenado su ex
 
 *«¡Qué felicidad morir carmelita!».*
 
-Falleció en 1974 y fue canonizada por san Juan Pablo II en Madrid, en 2003.
+Falleció en 1974 y fue canonizada por san [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/) en Madrid, en 2003.
 
 Su testimonio sigue recordándonos que una vida entregada a Dios nunca es una vida estéril. La oración humilde, perseverante y confiada puede dar frutos de amor mucho más allá de lo que nuestros ojos alcanzan a ver.
 

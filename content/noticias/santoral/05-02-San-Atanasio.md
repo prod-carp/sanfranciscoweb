@@ -42,7 +42,7 @@ Los obispos reunidos afirmaron solemnemente que el Hijo es:
 
 Y proclamaron que Jesucristo es **“de la misma naturaleza del Padre”**.
 
-Esta afirmación quedó incorporada al **Credo de Nicea**, cuya formulación se desarrolló posteriormente en el Credo Niceno-Constantinopolitano que los católicos recitamos habitualmente en la Santa Misa.
+Esta afirmación quedó incorporada al **Credo de Nicea**, cuya formulación se desarrolló posteriormente en el Credo Niceno-Constantinopolitano que los católicos recitamos habitualmente en la [Santa Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/).
 
 Atanasio, que entonces era diácono, participó activamente en la defensa de esta enseñanza.
 

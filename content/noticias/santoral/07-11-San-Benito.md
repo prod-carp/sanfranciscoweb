@@ -29,7 +29,7 @@ Con el tiempo, Benito comprendió que su misión no consistía solamente en vivi
 
 San Benito experimentó dificultades desde los primeros años de su vida religiosa.
 
-Según la tradición recogida por San Gregorio Magno en los **Diálogos**, algunas personas llegaron a pedirle que fuera su superior en una comunidad.
+Según la tradición recogida por [San Gregorio](/noticias/santoral/09-03-san-gregorio-magno/) Magno en los **Diálogos**, algunas personas llegaron a pedirle que fuera su superior en una comunidad.
 
 Sin embargo, cuando Benito intentó introducir una disciplina más exigente, algunos monjes se opusieron a él e incluso intentaron envenenarlo.
 
@@ -86,7 +86,7 @@ La espiritualidad de Benito no propone huir de todas las responsabilidades human
 
 Para San Benito, la oración era fundamental.
 
-Los monjes se reunían varias veces al día para rezar juntos y escuchar la Palabra de Dios.
+Los monjes se reunían varias veces al día para rezar juntos y [escuchar la Palabra de Dios](/noticias/escuchar-la-palabra-para-vivir-en-el-amor/).
 
 La celebración litúrgica era el corazón de la comunidad.
 
@@ -162,7 +162,7 @@ La Iglesia celebra a San Benito porque fue un gran **maestro de la vida cristian
 
 Su Regla ayudó a organizar comunidades que buscaban vivir el Evangelio mediante la oración, el trabajo y la vida fraterna.
 
-Su ejemplo nos recuerda que la santidad no se construye de un día para otro.
+Su ejemplo nos recuerda que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) no se construye de un día para otro.
 
 Se alcanza mediante pequeñas decisiones repetidas cada día: rezar, trabajar con responsabilidad, tratar bien a los demás, reconocer nuestros errores, pedir perdón y volver a empezar.
 

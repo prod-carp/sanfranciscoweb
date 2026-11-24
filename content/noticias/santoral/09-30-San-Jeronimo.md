@@ -24,7 +24,7 @@ San Jerónimo nació alrededor del año **347**, en Estridón, una localidad sit
 
 Desde joven recibió una excelente formación. Estudió en Roma, donde aprendió gramática, literatura y filosofía.
 
-Fue allí donde también recibió el **Bautismo**.
+Fue allí donde también recibió el **[Bautismo](/bautismo.html)**.
 
 Jerónimo tenía una gran capacidad intelectual y un enorme interés por los textos antiguos. Pero poco a poco comprendió que quería dedicar sus conocimientos al servicio de Dios.
 
@@ -36,7 +36,7 @@ Jerónimo no tuvo una personalidad tranquila. Era apasionado, exigente y, en oca
 
 Pero precisamente por eso resulta interesante conocer su historia.
 
-La santidad no significa que una persona nazca con un carácter perfecto. Significa permitir que Dios transforme nuestra vida y nos ayude a crecer en virtud.
+[La santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) no significa que una persona nazca con un carácter perfecto. Significa permitir que Dios transforme nuestra vida y nos ayude a crecer en virtud.
 
 Jerónimo fue aprendiendo a poner sus capacidades, su inteligencia y también su fuerte personalidad al servicio de la fe.
 

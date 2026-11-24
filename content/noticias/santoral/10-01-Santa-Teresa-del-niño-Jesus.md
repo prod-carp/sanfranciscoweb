@@ -30,7 +30,7 @@ Fue la última de nueve hijos de **Luis Martín y Celia Guérin**, un matrimonio
 
 Desde pequeña, Teresa mostró un gran amor por Dios y una sensibilidad espiritual muy profunda.
 
-Sin embargo, su infancia estuvo marcada también por el sufrimiento. Cuando tenía apenas cuatro años murió su madre.
+Sin embargo, su infancia estuvo marcada también por [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/). Cuando tenía apenas cuatro años murió su madre.
 
 La familia se trasladó entonces a Lisieux, donde Teresa creció junto a su padre y sus hermanas.
 
@@ -68,7 +68,7 @@ Teresa comprendió que podía ofrecerle a Dios **cada pequeño gesto**, incluso 
 
 Una tarea sencilla, una palabra amable, soportar una dificultad sin quejarse, ayudar a una hermana o aceptar con paciencia una situación incómoda podían convertirse en actos de amor.
 
-Para ella, la santidad no dependía de realizar cosas impresionantes, sino de **amar a Dios en cada momento**.
+Para ella, [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) no dependía de realizar cosas impresionantes, sino de **amar a Dios en cada momento**.
 
 ## «El caminito» de Santa Teresa
 
@@ -172,7 +172,7 @@ Su santidad no estuvo marcada principalmente por obras visibles o grandes respon
 
 Su camino fue diferente: **vivió con amor cada pequeño momento de su existencia**.
 
-La Iglesia también reconoció la importancia de su enseñanza espiritual. En **1997**, el papa san Juan Pablo II la proclamó **Doctora de la Iglesia**, convirtiéndola en una de las mujeres cuya enseñanza espiritual posee especial importancia para toda la Iglesia.
+La Iglesia también reconoció la importancia de su enseñanza espiritual. En **1997**, el papa san [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/) la proclamó **Doctora de la Iglesia**, convirtiéndola en una de las mujeres cuya enseñanza espiritual posee especial importancia para toda la Iglesia.
 
 ## ¿Por qué es importante recordar a Santa Teresa?
 
@@ -214,7 +214,7 @@ La Iglesia Católica celebra a **Santa Teresa del Niño Jesús el 1 de octubre**
 
 La fecha se celebra después de su fallecimiento, que ocurrió el 30 de septiembre de 1897.
 
-El 1 de octubre se convirtió en el día litúrgico dedicado a recordar a esta joven carmelita que, desde la sencillez de su vida, enseñó a millones de cristianos a confiar en Dios.
+El 1 de octubre se convirtió en el día litúrgico dedicado a recordar a esta joven carmelita que, desde la sencillez de su vida, enseñó a millones de cristianos a [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
 ## ¿Qué tipo de celebración es?
 

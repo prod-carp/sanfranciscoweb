@@ -10,10 +10,10 @@ weight = 0
 image = "/assets/images/sanfrancisco-parte3.webp"
 fechaBase = '09/20'
 fechaInicio = 1
-fechaFin = 30
+fechaFin = 300
 +++
 
-Nuestra parroquia se prepara para celebrar con alegría la fiesta de nuestro patrón, **San Francisco de Asís**, mediante una novena del **25 de septiembre al 3 de octubre**, que nos invita a detenernos, orar y preparar el corazón para encontrarnos con el Señor.
+[Nuestra parroquia](/fotos.html) se prepara para celebrar con alegría la fiesta de nuestro patrón, **[San Francisco de Asís](/sanfrancisco.html)**, mediante una novena del **25 de septiembre al 3 de octubre**, que nos invita a detenernos, orar y preparar el corazón para encontrarnos con el Señor.
 
 Durante estos nueve días, la comunidad parroquial se reúne para dejarnos iluminar por el testimonio de aquel que hizo del **Evangelio y de Jesucristo el centro de su existencia**.
 
@@ -23,7 +23,7 @@ La novena culmina el **4 de octubre**, día en que la Iglesia celebra la memoria
 
 Una novena es un tiempo de **oración, conversión y preparación interior**.
 
-A lo largo de estos días estamos invitados a mirar nuestra propia vida a la luz del Evangelio y a preguntarnos qué quiere Dios renovar en nosotros. Por intercesión de San Francisco podemos pedir un corazón más humilde, sencillo y generoso; mayor capacidad para perdonar y servir; y una fe más confiada en la providencia de Dios.
+A lo largo de estos días estamos invitados a mirar nuestra propia vida a la luz del Evangelio y a preguntarnos qué quiere Dios renovar en nosotros. Por intercesión de San Francisco podemos pedir un corazón más humilde, sencillo y generoso; mayor capacidad para perdonar y servir; y una fe más confiada en la [providencia](/noticias/gen/providencia-y-oracion-confiar-sin-quedarse-pasivos/) de Dios.
 
 San Francisco nos enseña que la alegría cristiana no nace de tener muchas cosas, sino de haber encontrado a Cristo y de saber que Él basta.
 
@@ -65,7 +65,7 @@ Una de las escenas más conocidas de su vida fue su encuentro con el sultán **A
 
 Su ejemplo nos recuerda que el cristiano está llamado a ser **constructor de paz**, no desde la indiferencia hacia la verdad, sino desde la caridad y el respeto hacia cada persona.
 
-## Francisco y Santa Clara
+## Francisco y [Santa Clara](/santaclara.html)
 
 La vida de San Francisco está profundamente unida a la de **Santa Clara de Asís**.
 
@@ -93,7 +93,7 @@ San Francisco quiso identificarse tan profundamente con Jesucristo que recibió 
 
 Este acontecimiento fue para él una expresión extraordinaria de su unión con el Señor crucificado.
 
-Francisco no buscó el sufrimiento por sí mismo. Su deseo era amar a Cristo y configurarse con Él. Por eso, al contemplar su vida, no podemos separar su alegría y su sencillez de su amor a la Cruz.
+Francisco no buscó [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) por sí mismo. Su deseo era amar a Cristo y configurarse con Él. Por eso, al contemplar su vida, no podemos separar su alegría y su sencillez de su amor a la Cruz.
 
 Su testimonio nos recuerda que seguir a Jesús significa también aprender a permanecer junto a Él en el sufrimiento, confiando en que la Cruz conduce a la vida.
 

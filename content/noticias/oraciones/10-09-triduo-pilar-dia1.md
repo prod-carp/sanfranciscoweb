@@ -20,13 +20,13 @@ Palabra de Dios
 «Haced lo que él os diga.»
 (Jn 2,5)
 
-María nos enseña la primera actitud del creyente: confiar en Dios.
+María nos enseña la primera actitud del creyente: [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
 Ella no lo comprende todo, no sabe cómo será el futuro, pero se fía de Dios. Por eso puede decir: «Hágase en mí según tu palabra».
 
 También nosotros tenemos momentos de incertidumbre, preocupaciones, dificultades familiares, enfermedades, problemas económicos o situaciones que no sabemos cómo resolver. Hoy queremos ponerlo todo en las manos de María.
 
-La Virgen del Pilar nos recuerda que la fe no significa que no tengamos problemas, sino que sabemos en quién hemos puesto nuestra confianza.
+La [Virgen del Pilar](/noticias/santoral/10-12-virgen-pilar/) nos recuerda que la fe no significa que no tengamos problemas, sino que sabemos en quién hemos puesto nuestra confianza.
 
 Como el Pilar permanece firme, también nosotros estamos llamados a permanecer firmes en Cristo.
 
@@ -51,7 +51,7 @@ Santísima Virgen del Pilar, Pilar de nuestra fe y esperanza, mira con bondad a 
 
 Haz que nuestra fe permanezca firme, que nuestra esperanza nunca desfallezca y que nuestro amor a Dios y a los hermanos crezca cada día.
 
-Bendice a España, bendice a nuestras familias, bendice a nuestra parroquia y acompaña especialmente a quienes más necesitan de tu ayuda.
+Bendice a España, bendice a nuestras familias, bendice a [nuestra parroquia](/fotos.html) y acompaña especialmente a quienes más necesitan de tu ayuda.
 
 Madre del Pilar, recibe nuestras súplicas y preséntalas ante tu Hijo Jesucristo.
 

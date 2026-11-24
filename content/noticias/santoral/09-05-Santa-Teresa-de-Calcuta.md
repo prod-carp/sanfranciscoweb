@@ -21,7 +21,7 @@ Su vida fue una invitación constante a mirar al que sufre con compasión, digni
 **¿Quién fue Santa Teresa de Calcuta?**
 
 Santa Teresa de Calcuta nació el **26 de agosto de 1910** en Skopie, en la actual
-Macedonia del Norte. Su nombre de bautismo era **Anjezë Gonxhe Bojaxhiu**.
+Macedonia del Norte. Su nombre de [bautismo](/bautismo.html) era **Anjezë Gonxhe Bojaxhiu**.
 
 Desde muy joven sintió una profunda llamada a entregar su vida a Dios. A los 18 años ingresó en la congregación de las **Hermanas de Loreto** y viajó a Irlanda para comenzar su formación religiosa.
 
@@ -75,7 +75,7 @@ Su vida demostró que una obra puede comenzar con algo aparentemente pequeño y 
 
 Podría parecer que la vida de Teresa consistía únicamente en trabajar por los pobres. Pero para ella, la acción tenía su fuente en la oración.
 
-La **Eucaristía, la oración y la adoración** ocupaban un lugar central en la vida de las Misioneras de la Caridad.
+La **[Eucaristía](/comunion.html), la oración y la adoración** ocupaban un lugar central en la vida de las Misioneras de la Caridad.
 
 Teresa comprendía que no podía servir a los demás únicamente con sus propias fuerzas. Necesitaba permanecer unida a Cristo.
 
@@ -89,7 +89,7 @@ Durante largos períodos experimentó una profunda sensación de ausencia de Dio
 
 Sin embargo, continuó rezando, participando en la vida de la Iglesia y sirviendo a los pobres.
 
-Esto es importante porque nos ayuda a comprender que la santidad no significa necesariamente sentir siempre a Dios cerca o vivir permanentemente con emociones religiosas intensas.
+Esto es importante porque nos ayuda a comprender que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) no significa necesariamente sentir siempre a Dios cerca o vivir permanentemente con emociones religiosas intensas.
 
 Teresa permaneció **fiel incluso cuando no encontraba consuelo interior**.
 
@@ -100,7 +100,7 @@ Su ejemplo puede ser especialmente cercano para quienes atraviesan momentos en l
 Santa Teresa de Calcuta fue reconocida por la Iglesia por la **heroicidad de su vida cristiana, su profunda fe y su amor a Dios y al prójimo**.
 
 Fue
-beatificada por el papa Juan Pablo II el **19 de octubre de 2003** y canonizada por el mismo pontífice el **4 de septiembre de 2016**.
+beatificada por el papa [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/) el **19 de octubre de 2003** y canonizada por el mismo pontífice el **4 de septiembre de 2016**.
 
 La Iglesia la reconoce como santa porque su vida estuvo marcada por una entrega extraordinaria a Cristo, especialmente en el servicio a los más pobres y abandonados.
 
@@ -128,7 +128,7 @@ Una de las citas que mejor refleja su vida es:
 
 «Os aseguro que cuanto hicisteis a uno de estos hermanos míos más pequeños, a mí me lo hicisteis» (Mt 25,40).
 
-Estas palabras de Jesús, tomadas del Evangelio según san Mateo, expresan una de las convicciones fundamentales de Teresa.
+Estas palabras de Jesús, tomadas del Evangelio según [san Mateo](/noticias/santoral/09-21-San-Mateo/), expresan una de las convicciones fundamentales de Teresa.
 
 Cuando servía a una persona enferma, pobre o abandonada, no veía solamente una
 necesidad humana. **Veía una oportunidad para amar y servir a Cristo.**
@@ -170,6 +170,6 @@ Podemos empezar en nuestra propia casa, con nuestra familia, nuestros amigos, nu
 
 Porque la santidad no siempre comienza con grandes gestos. Muchas veces comienza con algo tan sencillo como **mirar al otro con amor y decidir no pasar de largo ante su necesidad**.
 
-Que Santa Teresa de Calcuta nos enseñe a reconocer a Cristo en quienes sufren, a servir con humildad y a confiar en Dios incluso en los momentos de oscuridad.
+Que Santa Teresa de Calcuta nos enseñe a reconocer a Cristo en quienes sufren, a servir con humildad y a [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) incluso en los momentos de oscuridad.
 
 **Santa Teresa de Calcuta, ruega por nosotros y enséñanos a amar a Cristo sirviendo a nuestros hermanos.**

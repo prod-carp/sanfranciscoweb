@@ -14,7 +14,7 @@ fechaFin = 1
 
 ## MODO DE HACER LA NOVENA
 
-*Puestos delante de una imagen de San Francisco de Asís*.
+*Puestos delante de una imagen de [San Francisco de Asís](/sanfrancisco.html)*.
 
 *Nos santiguamos*.
 

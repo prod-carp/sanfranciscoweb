@@ -10,7 +10,7 @@ weight = 0
 image = "/assets/images/blog/catequesis2026.webp"
 +++
 
-¿Tu hijo o hija está preparado para dar un paso muy especial en su camino de fe? En nuestra parroquia **San Francisco y Santa Clara de Asís** ya está abierto el plazo para inscribirse en la **Catequesis de Primera Comunión** del curso 2026-2027.
+¿Tu hijo o hija está preparado para dar un paso muy especial en su camino de fe? En [nuestra parroquia](/fotos.html) **San Francisco y [Santa Clara](/santaclara.html) de Asís** ya está abierto el plazo para inscribirse en la **Catequesis de Primera Comunión** del curso 2026-2027.
 
 La catequesis está dirigida a los **niños nacidos en 2019 que cursen 2.º de Primaria durante el curso 2026-2027**.
 
@@ -18,15 +18,15 @@ La catequesis está dirigida a los **niños nacidos en 2019 que cursen 2.º de P
 
 La Primera Comunión es un momento muy especial en la vida de un niño y de toda su familia. Es el comienzo de un camino para que los niños vayan conociendo a Jesús, descubriendo su amor y aprendiendo a vivir la fe junto a sus familias y a la comunidad parroquial.
 
-Durante este camino, los niños tendrán su encuentro semanal de catequesis y participarán en la **Misa de las 11:00 h cada domingo**. Además, a lo largo del curso habrá **reuniones con los padres, una por trimestre con cada grupo**, para acompañar también a las familias en este importante proceso.
+Durante este camino, los niños tendrán su encuentro semanal de catequesis y participarán en la **[Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/) de las 11:00 h cada domingo**. Además, a lo largo del curso habrá **reuniones con los padres, una por trimestre con cada grupo**, para acompañar también a las familias en este importante proceso.
 
-Si quieres conocer mejor el significado de este sacramento y todo lo que implica, te invitamos a visitar nuestra página sobre la **[Primera Comunión](https://sanfranciscoysantaclara.es/comunion.html)** y seguir descubriendo juntos este hermoso camino.
+Si quieres conocer mejor el significado de este sacramento y todo lo que implica, te invitamos a visitar nuestra página sobre la **[Primera Comunión](/comunion.html)** y seguir descubriendo juntos este hermoso camino.
 
 ## Inscripciones
 
 Las inscripciones tendrán lugar los **miércoles 2 y 9 de septiembre a las 17:45 h** en la parroquia.
 
-Para realizar la inscripción es necesario **traer el volante de bautismo del niño o niña**.
+Para realizar la inscripción es necesario **traer el volante de [bautismo](/bautismo.html) del niño o niña**.
 
 La catequesis comenzará **la última semana de septiembre**. Para el **primer curso de Catequesis**, las reuniones serán los **miércoles de 18:00 a 19:00 h**.
 

@@ -14,7 +14,7 @@ diasDespues = 30
 
 ## El espíritu misionero franciscano: llevar el Evangelio a los más necesitados
 
-**El DOMUND 2026 celebra cien años de compromiso con las misiones.** Bajo el lema «Uno en Cristo, unidos en la misión», la Iglesia nos recuerda que anunciar el Evangelio es una tarea compartida por todos los bautizados. Una vocación que san Francisco de Asís vivió con sencillez, fraternidad y amor a los más pequeños.
+**El DOMUND 2026 celebra cien años de compromiso con las misiones.** Bajo el lema «Uno en Cristo, unidos en la misión», la Iglesia nos recuerda que anunciar el Evangelio es una tarea compartida por todos los bautizados. Una vocación que [san Francisco de Asís](/sanfrancisco.html) vivió con sencillez, fraternidad y amor a los más pequeños.
 
 Cada año, el mes de octubre nos invita a mirar más allá de nuestras preocupaciones cotidianas y recordar a quienes dedican su vida a anunciar a Jesucristo en lugares donde la presencia de la Iglesia es pequeña y las necesidades humanas son grandes.
 
@@ -58,7 +58,7 @@ La ayuda económica es importante, pero no es la única manera de colaborar. La 
 
 El DOMUND es, por tanto, mucho más que una colecta: es una invitación a descubrir que la Iglesia está llamada a salir al encuentro de todos, especialmente de quienes todavía no conocen a Cristo o atraviesan situaciones de pobreza y sufrimiento.
 
-## ¿Cómo podemos ser misioneros desde nuestra parroquia?
+## ¿Cómo podemos ser misioneros desde [nuestra parroquia](/fotos.html)?
 
 Quizá nunca viajemos a Mozambique, Marruecos o Tierra Santa. Sin embargo, eso no significa que nuestra vida esté al margen de la misión.
 
@@ -78,7 +78,7 @@ No se trata de hacer grandes cosas para que los demás nos vean, sino de aprende
 
 El centenario del DOMUND nos ofrece una oportunidad para renovar nuestra conciencia misionera. Durante cien años, esta jornada ha recordado a la Iglesia que el anuncio del Evangelio necesita comunidades comprometidas, corazones generosos y personas dispuestas a ponerse al servicio de los demás.
 
-Desde la espiritualidad de san Francisco de Asís, estamos invitados a vivir esta llamada con humildad y alegría, reconociendo en cada persona a un hermano y procurando que nadie se sienta olvidado.
+Desde la [espiritualidad de san Francisco](/noticias/formacion/10-09-espiritualidad-san-francisco/) de Asís, estamos invitados a vivir esta llamada con humildad y alegría, reconociendo en cada persona a un hermano y procurando que nadie se sienta olvidado.
 
 Que este DOMUND nos ayude a comprender que todos tenemos un lugar en la misión de la Iglesia. Quizá no podamos llegar a todos los rincones del mundo, pero sí podemos contribuir a que el amor de Dios llegue a quienes tenemos cerca y, mediante nuestra oración y generosidad, a quienes viven lejos.
 

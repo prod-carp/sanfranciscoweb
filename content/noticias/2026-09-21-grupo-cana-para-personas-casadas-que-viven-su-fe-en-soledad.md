@@ -9,13 +9,13 @@ image = "/assets/images/blog/2026-09-21-grupo-cana-para-personas-casadas-que-viv
 tags = []
 +++
 
-**La parroquia San Francisco y Santa Clara de Asís de Fuenlabrada pone en marcha el Grupo Cana, una propuesta para matrimonios en los que uno de los cónyuges desea vivir su fe, aunque el otro no comparta la misma experiencia religiosa o se encuentre alejado de Dios.**
+**La parroquia San Francisco y [Santa Clara](/santaclara.html) de Asís de Fuenlabrada pone en marcha el Grupo Cana, una propuesta para matrimonios en los que uno de los cónyuges desea vivir su fe, aunque el otro no comparta la misma experiencia religiosa o se encuentre alejado de Dios.**
 
 ## No estás solo… Dios camina también contigo
 
 Vivir la fe dentro del matrimonio es un regalo, pero en ocasiones puede convertirse en un camino que uno de los cónyuges recorre en soledad. Quizás tu esposo o esposa no sea creyente, viva alejado de la Iglesia o, sencillamente, no comparta tu deseo de acercarte más a Dios.
 
-Para acompañar a quienes viven esta realidad, nuestra parroquia presenta el **Grupo Cana**, pensado para personas casadas que desean seguir caminando con Dios en su vida matrimonial, aunque su cónyuge no les acompañe en este camino.
+Para acompañar a quienes viven esta realidad, [nuestra parroquia](/fotos.html) presenta el **Grupo Cana**, pensado para personas casadas que desean seguir caminando con Dios en su vida matrimonial, aunque su cónyuge no les acompañe en este camino.
 
 **Dios está presente en nuestra historia, en nuestro matrimonio y en cada circunstancia de nuestra vida.** Él nos acompaña, nos sostiene y nos invita a confiar en su amor.
 
@@ -35,6 +35,6 @@ Desde esta confianza, invitamos a todos aquellos matrimonios en los que uno de l
 - **Horario:** De 17:00 a 18:00.
 - **Lugar:** Parroquia San Francisco y Santa Clara de Asís de Fuenlabrada.
 
-Si deseas participar, puedes **apuntarte directamente en el despacho parroquial** o hacerlo a través de la página de [Contacto de nuestra web](https://sanfranciscoysantaclara.es/contacto.html).
+Si deseas participar, puedes **apuntarte directamente en el [despacho parroquial](/contacto.html#features5-2t)** o hacerlo a través de la página de [Contacto de nuestra web](https://sanfranciscoysantaclara.es/contacto.html).
 
 💙 **No estás solo. Dios camina también contigo.** Te esperamos en el Grupo Cana, un espacio para vivir la fe, fortalecer el matrimonio y caminar juntos de la mano del Señor.

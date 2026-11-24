@@ -9,21 +9,21 @@ image = "/assets/images/blog/2026-10-01-nuestros-grupos-parroquiales-una-comunid
 tags = []
 +++
 
-La parroquia no es solamente el lugar al que acudimos a celebrar la Eucaristía. Es también una comunidad viva, formada por personas que comparten la fe, rezan juntas, se forman, sirven a los demás y buscan crecer en el camino cristiano.
+La parroquia no es solamente el lugar al que acudimos a celebrar la [Eucaristía](/comunion.html). Es también una comunidad viva, formada por personas que comparten la fe, rezan juntas, se forman, sirven a los demás y buscan crecer en el camino cristiano.
 
-En nuestra Parroquia San Francisco y Santa Clara de Asís contamos con diferentes grupos y actividades a lo largo de la semana, dirigidos a distintas edades y realidades. Cada uno de ellos es una oportunidad para participar más activamente en la vida parroquial y descubrir que siempre hay un lugar para cada persona.
+En [nuestra Parroquia](/fotos.html) San Francisco y [Santa Clara](/santaclara.html) de Asís contamos con diferentes grupos y actividades a lo largo de la semana, dirigidos a distintas edades y realidades. Cada uno de ellos es una oportunidad para participar más activamente en la vida parroquial y descubrir que siempre hay un lugar para cada persona.
 
 ## 🙏 Espacios de oración
 
 La oración ocupa un lugar central en nuestra vida como comunidad.
 
-Durante la semana encontramos diferentes propuestas, como el Grupo de Oración Padre Pío, los grupos de oración, la Oración de madres, la Exposición del Santísimo y el Rosario de la Virgen de Guadalupe.
+Durante la semana encontramos diferentes propuestas, como el [Grupo de Oración](/grupodeoracion.html) [Padre Pío](/noticias/santoral/09-23-san-pío-de-pietrelcina/), los grupos de oración, la [Oración de madres](/grupooracionmadres.html), la [Exposición del Santísimo](/exposicion-santisimo.html) y el [Rosario](/noticias/oraciones/rezar-el-rosario/) de la Virgen de Guadalupe.
 
 Son momentos para detenernos, poner nuestra vida en manos de Dios y compartir la fe con otros hermanos.
 
 ## ❤️ Matrimonios y familias
 
-También hay un espacio especialmente dedicado a los matrimonios. El grupo de Matrimonios se reúne el cuarto sábado de cada mes, ofreciendo un espacio para compartir y crecer juntos en la vida matrimonial y cristiana.
+También hay un espacio especialmente dedicado a los matrimonios. El [grupo de Matrimonios](/grupomatrimonios.html) se reúne el cuarto sábado de cada mes, ofreciendo un espacio para compartir y crecer juntos en la vida matrimonial y cristiana.
 
 La Catequesis acompaña a los más pequeños en su camino de formación en la fe, mientras que otros grupos y actividades permiten que niños y jóvenes encuentren también su lugar dentro de la comunidad.
 
@@ -31,7 +31,7 @@ La Catequesis acompaña a los más pequeños en su camino de formación en la fe
 
 Nuestra parroquia quiere ser también una casa para los más jóvenes.
 
-Contamos con Life Teen Confirmación, Jóvenes de Confirmación, Monaguillos, Coro de niños, Escuela Caleb, Misión David y Catequesis.
+Contamos con Life Teen Confirmación, Jóvenes de Confirmación, Monaguillos, Coro de niños, [Escuela Caleb](/grupo-caleb.html), [Misión David](/mision-david.html) y Catequesis.
 
 A través de estos espacios, niños y jóvenes pueden crecer en la fe, descubrir sus dones, aprender a vivir en comunidad y participar activamente en la vida de la Iglesia.
 
@@ -39,19 +39,19 @@ A través de estos espacios, niños y jóvenes pueden crecer en la fe, descubrir
 
 La vida cristiana también se expresa en el servicio.
 
-El grupo de Cáritas hace presente la llamada a estar cerca de quienes necesitan ayuda. El grupo de Limpieza contribuye, con un servicio sencillo y necesario, al cuidado de nuestra casa común.
+El grupo de [Cáritas](/caritas.html) hace presente la llamada a estar cerca de quienes necesitan ayuda. El [grupo de Limpieza](/grupolimpieza.html) contribuye, con un servicio sencillo y necesario, al cuidado de nuestra casa común.
 
 También contamos con Manualidades y otros espacios que favorecen el encuentro y la convivencia entre los miembros de la parroquia.
 
 ## 🕊️ Adoración y vida espiritual
 
-La parroquia acoge además la Adoración Nocturna, cuya vigilia tiene lugar el segundo sábado de cada mes.
+La parroquia acoge además la [Adoración Nocturna](/ane.html), cuya vigilia tiene lugar el segundo sábado de cada mes.
 
 Es una ocasión para dedicar un tiempo especial a la oración y a la adoración, uniéndonos como comunidad ante el Señor.
 
 ---
 
-## 📅 Horarios de nuestros grupos
+## 📅 Horarios de [nuestros grupos](/grupos.html)
 
 | Grupo | Día | Hora |
 |---|---|---|

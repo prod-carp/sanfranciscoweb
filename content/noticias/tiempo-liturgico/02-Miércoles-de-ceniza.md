@@ -67,7 +67,7 @@ Estos cuarenta días representan un tiempo de preparación, purificación y acer
 
 Jesús nos enseña que la Cuaresma no debe reducirse a realizar sacrificios externos. Lo importante es que nuestras acciones nazcan de un corazón sincero.
 
-En el Evangelio según san Mateo, Jesús habla especialmente de tres prácticas: **oración, ayuno y limosna**.
+En el Evangelio según [san Mateo](/noticias/santoral/09-21-San-Mateo/), Jesús habla especialmente de tres prácticas: **oración, ayuno y limosna**.
 
 La oración nos ayuda a acercarnos más a Dios.
 
@@ -107,7 +107,7 @@ La ceniza nos recuerda nuestra fragilidad, pero la fe cristiana no termina en la
 
 ## Un tiempo para reconciliarnos con Dios
 
-La Cuaresma es también un momento especialmente apropiado para acercarnos al **sacramento de la Reconciliación**.
+La Cuaresma es también un momento especialmente apropiado para acercarnos al **[sacramento de la Reconciliación](/confesion.html)**.
 
 Todos necesitamos reconocer nuestras faltas y pedir perdón. Dios no se cansa de recibir al pecador que vuelve a Él con un corazón arrepentido.
 
@@ -131,7 +131,7 @@ Por eso, este tiempo puede convertirse en una oportunidad para:
 
 - Dedicar más tiempo a la oración.
 - Leer y meditar la Palabra de Dios.
-- Participar con mayor frecuencia en la Eucaristía.
+- Participar con mayor frecuencia en la [Eucaristía](/comunion.html).
 - Recibir el sacramento de la Reconciliación.
 - Ayudar a quienes necesitan nuestra atención.
 - Perdonar y buscar la reconciliación.

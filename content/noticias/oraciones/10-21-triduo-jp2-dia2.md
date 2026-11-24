@@ -13,7 +13,7 @@ fechaInicio = 0
 fechaFin = 300
 +++
 
-## SEGUNDO DÍA — San Juan Pablo II, apóstol de la familia y defensor de la vida
+## SEGUNDO DÍA — San [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/), apóstol de la familia y defensor de la vida
 
 En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén.
 
@@ -36,6 +36,6 @@ Padrenuestro, Avemaría y Gloria.
 Oración para todos los días
 San Juan Pablo II, pastor según el corazón de Cristo, tú que amaste a la Iglesia y recorriste el mundo anunciando el Evangelio, intercede por nosotros ante el Señor.
 Enséñanos a vivir con una fe firme, a amar a la Virgen María como tú la amaste, a defender la dignidad de toda persona y a servir con generosidad a nuestros hermanos.
-Que nunca tengamos miedo de seguir a Jesucristo y que, sostenidos por tu ejemplo, caminemos hacia la santidad.
+Que nunca tengamos miedo de seguir a Jesucristo y que, sostenidos por tu ejemplo, caminemos hacia [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/).
 San Juan Pablo II, ruega por nosotros.
 Amén.

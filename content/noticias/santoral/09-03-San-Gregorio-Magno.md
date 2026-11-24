@@ -59,7 +59,7 @@ El papa Benedicto XVI destacó precisamente esta dimensión de Gregorio: su capa
 
 San Gregorio Magno también tuvo una gran preocupación por anunciar el Evangelio.
 
-Una de sus iniciativas más conocidas fue el impulso de la evangelización de **Inglaterra**. Envió misioneros para llevar la fe cristiana a aquellos pueblos, entre ellos san Agustín de Canterbury.
+Una de sus iniciativas más conocidas fue el impulso de la evangelización de **Inglaterra**. Envió misioneros para llevar la fe cristiana a aquellos pueblos, entre ellos [san Agustín](/noticias/santoral/08-28-San-Agustín/) de Canterbury.
 
 Su deseo era que el Evangelio llegara a personas que todavía no conocían a Cristo.
 
@@ -75,7 +75,7 @@ En ella explica cómo debe vivir un pastor de almas: con humildad, prudencia, or
 
 También escribió una conocida obra sobre la vida de san Benito, que ayudó a difundir el conocimiento de la espiritualidad benedictina.
 
-Por la profundidad y la importancia de sus enseñanzas, la Iglesia lo reconoce como **Doctor de la Iglesia**. San Gregorio es, además, uno de los cuatro grandes Doctores de la Iglesia de Occidente de la Antigüedad, junto con san Ambrosio, san Agustín y san Jerónimo.
+Por la profundidad y la importancia de sus enseñanzas, la Iglesia lo reconoce como **Doctor de la Iglesia**. San Gregorio es, además, uno de los cuatro grandes Doctores de la Iglesia de Occidente de la Antigüedad, junto con san Ambrosio, san Agustín y [san Jerónimo](/noticias/santoral/09-30-San-Jeronimo/).
 
 **¿Qué tiene que ver San Gregorio Magno con el canto gregoriano?**
 
@@ -94,7 +94,7 @@ No buscó el poder ni la fama. De hecho, deseaba una vida escondida como monje. 
 
 Como Papa, trabajó por la reforma de la Iglesia, ayudó a los pobres, promovió la vida monástica, impulsó la evangelización y escribió importantes obras de espiritualidad y pastoral.
 
-Su vida nos enseña que la santidad puede encontrarse tanto en la oración silenciosa como en el servicio activo a los demás.
+Su vida nos enseña que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) puede encontrarse tanto en la oración silenciosa como en el servicio activo a los demás.
 
 **Una cita bíblica para recordar a San Gregorio Magno**
 
@@ -124,7 +124,7 @@ También nos enseña que no siempre debemos elegir el camino más cómodo.
 Gregorio quería ser monje y vivir retirado, pero Dios lo llamó a una misión diferente.
 Él aceptó y convirtió aquella responsabilidad en una oportunidad para servir.
 
-Su ejemplo nos invita a confiar en Dios incluso cuando nuestra vida toma caminos que no habíamos imaginado.
+Su ejemplo nos invita a [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) incluso cuando nuestra vida toma caminos que no habíamos imaginado.
 
 **¿Cuándo se celebra San Gregorio Magno?**
 

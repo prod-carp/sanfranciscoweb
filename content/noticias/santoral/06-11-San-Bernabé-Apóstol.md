@@ -16,7 +16,7 @@ fechaFin = 300
 
 San Bernabé fue uno de los primeros discípulos de Jesús y una figura importante en los comienzos de la Iglesia.
 
-Su nombre era José, pero los apóstoles lo llamaron **Bernabé**, nombre que san Lucas relaciona con «hijo de la exhortación» o «hijo del consuelo» (Hch 4,36).
+Su nombre era José, pero los apóstoles lo llamaron **Bernabé**, nombre que [san Lucas](/noticias/santoral/10-18-San-Lucas/) relaciona con «hijo de la exhortación» o «hijo del consuelo» (Hch 4,36).
 
 Era levita y natural de Chipre. Desde los primeros tiempos de la Iglesia destacó por su generosidad, su fe y su capacidad para animar a otros.
 
@@ -80,7 +80,7 @@ Predicaron en Chipre y en varias regiones de Asia Menor, anunciando que Jesús e
 
 Bernabé acompañó a Pablo en esta misión y fue testigo de las dificultades, rechazos y peligros que encontraron.
 
-Su vida nos muestra que anunciar el Evangelio no siempre es fácil. Sin embargo, la confianza en Dios permite continuar incluso cuando aparecen obstáculos.
+Su vida nos muestra que anunciar el Evangelio no siempre es fácil. Sin embargo, la [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) permite continuar incluso cuando aparecen obstáculos.
 
 ## Una dificultad entre dos grandes discípulos
 

@@ -38,7 +38,7 @@ Esta experiencia aparece reflejada en una de sus obras más conocidas, las **Con
 
 Durante todo ese tiempo, su madre, santa Mónica, continuó rezando por él.
 
-Mónica sufrió al ver que su hijo se alejaba de la fe, pero no dejó de confiar en Dios. Su perseverancia se convirtió en un ejemplo de oración paciente y de esperanza.
+Mónica sufrió al ver que su hijo se alejaba de la fe, pero no dejó de [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/). Su perseverancia se convirtió en un ejemplo de oración paciente y de esperanza.
 
 La historia de ambos nos recuerda que la conversión de una persona puede necesitar tiempo. A veces queremos ver cambios inmediatos, pero Dios puede estar actuando de una manera que todavía no podemos percibir.
 
@@ -70,13 +70,13 @@ Fue bautizado en la Pascua del año 387 por san Ambrosio, junto con su hijo Adeo
 
 ## De convertido a obispo
 
-Después de su bautismo, Agustín regresó al norte de África.
+Después de su [bautismo](/bautismo.html), Agustín regresó al norte de África.
 
 En el año 391 fue ordenado sacerdote en Hipona y, pocos años después, fue consagrado obispo de esa ciudad.
 
 Como obispo dedicó gran parte de su vida a predicar, enseñar, escribir y acompañar espiritualmente a su pueblo.
 
-No dejó de estudiar ni de buscar la verdad. Escribió numerosas obras sobre Dios, la gracia, la Iglesia, los sacramentos, la vida cristiana y muchos otros temas.
+No dejó de estudiar ni de buscar la verdad. Escribió numerosas obras sobre Dios, la gracia, la Iglesia, los [sacramentos](/noticias/formacion/los-7-sacramentos/), la vida cristiana y muchos otros temas.
 
 Entre sus obras más conocidas se encuentran **Confesiones** y **La ciudad de Dios**.
 

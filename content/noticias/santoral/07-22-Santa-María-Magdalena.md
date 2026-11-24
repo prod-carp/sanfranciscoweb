@@ -18,7 +18,7 @@ Santa María Magdalena fue una de las mujeres que siguieron a Jesús durante su 
 
 Su nombre indica que procedía de **Magdala**, una localidad situada junto al lago de Galilea. Los Evangelios la presentan como una discípula que acompañaba a Jesús y ayudaba a sostener su misión junto con otras mujeres.
 
-San Lucas nos cuenta que Jesús había expulsado de ella «siete demonios» (Lc 8,2). Esta expresión señala una situación de profundo sufrimiento de la que Cristo la liberó.
+[San Lucas](/noticias/santoral/10-18-San-Lucas/) nos cuenta que Jesús había expulsado de ella «siete demonios» (Lc 8,2). Esta expresión señala una situación de profundo sufrimiento de la que Cristo la liberó.
 
 Después de experimentar la acción de Jesús en su vida, María Magdalena permaneció junto a Él y se convirtió en una de sus discípulas fieles.
 
@@ -102,7 +102,7 @@ Ella pasó del sufrimiento a la alegría, de las lágrimas a la esperanza y del 
 
 Su vida también nos recuerda que Jesús llama y transforma a personas concretas, independientemente de su pasado.
 
-Dios puede convertir una historia marcada por el sufrimiento en un testimonio de esperanza.
+Dios puede convertir una historia marcada por [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) en un testimonio de esperanza.
 
 ## Una discípula que anunció la Resurrección
 

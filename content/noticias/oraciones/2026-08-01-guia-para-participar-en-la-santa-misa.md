@@ -33,7 +33,7 @@ Esta pequeña guía quiere ayudarte a comprender mejor cada momento de la Misa p
 
 # RITOS INICIALES
 
-Los ritos iniciales tienen como finalidad reunir a los fieles, preparar el corazón y disponernos para celebrar dignamente la Eucaristía.
+Los ritos iniciales tienen como finalidad reunir a los fieles, preparar el corazón y disponernos para celebrar dignamente la [Eucaristía](/comunion.html).
 
 **Postura:** De pie.
 
@@ -61,7 +61,7 @@ La Misa comienza en el nombre de la Santísima Trinidad. Cristo reúne a su Igle
 
 ### ¿Qué significa?
 
-Antes de acercarnos al altar reconocemos humildemente nuestros pecados y pedimos la misericordia de Dios. Este acto nos prepara para celebrar la Eucaristía, aunque no sustituye al sacramento de la Reconciliación cuando hemos cometido pecados graves.
+Antes de acercarnos al altar reconocemos humildemente nuestros pecados y pedimos la misericordia de Dios. Este acto nos prepara para celebrar la Eucaristía, aunque no sustituye al [sacramento de la Reconciliación](/confesion.html) cuando hemos cometido pecados graves.
 
 ### Respuestas
 

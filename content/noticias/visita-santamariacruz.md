@@ -23,9 +23,9 @@ Será también una oportunidad para hacer una pausa en nuestras ocupaciones, pon
 Comenzaremos a pie en Ugena y caminaremos hasta el monasterio, en Cubas de la Sagra.
 
 - **Salida desde la parroquia:** a las **8:15 h**, en coches particulares, con destino a Ugena.
-- **Punto de encuentro e inicio de la peregrinación:** ermita del Santo Cristo de la Viga, avenida de San Juan Pablo II, Ugena (Toledo).
+- **Punto de encuentro e inicio de la peregrinación:** ermita del Santo Cristo de la Viga, avenida de San [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/), Ugena (Toledo).
 - **Llegada prevista:** alrededor de las **12:00 h**, al Monasterio de Santa María de la Cruz, en Cubas de la Sagra (Madrid).
-- **Al llegar:** tendremos un tiempo de **adoración al Santísimo** y celebraremos la **Santa Misa**, poniendo ante el Señor el camino recorrido y las intenciones que llevemos en el corazón.
+- **Al llegar:** tendremos un tiempo de **[adoración al Santísimo](/exposicion-santisimo.html)** y celebraremos la **[Santa Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/)**, poniendo ante el Señor el camino recorrido y las intenciones que llevemos en el corazón.
 
 ### ¡Ven con nosotros a caminar!
 

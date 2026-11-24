@@ -778,7 +778,7 @@ const CONTENT_MIN =
   300;
 
 const CONTENT_MAX =
-  10000;
+  13000;
 
 
 function updateContentCounter(
@@ -2363,7 +2363,7 @@ const contentText = getPlainText();
 
 if (!contentText) return alert("Escribe el contenido de la noticia.");
 if (contentText.length < 300) return alert("El contenido es demasiado breve. La noticia debe tener al menos 300 caracteres.");
-if (contentText.length > 10000) return alert("El contenido supera el máximo permitido de 10.000 caracteres.");
+if (contentText.length > 13000) return alert("El contenido supera el máximo permitido de 13.000 caracteres.");
 
 
   // Validar recurrencia anual

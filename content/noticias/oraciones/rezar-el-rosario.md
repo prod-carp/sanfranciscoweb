@@ -11,7 +11,7 @@ image = "/assets/images/rezorosario-meta.webp"
 
 El Santo Rosario es una de las oraciones más queridas y poderosas de nuestra tradición. Un camino de encuentro con Jesucristo de la mano de Mamita María. Su rezo constante nos dispone a recibir la gracia de Dios. Al contemplar los misterios de la vida del Señor, nuestra alma se transforma poco a poco, aprendiendo a amar, confiar y seguir a Cristo con mayor fidelidad.
 
-El Papa San Juan Pablo II lo definió como una oración "cristológica" que, con su "simplicidad y profundidad", nos lleva al corazón mismo de la vida cristiana.
+El Papa San [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/) lo definió como una oración "cristológica" que, con su "simplicidad y profundidad", nos lleva al corazón mismo de la vida cristiana.
 
 ---
 
@@ -94,11 +94,11 @@ Para una correcta meditación, es fundamental conocer los misterios. Aquí te lo
 
 ### Misterios Luminosos (Jueves)
 
-1. **El Bautismo de Jesús en el Jordán:** El inicio de su vida pública.
+1. **El [Bautismo](/bautismo.html) de Jesús en el Jordán:** El inicio de su vida pública.
 2. **La autorrevelación en las Bodas de Caná:** El primer milagro de Jesús, por intercesión de María.
 3. **El anuncio del Reino de Dios:** Jesús predica la conversión.
 4. **La Transfiguración:** Jesús se muestra en su gloria divina a tres de sus apóstoles.
-5. **La Institución de la Eucaristía:** Jesús instituye el sacramento de su Cuerpo y Sangre en la Última Cena.
+5. **La Institución de la [Eucaristía](/comunion.html):** Jesús instituye el sacramento de su Cuerpo y Sangre en la Última Cena.
 
 ### Misterios Dolorosos (Martes y Viernes)
 
@@ -113,7 +113,7 @@ Para una correcta meditación, es fundamental conocer los misterios. Aquí te lo
 1. **La Resurrección de Jesús:** Jesús vence a la muerte y resucita al tercer día.
 2. **La Ascensión del Señor:** Jesús sube al Cielo.
 3. **La Venida del Espíritu Santo:** El Espíritu Santo desciende sobre la Virgen y los Apóstoles en Pentecostés.
-4. **La Asunción de María:** La Virgen María es llevada en cuerpo y alma al Cielo.
+4. **[La Asunción](/noticias/santoral/08-15-la-asuncion-de-la-virgen/) de María:** La Virgen María es llevada en cuerpo y alma al Cielo.
 5. **La Coronación de María como Reina del Cielo y de la Tierra.**
 
 ---

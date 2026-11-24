@@ -168,7 +168,7 @@ De discípulo pasó a ser apóstol.
 
 Y de apóstol pasó a ser testigo hasta el martirio.
 
-Su vida demuestra que la santidad comienza muchas veces con algo muy sencillo:
+Su vida demuestra que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) comienza muchas veces con algo muy sencillo:
 
 **escuchar la llamada de Jesús y decidir seguirlo.**
 
@@ -262,7 +262,7 @@ Su grandeza estuvo muchas veces en **poner a otras personas en contacto con Cris
 
 Quizá no podamos hacer grandes cosas, pero podemos ayudar a alguien a acercarse a Dios.
 
-Podemos invitar a una persona a la Misa.
+Podemos invitar a una persona a la [Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/).
 
 Podemos compartir una palabra del Evangelio.
 

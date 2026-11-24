@@ -60,7 +60,7 @@ Entonces Tomás reconoció a Jesús y pronunció una de las confesiones de fe m�
 
 ## «¡Señor mío y Dios mío!»
 
-Estas palabras de Tomás son mucho más que una expresión de sorpresa. Constituyen una verdadera confesión de fe en Jesucristo.
+Estas palabras de Tomás son mucho más que una expresión de sorpresa. Constituyen una verdadera [confesión](/confesion.html) de fe en Jesucristo.
 
 Tomás reconoce a Jesús como **Señor y Dios**. El discípulo que había tenido dificultades para creer termina realizando una de las confesiones más claras de la divinidad de Cristo.
 

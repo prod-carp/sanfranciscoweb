@@ -23,7 +23,7 @@ María permanece junto a Jesús incluso en el momento más doloroso.
 
 No huye de la cruz. No abandona a su Hijo.
 
-Por eso podemos acudir a ella también nosotros cuando sufrimos. María conoce el dolor de una madre, conoce la angustia, la incertidumbre y las lágrimas.
+Por eso podemos acudir a ella también nosotros cuando sufrimos. María conoce el dolor de una madre, conoce la angustia, [la incertidumbre](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) y las lágrimas.
 
 Pero María no se queda solamente junto a la cruz: desde la cruz nace una nueva maternidad. Jesús le dice al discípulo: «Ahí tienes a tu madre».
 
@@ -39,7 +39,7 @@ Acompaña a quienes están solos, consuela a quienes lloran, fortalece a quienes
 
 Madre, quédate junto a nosotros en nuestras cruces de cada día.
 Y cuando nos falten las fuerzas, recuérdanos que nunca estamos solos, porque tú permaneces junto a tus hijos.
-Virgen del Pilar, ruega por nosotros.
+[Virgen del Pilar](/noticias/santoral/10-12-virgen-pilar/), ruega por nosotros.
 
 *Padre nuestro. Ave María. Gloria.*
 
@@ -54,7 +54,7 @@ Santísima Virgen del Pilar, Pilar de nuestra fe y esperanza, mira con bondad a 
 
 Haz que nuestra fe permanezca firme, que nuestra esperanza nunca desfallezca y que nuestro amor a Dios y a los hermanos crezca cada día.
 
-Bendice a España, bendice a nuestras familias, bendice a nuestra parroquia y acompaña especialmente a quienes más necesitan de tu ayuda.
+Bendice a España, bendice a nuestras familias, bendice a [nuestra parroquia](/fotos.html) y acompaña especialmente a quienes más necesitan de tu ayuda.
 
 Madre del Pilar, recibe nuestras súplicas y preséntalas ante tu Hijo Jesucristo.
 

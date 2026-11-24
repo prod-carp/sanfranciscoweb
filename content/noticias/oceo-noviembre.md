@@ -9,9 +9,9 @@ weight = 0
 image = "/assets/images/blog/oceo-nov.webp"
 +++
 
-El jueves 13 de noviembre, varios jóvenes del grupo de Confirmación de la parroquia de San Francisco y Santa Clara de Asís de Fuenlabrada participaron en la **OCEO (Oración con el Obispo)**, celebrada en la parroquia de San Juan Bautista. Fue un encuentro diocesano muy especial, en el que se dieron cita jóvenes de distintos puntos de nuestra diócesis y que contó con una iglesia completamente llena.
+El jueves 13 de noviembre, varios jóvenes del [grupo de Confirmación](/grupoconfirmacion.html) de la parroquia de San Francisco y [Santa Clara](/santaclara.html) de Asís de Fuenlabrada participaron en la **OCEO (Oración con el Obispo)**, celebrada en la parroquia de San Juan Bautista. Fue un encuentro diocesano muy especial, en el que se dieron cita jóvenes de distintos puntos de nuestra diócesis y que contó con una iglesia completamente llena.
 
-Fue una tarde-noche de encuentro con el Señor, de oración y de compartir la fe. A través de los cantos, los momentos de silencio y la adoración al Santísimo Sacramento, pudimos vivir una celebración muy hermosa, acompañados por el coro parroquial, que ayudó a crear un ambiente de recogimiento y oración.
+Fue una tarde-noche de encuentro con el Señor, de oración y de compartir la fe. A través de los cantos, los momentos de silencio y la [adoración al Santísimo](/exposicion-santisimo.html) Sacramento, pudimos vivir una celebración muy hermosa, acompañados por el coro parroquial, que ayudó a crear un ambiente de recogimiento y oración.
 
 ## Aprender a perdonar y descubrir a Dios en nuestra vida
 

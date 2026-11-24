@@ -19,7 +19,7 @@ San José es una de las figuras más importantes de los Evangelios relacionados 
 
 El Evangelio lo presenta como el **esposo de María** y como un hombre justo, elegido por Dios para una misión extraordinaria: cuidar de María y proteger a Jesús.
 
-José pertenecía a la familia del rey David. San Mateo comienza su Evangelio presentando la genealogía de Jesús y relacionándolo con la descendencia de David.
+José pertenecía a la familia del rey David. [San Mateo](/noticias/santoral/09-21-San-Mateo/) comienza su Evangelio presentando la genealogía de Jesús y relacionándolo con la descendencia de David.
 
 Por eso, aunque Jesús fue concebido por obra del Espíritu Santo, José desempeñó un papel fundamental dentro de la historia de la salvación.
 
@@ -64,7 +64,7 @@ Podía haber tenido miedo.
 
 Podía haber dudado.
 
-Pero decidió confiar en Dios.
+Pero decidió [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
 ## José obedeció a Dios
 
@@ -124,7 +124,7 @@ Por medio de José, Jesús quedó vinculado legalmente a la casa de David, cumpl
 
 Cuando llegó el momento del nacimiento de Jesús, José acompañó a María hasta Belén.
 
-El Evangelio de san Lucas nos cuenta que ambos tuvieron que viajar debido al empadronamiento ordenado por el emperador.
+El Evangelio de [san Lucas](/noticias/santoral/10-18-San-Lucas/) nos cuenta que ambos tuvieron que viajar debido al empadronamiento ordenado por el emperador.
 
 Allí nació Jesús.
 
@@ -154,7 +154,7 @@ Una vez más, su respuesta fue la obediencia.
 
 Gracias a su acción, Jesús fue protegido de la persecución de Herodes.
 
-## José, protector de la Sagrada Familia
+## José, protector de la [Sagrada Familia](/noticias/tiempo-liturgico/12-La-Sagrada-Familia/)
 
 Este episodio muestra claramente una de las grandes misiones de San José: **proteger a la Sagrada Familia**.
 
@@ -201,7 +201,7 @@ Esta realidad nos muestra algo muy hermoso: el Hijo de Dios quiso vivir durante 
 
 Trabajó, vivió en familia y creció en medio de las actividades ordinarias de la vida.
 
-## La santidad de lo cotidiano
+## [La santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) de lo cotidiano
 
 San José nos enseña que la santidad no siempre se encuentra en acontecimientos extraordinarios.
 

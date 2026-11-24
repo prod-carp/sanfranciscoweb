@@ -9,7 +9,7 @@ weight = 0
 image = "/assets/images/blog/iessucommunio.webp"
 +++
 
-El pasado 9 de mayo, un numeroso grupo de fieles de San Francisco y Santa Clara de Asís tuvo la oportunidad de vivir una experiencia inolvidable visitando la comunidad de Iesu Communio en el monasterio de San Pedro Regalado, en la provincia de Burgos.
+El pasado 9 de mayo, un numeroso grupo de fieles de San Francisco y [Santa Clara](/santaclara.html) de Asís tuvo la oportunidad de vivir una experiencia inolvidable visitando la comunidad de Iesu Communio en el monasterio de San Pedro Regalado, en la provincia de Burgos.
 
 ## ¿Peregrinación bendecida o pasada por agua?
 
@@ -31,7 +31,7 @@ Al entrar en la nueva iglesia del monasterio nos impresionó profundamente la be
 
 Tras la visita por el monasterio llegó uno de los momentos más esperados de la jornada: el encuentro personal con las hermanas de Iesu Communio.
 
-Durante ese tiempo pudimos escuchar sus testimonios, compartir inquietudes y dejarnos interpelar por la alegría sencilla con la que viven su vocación. Fue un espacio de diálogo, escucha y cercanía que nos ayudó a mirar nuestra propia vida desde la confianza en Dios.
+Durante ese tiempo pudimos escuchar sus testimonios, compartir inquietudes y dejarnos interpelar por la alegría sencilla con la que viven su vocación. Fue un espacio de diálogo, escucha y cercanía que nos ayudó a mirar nuestra propia vida desde la [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
 Sin desvelar demasiados detalles, podemos decir que fue una experiencia que difícilmente deja indiferente a quien la vive.
 
@@ -41,11 +41,11 @@ La jornada concluyó con uno de esos momentos que cuesta describir con palabras.
 
 Antes de finalizar la visita también tuvimos tiempo para conocer la tienda del monasterio. Allí encontramos una gran variedad de artículos elaborados con cariño: libros, cuadernos, pulseras, llaveros, adornos, belenes, regalos para toda la familia y una amplia selección de dulces, bombones, trufas y productos artesanales que hicieron las delicias de muchos de nosotros.
 
-## La Santa Misa
+## La [Santa Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/)
 
 La jornada culminó con la celebración de la Santa Misa, presidida por nuestro párroco el Padre Gustavo. Durante la homilía retomó muchas de las inquietudes que habían surgido durante el encuentro con las hermanas y nos recordó una verdad fundamental: el Espíritu Santo está mucho más cerca de nosotros de lo que imaginamos. Dios nunca nos abandona y desea acompañarnos en cada momento de nuestra vida. Por eso debemos invocar con frecuencia al Espíritu Santo, pidiéndole que venga a nosotros, ilumine nuestras decisiones y fortalezca nuestra fe.
 
-La Eucaristía estuvo especialmente marcada por los cantos de las hermanas, que llenaron el templo de una atmósfera de profunda espiritualidad. Al terminar nos despedimos de ellas, con cariño y algún que otro abrazo. Fue uno de esos momentos que permanecen grabados en la memoria mucho tiempo después de haber terminado.
+La [Eucaristía](/comunion.html) estuvo especialmente marcada por los cantos de las hermanas, que llenaron el templo de una atmósfera de profunda espiritualidad. Al terminar nos despedimos de ellas, con cariño y algún que otro abrazo. Fue uno de esos momentos que permanecen grabados en la memoria mucho tiempo después de haber terminado.
 
 ## La gracia de un corazón renovado
 

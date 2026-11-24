@@ -27,7 +27,7 @@ Aquel que viene a salvar al mundo se presenta sin grandeza humana, sin riquezas 
 
 ## Simeón: unos ojos que supieron reconocer al Salvador
 
-En Jerusalén vivía un hombre justo y piadoso llamado Simeón. El Evangelio de san Lucas nos cuenta que esperaba el consuelo de Israel y que el Espíritu Santo le había revelado que no moriría sin haber visto al Mesías del Señor.
+En Jerusalén vivía un hombre justo y piadoso llamado Simeón. El Evangelio de [san Lucas](/noticias/santoral/10-18-San-Lucas/) nos cuenta que esperaba el consuelo de Israel y que el Espíritu Santo le había revelado que no moriría sin haber visto al Mesías del Señor.
 
 Movido por el Espíritu, Simeón acudió al Templo precisamente cuando María y José entraban con Jesús.
 
@@ -67,13 +67,13 @@ Sin embargo, en medio de la alegría de aquel encuentro, Simeón dirige a María
 > 
 > — Lucas 2,35
 
-La Presentación de Jesús en el Templo no anuncia solamente la luz y la salvación. También anticipa el sufrimiento que acompañará la misión de Cristo.
+La Presentación de Jesús en el Templo no anuncia solamente la luz y la salvación. También anticipa [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) que acompañará la misión de Cristo.
 
 María, que sostiene amorosamente a su Hijo, escuchará estas palabras sin conocer todavía todos los acontecimientos que vendrán. Años después, permanecerá junto a la cruz, compartiendo con dolor de madre el sufrimiento de Jesús.
 
 Esta profecía nos ayuda a comprender que el amor verdadero no consiste en evitar siempre el sufrimiento, sino en permanecer fieles incluso cuando llegan las dificultades.
 
-María nos enseña a confiar en Dios cuando no entendemos sus caminos, a guardar su Palabra en el corazón y a seguir adelante sostenidos por la fe.
+María nos enseña a [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) cuando no entendemos sus caminos, a guardar su Palabra en el corazón y a seguir adelante sostenidos por la fe.
 
 ## La luz de Cristo en nuestros hogares
 
@@ -93,11 +93,11 @@ Como Simeón, necesitamos aprender a mirar con los ojos de la fe.
 
 ## El Día de la Vida Consagrada
 
-El 2 de febrero, la Iglesia celebra también la **Jornada Mundial de la Vida Consagrada**, instituida por san Juan Pablo II en 1997.
+El 2 de febrero, la Iglesia celebra también la **Jornada Mundial de la Vida Consagrada**, instituida por san [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/) en 1997.
 
 La elección de esta fecha tiene un hermoso sentido: así como Jesús fue presentado al Padre, los religiosos y religiosas ofrecen su vida a Dios mediante una entrega especial al servicio de la Iglesia y de los demás.
 
-En nuestra espiritualidad franciscana, esta celebración nos recuerda particularmente a san Francisco y santa Clara de Asís, que respondieron a la llamada del Señor abrazando una vida de pobreza evangélica, fraternidad, oración y amor.
+En nuestra espiritualidad franciscana, esta celebración nos recuerda particularmente a san Francisco y [santa Clara](/santaclara.html) de Asís, que respondieron a la llamada del Señor abrazando una vida de pobreza evangélica, fraternidad, oración y amor.
 
 Santa Clara, desde la vida contemplativa, y san Francisco, siguiendo las huellas de Cristo pobre y crucificado, nos enseñan que una existencia entregada a Dios puede convertirse en una luz para el mundo.
 
@@ -111,7 +111,7 @@ Simeón aguardó con paciencia. Ana perseveró en la oración. María y José ca
 
 Cuando encendemos una vela en esta fiesta, recordamos que Cristo es la Luz del mundo. Pero también asumimos un compromiso: llevar algo de esa luz a quienes nos rodean.
 
-Que nuestras familias sean lugares donde se pueda encontrar consuelo, esperanza y perdón. Que nuestra parroquia sea una comunidad acogedora, donde niños, jóvenes, adultos y mayores puedan reconocer el rostro de Jesús.
+Que nuestras familias sean lugares donde se pueda encontrar consuelo, esperanza y perdón. Que [nuestra parroquia](/fotos.html) sea una comunidad acogedora, donde niños, jóvenes, adultos y mayores puedan reconocer el rostro de Jesús.
 
 Y que, al terminar cada jornada, podamos hacer nuestras las palabras de Simeón, con la paz de quien sabe que Dios está presente en su vida.
 

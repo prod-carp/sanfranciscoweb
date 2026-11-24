@@ -13,7 +13,7 @@ fechaInicio = 0
 fechaFin = 300
 +++
 
-## ¿Quién fue San Francisco de Asís?
+## ¿Quién fue [San Francisco de Asís](/sanfrancisco.html)?
 
 San Francisco de Asís nació en **Asís, Italia, alrededor de 1181 o 1182**, en una familia dedicada al comercio de telas.
 
@@ -81,7 +81,7 @@ No ofrecían riquezas ni poder. Ofrecían algo mucho más sencillo: una vida cen
 
 La comunidad creció y recibió la aprobación de la Iglesia.
 
-## Santa Clara y las Hermanas Pobres
+## [Santa Clara](/santaclara.html) y las Hermanas Pobres
 
 Francisco también tuvo un papel fundamental en la vocación de **Santa Clara de Asís**.
 
@@ -186,7 +186,7 @@ San Francisco comprendió que seguir a Cristo significa convertirse en construct
 
 La paz comienza muchas veces con cosas pequeñas: aprender a perdonar, evitar una palabra que puede herir, pedir perdón cuando nos equivocamos y ayudar a quien necesita de nosotros.
 
-### Oración a San Francisco de Asís
+### [Oración a San Francisco de Asís](/noticias/oraciones/oracion-jubileo/)
 
 **San Francisco de Asís, hermano de los pobres y servidor de Cristo, intercede por nosotros y enséñanos a vivir con un corazón sencillo.**
 

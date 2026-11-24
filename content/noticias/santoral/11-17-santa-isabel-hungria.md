@@ -31,7 +31,7 @@ En la Europa del siglo XIII, los matrimonios entre casas nobles servían tambié
 
 Luis comprendía el corazón generoso de su esposa y la apoyaba en sus obras de caridad. Isabel, por su parte, encontraba en su matrimonio y en su maternidad un camino para amar y servir a Dios.
 
-**Antes de ser conocida como santa, Isabel fue esposa, madre y mujer de familia.** Su historia nos recuerda que la santidad también florece en el hogar, en el amor cotidiano, en la entrega silenciosa y en las pequeñas fidelidades de cada día.
+**Antes de ser conocida como santa, Isabel fue esposa, madre y mujer de familia.** Su historia nos recuerda que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) también florece en el hogar, en el amor cotidiano, en la entrega silenciosa y en las pequeñas fidelidades de cada día.
 
 ## Cuando el amor se convierte en pan y consuelo
 
@@ -45,7 +45,7 @@ Mandó construir un hospital al pie de la colina de Wartburg, para que los enfer
 
 La princesa que podía haber vivido rodeada de servidores se inclinaba para hacer las camas de los enfermos, llevarles comida, lavar sus heridas y consolar a los que sufrían.
 
-En aquellos gestos sencillos había algo profundamente evangélico: **Isabel había comprendido que el amor verdadero no contempla el sufrimiento desde lejos, sino que se acerca, se arrodilla y tiende la mano.**
+En aquellos gestos sencillos había algo profundamente evangélico: **Isabel había comprendido que el amor verdadero no contempla [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) desde lejos, sino que se acerca, se arrodilla y tiende la mano.**
 
 Su vida parecía hacerse eco de las palabras de Jesús:
 
@@ -57,7 +57,7 @@ La felicidad familiar de Isabel se vio profundamente herida en 1227, cuando su e
 
 Con apenas veinte años, Isabel quedó viuda y con tres hijos pequeños. A la tristeza por la pérdida de su esposo se sumaron las dificultades familiares y las disputas por su posición y sus bienes.
 
-Aquella etapa fue especialmente dolorosa. La mujer que había conocido el afecto de su esposo y la seguridad de un hogar tuvo que afrontar la incertidumbre y la soledad.
+Aquella etapa fue especialmente dolorosa. La mujer que había conocido el afecto de su esposo y la seguridad de un hogar tuvo que afrontar [la incertidumbre](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) y la soledad.
 
 Pero el sufrimiento no cerró su corazón.
 
@@ -65,7 +65,7 @@ En medio de las dificultades, Isabel se aferró con mayor profundidad a Dios. Su
 
 El Viernes Santo de 1228, en una iglesia franciscana de Eisenach, hizo una renuncia pública a las seguridades y privilegios de su antigua posición. Su deseo era vivir con mayor libertad para Dios y entregarse por completo al servicio de los pobres.
 
-La espiritualidad de san Francisco de Asís había encontrado en ella un terreno fecundo. Isabel abrazó el espíritu de pobreza, humildad y comunidad franciscana, tomó el hábito y el cordón de la Tercera Orden de San Francisco y se vinculó a la familia de la penitencia que hoy reconocemos en la tradición de la Orden Franciscana Seglar. No se hizo monja: vivió su pertenencia franciscana como laica, llevando una vida austera y volcada en quienes sufrían.
+La [espiritualidad de san Francisco](/noticias/formacion/10-09-espiritualidad-san-francisco/) de Asís había encontrado en ella un terreno fecundo. Isabel abrazó el espíritu de pobreza, humildad y comunidad franciscana, tomó el hábito y el cordón de la Tercera Orden de San Francisco y se vinculó a la familia de la penitencia que hoy reconocemos en la tradición de la Orden Franciscana Seglar. No se hizo monja: vivió su pertenencia franciscana como laica, llevando una vida austera y volcada en quienes sufrían.
 
 No buscaba la pobreza por sí misma, sino la libertad de un corazón que ya no necesita aferrarse a las riquezas porque ha descubierto que su mayor bien es Dios.
 

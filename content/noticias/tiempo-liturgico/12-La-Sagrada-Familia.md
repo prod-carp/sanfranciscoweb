@@ -39,7 +39,7 @@ Cuando el ángel Gabriel le anunció que sería la madre del Hijo de Dios, Marí
 
 Su respuesta marcó toda su vida.
 
-María no sabía todo lo que iba a suceder. No conocía las dificultades que tendría que afrontar ni el sufrimiento que experimentaría junto a su Hijo.
+María no sabía todo lo que iba a suceder. No conocía las dificultades que tendría que afrontar ni [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) que experimentaría junto a su Hijo.
 
 Pero confió en Dios.
 
@@ -71,7 +71,7 @@ Su vida es un ejemplo de **obediencia, responsabilidad y amor silencioso**.
 
 Quizá uno de los aspectos más hermosos de la Sagrada Familia es que Jesús, siendo el Hijo de Dios, quiso vivir durante muchos años una vida sencilla dentro de una familia.
 
-El Evangelio de san Lucas dice:
+El Evangelio de [san Lucas](/noticias/santoral/10-18-San-Lucas/) dice:
 
 «Jesús iba creciendo en sabiduría, en estatura y en gracia ante Dios y ante los hombres» (Lc 2,52).
 
@@ -83,7 +83,7 @@ La mayor parte de sus años en la tierra transcurrieron en la sencillez de Nazar
 
 ## La vida cotidiana también puede ser santa
 
-La Sagrada Familia nos recuerda que la santidad no se encuentra únicamente en acontecimientos extraordinarios.
+La Sagrada Familia nos recuerda que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) no se encuentra únicamente en acontecimientos extraordinarios.
 
 Jesús pasó muchos años viviendo una vida sencilla.
 
@@ -129,7 +129,7 @@ Aquella familia tuvo que convertirse en una familia que vivía como extranjera.
 
 Esto nos muestra que la presencia de Dios no significa que desaparezcan automáticamente los problemas.
 
-La Sagrada Familia también conoció el miedo, la incertidumbre y el sacrificio.
+La Sagrada Familia también conoció el miedo, [la incertidumbre](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) y el sacrificio.
 
 ## El regreso a Nazaret
 
@@ -201,7 +201,7 @@ Jesús, durante su vida terrena, vivió en obediencia al Padre.
 
 La familia cristiana también está llamada a escuchar a Dios.
 
-Esto puede hacerse mediante la oración, la lectura de la Sagrada Escritura, la participación en los sacramentos y la vida de la Iglesia.
+Esto puede hacerse mediante la oración, la lectura de la Sagrada Escritura, la participación en los [sacramentos](/noticias/formacion/los-7-sacramentos/) y la vida de la Iglesia.
 
 Cuando una familia aprende a rezar junta, a perdonarse y a buscar la voluntad de Dios, comienza a construir un hogar diferente.
 

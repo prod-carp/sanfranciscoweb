@@ -9,7 +9,7 @@ image = "/assets/images/blog/2026-10-20-por-que-un-cristiano-no-debe-creer-en-el
 tags = []
 +++
 
-**Escuchamos con frecuencia expresiones como «todo vuelve», «el universo te devolverá lo que das» o «es el karma».** Estas frases suelen utilizarse para expresar que nuestras acciones tienen consecuencias. Aunque su uso cotidiano no siempre implica aceptar una doctrina religiosa, detrás de ellas puede existir una manera de entender la vida, el sufrimiento y la justicia que no coincide con la fe cristiana.
+**Escuchamos con frecuencia expresiones como «todo vuelve», «el universo te devolverá lo que das» o «es el karma».** Estas frases suelen utilizarse para expresar que nuestras acciones tienen consecuencias. Aunque su uso cotidiano no siempre implica aceptar una doctrina religiosa, detrás de ellas puede existir una manera de entender la vida, [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) y la justicia que no coincide con la fe cristiana.
 
 Nuestras decisiones importan y somos responsables de nuestros actos, pero nuestra esperanza no se encuentra en una ley impersonal que equilibra el bien y el mal, sino en Dios, que nos ama, nos ofrece su perdón y nos invita a comenzar de nuevo por medio de Jesucristo.
 
@@ -68,7 +68,7 @@ El padre no llama bueno a lo que su hijo ha hecho. El pecado ha tenido consecuen
 
 Esta parábola nos revela el corazón misericordioso de Dios: Él no quiere que permanezcamos encadenados a nuestro pasado, sino que nos arrepintamos, nos reconciliemos con Él y caminemos hacia una vida nueva.
 
-La realidad se hace especialmente visible en el sacramento de la Reconciliación, donde recibimos el perdón de Dios cuando nos acercamos con arrepentimiento sincero y las disposiciones necesarias. 
+La realidad se hace especialmente visible en el [sacramento de la Reconciliación](/confesion.html), donde recibimos el perdón de Dios cuando nos acercamos con arrepentimiento sincero y las disposiciones necesarias. 
 
 Por eso, nuestra esperanza no está en que el universo ajuste nuestras cuentas, sino en que **Dios nos ofrece su misericordia y nos invita a la conversión**.
 

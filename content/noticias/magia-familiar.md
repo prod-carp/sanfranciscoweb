@@ -9,7 +9,7 @@ weight = 0
 image = "/assets/images/blog/mago.webp"
 +++
 
-Ayer, sábado 3 de octubre, nuestra parroquia de San Francisco y Santa Clara de Asís vivió una mañana muy especial con motivo de nuestra fiesta patronal en honor a San Francisco de Asís. Fue una mañana de esas que se disfrutan en familia, con sonrisas, encuentros y, sobre todo, mucha ilusión.
+Ayer, sábado 3 de octubre, [nuestra parroquia](/fotos.html) de San Francisco y [Santa Clara](/santaclara.html) de Asís vivió una mañana muy especial con motivo de nuestra fiesta patronal en honor a [San Francisco de Asís](/sanfrancisco.html). Fue una mañana de esas que se disfrutan en familia, con sonrisas, encuentros y, sobre todo, mucha ilusión.
 
 A las doce del mediodía, los salones parroquiales se llenaron de familias y, muy especialmente, de los más pequeños de la casa, que esperaban con entusiasmo el espectáculo de ilusionismo de Lord Raymon.
 

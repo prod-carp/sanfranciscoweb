@@ -71,7 +71,7 @@ Pero será especialmente con Jesucristo y con la venida del Espíritu Santo cuan
 
 En el Nuevo Testamento encontramos al Padre, al Hijo y al Espíritu Santo actuando juntos.
 
-Uno de los ejemplos más claros aparece en el **Bautismo de Jesús**.
+Uno de los ejemplos más claros aparece en el **[Bautismo](/bautismo.html) de Jesús**.
 
 Jesús está en el agua, el Espíritu Santo desciende sobre Él en forma de paloma y se escucha la voz del Padre:
 
@@ -196,7 +196,7 @@ Podemos detenernos unos segundos y recordar:
 
 La señal de la cruz puede convertirse así en una pequeña oración de confianza.
 
-## La Trinidad y la Eucaristía
+## La Trinidad y la [Eucaristía](/comunion.html)
 
 También encontramos la acción de la Trinidad en la celebración de la Eucaristía.
 

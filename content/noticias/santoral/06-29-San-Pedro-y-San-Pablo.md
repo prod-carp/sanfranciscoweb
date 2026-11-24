@@ -63,7 +63,7 @@ manifestó ante él y le preguntó:
 
 «Saulo, Saulo, ¿por qué me persigues?» (Hch 9,4).
 
-A partir de aquel momento, Saulo comprendió que perseguir a los cristianos era perseguir al propio Cristo. Se convirtió, recibió el bautismo y comenzó a anunciar
+A partir de aquel momento, Saulo comprendió que perseguir a los cristianos era perseguir al propio Cristo. Se convirtió, recibió el [bautismo](/bautismo.html) y comenzó a anunciar
 precisamente la fe que antes combatía.
 
 Desde entonces sería conocido como **Pablo**.
@@ -136,7 +136,7 @@ Esta frase refleja perfectamente el ardor misionero del apóstol. Para Pablo, an
 El **29 de junio** se celebra la **Solemnidad de San Pedro y San Pablo, apóstoles**.
 
 En el calendario litúrgico de la Iglesia Católica, una solemnidad es una de las
-celebraciones de mayor importancia. Por eso este día tiene un carácter especialmente festivo y la Iglesia invita a los fieles a participar de la **Santa Misa**.
+celebraciones de mayor importancia. Por eso este día tiene un carácter especialmente festivo y la Iglesia invita a los fieles a participar de la **[Santa Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/)**.
 
 Además, esta celebración tiene un significado especial para toda la Iglesia porque recuerda a dos de sus grandes columnas apostólicas y su testimonio de fe hasta el martirio.
 

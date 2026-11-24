@@ -72,7 +72,7 @@ Aunque su misión muchas veces permanece oculta a los ojos del mundo, constituye
 
 La Virgen María, que guardaba y meditaba los acontecimientos en su corazón, es un modelo privilegiado de esa vida interior.
 
-Para nuestra comunidad parroquial, puesta bajo la protección de **san Francisco y santa Clara de Asís**, esta celebración tiene una resonancia especial.
+Para nuestra comunidad parroquial, puesta bajo la protección de **san Francisco y [santa Clara](/santaclara.html) de Asís**, esta celebración tiene una resonancia especial.
 
 Santa Clara, siguiendo las huellas de san Francisco, abrazó una vida de pobreza, contemplación y entrega radical a Jesucristo. Como María, quiso que Dios ocupara el centro de toda su existencia.
 
@@ -82,7 +82,7 @@ Su testimonio nos recuerda que la verdadera riqueza del cristiano no está en po
 
 La Presentación de la Virgen es también una invitación a preguntarnos cómo estamos viviendo nuestra propia relación con Dios.
 
-No todos estamos llamados a la vida religiosa, pero todos los bautizados compartimos una vocación fundamental: la santidad.
+No todos estamos llamados a la vida religiosa, pero todos los bautizados compartimos una vocación fundamental: [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/).
 
 Podemos presentar nuestra vida al Señor cada mañana, al comenzar el trabajo, al cuidar de nuestra familia, al acompañar a quien sufre o al afrontar con paciencia las dificultades.
 
@@ -90,7 +90,7 @@ También podemos ofrecerle nuestras preocupaciones, nuestras limitaciones y aque
 
 Dios no espera que lleguemos ante Él con una vida perfecta. Nos invita a acercarnos con un corazón sincero y dispuesto a dejarse transformar por su amor.
 
-En cada Eucaristía, cuando presentamos el pan y el vino sobre el altar, estamos llamados a unir espiritualmente a esos dones nuestra propia existencia: nuestras alegrías, nuestros esfuerzos, nuestros sufrimientos y nuestras esperanzas.
+En cada [Eucaristía](/comunion.html), cuando presentamos el pan y el vino sobre el altar, estamos llamados a unir espiritualmente a esos dones nuestra propia existencia: nuestras alegrías, nuestros esfuerzos, nuestros sufrimientos y nuestras esperanzas.
 
 Así, la ofrenda de María se convierte para nosotros en una escuela de confianza y generosidad.
 

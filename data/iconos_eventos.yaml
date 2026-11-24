@@ -11,6 +11,10 @@
   icono: "🔆"
   url: "/exposicion-santisimo.html"
 
+- claves: ["limpieza"]
+  icono: "🧹"
+  url: "/grupolimpieza.html"
+
 - claves: ["adoracion nocturna", "nocturna"]
   icono: "🔆"
   url: "/ane.html"

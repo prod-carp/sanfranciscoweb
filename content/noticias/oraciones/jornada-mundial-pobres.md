@@ -27,7 +27,7 @@ y a trabajar por una sociedad más justa y fraterna.
 
 Que sepamos reconocer en los pobres no solo a hermanos que necesitan nuestra ayuda, sino también a testigos de fe que nos evangelizan.
 
-Siguiendo el ejemplo de san Francisco de Asís, enséñanos a caminar pobres con los pobres y a descubrir la alegría de compartir su vida.
+Siguiendo el ejemplo de [san Francisco de Asís](/sanfrancisco.html), enséñanos a caminar pobres con los pobres y a descubrir la alegría de compartir su vida.
 
 María, Madre de los pobres, intercede por nosotros para que nuestras comunidades sean un verdadero hogar para los más necesitados.
 

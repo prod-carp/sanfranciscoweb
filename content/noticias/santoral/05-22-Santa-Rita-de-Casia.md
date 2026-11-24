@@ -22,7 +22,7 @@ Su vida matrimonial no fue sencilla. Las biografías tradicionales cuentan que s
 
 Rita no permitió que el dolor llenara su corazón de odio.
 
-Su vida se convirtió poco a poco en un testimonio de **perdón, perseverancia y confianza en Dios**.
+Su vida se convirtió poco a poco en un testimonio de **perdón, perseverancia y [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/)**.
 
 ## Una mujer que eligió el perdón
 
@@ -36,7 +36,7 @@ Sus hijos murieron poco tiempo después, probablemente a causa de una enfermedad
 
 Rita quedó sola.
 
-Había perdido a su esposo y a sus hijos, pero no permitió que el sufrimiento destruyera su relación con Dios.
+Había perdido a su esposo y a sus hijos, pero no permitió que [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) destruyera su relación con Dios.
 
 En lugar de buscar venganza, eligió **el camino del perdón**.
 
@@ -136,7 +136,7 @@ Esa es una fe madura: una fe que sigue confiando incluso cuando no comprende.
 
 ## ¿Por qué es importante recordar a Santa Rita?
 
-Es importante recordar a Santa Rita porque muestra que la santidad puede crecer en medio de una vida llena de dificultades.
+Es importante recordar a Santa Rita porque muestra que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) puede crecer en medio de una vida llena de dificultades.
 
 Fue esposa, madre, viuda y religiosa.
 

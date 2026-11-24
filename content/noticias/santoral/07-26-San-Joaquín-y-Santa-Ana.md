@@ -33,7 +33,7 @@ La historia tradicional de Joaquín y Ana nos recuerda que hay situaciones que n
 
 Su ejemplo nos invita a presentar nuestras preocupaciones ante Dios sin perder la esperanza.
 
-## El nacimiento de María
+## El [nacimiento de María](/noticias/santoral/09-08-natividad-de-la-virgen-maria/)
 
 Según la antigua tradición, Dios escuchó las oraciones de Joaquín y Ana y les concedió una hija: María.
 
@@ -93,7 +93,7 @@ Aunque los detalles de su vida pertenecen a la tradición cristiana, su figura h
 
 Ellos nos ayudan a recordar que la familia tiene un papel importante en la transmisión de la fe y que cada generación puede recibir de la anterior un tesoro espiritual.
 
-También nos invitan a confiar en Dios cuando nuestras oraciones parecen no tener respuesta inmediata.
+También nos invitan a [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) cuando nuestras oraciones parecen no tener respuesta inmediata.
 
 ## ¿Qué podemos aprender de San Joaquín y Santa Ana?
 

@@ -9,7 +9,7 @@ weight = 0
 image = "/assets/images/blog/portadacaleb.webp"
 +++
 
-Imagina tu vida como un sendero: hay tramos firmes, otros pedregosos, y momentos en los que el horizonte se nubla. La Escuela Caleb aparece como un oasis en medio del desierto: allí la sed se calma, la esperanza se recompone y la marcha vuelve a encontrar ritmo.
+Imagina tu vida como un sendero: hay tramos firmes, otros pedregosos, y momentos en los que el horizonte se nubla. La [Escuela Caleb](/grupo-caleb.html) aparece como un oasis en medio del desierto: allí la sed se calma, la esperanza se recompone y la marcha vuelve a encontrar ritmo.
 
 ## ¿Quién fue Caleb y por qué nos inspira?
 
@@ -19,13 +19,13 @@ La meta que buscamos no es una vida perfecta, sino una vida abundante (Jn 10,10)
 
 ## Domingos para encender el corazón
 
-Cada domingo, de 10:30 a 12:30, en la parroquia San Francisco y Santa Clara (C/ Suecia 2, Fuenlabrada), la Escuela Caleb crea comunidad. No es "ir, escuchar y marcharse". Es compartir la vida: la fe y las dudas, las alegrías y las luchas. El encuentro se teje con tres hilos:
+Cada domingo, de 10:30 a 12:30, en la parroquia San Francisco y [Santa Clara](/santaclara.html) (C/ Suecia 2, Fuenlabrada), la Escuela Caleb crea comunidad. No es "ir, escuchar y marcharse". Es compartir la vida: la fe y las dudas, las alegrías y las luchas. El encuentro se teje con tres hilos:
 
 • Alabanza y oración: elevamos la voz y el corazón, reconociendo la grandeza de Dios y abriéndonos a su presencia. La alabanza afina el alma y pone a Cristo en el centro.
 • Formación: profundizamos en los fundamentos de la fe, descubrimos quién es Dios y cómo su plan embellece lo cotidiano. Conocer nutre, comprender libera.
 • Acompañamiento: nadie camina solo. Hermanos y hermanas sostienen, animan y ayudan a discernir la voz de Dios en medio del ruido.
 
-Y todo culmina en la Misa de las 12:30. La escuela prepara el corazón; la Eucaristía lo colma.
+Y todo culmina en la [Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/) de las 12:30. La escuela prepara el corazón; la [Eucaristía](/comunion.html) lo colma.
 
 ## ¿Es para ti?
 

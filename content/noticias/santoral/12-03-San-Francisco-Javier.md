@@ -162,7 +162,7 @@ Su vida había demostrado que **la misión de la Iglesia no conoce fronteras**.
 
 ## ¿Por qué San Francisco Javier es santo?
 
-San Francisco Javier fue canonizado por el papa **Gregorio XV en 1622**, junto con san Ignacio de Loyola, santa Teresa de Jesús, san Isidro Labrador y san Felipe Neri.
+San Francisco Javier fue canonizado por el papa **Gregorio XV en 1622**, junto con san Ignacio de Loyola, [santa Teresa de Jesús](/noticias/santoral/10-15-Santa-Teresa-de-Jesús/), san Isidro Labrador y san Felipe Neri.
 
 La Iglesia reconoce en él un ejemplo extraordinario de **misionero, sacerdote y evangelizador**.
 

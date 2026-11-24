@@ -20,7 +20,7 @@ A los 20 años ingresó en el monasterio de la Encarnación de Ávila, perteneci
 
 Teresa atravesó también momentos de enfermedad y dificultades interiores. Durante años reconoció que su vida de oración no siempre fue constante. Sin embargo, poco a poco comprendió que Dios la llamaba a una amistad más íntima con Él.
 
-## La oración como amistad con Jesús
+## La oración como [amistad con Jesús](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/)
 
 Uno de los grandes mensajes de Santa Teresa es que **orar es estar con quien sabemos que nos ama**.
 
@@ -40,7 +40,7 @@ En 1562 fundó en Ávila el monasterio de San José, dando inicio a una reforma 
 
 A pesar de las dificultades y de las incomprensiones, Teresa continuó adelante. Fundó numerosos monasterios y recorrió distintas ciudades de España para llevar adelante su proyecto.
 
-Su camino no fue fácil. Tuvo que enfrentarse a obstáculos, críticas y problemas de salud, pero mantuvo la confianza en Dios.
+Su camino no fue fácil. Tuvo que enfrentarse a obstáculos, críticas y problemas de salud, pero mantuvo la [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
 Su vida demuestra que la santidad no significa ausencia de dificultades. Significa aprender a caminar con Dios incluso en medio de ellas.
 

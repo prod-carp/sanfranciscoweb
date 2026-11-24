@@ -81,7 +81,7 @@ Podemos amar y servir a Dios en la oración, pero también en el trabajo, en la 
 
 Ignacio estudió en diferentes lugares y finalmente llegó a París, donde conoció a varios jóvenes que compartirían con él su deseo de servir a Dios.
 
-Entre ellos estaban **san Francisco Javier** y **san Pedro Fabro**.
+Entre ellos estaban **[san Francisco Javier](/noticias/santoral/12-03-San-Francisco-Javier/)** y **san Pedro Fabro**.
 
 Juntos fueron formando una comunidad unida por la oración y el deseo de servir a la Iglesia.
 

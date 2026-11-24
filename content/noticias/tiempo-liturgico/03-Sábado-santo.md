@@ -19,7 +19,7 @@ El **Sábado Santo** es el día que transcurre entre la muerte de Jesús en la C
 
 Después de contemplar la Pasión y muerte de Cristo el Viernes Santo, la Iglesia permanece en silencio. Jesús ha muerto y su cuerpo ha sido colocado en un sepulcro.
 
-Es un día diferente dentro de la Semana Santa. No se celebra la Eucaristía durante el día y la Iglesia invita a permanecer en oración, esperando la victoria de Cristo.
+Es un día diferente dentro de la Semana Santa. No se celebra la [Eucaristía](/comunion.html) durante el día y la Iglesia invita a permanecer en oración, esperando la victoria de Cristo.
 
 Aunque exteriormente parece un día marcado por la tristeza, en el corazón de la fe cristiana existe ya una profunda esperanza: **la muerte no tendrá la última palabra**.
 
@@ -29,7 +29,7 @@ Después de la muerte de Jesús, un hombre llamado **José de Arimatea**, discí
 
 Lo envolvió en una sábana y lo colocó en un sepulcro nuevo excavado en la roca.
 
-San Mateo cuenta que después hicieron rodar una gran piedra delante de la entrada del sepulcro (cf. Mt 27,59-60).
+[San Mateo](/noticias/santoral/09-21-San-Mateo/) cuenta que después hicieron rodar una gran piedra delante de la entrada del sepulcro (cf. Mt 27,59-60).
 
 Todo parecía haber terminado.
 
@@ -61,7 +61,7 @@ Sin embargo, había recibido anteriormente la palabra de Dios y había guardado 
 
 Por eso, la tradición cristiana contempla a María como aquella que permanece fiel incluso cuando todo parece perdido.
 
-Su actitud nos enseña a confiar en Dios cuando no entendemos sus caminos.
+Su actitud nos enseña a [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) cuando no entendemos sus caminos.
 
 ## Un día para esperar
 
@@ -165,7 +165,7 @@ Entonces vuelve a escucharse el **Aleluya**, que había quedado en silencio dura
 
 La alegría de la Pascua irrumpe después del silencio del Sábado Santo.
 
-## El agua y el Bautismo
+## El agua y el [Bautismo](/bautismo.html)
 
 Otro signo importante de la Vigilia Pascual es el **agua**.
 
@@ -181,7 +181,7 @@ San Pablo explica el significado de esta vida nueva:
 
 ## El Sábado Santo nos enseña a confiar
 
-Este día nos ofrece una enseñanza muy importante: **aprender a esperar en Dios**.
+Este día nos ofrece una enseñanza muy importante: **aprender a [esperar en Dios](/noticias/gen/esperanza-y-paciencia-aprender-a-esperar-en-dios/)**.
 
 No siempre comprenderemos inmediatamente lo que Dios está haciendo.
 

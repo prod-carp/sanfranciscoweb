@@ -33,7 +33,7 @@ Por eso, la Navidad es ante todo una celebración del **amor de Dios**.
 
 ## El nacimiento de Jesús en Belén
 
-Los Evangelios de san Mateo y san Lucas nos cuentan algunos acontecimientos relacionados con el nacimiento de Jesús.
+Los Evangelios de [san Mateo](/noticias/santoral/09-21-San-Mateo/) y [san Lucas](/noticias/santoral/10-18-San-Lucas/) nos cuentan algunos acontecimientos relacionados con el nacimiento de Jesús.
 
 María había recibido del ángel Gabriel el anuncio de que sería la Madre del Salvador.
 
@@ -141,7 +141,7 @@ Con ese «sí», María aceptó colaborar con el plan de Dios.
 
 Por eso, cuando contemplamos al Niño Jesús en el pesebre, también contemplamos a su Madre.
 
-María nos enseña que la fe consiste muchas veces en confiar en Dios incluso cuando no comprendemos completamente lo que está sucediendo.
+María nos enseña que la fe consiste muchas veces en [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) incluso cuando no comprendemos completamente lo que está sucediendo.
 
 Ella no conocía todos los acontecimientos que tendría que vivir, pero confió.
 
@@ -157,7 +157,7 @@ José obedeció.
 
 Más adelante, cuando Herodes quiso buscar al niño para matarlo, José recibió nuevamente en sueños la advertencia de Dios y huyó con María y Jesús a Egipto.
 
-Así, san José se convirtió en protector de la Sagrada Familia.
+Así, san José se convirtió en protector de la [Sagrada Familia](/noticias/tiempo-liturgico/12-La-Sagrada-Familia/).
 
 La Navidad también nos invita a contemplar su silencio, su obediencia y su capacidad de actuar con confianza en Dios.
 
@@ -247,7 +247,7 @@ San Juan escribe:
 
 «La luz brilla en las tinieblas» (Jn 1,5).
 
-Cristo viene a iluminar una humanidad herida por el pecado y el sufrimiento.
+Cristo viene a iluminar una humanidad herida por el pecado y [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/).
 
 Su luz no elimina automáticamente todas nuestras dificultades.
 
@@ -361,13 +361,13 @@ La Navidad corresponde a la **Solemnidad de la Natividad del Señor** y se celeb
 
 Es una de las solemnidades principales del calendario litúrgico de la Iglesia.
 
-La celebración comienza con las tradicionales Misas de Navidad, entre ellas la conocida **Misa de Medianoche**, y continúa durante el tiempo de Navidad.
+La celebración comienza con las tradicionales Misas de Navidad, entre ellas la conocida **[Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/) de Medianoche**, y continúa durante el tiempo de Navidad.
 
 La Iglesia no limita la celebración al 25 de diciembre.
 
 El tiempo litúrgico de Navidad continúa después de ese día y nos permite contemplar otros acontecimientos relacionados con la manifestación de Cristo.
 
-Entre ellos encontramos la Sagrada Familia, la maternidad de María, la manifestación del Señor a los pueblos y el Bautismo de Jesús, según el calendario litúrgico.
+Entre ellos encontramos la Sagrada Familia, la maternidad de María, la manifestación del Señor a los pueblos y el [Bautismo](/bautismo.html) de Jesús, según el calendario litúrgico.
 
 ## Una invitación a recibir a Jesús
 
@@ -409,7 +409,7 @@ Consiste en descubrir que **Jesús sigue viniendo a nuestro encuentro**.
 
 Viene cuando escuchamos su Palabra.
 
-Viene cuando nos acercamos a los sacramentos.
+Viene cuando nos acercamos a los [sacramentos](/noticias/formacion/los-7-sacramentos/).
 
 Viene cuando aprendemos a amar y perdonar.
 

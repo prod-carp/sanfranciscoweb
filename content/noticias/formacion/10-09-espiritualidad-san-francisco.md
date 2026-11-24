@@ -13,7 +13,7 @@ fechaInicio = 0
 fechaFin = 300
 +++
 
-San Francisco de Asís (1181/1182-1226) es una de las figuras más importantes de la espiritualidad cristiana. Su vida y su pensamiento nos ofrecen una riqueza teológica extraordinaria, especialmente en torno a Cristo, la pobreza evangélica, la fraternidad, la creación, la Eucaristía y la paz.
+[San Francisco de Asís](/sanfrancisco.html) (1181/1182-1226) es una de las figuras más importantes de la espiritualidad cristiana. Su vida y su pensamiento nos ofrecen una riqueza teológica extraordinaria, especialmente en torno a Cristo, la pobreza evangélica, la fraternidad, la creación, la [Eucaristía](/comunion.html) y la paz.
 
 Lo más característico de su espiritualidad es que no desarrolla una teología principalmente académica o sistemática, sino una teología profundamente vivida: contempla a Dios, se deja transformar por el Evangelio y procura reflejar a Cristo en cada aspecto de su vida.
 
@@ -37,11 +37,11 @@ Su espiritualidad es profundamente cristocéntrica: el cristiano está llamado a
 
 ![Vida de San Francisco, por San Buenaventura y Giotto, 5-8](/assets/images/blog/02.webp)
 
-La pobreza ocupa un lugar central en la experiencia espiritual de Francisco. Su renuncia a los bienes materiales no constituye un desprecio de la creación, sino una forma radical de confiar en Dios y vivir libre de todo aquello que pueda ocupar su lugar.
+La pobreza ocupa un lugar central en la experiencia espiritual de Francisco. Su renuncia a los bienes materiales no constituye un desprecio de la creación, sino una forma radical de [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) y vivir libre de todo aquello que pueda ocupar su lugar.
 
 * Cristo pobre: Francisco contempla la pobreza de Jesús desde Belén hasta la cruz.
 
-* La confianza en la Providencia: invita a vivir sin acumular riquezas, confiando en el cuidado de Dios.
+* La confianza en la [Providencia](/noticias/gen/providencia-y-oracion-confiar-sin-quedarse-pasivos/): invita a vivir sin acumular riquezas, confiando en el cuidado de Dios.
 
 * La libertad interior: el desprendimiento permite amar sin convertir los bienes, el poder o el prestigio en el centro de la vida.
 

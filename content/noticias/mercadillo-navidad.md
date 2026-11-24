@@ -9,13 +9,13 @@ weight = 0
 image = "/assets/images/manualidades.webp"
 +++
 
-# Pequeños detalles hechos con cariño para nuestra parroquia
+# Pequeños detalles hechos con cariño para [nuestra parroquia](/fotos.html)
 
 **Los domingos 22 y 29 de noviembre, a la salida de las misas, nuestra parroquia celebrará un mercadillo de Adviento y Navidad organizado por el [Grupo de Manualidades](https://sanfranciscoysantaclara.es/manualidades.html).** Una ocasión especial para preparar nuestros hogares para la llegada del Niño Jesús y, al mismo tiempo, colaborar con las necesidades de nuestra comunidad parroquial.
 
 ## Una Navidad que comienza en nuestras manos
 
-Durante las últimas semanas, las integrantes del Grupo de Manualidades han dedicado tiempo, ilusión y mucho cariño a preparar una preciosa colección de adornos y detalles navideños. Cada pieza ha sido elaborada artesanalmente, pensando en quienes desean llenar sus hogares de la alegría y la esperanza que nos trae la Navidad.
+Durante las últimas semanas, las integrantes del [Grupo de Manualidades](/manualidades.html) han dedicado tiempo, ilusión y mucho cariño a preparar una preciosa colección de adornos y detalles navideños. Cada pieza ha sido elaborada artesanalmente, pensando en quienes desean llenar sus hogares de la alegría y la esperanza que nos trae la Navidad.
 
 Pero detrás de estos pequeños trabajos hay algo todavía más hermoso: unas manos que se reúnen, comparten, crean y ponen sus talentos al servicio de los demás.
 
@@ -107,7 +107,7 @@ Colocar al Niño Jesús en un lugar especial de nuestra casa es una bonita maner
 
 Los pequeños nacimientos y belenes nos permiten llevar a nuestros hogares la escena de Belén, con María, José y el Niño Jesús.
 
-San Francisco de Asís quiso representar el nacimiento del Señor en Greccio, en 1223, para ayudar a las personas a contemplar de una manera cercana la humildad y la ternura de Dios hecho hombre.
+[San Francisco de Asís](/sanfrancisco.html) quiso representar el nacimiento del Señor en Greccio, en 1223, para ayudar a las personas a contemplar de una manera cercana la humildad y la ternura de Dios hecho hombre.
 
 Siguiendo aquella hermosa tradición franciscana, estos pequeños belenes nos invitan a acercarnos al pesebre y descubrir, una vez más, la grandeza de un Dios que se hace pequeño por amor.
 
@@ -123,7 +123,7 @@ Es una bonita oportunidad para elegir algún regalo de Navidad con un significad
 
 ## ¡Os esperamos los domingos 22 y 29 de noviembre!
 
-**Lugar:** Parroquia de San Francisco y Santa Clara de Asís  
+**Lugar:** Parroquia de San Francisco y [Santa Clara](/santaclara.html) de Asís  
 **Fechas:** Domingos 22 y 29 de noviembre de 2026  
 **Horario:** A la salida de las misas  
 **Organiza:** Grupo de Manualidades  

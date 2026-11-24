@@ -15,11 +15,11 @@ diasDespues = 300
 
 ## ¿Qué celebramos en Corpus Christi?
 
-**Corpus Christi**, cuyo nombre significa «Cuerpo de Cristo», es la celebración en la que la Iglesia contempla y adora de manera especial a **Jesucristo realmente presente en la Eucaristía**.
+**Corpus Christi**, cuyo nombre significa «Cuerpo de Cristo», es la celebración en la que la Iglesia contempla y adora de manera especial a **Jesucristo realmente presente en la [Eucaristía](/comunion.html)**.
 
 La celebración recibe oficialmente el nombre de **Solemnidad del Santísimo Cuerpo y Sangre de Cristo**.
 
-En cada Misa, el pan y el vino se convierten, por la acción del Espíritu Santo y las palabras de Cristo, en su Cuerpo y su Sangre.
+En cada [Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/), el pan y el vino se convierten, por la acción del Espíritu Santo y las palabras de Cristo, en su Cuerpo y su Sangre.
 
 Por eso, después de la consagración, la Iglesia no considera la Eucaristía simplemente como un recuerdo de Jesús.
 
@@ -195,7 +195,7 @@ Podemos pedir por nuestra familia.
 
 Podemos permanecer en silencio.
 
-La adoración eucarística es un encuentro de amor con Cristo.
+La [adoración eucarística](/exposicion-santisimo.html) es un encuentro de amor con Cristo.
 
 ## La Eucaristía es una promesa de vida eterna
 

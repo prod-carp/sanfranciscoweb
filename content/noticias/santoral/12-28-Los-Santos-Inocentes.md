@@ -16,7 +16,7 @@ fechaFin = 300
 
 Los Santos Inocentes son los niños pequeños de Belén y sus alrededores que fueron asesinados por orden del rey Herodes poco después del nacimiento de Jesús. Aunque ellos no conocían a Jesús ni pudieron elegir seguirlo, la Iglesia los reconoce como mártires porque murieron a causa de la persecución dirigida contra el Niño Jesús.
 
-Su historia aparece en el Evangelio de san Mateo, cuando se cuenta que unos Magos de Oriente llegaron a Jerusalén buscando al recién nacido «rey de los judíos». Herodes, al enterarse de la noticia, tuvo miedo de perder su poder y quiso descubrir dónde estaba el niño.
+Su historia aparece en el Evangelio de [san Mateo](/noticias/santoral/09-21-San-Mateo/), cuando se cuenta que unos Magos de Oriente llegaron a Jerusalén buscando al recién nacido «rey de los judíos». Herodes, al enterarse de la noticia, tuvo miedo de perder su poder y quiso descubrir dónde estaba el niño.
 
 Los Magos, después de encontrar a Jesús, recibieron en sueños la advertencia de no regresar donde Herodes. Entonces volvieron a su país por otro camino.
 
@@ -84,7 +84,7 @@ Mientras unos pastores llegan para adorarlo y los Magos vienen desde lejos para 
 
 Sin embargo, el mal no tiene la última palabra.
 
-Dios protege a Jesús por medio de José, que escucha su voz y actúa con prontitud. La Sagrada Familia huye a Egipto y permanece allí hasta que pasa el peligro.
+Dios protege a Jesús por medio de José, que escucha su voz y actúa con prontitud. La [Sagrada Familia](/noticias/tiempo-liturgico/12-La-Sagrada-Familia/) huye a Egipto y permanece allí hasta que pasa el peligro.
 
 De esta manera, la historia de los Santos Inocentes forma parte del misterio de la Navidad: **el Hijo de Dios ha venido al mundo, pero su llegada también provoca oposición en quienes rechazan la verdad y quieren conservar su poder.**
 
@@ -106,7 +106,7 @@ Por eso su memoria también nos invita a mirar con compasión a los niños que h
 
 Cuando contemplamos la muerte de estos niños podemos preguntarnos por qué Dios permitió que ocurriera una tragedia semejante.
 
-El Evangelio no presenta una explicación sencilla para el sufrimiento de los inocentes. Pero sí nos muestra que Dios no permanece indiferente ante el dolor humano.
+El Evangelio no presenta una explicación sencilla para [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) de los inocentes. Pero sí nos muestra que Dios no permanece indiferente ante el dolor humano.
 
 El mismo Jesús, que escapó de la persecución de Herodes, más adelante experimentaría el rechazo, la injusticia y la muerte en la cruz.
 
@@ -139,7 +139,7 @@ Para la fe cristiana, la muerte no tiene la última palabra. Cristo ha vencido l
 
 Los Santos Inocentes murieron siendo pequeños, pero la Iglesia los reconoce como santos y los contempla junto a Dios.
 
-Su memoria nos recuerda que la santidad no depende de tener una vida larga, de realizar grandes obras o de ser conocido por muchas personas.
+Su memoria nos recuerda que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) no depende de tener una vida larga, de realizar grandes obras o de ser conocido por muchas personas.
 
 La vida de una persona tiene valor porque ha sido querida por Dios.
 
@@ -212,7 +212,7 @@ Y Jesús, que fue protegido por María y José, crecerá para entregar su vida p
 
 ## Una memoria que nace en Navidad
 
-Celebrar a los Santos Inocentes pocos días después del nacimiento de Jesús nos recuerda que seguir a Cristo significa confiar en Dios incluso cuando no comprendemos todo lo que ocurre.
+Celebrar a los Santos Inocentes pocos días después del nacimiento de Jesús nos recuerda que seguir a Cristo significa [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) incluso cuando no comprendemos todo lo que ocurre.
 
 La Navidad nos anuncia que Dios ha venido a nosotros.
 

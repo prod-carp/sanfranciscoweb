@@ -23,13 +23,13 @@ María siempre nos lleva a Jesús.
 
 Ella no quiere que nos quedemos solamente mirándola a ella. Su misión es mostrarnos a su Hijo.
 
-Por eso, cuando acudimos a la Virgen del Pilar, le pedimos que nos enseñe a escuchar a Jesús, a recibir su Palabra y a vivir nuestra fe con alegría.
+Por eso, cuando acudimos a la [Virgen del Pilar](/noticias/santoral/10-12-virgen-pilar/), le pedimos que nos enseñe a escuchar a Jesús, a recibir su Palabra y a vivir nuestra fe con alegría.
 
 María es como un camino que nos conduce a Cristo.
 
 Mañana celebraremos su fiesta. Y queremos hacerlo no solamente con una devoción exterior, sino renovando nuestro deseo de vivir como verdaderos cristianos.
 
-Que nuestra parroquia sea una comunidad viva, que nuestras familias sean hogares de fe y que cada uno de nosotros pueda llevar a Cristo a quienes nos rodean.
+Que [nuestra parroquia](/fotos.html) sea una comunidad viva, que nuestras familias sean hogares de fe y que cada uno de nosotros pueda llevar a Cristo a quienes nos rodean.
 
 ## Oración
 
@@ -39,7 +39,7 @@ Bendice nuestra parroquia, bendice a nuestras familias, bendice a nuestros niño
 
 Haz de nosotros testigos de Cristo.
 
-Enséñanos a escuchar su Palabra, a participar en la Eucaristía, a vivir unidos como hermanos y a llevar el Evangelio a todos aquellos que encontremos.
+Enséñanos a escuchar su Palabra, a participar en la [Eucaristía](/comunion.html), a vivir unidos como hermanos y a llevar el Evangelio a todos aquellos que encontremos.
 
 Madre del Pilar, haz que nuestra vida permanezca firme sobre la roca que es Cristo.
 

@@ -23,7 +23,7 @@ La Iglesia utiliza este nombre para celebrar la manifestación de Jesucristo al 
 
 Esta verdad aparece representada de manera especial en la llegada de los **Magos de Oriente**, quienes viajaron desde tierras lejanas siguiendo una estrella hasta encontrar al Niño Jesús.
 
-El Evangelio de san Mateo nos cuenta que llegaron a Jerusalén preguntando:
+El Evangelio de [san Mateo](/noticias/santoral/09-21-San-Mateo/) nos cuenta que llegaron a Jerusalén preguntando:
 
 «¿Dónde está el Rey de los judíos que ha nacido?»  
 **Mateo 2,2**

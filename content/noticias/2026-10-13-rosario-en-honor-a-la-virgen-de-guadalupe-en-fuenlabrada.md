@@ -9,7 +9,7 @@ image = "/assets/images/blog/2026-10-13-rosario-en-honor-a-la-virgen-de-guadalup
 tags = []
 +++
 
-La parroquia San Francisco y Santa Clara invita a todos los fieles a participar en un encuentro de oración dedicado a la Virgen de Guadalupe, una ocasión para reunirse en comunidad, rezar el santo rosario y poner bajo la protección maternal de María nuestras familias, nuestras necesidades y las del mundo entero.
+La parroquia San Francisco y [Santa Clara](/santaclara.html) invita a todos los fieles a participar en un encuentro de oración dedicado a la Virgen de Guadalupe, una ocasión para reunirse en comunidad, rezar el santo [rosario](/noticias/oraciones/rezar-el-rosario/) y poner bajo la protección maternal de María nuestras familias, nuestras necesidades y las del mundo entero.
 
 **Próximo encuentro:** 12 de Diciembre a las 18:00
 
@@ -17,7 +17,7 @@ La parroquia San Francisco y Santa Clara invita a todos los fieles a participar 
 
 ## La Virgen de Guadalupe, Madre que nos acompaña
 
-La devoción a Nuestra Señora de Guadalupe ocupa un lugar muy especial en el corazón de millones de cristianos. Según la tradición guadalupana, en diciembre de 1531 la Virgen María se apareció al indígena san Juan Diego en el cerro del Tepeyac, en México. El mensaje que se le atribuye transmite una profunda cercanía maternal: María se presenta como una madre que conoce nuestras preocupaciones, escucha nuestros sufrimientos y nos invita a confiar en Dios.
+La devoción a Nuestra Señora de Guadalupe ocupa un lugar muy especial en el corazón de millones de cristianos. Según la tradición guadalupana, en diciembre de 1531 la Virgen María se apareció al indígena san Juan Diego en el cerro del Tepeyac, en México. El mensaje que se le atribuye transmite una profunda cercanía maternal: María se presenta como una madre que conoce nuestras preocupaciones, escucha nuestros sufrimientos y nos invita a [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
 La imagen de la Virgen de Guadalupe, con las manos juntas y la mirada recogida, nos recuerda que la oración nace de un corazón abierto al Señor. Su presencia maternal ha acompañado durante siglos a innumerables fieles que encuentran en ella consuelo, esperanza y aliento para seguir adelante.
 
@@ -27,7 +27,7 @@ Pero la devoción a María no termina en María misma: nos conduce siempre a Jes
 
 El santo rosario es una de las oraciones más queridas de la tradición católica. A través de la repetición pausada del avemaría, el padrenuestro y el gloria, los fieles meditan los principales misterios de la vida de Jesucristo, acompañados por la mirada y la intercesión de su Madre.
 
-Lejos de ser una repetición vacía, el rosario es una oportunidad para detener el ritmo cotidiano, escuchar la Palabra de Dios y presentar ante Él nuestras alegrías, dificultades y esperanzas. Cada misterio nos ayuda a contemplar un aspecto del Evangelio: la encarnación del Hijo de Dios, su vida pública, su pasión y muerte, y la gloria de su resurrección.
+Lejos de ser una repetición vacía, el rosario es una oportunidad para detener el ritmo cotidiano, [escuchar la Palabra de Dios](/noticias/escuchar-la-palabra-para-vivir-en-el-amor/) y presentar ante Él nuestras alegrías, dificultades y esperanzas. Cada misterio nos ayuda a contemplar un aspecto del Evangelio: la encarnación del Hijo de Dios, su vida pública, su pasión y muerte, y la gloria de su resurrección.
 
 Podemos rezarlo por nuestros seres queridos, por quienes atraviesan momentos de enfermedad o soledad, por la paz entre los pueblos, por las vocaciones y por todas aquellas personas que necesitan descubrir la esperanza cristiana.
 

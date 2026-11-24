@@ -13,7 +13,7 @@ fechaInicio = 1
 fechaFin = 300
 +++
 
-## ¿Quién fue Santa Clara de Asís?
+## ¿Quién fue [Santa Clara](/santaclara.html) de Asís?
 
 Santa Clara nació alrededor del año **1193 en Asís, Italia**, en una familia noble y acomodada.
 
@@ -23,7 +23,7 @@ Sin embargo, su vida estaba destinada a seguir el camino que correspondía a una
 
 Pero Clara tenía otro deseo en el corazón: **entregar completamente su vida a Jesucristo**.
 
-Cuando conoció el ejemplo de San Francisco de Asís, descubrió que aquella vida sencilla y centrada en el Evangelio respondía a lo que ella estaba buscando.
+Cuando conoció el ejemplo de [San Francisco de Asís](/sanfrancisco.html), descubrió que aquella vida sencilla y centrada en el Evangelio respondía a lo que ella estaba buscando.
 
 ## El encuentro con San Francisco
 
@@ -89,7 +89,7 @@ Fue la primera mujer en la Iglesia que consiguió que una regla escrita por ella
 
 ## La Regla de Santa Clara
 
-La Regla de Clara está profundamente inspirada en el Evangelio y en la espiritualidad de San Francisco.
+La Regla de Clara está profundamente inspirada en el Evangelio y en la [espiritualidad de San Francisco](/noticias/formacion/10-09-espiritualidad-san-francisco/).
 
 En ella encontramos enseñanzas sobre la pobreza, la oración, la obediencia, la fraternidad y la vida comunitaria.
 
@@ -115,7 +115,7 @@ Era aprender a conocerlo, amarlo e imitarlo.
 
 Su espiritualidad nos recuerda que, cuando fijamos nuestra mirada en Jesús, podemos descubrir qué es verdaderamente importante.
 
-## El milagro de la Eucaristía
+## El milagro de la [Eucaristía](/comunion.html)
 
 Una de las tradiciones más conocidas de la vida de Santa Clara está relacionada con la Eucaristía.
 
@@ -163,7 +163,7 @@ La Iglesia celebra a Santa Clara porque fue una mujer que entregó completamente
 
 Fue fundadora y madre espiritual de las **Clarisas**, y una de las grandes figuras de la espiritualidad franciscana.
 
-Su testimonio nos enseña que la santidad no depende de tener una vida llena de riquezas, fama o reconocimiento.
+Su testimonio nos enseña que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) no depende de tener una vida llena de riquezas, fama o reconocimiento.
 
 Clara vivió muchos años detrás de los muros de un monasterio, pero su vida tuvo una enorme influencia.
 
@@ -198,7 +198,7 @@ Cuando Cristo se convierte en nuestro verdadero tesoro, aprendemos a vivir con m
 
 **Santa Clara de Asís, mujer de fe y corazón entregado a Cristo, intercede por nosotros y enséñanos a descubrir en Jesús nuestro verdadero tesoro.**
 
-**Ayúdanos a vivir con sencillez, a desprendernos de aquello que nos aleja de Dios y a confiar en su providencia.**
+**Ayúdanos a vivir con sencillez, a desprendernos de aquello que nos aleja de Dios y a confiar en su [providencia](/noticias/gen/providencia-y-oracion-confiar-sin-quedarse-pasivos/).**
 
 **Enséñanos a permanecer firmes cuando encontremos dificultades y a defender nuestra vocación con humildad y perseverancia.**
 

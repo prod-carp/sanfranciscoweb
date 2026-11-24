@@ -27,7 +27,7 @@ Esto no significa que María sea anterior a Dios ni que haya dado origen a la di
 
 ## María, Madre de Jesús
 
-El Evangelio de san Lucas nos cuenta cómo el ángel Gabriel anunció a María que sería la madre del Salvador.
+El Evangelio de [san Lucas](/noticias/santoral/10-18-San-Lucas/) nos cuenta cómo el ángel Gabriel anunció a María que sería la madre del Salvador.
 
 El ángel le dijo:
 
@@ -172,7 +172,7 @@ El Evangelio de san Juan nos dice:
 
 María no abandonó a su Hijo en el momento más difícil.
 
-Permaneció allí, unida a Él en el sufrimiento.
+Permaneció allí, unida a Él en [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/).
 
 ## María al pie de la cruz
 
@@ -186,7 +186,7 @@ No obstante, permanece allí.
 
 Su fe no desaparece ante el sufrimiento.
 
-María nos enseña que confiar en Dios no significa que nuestra vida estará libre de dificultades. Significa permanecer unidos a Él incluso cuando no comprendemos lo que está sucediendo.
+María nos enseña que [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) no significa que nuestra vida estará libre de dificultades. Significa permanecer unidos a Él incluso cuando no comprendemos lo que está sucediendo.
 
 Por eso María es también una madre cercana para quienes sufren.
 

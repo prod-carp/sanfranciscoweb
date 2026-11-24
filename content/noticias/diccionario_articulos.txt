@@ -1,0 +1,452 @@
+    # 2026-07-25-vuelve-a-casa-la-escuela-caleb-un-oasis.md
+    # "PALABRA CLAVE": "/noticias/2026-07-25-vuelve-a-casa-la-escuela-caleb-un-oasis/",
+
+    # 2026-09-21-grupo-cana-para-personas-casadas-que-viven-su-fe-en-soledad.md
+    # "PALABRA CLAVE": "/noticias/2026-09-21-grupo-cana-para-personas-casadas-que-viven-su-fe-en-soledad/",
+
+    # 2026-10-01-nuestros-grupos-parroquiales-una-comunidad-que-camina-unida.md
+    # "PALABRA CLAVE": "/noticias/2026-10-01-nuestros-grupos-parroquiales-una-comunidad-que-camina-unida/",
+
+    # 2026-10-13-rosario-en-honor-a-la-virgen-de-guadalupe-en-fuenlabrada.md
+    # "PALABRA CLAVE": "/noticias/2026-10-13-rosario-en-honor-a-la-virgen-de-guadalupe-en-fuenlabrada/",
+
+    # 2026-10-19-san-francisco-y-santa-clara-dos-vidas-unidas-por-la-oracion.md
+    # "PALABRA CLAVE": "/noticias/2026-10-19-san-francisco-y-santa-clara-dos-vidas-unidas-por-la-oracion/",
+
+    # 2026-10-20-por-que-un-cristiano-no-debe-creer-en-el-karma.md
+    # "PALABRA CLAVE": "/noticias/2026-10-20-por-que-un-cristiano-no-debe-creer-en-el-karma/",
+
+    # 2026-10-25-dia-de-todos-los-santos-en-san-francisco-y-santa-clara.md
+    # "PALABRA CLAVE": "/noticias/2026-10-25-dia-de-todos-los-santos-en-san-francisco-y-santa-clara/",
+
+    # 2026-11-17-leon-xiv-siembra-en-peru-la-semilla-que-transforma-la-vida.md
+    # "PALABRA CLAVE": "/noticias/2026-11-17-leon-xiv-siembra-en-peru-la-semilla-que-transforma-la-vida/",
+
+    # catequesis2026.md
+    # "PALABRA CLAVE": "/noticias/catequesis2026/",
+
+    # colecta-solidaria-venezuela.md
+    # "PALABRA CLAVE": "/noticias/colecta-solidaria-venezuela/",
+
+    # como-llegamos.md
+    # "PALABRA CLAVE": "/noticias/como-llegamos/",
+
+    # convivencia-catequesis-2026.md
+    # "PALABRA CLAVE": "/noticias/convivencia-catequesis-2026/",
+
+    # escuchar-la-palabra-para-vivir-en-el-amor.md
+    # "PALABRA CLAVE": "/noticias/escuchar-la-palabra-para-vivir-en-el-amor/",
+
+    # experiencia-coro.md
+    # "PALABRA CLAVE": "/noticias/experiencia-coro/",
+
+    # fiestadesanfrancisco2026.md
+    # "PALABRA CLAVE": "/noticias/fiestadesanfrancisco2026/",
+
+    # formacion\10-09-espiritualidad-san-francisco.md
+    # "PALABRA CLAVE": "/noticias/formacion/10-09-espiritualidad-san-francisco/",
+
+    # formacion\2026-07-09-por-que-dios-permite-el.md
+    # "PALABRA CLAVE": "/noticias/formacion/2026-07-09-por-que-dios-permite-el/",
+
+    # formacion\31-10-indulgencia-difuntos.md
+    # "PALABRA CLAVE": "/noticias/formacion/31-10-indulgencia-difuntos/",
+
+    # formacion\7-dones.md
+    # "PALABRA CLAVE": "/noticias/formacion/7-dones/",
+
+    # formacion\en-jesucristo-el-amor-de-dios-se-hace-entrega.md
+    # "PALABRA CLAVE": "/noticias/formacion/en-jesucristo-el-amor-de-dios-se-hace-entrega/",
+
+    # formacion\la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna.md
+    # "PALABRA CLAVE": "/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/",
+
+    # formacion\los-7-sacramentos.md
+    # "PALABRA CLAVE": "/noticias/formacion/los-7-sacramentos/",
+
+    # formacion\tuvo-jesus-hermanos.md
+    # "PALABRA CLAVE": "/noticias/formacion/tuvo-jesus-hermanos/",
+
+    # gen\santa-clara-confiar-en-dios-desde-la-humildad.md
+    # "PALABRA CLAVE": "/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/",
+
+    # jubileo-franciscano.md
+    # "PALABRA CLAVE": "/noticias/jubileo-franciscano/",
+
+    # magia-familiar.md
+    # "PALABRA CLAVE": "/noticias/magia-familiar/",
+
+    # mercadillo-navidad.md
+    # "PALABRA CLAVE": "/noticias/mercadillo-navidad/",
+
+    # monaguillos2026.md
+    # "PALABRA CLAVE": "/noticias/monaguillos2026/",
+
+    # oceo-noviembre.md
+    # "PALABRA CLAVE": "/noticias/oceo-noviembre/",
+
+    # oraciones\07-30-vigilia-del-perdon-de-asis.md
+    # "PALABRA CLAVE": "/noticias/oraciones/07-30-vigilia-del-perdon-de-asis/",
+
+    # oraciones\09-25-novena-sf-dia1.md
+    # "PALABRA CLAVE": "/noticias/oraciones/09-25-novena-sf-dia1/",
+
+    # oraciones\09-26-novena-sf-dia2.md
+    # "PALABRA CLAVE": "/noticias/oraciones/09-26-novena-sf-dia2/",
+
+    # oraciones\09-27-novena-sf-dia3.md
+    # "PALABRA CLAVE": "/noticias/oraciones/09-27-novena-sf-dia3/",
+
+    # oraciones\09-28-novena-sf-dia4.md
+    # "PALABRA CLAVE": "/noticias/oraciones/09-28-novena-sf-dia4/",
+
+    # oraciones\09-29-novena-sf-dia5.md
+    # "PALABRA CLAVE": "/noticias/oraciones/09-29-novena-sf-dia5/",
+
+    # oraciones\09-30-novena-sf-dia6.md
+    # "PALABRA CLAVE": "/noticias/oraciones/09-30-novena-sf-dia6/",
+
+    # oraciones\10-01-novena-sf-dia7.md
+    # "PALABRA CLAVE": "/noticias/oraciones/10-01-novena-sf-dia7/",
+
+    # oraciones\10-02-novena-sf-dia8.md
+    # "PALABRA CLAVE": "/noticias/oraciones/10-02-novena-sf-dia8/",
+
+    # oraciones\10-03-novena-sf-dia9.md
+    # "PALABRA CLAVE": "/noticias/oraciones/10-03-novena-sf-dia9/",
+
+    # oraciones\10-09-triduo-pilar-dia1.md
+    # "PALABRA CLAVE": "/noticias/oraciones/10-09-triduo-pilar-dia1/",
+
+    # oraciones\10-10-triduo-pilar-dia2.md
+    # "PALABRA CLAVE": "/noticias/oraciones/10-10-triduo-pilar-dia2/",
+
+    # oraciones\10-11-triduo-pilar-dia3.md
+    # "PALABRA CLAVE": "/noticias/oraciones/10-11-triduo-pilar-dia3/",
+
+    # oraciones\10-20-triduo-jp2-dia1.md
+    # "PALABRA CLAVE": "/noticias/oraciones/10-20-triduo-jp2-dia1/",
+
+    # oraciones\10-21-triduo-jp2-dia2.md
+    # "PALABRA CLAVE": "/noticias/oraciones/10-21-triduo-jp2-dia2/",
+
+    # oraciones\10-22-triduo-jp2-dia3.md
+    # "PALABRA CLAVE": "/noticias/oraciones/10-22-triduo-jp2-dia3/",
+
+    # oraciones\10-oracion-del-domund.md
+    # "PALABRA CLAVE": "/noticias/oraciones/10-oracion-del-domund/",
+
+    # oraciones\11-29-novena-inmaculada-1.md
+    # "PALABRA CLAVE": "/noticias/oraciones/11-29-novena-inmaculada-1/",
+
+    # oraciones\11-30-novena-inmaculada-2.md
+    # "PALABRA CLAVE": "/noticias/oraciones/11-30-novena-inmaculada-2/",
+
+    # oraciones\12-01-novena-inmaculada-3.md
+    # "PALABRA CLAVE": "/noticias/oraciones/12-01-novena-inmaculada-3/",
+
+    # oraciones\12-02-novena-inmaculada-4.md
+    # "PALABRA CLAVE": "/noticias/oraciones/12-02-novena-inmaculada-4/",
+
+    # oraciones\12-03-novena-inmaculada-5.md
+    # "PALABRA CLAVE": "/noticias/oraciones/12-03-novena-inmaculada-5/",
+
+    # oraciones\12-04-novena-inmaculada-6.md
+    # "PALABRA CLAVE": "/noticias/oraciones/12-04-novena-inmaculada-6/",
+
+    # oraciones\12-05-novena-inmaculada-7.md
+    # "PALABRA CLAVE": "/noticias/oraciones/12-05-novena-inmaculada-7/",
+
+    # oraciones\12-06-novena-inmaculada-8.md
+    # "PALABRA CLAVE": "/noticias/oraciones/12-06-novena-inmaculada-8/",
+
+    # oraciones\12-07-novena-inmaculada-9.md
+    # "PALABRA CLAVE": "/noticias/oraciones/12-07-novena-inmaculada-9/",
+
+    # oraciones\2026-08-01-guia-para-participar-en-la-santa-misa.md
+    # "PALABRA CLAVE": "/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/",
+
+    # oraciones\corona-franciscana.md
+    # "PALABRA CLAVE": "/noticias/oraciones/corona-franciscana/",
+
+    # oraciones\jornada-mundial-pobres.md
+    # "PALABRA CLAVE": "/noticias/oraciones/jornada-mundial-pobres/",
+
+    # oraciones\oracion-jubileo.md
+    # "PALABRA CLAVE": "/noticias/oraciones/oracion-jubileo/",
+
+    # oraciones\rezar-el-rosario.md
+    # "PALABRA CLAVE": "/noticias/oraciones/rezar-el-rosario/",
+
+    # parroquia\11-09-operacion-kilo.md
+    # "PALABRA CLAVE": "/noticias/parroquia/11-09-operacion-kilo/",
+
+    # parroquia\24-09-Novena-San-Francisco.md
+    # "PALABRA CLAVE": "/noticias/parroquia/24-09-Novena-San-Francisco/",
+
+    # santoral\01-01-María madre de Dios.md
+    # "PALABRA CLAVE": "/noticias/santoral/01-01-María madre de Dios/",
+
+    # santoral\01-02-San-Basilio-Magno.md
+    # "PALABRA CLAVE": "/noticias/santoral/01-02-San-Basilio-Magno/",
+
+    # santoral\01-06-Epifanía-del-Señor.md
+    # "PALABRA CLAVE": "/noticias/santoral/01-06-Epifanía-del-Señor/",
+
+    # santoral\01-24-San-Francisco-de-Sales.md
+    # "PALABRA CLAVE": "/noticias/santoral/01-24-San-Francisco-de-Sales/",
+
+    # santoral\01-28-Santo-Tomas-de-Aquino.md
+    # "PALABRA CLAVE": "/noticias/santoral/01-28-Santo-Tomas-de-Aquino/",
+
+    # santoral\02-02-presentacion-del-señor.md
+    # "PALABRA CLAVE": "/noticias/santoral/02-02-presentacion-del-señor/",
+
+    # santoral\03-19-San-José-esposo-de-la-Virgen.md
+    # "PALABRA CLAVE": "/noticias/santoral/03-19-San-José-esposo-de-la-Virgen/",
+
+    # santoral\03-25-Anunciación-del-Señor.md
+    # "PALABRA CLAVE": "/noticias/santoral/03-25-Anunciación-del-Señor/",
+
+    # santoral\04-25-San-Marcos.md
+    # "PALABRA CLAVE": "/noticias/santoral/04-25-San-Marcos/",
+
+    # santoral\04-29-Santa-Catalina-de-Siena.md
+    # "PALABRA CLAVE": "/noticias/santoral/04-29-Santa-Catalina-de-Siena/",
+
+    # santoral\05-02-San-Atanasio.md
+    # "PALABRA CLAVE": "/noticias/santoral/05-02-San-Atanasio/",
+
+    # santoral\05-03-San-Felipe-apóstol.md
+    # "PALABRA CLAVE": "/noticias/santoral/05-03-San-Felipe-apóstol/",
+
+    # santoral\05-14-San-Matías.md
+    # "PALABRA CLAVE": "/noticias/santoral/05-14-San-Matías/",
+
+    # santoral\05-20-san-bernardino-siena.md
+    # "PALABRA CLAVE": "/noticias/santoral/05-20-san-bernardino-siena/",
+
+    # santoral\05-22-Santa-Rita-de-Casia.md
+    # "PALABRA CLAVE": "/noticias/santoral/05-22-Santa-Rita-de-Casia/",
+
+    # santoral\06-11-San-Bernabé-Apóstol.md
+    # "PALABRA CLAVE": "/noticias/santoral/06-11-San-Bernabé-Apóstol/",
+
+    # santoral\06-13-San-Antonio-de-Padua.md
+    # "PALABRA CLAVE": "/noticias/santoral/06-13-San-Antonio-de-Padua/",
+
+    # santoral\06-24-Nacimiento-San-Juan-Bautista.md
+    # "PALABRA CLAVE": "/noticias/santoral/06-24-Nacimiento-San-Juan-Bautista/",
+
+    # santoral\06-28-San-Ireneo-de-Lyon.md
+    # "PALABRA CLAVE": "/noticias/santoral/06-28-San-Ireneo-de-Lyon/",
+
+    # santoral\06-29-San-Pedro-y-San-Pablo.md
+    # "PALABRA CLAVE": "/noticias/santoral/06-29-San-Pedro-y-San-Pablo/",
+
+    # santoral\07-03-Santo-Tomás-Apóstol.md
+    # "PALABRA CLAVE": "/noticias/santoral/07-03-Santo-Tomás-Apóstol/",
+
+    # santoral\07-11-San-Benito.md
+    # "PALABRA CLAVE": "/noticias/santoral/07-11-San-Benito/",
+
+    # santoral\07-15-San-Buenaventura.md
+    # "PALABRA CLAVE": "/noticias/santoral/07-15-San-Buenaventura/",
+
+    # santoral\07-22-Santa-María-Magdalena.md
+    # "PALABRA CLAVE": "/noticias/santoral/07-22-Santa-María-Magdalena/",
+
+    # santoral\07-25-San-Santiago-Apostol.md
+    # "PALABRA CLAVE": "/noticias/santoral/07-25-San-Santiago-Apostol/",
+
+    # santoral\07-26-San-Joaquín-y-Santa-Ana.md
+    # "PALABRA CLAVE": "/noticias/santoral/07-26-San-Joaquín-y-Santa-Ana/",
+
+    # santoral\07-31-San-Ignacio-de-Loyola.md
+    # "PALABRA CLAVE": "/noticias/santoral/07-31-San-Ignacio-de-Loyola/",
+
+    # santoral\08-08-Santo-Domingo-de-Guzmán.md
+    # "PALABRA CLAVE": "/noticias/santoral/08-08-Santo-Domingo-de-Guzmán/",
+
+    # santoral\08-11-Santa-Clara-de-Asís.md
+    # "PALABRA CLAVE": "/noticias/santoral/08-11-Santa-Clara-de-Asís/",
+
+    # santoral\08-15-la-asuncion-de-la-virgen.md
+    # "PALABRA CLAVE": "/noticias/santoral/08-15-la-asuncion-de-la-virgen/",
+
+    # santoral\08-24-San-Bartolomé-Apóstol.md
+    # "PALABRA CLAVE": "/noticias/santoral/08-24-San-Bartolomé-Apóstol/",
+
+    # santoral\08-28-San-Agustín.md
+    # "PALABRA CLAVE": "/noticias/santoral/08-28-San-Agustín/",
+
+    # santoral\09-03-San-Gregorio-Magno.md
+    # "PALABRA CLAVE": "/noticias/santoral/09-03-San-Gregorio-Magno/",
+
+    # santoral\09-05-Santa-Teresa-de-Calcuta.md
+    # "PALABRA CLAVE": "/noticias/santoral/09-05-Santa-Teresa-de-Calcuta/",
+
+    # santoral\09-08-natividad-de-la-virgen-maria.md
+    # "PALABRA CLAVE": "/noticias/santoral/09-08-natividad-de-la-virgen-maria/",
+
+    # santoral\09-14-Exaltacion-de-la-Santa-Cruz.md
+    # "PALABRA CLAVE": "/noticias/santoral/09-14-Exaltacion-de-la-Santa-Cruz/",
+
+    # santoral\09-21-San-Mateo.md
+    # "PALABRA CLAVE": "/noticias/santoral/09-21-San-Mateo/",
+
+    # santoral\09-23-San-Pío-de-Pietrelcina.md
+    # "PALABRA CLAVE": "/noticias/santoral/09-23-San-Pío-de-Pietrelcina/",
+
+    # santoral\09-30-San-Jeronimo.md
+    # "PALABRA CLAVE": "/noticias/santoral/09-30-San-Jeronimo/",
+
+    # santoral\10-01-Santa-Teresa-del-niño-Jesus.md
+    # "PALABRA CLAVE": "/noticias/santoral/10-01-Santa-Teresa-del-niño-Jesus/",
+
+    # santoral\10-04-San-Francisco-de-Asís.md
+    # "PALABRA CLAVE": "/noticias/santoral/10-04-San-Francisco-de-Asís/",
+
+    # santoral\10-07-ns-del-rosario.md
+    # "PALABRA CLAVE": "/noticias/santoral/10-07-ns-del-rosario/",
+
+    # santoral\10-08-nuestra-senora-del-buen-remedio.md
+    # "PALABRA CLAVE": "/noticias/santoral/10-08-nuestra-senora-del-buen-remedio/",
+
+    # santoral\10-12-virgen-pilar.md
+    # "PALABRA CLAVE": "/noticias/santoral/10-12-virgen-pilar/",
+
+    # santoral\10-15-Santa-Teresa-de-Jesús.md
+    # "PALABRA CLAVE": "/noticias/santoral/10-15-Santa-Teresa-de-Jesús/",
+
+    # santoral\10-17-San-Ignacio-de-Antioquia.md
+    # "PALABRA CLAVE": "/noticias/santoral/10-17-San-Ignacio-de-Antioquia/",
+
+    # santoral\10-18-San-Lucas.md
+    # "PALABRA CLAVE": "/noticias/santoral/10-18-San-Lucas/",
+
+    # santoral\10-19-san-pedro-alcantara.md
+    # "PALABRA CLAVE": "/noticias/santoral/10-19-san-pedro-alcantara/",
+
+    # santoral\10-22-San-Juan-Pablo-II.md
+    # "PALABRA CLAVE": "/noticias/santoral/10-22-San-Juan-Pablo-II/",
+
+    # santoral\10-23-san-juan-capistrano.md
+    # "PALABRA CLAVE": "/noticias/santoral/10-23-san-juan-capistrano/",
+
+    # santoral\11-01-Todos-los-Santos.md
+    # "PALABRA CLAVE": "/noticias/santoral/11-01-Todos-los-Santos/",
+
+    # santoral\11-17-santa-isabel-hungria.md
+    # "PALABRA CLAVE": "/noticias/santoral/11-17-santa-isabel-hungria/",
+
+    # santoral\11-21-presentacion-maria.md
+    # "PALABRA CLAVE": "/noticias/santoral/11-21-presentacion-maria/",
+
+    # santoral\11-30-San-Andres.md
+    # "PALABRA CLAVE": "/noticias/santoral/11-30-San-Andres/",
+
+    # santoral\12-03-San-Francisco-Javier.md
+    # "PALABRA CLAVE": "/noticias/santoral/12-03-San-Francisco-Javier/",
+
+    # santoral\12-07-San-Ambrosio.md
+    # "PALABRA CLAVE": "/noticias/santoral/12-07-San-Ambrosio/",
+
+    # santoral\12-08-Inmaculada-Concepcion.md
+    # "PALABRA CLAVE": "/noticias/santoral/12-08-Inmaculada-Concepcion/",
+
+    # santoral\12-14-San-Juan-de-la-Cruz.md
+    # "PALABRA CLAVE": "/noticias/santoral/12-14-San-Juan-de-la-Cruz/",
+
+    # santoral\12-25-Navidad.md
+    # "PALABRA CLAVE": "/noticias/santoral/12-25-Navidad/",
+
+    # santoral\12-26-San-Esteban.md
+    # "PALABRA CLAVE": "/noticias/santoral/12-26-San-Esteban/",
+
+    # santoral\12-27-san-juan-evangelista.md
+    # "PALABRA CLAVE": "/noticias/santoral/12-27-san-juan-evangelista/",
+
+    # santoral\12-28-Los-Santos-Inocentes.md
+    # "PALABRA CLAVE": "/noticias/santoral/12-28-Los-Santos-Inocentes/",
+
+    # santoral\plantilla.md
+    # "PALABRA CLAVE": "/noticias/santoral/plantilla/",
+
+    # tiempo liturgico\01-Bautismo-del-Señor.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/01-Bautismo-del-Señor/",
+
+    # tiempo liturgico\02-Miércoles-de-ceniza.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/02-Miércoles-de-ceniza/",
+
+    # tiempo liturgico\03-Domingo-de-pascua.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/03-Domingo-de-pascua/",
+
+    # tiempo liturgico\03-Domingo-de-ramos.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/03-Domingo-de-ramos/",
+
+    # tiempo liturgico\03-Jueves-santo.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/03-Jueves-santo/",
+
+    # tiempo liturgico\03-Pascua-de-resurreción.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/03-Pascua-de-resurreción/",
+
+    # tiempo liturgico\03-Sábado-santo.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/03-Sábado-santo/",
+
+    # tiempo liturgico\03-Viernes-santo.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/03-Viernes-santo/",
+
+    # tiempo liturgico\05-Corpus-Christi.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/05-Corpus-Christi/",
+
+    # tiempo liturgico\05-La-Ascensión-del-Señor.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/05-La-Ascensión-del-Señor/",
+
+    # tiempo liturgico\05-La-Santísima-Trinidad.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/05-La-Santísima-Trinidad/",
+
+    # tiempo liturgico\05-Pentecostés.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/05-Pentecostés/",
+
+    # tiempo liturgico\06-Sagrado-Corazón-de-Jesús.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/06-Sagrado-Corazón-de-Jesús/",
+
+    # tiempo liturgico\10-Domund.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/10-Domund/",
+
+    # tiempo liturgico\11-dia-iglesia-diocesana.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/11-dia-iglesia-diocesana/",
+
+    # tiempo liturgico\11-jesucristo-rey-del-universo.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/11-jesucristo-rey-del-universo/",
+
+    # tiempo liturgico\11-jornada-mundial-pobres.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/11-jornada-mundial-pobres/",
+
+    # tiempo liturgico\11-vigilia-cristo-rey.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/11-vigilia-cristo-rey/",
+
+    # tiempo liturgico\12-La-Sagrada-Familia.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/12-La-Sagrada-Familia/",
+
+    # tiempo liturgico\Platilla-TL.md
+    # "PALABRA CLAVE": "/noticias/tiempo liturgico/Platilla-TL/",
+
+    # vigilia-cristo-rey-2026.md
+    # "PALABRA CLAVE": "/noticias/vigilia-cristo-rey-2026/",
+
+    # vigilia-espigas.md
+    # "PALABRA CLAVE": "/noticias/vigilia-espigas/",
+
+    # visita-iesu-communio.md
+    # "PALABRA CLAVE": "/noticias/visita-iesu-communio/",
+
+    # visita-monjas.md
+    # "PALABRA CLAVE": "/noticias/visita-monjas/",
+
+    # visita-papa-leon.md
+    # "PALABRA CLAVE": "/noticias/visita-papa-leon/",
+
+    # visita-santamariacruz.md
+    # "PALABRA CLAVE": "/noticias/visita-santamariacruz/",

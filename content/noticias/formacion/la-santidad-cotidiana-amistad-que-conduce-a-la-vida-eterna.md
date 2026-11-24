@@ -29,7 +29,7 @@ La amistad con Jesús tampoco nos aparta de las personas. Al contrario, ensancha
 
 La santidad no es una categoría reservada a sacerdotes, religiosos o personas sin responsabilidades familiares. **Cada vocación ofrece un camino real para vivir el amor**: cuidar al cónyuge y a los hijos, trabajar al servicio de otros, enseñar a los pequeños a seguir a Jesús o ejercer una autoridad buscando el bien común. La medida no es la espectacularidad, sino **la fidelidad al amor en la vida concreta**. 
 
-Esto tampoco significa que basta con esforzarse por ser una buena persona. La vida comienza con Dios, que nos llama y nos da su gracia; nuestra respuesta consiste en **acoger ese don y cooperar con Él**. La santidad crece mediante esa relación viva: Cristo sale a nuestro encuentro y nosotros aprendemos a seguirlo, con avances y tropiezos. Por eso la Eucaristía tiene un lugar central: **encontrarnos el domingo con el Resucitado** no es una carga añadida, sino alimento para la semana. La oración diaria y los mandamientos, comprendidos a la luz de Cristo, sostienen el amor en las decisiones concretas.
+Esto tampoco significa que basta con esforzarse por ser una buena persona. La vida comienza con Dios, que nos llama y nos da su gracia; nuestra respuesta consiste en **acoger ese don y cooperar con Él**. La santidad crece mediante esa relación viva: Cristo sale a nuestro encuentro y nosotros aprendemos a seguirlo, con avances y tropiezos. Por eso la [Eucaristía](/comunion.html) tiene un lugar central: **encontrarnos el domingo con el Resucitado** no es una carga añadida, sino alimento para la semana. La oración diaria y los mandamientos, comprendidos a la luz de Cristo, sostienen el amor en las decisiones concretas.
 
 ## ¿Qué significa esperar la vida eterna?
 
@@ -39,7 +39,7 @@ Esta esperanza es también comunión. La Iglesia no camina como una suma de indi
 
 ## La santidad se aprende en pasos pequeños
 
-Una objeción sincera puede ser: «Estoy cansado; no puedo vivir siempre con esa entrega». La invitación cristiana no exige fingir que no hay cansancio, dolor ni límites. Propone comenzar con pasos posibles: reservar un momento para hablar con Dios, participar en la Eucaristía, escuchar de verdad a alguien de casa o cumplir la tarea de hoy con justicia y cuidado. Esas acciones no sustituyen la oración ni los sacramentos; pueden expresar una fe que se alimenta de ellos y se traduce en caridad.
+Una objeción sincera puede ser: «Estoy cansado; no puedo vivir siempre con esa entrega». La invitación cristiana no exige fingir que no hay cansancio, dolor ni límites. Propone comenzar con pasos posibles: reservar un momento para hablar con Dios, participar en la Eucaristía, escuchar de verdad a alguien de casa o cumplir la tarea de hoy con justicia y cuidado. Esas acciones no sustituyen la oración ni los [sacramentos](/noticias/formacion/los-7-sacramentos/); pueden expresar una fe que se alimenta de ellos y se traduce en caridad.
 
 También conviene recordar que el camino se recorre acompañado. La vida de la Iglesia nos reúne en torno a Cristo y nos enseña a sostenernos unos a otros; la vida de los santos muestra que **la llamada a la santidad puede vivirse en circunstancias y temperamentos muy distintos**. La perseverancia cotidiana, sostenida por la gracia, libera el corazón del egoísmo y lo abre a las necesidades del prójimo.
 

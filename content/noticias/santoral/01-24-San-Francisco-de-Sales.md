@@ -32,7 +32,7 @@ Su manera de tratar a las personas llegó a ser una de las características más
 
 La verdad debía estar acompañada por la **caridad**.
 
-## La santidad también se vive en la vida cotidiana
+## [La santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) también se vive en la vida cotidiana
 
 Uno de sus grandes aportes espirituales fue recordar que la santidad no está reservada a sacerdotes, monjes o religiosas.
 
@@ -70,7 +70,7 @@ Su estilo era firme en la doctrina, pero cercano en el trato.
 
 San Francisco de Sales comprendió que la paciencia y la mansedumbre no son señales de debilidad.
 
-Al contrario, requieren dominio de uno mismo y una profunda confianza en Dios.
+Al contrario, requieren dominio de uno mismo y una profunda [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
 En sus escritos insistió mucho en la necesidad de luchar contra la impaciencia, la tristeza excesiva, el orgullo y la dureza de corazón.
 
@@ -113,7 +113,7 @@ Tal vez una de sus mayores enseñanzas sea esta: **Dios no nos pide vivir la vid
 «Aprendan de mí, que soy manso y humilde de corazón».  
 **Mateo 11,29**
 
-Las palabras de Jesús ayudan a comprender la espiritualidad de San Francisco de Sales: una vida cristiana marcada por la mansedumbre, la humildad y el amor.
+Las palabras de Jesús ayudan a comprender la [espiritualidad de San Francisco](/noticias/formacion/10-09-espiritualidad-san-francisco/) de Sales: una vida cristiana marcada por la mansedumbre, la humildad y el amor.
 
 ### Oración final
 

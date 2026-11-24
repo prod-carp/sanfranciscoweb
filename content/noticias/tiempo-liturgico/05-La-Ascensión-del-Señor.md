@@ -29,7 +29,7 @@ Al contrario, les promete que permanecerá con ellos y que recibirán la fuerza 
 
 ## ¿Qué dice la Biblia sobre la Ascensión?
 
-El Evangelio de San Lucas nos cuenta que Jesús llevó a sus discípulos cerca de Betania y, mientras los bendecía, se separó de ellos y fue llevado al cielo:
+El Evangelio de [San Lucas](/noticias/santoral/10-18-San-Lucas/) nos cuenta que Jesús llevó a sus discípulos cerca de Betania y, mientras los bendecía, se separó de ellos y fue llevado al cielo:
 
 «Mientras los bendecía, se separó de ellos y fue llevado al cielo» (Lc 24,51).
 
@@ -57,7 +57,7 @@ Jesús prometió:
 
 «Yo estoy con vosotros todos los días, hasta el final de los tiempos» (Mt 28,20).
 
-Cristo ya no está presente entre nosotros de la misma manera visible que durante su vida terrena, pero continúa presente en su Iglesia, en su Palabra y de manera especial en la **Eucaristía**.
+Cristo ya no está presente entre nosotros de la misma manera visible que durante su vida terrena, pero continúa presente en su Iglesia, en su Palabra y de manera especial en la **[Eucaristía](/comunion.html)**.
 
 Por eso la Ascensión no debe entenderse simplemente como una despedida.
 
@@ -123,7 +123,7 @@ San Pablo explica que nuestra vida está unida a Cristo y que esperamos particip
 
 Por eso la Ascensión es una celebración llena de esperanza.
 
-Cuando atravesamos dificultades, enfermedades, pérdidas o momentos de incertidumbre, podemos recordar que nuestra historia no termina con el sufrimiento.
+Cuando atravesamos dificultades, enfermedades, pérdidas o momentos de incertidumbre, podemos recordar que nuestra historia no termina con [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/).
 
 **Cristo ha vencido la muerte y ha abierto para nosotros el camino hacia la vida eterna.**
 
@@ -179,7 +179,7 @@ Jesús no dejó solos a sus discípulos.
 
 Tampoco nos deja solos a nosotros.
 
-Su presencia continúa acompañándonos de muchas maneras, especialmente a través de la Iglesia, de la Palabra de Dios y de los sacramentos.
+Su presencia continúa acompañándonos de muchas maneras, especialmente a través de la Iglesia, de la Palabra de Dios y de los [sacramentos](/noticias/formacion/los-7-sacramentos/).
 
 Por eso, cuando no podamos «ver» a Jesús, estamos llamados a confiar en su promesa:
 

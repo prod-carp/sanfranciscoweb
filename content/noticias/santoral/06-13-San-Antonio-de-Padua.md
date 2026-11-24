@@ -15,9 +15,9 @@ fechaFin = 300
 
 ## ¿Quién fue San Antonio de Padua?
 
-San Antonio de Padua nació en **Lisboa, Portugal, alrededor del año 1195**. Su nombre de bautismo fue **Fernando de Bulhões** y pertenecía a una familia acomodada.
+San Antonio de Padua nació en **Lisboa, Portugal, alrededor del año 1195**. Su nombre de [bautismo](/bautismo.html) fue **Fernando de Bulhões** y pertenecía a una familia acomodada.
 
-Desde joven sintió una profunda llamada a entregar su vida a Dios. Ingresó primero en los **Canónigos Regulares de San Agustín**, donde recibió una sólida formación bíblica y teológica.
+Desde joven sintió una profunda llamada a entregar su vida a Dios. Ingresó primero en los **Canónigos Regulares de [San Agustín](/noticias/santoral/08-28-San-Agustín/)**, donde recibió una sólida formación bíblica y teológica.
 
 Más adelante conoció a los primeros frailes franciscanos y quedó profundamente impresionado por su deseo de vivir el Evangelio con pobreza y sencillez.
 
@@ -171,7 +171,7 @@ Antonio quería ser misionero en tierras lejanas, pero terminó convirtiéndose 
 
 A veces nuestros planes cambian, pero Dios puede utilizar incluso aquello que parecía un fracaso para llevarnos hacia una misión diferente.
 
-San Antonio nos invita a poner nuestros talentos al servicio del Evangelio y a confiar en la providencia de Dios.
+San Antonio nos invita a poner nuestros talentos al servicio del Evangelio y a confiar en la [providencia](/noticias/gen/providencia-y-oracion-confiar-sin-quedarse-pasivos/) de Dios.
 
 ## ¿Cuándo se celebra San Antonio de Padua?
 
@@ -204,7 +204,7 @@ Cada cristiano puede anunciar el Evangelio desde su propia realidad: en la famil
 
 **Enséñanos a vivir con humildad, a defender la verdad con caridad y a servir a los más necesitados.**
 
-**Y cuando nuestros planes no salgan como esperamos, ayúdanos a confiar en Dios y a descubrir el camino que Él prepara para nosotros.**
+**Y cuando nuestros planes no salgan como esperamos, ayúdanos a [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) y a descubrir el camino que Él prepara para nosotros.**
 
 **San Antonio de Padua, ruega por nosotros y ayúdanos a permanecer siempre 
 cerca de Jesucristo.**

@@ -143,7 +143,7 @@ El Espíritu Santo no actuó solamente en Pentecostés.
 
 Continúa actuando en la Iglesia y en cada cristiano.
 
-En el **Bautismo**, recibimos el Espíritu Santo y comenzamos una vida nueva en Cristo.
+En el **[Bautismo](/bautismo.html)**, recibimos el Espíritu Santo y comenzamos una vida nueva en Cristo.
 
 En la **Confirmación**, el don del Espíritu Santo nos fortalece para vivir y dar testimonio de la fe.
 

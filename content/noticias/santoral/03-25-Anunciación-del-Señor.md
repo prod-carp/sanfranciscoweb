@@ -17,7 +17,7 @@ fechaFin = 300
 
 Cada **25 de marzo**, la Iglesia celebra la **Anunciación del Señor**, uno de los momentos más importantes de la historia de la salvación: el anuncio del ángel Gabriel a la Virgen María de que Dios la había elegido para ser la Madre de Jesús.
 
-El Evangelio de San Lucas nos cuenta que el ángel fue enviado por Dios a Nazaret y saludó a María con estas palabras:
+El Evangelio de [San Lucas](/noticias/santoral/10-18-San-Lucas/) nos cuenta que el ángel fue enviado por Dios a Nazaret y saludó a María con estas palabras:
 
 «Alégrate, llena de gracia, el Señor está contigo» (Lc 1,28).
 
@@ -45,7 +45,7 @@ Después de escuchar el anuncio, María respondió:
 
 «He aquí la esclava del Señor; hágase en mí según tu palabra» (Lc 1,38).
 
-Estas palabras expresan una profunda confianza en Dios.
+Estas palabras expresan una profunda [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
 María no conocía todos los acontecimientos que vendrían después. No sabía exactamente cómo sería su vida, qué dificultades tendría que afrontar ni todo lo que significaría ser la Madre del Salvador.
 
@@ -75,7 +75,7 @@ En el libro de Isaías encontramos:
 
 «Mirad: la virgen está encinta y da a luz un hijo, y le pondrá por nombre Emmanuel» (Is 7,14).
 
-El Evangelio de San Mateo aplica este anuncio a Jesús, explicando que el nombre **Emmanuel** significa «Dios-con-nosotros» (Mt 1,22-23).
+El Evangelio de [San Mateo](/noticias/santoral/09-21-San-Mateo/) aplica este anuncio a Jesús, explicando que el nombre **Emmanuel** significa «Dios-con-nosotros» (Mt 1,22-23).
 
 En Jesús, Dios se acerca de una manera nueva y definitiva. No es un Dios lejano: **se hace hombre, entra en nuestra historia y comparte nuestra vida**.
 

@@ -9,7 +9,7 @@ weight = 0
 image = "/assets/images/blog/coronafranciscana.webp"
 +++
 
-La **Corona Franciscana**, también llamada **Rosario de las Siete Alegrías de la Virgen María**, es una devoción franciscana que contempla **siete acontecimientos gozosos de la vida de la Virgen**. Se reza con **siete decenas**, no con cinco como el Rosario tradicional.
+La **Corona Franciscana**, también llamada **[Rosario](/noticias/oraciones/rezar-el-rosario/) de las Siete Alegrías de la Virgen María**, es una devoción franciscana que contempla **siete acontecimientos gozosos de la vida de la Virgen**. Se reza con **siete decenas**, no con cinco como el Rosario tradicional.
 
 ---
 
@@ -177,7 +177,7 @@ Pidamos a María que mantenga viva en nosotros la esperanza cristiana y que nos 
 
 # Séptima Alegría
 
-## La Asunción de María al cielo y su Coronación
+## [La Asunción](/noticias/santoral/08-15-la-asuncion-de-la-virgen/) de María al cielo y su Coronación
 
 **Meditación**
 

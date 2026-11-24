@@ -9,7 +9,7 @@ weight = 0
 image = '/assets/images/santaclara-parte1.webp'
 +++
 
-¿Cómo confiar en Dios cuando no sabemos qué traerá el futuro? La vida de santa Clara de Asís ofrece una respuesta que no consiste en tener todas las seguridades, sino en aprender a recibir la vida como don y a poner a Cristo en el centro. Su humildad y su pobreza evangélica muestran cómo la confianza puede crecer incluso cuando el camino exige renuncias, paciencia y valentía.
+¿Cómo confiar en Dios cuando no sabemos qué traerá el futuro? La vida de [santa Clara](/santaclara.html) de Asís ofrece una respuesta que no consiste en tener todas las seguridades, sino en aprender a recibir la vida como don y a poner a Cristo en el centro. Su humildad y su pobreza evangélica muestran cómo la confianza puede crecer incluso cuando el camino exige renuncias, paciencia y valentía.
 
 ## La incertidumbre y el deseo de tenerlo todo bajo control
 
@@ -21,13 +21,13 @@ Aquí se relacionan la confianza y la humildad. Confiar es apoyarse en la bondad
 
 Clara no buscó una seguridad fácil. Inspirada por la vida evangélica de san Francisco, escogió seguir a Cristo en una comunidad marcada por la oración, el trabajo, la pobreza y la vida fraterna. Su opción concreta fue una vocación religiosa contemplativa, un faro luminoso que nos recuerda una disposición esencial para todo cristiano: **poner la esperanza en Dios antes que en la acumulación de seguridades**. 
 
-Benedicto XVI relaciona la pobreza radical de Clara con una confianza total en la providencia divina. Esa confianza fue una comunión profunda: Clara permaneció unida a sus hermanas y se preocupó por su ciudad en tiempos de peligro. Su humildad se expresó también en el servicio concreto, incluso cuando era superiora de la comunidad. Depender de Dios significaba para ella **amar y servir desde una vida orientada a Cristo**. 
+Benedicto XVI relaciona la pobreza radical de Clara con una confianza total en la [providencia](/noticias/gen/providencia-y-oracion-confiar-sin-quedarse-pasivos/) divina. Esa confianza fue una comunión profunda: Clara permaneció unida a sus hermanas y se preocupó por su ciudad en tiempos de peligro. Su humildad se expresó también en el servicio concreto, incluso cuando era superiora de la comunidad. Depender de Dios significaba para ella **amar y servir desde una vida orientada a Cristo**. 
 
 ## La mirada puesta en Cristo pobre y crucificado
 
-La pobreza de Clara nacía de contemplar a Jesús, que se entregó por amor y recorrió el camino de la cruz. San Juan Pablo II describe cómo Clara fijó su mirada en Cristo pobre y crucificado y entendió su seguimiento como una respuesta al amor de quien se entregó por ella. **La humildad, por tanto, nace de saberse amada por Dios y de responder a ese amor con una entrega libre**. 
+La pobreza de Clara nacía de contemplar a Jesús, que se entregó por amor y recorrió el camino de la cruz. San [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/) describe cómo Clara fijó su mirada en Cristo pobre y crucificado y entendió su seguimiento como una respuesta al amor de quien se entregó por ella. **La humildad, por tanto, nace de saberse amada por Dios y de responder a ese amor con una entrega libre**. 
 
-También la contemplación de Cristo niño, pobre y vulnerable, ocupó un lugar importante en la espiritualidad de Clara. La mirada al pesebre y a la cruz no la alejaba de la realidad; le enseñaba a buscar en Jesús la forma del amor de Dios. En la vida de la santa, esa contemplación estuvo unida a la Eucaristía, presencia real de Cristo. La oración no busca cambiar los planes de Dios, sino transformar nuestro corazón para confiarle aquello que nos sobrepasa. 
+También la contemplación de Cristo niño, pobre y vulnerable, ocupó un lugar importante en la espiritualidad de Clara. La mirada al pesebre y a la cruz no la alejaba de la realidad; le enseñaba a buscar en Jesús la forma del amor de Dios. En la vida de la santa, esa contemplación estuvo unida a la [Eucaristía](/comunion.html), presencia real de Cristo. La oración no busca cambiar los planes de Dios, sino transformar nuestro corazón para confiarle aquello que nos sobrepasa. 
 
 ## Caminar con madurez en la confianza
 

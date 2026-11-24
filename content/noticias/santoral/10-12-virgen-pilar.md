@@ -67,7 +67,7 @@ La presencia cristiana atravesó siglos de cambios sin desaparecer, y cada gener
 
 Nosotros hemos recibido un tesoro que no nos pertenece exclusivamente: estamos llamados a conservarlo, vivirlo y entregarlo a quienes vienen detrás.
 
-En nuestras familias y parroquias, esa transmisión comienza muchas veces con gestos sencillos: enseñar a un niño a rezar, llevarlo a Misa, bendecir la mesa o hablarle con naturalidad del amor de Dios.
+En nuestras familias y parroquias, esa transmisión comienza muchas veces con gestos sencillos: enseñar a un niño a rezar, llevarlo a [Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/), bendecir la mesa o hablarle con naturalidad del amor de Dios.
 
 Así, la fe que un día recibimos puede seguir dando fruto mucho después de nosotros.
 
@@ -95,7 +95,7 @@ Durante la Edad Media, la devoción a Santa María y a la Santa Columna se exten
 
 La columna terminó convirtiéndose en un símbolo de la firmeza de la fe.
 
-En 1982, san Juan Pablo II visitó Zaragoza y recordó la importancia del Pilar para la vida cristiana y la evangelización. En 1984 volvió a destacar la profunda relación entre esta advocación mariana y la misión apostólica de la Iglesia.
+En 1982, san [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/) visitó Zaragoza y recordó la importancia del Pilar para la vida cristiana y la evangelización. En 1984 volvió a destacar la profunda relación entre esta advocación mariana y la misión apostólica de la Iglesia.
 
 La imagen del Pilar evoca estabilidad, apoyo y fortaleza. Pero ¿qué significa permanecer firmes en la fe?
 
@@ -103,7 +103,7 @@ No significa que nunca tengamos dudas, que no suframos o que siempre comprendamo
 
 María es un ejemplo de esa fidelidad. Su vida estuvo marcada por momentos de alegría y de sufrimiento, pero permaneció disponible para Dios.
 
-También nosotros estamos llamados a sostener a quienes nos rodean. Podemos hacerlo acompañando a una persona que atraviesa una crisis, animando a quien ha perdido la esperanza o ayudando a alguien a recuperar la confianza en Dios.
+También nosotros estamos llamados a sostener a quienes nos rodean. Podemos hacerlo acompañando a una persona que atraviesa una crisis, animando a quien ha perdido la esperanza o ayudando a alguien a recuperar la [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
 **La fe que recibimos de otros está llamada a convertirse también en apoyo para los demás.**
 
@@ -163,7 +163,7 @@ En su interior se conservan obras de grandes artistas, entre ellas pinturas de F
 
 La basílica es uno de los grandes monumentos religiosos y artísticos de España. Sin embargo, su mayor riqueza no se encuentra solamente en sus dimensiones, sus pinturas o su arquitectura, sino en la vida de oración que acoge.
 
-Un templo cristiano está destinado, ante todo, al culto a Dios y a la celebración de los sacramentos. En él, los fieles se reúnen para escuchar su Palabra, celebrar la Eucaristía y recibir la gracia que necesitan para vivir como discípulos de Jesucristo.
+Un templo cristiano está destinado, ante todo, al culto a Dios y a la celebración de los [sacramentos](/noticias/formacion/los-7-sacramentos/). En él, los fieles se reúnen para escuchar su Palabra, celebrar la [Eucaristía](/comunion.html) y recibir la gracia que necesitan para vivir como discípulos de Jesucristo.
 
 Por eso, visitar el Pilar no debería consistir únicamente en contemplar un edificio hermoso o tomar fotografías. Es también una oportunidad para detenernos, rezar ante la Virgen, participar en la Santa Misa y renovar nuestro amor a Dios.
 

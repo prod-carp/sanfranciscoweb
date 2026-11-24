@@ -9,7 +9,7 @@ weight = 0
 image = "/assets/images/blog/visitapapa.webp"
 +++
 
-Hay días que permanecen grabados en la memoria durante mucho tiempo. No tanto por lo extraordinario de los acontecimientos, sino por la intensidad con la que se viven. Así fue para nosotros la celebración de la Santa Misa presidida por el Papa León en Madrid, una jornada marcada por la fe, la alegría y la experiencia de sentirnos parte de una Iglesia viva y universal.
+Hay días que permanecen grabados en la memoria durante mucho tiempo. No tanto por lo extraordinario de los acontecimientos, sino por la intensidad con la que se viven. Así fue para nosotros la celebración de la [Santa Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/) presidida por el Papa León en Madrid, una jornada marcada por la fe, la alegría y la experiencia de sentirnos parte de una Iglesia viva y universal.
 
 ## El madrugón
 
@@ -22,7 +22,7 @@ Al llegar al punto de encuentro nos encontramos con numerosos amigos y conocidos
 
 El trayecto en metro fue toda una experiencia. Los vagones iban repletos de personas que compartían un mismo destino. Familias enteras, jóvenes, religiosos, personas mayores... todos avanzaban cargados con mochilas, sillas plegables y muchas ganas de vivir un encuentro histórico. Era emocionante observar cómo miles de personas, tan distintas entre sí, se dirigían con un mismo propósito: encontrarse con el Sucesor de Pedro y celebrar juntos la fe.
 
-Al salir del metro nos encontramos con una imagen impresionante. Las calles estaban llenas de gente de todas las edades. Se escuchaban conversaciones, cantos y risas; se veían banderas, grupos parroquiales, monjas y peregrinos llegados de distintos lugares. El aire fresco de la mañana y la agradable temperatura hacían todavía más agradable la espera. Había un ambiente de alegría serena, de esos que solo se generan cuando muchas personas comparten una misma esperanza.
+Al salir del metro nos encontramos con una imagen impresionante. Las calles estaban llenas de gente de todas las edades. Se escuchaban conversaciones, cantos y risas; se veían banderas, [grupos parroquiales](/grupos.html), monjas y peregrinos llegados de distintos lugares. El aire fresco de la mañana y la agradable temperatura hacían todavía más agradable la espera. Había un ambiente de alegría serena, de esos que solo se generan cuando muchas personas comparten una misma esperanza.
 
 ## Llegamos a nuestro destino
 
@@ -34,7 +34,7 @@ En nuestro caso, la ubicación que nos correspondió no nos permitió ver pasar 
 
 ## La Santa Misa con el Papa León
 
-Desde el inicio de la Eucaristía se percibió un clima de profunda devoción.
+Desde el inicio de la [Eucaristía](/comunion.html) se percibió un clima de profunda devoción.
 A pesar de la enorme cantidad de asistentes, reinó el respeto durante toda la celebración. Miles de personas rezando juntas, cantando juntas y guardando silencio cuando correspondía ofrecían una imagen verdaderamente conmovedora de la Iglesia.
 
 La homilía del Santo Padre dejó varias reflexiones que seguramente seguirán resonando durante mucho tiempo en muchos corazones. Personalmente, hubo una frase que me impactó especialmente: cuando afirmó que **la fe no puede convertirse en una pieza de museo**. Sus palabras hacían referencia a la inmensa riqueza cultural y religiosa de España, a sus catedrales, imágenes, tradiciones y manifestaciones artísticas que han surgido de la fe cristiana a lo largo de los siglos.

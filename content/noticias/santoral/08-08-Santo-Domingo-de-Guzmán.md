@@ -71,7 +71,7 @@ Una antigua expresión asociada a su espiritualidad resume muy bien esta unión 
 
 La idea es sencilla: primero recibir de Dios y después compartir con los demás aquello que se ha recibido.
 
-## El rosario y Santo Domingo
+## El [rosario](/noticias/oraciones/rezar-el-rosario/) y Santo Domingo
 
 La tradición católica ha relacionado estrechamente a **Santo Domingo de Guzmán con la difusión del Santo Rosario**. Según una antigua tradición, la Virgen María se habría aparecido a Domingo y le habría entregado el Rosario como instrumento de evangelización.
 

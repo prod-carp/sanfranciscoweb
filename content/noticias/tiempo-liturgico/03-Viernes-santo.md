@@ -19,7 +19,7 @@ El **Viernes Santo** es el día en que la Iglesia recuerda la **Pasión y muerte
 
 Después de la Última Cena, Jesús fue arrestado, juzgado y condenado a muerte. Fue llevado hasta el Calvario, donde fue crucificado y entregó su vida por la salvación de la humanidad.
 
-Es un día de silencio, recogimiento y oración. La Iglesia no celebra la Eucaristía, sino que se reúne para contemplar la Pasión del Señor y adorar la Santa Cruz.
+Es un día de silencio, recogimiento y oración. La Iglesia no celebra la [Eucaristía](/comunion.html), sino que se reúne para contemplar la Pasión del Señor y adorar [la Santa Cruz](/noticias/santoral/09-14-Exaltacion-de-la-Santa-Cruz/).
 
 Aunque es un día marcado por el dolor, los cristianos no contemplamos la Cruz como una derrota. En ella vemos el **amor de Jesús, que se entrega libremente por nosotros** y abre el camino hacia la Resurrección.
 
@@ -45,7 +45,7 @@ El Evangelio de san Juan dice:
 
 «Y, cargando con su cruz, salió al sitio llamado “de la Calavera”, que en hebreo se dice Gólgota» (Jn 19,17).
 
-El camino de Jesús hacia el Calvario nos recuerda que Él quiso asumir hasta el final el sufrimiento de nuestra humanidad.
+El camino de Jesús hacia el Calvario nos recuerda que Él quiso asumir hasta el final [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) de nuestra humanidad.
 
 La tradición cristiana también conserva el recuerdo de personas que acompañaron a Jesús en este camino, como su Madre, María, y Simón de Cirene, que ayudó a llevar la Cruz.
 
@@ -59,7 +59,7 @@ Sobre la Cruz colocaron una inscripción que decía:
 
 Jesús permaneció en la Cruz hasta el final.
 
-Allí, en medio del sufrimiento, siguió mostrando misericordia. El Evangelio de san Lucas recoge sus palabras:
+Allí, en medio del sufrimiento, siguió mostrando misericordia. El Evangelio de [san Lucas](/noticias/santoral/10-18-San-Lucas/) recoge sus palabras:
 
 «Padre, perdónalos, porque no saben lo que hacen» (Lc 23,34).
 
@@ -162,7 +162,7 @@ La oscuridad del Calvario será vencida por la luz de la Resurrección.
 
 El Viernes Santo es un día de **ayuno y abstinencia** para los fieles a quienes obligan estas normas.
 
-La Iglesia no celebra la Misa. La celebración litúrgica propia es la **Celebración de la Pasión del Señor**, que normalmente tiene lugar por la tarde.
+La Iglesia no celebra la [Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/). La celebración litúrgica propia es la **Celebración de la Pasión del Señor**, que normalmente tiene lugar por la tarde.
 
 Esta celebración comprende tres momentos principales:
 

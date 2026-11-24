@@ -48,7 +48,7 @@ Muchas personas acudían a escucharlo y reconocían sus pecados. Juan las bautiz
 
 Por esta razón recibió el nombre con el que lo conocemos: **Juan el Bautista**.
 
-Su bautismo, sin embargo, no era todavía el Bautismo cristiano. Era un bautismo de conversión que preparaba al pueblo para la llegada del Mesías.
+Su [bautismo](/bautismo.html), sin embargo, no era todavía el Bautismo cristiano. Era un bautismo de conversión que preparaba al pueblo para la llegada del Mesías.
 
 **Juan reconoce a Jesús**
 
@@ -98,7 +98,7 @@ motivada por su madre, Herodes ordenó que Juan fuera decapitado.
 Así, Juan Bautista murió como **mártir**, permaneciendo fiel a la verdad hasta el
 final.
 
-Su muerte nos recuerda que la santidad no consiste en tener una vida cómoda, sino en
+Su muerte nos recuerda que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) no consiste en tener una vida cómoda, sino en
 permanecer fieles a Dios incluso cuando hacerlo exige sacrificio.
 
 **¿Por qué es importante recordar a San Juan Bautista?**

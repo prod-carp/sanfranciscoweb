@@ -9,9 +9,9 @@ image = "/assets/images/blog/2026-10-19-san-francisco-y-santa-clara-dos-vidas-un
 tags = []
 +++
 
-En Asís, la ciudad italiana que vio nacer a san Francisco y santa Clara, dos libros antiguos vuelven a recordarnos una de las claves de la espiritualidad franciscana: la oración como encuentro con Dios y fundamento de toda la vida cristiana.
+En Asís, la ciudad italiana que vio nacer a san Francisco y [santa Clara](/santaclara.html), dos libros antiguos vuelven a recordarnos una de las claves de la espiritualidad franciscana: la oración como encuentro con Dios y fundamento de toda la vida cristiana.
 
-Con motivo del VIII centenario de la muerte de san Francisco de Asís, el Museo de la Porciúncula ha reunido por primera vez los breviarios de san Francisco y santa Clara. La exposición, titulada *San Francisco en la Porciúncula*, permite contemplar estos valiosos testimonios de la vida espiritual de ambos santos y descubrir la profunda relación que existía entre ellos. La muestra puede visitarse hasta el 25 de octubre de 2026.
+Con motivo del VIII centenario de la muerte de [san Francisco de Asís](/sanfrancisco.html), el Museo de la Porciúncula ha reunido por primera vez los breviarios de san Francisco y santa Clara. La exposición, titulada *San Francisco en la Porciúncula*, permite contemplar estos valiosos testimonios de la vida espiritual de ambos santos y descubrir la profunda relación que existía entre ellos. La muestra puede visitarse hasta el 25 de octubre de 2026.
 
 ## Dos santos, una misma búsqueda de Dios
 
@@ -35,7 +35,7 @@ También santa Clara organizó la vida de sus hermanas en torno a la oración, l
 
 ## La oración que transforma la vida
 
-A veces podemos pensar en la oración como una actividad aislada: rezar unas palabras al levantarnos, acudir a Misa o dedicar unos minutos a una devoción. Todas estas prácticas son valiosas, pero la tradición cristiana nos invita a descubrir algo más profundo: la oración debe ayudarnos a vivir toda nuestra existencia en presencia de Dios.
+A veces podemos pensar en la oración como una actividad aislada: rezar unas palabras al levantarnos, acudir a [Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/) o dedicar unos minutos a una devoción. Todas estas prácticas son valiosas, pero la tradición cristiana nos invita a descubrir algo más profundo: la oración debe ayudarnos a vivir toda nuestra existencia en presencia de Dios.
 
 San Francisco encontraba motivos para alabar al Señor en la creación, en los hermanos, en los pobres y en las circunstancias cotidianas. Su conocido *Cántico de las criaturas* expresa esa mirada agradecida que reconoce en el mundo creado un reflejo de la bondad de Dios.
 
@@ -59,10 +59,10 @@ La experiencia de estos dos santos sigue teniendo mucho que decir a nuestras fam
 
 La exposición de Asís nos ofrece una ocasión para acercarnos de nuevo a la espiritualidad franciscana, especialmente significativa para una comunidad que tiene como referencia a san Francisco y santa Clara de Asís.
 
-Quizá no todos estemos llamados a vivir en un convento o a reproducir las decisiones radicales de estos santos. Sin embargo, todos podemos aprender de su amor a Jesucristo, de su confianza en la providencia y de su deseo de poner a Dios en el centro de la vida.
+Quizá no todos estemos llamados a vivir en un convento o a reproducir las decisiones radicales de estos santos. Sin embargo, todos podemos aprender de su amor a Jesucristo, de su confianza en la [providencia](/noticias/gen/providencia-y-oracion-confiar-sin-quedarse-pasivos/) y de su deseo de poner a Dios en el centro de la vida.
 
 En este año en que recordamos los ochocientos años de la muerte de san Francisco, podemos hacernos una pregunta sencilla: ¿qué lugar ocupa la oración en nuestro día a día?
 
-Que el testimonio de san Francisco y santa Clara nos ayude a encontrar momentos de silencio, a escuchar la Palabra de Dios y a transformar nuestra oración en gestos concretos de fraternidad, paz y servicio.
+Que el testimonio de san Francisco y santa Clara nos ayude a encontrar momentos de silencio, a [escuchar la Palabra de Dios](/noticias/escuchar-la-palabra-para-vivir-en-el-amor/) y a transformar nuestra oración en gestos concretos de fraternidad, paz y servicio.
 
 Porque, como nos recuerdan sus vidas, la oración no consiste solamente en hablar con Dios: consiste también en aprender a vivir con Él y para Él.

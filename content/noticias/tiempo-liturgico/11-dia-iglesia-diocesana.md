@@ -13,7 +13,7 @@ diasAntes = 2
 diasDespues = 300
 +++
 
-Cada año, en noviembre, la Iglesia en España celebra el **Día de la Iglesia Diocesana**, una ocasión para dar gracias por la comunidad cristiana que vive y anuncia el Evangelio en cada diócesis. Es una invitación a descubrir que la Iglesia está presente en la parroquia, en la oración compartida, en la celebración de los sacramentos, en el servicio a quienes sufren y en tantas personas que ponen sus dones al servicio de los demás. 
+Cada año, en noviembre, la Iglesia en España celebra el **Día de la Iglesia Diocesana**, una ocasión para dar gracias por la comunidad cristiana que vive y anuncia el Evangelio en cada diócesis. Es una invitación a descubrir que la Iglesia está presente en la parroquia, en la oración compartida, en la celebración de los [sacramentos](/noticias/formacion/los-7-sacramentos/), en el servicio a quienes sufren y en tantas personas que ponen sus dones al servicio de los demás. 
 
 ## ¿Qué significa pertenecer a una diócesis?
 
@@ -33,11 +33,11 @@ Esta variedad es una verdadera riqueza. Cuando cada persona aporta su don con hu
 
 ## Una historia compartida y una esperanza viva
 
-Cada diócesis posee una historia propia, hecha de generaciones que han transmitido la fe, de comunidades que han rezado y celebrado juntas, de santos y testigos, y también de personas sencillas cuya entrega cotidiana quizá solo Dios conoce plenamente. En España, la vida cristiana ha ido dejando una huella profunda en la historia y en la cultura de sus pueblos, así como en numerosas obras de evangelización y servicio. San Juan Pablo II recordó la riqueza de la tradición cristiana española y el patrimonio de santidad que ha florecido en sus circunstancias más diversas.
+Cada diócesis posee una historia propia, hecha de generaciones que han transmitido la fe, de comunidades que han rezado y celebrado juntas, de santos y testigos, y también de personas sencillas cuya entrega cotidiana quizá solo Dios conoce plenamente. En España, la vida cristiana ha ido dejando una huella profunda en la historia y en la cultura de sus pueblos, así como en numerosas obras de evangelización y servicio. San [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/) recordó la riqueza de la tradición cristiana española y el patrimonio de santidad que ha florecido en sus circunstancias más diversas.
 
 Esa memoria es motivo de orgullo y una herencia que se recibe para compartirla. La fe transmitida por quienes nos precedieron nos impulsa a preguntarnos cómo podemos anunciar hoy el Evangelio con palabras y obras; cómo acompañar a quienes buscan sentido; cómo cuidar a las familias, a los jóvenes, a los mayores y a quienes atraviesan momentos de soledad o dificultad.
 
-La diócesis es también una historia que sigue escribiéndose. Cada bautismo, cada Eucaristía, cada gesto de reconciliación, cada vocación y cada acto de servicio contribuyen a que la Iglesia sea signo de esperanza en el mundo. Por eso, el Día de la Iglesia Diocesana mira agradecido al pasado, celebra la vida de hoy y anima a seguir caminando con confianza.
+La diócesis es también una historia que sigue escribiéndose. Cada [bautismo](/bautismo.html), cada [Eucaristía](/comunion.html), cada gesto de reconciliación, cada vocación y cada acto de servicio contribuyen a que la Iglesia sea signo de esperanza en el mundo. Por eso, el Día de la Iglesia Diocesana mira agradecido al pasado, celebra la vida de hoy y anima a seguir caminando con confianza.
 
 ## Una misión que nos implica a todos
 
@@ -49,9 +49,9 @@ La comunión, además, tiene una orientación misionera: la comunidad cristiana 
 
 ## Dar gracias, rezar y compartir
 
-El Día de la Iglesia Diocesana es una oportunidad para dar gracias por quienes sostienen y animan la vida de la comunidad: obispos, sacerdotes, diáconos, consagrados y laicos; catequistas, voluntarios, equipos de Cáritas, formadores, músicos, colaboradores y tantos fieles que sirven con sencillez. Muchas tareas pasan inadvertidas, pero hacen posible que la Iglesia acompañe, forme, celebre y lleve ayuda donde hace falta. La colaboración de las personas y el compartir los recursos expresan una solidaridad que fortalece la misión común.
+El Día de la Iglesia Diocesana es una oportunidad para dar gracias por quienes sostienen y animan la vida de la comunidad: obispos, sacerdotes, diáconos, consagrados y laicos; catequistas, voluntarios, equipos de [Cáritas](/caritas.html), formadores, músicos, colaboradores y tantos fieles que sirven con sencillez. Muchas tareas pasan inadvertidas, pero hacen posible que la Iglesia acompañe, forme, celebre y lleve ayuda donde hace falta. La colaboración de las personas y el compartir los recursos expresan una solidaridad que fortalece la misión común.
 
-También es un día para rezar por la diócesis: por sus comunidades, por quienes tienen responsabilidades pastorales, por las vocaciones, por las personas que sufren y por quienes todavía no han descubierto la cercanía de Dios. Y podemos rezar por España y por todos sus habitantes, pidiendo que crezcan la fraternidad, la justicia, la paz y la atención a quienes tienen mayores necesidades. La oración cristiana por la sociedad nace del amor al prójimo y del deseo de que cada persona encuentre dignidad, cuidado y esperanza.
+También es un día para rezar por la diócesis: por sus comunidades, por quienes tienen responsabilidades pastorales, por las vocaciones, por las personas que sufren y por quienes todavía no han descubierto la cercanía de Dios. Y podemos rezar por España y por todos sus habitantes, pidiendo que crezcan la fraternidad, la justicia, la paz y la atención a quienes tienen mayores necesidades. La oración cristiana por la sociedad nace del [amor al prójimo](/noticias/formacion/en-jesucristo-el-amor-de-dios-se-hace-entrega/) y del deseo de que cada persona encuentre dignidad, cuidado y esperanza.
 
 La generosidad puede expresarse en la oración, el tiempo, los talentos y también en la ayuda económica, según las posibilidades de cada uno. Compartir es la expresión natural de un corazón agradecido, que reconoce que cuanto ha recibido puede convertirse en bendición para otros. Cuando muchas personas ofrecen algo —por pequeño que parezca—, la comunidad puede acompañar mejor, servir con mayor cercanía y sostener su tarea evangelizadora.
 

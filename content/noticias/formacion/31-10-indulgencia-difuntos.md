@@ -1,7 +1,7 @@
 ﻿+++
 title = 'Indulgencia plenaria por los fieles difuntos hasta el 8 de noviembre'
 subtitle = '¿Cómo se puede ganar la indulgencia plenaria para los difuntos en el mes de noviembre?'
-date = '2027-10-30T12:29:54+02:00'
+date = '2026-10-30T12:29:54+02:00'
 draft = false
 categorias = ["Formación"]
 tags = ["importante"]
@@ -22,7 +22,7 @@ Cada día, del 1 al 8 de noviembre, podemos ganar la indulgencia plenaria visita
 
 La visita al cementerio se convierte así en un espacio de paz y cercanía. Es una ocasión luminosa para recordar a nuestros familiares y amigos con gratitud, cuidar sus sepulturas y sentir que el vínculo del amor no se rompe con la muerte. La Iglesia nos invita a vivir este gesto como una hermosa expresión de la familia de los hijos de Dios, donde los vivos y los difuntos seguimos unidos en la misma oración.
 
-## El 2 de noviembre: la visita a una iglesia y el abrazo de la Eucaristía
+## El 2 de noviembre: la visita a una iglesia y el abrazo de la [Eucaristía](/comunion.html)
 
 El 2 de noviembre, en la Conmemoración de todos los fieles difuntos, podemos ganar la indulgencia visitando un templo u oratorio y rezando un Padrenuestro y un Credo. Es un momento propicio para detenernos en la casa de Dios y elevar nuestra plegaria por quienes ya descansan en su paz.
 
@@ -30,12 +30,12 @@ Participar en la Santa Eucaristía ese día es la forma más alta y hermosa de u
 
 ## Un camino de gracia y conversión
 
-Para recibir plenamente este don de la Iglesia, acompañamos nuestros gestos con las disposiciones habituales del corazón: buscar el sacramento de la reconciliación, participar en la Eucaristía y rezar por las intenciones del Papa. Estas condiciones nos ayudan a disponernos interiormente para acoger la gracia y vivir con mayor hondura nuestra amistad con Dios.
+Para recibir plenamente este don de la Iglesia, acompañamos nuestros gestos con las disposiciones habituales del corazón: buscar el [sacramento de la reconciliación](/confesion.html), participar en la Eucaristía y rezar por las intenciones del Papa. Estas condiciones nos ayudan a disponernos interiormente para acoger la gracia y vivir con mayor hondura nuestra amistad con Dios.
 
 Ofrecer esta indulgencia por los difuntos nos saca de nosotros mismos y ensancha el corazón, recordándonos que la comunión de los santos es real y que nuestra oración tiene un valor inmenso ante los ojos del Señor.
 
 ## Una invitación a recordar y rezar
 
-Noviembre es un tiempo providencial para hacer memoria de quienes nos han legado el don de la fe y la vida. La visita al cementerio, la oración en el templo o la participación en la Misa son gestos sencillos pero cargados de eternidad.
+Noviembre es un tiempo providencial para hacer memoria de quienes nos han legado el don de la fe y la vida. La visita al cementerio, la oración en el templo o la participación en la [Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/) son gestos sencillos pero cargados de eternidad.
 
 Durante los primeros ocho días del mes, puedes visitar un cementerio y encomendar a los difuntos; y el 2 de noviembre, acercarte a una iglesia para rezar el Padrenuestro y el Credo. En cada paso, que tu oración sea un acto de amor confiado, sabiendo que en el Corazón de Dios nadie se pierde y que el amor es más fuerte que la muerte.

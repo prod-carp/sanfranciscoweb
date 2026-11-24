@@ -14,7 +14,7 @@ fechaFin = 300
 +++
 
 
-San Pedro de Alcántara fue un fraile franciscano español del siglo XVI, conocido por su vida de oración y penitencia, por su empeño en renovar la disciplina de los franciscanos y por el apoyo espiritual que prestó a santa Teresa de Jesús. Su ejemplo no consiste simplemente en imitar sus austeridades, sino en descubrir el amor a Cristo, la sencillez evangélica y la entrega apostólica que las inspiraban. La Iglesia lo recuerda el 19 de octubre; fue canonizado por Clemente IX en 1669. 
+San Pedro de Alcántara fue un fraile franciscano español del siglo XVI, conocido por su vida de oración y penitencia, por su empeño en renovar la disciplina de los franciscanos y por el apoyo espiritual que prestó a [santa Teresa de Jesús](/noticias/santoral/10-15-Santa-Teresa-de-Jesús/). Su ejemplo no consiste simplemente en imitar sus austeridades, sino en descubrir el amor a Cristo, la sencillez evangélica y la entrega apostólica que las inspiraban. La Iglesia lo recuerda el 19 de octubre; fue canonizado por Clemente IX en 1669. 
 
 ## De Alcántara a la vida franciscana
 

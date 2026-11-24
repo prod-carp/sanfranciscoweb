@@ -48,7 +48,7 @@ Para ser elegido, Matías debía cumplir una condición importante.
 
 Pedro explicó que debía ser alguien que hubiera estado con ellos durante todo el tiempo en que Jesús vivió y predicó entre ellos:
 
-«Desde el bautismo de Juan hasta el día en que nos fue quitado» (Hch 1,22).
+«Desde el [bautismo](/bautismo.html) de Juan hasta el día en que nos fue quitado» (Hch 1,22).
 
 Esto significa que Matías había sido un discípulo que acompañó el camino de Jesús desde los primeros momentos de su ministerio.
 
@@ -184,7 +184,7 @@ Cuando no sepamos qué camino tomar, podemos pedirle con confianza que nos ayude
 
 tú que permaneciste fiel como discípulo de Jesús y fuiste elegido para formar parte de los Doce, ayúdanos a permanecer cerca del Señor incluso cuando no comprendamos lo que está sucediendo en nuestra vida.
 
-Enséñanos a orar antes de tomar decisiones y a confiar en Dios, que conoce nuestros corazones.
+Enséñanos a orar antes de tomar decisiones y a [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/), que conoce nuestros corazones.
 
 Ayúdanos a descubrir que también nuestra vida puede servir para anunciar a Cristo.
 

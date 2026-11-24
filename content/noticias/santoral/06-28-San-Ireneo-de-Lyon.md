@@ -71,7 +71,7 @@ Su testimonio muestra que desde los primeros tiempos los cristianos consideraban
 - la enseñanza recibida de los apóstoles;
 - la unidad de la Iglesia;
 - la sucesión de los obispos;
-- la celebración de los sacramentos;
+- la celebración de los [sacramentos](/noticias/formacion/los-7-sacramentos/);
 - la centralidad de Jesucristo;
 - la esperanza de la resurrección;
 - y la transmisión fiel de la fe.

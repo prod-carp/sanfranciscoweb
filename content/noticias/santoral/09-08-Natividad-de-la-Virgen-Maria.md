@@ -91,7 +91,7 @@ Por eso, al celebrar su nacimiento, también podemos contemplar el comienzo de l
 
 Celebrar el nacimiento de María es celebrar **la alegría de un regalo de Dios**.
 
-La Iglesia mira a María como una mujer profundamente unida a Cristo y como ejemplo perfecto de fe, humildad y confianza en Dios.
+La Iglesia mira a María como una mujer profundamente unida a Cristo y como ejemplo perfecto de fe, humildad y [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 
 Su nacimiento nos recuerda que cada vida humana tiene una dignidad inmensa y que Dios puede realizar grandes cosas a través de personas aparentemente pequeñas y sencillas.
 

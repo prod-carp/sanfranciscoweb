@@ -13,7 +13,7 @@ Cuando un católico conversa con un hermano evangélico o simplemente lee el Eva
 
 > **Si la Biblia habla de los "hermanos de Jesús", ¿cómo puede afirmar la Iglesia que la Virgen María permaneció siempre virgen?**
 
-A primera vista parece una contradicción. Sin embargo, cuando se estudia la Biblia en su contexto histórico, lingüístico y cultural, la dificultad desaparece y aparece una imagen mucho más rica de la Sagrada Familia.
+A primera vista parece una contradicción. Sin embargo, cuando se estudia la Biblia en su contexto histórico, lingüístico y cultural, la dificultad desaparece y aparece una imagen mucho más rica de la [Sagrada Familia](/noticias/tiempo-liturgico/12-La-Sagrada-Familia/).
 
 Veámoslo paso a paso.
 
@@ -187,12 +187,12 @@ Mucho antes de cualquier controversia moderna, los cristianos ya creían en la v
 
 Entre quienes defendieron esta enseñanza encontramos a:
 
-* San Ignacio de Antioquía.
+* [San Ignacio de Antioquía](/noticias/santoral/10-17-San-Ignacio-de-Antioquia/).
 * San Ireneo de Lyon.
 * San Atanasio.
 * San Ambrosio.
-* San Agustín.
-* San Jerónimo.
+* [San Agustín](/noticias/santoral/08-28-San-Agustín/).
+* [San Jerónimo](/noticias/santoral/09-30-San-Jeronimo/).
 
 Especialmente San Jerónimo escribió una extensa defensa explicando que los llamados "hermanos del Señor" eran parientes cercanos y no hijos de María.
 

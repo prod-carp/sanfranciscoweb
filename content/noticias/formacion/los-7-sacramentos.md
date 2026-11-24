@@ -22,7 +22,7 @@ Los sacramentos acompañan las distintas etapas de la existencia cristiana y nos
 
 ## Los sacramentos de la iniciación cristiana
 
-### 1. Bautismo
+### 1. [Bautismo](/bautismo.html)
 
 El Bautismo es la puerta de entrada a la vida cristiana. Mediante el agua y la invocación de la Santísima Trinidad, la persona queda incorporada a Cristo y a la Iglesia.
 
@@ -39,7 +39,7 @@ Jesús mismo nos enseñó la importancia del Bautismo cuando dijo:
 
 ### 2. Confirmación
 
-La Confirmación completa la gracia bautismal y fortalece al cristiano con los dones del Espíritu Santo.
+La Confirmación completa la gracia bautismal y fortalece al cristiano con los [dones del Espíritu Santo](/noticias/formacion/7-dones/).
 
 A través de la unción con el santo crisma y la imposición de las manos del obispo, el confirmado recibe una fuerza especial para:
 
@@ -49,9 +49,9 @@ A través de la unción con el santo crisma y la imposición de las manos del ob
 
 Es el sacramento que ayuda a madurar la fe y a vivirla con compromiso.
 
-### 3. Eucaristía
+### 3. [Eucaristía](/comunion.html)
 
-La Eucaristía es el centro de la vida cristiana. En cada Santa Misa, Jesucristo se hace realmente presente bajo las especies del pan y del vino.
+La Eucaristía es el centro de la vida cristiana. En cada [Santa Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/), Jesucristo se hace realmente presente bajo las especies del pan y del vino.
 
 Al recibir la Comunión:
 
@@ -66,7 +66,7 @@ Por eso la Eucaristía es llamada con frecuencia «fuente y culmen de toda la vi
 
 ### 4. Penitencia o Reconciliación
 
-Todos necesitamos experimentar la misericordia de Dios. En el sacramento de la Reconciliación, el Señor perdona nuestros pecados y restaura nuestra amistad con Él.
+Todos necesitamos experimentar la misericordia de Dios. En el [sacramento de la Reconciliación](/confesion.html), el Señor perdona nuestros pecados y restaura nuestra amistad con Él.
 
 Cuando acudimos con sinceridad a la confesión:
 
@@ -105,7 +105,7 @@ Los esposos reciben una gracia especial para:
 
 El matrimonio es una auténtica vocación y un camino de santidad vivido en el hogar.
 
-### 7. Orden Sacerdotal
+### 7. [Orden Sacerdotal](/ordensacerdotal.html)
 
 Mediante el Orden Sacerdotal, algunos hombres son llamados por Dios a servir al Pueblo de Dios como diáconos, presbíteros o obispos.
 
@@ -126,7 +126,7 @@ Cada sacramento es una invitación a abrir el corazón a la acción del Señor y
 
 ## Te invitamos a acercarte a los sacramentos
 
-Si deseas recibir alguno de los sacramentos, conocer los requisitos o resolver cualquier duda, no dudes en ponerte en contacto con nuestra parroquia.
+Si deseas recibir alguno de los sacramentos, conocer los requisitos o resolver cualquier duda, no dudes en ponerte en contacto con [nuestra parroquia](/fotos.html).
 Estaremos encantados de acompañarte en tu camino de fe y ayudarte a vivir más cerca de Dios.
 
 «*Yo estoy con vosotros todos los días hasta el fin del mundo*» (Mt 28,20).

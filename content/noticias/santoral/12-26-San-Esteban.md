@@ -236,7 +236,7 @@ Murió perdonando.
 
 En él vemos cómo la gracia de Dios puede transformar incluso una situación de violencia extrema en un momento de testimonio cristiano.
 
-La santidad de Esteban no consiste solamente en haber tenido el valor de morir por Cristo.
+[La santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) de Esteban no consiste solamente en haber tenido el valor de morir por Cristo.
 
 También consiste en haber amado como Cristo hasta el final.
 

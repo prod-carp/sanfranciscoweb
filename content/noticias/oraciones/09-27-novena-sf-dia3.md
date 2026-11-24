@@ -12,7 +12,7 @@ fechaInicio = 0
 fechaFin = 1
 +++
 
-*Puestos delante de una imagen de San Francisco de Asís*.
+*Puestos delante de una imagen de [San Francisco de Asís](/sanfrancisco.html)*.
 
 *Nos santiguamos*.
 

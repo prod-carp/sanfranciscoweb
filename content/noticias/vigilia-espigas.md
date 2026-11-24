@@ -9,17 +9,17 @@ weight = 0
 image = "/assets/images/blog/espigas.webp"
 +++
 
-Los Adoradores de la Sección de Fuenlabrada, miembros de la Adoración Nocturna que se lleva a cabo en la parroquia de San Francisco y Santa Clara de Asís de Fuenlabrada, participaron el pasado 26 de octubre en la Vigilia de Espigas, organizada por la Adoración Nocturna Española (ANE), en colaboración con la parroquia de Nuestra Señora de la Asunción de Griñón, con motivo del XXV aniversario de su Sección de Adoración Nocturna.
+Los Adoradores de la Sección de Fuenlabrada, miembros de la [Adoración Nocturna](/ane.html) que se lleva a cabo en la parroquia de San Francisco y [Santa Clara](/santaclara.html) de Asís de Fuenlabrada, participaron el pasado 26 de octubre en la Vigilia de Espigas, organizada por la Adoración Nocturna Española (ANE), en colaboración con la parroquia de Nuestra Señora de [la Asunción](/noticias/santoral/08-15-la-asuncion-de-la-virgen/) de Griñón, con motivo del XXV aniversario de su Sección de Adoración Nocturna.
 
-La celebración reunió a adoradores y fieles en una noche de oración, fraternidad y adoración eucarística, siguiendo una tradición de la Iglesia que invita a dedicar las horas nocturnas al encuentro con Jesús Sacramentado y a dar gracias a Dios por los frutos de la tierra.
+La celebración reunió a adoradores y fieles en una noche de oración, fraternidad y [adoración eucarística](/exposicion-santisimo.html), siguiendo una tradición de la Iglesia que invita a dedicar las horas nocturnas al encuentro con Jesús Sacramentado y a dar gracias a Dios por los frutos de la tierra.
 
 ## Una tarde de oración y encuentro entre parroquias
 
 La jornada comenzó a las 19:00 horas con la recepción de banderas y estandartes en el centro parroquial de Griñón, situado en la calle Iglesia, 1. Este primer acto congregó a los participantes y dio comienzo a una celebración marcada por la unión entre las distintas comunidades y secciones de la Adoración Nocturna.
 
-A las 19:30 horas tuvo lugar el rezo del Santo Rosario, que partió del convento de las Peregrinas de la Eucaristía y recorrió el camino hasta la iglesia parroquial de Nuestra Señora de la Asunción. Esta oración mariana, que invita a meditar los principales misterios de la vida de Jesucristo acompañados por la Virgen María, permitió a los asistentes preparar espiritualmente el inicio de la vigilia.
+A las 19:30 horas tuvo lugar el rezo del Santo [Rosario](/noticias/oraciones/rezar-el-rosario/), que partió del convento de las Peregrinas de la [Eucaristía](/comunion.html) y recorrió el camino hasta la iglesia parroquial de Nuestra Señora de la Asunción. Esta oración mariana, que invita a meditar los principales misterios de la vida de Jesucristo acompañados por la Virgen María, permitió a los asistentes preparar espiritualmente el inicio de la vigilia.
 
-A continuación, a las 20:30 horas, se celebró la Santa Misa junto con el rezo de Vísperas, la oración litúrgica de la tarde que forma parte de la Liturgia de las Horas y que reúne a los cristianos en acción de gracias y alabanza a Dios.
+A continuación, a las 20:30 horas, se celebró la [Santa Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/) junto con el rezo de Vísperas, la oración litúrgica de la tarde que forma parte de la Liturgia de las Horas y que reúne a los cristianos en acción de gracias y alabanza a Dios.
 
 ## La adoración eucarística, protagonista de la noche
 
@@ -35,7 +35,7 @@ A las 00:00 horas se rezó el Te Deum, uno de los himnos más antiguos de acció
 
 Uno de los momentos más significativos de la celebración tuvo lugar a las 00:30 horas, con la procesión del Santísimo Sacramento y la bendición de los campos, un acto que da nombre y sentido a esta tradicional vigilia.
 
-La Vigilia de Espigas es una celebración característica de la Adoración Nocturna Española, en la que la adoración eucarística se une a la acción de gracias por los frutos de la tierra. La bendición de los campos expresa la confianza en la providencia divina y la petición de protección y fecundidad para las cosechas, así como el reconocimiento de Dios como fuente de toda vida y alimento.
+La Vigilia de Espigas es una celebración característica de la Adoración Nocturna Española, en la que la adoración eucarística se une a la acción de gracias por los frutos de la tierra. La bendición de los campos expresa la confianza en la [providencia](/noticias/gen/providencia-y-oracion-confiar-sin-quedarse-pasivos/) divina y la petición de protección y fecundidad para las cosechas, así como el reconocimiento de Dios como fuente de toda vida y alimento.
 
 La procesión con el Santísimo representa, además, la presencia de Cristo en medio de su pueblo, extendiendo la oración más allá del templo y convirtiendo la celebración en un testimonio público de fe.
 

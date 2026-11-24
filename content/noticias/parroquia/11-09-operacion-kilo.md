@@ -27,7 +27,7 @@ La Operación Kilo-Litro permite que personas de edades y situaciones diversas p
 
 ## La caridad nace de la comunión
 
-Ayudar forma parte de una vida que se alimenta de la relación con Jesucristo. La comunidad parroquial se reúne para celebrar la fe y, desde esa comunión, se aprende a vivir la caridad en lo cotidiano. La parroquia se reúne especialmente en torno a la Eucaristía y el compromiso de solidaridad con quienes pasan necesidad es una parte importante de su vida. 
+Ayudar forma parte de una vida que se alimenta de la relación con Jesucristo. La comunidad parroquial se reúne para celebrar la fe y, desde esa comunión, se aprende a vivir la caridad en lo cotidiano. La parroquia se reúne especialmente en torno a la [Eucaristía](/comunion.html) y el compromiso de solidaridad con quienes pasan necesidad es una parte importante de su vida. 
 
 La ayuda material también expresa que nadie está llamado a vivir la fe en aislamiento. La comunión con Jesús conduce a la comunión con los demás y esa caridad se concreta al compartir los bienes y ayudar a los más débiles. Incluso el tiempo puede ofrecerse como don: hay muchos modos de servir a los demás. 
 
@@ -37,7 +37,7 @@ Por eso, un alimento entregado con amor puede ser mucho más que un producto en 
 
 En la Eucaristía aprendemos a recibir y a compartir. Al comulgar con el pan y el vino, Cristo se hace presente en nosotros y nos ayuda a querernos y apoyarnos más unos a otros. La vida de la parroquia encuentra ahí su centro, y esa comunión está llamada a dar fruto en la vida diaria. 
 
-San Juan Pablo II expresó con claridad esa unión entre la celebración de la fe y la práctica del amor:
+San [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/) expresó con claridad esa unión entre la celebración de la fe y la práctica del amor:
 
 > la liturgia eucarística y la liturgia de la vida están íntimamente unidas. 
 
@@ -47,7 +47,7 @@ Esta unión nos ayuda a entender el sentido espiritual de una Operación Kilo-Li
 
 La participación puede comenzar con algo muy sencillo: revisar la lista de la compra y añadir un producto para la recogida parroquial. También puede ser elegir alimentos que la parroquia haya indicado como especialmente útiles, preparar una bolsa junto con los hijos o simplemente recordar el dia de la colecta.
 
-Cada comunidad conoce mejor las necesidades y la forma de organizar la ayuda en su entorno. Por eso, resulta valioso atender a las indicaciones parroquiales y colaborar con los alimentos que se estén solicitando. Esa coordinación ayuda a que los donativos puedan aprovecharse de la mejor manera y lleguen ordenadamente a quienes los necesitan.
+Cada comunidad conoce mejor las necesidades y la forma de organizar la ayuda en su entorno. Por eso, resulta valioso atender a las indicaciones parroquiales y colaborar con los alimentos que se estén solicitando. Esa coordinación ayuda a que los [donativos](/donativos.html) puedan aprovecharse de la mejor manera y lleguen ordenadamente a quienes los necesitan.
 
 La generosidad también puede crecer en familia. Una conversación durante la compra puede ayudar a los niños a comprender que muchas personas necesitan apoyo y que compartir es una forma de amar. En vez de vivirlo como una tarea lejana, pueden escoger juntos un producto y depositarlo en el lugar de recogida. Ese gesto sencillo puede abrir una conversación sobre la gratitud, la solidaridad y el valor de pensar en los demás.
 
@@ -55,7 +55,7 @@ Los miembros de [Cáritas](https://sanfranciscoysantaclara.es/caritas.html) tamb
 
 ## Una escuela de comunión para la parroquia
 
-La Operación Kilo-Litro puede ayudar a que la parroquia crezca como una comunidad atenta a las necesidades de sus miembros y de quienes viven cerca. La solidaridad se aprende practicándola: cuando conocemos una necesidad, respondemos con lo que podemos ofrecer; cuando participamos en una iniciativa común, descubrimos que los dones de cada persona pueden contribuir al bien de todos. **La caridad es una realidad que ha de hacerse visible en la vida comunitaria, une el amor a Dios con el amor al prójimo**. 
+La Operación Kilo-Litro puede ayudar a que la parroquia crezca como una comunidad atenta a las necesidades de sus miembros y de quienes viven cerca. La solidaridad se aprende practicándola: cuando conocemos una necesidad, respondemos con lo que podemos ofrecer; cuando participamos en una iniciativa común, descubrimos que los dones de cada persona pueden contribuir al bien de todos. **La caridad es una realidad que ha de hacerse visible en la vida comunitaria, une el amor a Dios con el [amor al prójimo](/noticias/formacion/en-jesucristo-el-amor-de-dios-se-hace-entrega/)**. 
 
 Además de la ayuda material, una iniciativa así puede despertar oración y agradecimiento. Se puede rezar por quienes recibirán los alimentos, por quienes colaboran en su distribución y por las familias que atraviesan dificultades. La oración ensancha el corazón y ayuda a sostener una mirada hermana sobre las personas, cercana y llena de esperanza.
 

@@ -19,7 +19,7 @@ la voz de Dios, discernir su voluntad y vivir como auténticos discípulos de Cr
 
 Los Dones del Espíritu Santo son ayudas sobrenaturales que Dios concede a los cristianos para crecer en santidad y responder con generosidad a su llamada.
 
-Los recibimos de manera especial en el sacramento de la Confirmación, aunque comienzan a actuar ya desde el Bautismo. Gracias a ellos, el Espíritu Santo ilumina nuestra inteligencia, fortalece nuestra voluntad y orienta toda nuestra vida hacia Dios.
+Los recibimos de manera especial en el [sacramento de la Confirmación](/confirmacion.html), aunque comienzan a actuar ya desde el [Bautismo](/bautismo.html). Gracias a ellos, el Espíritu Santo ilumina nuestra inteligencia, fortalece nuestra voluntad y orienta toda nuestra vida hacia Dios.
 
 La tradición de la Iglesia, inspirada en el libro del profeta Isaías (Is 11,1-3), reconoce siete dones:
 
@@ -103,7 +103,7 @@ La piedad nos ayuda a relacionarnos con Dios como hijos que aman a su Padre.
 A través de este don:
 
 - Crece nuestro deseo de oración.
-- Participamos con mayor fervor en los sacramentos.
+- Participamos con mayor fervor en los [sacramentos](/noticias/formacion/los-7-sacramentos/).
 - Amamos más profundamente a la Iglesia.
 - Aprendemos a servir a los demás con generosidad.
 
@@ -136,7 +136,7 @@ Los dones recibidos necesitan ser cultivados para dar fruto. Podemos hacerlo med
 
 - La oración diaria.
 - La lectura de la Sagrada Escritura.
-- La participación en la Santa Misa.
+- La participación en la [Santa Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/).
 - La recepción frecuente de los sacramentos.
 - La práctica de la caridad.
 - La escucha atenta de la voluntad de Dios.

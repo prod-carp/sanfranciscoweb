@@ -9,9 +9,9 @@ weight = 0
 image = "/assets/images/blog/visita-clarisas-valdemoro.webp"
 +++
 
-El pasado viernes, 23 de octubre, un grupo de nuestra parroquia San Francisco y Santa Clara de Asís de Fuenlabrada vivimos una experiencia muy especial en el **convento de la** **Encarnación de Valdemoro**, donde tuvimos la oportunidad de encontrarnos con las **hermanas clarisas**.
+El pasado viernes, 23 de octubre, un grupo de [nuestra parroquia](/fotos.html) San Francisco y [Santa Clara](/santaclara.html) de Asís de Fuenlabrada vivimos una experiencia muy especial en el **convento de la** **Encarnación de Valdemoro**, donde tuvimos la oportunidad de encontrarnos con las **hermanas clarisas**.
 
-Fuimos alrededor de 18 personas, entre jóvenes que se preparan para recibir el sacramento de la Confirmación, sus padres, adultos que también se están preparando para confirmarse junto a sus hijos, nuestro párroco, el padre Gustavo, y Juan, el seminarista.
+Fuimos alrededor de 18 personas, entre jóvenes que se preparan para recibir el [sacramento de la Confirmación](/confirmacion.html), sus padres, adultos que también se están preparando para confirmarse junto a sus hijos, nuestro párroco, el padre Gustavo, y Juan, el seminarista.
 
 ## Abrir las puertas de su casa y de su corazón
 

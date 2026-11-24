@@ -10,7 +10,7 @@ image = "/assets/images/index-meta.webp"
 +++
 
 A veces pensamos que somos nosotros quienes buscamos a Dios, pero con el tiempo descubrimos que, en realidad, es Él quien va preparando el camino y conduciéndonos suavemente hacia donde quiere encontrarse con nosotros.
-Nuestra historia con la parroquia San Francisco y Santa Clara de Asís comenzó mucho antes de cruzar por primera vez sus puertas.
+Nuestra historia con la parroquia San Francisco y [Santa Clara](/santaclara.html) de Asís comenzó mucho antes de cruzar por primera vez sus puertas.
 Comenzó el día en que nos casamos.
 
 ## El deseo de seguir creciendo
@@ -19,7 +19,7 @@ Después de vivir un prematrimonial tan profundo y enriquecedor, nació en nosot
 Habíamos descubierto que el matrimonio cristiano es mucho más que una convivencia o un proyecto de vida compartido. Es una auténtica vocación, un camino de santidad y una forma concreta de amar que refleja el amor de Cristo por su Iglesia.
 Aquello despertó en nosotros el deseo de seguir profundizando.
 Queríamos comprender mejor cómo actúa Dios en el matrimonio, cómo fortalecer nuestra relación y cómo caminar juntos hacia Él.
-Fue entonces cuando conocimos Proyecto Amor Conyugal.
+Fue entonces cuando conocimos [Proyecto Amor Conyugal](/grupomatrimonios.html).
 
 ## Un retiro muy esperado
 
@@ -31,7 +31,7 @@ Recibimos la noticia de que habíamos conseguido plaza y acudimos con mucha ilus
 La experiencia superó nuestras expectativas.
 De hecho, recomendamos encarecidamente este retiro a cualquier matrimonio que desee poner verdaderamente a Dios en el centro de su relación.
 Durante aquellos días descubrimos enseñanzas profundas sobre el amor humano, el sacramento del matrimonio y la vocación matrimonial.
-Podría decirse que el retiro es una magnífica introducción a la Teología del Cuerpo de san Juan Pablo II, una invitación a contemplar el matrimonio desde la mirada de Dios.
+Podría decirse que el retiro es una magnífica introducción a la Teología del Cuerpo de san [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/), una invitación a contemplar el matrimonio desde la mirada de Dios.
 Pero cuando terminó, lejos de sentirnos satisfechos, nos ocurrió algo curioso.
 Nos quedamos con ganas de más.
 
@@ -55,7 +55,7 @@ Sin saberlo, Dios nos estaba llevando hasta una nueva familia espiritual.
 
 ## La primera visita
 
-Antes de comenzar las catequesis decidimos asistir a la misa dominical para conocer la parroquia.
+Antes de comenzar las catequesis decidimos asistir a la [misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/) dominical para conocer la parroquia.
 Recuerdo perfectamente aquella primera impresión.
 Desde el principio nos sentimos cómodos.
 Pero lo que más nos llamó la atención fueron las homilías del padre Gustavo.

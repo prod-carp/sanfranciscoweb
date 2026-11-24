@@ -13,7 +13,7 @@ fechaInicio = 0
 fechaFin = 300
 +++
 
-## TERCER DÍA — San Juan Pablo II, testigo de la esperanza y apóstol de los jóvenes
+## TERCER DÍA — San [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/), testigo de la esperanza y apóstol de los jóvenes
 
 En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén.
 
@@ -21,9 +21,9 @@ Lectura bíblica: «No tengáis miedo. Abrid, más todavía, abrid de par en par
 
 Reflexión
 Estas palabras marcaron el comienzo de uno de los pontificados más importantes de la historia reciente de la Iglesia. San Juan Pablo II invitó al mundo entero a no tener miedo de Jesucristo, porque Cristo no viene a quitarnos la libertad ni la alegría, sino a mostrarnos el camino de la verdadera felicidad.
-Amó especialmente a los jóvenes. Los escuchó, recorrió el mundo para encontrarse con ellos y creó las Jornadas Mundiales de la Juventud. Les recordó que no debían conformarse con una vida mediocre, sino aspirar a la santidad y descubrir la grandeza de la vocación a la que Dios los llamaba.
-Su propia vida fue un testimonio de esperanza. Incluso cuando la enfermedad y la debilidad física limitaron sus fuerzas, siguió ofreciendo su sufrimiento y permaneció unido a la Iglesia. Nos enseñó que la dignidad de una persona no desaparece cuando pierde sus capacidades, y que el sufrimiento, unido a Cristo, puede convertirse en una ofrenda de amor.
-Hoy necesitamos escuchar de nuevo su mensaje: ¡No tengáis miedo! No tengamos miedo de vivir nuestra fe, de anunciar el Evangelio, de defender la verdad ni de comprometernos con nuestra parroquia. No tengamos miedo de invitar a otros a conocer a Jesucristo.
+Amó especialmente a los jóvenes. Los escuchó, recorrió el mundo para encontrarse con ellos y creó las Jornadas Mundiales de la Juventud. Les recordó que no debían conformarse con una vida mediocre, sino aspirar a [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) y descubrir la grandeza de la vocación a la que Dios los llamaba.
+Su propia vida fue un testimonio de esperanza. Incluso cuando la enfermedad y la debilidad física limitaron sus fuerzas, siguió ofreciendo su sufrimiento y permaneció unido a la Iglesia. Nos enseñó que la dignidad de una persona no desaparece cuando pierde sus capacidades, y que [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/), unido a Cristo, puede convertirse en una ofrenda de amor.
+Hoy necesitamos escuchar de nuevo su mensaje: ¡No tengáis miedo! No tengamos miedo de vivir nuestra fe, de anunciar el Evangelio, de defender la verdad ni de comprometernos con [nuestra parroquia](/fotos.html). No tengamos miedo de invitar a otros a conocer a Jesucristo.
 Que su ejemplo despierte en nosotros un corazón misionero, dispuesto a servir y a llevar la esperanza a quienes más la necesitan.
 
 Intención del día: Por los jóvenes, las vocaciones sacerdotales y religiosas, los misioneros y todos los que anuncian el Evangelio.

@@ -17,7 +17,7 @@ fechaFin = 300
 
 La solemnidad de **Todos los Santos** es una de las celebraciones más significativas del calendario litúrgico de la Iglesia católica. Cada **1 de noviembre**, la Iglesia celebra a todos aquellos que han alcanzado la gloria del cielo, tanto a los santos que conocemos por su nombre como a la multitud de santos cuya identidad no conocemos.
 
-Este día nos recuerda que la santidad no está reservada únicamente para unas pocas personas extraordinarias. **Todos los cristianos están llamados a ser santos**, cada uno desde su propia vocación y circunstancias.
+Este día nos recuerda que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) no está reservada únicamente para unas pocas personas extraordinarias. **Todos los cristianos están llamados a ser santos**, cada uno desde su propia vocación y circunstancias.
 
 La celebración dirige nuestra mirada hacia el cielo, pero también hacia nuestra propia vida: nos recuerda que el objetivo último de la existencia cristiana es **vivir unidos a Dios y participar de su gloria**.
 
@@ -116,11 +116,11 @@ Muchos santos tuvieron debilidades, luchas, dudas o incluso una vida alejada de 
 
 Lo que los distingue es que **permitieron que Dios actuara en ellos**.
 
-San Agustín, por ejemplo, vivió durante años buscando la verdad lejos de la fe cristiana antes de convertirse.
+[San Agustín](/noticias/santoral/08-28-San-Agustín/), por ejemplo, vivió durante años buscando la verdad lejos de la fe cristiana antes de convertirse.
 
 San Pablo persiguió a los primeros cristianos antes de convertirse en uno de los grandes apóstoles de Cristo.
 
-San Francisco de Asís abandonó una vida orientada hacia las riquezas para vivir radicalmente el Evangelio.
+[San Francisco de Asís](/sanfrancisco.html) abandonó una vida orientada hacia las riquezas para vivir radicalmente el Evangelio.
 
 La santidad demuestra que la gracia de Dios puede transformar profundamente a una persona.
 

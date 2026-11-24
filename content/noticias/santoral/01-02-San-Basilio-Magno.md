@@ -16,7 +16,7 @@ fechaFin = 300
 
 San Basilio Magno fue uno de los grandes santos de los primeros siglos del cristianismo. Vivió en el siglo IV, una época en la que la Iglesia atravesaba importantes dificultades y debates sobre la fe.
 
-Nació alrededor del año **330 en Cesarea de Capadocia**, en una familia profundamente cristiana. Varios miembros de su familia también alcanzaron la santidad, entre ellos su hermana **Santa Macrina la Joven** y sus hermanos **San Gregorio de Nisa** y **San Pedro de Sebaste**.
+Nació alrededor del año **330 en Cesarea de Capadocia**, en una familia profundamente cristiana. Varios miembros de su familia también alcanzaron [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/), entre ellos su hermana **Santa Macrina la Joven** y sus hermanos **[San Gregorio](/noticias/santoral/09-03-san-gregorio-magno/) de Nisa** y **San Pedro de Sebaste**.
 
 Basilio recibió una excelente educación y estudió en importantes centros culturales de su época. Durante sus años de formación conoció a otro gran santo con quien mantendría una profunda amistad: **San Gregorio Nacianceno**.
 
@@ -32,7 +32,7 @@ Su hermana Macrina tuvo también una influencia importante en su camino espiritu
 
 Basilio decidió entonces abandonar una vida centrada en el éxito personal y buscar una existencia más entregada a Dios.
 
-Después de recibir el bautismo, emprendió viajes para conocer la vida de comunidades cristianas y ascetas de diferentes lugares.
+Después de recibir el [bautismo](/bautismo.html), emprendió viajes para conocer la vida de comunidades cristianas y ascetas de diferentes lugares.
 
 Visitó regiones como Egipto, Siria y Mesopotamia, donde conoció diversas formas de vida monástica.
 
@@ -48,7 +48,7 @@ Quería aprender a vivir el Evangelio de una manera concreta y compartir esa vid
 
 Basilio escribió reglas y orientaciones para las comunidades monásticas.
 
-Su propuesta destacaba que la vida de oración debía estar acompañada por el amor al prójimo.
+Su propuesta destacaba que la vida de oración debía estar acompañada por el [amor al prójimo](/noticias/formacion/en-jesucristo-el-amor-de-dios-se-hace-entrega/).
 
 Para él, un cristiano no podía decir que amaba a Dios mientras permanecía indiferente ante las necesidades de los demás.
 
@@ -126,7 +126,7 @@ Una de sus enseñanzas más conocidas expresa esta idea:
 
 Con estas palabras, Basilio quería despertar la conciencia de los cristianos.
 
-Los bienes materiales no deben convertirse en una razón para ignorar el sufrimiento de los demás.
+Los bienes materiales no deben convertirse en una razón para ignorar [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) de los demás.
 
 Todo lo que tenemos debe ser utilizado también para el bien.
 

@@ -15,7 +15,7 @@ fechaFin = 300
 
 Hay santos cuya vida está marcada por acontecimientos extraordinarios, pero cuya verdadera grandeza se encuentra en algo mucho más profundo: **su amor a Jesucristo y su entrega diaria a Dios**. San Pío de Pietrelcina fue uno de ellos.
 
-Conocido cariñosamente como **Padre Pío**, fue un sacerdote italiano de la Orden de los Hermanos Menores Capuchinos. Su vida estuvo marcada por la oración, la celebración de la Eucaristía, el sacramento de la Reconciliación, la caridad con los necesitados y un profundo amor por la Pasión de Cristo.
+Conocido cariñosamente como **Padre Pío**, fue un sacerdote italiano de la Orden de los Hermanos Menores Capuchinos. Su vida estuvo marcada por la oración, la celebración de la [Eucaristía](/comunion.html), el [sacramento de la Reconciliación](/confesion.html), la caridad con los necesitados y un profundo amor por la Pasión de Cristo.
 
 También recibió los **estigmas**, las heridas semejantes a las de Jesús en la cruz, un fenómeno extraordinario que acompañó buena parte de su vida.
 
@@ -31,7 +31,7 @@ A los 15 años ingresó en la Orden de los Capuchinos y recibió el nombre relig
 
 Fue ordenado sacerdote en **1910**.
 
-Desde entonces dedicó su vida al ministerio sacerdotal, especialmente a la celebración de la Santa Misa, la confesión, la dirección espiritual y la oración.
+Desde entonces dedicó su vida al ministerio sacerdotal, especialmente a la celebración de la [Santa Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/), la confesión, la dirección espiritual y la oración.
 
 Su deseo era sencillo: **llevar a las personas hacia Cristo**.
 
@@ -43,7 +43,7 @@ Pasaba largas horas rezando y tenía una especial devoción por la Eucaristía y
 
 La celebración de la Santa Misa ocupaba un lugar fundamental en su espiritualidad. Vivía profundamente unido a la Pasión de Cristo y comprendía la Eucaristía como el sacrificio de Cristo hecho presente sacramentalmente.
 
-También tenía un gran amor por el **Rosario**, al que consideraba una poderosa oración de intercesión.
+También tenía un gran amor por el **[Rosario](/noticias/oraciones/rezar-el-rosario/)**, al que consideraba una poderosa oración de intercesión.
 
 Su vida nos recuerda que la oración no consiste únicamente en pedir cosas a Dios. Es, ante todo, **permanecer en su presencia, confiar en Él y dejar que transforme nuestro corazón**.
 
@@ -85,7 +85,7 @@ Una frase atribuida al Padre Pío resume muy bien una actitud cristiana de confi
 
 Estas palabras no significan que debamos ignorar nuestros problemas o dejar de actuar ante las dificultades.
 
-Significan que, después de hacer aquello que está en nuestras manos, **debemos aprender a poner nuestra confianza en Dios**.
+Significan que, después de hacer aquello que está en nuestras manos, **debemos aprender a poner nuestra [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/)**.
 
 El Padre Pío conoció enfermedades, incomprensiones, críticas y momentos muy difíciles. Aun así, procuró permanecer unido al Señor.
 
@@ -101,7 +101,7 @@ El centro comenzó a funcionar en 1956 y nació con el propósito de ofrecer ate
 
 Para el Padre Pío, cuidar a los enfermos era otra manera de servir a Cristo.
 
-Su obra muestra que la fe cristiana no puede permanecer indiferente ante el sufrimiento humano.
+Su obra muestra que la fe cristiana no puede permanecer indiferente ante [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) humano.
 
 ## ¿Por qué San Pío de Pietrelcina es santo?
 
@@ -111,7 +111,7 @@ Su vida sacerdotal estuvo marcada por la celebración de la Eucaristía, la orac
 
 También soportó numerosos sufrimientos físicos y espirituales, procurando ofrecerlos a Dios con fe.
 
-Fue **beatificado por san Juan Pablo II el 2 de mayo de 1999** y **canonizado el 16 de junio de 2002**, también por san Juan Pablo II, en una multitudinaria celebración en Roma.
+Fue **beatificado por san [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/) el 2 de mayo de 1999** y **canonizado el 16 de junio de 2002**, también por san Juan Pablo II, en una multitudinaria celebración en Roma.
 
 La Iglesia lo presenta como un ejemplo de sacerdote que buscó llevar a las personas hacia Cristo y ayudarlas a descubrir la misericordia de Dios.
 
@@ -129,7 +129,7 @@ Pero quizá una de sus mayores enseñanzas sea esta:
 
 **No debemos buscar lo extraordinario; debemos buscar a Cristo.**
 
-Los fenómenos extraordinarios que rodearon su vida pueden llamar nuestra atención, pero la santidad del Padre Pío se encuentra principalmente en su amor a Dios y en su fidelidad cotidiana.
+Los fenómenos extraordinarios que rodearon su vida pueden llamar nuestra atención, pero [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) del Padre Pío se encuentra principalmente en su amor a Dios y en su fidelidad cotidiana.
 
 ## Una cita bíblica relacionada con San Pío de Pietrelcina
 
@@ -173,7 +173,7 @@ No siempre podemos entender por qué llegan determinadas pruebas a nuestra vida.
 
 San Pío nos enseña a no huir de Dios cuando llegan las dificultades, sino a acercarnos todavía más a Él.
 
-Su vida también nos recuerda el inmenso regalo de los sacramentos, especialmente la **Eucaristía y la Reconciliación**, y la importancia de acudir a Cristo con un corazón sincero.
+Su vida también nos recuerda el inmenso regalo de los [sacramentos](/noticias/formacion/los-7-sacramentos/), especialmente la **Eucaristía y la Reconciliación**, y la importancia de acudir a Cristo con un corazón sincero.
 
 Que San Pío de Pietrelcina nos ayude a confiar en Dios en los momentos difíciles, a buscar con mayor frecuencia el sacramento de la Reconciliación, a amar la Eucaristía y a descubrir a Cristo en quienes sufren.
 

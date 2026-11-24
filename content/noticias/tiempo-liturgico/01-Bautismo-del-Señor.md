@@ -13,7 +13,7 @@ diasAntes = 2
 diasDespues = 300
 +++
 
-## ¿Qué es el Bautismo del Señor?
+## ¿Qué es el [Bautismo](/bautismo.html) del Señor?
 
 El Bautismo del Señor es el acontecimiento en el que Jesús fue bautizado por **san Juan Bautista** en el río Jordán. Este momento tiene un significado muy profundo porque marca el comienzo de la misión pública de Jesús.
 

@@ -75,7 +75,7 @@ Por eso podemos acercarnos a Él con nuestras alegrías, preocupaciones, heridas
 
 ## «Aprended de mí, que soy manso y humilde de corazón»
 
-Una de las frases más hermosas relacionadas con esta devoción aparece en el Evangelio de San Mateo.
+Una de las frases más hermosas relacionadas con esta devoción aparece en el Evangelio de [San Mateo](/noticias/santoral/09-21-San-Mateo/).
 
 Jesús dice:
 
@@ -143,7 +143,7 @@ La Iglesia ha contemplado este acontecimiento con especial profundidad.
 
 El costado abierto de Cristo se ha convertido en un signo del amor que Jesús derramó por nosotros.
 
-La tradición cristiana ha visto también en el agua y la sangre signos relacionados con la vida sacramental de la Iglesia, especialmente el **Bautismo y la Eucaristía**.
+La tradición cristiana ha visto también en el agua y la sangre signos relacionados con la vida sacramental de la Iglesia, especialmente el **[Bautismo](/bautismo.html) y la [Eucaristía](/comunion.html)**.
 
 Por eso el corazón abierto de Jesús nos recuerda que su amor no está cerrado.
 
@@ -185,7 +185,7 @@ La devoción al Sagrado Corazón está profundamente relacionada con la **Eucari
 
 En la Eucaristía recibimos a Cristo, que se entrega por nosotros.
 
-Por eso, acercarnos al Sagrado Corazón nos lleva también a valorar más profundamente la Santa Misa, la Comunión y la adoración eucarística.
+Por eso, acercarnos al Sagrado Corazón nos lleva también a valorar más profundamente la [Santa Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/), la Comunión y la [adoración eucarística](/exposicion-santisimo.html).
 
 Jesús nos dijo:
 
@@ -210,7 +210,7 @@ Jesús nos invita a:
 - No devolver mal por mal.
 - Acercarnos a quienes sufren.
 - Pedir perdón cuando hacemos daño.
-- Confiar en Dios.
+- [Confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/).
 - Amar incluso cuando cuesta.
 
 La verdadera devoción al Sagrado Corazón no puede quedarse solamente en una imagen, una medalla o una oración.

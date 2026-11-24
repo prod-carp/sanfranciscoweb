@@ -40,7 +40,7 @@ Se distinguió rápidamente por su inteligencia, pero también por su profunda
 humildad.
 
 Dedicó gran parte de su vida a estudiar, enseñar y escribir sobre Dios, la creación,
-Jesucristo, los sacramentos, la moral cristiana y la vida eterna.
+Jesucristo, los [sacramentos](/noticias/formacion/los-7-sacramentos/), la moral cristiana y la vida eterna.
 
 Su obra más famosa es la **Suma Teológica**, una de las exposiciones más importantes de la teología católica.
 
@@ -54,7 +54,7 @@ misterios que solamente podemos conocer porque Dios los ha revelado.
 
 Por ejemplo, mediante la razón podemos llegar a reconocer que Dios existe y que es el origen de todo lo creado.
 
-Pero misterios como la **Santísima Trinidad**, la Encarnación o la Eucaristía superan la capacidad natural de la razón y solamente pueden conocerse porque Dios los ha revelado.
+Pero misterios como la **Santísima Trinidad**, la Encarnación o la [Eucaristía](/comunion.html) superan la capacidad natural de la razón y solamente pueden conocerse porque Dios los ha revelado.
 
 Por eso, para Santo Tomás, la razón no es enemiga de la fe.
 
@@ -108,7 +108,7 @@ real de Cristo en la Eucaristía**.
 A pesar de su enorme producción intelectual, Tomás entendía que todo conocimiento debía conducir finalmente hacia Dios.
 
 Según una antigua tradición, cerca del final de su vida tuvo una profunda experiencia
-espiritual mientras celebraba la Misa.
+espiritual mientras celebraba la [Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/).
 
 Después de ella dejó prácticamente de escribir.
 

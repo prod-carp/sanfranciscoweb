@@ -85,7 +85,7 @@ Para comprender mejor esta celebración, es necesario recordar qué significa el
 
 Según la enseñanza de la Iglesia, todos los seres humanos nacemos afectados por las consecuencias del pecado original. No se trata de un pecado personal que cada persona haya cometido, sino de una condición de la humanidad caída que necesita ser sanada por la gracia de Dios.
 
-El Bautismo nos hace renacer a la vida nueva en Cristo y nos libera del pecado original.
+El [Bautismo](/bautismo.html) nos hace renacer a la vida nueva en Cristo y nos libera del pecado original.
 
 María recibió una gracia excepcional: **fue preservada del pecado original desde su concepción**.
 
@@ -95,11 +95,11 @@ Por eso, cuando la Iglesia habla de María como «Inmaculada», no quiere decir 
 
 La Inmaculada Concepción nos recuerda, ante todo, que **la gracia de Dios transforma la vida**.
 
-María recibió una gracia extraordinaria, pero también tuvo que vivir su propia historia de fe. Tuvo que confiar en Dios, aceptar una misión que no comprendía completamente y permanecer fiel incluso en momentos de dolor.
+María recibió una gracia extraordinaria, pero también tuvo que vivir su propia historia de fe. Tuvo que [confiar en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/), aceptar una misión que no comprendía completamente y permanecer fiel incluso en momentos de dolor.
 
 La vemos junto a Jesús en Belén, durante su infancia, en Caná y finalmente al pie de la cruz.
 
-Su vida demuestra que estar cerca de Dios no significa tener una existencia sin dificultades. María conoció el sufrimiento, la incertidumbre y el dolor de ver a su Hijo crucificado.
+Su vida demuestra que estar cerca de Dios no significa tener una existencia sin dificultades. María conoció [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/), la incertidumbre y el dolor de ver a su Hijo crucificado.
 
 Pero nunca dejó de confiar.
 
@@ -143,7 +143,7 @@ Todos tenemos que aprender a confiar.
 
 Todos estamos llamados a decir «sí» al Señor en las circunstancias concretas de nuestra vida.
 
-María nos enseña que la santidad no consiste en hacer cosas extraordinarias para llamar la atención, sino en **dejar que Dios transforme nuestro corazón y responderle con amor y fidelidad**.
+María nos enseña que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) no consiste en hacer cosas extraordinarias para llamar la atención, sino en **dejar que Dios transforme nuestro corazón y responderle con amor y fidelidad**.
 
 Cuando María dijo «hágase en mí según tu palabra», puso toda su vida en las manos de Dios.
 

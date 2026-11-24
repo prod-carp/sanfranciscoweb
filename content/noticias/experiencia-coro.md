@@ -13,7 +13,7 @@ A veces el Señor llama a servir de las formas más sencillas. No hacen falta gr
 
 Así comenzó nuestra pequeña aventura en el coro de niños de la parroquia durante este final de temporada de comuniones de 2026.
 
-Todo empezó cuando nuestro querido párroco nos propuso echar una mano para reforzar musicalmente la misa de los niños. Como suelo tocar un poquito la guitarra en las reuniones de matrimonios para acompañar la invocación al Espíritu Santo, pensó que quizá podríamos ayudar también allí.
+Todo empezó cuando nuestro querido párroco nos propuso echar una mano para reforzar musicalmente la [misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/) de los niños. Como suelo tocar un poquito la guitarra en las reuniones de matrimonios para acompañar la invocación al Espíritu Santo, pensó que quizá podríamos ayudar también allí.
 
 La propuesta nos hizo mucha ilusión, aunque también nos llenó de nervios. Era la primera vez que asistíamos a la misa de niños de la parroquia y no sabíamos muy bien qué esperar.
 
@@ -25,7 +25,7 @@ Aquella acogida fue uno de los regalos más bonitos de esta experiencia.
 
 Desde el comienzo nos sorprendió gratamente la forma en que se celebra la misa de niños.
 
-Es una Eucaristía muy participativa, dinámica y cercana, pensada para ayudar a los más pequeños a comprender y vivir mejor cada momento de la celebración.
+Es una [Eucaristía](/comunion.html) muy participativa, dinámica y cercana, pensada para ayudar a los más pequeños a comprender y vivir mejor cada momento de la celebración.
 
 Uno de los aspectos que más nos llamó la atención fue la gran pantalla instalada en la iglesia. Gracias a ella, los niños pueden seguir las letras de los cantos, las respuestas de la misa, las lecturas y las distintas oraciones.
 

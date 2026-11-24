@@ -25,13 +25,13 @@ La fiesta reúne así dos perspectivas. Por una parte, afirma que Cristo reina y
 
 ## Un Rey cuyo trono es la cruz
 
-La imagen más sorprendente de Cristo Rey es Jesús crucificado. En el Evangelio de san Lucas, sobre la cruz aparece la inscripción: «Este es el rey de los judíos». Lo que pretendía señalar el motivo de su condena se convierte, para los cristianos, en una confesión de fe: Jesús reina precisamente allí donde parece derrotado.  
+La imagen más sorprendente de Cristo Rey es Jesús crucificado. En el Evangelio de [san Lucas](/noticias/santoral/10-18-San-Lucas/), sobre la cruz aparece la inscripción: «Este es el rey de los judíos». Lo que pretendía señalar el motivo de su condena se convierte, para los cristianos, en una [confesión](/confesion.html) de fe: Jesús reina precisamente allí donde parece derrotado.  
 
 > Su realeza es paradójica: su trono es la cruz; su corona está hecha de espinas; no tiene cetro, sino que ponen una caña en su mano. 
 
 Esta paradoja nos ayuda a entender qué significa que el Reino de Cristo «no es de este mundo». No quiere decir que no tenga nada que ver con la vida concreta ni con la historia. Significa que Jesús no reina mediante la violencia, el dominio o la búsqueda de prestigio. Su autoridad se manifiesta en la verdad, en la entrega y en el amor que busca salvar. Su Reino se hace presente en el mundo cuando las personas acogen ese modo de vivir.  
 
-La cruz muestra hasta dónde llega ese amor: Cristo entra en el sufrimiento humano, experimenta la injusticia, el abandono y la muerte, y ofrece su vida por la salvación del mundo. Así, la cruz no es un accidente que desmienta su realeza, sino el lugar donde esta se manifiesta con mayor claridad. Su victoria no consiste en imponerse a los demás, sino en vencer el pecado y la muerte con un amor que perdona y abre un camino de vida.  
+La cruz muestra hasta dónde llega ese amor: Cristo entra en [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) humano, experimenta la injusticia, el abandono y la muerte, y ofrece su vida por la salvación del mundo. Así, la cruz no es un accidente que desmienta su realeza, sino el lugar donde esta se manifiesta con mayor claridad. Su victoria no consiste en imponerse a los demás, sino en vencer el pecado y la muerte con un amor que perdona y abre un camino de vida.  
 
 ## El Reino de verdad, justicia, amor y paz
 
@@ -47,7 +47,7 @@ El Evangelio de Mateo 25 ofrece una respuesta muy concreta. Jesús se identifica
 
 No se trata de sustituir la fe por una lista de buenas acciones, sino de comprender que la fe en el Rey crucificado debe tomar forma en la caridad. El Papa Francisco recuerda que la cercanía y la ternura son parte del estilo de vida al que Jesús llama y que seremos juzgados por el amor concreto hacia nuestros hermanos. La pregunta que la solemnidad nos deja podría expresarse así: **¿qué gesto de amor pide hoy Cristo de mí, y a quién me está llamando a acercarme?**  
 
-También para los cristianos, reinar con Cristo significa servir. En el Bautismo, cada fiel recibe la llamada y la gracia para convertir su existencia en un don generoso a Dios y a los demás. Los santos son testigos de esa vida renovada por el amor: no porque busquen poder o reconocimiento, sino porque aprenden a entregarse siguiendo a Jesús. 
+También para los cristianos, reinar con Cristo significa servir. En el [Bautismo](/bautismo.html), cada fiel recibe la llamada y la gracia para convertir su existencia en un don generoso a Dios y a los demás. Los santos son testigos de esa vida renovada por el amor: no porque busquen poder o reconocimiento, sino porque aprenden a entregarse siguiendo a Jesús. 
 
 ## Una mirada franciscana a Cristo Rey
 
@@ -55,7 +55,7 @@ Para nuestra comunidad, esta solemnidad puede contemplarse especialmente desde l
 
 Desde esa mirada, la pobreza evangélica no consiste en idealizar la necesidad ni en desentenderse de las injusticias. Consiste en aprender de Cristo a no convertir las cosas, el prestigio o el poder en señores de la vida, y a poner los dones recibidos al servicio de Dios y del prójimo. La solemnidad invita a reconocer al Rey en Jesús crucificado y, por él, a descubrirlo también en quienes padecen hambre, enfermedad, soledad o exclusión. La llamada a servir a los más pequeños tiene su raíz en la identificación que Jesús mismo establece con ellos.  
 
-Así, el día de Cristo Rey puede celebrarse con una oración ante el crucifijo, con la participación en la Eucaristía y con una decisión concreta de caridad: visitar a alguien que está solo, acompañar a una persona enferma, compartir con quien pasa necesidad o trabajar por la reconciliación. Esos gestos hacen visible algo de su presencia.
+Así, el día de Cristo Rey puede celebrarse con una oración ante el crucifijo, con la participación en la [Eucaristía](/comunion.html) y con una decisión concreta de caridad: visitar a alguien que está solo, acompañar a una persona enferma, compartir con quien pasa necesidad o trabajar por la reconciliación. Esos gestos hacen visible algo de su presencia.
 
 ## Una solemnidad que termina y, a la vez, abre un camino
 

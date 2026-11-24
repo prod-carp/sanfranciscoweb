@@ -17,7 +17,7 @@ diasDespues = 300
 
 El **Jueves Santo** es uno de los días más importantes de la Semana Santa. La Iglesia recuerda aquella noche en la que Jesús se reunió con sus apóstoles antes de entregar su vida en la Cruz.
 
-Durante la Última Cena, Jesús realizó varios gestos que cambiarían para siempre la vida de la Iglesia: **instituyó la Eucaristía, instituyó el sacerdocio ministerial y dejó a sus discípulos el mandamiento del amor**.
+Durante la Última Cena, Jesús realizó varios gestos que cambiarían para siempre la vida de la Iglesia: **instituyó la [Eucaristía](/comunion.html), instituyó el sacerdocio ministerial y dejó a sus discípulos el mandamiento del amor**.
 
 Por eso, el Jueves Santo es una celebración llena de significado. Nos lleva al corazón del amor de Cristo, un amor que no se queda solamente en palabras, sino que se entrega completamente.
 
@@ -25,7 +25,7 @@ Por eso, el Jueves Santo es una celebración llena de significado. Nos lleva al 
 
 Jesús sabía que se acercaba el momento de su Pasión. Antes de ser arrestado y llevado a la Cruz, quiso reunirse con sus discípulos para celebrar la Pascua.
 
-El Evangelio de san Lucas relata:
+El Evangelio de [san Lucas](/noticias/santoral/10-18-San-Lucas/) relata:
 
 «He deseado ardientemente comer esta Pascua con vosotros, antes de padecer» (Lc 22,15).
 
@@ -43,7 +43,7 @@ Con estas palabras, Jesús instituyó la **Eucaristía** y anticipó sacramental
 
 La Eucaristía es uno de los mayores regalos que Jesús dejó a su Iglesia.
 
-En la Santa Misa, Cristo se hace realmente presente bajo las especies del pan y del vino. La Eucaristía no es simplemente un recuerdo simbólico de la Última Cena. Es el sacramento en el que recibimos verdaderamente a Cristo.
+En la [Santa Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/), Cristo se hace realmente presente bajo las especies del pan y del vino. La Eucaristía no es simplemente un recuerdo simbólico de la Última Cena. Es el sacramento en el que recibimos verdaderamente a Cristo.
 
 Jesús mismo había dicho:
 
@@ -87,7 +87,7 @@ Jesús no dice simplemente que debemos amar. Nos muestra **cómo debemos hacerlo
 
 Su amor es generoso, paciente, humilde y capaz de entregarse por los demás.
 
-Este mandamiento se encuentra en el centro de la vida cristiana. La fe no puede separarse del amor al prójimo.
+Este mandamiento se encuentra en el centro de la vida cristiana. La fe no puede separarse del [amor al prójimo](/noticias/formacion/en-jesucristo-el-amor-de-dios-se-hace-entrega/).
 
 ## La institución del sacerdocio
 
@@ -95,7 +95,7 @@ El Jueves Santo también está relacionado con la institución del **sacerdocio 
 
 Cuando Jesús dijo a sus apóstoles «haced esto en memoria mía» (Lc 22,19), les confió la misión de celebrar la Eucaristía.
 
-A través del ministerio de los sacerdotes, Cristo continúa alimentando espiritualmente a su Iglesia, especialmente mediante la celebración de la Eucaristía y los sacramentos que les corresponde administrar.
+A través del ministerio de los sacerdotes, Cristo continúa alimentando espiritualmente a su Iglesia, especialmente mediante la celebración de la Eucaristía y los [sacramentos](/noticias/formacion/los-7-sacramentos/) que les corresponde administrar.
 
 El sacerdote está llamado a configurarse con Cristo, servir al pueblo de Dios y entregar su vida al servicio de la Iglesia.
 
@@ -113,7 +113,7 @@ Jesús dijo:
 
 «Padre, si quieres, aparta de mí este cáliz; pero no se haga mi voluntad, sino la tuya» (Lc 22,42).
 
-Estas palabras muestran su confianza y obediencia al Padre incluso ante el sufrimiento.
+Estas palabras muestran su confianza y obediencia al Padre incluso ante [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/).
 
 ## La noche de Getsemaní
 

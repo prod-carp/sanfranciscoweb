@@ -13,9 +13,9 @@ fechaInicio = 1
 fechaFin = 30
 +++
 
-Cada 2 de agosto, la Iglesia celebra el Perdón de Asís, una gracia extraordinaria vinculada a San Francisco de Asís y a la pequeña iglesia de la Porciúncula. En este día, los fieles pueden obtener la indulgencia plenaria cumpliendo las condiciones establecidas por la Iglesia, como un signo concreto de la infinita misericordia de Dios.
+Cada 2 de agosto, la Iglesia celebra el Perdón de Asís, una gracia extraordinaria vinculada a [San Francisco de Asís](/sanfrancisco.html) y a la pequeña iglesia de la Porciúncula. En este día, los fieles pueden obtener la indulgencia plenaria cumpliendo las condiciones establecidas por la Iglesia, como un signo concreto de la infinita misericordia de Dios.
 
-Compartimos a continuación el esquema de la Vigilia del Perdón de Asís, una celebración de oración que invita a contemplar el amor misericordioso de Dios, escuchar su Palabra, renovar el deseo de conversión y acercarse al sacramento de la Reconciliación.
+Compartimos a continuación el esquema de la Vigilia del Perdón de Asís, una celebración de oración que invita a contemplar el amor misericordioso de Dios, escuchar su Palabra, renovar el deseo de conversión y acercarse al [sacramento de la Reconciliación](/confesion.html).
 
 Esperamos que este material ayude a preparar el corazón para vivir esta jornada con profundidad espiritual, redescubriendo que el perdón de Dios no es solo el comienzo de una vida nueva, sino también una llamada constante a volver a la casa del Padre con confianza y esperanza.
 
@@ -47,7 +47,7 @@ Haz que también en cada uno de nosotros pueda hacer fructificar:
 la misericordia hacia los pobres,
 el amor por Ti crucificado,
 la fidelidad a la Iglesia,
-el amor por la Eucaristía,
+el amor por la [Eucaristía](/comunion.html),
 la fraternidad sin poder,
 el testimonio de la paz.
 Ayúdanos a vivir "según la forma del santo Evangelio"

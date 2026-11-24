@@ -12,7 +12,7 @@ fechaInicio = 0
 fechaFin = 1
 +++
 
-*Puestos delante de una imagen de San Francisco de Asís*.
+*Puestos delante de una imagen de [San Francisco de Asís](/sanfrancisco.html)*.
 
 *Nos santiguamos*.
 
@@ -96,7 +96,7 @@ Omnipotente Dios, misericordioso Salvador.
 
 ## ORACIÓN PARA EL DÍA CUARTO
 
-Bendito seáis, Padre y Patriarca, y bendita sea la sabia providencia de Dios, que quiso dar a los hombres en vuestra persona un modelo tan acabado de abstinencia y moderación a quien seguir e imitar. Haced, Santo mío, que sea yo también moderado y sobrio, a fin de que purgue así mis pecados pasados y dome mis pasiones para no cometer otros nuevos. Enseñadme a ser sobrio en el uso de mis sentidos y a no buscar gusto alguno que me aparte del amor de Dios ni del camino del Cielo. No permitáis que mis apetitos me esclavicen ni me engañen, haciéndome ver necesidad donde no la hay o mayor de lo que es en realidad. Rogad al Señor que mis apetitos y sentidos no animalicen nunca mi alma sino más bien mi alma espiritualice a mi cuerpo, para ser un día merecedor de la gloria eterna. Así sea.
+Bendito seáis, Padre y Patriarca, y bendita sea la sabia [providencia](/noticias/gen/providencia-y-oracion-confiar-sin-quedarse-pasivos/) de Dios, que quiso dar a los hombres en vuestra persona un modelo tan acabado de abstinencia y moderación a quien seguir e imitar. Haced, Santo mío, que sea yo también moderado y sobrio, a fin de que purgue así mis pecados pasados y dome mis pasiones para no cometer otros nuevos. Enseñadme a ser sobrio en el uso de mis sentidos y a no buscar gusto alguno que me aparte del amor de Dios ni del camino del Cielo. No permitáis que mis apetitos me esclavicen ni me engañen, haciéndome ver necesidad donde no la hay o mayor de lo que es en realidad. Rogad al Señor que mis apetitos y sentidos no animalicen nunca mi alma sino más bien mi alma espiritualice a mi cuerpo, para ser un día merecedor de la gloria eterna. Así sea.
 
 ---
 

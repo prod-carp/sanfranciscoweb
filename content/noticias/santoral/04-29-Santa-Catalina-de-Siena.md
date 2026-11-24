@@ -18,7 +18,7 @@ Santa Catalina de Siena fue una mujer extraordinaria que vivió en el siglo XIV 
 
 Nació en **Siena, Italia, en 1347**, en una familia numerosa. Desde muy pequeña manifestó un profundo deseo de dedicar su vida a Dios.
 
-Aunque vivió en una época muy diferente a la nuestra, su historia continúa siendo actual porque habla de temas que todos podemos comprender: la búsqueda de Dios, el amor, el servicio, el sufrimiento, el perdón y la necesidad de permanecer firmes en la fe.
+Aunque vivió en una época muy diferente a la nuestra, su historia continúa siendo actual porque habla de temas que todos podemos comprender: la búsqueda de Dios, el amor, el servicio, [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/), el perdón y la necesidad de permanecer firmes en la fe.
 
 Catalina no fue religiosa en un convento. Perteneció a las **Hermanas de la Penitencia de Santo Domingo**, conocidas como las Mantellate, una rama de la Tercera Orden Dominicana.
 
@@ -86,7 +86,7 @@ No se limitaba a ayudar a quienes le resultaban agradables o fáciles de tratar.
 
 También se acercaba a personas que otros rechazaban.
 
-Su amor al prójimo nacía de su amor a Cristo.
+Su [amor al prójimo](/noticias/formacion/en-jesucristo-el-amor-de-dios-se-hace-entrega/) nacía de su amor a Cristo.
 
 Ella entendía que no podemos amar verdaderamente a Dios si permanecemos indiferentes ante el sufrimiento de nuestros hermanos.
 
@@ -173,7 +173,7 @@ Su amor a Cristo la llevó también a amar profundamente a la Iglesia.
 
 Una de las obras más importantes de Santa Catalina es conocida como **El Diálogo**.
 
-La obra presenta un diálogo espiritual entre Dios y el alma, en el que Catalina reflexiona sobre temas como el amor de Dios, el pecado, la misericordia, la oración y el camino hacia la santidad.
+La obra presenta un diálogo espiritual entre Dios y el alma, en el que Catalina reflexiona sobre temas como el amor de Dios, el pecado, la misericordia, la oración y el camino hacia [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/).
 
 Sus escritos muestran una espiritualidad intensa, pero al mismo tiempo profundamente centrada en el amor.
 
@@ -261,7 +261,7 @@ En poco más de tres décadas, Catalina consiguió convertirse en una mujer prof
 
 Santa Catalina fue canonizada en **1461** por el papa Pío II.
 
-Muchos siglos después, en **1970**, el papa Pablo VI la proclamó **Doctora de la Iglesia**, junto con Santa Teresa de Jesús.
+Muchos siglos después, en **1970**, el papa Pablo VI la proclamó **Doctora de la Iglesia**, junto con [Santa Teresa de Jesús](/noticias/santoral/10-15-Santa-Teresa-de-Jesús/).
 
 Fue una decisión especialmente significativa porque reconocía la profundidad y riqueza de su enseñanza espiritual.
 
@@ -269,9 +269,9 @@ En la actualidad, Catalina es una de las mujeres más importantes en la historia
 
 ## Patrona de Italia y de Europa
 
-Santa Catalina es **patrona de Italia**, junto con San Francisco de Asís.
+Santa Catalina es **patrona de Italia**, junto con [San Francisco de Asís](/sanfrancisco.html).
 
-También fue proclamada **copatrona de Europa** por san Juan Pablo II en 1999, junto con Santa Brígida de Suecia y Santa Teresa Benedicta de la Cruz.
+También fue proclamada **copatrona de Europa** por san [Juan Pablo II](/noticias/santoral/10-22-San-Juan-Pablo-II/) en 1999, junto con Santa Brígida de Suecia y Santa Teresa Benedicta de la Cruz.
 
 Su figura representa una espiritualidad capaz de unir la contemplación y la acción.
 

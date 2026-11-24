@@ -94,7 +94,7 @@ San Pablo afirma:
 
 La cruz conduce a la Pascua.
 
-El sufrimiento no tiene la última palabra.
+[El sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) no tiene la última palabra.
 
 La muerte no tiene la última palabra.
 
@@ -180,7 +180,7 @@ Cristo, sin haber cometido pecado alguno, cargó con nuestros pecados y entregó
 
 De este modo, Dios manifiesta que su misericordia es más grande que nuestro pecado y que siempre ofrece al ser humano la posibilidad del perdón y de la conversión.
 
-**La cruz y la Eucaristía**
+**La cruz y la [Eucaristía](/comunion.html)**
 
 La entrega de Cristo en la cruz está íntimamente relacionada con la Eucaristía.
 
@@ -188,7 +188,7 @@ En la Última Cena, Jesús anticipa sacramentalmente la entrega que realizará a
 
 «Esto es mi cuerpo, que se entrega por vosotros» (Lc 22,19).
 
-En cada Misa, la Iglesia celebra el memorial del sacrificio de Cristo.
+En cada [Misa](/noticias/oraciones/2026-08-01-guia-para-participar-en-la-santa-misa/), la Iglesia celebra el memorial del sacrificio de Cristo.
 
 La Eucaristía nos permite participar sacramentalmente del misterio pascual de Cristo: su pasión, muerte y resurrección.
 
@@ -256,7 +256,7 @@ La cruz nos recuerda:
 
 **Categoría litúrgica: Fiesta.**
 
-En el calendario litúrgico se sitúa aproximadamente tres semanas después de la Asunción de la Virgen María y tiene un lugar especial dentro de las celebraciones dedicadas al misterio de Cristo.
+En el calendario litúrgico se sitúa aproximadamente tres semanas después de [la Asunción](/noticias/santoral/08-15-la-asuncion-de-la-virgen/) de la Virgen María y tiene un lugar especial dentro de las celebraciones dedicadas al misterio de Cristo.
 
 La fecha está vinculada históricamente a la dedicación de la iglesia del Santo Sepulcro de Jerusalén y a la veneración de la Santa Cruz.
 

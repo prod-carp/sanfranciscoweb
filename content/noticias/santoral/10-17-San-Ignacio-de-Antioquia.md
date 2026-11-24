@@ -42,7 +42,7 @@ Ignacio insistió en la importancia de permanecer unidos a Cristo y a la Iglesia
 
 Para él, la fe cristiana no era simplemente una experiencia individual. Los creyentes formaban un solo cuerpo y estaban llamados a vivir unidos en la caridad.
 
-Por eso habló con frecuencia de la importancia de la **unidad de la Iglesia**, de la Eucaristía y del ministerio de los obispos, sacerdotes y diáconos.
+Por eso habló con frecuencia de la importancia de la **unidad de la Iglesia**, de la [Eucaristía](/comunion.html) y del ministerio de los obispos, sacerdotes y diáconos.
 
 ## El arresto de Ignacio
 
@@ -92,7 +92,7 @@ En una de sus cartas escribió una frase que se ha convertido en una de las expr
 
 Estas palabras muestran hasta qué punto contemplaba su propio sufrimiento unido a la Pasión de Cristo.
 
-Ignacio no buscaba el sufrimiento por sí mismo. Lo que deseaba era **permanecer fiel a Jesús** y entregar su vida por amor a Él.
+Ignacio no buscaba [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) por sí mismo. Lo que deseaba era **permanecer fiel a Jesús** y entregar su vida por amor a Él.
 
 ## «Dejadme imitar la pasión de mi Dios»
 
@@ -150,7 +150,7 @@ Fue llevado a Roma y allí murió como **mártir**, probablemente durante el rei
 
 La Iglesia lo venera como uno de los grandes testigos de los primeros tiempos del cristianismo.
 
-Su martirio nos muestra que la santidad también puede consistir en **permanecer fieles cuando la fidelidad tiene un precio**.
+Su martirio nos muestra que [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) también puede consistir en **permanecer fieles cuando la fidelidad tiene un precio**.
 
 ## ¿Por qué es importante recordar a San Ignacio de Antioquía?
 
@@ -210,7 +210,7 @@ Sin embargo, no permitió que el miedo tuviera la última palabra.
 
 Durante el camino escribió, animó a las comunidades y habló de Cristo con una pasión que todavía hoy sorprende.
 
-Su vida nos recuerda que **la fe no consiste solamente en creer cuando todo va bien** La verdadera confianza en Dios también se demuestra cuando llegan las dificultades.
+Su vida nos recuerda que **la fe no consiste solamente en creer cuando todo va bien** La verdadera [confianza en Dios](/noticias/gen/santa-clara-confiar-en-dios-desde-la-humildad/) también se demuestra cuando llegan las dificultades.
 
 Tal vez nosotros no tengamos que afrontar un martirio como Ignacio, pero sí podemos encontrarnos con pequeñas pruebas: incomprensiones, dificultades, tentaciones, momentos de soledad o situaciones en las que vivir nuestra fe no resulte sencillo.
 
