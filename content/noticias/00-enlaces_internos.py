@@ -392,6 +392,13 @@ ENLACES_INTERNOS = {
 
 }
 
+# Expresiones que no deben recibir enlaces automáticos.
+EXPRESIONES_EXCLUIDAS = [
+    "Parroquia san Francisco y santa Clara",
+    "nuestra parroquia de san Francisco y santa Clara",
+    "Parroquia de san Francisco y santa Clara",
+    "nuestra parroquia san Francisco y santa Clara",
+]
 
 # ============================================================
 # PROTECCIÓN DEL CONTENIDO
@@ -647,7 +654,22 @@ def compilar_patron_enlaces():
 
     return patron, normalizadas
 
+def proteger_expresiones_excluidas(texto):
+    """Protege expresiones en las que no se deben insertar enlaces."""
 
+    protegidas = {}
+
+    for expresion in sorted(EXPRESIONES_EXCLUIDAS, key=len, reverse=True):
+        patron = re.compile(re.escape(expresion), re.IGNORECASE)
+
+        def reemplazar(match):
+            marcador = f"\x00EXCLUSION_PROTEGIDA_{len(protegidas)}\x00"
+            protegidas[marcador] = match.group(0)
+            return marcador
+
+        texto = patron.sub(reemplazar, texto)
+
+    return texto, protegidas
 
 def aplicar_enlaces(texto, archivo):
     """
@@ -661,6 +683,9 @@ def aplicar_enlaces(texto, archivo):
     texto_protegido, bloques = proteger_bloques_especiales(texto)
     texto_protegido, elementos = proteger_elementos_en_linea(
         texto_protegido
+    )
+    texto_protegido, exclusiones = proteger_expresiones_excluidas(
+    texto_protegido
     )
 
     def reemplazar(match):
@@ -685,6 +710,7 @@ def aplicar_enlaces(texto, archivo):
 
     texto_protegido = restaurar_marcadores(
         texto_protegido,
+        exclusiones,
         elementos,
         bloques,
     )
