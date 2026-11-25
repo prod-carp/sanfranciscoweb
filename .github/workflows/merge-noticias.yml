@@ -42,6 +42,24 @@ jobs:
           trap 'rm -f "$TEMP_FILE"' EXIT
 
 
+          # Lee la referencia del Markdown de ese commit. La imagen puede
+          # estar ya en main o llegar dentro del mismo PR que el artículo.
+          imagen_del_markdown() {
+            gh api -H 'Accept: application/vnd.github.raw+json' \
+              "repos/$GH_REPO/contents/$1?ref=$2" |
+              python3 -c '
+          import sys, tomllib
+          from urllib.parse import quote
+          lines = sys.stdin.read().splitlines()
+          assert lines[0] == "+++"
+          image_line, = [line for line in lines[1:lines.index("+++", 1)] if line.startswith("image = ")]
+          path = tomllib.loads(image_line)["image"]
+          assert path.startswith("/") and not any(p in ("", ".", "..") for p in path[1:].split("/"))
+          assert path.lower().endswith((".webp", ".jpg", ".jpeg", ".png"))
+          print("static" + quote(path, safe="/"))
+          '
+          }
+
           # ========================================================
           # MODO MANUAL:
           # verificar un PR ya fusionado
@@ -87,10 +105,6 @@ jobs:
               awk '/^content\/noticias\/.*\.md$/ {print; exit}')
 
 
-            IMAGE_PATH=$(echo "$FILES" |
-              awk '/^static\/assets\/images\/blog\// {print; exit}')
-
-
             if [ -z "$MARKDOWN_PATH" ]; then
 
               echo "❌ No se encontró el Markdown del artículo."
@@ -100,22 +114,8 @@ jobs:
             fi
 
 
-            if [ -z "$IMAGE_PATH" ]; then
-
-              echo "❌ No se encontró la imagen del artículo."
-
-              exit 1
-
-            fi
-
-
             echo "Markdown:"
             echo "  $MARKDOWN_PATH"
-
-            echo ""
-
-            echo "Imagen:"
-            echo "  $IMAGE_PATH"
 
             echo ""
 
@@ -168,6 +168,7 @@ jobs:
             # Verificar imagen
             # ------------------------------------------------------
 
+            IMAGE_PATH=$(imagen_del_markdown "$MARKDOWN_PATH" "$MERGE_SHA")
             if gh api \
               "repos/$GH_REPO/contents/$IMAGE_PATH?ref=$MERGE_SHA" \
               >/dev/null; then
@@ -287,22 +288,9 @@ jobs:
               awk '/^content\/noticias\/.*\.md$/ {print; exit}')
 
 
-            IMAGE_PATH=$(echo "$FILES" |
-              awk '/^static\/assets\/images\/blog\// {print; exit}')
-
-
             if [ -z "$MARKDOWN_PATH" ]; then
 
               echo "❌ No se encontró el Markdown."
-
-              continue
-
-            fi
-
-
-            if [ -z "$IMAGE_PATH" ]; then
-
-              echo "❌ No se encontró la imagen."
 
               continue
 
@@ -314,11 +302,15 @@ jobs:
 
             echo ""
 
-            echo "Imagen:"
-            echo "  $IMAGE_PATH"
-
 
             # ------------------------------------------------------
+            HEAD_SHA=$(gh pr view "$NUMBER" --repo "$GH_REPO" --json headRefOid --jq '.headRefOid')
+            if ! IMAGE_PATH=$(imagen_del_markdown "$MARKDOWN_PATH" "$HEAD_SHA") ||
+               ! gh api "repos/$GH_REPO/contents/$IMAGE_PATH?ref=$HEAD_SHA" >/dev/null; then
+              echo "La imagen referenciada no existe en el PR. Se mantiene pendiente."
+              continue
+            fi
+
             # Comprobar mergeabilidad
             # ------------------------------------------------------
 
@@ -417,6 +409,7 @@ jobs:
 
             if gh pr merge "$NUMBER" \
               --repo "$GH_REPO" \
+              --match-head-commit "$HEAD_SHA" \
               --merge \
               --delete-branch; then
 
@@ -489,6 +482,7 @@ jobs:
             echo "Verificando imagen..."
 
 
+            IMAGE_PATH=$(imagen_del_markdown "$MARKDOWN_PATH" "$MERGE_SHA")
             if gh api \
               "repos/$GH_REPO/contents/$IMAGE_PATH?ref=$MERGE_SHA" \
               >/dev/null; then

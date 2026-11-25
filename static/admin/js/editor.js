@@ -48,6 +48,60 @@ const discardDraftButton = document.getElementById("discard-draft-button");
 const draftStatus = document.getElementById("draft-status");
 const submitButton = document.getElementById("submit-button");
 const editorMain = document.querySelector("main.admin-container");
+const imageSource = document.getElementById("image-source");
+const internalUrl = document.getElementById("internal-url");
+const internalStatus = document.getElementById("internal-status");
+const internalPreview = document.getElementById("internal-preview");
+const imageAlt = document.getElementById("image-alt");
+let validatedPath = null;
+let imageVersion = 0;
+
+function invalidateInternalImage() {
+  imageVersion++;
+  validatedPath = null;
+  internalPreview.hidden = true;
+  internalPreview.removeAttribute("src");
+  internalStatus.textContent = "";
+}
+
+function showImageMode() {
+  invalidateInternalImage();
+  document.getElementById("upload-panel").hidden = imageSource.value !== "upload";
+  document.getElementById("internal-panel").hidden = imageSource.value !== "internal";
+}
+
+async function checkInternalImage() {
+  invalidateInternalImage();
+  const version = imageVersion;
+  internalStatus.textContent = "Comprobando imagen…";
+  try {
+    if (!internalUrl.value.trim()) throw new Error("Introduce la dirección de la imagen.");
+    const response = await apiFetch("/api/editor/internal-image", {
+      method: "POST", headers: { "Content-Type": "application/json",
+        Authorization: `Bearer ${await auth.currentUser.getIdToken()}` },
+      body: JSON.stringify({ url: internalUrl.value }),
+      signal: AbortSignal.timeout(10000)
+    });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error);
+    const preview = new Image();
+    preview.src = result.path;
+    await preview.decode().catch(() => { throw new Error("No se ha podido visualizar la imagen."); });
+    if (version !== imageVersion) return;
+    validatedPath = result.path;
+    internalPreview.src = preview.src;
+    internalPreview.alt = imageAlt.value || "Vista previa de la imagen";
+    internalPreview.hidden = false;
+    internalStatus.textContent = "Imagen encontrada correctamente.";
+  } catch (error) {
+    if (version === imageVersion) internalStatus.textContent = error instanceof TypeError ||
+      error.name === "TimeoutError" ? "No se ha podido conectar con el servidor para comprobar la imagen. Inténtalo de nuevo." : error.message;
+  }
+}
+imageSource.addEventListener("change", showImageMode);
+internalUrl.addEventListener("input", invalidateInternalImage);
+document.getElementById("check-image").addEventListener("click", checkInternalImage);
+
 let draftRevision = null;
 let draftDirty = false;
 let draftVersionKnown = false;
@@ -151,7 +205,7 @@ async function changeDraft(method) {
     }
     const data = { revision: draftRevision };
     if (method === "PUT") {
-      data.form = collectDraftForm(croppedImageBlob ? await blobToDataURL(croppedImageBlob) : null);
+      data.form = collectDraftForm(imageSource.value === "upload" && croppedImageBlob ? await blobToDataURL(croppedImageBlob) : null);
     }
     const saved = await requestDraft(user, method, data);
     draftDirty = false;
@@ -561,7 +615,13 @@ if (
 // RESTAURAR IMAGEN
 // ======================================================
 
-if (data.editingExistingArticle && data.imageKey) {
+imageAlt.value = data.imageAlt || "";
+imageSource.value = data.imageSource || "upload";
+showImageMode();
+if (imageSource.value === "internal") {
+  internalUrl.value = data.imageUrl || "";
+  await checkInternalImage();
+} else if (data.editingExistingArticle && data.imageKey && !data.image?.startsWith("data:")) {
   // ARTÍCULO EXISTENTE: Cargar imagen directamente desde R2
   console.log("🖼️ Cargando imagen existente desde R2...");
   
@@ -1209,12 +1269,18 @@ recurringType.addEventListener(
 // IMAGEN
 // ==========================================================
 
+imageUpload.addEventListener("keydown", event => {
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    imageInput.click();
+  }
+});
 imageUpload.addEventListener(
   "click",
   (event) => {
     // Prevenir que otros elementos padre reciban el click
     event.stopPropagation();
-    imageInput.click();
+    if (event.target !== imageInput) imageInput.click();
   }
 );
 
@@ -2191,6 +2257,9 @@ window.addEventListener(
 
 // ==========================================================
 function collectDraftForm(image) {
+  if (imageSource.value === "internal" && !validatedPath) {
+    throw new Error("Comprueba la imagen antes de continuar.");
+  }
   return {
 
     // DATOS BÁSICOS
@@ -2201,7 +2270,10 @@ function collectDraftForm(image) {
     content: getMarkdown(),
 
     // IMAGEN
-    image,
+    image: imageSource.value === "upload" ? image : null,
+    imageSource: imageSource.value,
+    imageUrl: imageSource.value === "internal" ? validatedPath : null,
+    imageAlt: imageAlt.value.trim(),
 
     // DESTACADO
     highlight: highlightCheckbox.checked,
@@ -2290,6 +2362,11 @@ submitButton.addEventListener("click", async () => {
 // COMPROBAR QUE EXISTE UNA IMAGEN PARA ENVIAR
 // ======================================================
 
+if (imageSource.value === "internal" && !validatedPath) {
+  alert("Comprueba la imagen antes de enviar la noticia.");
+  internalUrl.focus();
+  return;
+}
 const imageFile =
   imageInput.files[0];
 
@@ -2299,7 +2376,7 @@ const imageFile =
 // ------------------------------------------------------
 
 if (
-  !imageFile &&
+  imageSource.value === "upload" && !imageFile &&
   !croppedImageBlob
 ) {
 
@@ -2318,7 +2395,7 @@ if (
 // CASO 2: Hay una imagen nueva seleccionada
 // ------------------------------------------------------
 
-if (imageFile) {
+if (imageSource.value === "upload" && imageFile) {
 
   const imageResult =
     await validateImage(
@@ -2344,7 +2421,7 @@ if (imageFile) {
 // el recorte
 // ------------------------------------------------------
 
-if (!croppedImageBlob) {
+if (imageSource.value === "upload" && !croppedImageBlob) {
 
   alert(
     "Debes seleccionar el encuadre de la imagen " +
@@ -2401,7 +2478,7 @@ if (contentText.length > 13000) return alert("El contenido supera el máximo per
   // ========================================================
 
   const imagePreview =
-    croppedImageBlob
+    imageSource.value === "upload" && croppedImageBlob
       ? await blobToDataURL(
           croppedImageBlob
         )

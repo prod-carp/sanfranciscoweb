@@ -501,7 +501,7 @@ html, body {
         const img = document.createElement('img');
         img.className = 'newscard-image';
         img.src = item.image;
-        img.alt = item.title;
+        img.alt = item.imageAlt || item.title;
         img.loading = 'lazy';
         img.onerror = function() {
           this.style.background = '#d1d5db';

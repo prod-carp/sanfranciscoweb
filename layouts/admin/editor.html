@@ -622,8 +622,15 @@
 <section class="admin-card">
   <h2>Imagen de la noticia</h2>
 
-  <!-- UPLOAD -->
-  <div id="image-upload" class="image-upload">
+  <div class="form-group">
+    <label for="image-source">Imagen de portada</label>
+    <select id="image-source">
+      <option value="upload">Subir imagen</option>
+      <option value="internal">Usar imagen existente</option>
+    </select>
+  </div>
+  <div id="upload-panel">
+  <div id="image-upload" role="button" tabindex="0" class="image-upload">
     <div class="image-upload-icon">📷</div>
     <div>Pulsa aquí para seleccionar una imagen</div>
     
@@ -670,7 +677,24 @@
     <img id="preview-image" alt="Vista previa de la imagen">
   </div> 
 
-</section>  <!-- ← Cierre correcto de la sección -->
+  </div>
+  <div id="internal-panel" hidden>
+    <p class="field-help">Puedes reutilizar una imagen que ya esté publicada en nuestra web. No es necesario volver a subirla.</p>
+    <div class="form-group">
+      <label for="internal-url">Dirección de la imagen</label>
+      <div class="internal-image-row">
+        <input id="internal-url" type="text" inputmode="url" autocapitalize="none" spellcheck="false" placeholder="/assets/images/…" maxlength="2048">
+        <button id="check-image" class="button button-preview" type="button">Comprobar imagen</button>
+      </div>
+      <p id="internal-status" class="field-help" role="status"></p>
+    </div>
+    <img id="internal-preview" alt="Vista previa de la imagen" hidden>
+  </div>
+  <div class="form-group">
+    <label for="image-alt">Texto alternativo de la imagen</label>
+    <input id="image-alt" maxlength="500" type="text" placeholder="Describe brevemente la imagen">
+  </div>
+</section>
 
 
 

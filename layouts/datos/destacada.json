@@ -105,7 +105,7 @@
     "title": {{ $post.page.Title | jsonify }},
     "subtitle": {{ $post.page.Params.subtitle | jsonify }},
     "date": {{ $post.fecha.Format "2006-01-02" | jsonify }},
-    "image": {{ printf "https://sanfranciscoysantaclara.es%s" $post.page.Params.image | jsonify }},
+    "image": {{ $post.page.Params.image | absURL | jsonify }},
     "url": {{ $post.page.RelPermalink | jsonify }}
   }
 

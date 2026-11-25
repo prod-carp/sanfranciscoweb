@@ -11,7 +11,7 @@
 {{- end -}}
 
 <img src="{{ $imagen | relURL }}"
-     alt="{{ .Title }}"
+     alt="{{ .Params.image_alt | default .Title }}"
      width="637"
      height="637"
      loading="lazy"

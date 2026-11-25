@@ -245,7 +245,7 @@ try {
 
 // CARGAR IMAGEN PRIVADA DESDE R2
 let imageUrl = "";
-if (article.image_key) {
+if (article.image_source !== "internal" && article.image_key) {
   const imageResponse = await apiFetch(`/api/admin/articles/${encodeURIComponent(article.id)}/image`, {
     method: "GET",
     headers: { "Authorization": `Bearer ${token}` }
@@ -277,7 +277,10 @@ const reviewData = {
   publicationDate: article.publication_date,
   content: article.content,
 
-  image: imageUrl,
+  previewUrl: imageUrl,
+  imageSource: article.image_source || "upload",
+  imageUrl: article.image_url,
+  imageAlt: article.image_alt,
   imageKey: article.image_key,
 
   highlight: Number(article.highlight) === 1,
@@ -376,9 +379,10 @@ function showReview(data) {
   reviewSubtitle.textContent = data.subtitle || "";
 
   // Imagen
-  if (data.image) {
-    reviewImage.src = data.image;
-    reviewImage.alt = data.title || "Imagen de la noticia";
+  const preview = data.imageSource === "internal" ? data.imageUrl : data.image || data.previewUrl;
+  if (preview) {
+    reviewImage.src = preview;
+    reviewImage.alt = data.imageAlt || data.title || "Imagen de la noticia";
     reviewImage.style.display = "block";
   }
 

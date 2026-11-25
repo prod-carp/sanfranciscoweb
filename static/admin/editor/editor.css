@@ -601,3 +601,12 @@ body {
 .admin-environment[data-state="warning"] {
   background: #8c3e14;
 }
+
+.internal-image-row { display: flex; gap: .75rem; flex-wrap: wrap; }
+.internal-image-row input { flex: 1 1 18rem; min-width: 0; }
+.internal-image-row button { flex: 0 1 auto; }
+#internal-preview { max-width: min(100%, 22rem); max-height: 22rem; margin-bottom: 1rem; }
+#internal-status { overflow-wrap: anywhere; }
+@media (max-width: 36rem) {
+  .internal-image-row button { width: 100%; }
+}

@@ -249,7 +249,7 @@ function renderArticles(articles) {
 
       const confirmed = confirm(
         `¿Seguro que quieres eliminar «${title}»?\n\n` +
-        "Se borrará el registro de D1 y su imagen temporal " +
+        "Se borrará el registro de D1 y, si existe, su imagen temporal " +
         "de R2. Esta acción no se puede deshacer."
       );
 
@@ -302,7 +302,7 @@ function renderArticles(articles) {
         }
 
         alert(
-          "Artículo eliminado correctamente de D1 y su imagen temporal de R2."
+          "Artículo eliminado correctamente de D1 y, si existe, su imagen temporal de R2."
         );
 
         // Recargar la lista tras el borrado.
