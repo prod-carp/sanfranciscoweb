@@ -1,109 +1,69 @@
-﻿+++
-title = 'La Presentación de la Virgen María: una vida entregada a Dios desde la infancia'
-subtitle = 'La entrega de María a Dios desde sus primeros años nos invita a hacer de nuestra vida una ofrenda de amor.'
-date = '2026-11-21T00:00:00+02:00'
++++
+title = 'La Virgen de la Medalla Milagrosa'
+subtitle = 'Cada 27 de noviembre, celebramos a Nuestra Señora de la Medalla Milagrosa y renovamos nuestra confianza en la intercesión maternal de María'
+date = '2026-11-27T00:00:00+02:00'
 draft = false
 categorias = ["Santoral"]
-tags = []
 weight = 0
-image = "/assets/images/blog/presentacion-maria.webp"
-fechaBase = '11/21'
+image = "/assets/images/blog/medalla-milagrosa.webp"
+image_alt = "Aparición de la Virgen"
+tags = ["importante"]
+diasDestacado = 1
+fechaBase = '11/27'
 fechaInicio = 0
 fechaFin = 300
 +++
 
-Cada 21 de noviembre, la Iglesia celebra la **Presentación de la Santísima Virgen María en el Templo**, una memoria que nos acerca a los primeros años de la vida de la Madre de Jesús. Según una antigua tradición cristiana, sus padres, san Joaquín y santa Ana, llevaron a María al Templo de Jerusalén cuando tenía apenas tres años, para ofrecerla a Dios y consagrarla a su servicio.
+Cada 27 de noviembre, celebramos a Nuestra Señora de la Medalla Milagrosa y renovamos nuestra confianza en la intercesión maternal de María. Esta devoción nació en París, en 1830, a partir de las experiencias atribuidas a una joven Hija de la Caridad, **santa Catalina Labouré**. La medalla que surgió de ellas no es un amuleto ni una promesa de que no habrá sufrimientos: es un signo de fe que recuerda el amor de Dios, invita a la oración y nos orienta hacia Jesucristo.
 
-Aunque este acontecimiento no aparece narrado en los Evangelios canónicos, su significado espiritual ha acompañado durante siglos la devoción de los cristianos. La fiesta nos recuerda que **la vida de María estuvo enteramente orientada hacia Dios**, mucho antes de que el ángel Gabriel le anunciara que sería la Madre del Salvador.
+## París en 1830: una historia en tiempos de incertidumbre
 
-## Una niña ofrecida a Dios
+Catalina Labouré nació en 1806 en Fain-lès-Moutiers, en la región francesa de Borgoña. Al morir su madre, cuando ella tenía nueve años, ayudó a cuidar de la familia y asumió desde joven responsabilidades domésticas. En abril de 1830 ingresó en las Hijas de la Caridad de San Vicente de Paúl y llegó a la casa madre de la comunidad en París. Su vida religiosa, según la biografía recogida por la Santa Sede, estuvo marcada por la sencillez, la caridad y la paciencia.
 
-La historia de la Presentación de María procede principalmente del *Protoevangelio de Santiago*, un escrito cristiano apócrifo del siglo II que recoge diversas tradiciones sobre la infancia de la Virgen y el nacimiento de Jesús.
+Francia vivía entonces un periodo de crisis política. En julio de 1830, mientras se anunciaba una nueva revolución, Catalina relató una experiencia de oración en la capilla de la comunidad, durante la noche del 18 al 19 de julio. La revolución estalló pocos días después y Carlos X cayó el 27 de julio. En ese ambiente de inestabilidad, la joven novicia decía haber recibido el anuncio de nuevos encuentros con la Virgen.
 
-Según este relato, Joaquín y Ana, después de haber esperado durante mucho tiempo el nacimiento de un hijo, recibieron a María como un don de Dios. Agradecidos por aquella bendición, decidieron cumplir su promesa de dedicarla al Señor.
+El más conocido tuvo lugar el 27 de noviembre de ese año. Según el relato de Catalina, María se le apareció en la capilla y le mostró una imagen que después se reproduciría en la medalla. La tradición vincula también el origen de esta devoción con las apariciones de diciembre de 1830. Catalina confió lo sucedido a su director espiritual, el padre Aladel; tras examinar el asunto, el arzobispo de París, monseñor de Quélen, autorizó que se acuñara la medalla.
 
-Cuando María cumplió tres años, sus padres la llevaron al Templo de Jerusalén. El relato describe cómo la pequeña fue acogida por el sacerdote y permaneció allí, creciendo en un ambiente de oración y cercanía a Dios.
+La primera acuñación tuvo lugar el 30 de junio de 1832. Desde entonces, la medalla se difundió rápidamente. Catalina, sin embargo, no buscó protagonismo: mantuvo en secreto durante décadas su relación con el origen de la medalla y vivió dedicada a las tareas ordinarias de su comunidad y al cuidado de personas mayores. Murió en 1876; fue beatificada en 1933 y canonizada por Pío XII en 1947.
 
-La imagen de aquella niña que sube los escalones del Templo ha inspirado numerosas obras de arte, oraciones y reflexiones espirituales a lo largo de la historia.
+La celebración del 27 de noviembre tiene una historia litúrgica propia: León XIII instituyó en 1894 una fiesta de la Manifestación de la Inmaculada Virgen bajo el título de la Medalla Milagrosa, especialmente para los sacerdotes de la Congregación de la Misión, y autorizó su celebración también en diócesis y comunidades que la solicitaran. Por eso la fecha está muy arraigada en la devoción popular, aunque el modo de celebrarla litúrgicamente puede variar según el lugar.
 
-Es importante recordar que el *Protoevangelio de Santiago* no forma parte de la Sagrada Escritura, sin embargo, la Iglesia ha conservado esta celebración por la profunda verdad espiritual que expresa: **María pertenece enteramente a Dios y se dispone, desde el comienzo de su existencia, a acoger su voluntad.**
+![Medalla](/assets/images/blog/medalla-milagrosa2.webp)
 
-## La verdadera presentación: un corazón abierto a la voluntad de Dios
+## Una medalla pequeña, llena de significado
 
-Más allá de la escena tradicional del Templo, esta fiesta nos invita a contemplar algo mucho más profundo: la disponibilidad interior de María.
+En el anverso aparece María con los brazos abiertos y las manos extendidas. De ellas salen rayos luminosos, que en el relato de Catalina representan las gracias que Dios concede por la intercesión de la Virgen. María está sobre un globo, con una serpiente bajo sus pies. La imagen invita a contemplar a la Madre de Jesús en relación con la historia de la salvación y la victoria de Dios sobre el mal.
 
-La Virgen no fue una mujer que comenzó a buscar a Dios únicamente cuando recibió el anuncio del ángel. Su respuesta en Nazaret fue la expresión de una vida abierta a la gracia, sostenida por la fe y dispuesta a confiar plenamente en el Señor.
+Alrededor de la figura se lee: «Oh María, sin pecado concebida, rogad por nosotros que recurrimos a Vos». La oración expresa la confianza de quienes piden la intercesión de María y recoge una verdad de fe que la Iglesia definiría solemnemente décadas después: la Inmaculada Concepción. La frase no presenta a María como fuente independiente de la gracia; los dones vienen de Dios, y María intercede por sus hijos.
 
-Cuando María respondió:
+En el reverso están la letra M, la cruz y dos corazones. La cruz sobre la M expresa la unión de María con la misión de su Hijo, sin confundirla con Él: Jesús es el Redentor; María participa de manera singular en la obra de la salvación como Madre y discípula. El corazón de Jesús aparece coronado de espinas, y el de María, atravesado por una espada: ambos signos invitan a contemplar el amor de Cristo y el dolor de su Madre junto a la cruz. La medalla condensa así, en imágenes, el misterio de la Redención y la relación entre María, la Iglesia y Cristo.
 
-> «He aquí la esclava del Señor; hágase en mí según tu palabra» (Lc 1,38).
+En las medallas se ve también una corona de doce estrellas. Conviene introducir aquí una precisión histórica: la biografía de Catalina publicada por el Dicasterio para las Causas de los Santos señala que ella no mencionó en sus relatos ni las estrellas ni su número. Por tanto, es mejor no atribuirle a Catalina una explicación concreta de ese detalle; puede decirse, en cambio, que el conjunto de la medalla posee un rico simbolismo mariano y eclesial.
 
-manifestó esa entrega total que la tradición de su Presentación representa simbólicamente.
+El Directorio sobre la piedad popular y la liturgia la describe como un «microcosmos mariano»: una pequeña síntesis visual que recuerda la Redención, el amor de los corazones de Jesús y María, la intercesión de la Virgen, la Iglesia y la relación entre el cielo y la tierra, la vida presente y la eterna. Esa riqueza de símbolos explica por qué la medalla no es simplemente un adorno: puede ayudarnos a recordar y meditar las verdades de la fe.
 
-La grandeza de María no consiste solamente en haber sido elegida para una misión extraordinaria, sino también en haber acogido libremente esa elección. Dios quiso contar con su consentimiento, y ella respondió con humildad, confianza y amor.
+## La Inmaculada Concepción y la confianza en María
 
-Por eso, la Presentación de la Virgen no debe entenderse únicamente como el recuerdo de una niña llevada a un edificio sagrado, sino como una invitación a reconocer que **el verdadero templo donde Dios desea habitar es el corazón humano que se abre a su presencia.**
+La invocación de la medalla —«sin pecado concebida»— está relacionada con el dogma de la Inmaculada Concepción, proclamado por Pío IX en 1854, veinticuatro años después de las apariciones de 1830. La doctrina enseña que María fue preservada del pecado original desde el primer instante de su concepción por una gracia singular de Dios, en atención a los méritos de Jesucristo. La santidad de María es fruto de la gracia salvadora de Cristo, acogida en ella de modo pleno. La documentación pontificia sobre Catalina presenta la difusión de la medalla como una preparación providencial del pueblo cristiano para la definición de ese dogma.
 
-## Joaquín y Ana: la fe que se transmite en la familia
+Contemplar a María Inmaculada es descubrir lo que la gracia de Dios puede hacer en una criatura que se abre por completo a su voluntad. María fue elegida para ser Madre de Jesús y permaneció unida a Él también en el sufrimiento. Por eso recurrir a ella nos ayuda a acercarnos a Cristo con confianza y a seguir su camino.
 
-Esta celebración también dirige nuestra mirada hacia san Joaquín y santa Ana, a quienes la tradición cristiana reconoce como padres de la Virgen María.
+## ¿Por qué se llama «Medalla Milagrosa»?
 
-Su figura nos recuerda la importancia de la familia como primer lugar donde se aprende a conocer y amar a Dios.
+La medalla fue conocida primero como la **Medalla de la Inmaculada Concepción**. Con el tiempo, su difusión quedó asociada a testimonios de gracias, conversiones y curaciones, y el pueblo comenzó a llamarla «Milagrosa». Entre los relatos más conocidos está el de Alphonse Ratisbonne, un judío de Estrasburgo que, después de aceptar llevar la medalla, afirmó haber tenido en Roma una experiencia de la Virgen tal como aparece representada en ella; posteriormente se convirtió al cristianismo. La documentación histórica recoge este episodio entre los que contribuyeron a la difusión de la devoción.
 
-En el relato tradicional, Joaquín y Ana no consideran a su hija una posesión, sino un regalo recibido del Señor. Al presentarla en el Templo, expresan su gratitud y su deseo de que toda su vida esté bajo la mirada amorosa de Dios.
+Pero el nombre no debe hacernos pensar que la medalla posea poder. Las medallas marianas son signos de fe, veneración y confianza en la protección maternal de María. No son talismanes ni deben alimentar una credulidad ciega. La gracia no se obtiene por llevar un objeto como si fuera mágico: la medalla ayuda a recordar el amor de Dios y a crecer en la confianza en la Virgen, pero esa devoción pide una vida coherente con el Evangelio.
 
-Esta actitud contiene una enseñanza especialmente hermosa para los padres cristianos.
+> «La promesa de la Virgen […] exige a los fieles una adhesión humilde y tenaz al mensaje cristiano, una oración perseverante y confiada, una conducta de vida coherente».
 
-**Educar en la fe a los hijos es ayudarles a descubrir que son amados por Dios y que su vida tiene una vocación propia, orientarles y enseñarles a discernir el camino que Dios tiene para sus vidas.**
+Por eso, llevarla puede ser un gesto sencillo y valioso si conduce a rezar, a vivir con más fidelidad y a amar mejor. También se puede vivir la devoción a María sin llevarla: la medalla no es una condición para recibir el amor de Dios ni para pedir la intercesión de la Virgen.
 
-Cada oración compartida en familia, cada gesto de perdón, cada visita a la iglesia y cada ejemplo de caridad va sembrando en el corazón de los pequeños una semilla que, con la gracia de Dios, podrá dar fruto.
+## Una Madre que nos conduce a Jesús
 
-La Presentación de María nos recuerda que la transmisión de la fe comienza muchas veces con gestos sencillos, silenciosos y cotidianos.
+La Virgen de la Medalla Milagrosa no promete una vida sin dificultades. Su propia historia está marcada por la pobreza, el desconcierto y el dolor de permanecer junto a su Hijo crucificado. La confianza no consiste en exigir que todo sufrimiento desaparezca, sino en recordar que Dios no abandona a sus hijos y que María los acompaña como madre, orientándolos hacia Cristo.
 
-## María, modelo de una vida consagrada
+En las familias, esa confianza puede tomar formas muy concretas: escuchar con paciencia, pedir perdón, reconciliarse, cuidar a quien está enfermo o solo y rezar juntos cuando sea posible. La medalla cobra sentido cuando nos ayuda a vivir así, no cuando queda separada de la vida cotidiana. La devoción a la Madre de Jesús, recuerda la Iglesia, exige también un testimonio coherente de vida.
 
-La memoria de la Presentación de la Virgen está también vinculada a la oración por quienes han entregado su vida a Dios mediante la consagración religiosa.
+En las bodas de Caná, María dice a los servidores: «Haced lo que él os diga» (Jn 2,5). En esas palabras se reconoce el sentido profundo de la devoción mariana: María no ocupa el lugar de Jesús ni nos encierra en nosotros mismos; nos dispone a escucharle y a seguirle. El Directorio de la Iglesia describe la medalla como signo de la intercesión de la Virgen y, a la vez, como recuerdo del misterio de Cristo y de la Redención.
 
-En este día se celebra igualmente la **Jornada Mundial de las Religiosas de Clausura, conocida como «Pro Orantibus»**, dedicada a recordar y agradecer la vocación de las comunidades contemplativas.
-
-Los monasterios de clausura son lugares donde hombres y mujeres ofrecen su existencia a Dios mediante la oración, el silencio, la vida fraterna y el trabajo.
-
-Aunque su misión muchas veces permanece oculta a los ojos del mundo, constituye un testimonio precioso de que la vida humana no se mide únicamente por lo que produce o consigue, sino también por su capacidad de amar, adorar e interceder por los demás.
-
-La Virgen María, que guardaba y meditaba los acontecimientos en su corazón, es un modelo privilegiado de esa vida interior.
-
-Para nuestra comunidad parroquial, puesta bajo la protección de **san Francisco y [santa Clara](/santaclara.html) de Asís**, esta celebración tiene una resonancia especial.
-
-Santa Clara, siguiendo las huellas de san Francisco, abrazó una vida de pobreza, contemplación y entrega radical a Jesucristo. Como María, quiso que Dios ocupara el centro de toda su existencia.
-
-Su testimonio nos recuerda que la verdadera riqueza del cristiano no está en poseer muchas cosas, sino en pertenecer plenamente al Señor.
-
-## También nosotros podemos presentarnos ante Dios
-
-La Presentación de la Virgen es también una invitación a preguntarnos cómo estamos viviendo nuestra propia relación con Dios.
-
-No todos estamos llamados a la vida religiosa, pero todos los bautizados compartimos una vocación fundamental: [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/).
-
-Podemos presentar nuestra vida al Señor cada mañana, al comenzar el trabajo, al cuidar de nuestra familia, al acompañar a quien sufre o al afrontar con paciencia las dificultades.
-
-También podemos ofrecerle nuestras preocupaciones, nuestras limitaciones y aquellas situaciones que todavía no comprendemos.
-
-Dios no espera que lleguemos ante Él con una vida perfecta. Nos invita a acercarnos con un corazón sincero y dispuesto a dejarse transformar por su amor.
-
-En cada [Eucaristía](/comunion.html), cuando presentamos el pan y el vino sobre el altar, estamos llamados a unir espiritualmente a esos dones nuestra propia existencia: nuestras alegrías, nuestros esfuerzos, nuestros sufrimientos y nuestras esperanzas.
-
-Así, la ofrenda de María se convierte para nosotros en una escuela de confianza y generosidad.
-
-## Una pequeña entrega que prepara grandes maravillas
-
-Hay algo especialmente conmovedor en la tradición de la Presentación de María: la historia de la salvación aparece vinculada a la sencillez de una niña y a la fe de una familia.
-
-A los ojos del mundo, aquel gesto podía parecer insignificante. Sin embargo, la tradición cristiana ha visto en él una imagen de la preparación de María para la misión más extraordinaria: ser la Madre del Hijo de Dios.
-
-También en nuestra vida, el Señor puede servirse de acontecimientos aparentemente pequeños para realizar grandes cosas.
-
-Una oración con confianza, un acto de generosidad, una reconciliación familiar o una decisión tomada por amor pueden convertirse en el comienzo de algo que todavía no alcanzamos a comprender.
-
-María nos enseña que no necesitamos conocer de antemano todos los caminos de Dios. Basta con aprender a confiar en Él y responder con fidelidad a lo que nos pide cada día.
-
-**Que la celebración de la Presentación de la Santísima Virgen María renueve en nosotros el deseo de vivir cerca del Señor y nos ayude a hacer de nuestra vida una ofrenda sencilla, libre y llena de amor.**
+En este 27 de noviembre, quien lleve la Medalla Milagrosa puede detenerse un momento a contemplarla y renovar su oración. Quien no la tenga puede acudir igualmente a María con sencillez. Podemos pedir por las familias, los enfermos, quienes viven solos, quienes han perdido la esperanza y quienes necesitan reencontrarse con Dios. Y podemos pedir, sobre todo, la gracia de vivir con un corazón más dispuesto a amar, perdonar y confiar: no para alejarnos de las dificultades, sino para atravesarlas acompañados por Dios y siguiendo a Jesús.
