@@ -9,90 +9,90 @@ weight = 0
 image = "/assets/images/blog/por-que-dios-permite-el_20260709_173851.webp"
 +++
 
+**¿Por qué permite Dios que suframos si nos ama?** Es una pregunta que surge especialmente cuando la enfermedad, la muerte, una injusticia o una pérdida dolorosa irrumpen en nuestra vida. En esos momentos, no siempre encontramos palabras que nos consuelen. Incluso puede parecernos difícil comprender cómo conciliar el sufrimiento humano con la bondad y el amor de Dios.
 
-Todos, tarde o temprano, nos hacemos esta pregunta. Puede surgir al perder un trabajo, al experimentar la soledad, al atravesar una enfermedad o al vivir una situación que parece no tener sentido.
+La fe no ignora esta pregunta ni pretende ofrecer una explicación sencilla para cada desgracia. Tampoco nos pide que disimulemos el dolor o que aceptemos como bueno aquello que nos hace sufrir. Nos invita a mirar más allá de lo que alcanzamos a comprender y a descubrir que Dios no es indiferente a nuestras heridas: en **Jesucristo ha compartido nuestro sufrimiento, ha vencido el pecado y la muerte y nos ha abierto el camino hacia la vida eterna**.
 
-Si Dios nos ama, ¿por qué permite que suframos?
+## Dios no quiere el sufrimiento ni se complace en el mal
 
-No existe una respuesta sencilla capaz de eliminar el dolor. Sin embargo, la fe cristiana nos ofrece una luz que no siempre explica el sufrimiento, pero sí nos ayuda a vivirlo con esperanza.
+Para comprender la respuesta, conviene partir de la verdad fundamental: **Dios es bueno y no desea el mal por sí mismo. El sufrimiento no es algo que debamos buscar ni una realidad ante la que Dios permanezca indiferente**.
 
-## Dios no quiere nuestro sufrimiento
+La tradición cristiana distingue entre el mal moral, que nace del pecado y del mal uso de la libertad humana, y el mal físico, como la enfermedad, el deterioro del cuerpo o la muerte. Ambos forman parte de la realidad, aunque no todos los sufrimientos puedan atribuirse a una culpa personal.
 
-Lo primero que conviene recordar es que Dios no disfruta viendo sufrir a sus hijos. El sufrimiento no forma parte del proyecto original de Dios para la humanidad.
+El libro de Job ofrece una enseñanza especialmente importante a este respecto. Job es presentado como un hombre justo que atraviesa desgracias terribles. Sus amigos intentan explicarle que su sufrimiento debe de ser consecuencia de alguna falta, pero el relato bíblico cuestiona precisamente esa manera de interpretar el dolor. No todo el que sufre está pagando por algo que ha hecho.
 
-Jesús mismo lloró ante la muerte de su amigo Lázaro, sintió angustia en Getsemaní y padeció en la cruz. Si el Hijo de Dios experimentó el dolor, comprendemos que Dios no permanece distante ante nuestras lágrimas.
+El propio Jesucristo rechaza esa asociación automática cuando, ante un hombre ciego de nacimiento, sus discípulos le preguntan quién había pecado para que naciera así. Jesús responde que ni él ni sus padres eran responsables de aquella situación (Jn 9,1-3).
 
-Por eso, cuando sufrimos, no debemos pensar que Dios nos ha abandonado o que se complace en nuestra tristeza.
+Por eso, debemos tener cuidado con las explicaciones apresuradas ante el sufrimiento ajeno. Decir a alguien que Dios le ha enviado una enfermedad como castigo o que su desgracia tiene que deberse a alguna culpa puede añadir dolor a quien ya está sufriendo. No siempre conocemos las razones por las que sucede algo, y la fe no nos autoriza a atribuir a Dios intenciones que desconocemos.
 
-## Entonces, ¿por qué lo permite?
+## Dios permite el mal, pero puede sacar de él un bien
 
-La Iglesia enseña una verdad muy importante: **Dios no quiere el mal, pero puede permitirlo porque es capaz de sacar de él un bien mayor.**
+**Si Dios es bueno y todopoderoso, ¿por qué no impide todo sufrimiento?** Esta es una de las preguntas más difíciles de la fe.
 
-Esta afirmación no significa que el sufrimiento sea bueno. La soledad, el desempleo, una enfermedad o una injusticia siguen siendo males que debemos combatir y aliviar.
+Dios no quiere el mal, ni es autor del pecado. Sin embargo, en su providencia puede permitirlo y, con su poder y su bondad, **hacer surgir de él un bien mayor, aunque muchas veces no alcancemos a comprender cómo**.
 
-Sin embargo, Dios es tan poderoso que puede transformar aquello que nos hiere en una oportunidad para acercarnos más a Él.
+El Catecismo de la Iglesia Católica explica esta enseñanza con una afirmación de gran profundidad:
 
-La prueba más grande es la Cruz.
+«Dios no permitiría el mal si no hiciera salir el bien del mal mismo» (CEC, 324).
 
-La muerte de Jesucristo fue el mayor mal cometido por la humanidad. Sin embargo, precisamente de ese acontecimiento Dios hizo surgir el mayor bien: nuestra salvación.
+Esto no significa que el mal se convierta en algo bueno, que la injusticia quede justificada o que toda desgracia tenga que producir necesariamente un beneficio visible en esta vida. Significa que el poder y la bondad de Dios son mayores que el mal y que **incluso aquello que parece haber destruido nuestra vida puede quedar integrado en un designio de salvación**.
 
-Si Dios fue capaz de convertir la Cruz en el camino de la Resurrección, también puede transformar nuestros sufrimientos en caminos de gracia.
+Hay una diferencia importante entre afirmar que Dios quiere el sufrimiento y reconocer que puede hacer surgir un bien de aquello que permite. No debemos confundir ambas cosas.
 
-## ¿Cuál es ese bien mayor?
+Tampoco siempre podremos descubrir cuál es ese bien. En ocasiones, el dolor deja heridas que permanecen durante mucho tiempo y hay preguntas que no encuentran respuesta en nuestra vida terrena. La confianza en la providencia no consiste en conocer de antemano los planes de Dios, sino en saber que podemos abandonarnos en sus manos incluso cuando no comprendemos lo que sucede.
 
-Con frecuencia esperamos que Dios resuelva inmediatamente nuestros problemas. Y muchas veces le pedimos justamente eso.
+## La Cruz: Dios ha entrado en nuestro sufrimiento
 
-Pero el mayor bien que Dios busca para nosotros no es simplemente una vida cómoda o libre de dificultades.
+La respuesta al sufrimiento no se encuentra únicamente en una explicación sobre el origen del mal. Se encuentra, sobre todo, en Jesucristo.
 
-Su mayor deseo es que lleguemos al cielo.
+Dios no ha permanecido distante ante el dolor humano. En su Hijo, ha querido compartir nuestra condición: Jesús conoció el cansancio, la pobreza, la incomprensión, el abandono, la traición y el sufrimiento físico. Lloró ante la muerte de su amigo Lázaro y experimentó en Getsemaní la angustia ante la Pasión que se acercaba.
 
-Por eso, incluso cuando permite una prueba, su gracia puede ayudarnos a crecer en aquello que realmente permanece para siempre:
+En la Cruz vemos hasta dónde llega el amor de Dios. Jesucristo sufrió una muerte injusta y cargó con el pecado del mundo. Dios no aprobó la maldad de quienes lo condenaron, pero hizo brotar de aquella entrega el mayor bien que podía recibir la humanidad: **nuestra redención**.
 
-* una fe más profunda;
-* una esperanza más firme;
-* una caridad más generosa;
-* una mayor humildad;
-* una confianza más plena en Dios;
-* un corazón más libre de los apegos que nos alejan de Él.
+Lo que parecía una derrota definitiva se convirtió en el camino de la salvación.
 
-A veces descubrimos que una etapa de sufrimiento nos llevó a rezar con más sinceridad, a valorar más a nuestra familia, a reconciliarnos con alguien o a redescubrir la presencia de Dios.
+San Juan Pablo II profundizó en este misterio en su carta apostólica *Salvifici Doloris*, dedicada al sentido cristiano del sufrimiento humano. En ella explica que Cristo, mediante su Pasión y su Resurrección, ha dado al sufrimiento una dimensión nueva: **unido al amor de Dios, incluso aquello que nos hace sufrir puede convertirse en ocasión de gracia y de entrega**.
 
-El sufrimiento no produjo ese bien por sí mismo. Fue Dios quien, actuando con su gracia, lo hizo posible.
+Esto no significa que el dolor sea bueno por sí mismo ni que debamos buscarlo. Significa que, cuando llega, no tenemos que vivirlo separados de Cristo. Podemos acudir a Él con nuestras preguntas, nuestras lágrimas y nuestras debilidades, sabiendo que conoce desde dentro lo que significa sufrir.
 
-## Cuando todo falla, el cielo permanece
+## ¿Qué sentido puede tener nuestro sufrimiento cuando lo unimos a Cristo?
 
-Vivimos en una sociedad que busca legítimamente evitar el dolor. Sin embargo, también corremos el riesgo de pensar que la felicidad depende únicamente de tener salud, éxito, estabilidad económica o reconocimiento.
+San Pablo expresa una realidad profunda cuando escribe a los Colosenses: «Completo en mi carne lo que falta a los padecimientos de Cristo, en favor de su Cuerpo que es la Iglesia» (Col 1,24).
 
-Cuando alguna de esas seguridades desaparece, nuestra vida puede tambalearse.
+La redención realizada por Jesucristo en la Cruz es completa y no necesita que añadamos nada a su sacrificio. Sin embargo, Cristo ha querido que podamos participar de su obra salvadora. **Cuando ofrecemos nuestras dificultades y las vivimos unidos a Él, nuestro sufrimiento puede convertirse en una forma de amor y de entrega por los demás**.
 
-Precisamente entonces Dios puede recordarnos con delicadeza que nuestra verdadera patria no está aquí.
+Una enfermedad, una limitación o una prueba que no podemos evitar pueden ser vividas desde la fe, no porque dejen de doler, sino porque podemos ponerlas en manos de Dios y pedirle que nos sostenga.
 
-No porque desprecie esta vida, sino porque nos creó para una felicidad mucho mayor.
+A veces, esa unión con Cristo se manifiesta en pequeños gestos: seguir rezando en medio de la incertidumbre, aceptar la ayuda de otras personas, ofrecer una dificultad por alguien que necesita oración o encontrar fuerzas para continuar amando cuando las circunstancias son especialmente difíciles.
 
-Las pruebas pueden ayudarnos a comprender que ninguna realidad de este mundo puede llenar completamente el corazón humano. Solo Dios puede hacerlo.
+No debemos exigir a quien sufre que encuentre rápidamente un significado a lo que está viviendo. Cada persona necesita su tiempo, y hay dolores que no se pueden explicar con unas cuantas palabras. Lo importante es saber que Cristo permanece cerca y que ninguna de nuestras dificultades le resulta ajena.
 
-## Un sufrimiento que nunca se vive solo
+## La fe no nos pide resignarnos ante el sufrimiento
 
-El cristiano no está llamado a buscar el sufrimiento ni a resignarse pasivamente ante él.
+Unir nuestro sufrimiento a Cristo no significa buscar el dolor, renunciar a aliviarlo o permanecer pasivos ante una situación injusta.
 
-Jesús curó enfermos, consoló a los afligidos y alimentó a los hambrientos. Nosotros también debemos luchar contra el dolor, buscar ayuda cuando la necesitamos, trabajar por la justicia y sostener a quienes sufren.
+Jesús curó enfermos, se acercó a los necesitados y mostró una especial compasión por quienes sufrían. Su ejemplo nos enseña que aliviar el dolor ajeno es también una forma de amar.
 
-Pero cuando el sufrimiento llega y no podemos evitarlo, podemos unirlo a Cristo.
+Por eso, ante una enfermedad debemos buscar atención médica; ante una injusticia, trabajar para corregirla; ante una situación de peligro, proteger a quien lo necesita. Pedir ayuda, acompañar a una persona que atraviesa una dificultad o hacer cuanto esté a nuestro alcance para evitar el sufrimiento son actitudes plenamente coherentes con la fe.
 
-Entonces deja de ser únicamente una carga para convertirse en una oportunidad de amar, confiar y esperar junto a Él.
+La esperanza nos lleva a colaborar con el bien que Dios quiere para el mundo. También nos recuerda que podemos ser instrumentos de su cercanía para quienes atraviesan momentos difíciles.
 
-## Una esperanza que no defrauda
+A veces, la mejor respuesta que podemos ofrecer a una persona que sufre no es una explicación, sino nuestra presencia: escucharla, acompañarla, ayudarla en lo que necesite y rezar por ella.
 
-Quizá nunca entendamos completamente por qué Dios permitió una determinada prueba en nuestra vida.
+## La Resurrección: el sufrimiento y la muerte no tienen la última palabra
 
-Muchas respuestas solo las conoceremos en la eternidad.
+La Cruz no es el final de la historia de Jesucristo. Después de la Pasión llegó la Resurrección, y en ella se encuentra el fundamento de nuestra esperanza.
 
-Pero sí podemos vivir con la certeza de que Dios nunca abandona a quienes confían en Él.
+La fe no promete que todas las enfermedades desaparecerán, que nunca sufriremos una injusticia o que nuestras dificultades se resolverán como deseamos. Nos ofrece algo mucho más grande: la certeza de que **el pecado y la muerte han sido vencidos por Cristo y de que estamos llamados a participar de su vida eterna**.
 
-Por eso, incluso en medio de la oscuridad, el cristiano puede repetir con esperanza:
+San Pablo expresa esta esperanza con unas palabras especialmente consoladoras:
 
-**Dios no desea mi sufrimiento. Pero si lo ha permitido, sé que su gracia puede sacar de él un bien mucho mayor: acercarme más a Él y prepararme para la alegría eterna del cielo.**
+«Los sufrimientos de ahora no se pueden comparar con la gloria que un día se nos manifestará» (Rom 8,18).
 
-Esa es la esperanza que brota de la Cruz y culmina en la Resurrección: ninguna lágrima ofrecida a Dios se pierde, porque en sus manos todo puede convertirse en un camino hacia [la santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) y hacia la vida eterna.
-FINAL
+Nuestra vida no termina en las dificultades que atravesamos ni en las pérdidas que experimentamos. Dios nos ha creado para participar de su amor y vivir eternamente con Él. **Allí alcanzará su plenitud la promesa de la Resurrección y comprenderemos plenamente aquello que ahora permanece oculto a nuestros ojos**.
 
+Quizá nunca lleguemos a entender por qué Dios permitió una determinada prueba. Pero podemos confiar en que no nos abandona, que escucha nuestras súplicas y que su amor es más fuerte que cualquier sufrimiento.
+
+Cuando el dolor llegue a nuestra vida, no tengamos miedo de acudir a Dios con nuestras preguntas. Podemos llorar, pedir ayuda, rezar y seguir esperando. No necesitamos fingir que somos fuertes ni encontrar explicaciones para todo.
+
+Cristo ha recorrido antes que nosotros el camino de la Cruz y nos ha mostrado que, después de ella, hay una vida que no termina. Esa es la esperanza que sostiene al cristiano: saber que **Dios puede hacer brotar vida incluso allí donde nosotros solo vemos oscuridad, y que ningún sufrimiento que viva en su amor quedará fuera de la promesa de salvación**.

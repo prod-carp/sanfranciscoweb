@@ -44,9 +44,9 @@ El Directorio sobre la piedad popular y la liturgia la describe como un «microc
 
 ## La Inmaculada Concepción y la confianza en María
 
-La invocación de la medalla —«sin pecado concebida»— está relacionada con el dogma de la Inmaculada Concepción, proclamado por Pío IX en 1854, veinticuatro años después de las apariciones de 1830. La doctrina enseña que María fue preservada del pecado original desde el primer instante de su concepción por una gracia singular de Dios, en atención a los méritos de Jesucristo. La santidad de María es fruto de la gracia salvadora de Cristo, acogida en ella de modo pleno. La documentación pontificia sobre Catalina presenta la difusión de la medalla como una preparación providencial del pueblo cristiano para la definición de ese dogma.
+La invocación de la medalla —«sin pecado concebida»— está relacionada con el dogma de la Inmaculada Concepción, proclamado por Pío IX en 1854, veinticuatro años después de las apariciones de 1830. La doctrina enseña que María fue preservada del pecado original desde el primer instante de su concepción por una gracia singular de Dios, en atención a los méritos de Jesucristo. [La santidad](/noticias/formacion/la-santidad-cotidiana-amistad-que-conduce-a-la-vida-eterna/) de María es fruto de la gracia salvadora de Cristo, acogida en ella de modo pleno. La documentación pontificia sobre Catalina presenta la difusión de la medalla como una preparación providencial del pueblo cristiano para la definición de ese dogma.
 
-Contemplar a María Inmaculada es descubrir lo que la gracia de Dios puede hacer en una criatura que se abre por completo a su voluntad. María fue elegida para ser Madre de Jesús y permaneció unida a Él también en el sufrimiento. Por eso recurrir a ella nos ayuda a acercarnos a Cristo con confianza y a seguir su camino.
+Contemplar a María Inmaculada es descubrir lo que la gracia de Dios puede hacer en una criatura que se abre por completo a su voluntad. María fue elegida para ser Madre de Jesús y permaneció unida a Él también en [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/). Por eso recurrir a ella nos ayuda a acercarnos a Cristo con confianza y a seguir su camino.
 
 ## ¿Por qué se llama «Medalla Milagrosa»?
 

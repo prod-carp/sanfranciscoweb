@@ -9,7 +9,7 @@ image = "/assets/images/blog/2026-11-30-los-mitos-de-san-francisco-de-asis.webp"
 tags = []
 +++
 
-San Francisco de Asís (1181/1182–1226) es uno de los santos más queridos y admirados, incluso por personas alejadas de la Iglesia. Sin embargo, también es uno de los santos cuya imagen ha sido más simplificada y, en ocasiones, reinterpretada.
+[San Francisco de Asís](/sanfrancisco.html) (1181/1182–1226) es uno de los santos más queridos y admirados, incluso por personas alejadas de la Iglesia. Sin embargo, también es uno de los santos cuya imagen ha sido más simplificada y, en ocasiones, reinterpretada.
 
 Se le presenta como un amante de los animales, un ecologista, un pacifista, un defensor de los pobres o un hombre que rechazaba las instituciones religiosas.
 
@@ -57,7 +57,7 @@ Esto es especialmente interesante: Francisco demuestra que se puede anunciar a C
 
 **La realidad**: Francisco quiso renovar la vida cristiana desde la fidelidad al Evangelio y en comunión con la Iglesia.
 
-Solicitó la aprobación de su forma de vida, manifestó un profundo respeto por los sacerdotes y profesó una extraordinaria devoción a la Eucaristía.
+Solicitó la aprobación de su forma de vida, manifestó un profundo respeto por los sacerdotes y profesó una extraordinaria devoción a la [Eucaristía](/comunion.html).
 
 Su reforma no consistía en destruir la Iglesia, sino en vivir con tanta autenticidad el Evangelio que su ejemplo ayudase a renovarla.
 
@@ -71,7 +71,7 @@ Su pobreza tenía una dimensión espiritual, evangélica y fraterna.
 
 No se trataba simplemente de tener menos cosas, sino de que ninguna cosa ocupara el lugar de Dios.
 
-Además, no idealizaba el sufrimiento de los pobres: los servía, compartía su vida y reconocía su dignidad.
+Además, no idealizaba [el sufrimiento](/noticias/formacion/2026-07-09-por-que-dios-permite-el/) de los pobres: los servía, compartía su vida y reconocía su dignidad.
 
 ### «San Francisco era un pacifista que rechazaba cualquier conflicto»
 
